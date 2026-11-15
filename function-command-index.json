@@ -1,6 +1,6 @@
 {
   "canonical_locale": "en-US",
-  "command_count": 83,
+  "command_count": 82,
   "fallback_count": 0,
   "fallbacks": [],
   "function_count": 58,
@@ -1504,7 +1504,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Select an unnecessary craving to release; this does not suppress genuine hunger.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -9226,46 +9226,38 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [],
+            "before_steps": [
+              {
+                "id": "select-being",
+                "operation": "select-intention"
+              }
+            ],
             "evidence_keys": [
               "hplus.function.ocf-emo-003.function-body"
             ],
-            "ref": "OCF-PROC-INHALE-HOLD",
+            "ref": "OCF-PROC-THINK-COMMAND",
             "status": "documented"
           },
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "inhale",
+              "id": "select-being",
               "instruction": {
                 "fallback": false,
                 "key": "OCF-EMO-003/OCF-CMD-EMO-003-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Inhale.",
+                "text": "Select the being you wish to empathize with.",
                 "version": "1.0.0"
               },
-              "operation": "inhale"
-            },
-            {
-              "id": "hold",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EMO-003/OCF-CMD-EMO-003-PRIMARY/procedure_steps/1",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Hold your breath.",
-                "version": "1.0.0"
-              },
-              "operation": "hold-breath"
+              "operation": "select-intention"
             },
             {
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EMO-003/OCF-CMD-EMO-003-PRIMARY/procedure_steps/2",
+                "key": "OCF-EMO-003/OCF-CMD-EMO-003-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -9273,19 +9265,6 @@
                 "version": "1.0.0"
               },
               "operation": "think-or-say-command"
-            },
-            {
-              "id": "exhale",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EMO-003/OCF-CMD-EMO-003-PRIMARY/procedure_steps/3",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Exhale.",
-                "version": "1.0.0"
-              },
-              "operation": "exhale"
             }
           ],
           "purpose": {
@@ -9514,7 +9493,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Choose the outcome you wish to manifest and its desired completion time.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -9770,7 +9749,13 @@
             "visible": true
           },
           "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-exp-002-primary.explanation",
@@ -9934,7 +9919,13 @@
             "visible": true
           },
           "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-exp-002-cancel.explanation",
@@ -10094,7 +10085,13 @@
             "visible": true
           },
           "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-exp-002-release.explanation",
@@ -10265,7 +10262,46 @@
       ],
       "effects": null,
       "function_id": "OCF-EXP-002",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-002.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The ability to apply adaptive physical, environmental, emotional, and energetic insulation remains available for future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        },
+        {
+          "activation": "manual",
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+          },
+          "kind": "application",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.application",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Individual invocation / application"
+          },
+          "persistence": "temporary"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -10721,16 +10757,8 @@
             ],
             "override_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "status": "documented"
@@ -10738,23 +10766,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "inhale-easily",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-OBSERVE/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Inhale.",
-                "version": "1.0.0"
-              },
-              "operation": "inhale"
-            },
-            {
               "id": "think-or-say-in-mind",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-OBSERVE/procedure_steps/1",
+                "key": "OCF-EXP-005/OCF-CMD-EXP-005-OBSERVE/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -10762,19 +10777,6 @@
                 "version": "1.0.0"
               },
               "operation": "think-or-say-command"
-            },
-            {
-              "id": "exhale-naturally",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-OBSERVE/procedure_steps/2",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Exhale.",
-                "version": "1.0.0"
-              },
-              "operation": "exhale"
             }
           ],
           "related_commands": [],
@@ -10852,16 +10854,8 @@
             ],
             "override_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "status": "documented"
@@ -10869,23 +10863,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "inhale-easily",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Inhale.",
-                "version": "1.0.0"
-              },
-              "operation": "inhale"
-            },
-            {
               "id": "think-or-say-in-mind",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-PRIMARY/procedure_steps/1",
+                "key": "OCF-EXP-005/OCF-CMD-EXP-005-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -10893,19 +10874,6 @@
                 "version": "1.0.0"
               },
               "operation": "think-or-say-command"
-            },
-            {
-              "id": "exhale-naturally",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-PRIMARY/procedure_steps/2",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Exhale.",
-                "version": "1.0.0"
-              },
-              "operation": "exhale"
             }
           ],
           "related_commands": [],
@@ -10984,16 +10952,8 @@
             ],
             "override_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "status": "documented"
@@ -11001,23 +10961,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "inhale-easily",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-SUSPEND/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Inhale.",
-                "version": "1.0.0"
-              },
-              "operation": "inhale"
-            },
-            {
               "id": "think-or-say-in-mind",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-SUSPEND/procedure_steps/1",
+                "key": "OCF-EXP-005/OCF-CMD-EXP-005-SUSPEND/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -11025,19 +10972,6 @@
                 "version": "1.0.0"
               },
               "operation": "think-or-say-command"
-            },
-            {
-              "id": "exhale-naturally",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-005/OCF-CMD-EXP-005-SUSPEND/procedure_steps/2",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Exhale.",
-                "version": "1.0.0"
-              },
-              "operation": "exhale"
             }
           ],
           "related_commands": [],
@@ -11796,13 +11730,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-attention-target",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-fnd-002.function-body"
             ],
@@ -11812,23 +11740,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-attention-target",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/1",
+                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -11841,7 +11756,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/2",
+                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -11854,7 +11769,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/3",
+                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -11867,7 +11782,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/4",
+                "key": "OCF-FND-002/OCF-CMD-FND-002-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -12106,13 +12021,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-rest-period",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-fnd-003.function-body"
             ],
@@ -12122,23 +12031,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-rest-period",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/1",
+                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -12151,7 +12047,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/2",
+                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -12164,7 +12060,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/3",
+                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -12177,7 +12073,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/4",
+                "key": "OCF-FND-003/OCF-CMD-FND-003-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -12930,7 +12826,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose the purpose for using this function.",
+                "text": "Select one or more temporary applications to end.",
                 "version": "1.0.0"
               },
               "operation": "select-purpose"
@@ -13792,13 +13688,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-quality",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-prf-002.function-body"
             ],
@@ -13808,23 +13698,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-quality",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/1",
+                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -13837,7 +13714,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/2",
+                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -13850,7 +13727,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/3",
+                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -13863,7 +13740,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/4",
+                "key": "OCF-PRF-002/OCF-CMD-PRF-002-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -14356,13 +14233,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-movement-context",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-prf-004.function-body"
             ],
@@ -14372,23 +14243,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-movement-context",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/1",
+                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -14401,7 +14259,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/2",
+                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -14414,7 +14272,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/3",
+                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -14427,7 +14285,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/4",
+                "key": "OCF-PRF-004/OCF-CMD-PRF-004-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -14682,7 +14540,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Choose the outcomes you intend for today.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -14959,7 +14817,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an activity.",
+                "text": "Select the immediate action that is needed.",
                 "version": "1.0.0"
               },
               "operation": "select-activity"
@@ -15116,185 +14974,6 @@
             "resolved_locale": "en-US",
             "text": "Compatibility phrase retained by the registry; historical authentication is not implied."
           }
-        },
-        {
-          "cue_presentation": {
-            "binding_status": "resolved",
-            "command_id": "OCF-CMD-PRF-006-RELEASE",
-            "display_cue": "Plus Release",
-            "display_fallback": false,
-            "display_locale": "en-US",
-            "requested_locale": "en-US",
-            "resource_status": "reviewed",
-            "spoken_cue": "Plus Release",
-            "spoken_cue_key": "commands.ocf-cmd-prf-006-release.spoken-cue",
-            "spoken_fallback": false,
-            "spoken_locale": "en-US",
-            "version": null
-          },
-          "designation": "special",
-          "documentation": {
-            "order": 200,
-            "visible": true
-          },
-          "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
-          "explanation": {
-            "fallback": false,
-            "key": "commands.ocf-cmd-prf-006-release.explanation",
-            "requested_locale": "en-US",
-            "resolved_locale": "en-US",
-            "text": "This command releases or suspends the current application as documented."
-          },
-          "function_id": "OCF-PRF-006",
-          "id": "OCF-CMD-PRF-006-RELEASE",
-          "label": {
-            "fallback": false,
-            "key": "commands.ocf-cmd-prf-006-release.label",
-            "requested_locale": "en-US",
-            "resolved_locale": "en-US",
-            "text": "Release command"
-          },
-          "localization": {
-            "explanation_key": "commands.ocf-cmd-prf-006-release.explanation",
-            "label_key": "commands.ocf-cmd-prf-006-release.label",
-            "purpose_key": "functions.ocf-prf-006.purpose",
-            "usage_key": "commands.ocf-cmd-prf-006-release.usage"
-          },
-          "phrase": "Plus Release",
-          "phrase_ref": {
-            "phrase_id": "OCF-CMD-PRF-006-RELEASE",
-            "source": "special-phrase"
-          },
-          "procedure": {
-            "before_steps": [
-              {
-                "id": "focus-strong-quick",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
-              }
-            ],
-            "evidence_keys": [
-              "hplus.function.ocf-prf-006.function-body"
-            ],
-            "ref": "OCF-PROC-INHALE-HOLD",
-            "status": "documented"
-          },
-          "procedure_status": "documented",
-          "procedure_steps": [
-            {
-              "id": "focus-strong-quick",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-006/OCF-CMD-PRF-006-RELEASE/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Focus attention on the selected target.",
-                "version": "1.0.0"
-              },
-              "operation": "focus-target"
-            },
-            {
-              "id": "inhale",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-006/OCF-CMD-PRF-006-RELEASE/procedure_steps/1",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Inhale.",
-                "version": "1.0.0"
-              },
-              "operation": "inhale"
-            },
-            {
-              "id": "hold",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-006/OCF-CMD-PRF-006-RELEASE/procedure_steps/2",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Hold your breath.",
-                "version": "1.0.0"
-              },
-              "operation": "hold-breath"
-            },
-            {
-              "id": "command",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-006/OCF-CMD-PRF-006-RELEASE/procedure_steps/3",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Think or say the command.",
-                "version": "1.0.0"
-              },
-              "operation": "think-or-say-command"
-            },
-            {
-              "id": "exhale",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-PRF-006/OCF-CMD-PRF-006-RELEASE/procedure_steps/4",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Exhale.",
-                "version": "1.0.0"
-              },
-              "operation": "exhale"
-            }
-          ],
-          "purpose": {
-            "fallback": false,
-            "key": "functions.ocf-prf-006.purpose",
-            "requested_locale": "en-US",
-            "resolved_locale": "en-US",
-            "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
-          },
-          "related_commands": [
-            {
-              "commands": [
-                {
-                  "id": "OCF-CMD-PRF-006-PRIMARY",
-                  "phrase": "PLUS-STRONG QUICK"
-                }
-              ],
-              "kind": "releases",
-              "label": {
-                "fallback": false,
-                "key": "command.relationship.releases",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "text": "releases"
-              }
-            }
-          ],
-          "relationships": {
-            "releases": [
-              "OCF-CMD-PRF-006-PRIMARY"
-            ]
-          },
-          "role": "release",
-          "scope_label": {
-            "fallback": false,
-            "key": "command.scope.temporary",
-            "requested_locale": "en-US",
-            "resolved_locale": "en-US",
-            "text": "Temporary"
-          },
-          "spoken": "Plus Release",
-          "spoken_review": "reviewed",
-          "usage": {
-            "fallback": false,
-            "key": "commands.ocf-cmd-prf-006-release.usage",
-            "requested_locale": "en-US",
-            "resolved_locale": "en-US",
-            "text": "Ends the temporary Strong-Quick application; the learned ability remains available."
-          }
         }
       ],
       "common_uses": [
@@ -15304,7 +14983,7 @@
         },
         {
           "status": "draft",
-          "text": "Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks."
+          "text": "Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks."
         }
       ],
       "effects": null,
@@ -18901,7 +18580,7 @@
             "key": "functions.ocf-slp-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM."
+            "text": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening."
           },
           "related_commands": [],
           "relationships": {},
@@ -18964,7 +18643,7 @@
         "key": "functions.ocf-slp-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM."
+        "text": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -18996,7 +18675,7 @@
         "key": "functions.ocf-slp-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM."
+        "text": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening."
       },
       "slug": "sweet-dreams",
       "source_availability": "available",
@@ -19706,13 +19385,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-immediate-need",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-slp-006.function-body"
             ],
@@ -19722,23 +19395,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-immediate-need",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/1",
+                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -19751,7 +19411,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/2",
+                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -19764,7 +19424,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/3",
+                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -19777,7 +19437,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/4",
+                "key": "OCF-SLP-006/OCF-CMD-SLP-006-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",

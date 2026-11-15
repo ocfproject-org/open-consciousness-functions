@@ -66,7 +66,6 @@ Canonical command phrases are shown exactly as registered and are not translated
 | [Make Your Day](../locales/en-US/OCF-PRF-005-Make-Your-Day.yaml) | PLUS-THIS DAY | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Strong-Quick](../locales/en-US/OCF-PRF-006-Strong-Quick.yaml) | PLUS-STRONG QUICK | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Strong-Quick](../locales/en-US/OCF-PRF-006-Strong-Quick.yaml) | PLUS-STRONG-QUICK | Legacy compatibility phrase | Compatibility phrase retained by the registry; historical authentication is not implied. | Temporary |
-| [Strong-Quick](../locales/en-US/OCF-PRF-006-Strong-Quick.yaml) | Plus Release | Release command | Ends the temporary Strong-Quick application; the learned ability remains available. | Temporary |
 | [Hearing](../locales/en-US/OCF-SEN-001-Hearing.yaml) | PLUS-HEAR MORE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Hearing](../locales/en-US/OCF-SEN-001-Hearing.yaml) | PLUS-HEAR LESS | Decrease mode | Use when you choose to decrease the selected function response. | Temporary |
 | [Seeing](../locales/en-US/OCF-SEN-002-Seeing.yaml) | PLUS-SEE BETTER | Primary activation command | Use only when you choose to activate the documented function. | Permanent |
@@ -90,4 +89,4 @@ Canonical command phrases are shown exactly as registered and are not translated
 | [Sleep Easy](../locales/en-US/OCF-SLP-005-Sleep-Easy.yaml) | PLUS-SLEEP EASY | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Stay Awake](../locales/en-US/OCF-SLP-006-Stay-Awake.yaml) | PLUS-AWAKE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 
-58 functions; 83 structured command records.
+58 functions; 82 structured command records.

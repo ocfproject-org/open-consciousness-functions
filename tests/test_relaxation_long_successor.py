@@ -162,6 +162,9 @@ def test_historical_templates_and_rc1_preserve_transitive_resolved_words(approva
         slot: f"hplus.function.ocf-sen-001.{slot.replace('_', '-')}"
         for slot in ("opener", "function_body", "closer")
     }
+    from ocf_tools.editorial_successor import receipt
+
+    approved_narration_changes = receipt()["shared_session_event_hashes"].get("OCF-SEN-001", {})
     for identity, expected in approval["frozen_template_event_text_sha256"].items():
         doc = compose(
             load_template(identity),
@@ -173,7 +176,12 @@ def test_historical_templates_and_rc1_preserve_transitive_resolved_words(approva
         actual = {
             e["id"]: digest(e.get("text", "")) for e in iter_events(resolve_document(doc, "en-US"))
         }
-        assert actual == expected, identity
+        expected_after = dict(expected)
+        for event_id, row in approved_narration_changes.items():
+            if event_id in expected_after:
+                assert expected_after[event_id] == row["before"]
+                expected_after[event_id] = row["after"]
+        assert actual == expected_after, identity
 
 
 def test_successor_section_and_pause_policy_are_strictly_scoped():

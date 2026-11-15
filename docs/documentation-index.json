@@ -836,7 +836,7 @@
       "purpose": "OCF Function Command Index",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "b7795aa9b0d609cca673da2b8d6bd4f9a727444da3cacd2fafb703c420e68bf9",
+      "sha256": "be8178ee654a9d53a8646051118b9226b9364e5353df5959e80f8e8ffdcde62d",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -854,7 +854,7 @@
       "purpose": "OCF Function Commands — Quick Reference",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "b6832735908a2031af9ade5cdfe6a0a54dedcb0a642f2c9636c5891c274a1342",
+      "sha256": "e0b2370983def7db795095d4a491cf7cc356cce1f61904440f2a9cc80993a259",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2753,7 +2753,7 @@
       "purpose": "Source-English terminology sheet",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "f4220f54face2be99f5c184602d943495708ab48f370c7282ce89f8207d2ea84",
+      "sha256": "0f950fac4f1a33893a66812a154aa5ef69c7bcd2fc8ee9ca6757a9263b568fc8",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2795,7 +2795,7 @@
         "functions lookup"
       ],
       "related_schemas": [],
-      "sha256": "e2bcfb095855124d3db603ebb79c5ebcbe2060371e2342ef1ca4fa9e8cb56955",
+      "sha256": "98e3a8e6dc4058c07b08291bcc79ba069eeba015590a5f9e5ba72eb46e09714a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3213,7 +3213,7 @@
       "purpose": "Current title–cue decisions and implementation",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "0e692f82c5e15ec82e424589bb139f30d2fc032c82cb363eb033043cc22900a8",
+      "sha256": "c9069e5fb23a65c2af4c88742ae3dca349534afbeb20fe994d24504e497dcfb0",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3254,6 +3254,26 @@
       "related_commands": [],
       "related_schemas": [],
       "sha256": "a76838db73b24a96b1231a371ff97545b835e753f46c0d6485d07e31f4b52b5b",
+      "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
+    },
+    {
+      "audience": "maintainers/research reviewers",
+      "broken_references": [],
+      "canonical_source": "historical checkpoint (not current implementation)",
+      "duplicate_or_contradictory_information": [],
+      "historical": true,
+      "implementation_baseline": "351985e8362879d8a2ddac74c36327641d9a6402",
+      "last_verified_implementation_checkpoint": null,
+      "maintenance": "manual",
+      "missing_information": [
+        "per-document semantic review not recorded"
+      ],
+      "path": "docs/releases/OWNER_APPROVED_58_FUNCTION_PARITY_20261114.md",
+      "proposed_correction": "retain historical claims; consult current workflow guides",
+      "purpose": "Owner-approved 58-function editorial parity checkpoint — 2026-11-15",
+      "related_commands": [],
+      "related_schemas": [],
+      "sha256": "e03999ed8d28a31c9eb8ea99fb1eb61e3e6cda35a0138133a6857afd9cda86c5",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4776,5 +4796,5 @@
   ],
   "generator": "ocf.doc_inventory/1",
   "schema_version": "1.0",
-  "total": 222
+  "total": 223
 }

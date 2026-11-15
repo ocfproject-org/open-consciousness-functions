@@ -47,18 +47,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-fnd-002.function-body
-      before_steps:
-      - id: select-attention-target
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-attention-target
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -143,29 +134,18 @@ entries:
       clearer, and more effective.
 
 
-      Whenever you wish to focus completely,
-
-      choose the activity, thought, or experience
-
-      to which you desire to give your attention.
-
-
       Inhale deeply and gently hold your breath.
 
 
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       Your mind, body, and senses will immediately
 
-      bring their attention together, directing
-
-      your awareness toward the purpose you have chosen.
+      bring their attention together.
 
 
       Your concentration will become clear,
@@ -206,13 +186,6 @@ entries:
       available to you whenever you desire.
 
 
-      Once you select your focus, your mind
-
-      will maintain it smoothly and naturally,
-
-      without unnecessary strain or effort.
-
-
       You remain in complete control,
 
       able to direct or shift your attention
@@ -241,7 +214,7 @@ entries:
       - cue.primary
     text: 'Remember, whenever you wish to focus your attention
 
-      completely, choose what you desire to concentrate on.
+        completely.
 
 
       Inhale deeply and hold your breath.
@@ -250,9 +223,7 @@ entries:
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Focus exercise.'
@@ -337,7 +308,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: e2b861a6a31850730be4dcb8143033e09db713de217252c191895433183f7dab
+  contract_sha256: 16f543c8c672dea68be5de602ea307116b4331a5e92fc29d285baea3ec89d702
 record_metadata:
   legacy:
     command_ids:

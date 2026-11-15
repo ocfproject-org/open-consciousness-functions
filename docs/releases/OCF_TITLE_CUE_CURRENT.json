@@ -107,11 +107,11 @@
   "source_scope": "Current titles, commands, and narration resolve only from canonical locale resources; editorial approvals and historical lookup remain separate metadata.",
   "counts": {
     "functions": 58,
-    "structured_command_identities": 102,
-    "active_records": 83,
+    "structured_command_identities": 101,
+    "active_records": 82,
     "historical_only_command_records": 19,
     "stable_primary_identities": 58,
-    "resolved_active_spoken_cues": 73,
+    "resolved_active_spoken_cues": 72,
     "approved_candidate_narrations": 4,
     "protected_entries": 177,
     "embedded_approval_text_hashes": 77,
@@ -496,7 +496,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs.",
+      "current_purpose": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1021,7 +1021,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar.",
+      "current_purpose": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.",
       "decision_status": "REVIEW REQUIRED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1431,7 +1431,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Opens an internal space for quiet reflection; closes it again on completion.",
+      "current_purpose": "Open communication with your total self for deeper reflection, insight, and understanding.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1492,7 +1492,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval.",
+      "current_purpose": "Capture and retain selected information and experiences for clear, reliable recall.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1557,7 +1557,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Opens perception of choices and alternatives.",
+      "current_purpose": "Discover new possibilities, explore alternative choices, and understand potential outcomes.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1622,7 +1622,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Brings specific memories or learned material to mind on request.",
+      "current_purpose": "Recall past experiences, memories, and learned information with greater clarity and detail.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1787,7 +1787,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care.",
+      "current_purpose": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1862,7 +1862,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation.",
+      "current_purpose": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1937,7 +1937,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Releases clinging, tension, or unwanted mental objects.",
+      "current_purpose": "Release unwanted emotions and emotional tension, restoring calm and clarity.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1992,7 +1992,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice.",
+      "current_purpose": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2344,7 +2344,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness.",
+      "current_purpose": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
@@ -2471,7 +2471,7 @@
         "version": "0.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Directs and sustains focused attention.",
+      "current_purpose": "Strengthen concentration, sustain attention, and reduce distractions.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
@@ -2532,7 +2532,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Replenishes a felt sense of energy and freshness.",
+      "current_purpose": "Enter a short, restorative sleep and awaken refreshed, alert, and energized.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2595,7 +2595,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Deepens physical and mental relaxation.",
+      "current_purpose": "Release physical and mental tension, restoring deep relaxation and calm.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2660,7 +2660,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence.",
+      "current_purpose": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2725,7 +2725,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Releases unhelpful states, prompts, or lingering experiences.",
+      "current_purpose": "End selected temporary OCF function applications without losing their learned abilities.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2785,7 +2785,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports stepping away from habitual, repeated behavior patterns.",
+      "current_purpose": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3077,7 +3077,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.",
+      "current_purpose": "Move with lighter, quieter steps, improved balance, and greater efficiency.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3203,14 +3203,21 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.",
+      "current_purpose": "Call upon exceptional strength, speed, and coordination when immediate action is needed.",
       "decision_status": "REVIEW REQUIRED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": "Strong-Quick",
       "previous_values": null,
       "unselected_proposal": null,
-      "historical_lookup": [],
+      "historical_lookup": [
+        {
+          "text": "Plus Release",
+          "kind": "former-teaching",
+          "command_id": "OCF-CMD-PRF-006-RELEASE",
+          "decision": "Removed from active Strong-Quick use; retained for historical lookup."
+        }
+      ],
       "context": "Hyphenated legacy cue PLUS-STRONG-QUICK reads as one word; canonical PLUS-STRONG QUICK is proposed for review.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
       "changed_keys": [],
@@ -3258,7 +3265,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar.",
+      "current_purpose": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3321,7 +3328,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images.",
+      "current_purpose": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3384,7 +3391,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar.",
+      "current_purpose": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3447,7 +3454,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.",
+      "current_purpose": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3510,7 +3517,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.",
+      "current_purpose": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3709,7 +3716,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.",
+      "current_purpose": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3779,7 +3786,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening.",
+      "current_purpose": "Find answers, explore solutions, and gain deeper understanding through sleep.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3855,7 +3862,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings.",
+      "current_purpose": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3937,7 +3944,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE.",
+      "current_purpose": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.",
       "decision_status": "APPROVED AND IMPLEMENTED",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -7067,11 +7074,16 @@
       },
       "effect_scope_ref": "lifecycle.persistence",
       "procedure": {
-        "before_steps": [],
+        "before_steps": [
+          {
+            "id": "select-being",
+            "operation": "select-intention"
+          }
+        ],
         "evidence_keys": [
           "hplus.function.ocf-emo-003.function-body"
         ],
-        "ref": "OCF-PROC-INHALE-HOLD",
+        "ref": "OCF-PROC-THINK-COMMAND",
         "status": "documented"
       },
       "relationships": {},
@@ -7097,24 +7109,13 @@
       "effect_scope": "temporary",
       "resolved_procedure_steps": [
         {
-          "id": "inhale",
-          "operation": "inhale",
-          "localization_key": "command.procedure.inhale"
-        },
-        {
-          "id": "hold",
-          "operation": "hold-breath",
-          "localization_key": "command.procedure.hold-breath"
+          "id": "select-being",
+          "operation": "select-intention"
         },
         {
           "id": "command",
           "operation": "think-or-say-command",
           "localization_key": "command.procedure.think-or-say-command"
-        },
-        {
-          "id": "exhale",
-          "operation": "exhale",
-          "localization_key": "command.procedure.exhale"
         }
       ],
       "cue_presentation": {
@@ -7264,7 +7265,7 @@
         "order": 1,
         "visible": true
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "before_steps": [
           {
@@ -7300,6 +7301,12 @@
       },
       "phrase": "PLUS-INSULATE",
       "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+      },
       "resolved_procedure_steps": [
         {
           "id": "select-comfort-zone",
@@ -7352,7 +7359,7 @@
         "order": 11,
         "visible": true
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "before_steps": [],
         "evidence_keys": [
@@ -7379,6 +7386,12 @@
       "spoken_review": "reviewed",
       "phrase": "PLUS-CANCEL",
       "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+      },
       "resolved_procedure_steps": [
         {
           "id": "inhale",
@@ -7462,7 +7475,7 @@
         "order": 200,
         "visible": true
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "before_steps": [
           {
@@ -7495,6 +7508,12 @@
       "spoken_review": "reviewed",
       "phrase": "Plus Release",
       "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+      },
       "resolved_procedure_steps": [
         {
           "id": "focus-zoning",
@@ -7637,16 +7656,8 @@
         "status": "documented",
         "override_steps": [
           {
-            "id": "inhale-easily",
-            "operation": "inhale"
-          },
-          {
             "id": "think-or-say-in-mind",
             "operation": "think-or-say-command"
-          },
-          {
-            "id": "exhale-naturally",
-            "operation": "exhale"
           }
         ],
         "evidence_keys": [
@@ -7674,16 +7685,8 @@
       },
       "resolved_procedure_steps": [
         {
-          "id": "inhale-easily",
-          "operation": "inhale"
-        },
-        {
           "id": "think-or-say-in-mind",
           "operation": "think-or-say-command"
-        },
-        {
-          "id": "exhale-naturally",
-          "operation": "exhale"
         }
       ],
       "cue_presentation": {
@@ -7712,16 +7715,8 @@
         "status": "documented",
         "override_steps": [
           {
-            "id": "inhale-easily",
-            "operation": "inhale"
-          },
-          {
             "id": "think-or-say-in-mind",
             "operation": "think-or-say-command"
-          },
-          {
-            "id": "exhale-naturally",
-            "operation": "exhale"
           }
         ],
         "evidence_keys": [
@@ -7749,16 +7744,8 @@
       },
       "resolved_procedure_steps": [
         {
-          "id": "inhale-easily",
-          "operation": "inhale"
-        },
-        {
           "id": "think-or-say-in-mind",
           "operation": "think-or-say-command"
-        },
-        {
-          "id": "exhale-naturally",
-          "operation": "exhale"
         }
       ],
       "cue_presentation": {
@@ -7787,16 +7774,8 @@
         "status": "documented",
         "override_steps": [
           {
-            "id": "inhale-easily",
-            "operation": "inhale"
-          },
-          {
             "id": "think-or-say-in-mind",
             "operation": "think-or-say-command"
-          },
-          {
-            "id": "exhale-naturally",
-            "operation": "exhale"
           }
         ],
         "evidence_keys": [
@@ -7824,16 +7803,8 @@
       },
       "resolved_procedure_steps": [
         {
-          "id": "inhale-easily",
-          "operation": "inhale"
-        },
-        {
           "id": "think-or-say-in-mind",
           "operation": "think-or-say-command"
-        },
-        {
-          "id": "exhale-naturally",
-          "operation": "exhale"
         }
       ],
       "cue_presentation": {
@@ -8063,13 +8034,7 @@
         "evidence_keys": [
           "hplus.function.ocf-fnd-002.function-body"
         ],
-        "before_steps": [
-          {
-            "id": "select-attention-target",
-            "operation": "select-purpose",
-            "localization_key": "command.procedure.select-purpose"
-          }
-        ]
+        "before_steps": []
       },
       "relationships": {},
       "id": "OCF-CMD-FND-002-PRIMARY",
@@ -8088,11 +8053,6 @@
       "phrase": "PLUS-FOCUS",
       "effect_scope": "temporary",
       "resolved_procedure_steps": [
-        {
-          "id": "select-attention-target",
-          "operation": "select-purpose",
-          "localization_key": "command.procedure.select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -8145,13 +8105,7 @@
         "evidence_keys": [
           "hplus.function.ocf-fnd-003.function-body"
         ],
-        "before_steps": [
-          {
-            "id": "select-rest-period",
-            "operation": "select-purpose",
-            "localization_key": "command.procedure.select-purpose"
-          }
-        ]
+        "before_steps": []
       },
       "relationships": {},
       "id": "OCF-CMD-FND-003-PRIMARY",
@@ -8170,11 +8124,6 @@
       "phrase": "PLUS-RECHARGE",
       "effect_scope": "temporary",
       "resolved_procedure_steps": [
-        {
-          "id": "select-rest-period",
-          "operation": "select-purpose",
-          "localization_key": "command.procedure.select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -8705,13 +8654,7 @@
       },
       "effect_scope_ref": "lifecycle.persistence",
       "procedure": {
-        "before_steps": [
-          {
-            "id": "select-quality",
-            "localization_key": "command.procedure.select-purpose",
-            "operation": "select-purpose"
-          }
-        ],
+        "before_steps": [],
         "evidence_keys": [
           "hplus.function.ocf-prf-002.function-body"
         ],
@@ -8740,11 +8683,6 @@
       "phrase": "PLUS-INNER POWER",
       "effect_scope": "permanent",
       "resolved_procedure_steps": [
-        {
-          "id": "select-quality",
-          "localization_key": "command.procedure.select-purpose",
-          "operation": "select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -8905,13 +8843,7 @@
         "evidence_keys": [
           "hplus.function.ocf-prf-004.function-body"
         ],
-        "before_steps": [
-          {
-            "id": "select-movement-context",
-            "operation": "select-purpose",
-            "localization_key": "command.procedure.select-purpose"
-          }
-        ]
+        "before_steps": []
       },
       "relationships": {},
       "id": "OCF-CMD-PRF-004-PRIMARY",
@@ -8947,11 +8879,6 @@
         "description": "Optional conscious reinforcement of the movement baseline; not permanently intensified movement."
       },
       "resolved_procedure_steps": [
-        {
-          "id": "select-movement-context",
-          "operation": "select-purpose",
-          "localization_key": "command.procedure.select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -9217,91 +9144,6 @@
         "binding_status": "unbound",
         "display_locale": "en-US",
         "display_fallback": false
-      }
-    },
-    {
-      "designation": "special",
-      "phrase_ref": {
-        "source": "special-phrase",
-        "phrase_id": "OCF-CMD-PRF-006-RELEASE"
-      },
-      "documentation": {
-        "visible": true,
-        "order": 200
-      },
-      "effect_scope_ref": "lifecycle.persistence",
-      "procedure": {
-        "ref": "OCF-PROC-INHALE-HOLD",
-        "status": "documented",
-        "evidence_keys": [
-          "hplus.function.ocf-prf-006.function-body"
-        ],
-        "before_steps": [
-          {
-            "id": "focus-strong-quick",
-            "operation": "focus-target",
-            "localization_key": "command.procedure.focus-target"
-          }
-        ]
-      },
-      "relationships": {
-        "releases": [
-          "OCF-CMD-PRF-006-PRIMARY"
-        ]
-      },
-      "id": "OCF-CMD-PRF-006-RELEASE",
-      "function_id": "OCF-PRF-006",
-      "role": "release",
-      "localization": {
-        "label_key": "commands.ocf-cmd-prf-006-release.label",
-        "usage_key": "commands.ocf-cmd-prf-006-release.usage",
-        "purpose_key": "functions.ocf-prf-006.purpose",
-        "explanation_key": "commands.ocf-cmd-prf-006-release.explanation"
-      },
-      "spoken": "Plus Release",
-      "spoken_review": "reviewed",
-      "phrase": "Plus Release",
-      "effect_scope": "temporary",
-      "resolved_procedure_steps": [
-        {
-          "id": "focus-strong-quick",
-          "operation": "focus-target",
-          "localization_key": "command.procedure.focus-target"
-        },
-        {
-          "id": "inhale",
-          "operation": "inhale",
-          "localization_key": "command.procedure.inhale"
-        },
-        {
-          "id": "hold",
-          "operation": "hold-breath",
-          "localization_key": "command.procedure.hold-breath"
-        },
-        {
-          "id": "command",
-          "operation": "think-or-say-command",
-          "localization_key": "command.procedure.think-or-say-command"
-        },
-        {
-          "id": "exhale",
-          "operation": "exhale",
-          "localization_key": "command.procedure.exhale"
-        }
-      ],
-      "cue_presentation": {
-        "command_id": "OCF-CMD-PRF-006-RELEASE",
-        "display_cue": "Plus Release",
-        "requested_locale": "en-US",
-        "spoken_cue": "Plus Release",
-        "binding_status": "resolved",
-        "display_locale": "en-US",
-        "display_fallback": false,
-        "spoken_cue_key": "commands.ocf-cmd-prf-006-release.spoken-cue",
-        "spoken_locale": "en-US",
-        "spoken_fallback": false,
-        "version": null,
-        "resource_status": "reviewed"
       }
     },
     {
@@ -10962,13 +10804,7 @@
         "evidence_keys": [
           "hplus.function.ocf-slp-006.function-body"
         ],
-        "before_steps": [
-          {
-            "id": "select-immediate-need",
-            "operation": "select-purpose",
-            "localization_key": "command.procedure.select-purpose"
-          }
-        ]
+        "before_steps": []
       },
       "relationships": {},
       "id": "OCF-CMD-SLP-006-PRIMARY",
@@ -10992,11 +10828,6 @@
       "phrase": "PLUS-AWAKE",
       "effect_scope": "temporary",
       "resolved_procedure_steps": [
-        {
-          "id": "select-immediate-need",
-          "operation": "select-purpose",
-          "localization_key": "command.procedure.select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -11119,11 +10950,6 @@
           "id": "OCF-CMD-FND-006-PRIMARY",
           "function_id": "OCF-FND-006",
           "role": "activation"
-        },
-        {
-          "id": "OCF-CMD-PRF-006-RELEASE",
-          "function_id": "OCF-PRF-006",
-          "role": "release"
         }
       ],
       "review": "Role/selected-target reuse retained; no new unrelated primary collision"
@@ -11175,58 +11001,58 @@
     "locales/en-US/OCF-BOD-002-Circulation.yaml": "93d52191d677ac5b61ab4ceb8c0f373ad43fd677cad89b8d992888bfe2551071",
     "locales/en-US/OCF-BOD-003-Comfort.yaml": "5c579d4f5e58363096a89efd9e45369b6b8a048b4312d77b75924adc6da5838c",
     "locales/en-US/OCF-BOD-004-Detox.yaml": "f46ee555782c077dfeab1282c110728b523c90cc0fea6276e951ca4174405d9c",
-    "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml": "7b8b7b00195770496e42f73f070790de160fdcdd72f050c0e3d38bb0615bbfdb",
+    "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml": "e5c4896f850acb6dafa9adab1ef64edd9a0779f331373f14062dbc2dc9f15834",
     "locales/en-US/OCF-BOD-006-Heart-Flow.yaml": "12a6127f029d77889c47db68559c7cb9d86a7b102f850e74c9e0246ac465ca13",
     "locales/en-US/OCF-BOD-007-Blood-Pressure-Balance.yaml": "ef7effd6bbbac98341dfd4a8b396cd526e023209e68b71ebb729c847658cb97e",
     "locales/en-US/OCF-BOD-008-Immune-Readiness.yaml": "42685bd33b0cd29955ab53cb78ea7bc23754d7b6e223354ae9cf14a215a68002",
     "locales/en-US/OCF-BOD-009-Breathe-Better.yaml": "c8bdf526a9d59256c263434df714bb1c9ef7551f23285887d6d2b200806ddb4b",
     "locales/en-US/OCF-BOD-010-Nutricia.yaml": "a9637423db8e8e467c86080da7cd985b590d89103f330102a762d024e90e3243",
     "locales/en-US/OCF-BOD-011-Hormonal-Transitions.yaml": "beb2ffc2f6e4e0f845490d9796da6b500e7cbe3cc2348236295350ee82d7cf65",
-    "locales/en-US/OCF-BOD-012-Sex-Drive.yaml": "aa9d7a26ff54db00e256d170687b107d451c8095560dcc6276e662b4eb225d05",
+    "locales/en-US/OCF-BOD-012-Sex-Drive.yaml": "1f2cbb48c248ec4d4aadb06dacf1e45160f809087ef2574cdeb0adc32f83f015",
     "locales/en-US/OCF-BOD-013-Body-Tune-Up.yaml": "2a22a00d80dbd2cc851d1c3bd1612c4f12c145ed54cc64c1ea0cfadbcfb49220",
     "locales/en-US/OCF-BOD-014-Regenerate.yaml": "ce8bff7747c94c516474eff1478d1670695cbe20d09b1df53b90182b8885617c",
     "locales/en-US/OCF-BOD-015-Temporary-Numbing.yaml": "51a7a82d277cbe6e8386bc69516dfb40a3b0a84cfaed24e3647d5f159168b41f",
     "locales/en-US/OCF-COG-001-Information-Access.yaml": "16ceb2ff983ad0a5a8e9909b3241b3eb0f4c7d46035c5033a05a03710bb5b1de",
     "locales/en-US/OCF-COG-002-Mental-Calculation.yaml": "6f6e15f26cec5f6506b5899a4bb1991f715313400b0b7808db34a9fa3e7f3453",
-    "locales/en-US/OCF-COG-003-Contemplation.yaml": "032cb4c18a5975b9be40070c3e41859d40038f3cea03f2210c93963c135b59c8",
-    "locales/en-US/OCF-COG-004-Imprint.yaml": "691c60bc8a25ddf8bae539cd5018fe326209428ed88e73f70c0af835016375c8",
-    "locales/en-US/OCF-COG-005-Options.yaml": "c01d14d20ba791b6413d202aeb5151c8f5cfe75ad93f5ac8a9804c3105504f7c",
-    "locales/en-US/OCF-COG-006-Recall.yaml": "d321ecafa3c9af43b083c17c1992790639813d198954566af01f48bb8b1a9976",
+    "locales/en-US/OCF-COG-003-Contemplation.yaml": "d99b72bde9bf21dfe4ba6af5f7b662af790fae7d71c4167af17ab32c295fc939",
+    "locales/en-US/OCF-COG-004-Imprint.yaml": "e745f43018dff2dc975853687fc1ceedecd04446a8581b4579570e6e44b50bbb",
+    "locales/en-US/OCF-COG-005-Options.yaml": "36d8dc7f1ca4b01ea1d3670cc518be4462855c7759b85172c7169e1b11e81c69",
+    "locales/en-US/OCF-COG-006-Recall.yaml": "aa204b6823247771e8b31af81109ce17443ad2437ec710ce8895f364d6e49100",
     "locales/en-US/OCF-COG-007-Think-Fast.yaml": "d9ff7fe98dab171e7dc38904d7583b278c5cfa46bb984417237d69f627a37d07",
     "locales/en-US/OCF-COM-001-Speak-Up.yaml": "ab8917dc832583b1db7fd8b57a7bf6be0da53ad6822609bc301c87a5b0b4253a",
-    "locales/en-US/OCF-EMG-001-Injury-Response.yaml": "977749c228a02a54f8b861a4e4e684cd6235001abc35053ca871e698c5ad3350",
-    "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml": "859f3edd2eec1542d224ac023b3e8b1e3c15fb1a8bfefb869217cf3ccd2e30b8",
-    "locales/en-US/OCF-EMO-001-Let-Go.yaml": "13fb05f42bbc8bc675f973f6f1e60c059014282c828bca37bd4aca6f61d54abc",
-    "locales/en-US/OCF-EMO-002-Offload.yaml": "7606458a6bf5859c5bd4c6f2c317965f01e866e7a4d932fef0809a0ad0e97834",
-    "locales/en-US/OCF-EMO-003-Empathize.yaml": "b7565f76470a04686245b51f7fbc59b6c6062d008491d125afa00650a75088c2",
-    "locales/en-US/OCF-EXP-001-Manifest.yaml": "f324201e5c25de68d87d2d2f88b4aa3dc182944deaae13a69f1b16d906a02ef4",
-    "locales/en-US/OCF-EXP-002-Insulate.yaml": "63e863ca61742d264df73e2952fac2a0cb9fbc2e657989f300ac16641d4e44fa",
+    "locales/en-US/OCF-EMG-001-Injury-Response.yaml": "5ac67041ccc74d7a2dffb9264433d1e1826be5049f85bc207bccb7b83d8caf2f",
+    "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml": "ddd2bcd067e67021d48818dcd89167cf18422071b748de412c010df056109cf6",
+    "locales/en-US/OCF-EMO-001-Let-Go.yaml": "b147287bead12a9bda6b964a71ae442b653b9fc796ca68e9b93a047cd4a37356",
+    "locales/en-US/OCF-EMO-002-Offload.yaml": "09eba56a0e02d725b429b360667304d58082993e09d49d3e0fd6069cde13fa8d",
+    "locales/en-US/OCF-EMO-003-Empathize.yaml": "0720610539756c19da6afbafea66ff62d8466ade9ce4591c7159dcacdd8d40ba",
+    "locales/en-US/OCF-EXP-001-Manifest.yaml": "eeede28e6c21668f5b9a94ac77c7fc23a9282531c57506fd976bf2696b2225bb",
+    "locales/en-US/OCF-EXP-002-Insulate.yaml": "ebe99f52f2ef5f3495279d9cbcfa3241ed5169bc44104c35e887638c28ea5e9c",
     "locales/en-US/OCF-EXP-003-Dissolve.yaml": "a84e5c9f23699e253b2706c5c11b0b6e8aa77adf4370ee769da4a39a2aabe2b3",
-    "locales/en-US/OCF-EXP-005-Clear-Zone.yaml": "bcbb5e69684f7ea1ef9912f924bdcc22fb7c47d9063b717dbca90afba978a4a6",
+    "locales/en-US/OCF-EXP-005-Clear-Zone.yaml": "b483f572db33f7b131acd3c6a70fbf96407fa61b16868f26949e5e709a99eeb1",
     "locales/en-US/OCF-EXP-006-Intuition.yaml": "bd851cad8088b409176f373bf4df3425d9c3d58a2253cbbe5ec073b9a2f91873",
     "locales/en-US/OCF-FND-001-Access-to-Energy.yaml": "d4ff428b1dca164bbc9d6210a379d1b4b2b8bf28ea70ea9e014a8c9d687e5a7c",
-    "locales/en-US/OCF-FND-002-Focus.yaml": "1195d72ec4b1fbb434f541adda7e4d73e0fcbf4df2784900a38cb810e5177380",
-    "locales/en-US/OCF-FND-003-Quick-Recharge.yaml": "8d2b1e5a5053c08951902f8ebbaf40ceb57800fe398aa298e4e2f5528c5a34b3",
-    "locales/en-US/OCF-FND-004-Relax.yaml": "339b8bd1279fe5b742a97b51e571f3ad2d71e878701fc6a330255da532fc9444",
-    "locales/en-US/OCF-FND-005-Reset.yaml": "c0650667835f11448194ed7a5355bd467f20afcb2e2c88b41deab2f9a9aad83b",
-    "locales/en-US/OCF-FND-006-Release.yaml": "41f0ab6a1bd7b8eee2a4ef66c79c73ba102b37db3776aed0fe0f394ff6b515e7",
-    "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml": "59bcc26a69cd31b63b3bd33f9bdac467c6a6f9c02ef0f657d42ce6aaac22db13",
+    "locales/en-US/OCF-FND-002-Focus.yaml": "5110e5a247b8b5d33c0209fbd1d6cea8ffd5dfd39b90827e97a082ad1f3d4ed4",
+    "locales/en-US/OCF-FND-003-Quick-Recharge.yaml": "1383950ee3e748d40ccc2e01d5bd716d499e68c5b14c289cb9e8cf55e6ed90da",
+    "locales/en-US/OCF-FND-004-Relax.yaml": "5c758abc0579c4112b00f7c18e3504e7afe4f1a0058f05bae095539d565b7711",
+    "locales/en-US/OCF-FND-005-Reset.yaml": "c8769122e5cb9e7b09bdd727c4df8237ddeed9e6d0f042fb9da55be5fb89014f",
+    "locales/en-US/OCF-FND-006-Release.yaml": "28ba8a38ca83ebabd0f007dfcbc7477849caeac093670e3f7dcffa3859d19072",
+    "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml": "23d61c4aa7e221fd8ba62fd2dfa8e5007c74b2a83aece93dd36a4c5f6f6003d2",
     "locales/en-US/OCF-PRF-001-Do-This-Now.yaml": "0a83876e5626f65f060bc1befc1c4e3a29997d298850daa090ff0151f0f945d4",
-    "locales/en-US/OCF-PRF-002-Inner-Power.yaml": "205141992fe9bc283609e3e70ee9977ec8644b7012edf2587929a2bb8d854dec",
+    "locales/en-US/OCF-PRF-002-Inner-Power.yaml": "e6a47f2021149f023636936cd574de79c8acd79292beebe14978d4bbfd76556b",
     "locales/en-US/OCF-PRF-003-Coordination.yaml": "80f31b62cdfeecaad6c530baae543672789c9ed0d8cbc7116b056f6bbdc78435",
-    "locales/en-US/OCF-PRF-004-Light-Foot.yaml": "6ac79275be4e168e27c69a6b8b2e612ec089a9f0e8266d3c6187e88cd26765f6",
-    "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml": "fdae12c87f247426331433add09f86eff68c32e7e5edc1b6f6f65c7a7f584ef9",
-    "locales/en-US/OCF-PRF-006-Strong-Quick.yaml": "715bff9b31a7edb06e232458e36b0c9dc479a34345209f18f3a497241a7c610b",
-    "locales/en-US/OCF-SEN-001-Hearing.yaml": "271815effb6f3a5aedd5e582d50fe43b6d5739771f2c02bfd5303024eb90fceb",
-    "locales/en-US/OCF-SEN-002-Seeing.yaml": "5259bf3211299ca10ba17699346afd2241827ecc95c8b19b00ef3861503cc6ab",
-    "locales/en-US/OCF-SEN-003-Smell.yaml": "73415e0cfd020879382f009a2511e06e2269d21686dea196e31820852a3b0242",
-    "locales/en-US/OCF-SEN-004-Taste.yaml": "9b4537dad67db612d1f371da537ed88624f4cfef6fc8f83d72f4e9dd75c68ada",
-    "locales/en-US/OCF-SEN-005-Touch.yaml": "8233748194f6e60528e63e00f0e227c1145fa9dc744c1c70b58f5f67bd04f3dd",
+    "locales/en-US/OCF-PRF-004-Light-Foot.yaml": "1a263ed330857f03192a5d3d829a9ead64911a998d83ec895b9170f9ab9e5666",
+    "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml": "6769b70cd5f50f9f76b9778cb0221b158ba6958acaa038e728662858ffc85e84",
+    "locales/en-US/OCF-PRF-006-Strong-Quick.yaml": "394a3e92210c3761b6bb8a4facab50dc7913848cbf6381ee5cbee2493c54017e",
+    "locales/en-US/OCF-SEN-001-Hearing.yaml": "d68ed0820287c2ee4fad6eb5a0654c1cf3c9366ed078ce98014ffd39b1dc22c4",
+    "locales/en-US/OCF-SEN-002-Seeing.yaml": "768c530493d2cfed22546c0f3b7afae0e2cd6810dfd1c50c9916235b58a84d22",
+    "locales/en-US/OCF-SEN-003-Smell.yaml": "91c09b9b7c0d1b796500099a59bbd8309c46572d2da707cdc388ffb09414c587",
+    "locales/en-US/OCF-SEN-004-Taste.yaml": "99f37d9b4bad1a230fb9d4483921e14775c15b09de3ca3340219ee84436a3886",
+    "locales/en-US/OCF-SEN-005-Touch.yaml": "85e41689d8d824944d112d0fb25f998d00d1c50dc8f5ba63396e68b7a0040eef",
     "locales/en-US/OCF-SLP-001-Restorative-Sleep.yaml": "359c80d9df428a7b4874853178df1a660e1021665308de6a3967c44a9e27627b",
     "locales/en-US/OCF-SLP-002-Sleep.yaml": "63ea51b70c5cc66644f7b3e8c5862a7eaccdd7d50ce18fdf0796792ee2d0f94e",
-    "locales/en-US/OCF-SLP-003-Dream-Theme.yaml": "88f6078aad039e867590b06f9e3ebd13471f5731aa4a04bfd4e13c9ba50b87aa",
-    "locales/en-US/OCF-SLP-004-Sleep-Insight.yaml": "4f2f37e6105ebcdfac428d3300bcb3e9c2a96669b7aff96649e50f1be8ba1a2c",
-    "locales/en-US/OCF-SLP-005-Sleep-Easy.yaml": "8d1957c96ced76d01b2eb887042499e8abad2acc09677564e88cac98a7d5b941",
-    "locales/en-US/OCF-SLP-006-Stay-Awake.yaml": "5754dad876a719fbea81871b89c22f5f86fb44aa71ebea741df7a8933db81b3d"
+    "locales/en-US/OCF-SLP-003-Dream-Theme.yaml": "51bb8cb32994524807e9aab70984aea046f54ca8020b6237335d32b87b62c921",
+    "locales/en-US/OCF-SLP-004-Sleep-Insight.yaml": "cda36ac3dde0683993266ac3678e86dbf9c05f1df1941001eb22ec928aabdc38",
+    "locales/en-US/OCF-SLP-005-Sleep-Easy.yaml": "c88d99979d9542a71ef248ad516b14b4370a4481525af670462b4e3688431195",
+    "locales/en-US/OCF-SLP-006-Stay-Awake.yaml": "c12ae6268413080bcc6a6ef11687d851d4c595c88308efb79b8a36ecf886ee07"
   }
 }

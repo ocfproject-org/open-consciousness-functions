@@ -52,18 +52,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-prf-004.function-body
-      before_steps:
-      - id: select-movement-context
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-movement-context
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -349,7 +340,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: f124f44697d726ae367d7a02c137e8d50dfd146c0728a7ac2378891201c7a1c0
+  contract_sha256: c14c9b31b1fa468678116b663480cb8db4155dc5bf63d0151cea294b9e51b90b
 record_metadata:
   legacy:
     command_ids:

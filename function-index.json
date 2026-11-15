@@ -13853,34 +13853,28 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [],
+              "before_steps": [
+                {
+                  "id": "select-being",
+                  "operation": "select-intention"
+                }
+              ],
               "evidence_keys": [
                 "hplus.function.ocf-emo-003.function-body"
               ],
-              "ref": "OCF-PROC-INHALE-HOLD",
+              "ref": "OCF-PROC-THINK-COMMAND",
               "status": "documented"
             },
             "relationships": {},
             "resolved_procedure_steps": [
               {
-                "id": "inhale",
-                "localization_key": "command.procedure.inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "localization_key": "command.procedure.hold-breath",
-                "operation": "hold-breath"
+                "id": "select-being",
+                "operation": "select-intention"
               },
               {
                 "id": "command",
                 "localization_key": "command.procedure.think-or-say-command",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "localization_key": "command.procedure.exhale",
-                "operation": "exhale"
               }
             ],
             "role": "activation",
@@ -14822,7 +14816,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "visible": true
             },
             "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-PRIMARY",
             "localization": {
@@ -14909,7 +14909,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "visible": true
             },
             "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-CANCEL",
             "localization": {
@@ -14983,7 +14989,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "visible": true
             },
             "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-RELEASE",
             "localization": {
@@ -15370,6 +15382,19 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "command_id": "OCF-CMD-EXP-002-RELEASE",
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "description": "The ability to apply adaptive physical, environmental, emotional, and energetic insulation remains available for future use.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -15767,32 +15792,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "activation",
@@ -15842,32 +15851,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "mode",
@@ -15917,32 +15910,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "mode",
@@ -16839,13 +16816,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-attention-target",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-fnd-002.function-body"
               ],
@@ -16854,11 +16825,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-attention-target",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -17309,13 +17275,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-rest-period",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-fnd-003.function-body"
               ],
@@ -17324,11 +17284,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-rest-period",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -20157,13 +20112,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-quality",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-002.function-body"
               ],
@@ -20172,11 +20121,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-quality",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -21082,13 +21026,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-movement-context",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-004.function-body"
               ],
@@ -21097,11 +21035,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-movement-context",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -22202,91 +22135,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "legacy-alias",
             "spoken": null,
             "spoken_review": "unresolved"
-          },
-          {
-            "cue_presentation": {
-              "binding_status": "resolved",
-              "command_id": "OCF-CMD-PRF-006-RELEASE",
-              "display_cue": "Plus Release",
-              "display_fallback": false,
-              "display_locale": "en-US",
-              "requested_locale": "en-US",
-              "resource_status": "reviewed",
-              "spoken_cue": "Plus Release",
-              "spoken_cue_key": "commands.ocf-cmd-prf-006-release.spoken-cue",
-              "spoken_fallback": false,
-              "spoken_locale": "en-US",
-              "version": null
-            },
-            "designation": "special",
-            "documentation": {
-              "order": 200,
-              "visible": true
-            },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
-            "function_id": "OCF-PRF-006",
-            "id": "OCF-CMD-PRF-006-RELEASE",
-            "localization": {
-              "explanation_key": "commands.ocf-cmd-prf-006-release.explanation",
-              "label_key": "commands.ocf-cmd-prf-006-release.label",
-              "purpose_key": "functions.ocf-prf-006.purpose",
-              "usage_key": "commands.ocf-cmd-prf-006-release.usage"
-            },
-            "phrase": "Plus Release",
-            "phrase_ref": {
-              "phrase_id": "OCF-CMD-PRF-006-RELEASE",
-              "source": "special-phrase"
-            },
-            "procedure": {
-              "before_steps": [
-                {
-                  "id": "focus-strong-quick",
-                  "localization_key": "command.procedure.focus-target",
-                  "operation": "focus-target"
-                }
-              ],
-              "evidence_keys": [
-                "hplus.function.ocf-prf-006.function-body"
-              ],
-              "ref": "OCF-PROC-INHALE-HOLD",
-              "status": "documented"
-            },
-            "relationships": {
-              "releases": [
-                "OCF-CMD-PRF-006-PRIMARY"
-              ]
-            },
-            "resolved_procedure_steps": [
-              {
-                "id": "focus-strong-quick",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
-              },
-              {
-                "id": "inhale",
-                "localization_key": "command.procedure.inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "localization_key": "command.procedure.hold-breath",
-                "operation": "hold-breath"
-              },
-              {
-                "id": "command",
-                "localization_key": "command.procedure.think-or-say-command",
-                "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "localization_key": "command.procedure.exhale",
-                "operation": "exhale"
-              }
-            ],
-            "role": "release",
-            "spoken": "Plus Release",
-            "spoken_review": "reviewed"
           }
         ],
         "common_uses": [
@@ -22296,7 +22144,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           },
           {
             "status": "draft",
-            "text": "Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks."
+            "text": "Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks."
           }
         ],
         "companions": [],
@@ -22608,10 +22456,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "command": null,
-            "command_id": "OCF-CMD-PRF-006-RELEASE",
             "required": false
           },
-          "trigger_conditions": []
+          "trigger_conditions": [
+            "The temporary enhanced response ends automatically when the immediate need passes."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -22685,7 +22534,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ]
       },
       "command_review": "review-required",
-      "common_uses": "Reviewing the exercise's intention of prompt, coordinated action. (draft); Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks. (draft)",
+      "common_uses": "Reviewing the exercise's intention of prompt, coordinated action. (draft); Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks. (draft)",
       "compatibility": "bridge-trainable",
       "domains": "performance;body",
       "legacy_command": "PLUS-STRONG-QUICK",
@@ -27128,7 +26977,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.",
+        "purpose": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -28278,13 +28127,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-immediate-need",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-slp-006.function-body"
               ],
@@ -28293,11 +28136,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-immediate-need",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -28645,7 +28483,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
-          "trigger_conditions": []
+          "trigger_conditions": [
+            "The temporary alertness ends naturally when the immediate need passes."
+          ]
         },
         "locales": [],
         "localized_relationships": {

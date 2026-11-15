@@ -42,22 +42,13 @@ activation:
       visible: true
     effect_scope_ref: lifecycle.persistence
     procedure:
-      before_steps:
-      - id: select-quality
-        localization_key: command.procedure.select-purpose
-        operation: select-purpose
+      before_steps: []
       evidence_keys:
       - hplus.function.ocf-prf-002.function-body
       ref: OCF-PROC-INHALE-HOLD
       status: documented
     relationships: {}
   procedure_steps:
-  - id: select-quality
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -219,9 +210,7 @@ entries:
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       Your awareness of your total self will immediately
@@ -255,9 +244,7 @@ entries:
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Inner Power exercise.'
@@ -342,7 +329,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: aa338494888eff346ca84c60ae880f31c6a72b96014fc925f3a7abd0587b26b9
+  contract_sha256: 3baa96b86a986547dc45a0791eb993f5ec0034221d1595482e58bc8745b3d294
 record_metadata:
   legacy:
     command_ids:

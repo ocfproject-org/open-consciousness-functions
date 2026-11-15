@@ -196,7 +196,7 @@ entries:
       to remember, imagine, and experience sounds within your mind.'
   hplus.function.ocf-sen-001.function-body:
     status: reviewed
-    version: 1.3.0
+    version: 1.4.0
     cue_template:
       function_id: OCF-SEN-001
       allowed:
@@ -236,17 +236,30 @@ entries:
       you wish to hear with greater ease.
 
 
-      To reduce unwanted sound, use the same eye
+      Whenever you wish to reduce unwanted or distracting sounds,
 
-      and breathing sequence, thinking or saying,
+      use the same breathing and eye sequence with the command,
 
       "{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}."
 
-      Distracting sounds will become less prominent,
 
-      while you remain free to change the adjustment
+      Unwanted sounds, whether coming from your surroundings
 
-      or return to your usual hearing condition.
+      or arising within your own hearing awareness,
+
+      become less prominent.
+
+
+      Your attention naturally shifts toward the sounds you wish to hear,
+
+      while unnecessary ringing, buzzing, humming,
+
+      and other distracting sounds fade into the background.
+
+
+      You remain aware of important sounds around you
+
+      and can change the adjustment whenever you choose.
 
 
       Your inner sense of hearing will also grow stronger.

@@ -45,18 +45,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-slp-006.function-body
-      before_steps:
-      - id: select-immediate-need
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-immediate-need
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -268,7 +259,8 @@ lifecycle:
   release:
     command: null
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - The temporary alertness ends naturally when the immediate need passes.
 audio:
   background_audio:
     engine: farfield
@@ -332,7 +324,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b4bb51b47513cb712bea82e161b63edab5fecf6cfda435042869ae03673cb397
+  contract_sha256: 3e38e329458a1e28d129f0383235a876b3885bd31b0afffc8f60c0027c45a364
 record_metadata:
   legacy:
     command_ids:

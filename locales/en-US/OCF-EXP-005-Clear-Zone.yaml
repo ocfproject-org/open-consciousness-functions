@@ -49,31 +49,15 @@ activation:
     procedure:
       status: documented
       override_steps:
-      - id: inhale-easily
-        operation: inhale
       - id: think-or-say-in-mind
         operation: think-or-say-command
-      - id: exhale-naturally
-        operation: exhale
       evidence_keys:
       - hplus.function.ocf-exp-005.function-body
   procedure_steps:
-  - id: inhale-easily
-    operation: inhale
-    instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
   - id: think-or-say-in-mind
     operation: think-or-say-command
     instruction:
       text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale-naturally
-    operation: exhale
-    instruction:
-      text: Exhale.
       status: canonical
       version: 1.0.0
 secondary_commands:
@@ -102,31 +86,15 @@ secondary_commands:
     procedure:
       status: documented
       override_steps:
-      - id: inhale-easily
-        operation: inhale
       - id: think-or-say-in-mind
         operation: think-or-say-command
-      - id: exhale-naturally
-        operation: exhale
       evidence_keys:
       - hplus.function.ocf-exp-005.function-body
   procedure_steps:
-  - id: inhale-easily
-    operation: inhale
-    instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
   - id: think-or-say-in-mind
     operation: think-or-say-command
     instruction:
       text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale-naturally
-    operation: exhale
-    instruction:
-      text: Exhale.
       status: canonical
       version: 1.0.0
 - command_id: OCF-CMD-EXP-005-SUSPEND
@@ -154,31 +122,15 @@ secondary_commands:
     procedure:
       status: documented
       override_steps:
-      - id: inhale-easily
-        operation: inhale
       - id: think-or-say-in-mind
         operation: think-or-say-command
-      - id: exhale-naturally
-        operation: exhale
       evidence_keys:
       - hplus.function.ocf-exp-005.function-body
   procedure_steps:
-  - id: inhale-easily
-    operation: inhale
-    instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
   - id: think-or-say-in-mind
     operation: think-or-say-command
     instruction:
       text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale-naturally
-    operation: exhale
-    instruction:
-      text: Exhale.
       status: canonical
       version: 1.0.0
 tags:
@@ -224,7 +176,7 @@ entries:
       subject to registry allocation and explicit editorial review.
   hplus.function.ocf-exp-005.function-body:
     status: reviewed
-    version: 1.0.0
+    version: 1.1.0
     cue_template:
       function_id: OCF-EXP-005
       allowed:
@@ -266,18 +218,16 @@ entries:
 
       Whenever you wish to strengthen this pattern
 
-      or restore its automatic operation, inhale easily.
+      or restore its automatic operation,
 
       Think or say in your mind, "{{ cue.primary }}."
-
-      Then let your breath flow out naturally.
 
       Your total self renews this intention as one.
 
 
       For deliberate observation or interaction with insects,
 
-      use the same breath and think or say in your mind,
+      think or say in your mind,
 
       "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}."
 
@@ -286,9 +236,7 @@ entries:
       while your calm awareness remains active.
 
 
-      To pause the entire function, use the same breath
-
-      and think or say in your mind,
+      To pause the entire function, think or say in your mind,
 
       "{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}."
 
@@ -322,8 +270,8 @@ entries:
       application without removing learning or ordinary bodily responses. Only one mode is selected at
       a time; a new selection replaces the previous mode. Normal sleep onset, loss of consciousness, or
       deliberate primary invocation restores automatic mode. Meditation or hearing a command during instruction
-      does not itself select an override. Natural exhalation completes the supplied inhale-and-command
-      procedure; no breath hold or eye closure is added. Quantum terminology is replaced with total-self
+      does not itself select an override. All three commands are breath-independent and require no eye
+      closure. Quantum terminology is replaced with total-self
       and intention language rather than a claimed physical mechanism. Primary and mode cues require separate
       stable command records; the two mode references use explicit same-owner command IDs. One reusable
       body is intended for four scheduled passes. Shared state transitions and practice pauses remain
@@ -331,7 +279,7 @@ entries:
       insect repellency. Editorial and integration review remain pending.
   hplus.function.ocf-exp-005.closer:
     status: reviewed
-    version: 1.0.0
+    version: 1.1.0
     cue_template:
       function_id: OCF-EXP-005
       allowed:
@@ -341,12 +289,10 @@ entries:
       - cue.id.OCF-CMD-EXP-005-SUSPEND
     text: 'Remember, to strengthen or restore {{ function.title }},
 
-      inhale easily, think or say in your mind, "{{ cue.primary }},"
-
-      and exhale naturally.
+      think or say in your mind, "{{ cue.primary }}."
 
 
-      With the same breath, use "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}"
+      Use "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}"
 
       to allow intentional contact,
 
@@ -356,8 +302,8 @@ entries:
       This concludes your OCF exercise.'
     notes: New OCF-authored reminder, not historical transcript wording. Includes the primary reinforcement/restoration
       cue and both distinct overrides. The body teaches automatic reset conditions; the closer does not
-      repeat reinforcement or install a new control command. All three commands use an easy inhale and
-      natural exhale, without a breath hold. Requires registered function and reviewed locale cues. Editorial
+      repeat reinforcement or install a new control command. All three commands are breath-independent.
+      Requires registered function and reviewed locale cues. Editorial
       approval and finished-session review remain pending.
 slug: clear-zone
 classification:
@@ -425,7 +371,7 @@ editorial:
   command_review: approved
 localization:
   status: complete
-  contract_sha256: 8ebfbbf4053a38a80e4070e20b8207c57a0b7ae400aca817436e1e0b63611c90
+  contract_sha256: 9ab9558a1b7fabc06eef76f647ad6fb3118d06fb7a536211f767327407fe6704
 record_metadata:
   legacy:
     source_system: null

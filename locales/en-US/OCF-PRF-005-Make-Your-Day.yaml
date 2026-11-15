@@ -53,7 +53,7 @@ activation:
   - id: select-day-outcome
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Choose the outcomes you intend for today.
       status: canonical
       version: 1.0.0
   - id: inhale

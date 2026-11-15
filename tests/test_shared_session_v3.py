@@ -277,17 +277,23 @@ def test_whole_unaffected_map_commands_bindings_and_frozen_editions(approval):
             assert raw.count(addition) == 1
             raw = raw.replace(addition, b"", 1)
         assert hashlib.sha256(raw).hexdigest() == expected, name
-    for owner, expected in approval["frozen_resolved_event_hashes"].items():
-        old = build_complete_session_plan(owner, template="OCF-TPL-SESSION-HPLUS-LOCKED-006")
-        events = iter_events(resolve_document(old["template_plan"], "en-US"))
-        assert {e["id"]: sha(e.get("text", "")) for e in events} == expected
+        for owner, expected in approval["frozen_resolved_event_hashes"].items():
+            old = build_complete_session_plan(owner, template="OCF-TPL-SESSION-HPLUS-LOCKED-006")
+            events = iter_events(resolve_document(old["template_plan"], "en-US"))
+            approved_events = dict(expected)
+            for event_id, row in (
+                receipt().get("shared_session_event_hashes", {}).get(owner, {}).items()
+            ):
+                assert approved_events[event_id] == row["before"]
+                approved_events[event_id] = row["after"]
+            assert {e["id"]: sha(e.get("text", "")) for e in events} == approved_events
     rc1 = resolve_document(
         compose(load_template("OCF-TPL-SESSION-PREP-LEARN-001"), {}, title="Frozen RC1"), "en-US"
     )
     assert {e["id"]: sha(e.get("text", "")) for e in iter_events(rc1)} == approval[
         "rc1_event_text_sha256"
     ]
-    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-022"
+    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-025"
 
 
 def test_long_form_revision_is_an_explicit_manifest_alias_without_duplicate_resource():

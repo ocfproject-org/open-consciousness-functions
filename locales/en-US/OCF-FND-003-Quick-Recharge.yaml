@@ -45,18 +45,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-fnd-003.function-body
-      before_steps:
-      - id: select-rest-period
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-rest-period
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -147,9 +138,7 @@ entries:
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       You will move easily and quickly
@@ -230,9 +219,7 @@ entries:
       Think or say in your mind, "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Quick Recharge exercise.'
@@ -316,7 +303,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 1d544e6a9e4af6eab724a5b27859e7e5e7e8b05badb60628f70ea1cc77c35244
+  contract_sha256: c3b352236c3f96448c479a37ec5a6dc207bc944eb7c66e308fcea04bd717e604
 record_metadata:
   legacy:
     command_ids:

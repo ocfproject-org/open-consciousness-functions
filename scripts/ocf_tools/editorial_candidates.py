@@ -184,8 +184,13 @@ def verify_approvals(root=REPO_ROOT) -> list[str]:
         except OCFError as exc:
             errors.append(f"canonical approved preview failed for {identity}: {exc}")
             continue
+        from .editorial_successor import expected_entries
+
         resolved = {row["key"]: row["resolved_text_sha256"] for row in preview["entries"]}
-        if resolved != approval.get("resolved_text_sha256"):
+        approved = expected_entries(
+            approval.get("resolved_text_sha256", {}), resolved=True, root=root
+        )
+        if resolved != approved:
             errors.append(f"canonical approved narration hash mismatch: {identity}")
         if approval.get("listening_approval") or approval.get("release_ready"):
             errors.append(f"narration approval was promoted beyond its recorded scope: {identity}")

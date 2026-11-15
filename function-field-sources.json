@@ -15383,7 +15383,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "Choose an intention.",
+          "value": "Select an unnecessary craving to release; this does not suppress genuine hunger.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -17488,7 +17488,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-005.closer/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "Remember, from this moment forward,\nyou will recognize your body's genuine\nneed for nourishment and remain in control\nof your eating decisions.\n\nWhenever you wish to release an unnecessary\ncraving or desire for food, simply pause.\n\nInhale and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Appetite Choice exercise.",
+          "value": "Remember, from this moment forward,\nyou will recognize your body's genuine\nneed for nourishment and remain in control\nof your eating decisions.\n\nWhenever you wish to release an unnecessary\ncraving or desire for food, simply pause.\n\nInhale and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Appetite Choice exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-005.closer/text"
         },
         "/entries/hplus.function.ocf-bod-005.closer/version": {
@@ -17513,7 +17513,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-005.function-body/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "From this moment forward, you will have greater\ncontrol over your appetite and your desire for food.\n\nYou will recognize the difference between your body's\ngenuine need for nourishment and the passing desire\nto eat out of habit, boredom, or impulse.\n\nYour mind and body will work together in harmony,\nhelping you make clear, confident decisions\nabout when and what you choose to eat.\n\nWhen your body needs nourishment, you will recognize\nthat need clearly and respond appropriately.\n\nWhen a temporary craving arises and you consciously\nchoose not to eat, you will remain calm,\ncomfortable, and in complete control of your decision.\n\nFrom this moment forward, this awareness\nwill become a natural and automatic part\nof your everyday life.\n\nYou will find it easier to recognize when you\nhave eaten enough, to enjoy the food you choose,\nand to stop eating when you are comfortably satisfied.\n\nYour choices will become clearer,\nyour habits more intentional,\nand your confidence stronger.\n\nWhenever you wish to release a passing craving\nor an unnecessary desire for food,\nyou can do so quickly and easily.\n\nSimply pause and bring your awareness\nto the desire you wish to release.\n\nTake a comfortable breath in\nand gently hold it.\n\nWhile holding your breath, silently\nsay to yourself, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth,\nas though gently blowing out a candle.\n\nAs you exhale, the unnecessary desire to eat\nwill become less and less important to you.\n\nYour thoughts will become calm and clear.\n\nYou will feel satisfied with your decision\nand free to direct your attention\ntoward whatever you choose.\n\nFood will no longer demand your attention\nsimply because it is present,\nbecause you see it, or because you smell it.\n\nYou will remain free to enjoy food\nwhen you consciously choose to eat.\n\nYour body will continue to communicate\nits genuine needs clearly and naturally.\n\nYou will respond to those needs with confidence,\nmaintaining the nourishment and balance\nyour body requires.\n\nNow know that this pattern of conscious choice\nis becoming firmly established within you.\n\nFrom this moment forward, your ability\nto recognize unnecessary cravings\nand release them will operate automatically.\n\nYour mind will naturally pause before\nhabitual or impulsive eating,\nallowing you to make a clear decision.\n\nYou will feel comfortable and confident\nchoosing when to eat and when to wait.\n\nEach time you use {{ cue.primary }},\nyour ability to release unnecessary cravings\nbecomes easier, smoother, and more effective.\n\nRemember, your appetite is something\nyou can understand and consciously direct.\n\nYou will recognize your body's needs,\nmake your decisions clearly,\nand remain in control of your choices.\n\nThis lasting pattern of awareness,\nsatisfaction, and self-control\nwill continue strengthening every day.",
+          "value": "From this moment forward, you will have greater\ncontrol over your appetite and your desire for food.\n\nYou will recognize the difference between your body's\ngenuine need for nourishment and the passing desire\nto eat out of habit, boredom, or impulse.\n\nYour mind and body will work together in harmony,\nhelping you make clear, confident decisions\nabout when and what you choose to eat.\n\nWhen your body needs nourishment, you will recognize\nthat need clearly and respond appropriately.\n\nWhen a temporary craving arises and you consciously\nchoose not to eat, you will remain calm,\ncomfortable, and in complete control of your decision.\n\nFrom this moment forward, this awareness\nwill become a natural and automatic part\nof your everyday life.\n\nYou will find it easier to recognize when you\nhave eaten enough, to enjoy the food you choose,\nand to stop eating when you are comfortably satisfied.\n\nYour choices will become clearer,\nyour habits more intentional,\nand your confidence stronger.\n\nWhenever you wish to release a passing craving\nor an unnecessary desire for food,\nyou can do so quickly and easily.\n\nSimply pause and bring your awareness\nto the desire you wish to release.\n\nTake a comfortable breath in\nand gently hold it.\n\nWhile holding your breath, silently\nsay to yourself, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nAs you exhale, the unnecessary desire to eat\nwill become less and less important to you.\n\nYour thoughts will become calm and clear.\n\nYou will feel satisfied with your decision\nand free to direct your attention\ntoward whatever you choose.\n\nFood will no longer demand your attention\nsimply because it is present,\nbecause you see it, or because you smell it.\n\nYou will remain free to enjoy food\nwhen you consciously choose to eat.\n\nYour body will continue to communicate\nits genuine needs clearly and naturally.\n\nYou will respond to those needs with confidence,\nmaintaining the nourishment and balance\nyour body requires.\n\nNow know that this pattern of conscious choice\nis becoming firmly established within you.\n\nFrom this moment forward, your ability\nto recognize unnecessary cravings\nand release them will operate automatically.\n\nYour mind will naturally pause before\nhabitual or impulsive eating,\nallowing you to make a clear decision.\n\nYou will feel comfortable and confident\nchoosing when to eat and when to wait.\n\nEach time you use {{ cue.primary }},\nyour ability to release unnecessary cravings\nbecomes easier, smoother, and more effective.\n\nRemember, your appetite is something\nyou can understand and consciously direct.\n\nYou will recognize your body's needs,\nmake your decisions clearly,\nand remain in control of your choices.\n\nThis lasting pattern of awareness,\nsatisfaction, and self-control\nwill continue strengthening every day.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-005.function-body/text"
         },
         "/entries/hplus.function.ocf-bod-005.function-body/version": {
@@ -67866,7 +67866,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-006.function-body/text": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "From this moment forward, your ability to remember\nand recall information and experiences is becoming\nstronger, clearer, and more effective.\n\nYour mind naturally organizes and preserves your memories,\nkeeping the knowledge and experiences of your life\navailable whenever you wish to remember them.\n\nWhenever you desire to recall something,\nbegin by focusing on the information\nor experience you wish to remember.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThe memory you seek will immediately come into\nyour conscious awareness, clear, vivid, and complete.\n\nYou will remember the details of the experience,\nincluding the images, words, sounds, feelings,\nand sensations associated with it.\n\nThe information will return naturally and effortlessly,\nallowing you to recognize and understand\nwhat you remember.\n\nFrom this moment forward, this ability to recall\ninformation and experiences is permanently\nestablished within you.\n\nWhenever you use {{ cue.primary }}, your mind will bring\nthe desired information into your awareness\nquickly, clearly, and in great detail.\n\nEach time you use this function, recalling\ninformation becomes easier, faster,\nand more effective.\n\nYour memories remain available to you,\nready to return to your conscious awareness\nwhenever you desire.",
+          "value": "From this moment forward, your ability to remember\nand recall information and experiences is becoming\nstronger, clearer, and more effective.\n\nYour mind naturally organizes and preserves your memories,\nkeeping the knowledge and experiences of your life\navailable whenever you wish to remember them.\n\nWhenever you desire to recall something,\nbegin by focusing on the information\nor experience you wish to remember.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe memory you seek will immediately come into\nyour conscious awareness, clear, vivid, and complete.\n\nYou will remember the details of the experience,\nincluding the images, words, sounds, feelings,\nand sensations associated with it.\n\nThe information will return naturally and effortlessly,\nallowing you to recognize and understand\nwhat you remember.\n\nFrom this moment forward, this ability to recall\ninformation and experiences is permanently\nestablished within you.\n\nWhenever you use {{ cue.primary }}, your mind will bring\nthe desired information into your awareness\nquickly, clearly, and in great detail.\n\nEach time you use this function, recalling\ninformation becomes easier, faster,\nand more effective.\n\nYour memories remain available to you,\nready to return to your conscious awareness\nwhenever you desire.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-006.function-body/text"
         },
         "/entries/hplus.function.ocf-cog-006.function-body/version": {
@@ -82876,7 +82876,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-001.closer/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "Remember, whenever you wish to release\nan unwanted or interfering emotion,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Let Go exercise.",
+          "value": "Remember, whenever you wish to release\nan unwanted or interfering emotion,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Let Go exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-001.closer/text"
         },
         "/entries/hplus.function.ocf-emo-001.closer/version": {
@@ -82901,7 +82901,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-001.function-body/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "From this moment forward, you have the ability\nto release any unwanted or interfering emotion\nwhenever you choose.\n\nYour mind and body are becoming more balanced,\nallowing you to experience your emotions\nwithout being controlled by them.\n\nWhenever an emotion begins to interfere\nwith your peace, clarity, or actions,\nsimply recognize the feeling\nyou wish to release.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nAs you exhale, the unwanted emotion\nwill flow out of you with your breath,\nmoving farther and farther away.\n\nIts intensity will immediately diminish,\nfading until it no longer troubles you\nor interferes with your thoughts and actions.\n\nYour body will relax,\nreleasing unnecessary tension,\nwhile your mind remains bright,\nclear, calm, and fully alert.\n\nYou will retain any understanding\nor useful lessons from the experience,\nwhile releasing the emotional disturbance\nthat no longer serves you.\n\nYour natural ability to feel,\nunderstand, and express emotions\nremains clear and complete.\n\nFrom this moment forward, this ability\nto consciously release interfering emotions\nis permanently established within you.\n\nYour mind and body will naturally\nreturn to emotional balance\nmore quickly and easily.\n\nWhenever you use {{ cue.primary }},\nthe chosen emotion will release\nsmoothly and completely,\nleaving you calm, confident,\nand in control of your response.\n\nEach time you use this function,\nletting go becomes easier,\nfaster, and more effective.\n\nYou are free to experience your emotions\nwhile choosing which feelings\nyou wish to release and which to retain.",
+          "value": "From this moment forward, you have the ability\nto release any unwanted or interfering emotion\nwhenever you choose.\n\nYour mind and body are becoming more balanced,\nallowing you to experience your emotions\nwithout being controlled by them.\n\nWhenever an emotion begins to interfere\nwith your peace, clarity, or actions,\nsimply recognize the feeling\nyou wish to release.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nAs you exhale, the unwanted emotion\nwill flow out of you with your breath,\nmoving farther and farther away.\n\nIts intensity will immediately diminish,\nfading until it no longer troubles you\nor interferes with your thoughts and actions.\n\nYour body will relax,\nreleasing unnecessary tension,\nwhile your mind remains bright,\nclear, calm, and fully alert.\n\nYou will retain any understanding\nor useful lessons from the experience,\nwhile releasing the emotional disturbance\nthat no longer serves you.\n\nYour natural ability to feel,\nunderstand, and express emotions\nremains clear and complete.\n\nFrom this moment forward, this ability\nto consciously release interfering emotions\nis permanently established within you.\n\nYour mind and body will naturally\nreturn to emotional balance\nmore quickly and easily.\n\nWhenever you use {{ cue.primary }},\nthe chosen emotion will release\nsmoothly and completely,\nleaving you calm, confident,\nand in control of your response.\n\nEach time you use this function,\nletting go becomes easier,\nfaster, and more effective.\n\nYou are free to experience your emotions\nwhile choosing which feelings\nyou wish to release and which to retain.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-001.function-body/text"
         },
         "/entries/hplus.function.ocf-emo-001.function-body/version": {
@@ -86500,10 +86500,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps": {
+        "/activation/control/procedure/before_steps/0/id": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": [],
-          "yaml_pointer": "/activation/control/procedure/before_steps"
+          "value": "select-being",
+          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
+        },
+        "/activation/control/procedure/before_steps/0/operation": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "select-intention",
+          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
@@ -86512,7 +86517,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/procedure/ref": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "OCF-PROC-INHALE-HOLD",
+          "value": "OCF-PROC-THINK-COMMAND",
           "yaml_pointer": "/activation/control/procedure/ref"
         },
         "/activation/control/procedure/status": {
@@ -86567,7 +86572,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "inhale",
+          "value": "select-being",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -86577,7 +86582,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Inhale.",
+          "value": "Select the being you wish to empathize with.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -86587,12 +86592,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "inhale",
+          "value": "select-intention",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -86602,7 +86607,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -86612,58 +86617,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "hold-breath",
-          "yaml_pointer": "/activation/procedure_steps/1/operation"
-        },
-        "/activation/procedure_steps/2/id": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "command",
-          "yaml_pointer": "/activation/procedure_steps/2/id"
-        },
-        "/activation/procedure_steps/2/instruction/status": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/status"
-        },
-        "/activation/procedure_steps/2/instruction/text": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Think or say the command.",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
-        },
-        "/activation/procedure_steps/2/instruction/version": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/version"
-        },
-        "/activation/procedure_steps/2/operation": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/activation/procedure_steps/2/operation"
-        },
-        "/activation/procedure_steps/3/id": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/3/id"
-        },
-        "/activation/procedure_steps/3/instruction/status": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/3/instruction/status"
-        },
-        "/activation/procedure_steps/3/instruction/text": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
-        },
-        "/activation/procedure_steps/3/instruction/version": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/3/instruction/version"
-        },
-        "/activation/procedure_steps/3/operation": {
-          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/3/operation"
+          "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
@@ -89062,12 +89017,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-003.closer/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Remember, whenever you wish to understand\nanother being through your senses and total self,\nbring that being clearly into your awareness.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Empathize exercise.",
+          "value": "Remember, whenever you wish to understand\nanother being through your senses and total self,\nbring that being clearly into your awareness.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThis concludes your OCF Empathize exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.closer/text"
         },
         "/entries/hplus.function.ocf-emo-003.closer/version": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "1.2.1",
+          "value": "1.3.0",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.closer/version"
         },
         "/entries/hplus.function.ocf-emo-003.function-body/cue_template/allowed/0": {
@@ -89087,12 +89042,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-003.function-body/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "From this moment forward, your ability to perceive\nand understand another being is becoming deeper,\nclearer, and more complete.\n\nYou are connected to the greater whole of life.\nYour conscious mind, subconscious mind,\nand higher self work together as your total self,\nopening every available way of knowing.\n\nWhenever you desire to understand another being,\nbring that being clearly into your awareness.\nRelax your body, quiet your own expectations,\nand become calm, open, and receptive.\n\nThrough your physical senses, you recognize\nexpression, movement, voice, and subtle changes.\nBeyond those senses, you remain open to intuition,\nemotional impressions, images, feelings,\nand direct, wordless understanding.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nYour total self will now bring together\nevery form of information available to you,\nrevealing a clearer understanding of the\nother being's feelings, needs, intentions,\nand state of being.\n\nCommunication will become possible beyond words:\nfeeling to feeling, awareness to awareness,\nand thought to thought.\n\nWhether you are physically present or exploring\nin an out-of-body state, your greater awareness\nwill remain open to subtle and nonphysical\nimpressions and communication.\n\nYour higher self will help you recognize\nthe connection between yourself, the other being,\nand the greater consciousness of which all are part.\n\nUnderstanding will arrive in the form most natural\nto you: a clear feeling, an image, a thought,\na sensation, or immediate inner knowing.\n\nYou will remain centered in your own awareness,\nunderstanding without imposing your desires\nor losing your sense of self.\n\nFrom this moment forward, this ability\nis permanently available whenever you choose\nto open yourself to deeper understanding.\n\nThe more you use {{ cue.primary }},\nthe easier, clearer, and more effective\nthis communion and understanding will become.",
+          "value": "From this moment forward, your ability to perceive\nand understand another being is becoming deeper,\nclearer, and more complete.\n\nYou are connected to the greater whole of life.\nYour conscious mind, subconscious mind,\nand higher self work together as your total self,\nopening every available way of knowing.\n\nWhenever you desire to understand another being,\nbring that being clearly into your awareness.\nRelax your body, quiet your own expectations,\nand become calm, open, and receptive.\n\nThrough your physical senses, you recognize\nexpression, movement, voice, and subtle changes.\nBeyond those senses, you remain open to intuition,\nemotional impressions, images, feelings,\nand direct, wordless understanding.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nYour total self will now bring together\nevery form of information available to you,\nrevealing a clearer understanding of the\nother being's feelings, needs, intentions,\nand state of being.\n\nCommunication will become possible beyond words:\nfeeling to feeling, awareness to awareness,\nand thought to thought.\n\nWhether you are physically present or exploring\nin an out-of-body state, your greater awareness\nwill remain open to subtle and nonphysical\nimpressions and communication.\n\nYour higher self will help you recognize\nthe connection between yourself, the other being,\nand the greater consciousness of which all are part.\n\nUnderstanding will arrive in the form most natural\nto you: a clear feeling, an image, a thought,\na sensation, or immediate inner knowing.\n\nYou will remain centered in your own awareness,\nunderstanding without imposing your desires\nor losing your sense of self.\n\nFrom this moment forward, this ability\nis permanently available whenever you choose\nto open yourself to deeper understanding.\n\nThe more you use {{ cue.primary }},\nthe easier, clearer, and more effective\nthis communion and understanding will become.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.function-body/text"
         },
         "/entries/hplus.function.ocf-emo-003.function-body/version": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "1.2.1",
+          "value": "1.3.0",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.function-body/version"
         },
         "/entries/hplus.function.ocf-emo-003.opener/status": {
@@ -89162,7 +89117,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "6b268551e92f44ac52c23148a1dc0e1e3251da6691498658443eeccc6e470ade",
+          "value": "1998ab0888bd1e79c1f016a75a916a3da60b46a86563e3a26a989ebdd4cb4e9a",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -89865,7 +89820,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "Choose an intention.",
+          "value": "Choose the outcome you wish to manifest and its desired completion time.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -93103,7 +93058,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/activation/control/effect_scope_ref"
         },
         "/activation/control/phrase_ref/source": {
@@ -96036,6 +95991,31 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/application/activation": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/scopes/application/activation"
+        },
+        "/lifecycle/scopes/application/description_key": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+          "yaml_pointer": "/lifecycle/scopes/application/description_key"
+        },
+        "/lifecycle/scopes/application/persistence": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "temporary",
+          "yaml_pointer": "/lifecycle/scopes/application/persistence"
+        },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "functions.ocf-exp-002.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
           "value": [],
@@ -96048,13 +96028,43 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "1f6416954dafcbb4456ec7383a85b19540bc244397e078a20f420c39cfbd89a6",
+          "value": "c20247ae8a458071ef973ffee629f5534ae2ec4f27cf529d106b1fa31a4b9581",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/status": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/text": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/version": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/status": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "The ability to apply adaptive physical, environmental, emotional, and energetic insulation remains available for future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/version": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
@@ -96598,7 +96608,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/secondary_commands/0/control/effect_scope_ref"
         },
         "/secondary_commands/0/control/phrase_ref/command_id": {
@@ -96923,7 +96933,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/2/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/secondary_commands/2/control/effect_scope_ref"
         },
         "/secondary_commands/2/control/phrase_ref/phrase_id": {
@@ -98304,33 +98314,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/procedure/override_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/activation/control/procedure/override_steps/0/id"
         },
         "/activation/control/procedure/override_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/activation/control/procedure/override_steps/0/operation"
-        },
-        "/activation/control/procedure/override_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/activation/control/procedure/override_steps/1/id"
-        },
-        "/activation/control/procedure/override_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/activation/control/procedure/override_steps/1/operation"
-        },
-        "/activation/control/procedure/override_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/activation/control/procedure/override_steps/2/id"
-        },
-        "/activation/control/procedure/override_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/control/procedure/override_steps/2/operation"
+          "yaml_pointer": "/activation/control/procedure/override_steps/0/operation"
         },
         "/activation/control/procedure/status": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -98364,7 +98354,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -98374,7 +98364,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Inhale.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -98384,58 +98374,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/activation/procedure_steps/0/operation"
-        },
-        "/activation/procedure_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/activation/procedure_steps/1/id"
-        },
-        "/activation/procedure_steps/1/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/1/instruction/status"
-        },
-        "/activation/procedure_steps/1/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Think or say the command.",
-          "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
-        },
-        "/activation/procedure_steps/1/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/1/instruction/version"
-        },
-        "/activation/procedure_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/activation/procedure_steps/1/operation"
-        },
-        "/activation/procedure_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/activation/procedure_steps/2/id"
-        },
-        "/activation/procedure_steps/2/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/status"
-        },
-        "/activation/procedure_steps/2/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
-        },
-        "/activation/procedure_steps/2/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/2/instruction/version"
-        },
-        "/activation/procedure_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/2/operation"
+          "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -98619,7 +98559,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.closer/notes": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "New OCF-authored reminder, not historical transcript wording. Includes the primary reinforcement/restoration cue and both distinct overrides. The body teaches automatic reset conditions; the closer does not repeat reinforcement or install a new control command. All three commands use an easy inhale and natural exhale, without a breath hold. Requires registered function and reviewed locale cues. Editorial approval and finished-session review remain pending.",
+          "value": "New OCF-authored reminder, not historical transcript wording. Includes the primary reinforcement/restoration cue and both distinct overrides. The body teaches automatic reset conditions; the closer does not repeat reinforcement or install a new control command. All three commands are breath-independent. Requires registered function and reviewed locale cues. Editorial approval and finished-session review remain pending.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.closer/notes"
         },
         "/entries/hplus.function.ocf-exp-005.closer/status": {
@@ -98629,12 +98569,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.closer/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Remember, to strengthen or restore {{ function.title }},\ninhale easily, think or say in your mind, \"{{ cue.primary }},\"\nand exhale naturally.\n\nWith the same breath, use \"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}\"\nto allow intentional contact,\nor \"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}\" to pause the entire function.\n\nThis concludes your OCF exercise.",
+          "value": "Remember, to strengthen or restore {{ function.title }},\nthink or say in your mind, \"{{ cue.primary }}.\"\n\nUse \"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}\"\nto allow intentional contact,\nor \"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}\" to pause the entire function.\n\nThis concludes your OCF exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.closer/text"
         },
         "/entries/hplus.function.ocf-exp-005.closer/version": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.closer/version"
         },
         "/entries/hplus.function.ocf-exp-005.function-body/cue_template/allowed/0": {
@@ -98664,7 +98604,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.function-body/notes": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "New OCF wording based on the maintainer-supplied Clear Zone draft. Preserves permanent automatic operation as the intended baseline, whole-self participation, non-destructive insect discouragement, primary reinforcement and restoration, and distinct Observe and Suspend overrides. Observe pauses the outward-directed intention while Clear Zone's calm awareness remains; Suspend pauses the whole application without removing learning or ordinary bodily responses. Only one mode is selected at a time; a new selection replaces the previous mode. Normal sleep onset, loss of consciousness, or deliberate primary invocation restores automatic mode. Meditation or hearing a command during instruction does not itself select an override. Natural exhalation completes the supplied inhale-and-command procedure; no breath hold or eye closure is added. Quantum terminology is replaced with total-self and intention language rather than a claimed physical mechanism. Primary and mode cues require separate stable command records; the two mode references use explicit same-owner command IDs. One reusable body is intended for four scheduled passes. Shared state transitions and practice pauses remain outside this body. Intended effects and automatic operation are exercise suggestions, not verified insect repellency. Editorial and integration review remain pending.",
+          "value": "New OCF wording based on the maintainer-supplied Clear Zone draft. Preserves permanent automatic operation as the intended baseline, whole-self participation, non-destructive insect discouragement, primary reinforcement and restoration, and distinct Observe and Suspend overrides. Observe pauses the outward-directed intention while Clear Zone's calm awareness remains; Suspend pauses the whole application without removing learning or ordinary bodily responses. Only one mode is selected at a time; a new selection replaces the previous mode. Normal sleep onset, loss of consciousness, or deliberate primary invocation restores automatic mode. Meditation or hearing a command during instruction does not itself select an override. All three commands are breath-independent and require no eye closure. Quantum terminology is replaced with total-self and intention language rather than a claimed physical mechanism. Primary and mode cues require separate stable command records; the two mode references use explicit same-owner command IDs. One reusable body is intended for four scheduled passes. Shared state transitions and practice pauses remain outside this body. Intended effects and automatic operation are exercise suggestions, not verified insect repellency. Editorial and integration review remain pending.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.function-body/notes"
         },
         "/entries/hplus.function.ocf-exp-005.function-body/status": {
@@ -98674,12 +98614,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.function-body/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "From this moment forward, {{ function.title }} is permanently\nestablished within your total self,\noperating automatically whenever needed.\n\nBecome aware of your body and the space around it.\nPicture, feel, or simply know this space as calm and clear.\n\nWhen unwanted insects or similar small pests approach\nor make contact, your total self carries one steady intention:\nremain away, move away, and continue peacefully elsewhere.\nThis intention extends around your whole body,\nwelcoming undisturbed space without harm to other life.\n\nYour conscious mind, subconscious awareness, physical being,\nand higher self work together around this purpose.\nYour calm attention and natural actions cooperate with it,\nwithout constant effort or repeated checking.\n\nWhenever you wish to strengthen this pattern\nor restore its automatic operation, inhale easily.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen let your breath flow out naturally.\nYour total self renews this intention as one.\n\nFor deliberate observation or interaction with insects,\nuse the same breath and think or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\nThe outward encouragement pauses,\nwhile your calm awareness remains active.\n\nTo pause the entire function, use the same breath\nand think or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\nAll activity of this function pauses.\nYour ordinary awareness and natural responses remain intact.\n\nEach chosen mode replaces the previous one.\nBoth overrides are temporary.\nWhen you next enter normal sleep or become unconscious,\neither override ends and automatic operation resumes.\nDeliberately using the primary command restores it sooner.\n\nYour learned ability remains with you in every mode.\nThe more you use this function,\nthe more naturally your attention, intention,\nand total self work together.",
+          "value": "From this moment forward, {{ function.title }} is permanently\nestablished within your total self,\noperating automatically whenever needed.\n\nBecome aware of your body and the space around it.\nPicture, feel, or simply know this space as calm and clear.\n\nWhen unwanted insects or similar small pests approach\nor make contact, your total self carries one steady intention:\nremain away, move away, and continue peacefully elsewhere.\nThis intention extends around your whole body,\nwelcoming undisturbed space without harm to other life.\n\nYour conscious mind, subconscious awareness, physical being,\nand higher self work together around this purpose.\nYour calm attention and natural actions cooperate with it,\nwithout constant effort or repeated checking.\n\nWhenever you wish to strengthen this pattern\nor restore its automatic operation,\nThink or say in your mind, \"{{ cue.primary }}.\"\nYour total self renews this intention as one.\n\nFor deliberate observation or interaction with insects,\nthink or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\nThe outward encouragement pauses,\nwhile your calm awareness remains active.\n\nTo pause the entire function, think or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\nAll activity of this function pauses.\nYour ordinary awareness and natural responses remain intact.\n\nEach chosen mode replaces the previous one.\nBoth overrides are temporary.\nWhen you next enter normal sleep or become unconscious,\neither override ends and automatic operation resumes.\nDeliberately using the primary command restores it sooner.\n\nYour learned ability remains with you in every mode.\nThe more you use this function,\nthe more naturally your attention, intention,\nand total self work together.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-005.function-body/version": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.function-body/version"
         },
         "/entries/hplus.function.ocf-exp-005.opener/cue_template/allowed/0": {
@@ -98834,7 +98774,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "8ebfbbf4053a38a80e4070e20b8207c57a0b7ae400aca817436e1e0b63611c90",
+          "value": "9ab9558a1b7fabc06eef76f647ad6fb3118d06fb7a536211f767327407fe6704",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -99249,33 +99189,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/control/procedure/override_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/id"
         },
         "/secondary_commands/0/control/procedure/override_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/operation"
-        },
-        "/secondary_commands/0/control/procedure/override_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/1/id"
-        },
-        "/secondary_commands/0/control/procedure/override_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/1/operation"
-        },
-        "/secondary_commands/0/control/procedure/override_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/2/id"
-        },
-        "/secondary_commands/0/control/procedure/override_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/2/operation"
+          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/operation"
         },
         "/secondary_commands/0/control/procedure/status": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -99309,7 +99229,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/secondary_commands/0/procedure_steps/0/id"
         },
         "/secondary_commands/0/procedure_steps/0/instruction/status": {
@@ -99319,7 +99239,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Inhale.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/text"
         },
         "/secondary_commands/0/procedure_steps/0/instruction/version": {
@@ -99329,58 +99249,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/operation"
-        },
-        "/secondary_commands/0/procedure_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/1/id"
-        },
-        "/secondary_commands/0/procedure_steps/1/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/1/instruction/status"
-        },
-        "/secondary_commands/0/procedure_steps/1/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Think or say the command.",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/1/instruction/text"
-        },
-        "/secondary_commands/0/procedure_steps/1/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/1/instruction/version"
-        },
-        "/secondary_commands/0/procedure_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/1/operation"
-        },
-        "/secondary_commands/0/procedure_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/2/id"
-        },
-        "/secondary_commands/0/procedure_steps/2/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/2/instruction/status"
-        },
-        "/secondary_commands/0/procedure_steps/2/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/2/instruction/text"
-        },
-        "/secondary_commands/0/procedure_steps/2/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/2/instruction/version"
-        },
-        "/secondary_commands/0/procedure_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/0/procedure_steps/2/operation"
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/operation"
         },
         "/secondary_commands/0/role": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -99439,33 +99309,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/1/control/procedure/override_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/0/id"
         },
         "/secondary_commands/1/control/procedure/override_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/0/operation"
-        },
-        "/secondary_commands/1/control/procedure/override_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/1/id"
-        },
-        "/secondary_commands/1/control/procedure/override_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/1/operation"
-        },
-        "/secondary_commands/1/control/procedure/override_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/2/id"
-        },
-        "/secondary_commands/1/control/procedure/override_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/2/operation"
+          "yaml_pointer": "/secondary_commands/1/control/procedure/override_steps/0/operation"
         },
         "/secondary_commands/1/control/procedure/status": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -99499,7 +99349,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/1/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale-easily",
+          "value": "think-or-say-in-mind",
           "yaml_pointer": "/secondary_commands/1/procedure_steps/0/id"
         },
         "/secondary_commands/1/procedure_steps/0/instruction/status": {
@@ -99509,7 +99359,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/1/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Inhale.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/secondary_commands/1/procedure_steps/0/instruction/text"
         },
         "/secondary_commands/1/procedure_steps/0/instruction/version": {
@@ -99519,58 +99369,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/1/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/operation"
-        },
-        "/secondary_commands/1/procedure_steps/1/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "think-or-say-in-mind",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/id"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Think or say the command.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/1/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
           "value": "think-or-say-command",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/operation"
-        },
-        "/secondary_commands/1/procedure_steps/2/id": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale-naturally",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/id"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/2/operation": {
-          "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/operation"
+          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/operation"
         },
         "/secondary_commands/1/role": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
@@ -103331,20 +103131,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "select-attention-target",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
@@ -103408,7 +103198,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "select-attention-target",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -103418,7 +103208,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -103428,12 +103218,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -103443,7 +103233,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -103453,12 +103243,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -103468,7 +103258,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -103478,12 +103268,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -103493,7 +103283,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -103503,33 +103293,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
@@ -105623,7 +105388,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-002.closer/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Remember, whenever you wish to focus your attention\ncompletely, choose what you desire to concentrate on.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Focus exercise.",
+          "value": "Remember, whenever you wish to focus your attention\ncompletely.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Focus exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-002.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-002.closer/version": {
@@ -105648,7 +105413,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-002.function-body/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "From this moment forward, your ability to direct\nand sustain your attention is becoming stronger,\nclearer, and more effective.\n\nWhenever you wish to focus completely,\nchoose the activity, thought, or experience\nto which you desire to give your attention.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nYour mind, body, and senses will immediately\nbring their attention together, directing\nyour awareness toward the purpose you have chosen.\n\nYour concentration will become clear,\nsteady, and unwavering.\n\nUnnecessary distractions will fade away,\nand your attention will remain naturally\ncentered on what matters to you.\n\nYou will perceive important details clearly,\nunderstanding what you see, hear, feel,\nand experience with greater awareness.\n\nThe information you attend to will become\nvivid and distinct in your memory,\nready for clear and accurate recall.\n\nYou will remain bright, alert, calm,\nconfident, and completely at ease.\n\nFrom this moment forward, this ability\nto focus your attention is permanently\navailable to you whenever you desire.\n\nOnce you select your focus, your mind\nwill maintain it smoothly and naturally,\nwithout unnecessary strain or effort.\n\nYou remain in complete control,\nable to direct or shift your attention\nwhenever you choose.\n\nEach time you use {{ cue.primary }},\nconcentration becomes easier, stronger,\nand more effective.\n\nYour natural ability to focus will continue\nimproving through every experience,\nbecoming an effortless part of your daily life.",
+          "value": "From this moment forward, your ability to direct\nand sustain your attention is becoming stronger,\nclearer, and more effective.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour mind, body, and senses will immediately\nbring their attention together.\n\nYour concentration will become clear,\nsteady, and unwavering.\n\nUnnecessary distractions will fade away,\nand your attention will remain naturally\ncentered on what matters to you.\n\nYou will perceive important details clearly,\nunderstanding what you see, hear, feel,\nand experience with greater awareness.\n\nThe information you attend to will become\nvivid and distinct in your memory,\nready for clear and accurate recall.\n\nYou will remain bright, alert, calm,\nconfident, and completely at ease.\n\nFrom this moment forward, this ability\nto focus your attention is permanently\navailable to you whenever you desire.\n\nYou remain in complete control,\nable to direct or shift your attention\nwhenever you choose.\n\nEach time you use {{ cue.primary }},\nconcentration becomes easier, stronger,\nand more effective.\n\nYour natural ability to focus will continue\nimproving through every experience,\nbecoming an effortless part of your daily life.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-002.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-002.function-body/version": {
@@ -105723,7 +105488,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "e2b861a6a31850730be4dcb8143033e09db713de217252c191895433183f7dab",
+          "value": "16f543c8c672dea68be5de602ea307116b4331a5e92fc29d285baea3ec89d702",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -106514,20 +106279,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "select-rest-period",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
@@ -106581,7 +106336,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "select-rest-period",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -106591,7 +106346,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -106601,12 +106356,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -106616,7 +106371,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -106626,12 +106381,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -106641,7 +106396,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -106651,12 +106406,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -106666,7 +106421,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -106676,33 +106431,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
@@ -108846,7 +108576,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-003.closer/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Remember, whenever you wish to restore yourself\nthrough a short period of natural sleep,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Quick Recharge exercise.",
+          "value": "Remember, whenever you wish to restore yourself\nthrough a short period of natural sleep,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Quick Recharge exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-003.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-003.closer/version": {
@@ -108871,7 +108601,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-003.function-body/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "From this moment forward, you have the ability\nto recharge and restore yourself through\na short period of natural, restful sleep.\n\nWhenever you choose to take a brief rest,\nsettle comfortably and allow your body\nand mind to become quiet and relaxed.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nYou will move easily and quickly\ninto peaceful, natural sleep.\n\nAs you sleep, your total self will begin\na rapid process of balance, equalization,\nand restoration throughout your system.\n\nYour body will release unnecessary tension.\nYour mind will settle and become clear.\nYour natural energies will replenish,\nbringing renewed strength and vitality.\n\nEvery part of your being will work together,\nrestoring harmony and refreshing you\nin the short time you have chosen to rest.\n\nWithin minutes, as your brief sleep completes,\nyou will awaken naturally, calm and confident,\nwith a clear mind and renewed energy.\n\nYou will feel refreshed, alert, and ready\nto continue what you wish to do.\n\nFrom this moment forward, the ability\nto enter restorative short sleep\nis permanently available whenever you choose.\n\nYour normal wakefulness remains bright and clear,\nand this response begins when you deliberately\nchoose to use {{ cue.primary }}.\n\nEach time you use this function,\nfalling asleep briefly, restoring your energy,\nand awakening refreshed will become\neasier, smoother, and more effective.",
+          "value": "From this moment forward, you have the ability\nto recharge and restore yourself through\na short period of natural, restful sleep.\n\nWhenever you choose to take a brief rest,\nsettle comfortably and allow your body\nand mind to become quiet and relaxed.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYou will move easily and quickly\ninto peaceful, natural sleep.\n\nAs you sleep, your total self will begin\na rapid process of balance, equalization,\nand restoration throughout your system.\n\nYour body will release unnecessary tension.\nYour mind will settle and become clear.\nYour natural energies will replenish,\nbringing renewed strength and vitality.\n\nEvery part of your being will work together,\nrestoring harmony and refreshing you\nin the short time you have chosen to rest.\n\nWithin minutes, as your brief sleep completes,\nyou will awaken naturally, calm and confident,\nwith a clear mind and renewed energy.\n\nYou will feel refreshed, alert, and ready\nto continue what you wish to do.\n\nFrom this moment forward, the ability\nto enter restorative short sleep\nis permanently available whenever you choose.\n\nYour normal wakefulness remains bright and clear,\nand this response begins when you deliberately\nchoose to use {{ cue.primary }}.\n\nEach time you use this function,\nfalling asleep briefly, restoring your energy,\nand awakening refreshed will become\neasier, smoother, and more effective.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-003.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-003.function-body/version": {
@@ -108946,7 +108676,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "1d544e6a9e4af6eab724a5b27859e7e5e7e8b05badb60628f70ea1cc77c35244",
+          "value": "c3b352236c3f96448c479a37ec5a6dc207bc944eb7c66e308fcea04bd717e604",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -111889,7 +111619,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-004.closer/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "Remember, whenever you wish to relax\nyour body and mind, inhale deeply\nand hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Relax exercise.",
+          "value": "Remember, whenever you wish to relax\nyour body and mind, inhale deeply\nand hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Relax exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-004.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-004.closer/version": {
@@ -111914,7 +111644,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-004.function-body/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "From this moment forward, you have the ability\nto relax your entire body and mind deeply,\nnaturally, and whenever you desire.\n\nYour body knows how to release unnecessary\neffort, strain, and tension, returning\nto a comfortable state of balance.\n\nWhenever you wish to relax, inhale deeply\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nWith this breath, all unnecessary tension\nand stress will flow out of your body,\nleaving you comfortably relaxed.\n\nYour muscles will soften and release,\nfrom your face and shoulders to your hands,\nback, legs, and feet.\n\nYour breathing will become smooth and easy.\nYour nervous system will settle into\na calm, balanced rhythm throughout your body.\n\nYour thoughts will become quiet and clear.\nYour mind will remain serene and at ease,\nfree of unnecessary effort or distraction.\n\nYou can enter this peaceful state while resting\nor remain comfortably alert when you need\nto think, move, or act.\n\nFrom this moment forward, your ability\nto release tension is permanently available,\nand your body will return to balance\nmore naturally with each experience.\n\nWhenever you use {{ cue.primary }},\nrelaxation will flow through your total self,\ndeeper and more easily than before.\n\nEach time you use this function,\nbecoming calm, comfortable, and relaxed\nwill be easier, faster, and more effective.",
+          "value": "From this moment forward, you have the ability\nto relax your entire body and mind deeply,\nnaturally, and whenever you desire.\n\nYour body knows how to release unnecessary\neffort, strain, and tension, returning\nto a comfortable state of balance.\n\nWhenever you wish to relax, inhale deeply\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nWith this breath, all unnecessary tension\nand stress will flow out of your body,\nleaving you comfortably relaxed.\n\nYour muscles will soften and release,\nfrom your face and shoulders to your hands,\nback, legs, and feet.\n\nYour breathing will become smooth and easy.\nYour nervous system will settle into\na calm, balanced rhythm throughout your body.\n\nYour thoughts will become quiet and clear.\nYour mind will remain serene and at ease,\nfree of unnecessary effort or distraction.\n\nYou can enter this peaceful state while resting\nor remain comfortably alert when you need\nto think, move, or act.\n\nFrom this moment forward, your ability\nto release tension is permanently available,\nand your body will return to balance\nmore naturally with each experience.\n\nWhenever you use {{ cue.primary }},\nrelaxation will flow through your total self,\ndeeper and more easily than before.\n\nEach time you use this function,\nbecoming calm, comfortable, and relaxed\nwill be easier, faster, and more effective.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-004.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-004.function-body/version": {
@@ -115920,7 +115650,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Select one or more temporary applications to end.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -121353,7 +121083,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-lif-001.closer/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "Remember, whenever an unwanted physical\nor mental habit begins to arise, bring\nthat pattern clearly into your awareness.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Habit Freedom exercise.",
+          "value": "Remember, whenever an unwanted physical\nor mental habit begins to arise, bring\nthat pattern clearly into your awareness.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Habit Freedom exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-lif-001.closer/text"
         },
         "/entries/hplus.function.ocf-lif-001.closer/version": {
@@ -121378,7 +121108,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-lif-001.function-body/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "From this moment forward, you have the ability\nto eliminate any unwanted physical or mental\nhabit pattern that you choose to release.\n\nA habit is a pattern repeated until it begins\nto operate automatically. You can recognize\nsuch a pattern and change it at its source.\n\nWhenever the unwanted habit begins to arise,\nrecognize the particular pattern you wish\nto eliminate and bring it clearly into your mind.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThe unwanted pattern will immediately\nbegin to weaken throughout your entire system.\n\nIts familiar impulse will become smaller,\nquieter, and less compelling, until it\nno longer directs your thoughts or actions.\n\nYour conscious mind, subconscious mind,\nphysical body, and total self will release\nthe old pattern together, completely.\n\nEach time the pattern would once have occurred,\nyour freedom to choose will grow stronger.\nYour mind and body will respond naturally\nin the way you now desire.\n\nThe unwanted habit will continue fading\nuntil it is completely eliminated\nfrom your automatic responses.\n\nYour useful memories, knowledge, and skills\nwill remain intact, while the unwanted\npattern loses its place in your life.\n\nFrom this moment forward, this ability\nto change and eliminate unwanted habits\nis permanently available whenever you choose.\n\nThe more you use {{ cue.primary }},\nthe easier, faster, and more effective\nthis lasting change will become.",
+          "value": "From this moment forward, you have the ability\nto eliminate any unwanted physical or mental\nhabit pattern that you choose to release.\n\nA habit is a pattern repeated until it begins\nto operate automatically. You can recognize\nsuch a pattern and change it at its source.\n\nWhenever the unwanted habit begins to arise,\nrecognize the particular pattern you wish\nto eliminate and bring it clearly into your mind.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe unwanted pattern will immediately\nbegin to weaken throughout your entire system.\n\nIts familiar impulse will become smaller,\nquieter, and less compelling, until it\nno longer directs your thoughts or actions.\n\nYour conscious mind, subconscious mind,\nphysical body, and total self will release\nthe old pattern together, completely.\n\nEach time the pattern would once have occurred,\nyour freedom to choose will grow stronger.\nYour mind and body will respond naturally\nin the way you now desire.\n\nThe unwanted habit will continue fading\nuntil it is completely eliminated\nfrom your automatic responses.\n\nYour useful memories, knowledge, and skills\nwill remain intact, while the unwanted\npattern loses its place in your life.\n\nFrom this moment forward, this ability\nto change and eliminate unwanted habits\nis permanently available whenever you choose.\n\nThe more you use {{ cue.primary }},\nthe easier, faster, and more effective\nthis lasting change will become.",
           "yaml_pointer": "/entries/hplus.function.ocf-lif-001.function-body/text"
         },
         "/entries/hplus.function.ocf-lif-001.function-body/version": {
@@ -124757,20 +124487,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "select-quality",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
@@ -124824,7 +124544,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "select-quality",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -124834,7 +124554,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -124844,12 +124564,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -124859,7 +124579,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -124869,12 +124589,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -124884,7 +124604,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -124894,12 +124614,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -124909,7 +124629,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -124919,33 +124639,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
@@ -127054,7 +126749,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-002.closer/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Remember, whenever you wish to strengthen\nyour awareness and expression of your total self,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nThis concludes your OCF Inner Power exercise.",
+          "value": "Remember, whenever you wish to strengthen\nyour awareness and expression of your total self,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Inner Power exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-002.closer/text"
         },
         "/entries/hplus.function.ocf-prf-002.closer/version": {
@@ -127079,7 +126774,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-002.function-body/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Beginning now, and from this moment forward,\nyou will recognize more fully the greatness\nand power that are already within your total self.\n\nYour conscious mind, subconscious mind,\nhigher self, and entire being are united\nin the knowledge of your true inner strength.\n\nThis greatness is a natural part of who you are.\nYou will recognize it clearly, trust it completely,\nand express it calmly in your daily life.\n\nWhenever you encounter questions, challenges,\nor important moments, your total self will respond\nwith wisdom, clarity, strength, and assurance.\n\nYou will think and act smoothly, quickly,\nand effectively, drawing upon the full range\nof your abilities without strain or hesitation.\n\nYou will meet life's experiences with quiet happiness,\ncalm confidence, and the certainty that your\ninner resources are available whenever needed.\n\nEach day, your awareness of the strength,\nknowledge, and capability of your total self\nwill become clearer and more complete.\n\nThis knowing is permanently established within you,\ngrowing naturally through everything you experience.\n\nWhenever you wish to bring this awareness\neven more strongly into your life,\ninhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nas though gently blowing out a candle.\n\nYour awareness of your total self will immediately\nbecome stronger, clearer, and more complete.\nYou will feel and express your natural inner power\nwith calmness, confidence, and ease.\n\nThe more you use {{ cue.primary }},\nthe easier and more effective this recognition\nand expression of your total self will become.",
+          "value": "Beginning now, and from this moment forward,\nyou will recognize more fully the greatness\nand power that are already within your total self.\n\nYour conscious mind, subconscious mind,\nhigher self, and entire being are united\nin the knowledge of your true inner strength.\n\nThis greatness is a natural part of who you are.\nYou will recognize it clearly, trust it completely,\nand express it calmly in your daily life.\n\nWhenever you encounter questions, challenges,\nor important moments, your total self will respond\nwith wisdom, clarity, strength, and assurance.\n\nYou will think and act smoothly, quickly,\nand effectively, drawing upon the full range\nof your abilities without strain or hesitation.\n\nYou will meet life's experiences with quiet happiness,\ncalm confidence, and the certainty that your\ninner resources are available whenever needed.\n\nEach day, your awareness of the strength,\nknowledge, and capability of your total self\nwill become clearer and more complete.\n\nThis knowing is permanently established within you,\ngrowing naturally through everything you experience.\n\nWhenever you wish to bring this awareness\neven more strongly into your life,\ninhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour awareness of your total self will immediately\nbecome stronger, clearer, and more complete.\nYou will feel and express your natural inner power\nwith calmness, confidence, and ease.\n\nThe more you use {{ cue.primary }},\nthe easier and more effective this recognition\nand expression of your total self will become.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-002.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-002.function-body/version": {
@@ -127154,7 +126849,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "aa338494888eff346ca84c60ae880f31c6a72b96014fc925f3a7abd0587b26b9",
+          "value": "3baa96b86a986547dc45a0791eb993f5ec0034221d1595482e58bc8745b3d294",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -130938,20 +130633,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "select-movement-context",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
@@ -131005,7 +130690,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "select-movement-context",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -131015,7 +130700,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -131025,12 +130710,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -131040,7 +130725,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -131050,12 +130735,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -131065,7 +130750,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -131075,12 +130760,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -131090,7 +130775,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -131100,33 +130785,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
@@ -133635,7 +133295,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "f124f44697d726ae367d7a02c137e8d50dfd146c0728a7ac2378891201c7a1c0",
+          "value": "c14c9b31b1fa468678116b663480cb8db4155dc5bf63d0151cea294b9e51b90b",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -134433,7 +134093,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "Choose an intention.",
+          "value": "Choose the outcomes you intend for today.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -137491,7 +137151,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Choose an activity.",
+          "value": "Select the immediate action that is needed.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -137716,7 +137376,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/common_uses/1/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks.",
+          "value": "Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks.",
           "yaml_pointer": "/common_uses/1/text"
         },
         "/content/bindings/default_session_template": {
@@ -140161,13 +139821,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.closer/cue_template/allowed/0": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "cue.id.OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.closer/cue_template/allowed/0"
-        },
-        "/entries/hplus.function.ocf-prf-006.closer/cue_template/allowed/1": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "cue.primary",
-          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.closer/cue_template/allowed/1"
+          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.closer/cue_template/allowed/0"
         },
         "/entries/hplus.function.ocf-prf-006.closer/cue_template/function_id": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -140181,7 +139836,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.closer/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Remember, when an immediate need calls for extraordinary\nstrength and quickness, inhale deeply, hold your breath,\nand think or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nWhen the need has passed, bring Strong-Quick to mind,\ninhale, hold your breath, think or say \"{{ cue.id.OCF-CMD-PRF-006-RELEASE }},\"\nand exhale slowly through your mouth.\n\nThis concludes your OCF Strong-Quick exercise.",
+          "value": "Remember, when an immediate need calls for extraordinary\nstrength and quickness, inhale deeply, hold your breath,\nand think or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Strong-Quick exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-006.closer/text"
         },
         "/entries/hplus.function.ocf-prf-006.closer/version": {
@@ -140191,13 +139846,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.function-body/cue_template/allowed/0": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "cue.id.OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.function-body/cue_template/allowed/0"
-        },
-        "/entries/hplus.function.ocf-prf-006.function-body/cue_template/allowed/1": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "cue.primary",
-          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.function-body/cue_template/allowed/1"
+          "yaml_pointer": "/entries/hplus.function.ocf-prf-006.function-body/cue_template/allowed/0"
         },
         "/entries/hplus.function.ocf-prf-006.function-body/cue_template/function_id": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -140211,7 +139861,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.function-body/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "From this moment forward, within your total self\nthere is an exceptional reserve of strength and quickness,\nready to be called upon when an immediate need arises.\n\nYou will recognize the moment that calls for action.\nYour awareness will become clear and direct.\nYour mind and body will unite around what must be done.\n\nWhen you need this extraordinary response,\nbring the necessary action clearly into your awareness.\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nImmediately, your total self will respond as one.\nYour conscious mind, subconscious mind, nervous system,\nand muscles will work together in complete coordination.\n\nHesitation and unnecessary thought will fall away.\nYour movements will become direct, rapid, and precise.\nEvery part of your body needed for the action\nwill contribute its strength in perfect timing.\n\nYou will draw upon reserves of power and speed\nbeyond what you ordinarily recognize within yourself,\nconcentrating your entire capacity into the moment.\n\nYour awareness will remain clear.\nYour action will be decisive.\nThe strength and quickness you call upon\nwill be directed toward the immediate purpose.\n\nThis exceptional response is temporary,\narising when you deliberately call upon it.\nWhen its purpose is complete, bring Strong-Quick\nclearly into your awareness.\n\nInhale deeply, hold your breath,\nthink or say in your mind, \"{{ cue.id.OCF-CMD-PRF-006-RELEASE }},\"\nand exhale slowly through your mouth.\n\nThe present application will end,\nand your physical system will return smoothly to balance.\nYour learned ability will remain available\nwhenever another need arises.\n\nEach time you use this function,\nyour total self will recognize and respond\nto your intention more readily and effectively.",
+          "value": "From this moment forward, within your total self\nthere is an exceptional reserve of strength and quickness,\nready to be called upon when an immediate need arises.\n\nYou will recognize the moment that calls for action.\nYour awareness will become clear and direct.\nYour mind and body will unite around what must be done.\n\nWhen you need this extraordinary response,\nbring the necessary action clearly into your awareness.\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nImmediately, your total self will respond as one.\nYour conscious mind, subconscious mind, nervous system,\nand muscles will work together in complete coordination.\n\nHesitation and unnecessary thought will fall away.\nYour movements will become direct, rapid, and precise.\nEvery part of your body needed for the action\nwill contribute its strength in perfect timing.\n\nYou will draw upon reserves of power and speed\nbeyond what you ordinarily recognize within yourself,\nconcentrating your entire capacity into the moment.\n\nYour awareness will remain clear.\nYour action will be decisive.\nThe strength and quickness you call upon\nwill be directed toward the immediate purpose.\n\nThis exceptional response is temporary,\narising when you deliberately call upon it.\nYour learned ability will remain available\nwhenever another need arises.\n\nEach time you use this function,\nyour total self will recognize and respond\nto your intention more readily and effectively.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-006.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-006.function-body/version": {
@@ -140269,20 +139919,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": null,
           "yaml_pointer": "/lifecycle/release/command"
         },
-        "/lifecycle/release/command_id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/lifecycle/release/command_id"
-        },
         "/lifecycle/release/required": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
-        "/lifecycle/trigger_conditions": {
+        "/lifecycle/trigger_conditions/0": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": [],
-          "yaml_pointer": "/lifecycle/trigger_conditions"
+          "value": "The temporary enhanced response ends automatically when the immediate need passes.",
+          "yaml_pointer": "/lifecycle/trigger_conditions/0"
         },
         "/locale": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -140291,7 +139936,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "2b5ca4505c2bed851459f0d3d72d96c06af28f9f780492785eca35032719d1d4",
+          "value": "d0a83b0230a3a6c681e6bfdbb11efefaf40a51fe039b963e986f89e3f2c963af",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {
@@ -140379,26 +140024,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.",
           "yaml_pointer": "/record_metadata/claims/prohibited_claims/0"
         },
-        "/record_metadata/command_phrases/0/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/record_metadata/command_phrases/0/id"
-        },
-        "/record_metadata/command_phrases/0/phrase": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Plus Release",
-          "yaml_pointer": "/record_metadata/command_phrases/0/phrase"
-        },
-        "/record_metadata/command_phrases/0/source_narration_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "hplus.function.ocf-prf-006.function-body",
-          "yaml_pointer": "/record_metadata/command_phrases/0/source_narration_key"
-        },
-        "/record_metadata/command_phrases/0/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "observed",
-          "yaml_pointer": "/record_metadata/command_phrases/0/status"
-        },
         "/record_metadata/commands/0/id": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "OCF-CMD-PRF-006-PRIMARY",
@@ -140449,31 +140074,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "commands.ocf-cmd-prf-006-legacy-01.usage",
           "yaml_pointer": "/record_metadata/commands/1/localization/usage_key"
         },
-        "/record_metadata/commands/2/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/record_metadata/commands/2/id"
-        },
-        "/record_metadata/commands/2/localization/explanation_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "commands.ocf-cmd-prf-006-release.explanation",
-          "yaml_pointer": "/record_metadata/commands/2/localization/explanation_key"
-        },
-        "/record_metadata/commands/2/localization/label_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "commands.ocf-cmd-prf-006-release.label",
-          "yaml_pointer": "/record_metadata/commands/2/localization/label_key"
-        },
-        "/record_metadata/commands/2/localization/purpose_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "functions.ocf-prf-006.purpose",
-          "yaml_pointer": "/record_metadata/commands/2/localization/purpose_key"
-        },
-        "/record_metadata/commands/2/localization/usage_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "commands.ocf-cmd-prf-006-release.usage",
-          "yaml_pointer": "/record_metadata/commands/2/localization/usage_key"
-        },
         "/record_metadata/compatibility/legacy_commands/0": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "PLUS-STRONG-QUICK",
@@ -140503,6 +140103,26 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "functions.ocf-prf-006.title",
           "yaml_pointer": "/record_metadata/documentation/title_key"
+        },
+        "/record_metadata/historical_lookup/0/command_id": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "OCF-CMD-PRF-006-RELEASE",
+          "yaml_pointer": "/record_metadata/historical_lookup/0/command_id"
+        },
+        "/record_metadata/historical_lookup/0/decision": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "Removed from active Strong-Quick use; retained for historical lookup.",
+          "yaml_pointer": "/record_metadata/historical_lookup/0/decision"
+        },
+        "/record_metadata/historical_lookup/0/kind": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "former-teaching",
+          "yaml_pointer": "/record_metadata/historical_lookup/0/kind"
+        },
+        "/record_metadata/historical_lookup/0/text": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "Plus Release",
+          "yaml_pointer": "/record_metadata/historical_lookup/0/text"
         },
         "/record_metadata/history/0/date": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -140723,266 +140343,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "1.0.0",
           "yaml_pointer": "/secondary_commands/0/usage/version"
-        },
-        "/secondary_commands/1/command_id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/secondary_commands/1/command_id"
-        },
-        "/secondary_commands/1/control/designation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "special",
-          "yaml_pointer": "/secondary_commands/1/control/designation"
-        },
-        "/secondary_commands/1/control/documentation/order": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": 200,
-          "yaml_pointer": "/secondary_commands/1/control/documentation/order"
-        },
-        "/secondary_commands/1/control/documentation/visible": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": true,
-          "yaml_pointer": "/secondary_commands/1/control/documentation/visible"
-        },
-        "/secondary_commands/1/control/effect_scope_ref": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "lifecycle.persistence",
-          "yaml_pointer": "/secondary_commands/1/control/effect_scope_ref"
-        },
-        "/secondary_commands/1/control/phrase_ref/phrase_id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-RELEASE",
-          "yaml_pointer": "/secondary_commands/1/control/phrase_ref/phrase_id"
-        },
-        "/secondary_commands/1/control/phrase_ref/source": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "special-phrase",
-          "yaml_pointer": "/secondary_commands/1/control/phrase_ref/source"
-        },
-        "/secondary_commands/1/control/procedure/before_steps/0/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "focus-strong-quick",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/before_steps/0/id"
-        },
-        "/secondary_commands/1/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "command.procedure.focus-target",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/before_steps/0/localization_key"
-        },
-        "/secondary_commands/1/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "focus-target",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/before_steps/0/operation"
-        },
-        "/secondary_commands/1/control/procedure/evidence_keys/0": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "hplus.function.ocf-prf-006.function-body",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/evidence_keys/0"
-        },
-        "/secondary_commands/1/control/procedure/ref": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-PROC-INHALE-HOLD",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/ref"
-        },
-        "/secondary_commands/1/control/procedure/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "documented",
-          "yaml_pointer": "/secondary_commands/1/control/procedure/status"
-        },
-        "/secondary_commands/1/control/relationships/releases/0": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "OCF-CMD-PRF-006-PRIMARY",
-          "yaml_pointer": "/secondary_commands/1/control/relationships/releases/0"
-        },
-        "/secondary_commands/1/display_cue/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Plus Release",
-          "yaml_pointer": "/secondary_commands/1/display_cue/text"
-        },
-        "/secondary_commands/1/explanation/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/explanation/status"
-        },
-        "/secondary_commands/1/explanation/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "This command releases or suspends the current application as documented.",
-          "yaml_pointer": "/secondary_commands/1/explanation/text"
-        },
-        "/secondary_commands/1/explanation/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/explanation/version"
-        },
-        "/secondary_commands/1/label/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/label/status"
-        },
-        "/secondary_commands/1/label/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Release command",
-          "yaml_pointer": "/secondary_commands/1/label/text"
-        },
-        "/secondary_commands/1/label/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/label/version"
-        },
-        "/secondary_commands/1/procedure_steps/0/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "focus-strong-quick",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/id"
-        },
-        "/secondary_commands/1/procedure_steps/0/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/0/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Focus attention on the selected target.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/0/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/0/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "focus-target",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/0/operation"
-        },
-        "/secondary_commands/1/procedure_steps/1/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/id"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Inhale.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/1/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/1/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "inhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/1/operation"
-        },
-        "/secondary_commands/1/procedure_steps/2/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "hold",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/id"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Hold your breath.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/2/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/2/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "hold-breath",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/2/operation"
-        },
-        "/secondary_commands/1/procedure_steps/3/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "command",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/3/id"
-        },
-        "/secondary_commands/1/procedure_steps/3/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/3/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/3/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Think or say the command.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/3/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/3/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/3/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/3/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "think-or-say-command",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/3/operation"
-        },
-        "/secondary_commands/1/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/4/id"
-        },
-        "/secondary_commands/1/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/4/instruction/status"
-        },
-        "/secondary_commands/1/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/4/instruction/text"
-        },
-        "/secondary_commands/1/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/4/instruction/version"
-        },
-        "/secondary_commands/1/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/secondary_commands/1/procedure_steps/4/operation"
-        },
-        "/secondary_commands/1/role": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "release",
-          "yaml_pointer": "/secondary_commands/1/role"
-        },
-        "/secondary_commands/1/spoken_cue/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "reviewed",
-          "yaml_pointer": "/secondary_commands/1/spoken_cue/status"
-        },
-        "/secondary_commands/1/spoken_cue/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Plus Release",
-          "yaml_pointer": "/secondary_commands/1/spoken_cue/text"
-        },
-        "/secondary_commands/1/usage/status": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/secondary_commands/1/usage/status"
-        },
-        "/secondary_commands/1/usage/text": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Ends the temporary Strong-Quick application; the learned ability remains available.",
-          "yaml_pointer": "/secondary_commands/1/usage/text"
-        },
-        "/secondary_commands/1/usage/version": {
-          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/secondary_commands/1/usage/version"
         },
         "/slug": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -143519,12 +142879,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-001.function-body/text": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "From this moment forward, you have the ability\nto regulate your hearing and develop vivid,\nclear sound within your imagination.\n\nYour hearing will respond to your intention.\nYou can bring subtle sounds into clearer awareness\nor allow unwanted sounds to fade into the background.\n\nTo enhance your hearing, close your eyes,\ninhale deeply, and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth and open your eyes.\n\nFaint sounds will become clearer and more distinct.\nYou will notice delicate differences in pitch,\ntone, rhythm, and sounds both high and low.\nYour awareness will recognize the sounds\nyou wish to hear with greater ease.\n\nTo reduce unwanted sound, use the same eye\nand breathing sequence, thinking or saying,\n\"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}.\"\nDistracting sounds will become less prominent,\nwhile you remain free to change the adjustment\nor return to your usual hearing condition.\n\nYour inner sense of hearing will also grow stronger.\nYou will recall familiar voices, melodies,\nconversations, and sounds of places you remember.\nEven in silence, you can imagine a voice speaking,\nmusic playing, or a sound moving through space.\n\nYou can hold an inner sound clearly, hear its\npitch and rhythm, change its volume or tone,\nand create new combinations through imagination.\nYou will recognize the difference between sounds\nyou imagine and sounds around your physical body.\n\nThis ability to remember and create sound within\nyour mind will become a permanent part of your total self.\nWhenever you choose, these commands can strengthen\nan imagined sound or allow it to gently fade.\n\nEach time you use this function, your hearing regulation\nand inner auditory imagery will become easier,\nclearer, and more effective.",
+          "value": "From this moment forward, you have the ability\nto regulate your hearing and develop vivid,\nclear sound within your imagination.\n\nYour hearing will respond to your intention.\nYou can bring subtle sounds into clearer awareness\nor allow unwanted sounds to fade into the background.\n\nTo enhance your hearing, close your eyes,\ninhale deeply, and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth and open your eyes.\n\nFaint sounds will become clearer and more distinct.\nYou will notice delicate differences in pitch,\ntone, rhythm, and sounds both high and low.\nYour awareness will recognize the sounds\nyou wish to hear with greater ease.\n\nWhenever you wish to reduce unwanted or distracting sounds,\nuse the same breathing and eye sequence with the command,\n\"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}.\"\n\nUnwanted sounds, whether coming from your surroundings\nor arising within your own hearing awareness,\nbecome less prominent.\n\nYour attention naturally shifts toward the sounds you wish to hear,\nwhile unnecessary ringing, buzzing, humming,\nand other distracting sounds fade into the background.\n\nYou remain aware of important sounds around you\nand can change the adjustment whenever you choose.\n\nYour inner sense of hearing will also grow stronger.\nYou will recall familiar voices, melodies,\nconversations, and sounds of places you remember.\nEven in silence, you can imagine a voice speaking,\nmusic playing, or a sound moving through space.\n\nYou can hold an inner sound clearly, hear its\npitch and rhythm, change its volume or tone,\nand create new combinations through imagination.\nYou will recognize the difference between sounds\nyou imagine and sounds around your physical body.\n\nThis ability to remember and create sound within\nyour mind will become a permanent part of your total self.\nWhenever you choose, these commands can strengthen\nan imagined sound or allow it to gently fade.\n\nEach time you use this function, your hearing regulation\nand inner auditory imagery will become easier,\nclearer, and more effective.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-001.function-body/text"
         },
         "/entries/hplus.function.ocf-sen-001.function-body/version": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "1.3.0",
+          "value": "1.4.0",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-001.function-body/version"
         },
         "/entries/hplus.function.ocf-sen-001.opener/status": {
@@ -167685,7 +167045,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
-          "value": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.",
+          "value": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -175542,20 +174902,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "select-immediate-need",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
@@ -175609,7 +174959,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "select-immediate-need",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -175619,7 +174969,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -175629,12 +174979,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -175644,7 +174994,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -175654,12 +175004,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -175669,7 +175019,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -175679,12 +175029,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -175694,7 +175044,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -175704,33 +175054,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
@@ -178397,10 +177722,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
-        "/lifecycle/trigger_conditions": {
+        "/lifecycle/trigger_conditions/0": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": [],
-          "yaml_pointer": "/lifecycle/trigger_conditions"
+          "value": "The temporary alertness ends naturally when the immediate need passes.",
+          "yaml_pointer": "/lifecycle/trigger_conditions/0"
         },
         "/locale": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
@@ -178409,7 +177734,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/localization/contract_sha256": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "b4bb51b47513cb712bea82e161b63edab5fecf6cfda435042869ae03673cb397",
+          "value": "3e38e329458a1e28d129f0383235a876b3885bd31b0afffc8f60c0027c45a364",
           "yaml_pointer": "/localization/contract_sha256"
         },
         "/localization/status": {

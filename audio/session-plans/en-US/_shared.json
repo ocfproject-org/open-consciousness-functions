@@ -1,6 +1,6 @@
 {
-  "defaults_lock": "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-022.json",
-  "defaults_sha256": "05fcb04b428949613122bd50b92c6f6175be5af3dda65a25d0062c26c99e11bf",
+  "defaults_lock": "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-025.json",
+  "defaults_sha256": "7f8876ee26c1e7df04641c964b6ed1746a4e72a39e30bc9121cb52b37f5a7d6a",
   "generator": "ocf.audio.plan/1",
   "profiles": {
     "dsp": {

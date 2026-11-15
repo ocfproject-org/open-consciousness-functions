@@ -6,7 +6,7 @@ Current titles, commands, and narration resolve only from canonical locale resou
 
 Approved decisions are embedded in canonical locale resources. This report is a derived view, not another source authority. Approval does not imply listening or release approval.
 
-Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_approval_text_hashes": 77, "functions": 58, "historical_only_command_records": 19, "protected_entries": 177, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 73, "stable_primary_identities": 58, "structured_command_identities": 102}.
+Counts: {"active_records": 82, "approved_candidate_narrations": 4, "embedded_approval_text_hashes": 77, "functions": 58, "historical_only_command_records": 19, "protected_entries": 177, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 72, "stable_primary_identities": 58, "structured_command_identities": 101}.
 
 ## Approved implementation and remaining catalog decisions
 
@@ -54,7 +54,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SATISFIED`; complete teaching: **Plus Satisfied**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs.
+- Purpose: Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -110,7 +110,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SEX MORE`; complete teaching: **Plus Sex More**.
 - Status: REVIEW REQUIRED; title: canonical.
-- Purpose: Adjusts felt sexual drive in either direction using the MORE/LESS grammar.
+- Purpose: Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.
 - Pending title: Sex Drive
 - Other unselected proposal: null
 
@@ -158,7 +158,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-OPEN`; complete teaching: **Plus Open**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Opens an internal space for quiet reflection; closes it again on completion.
+- Purpose: Open communication with your total self for deeper reflection, insight, and understanding.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -166,7 +166,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-IMPRINT`; complete teaching: **Plus Imprint**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval.
+- Purpose: Capture and retain selected information and experiences for clear, reliable recall.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -174,7 +174,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-OPTIONS`; complete teaching: **Plus Options**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Opens perception of choices and alternatives.
+- Purpose: Discover new possibilities, explore alternative choices, and understand potential outcomes.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -182,7 +182,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RECALL`; complete teaching: **Plus Recall**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Brings specific memories or learned material to mind on request.
+- Purpose: Recall past experiences, memories, and learned information with greater clarity and detail.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -206,7 +206,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-INJURY-RESPONSE`; complete teaching: **Plus Injury Response**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care.
+- Purpose: Strengthen your body's automatic protective, healing, and restorative responses to physical injury.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -214,7 +214,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-TOXIC-CLEAR`; complete teaching: **Plus Toxic Clear**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation.
+- Purpose: Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -222,7 +222,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-LET GO`; complete teaching: **Plus Let Go**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Releases clinging, tension, or unwanted mental objects.
+- Purpose: Release unwanted emotions and emotional tension, restoring calm and clarity.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -230,7 +230,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-OFFLOAD`; complete teaching: **Plus Offload**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice.
+- Purpose: Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -270,7 +270,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-CLEAR ZONE`; complete teaching: **Plus Clear Zone**.
 - Status: APPROVED AND IMPLEMENTED; title: reviewed.
-- Purpose: Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness.
+- Purpose: Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -294,7 +294,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-FOCUS`; complete teaching: **Plus Focus**.
 - Status: APPROVED AND IMPLEMENTED; title: reviewed.
-- Purpose: Directs and sustains focused attention.
+- Purpose: Strengthen concentration, sustain attention, and reduce distractions.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -302,7 +302,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RECHARGE`; complete teaching: **Plus Recharge**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Replenishes a felt sense of energy and freshness.
+- Purpose: Enter a short, restorative sleep and awaken refreshed, alert, and energized.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -310,7 +310,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RELAX`; complete teaching: **Plus Relax**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Deepens physical and mental relaxation.
+- Purpose: Release physical and mental tension, restoring deep relaxation and calm.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -318,7 +318,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RESET`; complete teaching: **Plus Reset**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence.
+- Purpose: Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -326,7 +326,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RELEASE`; complete teaching: **Plus Release**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Releases unhelpful states, prompts, or lingering experiences.
+- Purpose: End selected temporary OCF function applications without losing their learned abilities.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -334,7 +334,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-FREE THIS HABIT`; complete teaching: **Plus Free This Habit**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports stepping away from habitual, repeated behavior patterns.
+- Purpose: Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -366,7 +366,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-LIGHT STEP`; complete teaching: **Plus Light Step**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.
+- Purpose: Move with lighter, quieter steps, improved balance, and greater efficiency.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -382,7 +382,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-STRONG QUICK`; complete teaching: **Plus Strong Quick**.
 - Status: REVIEW REQUIRED; title: canonical.
-- Purpose: Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.
+- Purpose: Call upon exceptional strength, speed, and coordination when immediate action is needed.
 - Pending title: Strong-Quick
 - Other unselected proposal: null
 
@@ -390,7 +390,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-HEAR MORE`; complete teaching: **Plus Hear More**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Adjusts inward listening and perception in either direction using the MORE/LESS grammar.
+- Purpose: Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -398,7 +398,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SEE BETTER`; complete teaching: **Plus See Better**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images.
+- Purpose: Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -406,7 +406,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SMELL MORE`; complete teaching: **Plus Smell More**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Adjusts the felt sense of smell in either direction using the MORE/LESS grammar.
+- Purpose: Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -414,7 +414,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-TASTE MORE`; complete teaching: **Plus Taste More**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.
+- Purpose: Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -422,7 +422,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-TOUCH MORE`; complete teaching: **Plus Touch More**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.
+- Purpose: Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -446,7 +446,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-DREAM`; complete teaching: **Plus Dream**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.
+- Purpose: Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -454,7 +454,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SLEEP INSIGHT`; complete teaching: **Plus Sleep Insight**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Requests an answer or constructive solution through sleep, with useful insight recognized on awakening.
+- Purpose: Find answers, explore solutions, and gain deeper understanding through sleep.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -462,7 +462,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SLEEP EASY`; complete teaching: **Plus Sleep Easy**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings.
+- Purpose: Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -470,7 +470,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-AWAKE`; complete teaching: **Plus Awake**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports staying awake and alert when needed; activation cue PLUS-AWAKE.
+- Purpose: Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.
 - Pending title: None.
 - Other unselected proposal: null
 

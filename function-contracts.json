@@ -3189,11 +3189,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [],
+                "before_steps": [
+                  {
+                    "id": "select-being",
+                    "operation": "select-intention"
+                  }
+                ],
                 "evidence_keys": [
                   "hplus.function.ocf-emo-003.function-body"
                 ],
-                "ref": "OCF-PROC-INHALE-HOLD",
+                "ref": "OCF-PROC-THINK-COMMAND",
                 "status": "documented"
               },
               "relationships": {}
@@ -3201,20 +3206,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "activation",
             "steps": [
               {
-                "id": "inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "operation": "hold-breath"
+                "id": "select-being",
+                "operation": "select-intention"
               },
               {
                 "id": "command",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "operation": "exhale"
               }
             ]
           }
@@ -3248,7 +3245,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "6b268551e92f44ac52c23148a1dc0e1e3251da6691498658443eeccc6e470ade"
+      "sha256": "1998ab0888bd1e79c1f016a75a916a3da60b46a86563e3a26a989ebdd4cb4e9a"
     },
     "OCF-EXP-001": {
       "contract": {
@@ -3388,7 +3385,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 1,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "source": "canonical-primary"
               },
@@ -3440,7 +3437,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 11,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "command_id": "OCF-CMD-EXP-002-CANCEL",
                 "source": "canonical-mode"
@@ -3506,7 +3503,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 200,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "phrase_id": "OCF-CMD-EXP-002-RELEASE",
                 "source": "special-phrase"
@@ -3563,6 +3560,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command_id": "OCF-CMD-EXP-002-RELEASE",
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -3586,7 +3592,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "1f6416954dafcbb4456ec7383a85b19540bc244397e078a20f420c39cfbd89a6"
+      "sha256": "c20247ae8a458071ef973ffee629f5534ae2ec4f27cf529d106b1fa31a4b9581"
     },
     "OCF-EXP-003": {
       "contract": {
@@ -3728,16 +3734,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 ],
                 "override_steps": [
                   {
-                    "id": "inhale-easily",
-                    "operation": "inhale"
-                  },
-                  {
                     "id": "think-or-say-in-mind",
                     "operation": "think-or-say-command"
-                  },
-                  {
-                    "id": "exhale-naturally",
-                    "operation": "exhale"
                   }
                 ],
                 "status": "documented"
@@ -3746,16 +3744,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "activation",
             "steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ]
           },
@@ -3774,16 +3764,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 ],
                 "override_steps": [
                   {
-                    "id": "inhale-easily",
-                    "operation": "inhale"
-                  },
-                  {
                     "id": "think-or-say-in-mind",
                     "operation": "think-or-say-command"
-                  },
-                  {
-                    "id": "exhale-naturally",
-                    "operation": "exhale"
                   }
                 ],
                 "status": "documented"
@@ -3792,16 +3774,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "mode",
             "steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ]
           },
@@ -3820,16 +3794,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 ],
                 "override_steps": [
                   {
-                    "id": "inhale-easily",
-                    "operation": "inhale"
-                  },
-                  {
                     "id": "think-or-say-in-mind",
                     "operation": "think-or-say-command"
-                  },
-                  {
-                    "id": "exhale-naturally",
-                    "operation": "exhale"
                   }
                 ],
                 "status": "documented"
@@ -3838,16 +3804,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "mode",
             "steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ]
           }
@@ -3894,7 +3852,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 7
       },
-      "sha256": "8ebfbbf4053a38a80e4070e20b8207c57a0b7ae400aca817436e1e0b63611c90"
+      "sha256": "9ab9558a1b7fabc06eef76f647ad6fb3118d06fb7a536211f767327407fe6704"
     },
     "OCF-EXP-006": {
       "contract": {
@@ -4135,13 +4093,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-attention-target",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-fnd-002.function-body"
                 ],
@@ -4152,10 +4104,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-attention-target",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -4204,7 +4152,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "e2b861a6a31850730be4dcb8143033e09db713de217252c191895433183f7dab"
+      "sha256": "16f543c8c672dea68be5de602ea307116b4331a5e92fc29d285baea3ec89d702"
     },
     "OCF-FND-003": {
       "contract": {
@@ -4234,13 +4182,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-rest-period",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-fnd-003.function-body"
                 ],
@@ -4251,10 +4193,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-rest-period",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -4303,7 +4241,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "1d544e6a9e4af6eab724a5b27859e7e5e7e8b05badb60628f70ea1cc77c35244"
+      "sha256": "c3b352236c3f96448c479a37ec5a6dc207bc944eb7c66e308fcea04bd717e604"
     },
     "OCF-FND-004": {
       "contract": {
@@ -4852,13 +4790,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-quality",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-prf-002.function-body"
                 ],
@@ -4869,10 +4801,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-quality",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -4940,7 +4868,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "aa338494888eff346ca84c60ae880f31c6a72b96014fc925f3a7abd0587b26b9"
+      "sha256": "3baa96b86a986547dc45a0791eb993f5ec0034221d1595482e58bc8745b3d294"
     },
     "OCF-PRF-003": {
       "contract": {
@@ -5058,13 +4986,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-movement-context",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-prf-004.function-body"
                 ],
@@ -5075,10 +4997,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-movement-context",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -5159,7 +5077,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "f124f44697d726ae367d7a02c137e8d50dfd146c0728a7ac2378891201c7a1c0"
+      "sha256": "c14c9b31b1fa468678116b663480cb8db4155dc5bf63d0151cea294b9e51b90b"
     },
     "OCF-PRF-005": {
       "contract": {
@@ -5340,63 +5258,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "legacy-alias",
             "steps": []
-          },
-          {
-            "command_id": "OCF-CMD-PRF-006-RELEASE",
-            "control": {
-              "designation": "special",
-              "documentation": {
-                "order": 200,
-                "visible": true
-              },
-              "effect_scope_ref": "lifecycle.persistence",
-              "phrase_ref": {
-                "phrase_id": "OCF-CMD-PRF-006-RELEASE",
-                "source": "special-phrase"
-              },
-              "procedure": {
-                "before_steps": [
-                  {
-                    "id": "focus-strong-quick",
-                    "localization_key": "command.procedure.focus-target",
-                    "operation": "focus-target"
-                  }
-                ],
-                "evidence_keys": [
-                  "hplus.function.ocf-prf-006.function-body"
-                ],
-                "ref": "OCF-PROC-INHALE-HOLD",
-                "status": "documented"
-              },
-              "relationships": {
-                "releases": [
-                  "OCF-CMD-PRF-006-PRIMARY"
-                ]
-              }
-            },
-            "role": "release",
-            "steps": [
-              {
-                "id": "focus-strong-quick",
-                "operation": "focus-target"
-              },
-              {
-                "id": "inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "operation": "hold-breath"
-              },
-              {
-                "id": "command",
-                "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "operation": "exhale"
-              }
-            ]
           }
         ],
         "function_id": "OCF-PRF-006",
@@ -5404,7 +5265,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "activation": "manual",
           "persistence": "temporary",
           "release": {
-            "command_id": "OCF-CMD-PRF-006-RELEASE",
             "required": false
           }
         },
@@ -5427,9 +5287,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             }
           ]
         },
-        "trigger_count": 0
+        "trigger_count": 1
       },
-      "sha256": "2b5ca4505c2bed851459f0d3d72d96c06af28f9f780492785eca35032719d1d4"
+      "sha256": "d0a83b0230a3a6c681e6bfdbb11efefaf40a51fe039b963e986f89e3f2c963af"
     },
     "OCF-SEN-001": {
       "contract": {
@@ -6899,13 +6759,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-immediate-need",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-slp-006.function-body"
                 ],
@@ -6916,10 +6770,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-immediate-need",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -6985,9 +6835,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             }
           ]
         },
-        "trigger_count": 0
+        "trigger_count": 1
       },
-      "sha256": "b4bb51b47513cb712bea82e161b63edab5fecf6cfda435042869ae03673cb397"
+      "sha256": "3e38e329458a1e28d129f0383235a876b3885bd31b0afffc8f60c0027c45a364"
     }
   },
   "generated": true

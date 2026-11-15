@@ -53,7 +53,7 @@ activation:
   - id: select-temporary-application
     operation: select-purpose
     instruction:
-      text: Choose the purpose for using this function.
+      text: Select one or more temporary applications to end.
       status: canonical
       version: 1.0.0
   - id: inhale

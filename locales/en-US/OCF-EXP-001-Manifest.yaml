@@ -59,7 +59,7 @@ activation:
   - id: select-outcome
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Choose the outcome you wish to manifest and its desired completion time.
       status: canonical
       version: 1.0.0
   - id: inhale

@@ -13,15 +13,20 @@ pytestmark = pytest.mark.integration
 
 def test_exact_approved_resources_and_immutable_receipts():
     receipt = editorial_successor.verify_resources()
-    assert len(receipt["resources"]) == 23
+    assert len(receipt["resources"]) == 56
+    assert len(receipt["_hash_chain"][1]["resources"]) == 23
+    assert len(receipt["_hash_chain"][2]["resources"]) == 33
+    assert set(receipt["description_sha256"]) <= set(receipt["_hash_chain"][2]["resource_ids"])
     assert receipt["publication_authorized"] is False
     keys = receipt["hashes"]["resolved_entries"]
-    assert len([key for key in keys if key.startswith("hplus.")]) == 69
+    assert len([key for key in keys if key.startswith("hplus.")]) == 92
     assert any("ocf-bod-008.opener" in key for key in keys)
     assert any("ocf-bod-008.function-body" in key for key in keys)
 
 
-@pytest.mark.parametrize("field", ["cue", "lifecycle", "immune-body", "narration", "relationship"])
+@pytest.mark.parametrize(
+    "field", ["cue", "lifecycle", "immune-body", "narration", "relationship", "description"]
+)
 def test_unapproved_mutations_fail_closed(field):
     snapshot = {data["function_id"]: deepcopy(data) for _, data in resources(REPO_ROOT)}
     data = snapshot["OCF-BOD-001"]
@@ -35,8 +40,10 @@ def test_unapproved_mutations_fail_closed(field):
         )
     elif field == "narration":
         data["entries"]["hplus.function.ocf-bod-001.closer"]["text"] += " other"
-    else:
+    elif field == "relationship":
         data["relationships"]["related_functions"] = []
+    else:
+        snapshot["OCF-SEN-005"]["description"]["text"] += " other"
     with pytest.raises(OCFError, match="canonical resource differs"):
         editorial_successor.verify_resources(snapshot=snapshot)
 

@@ -44,35 +44,25 @@ activation:
       visible: true
     effect_scope_ref: lifecycle.persistence
     procedure:
-      before_steps: []
+      before_steps:
+      - id: select-being
+        operation: select-intention
       evidence_keys:
       - hplus.function.ocf-emo-003.function-body
-      ref: OCF-PROC-INHALE-HOLD
+      ref: OCF-PROC-THINK-COMMAND
       status: documented
     relationships: {}
   procedure_steps:
-  - id: inhale
-    operation: inhale
+  - id: select-being
+    operation: select-intention
     instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
-  - id: hold
-    operation: hold-breath
-    instruction:
-      text: Hold your breath.
+      text: Select the being you wish to empathize with.
       status: canonical
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
       text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale
-    operation: exhale
-    instruction:
-      text: Exhale.
       status: canonical
       version: 1.0.0
 secondary_commands: []
@@ -118,7 +108,7 @@ entries:
       including your senses, intuition, and total self.'
   hplus.function.ocf-emo-003.function-body:
     status: reviewed
-    version: 1.2.1
+    version: 1.3.0
     cue_template:
       function_id: OCF-EMO-003
       allowed:
@@ -159,13 +149,7 @@ entries:
       and direct, wordless understanding.
 
 
-      Inhale deeply and gently hold your breath.
-
-
       Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
 
 
       Your total self will now bring together
@@ -230,7 +214,7 @@ entries:
       this communion and understanding will become.'
   hplus.function.ocf-emo-003.closer:
     status: reviewed
-    version: 1.2.1
+    version: 1.3.0
     cue_template:
       function_id: OCF-EMO-003
       allowed:
@@ -242,13 +226,7 @@ entries:
       bring that being clearly into your awareness.
 
 
-      Inhale deeply and hold your breath.
-
-
       Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
 
 
       This concludes your OCF Empathize exercise.'
@@ -333,7 +311,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 6b268551e92f44ac52c23148a1dc0e1e3251da6691498658443eeccc6e470ade
+  contract_sha256: 1998ab0888bd1e79c1f016a75a916a3da60b46a86563e3a26a989ebdd4cb4e9a
 record_metadata:
   legacy:
     command_ids:

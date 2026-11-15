@@ -11,7 +11,15 @@ description:
     and Release places the selected application on hold.
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-exp-002.lifecycle.scopes.capability.description:
+    text: The ability to apply adaptive physical, environmental, emotional, and energetic insulation remains available for future use.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-exp-002.lifecycle.scopes.application.description:
+    text: Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-EXP-002-PRIMARY
   display_cue:
@@ -40,7 +48,7 @@ activation:
     documentation:
       order: 1
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
       - id: select-comfort-zone
@@ -110,7 +118,7 @@ secondary_commands:
     documentation:
       order: 11
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps: []
       evidence_keys:
@@ -200,7 +208,7 @@ secondary_commands:
     documentation:
       order: 200
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
       - id: focus-zoning
@@ -427,6 +435,14 @@ lifecycle:
     command_id: OCF-CMD-EXP-002-RELEASE
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-exp-002.lifecycle.scopes.capability.description
+    application:
+      persistence: temporary
+      activation: manual
+      description_key: functions.ocf-exp-002.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
@@ -491,7 +507,7 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 1f6416954dafcbb4456ec7383a85b19540bc244397e078a20f420c39cfbd89a6
+  contract_sha256: c20247ae8a458071ef973ffee629f5534ae2ec4f27cf529d106b1fa31a4b9581
 record_metadata:
   legacy:
     command_ids:

@@ -51,7 +51,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Appetite Choice. Title status: canonical.
 Display: `PLUS-SATISFIED`. Complete speech: **Plus Satisfied**.
 
-Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs.
+Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -172,7 +172,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Imprint. Title status: canonical.
 Display: `PLUS-IMPRINT`. Complete speech: **Plus Imprint**.
 
-Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval.
+Capture and retain selected information and experiences for clear, reliable recall.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -183,7 +183,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Options. Title status: canonical.
 Display: `PLUS-OPTIONS`. Complete speech: **Plus Options**.
 
-Opens perception of choices and alternatives.
+Discover new possibilities, explore alternative choices, and understand potential outcomes.
 
 Translator context: Plus Options Choices is historical vocabulary; the approved active cue is Plus Options.
 
@@ -194,7 +194,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Injury Response. Title status: canonical.
 Display: `PLUS-INJURY-RESPONSE`. Complete speech: **Plus Injury Response**.
 
-Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care.
+Strengthen your body's automatic protective, healing, and restorative responses to physical injury.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -205,7 +205,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Toxic Exposure Response. Title status: canonical.
 Display: `PLUS-TOXIC-CLEAR`. Complete speech: **Plus Toxic Clear**.
 
-Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation.
+Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -216,7 +216,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Offload. Title status: canonical.
 Display: `PLUS-OFFLOAD`. Complete speech: **Plus Offload**.
 
-Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice.
+Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -271,7 +271,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Clear Zone. Title status: reviewed.
 Display: `PLUS-CLEAR ZONE`. Complete speech: **Plus Clear Zone**.
 
-Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness.
+Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.
 
 Translator context: Original draft; no historical command is being replaced.
 
@@ -293,7 +293,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Quick Recharge. Title status: canonical.
 Display: `PLUS-RECHARGE`. Complete speech: **Plus Recharge**.
 
-Replenishes a felt sense of energy and freshness.
+Enter a short, restorative sleep and awaken refreshed, alert, and energized.
 
 Translator context: Canonical locale function resource.
 
@@ -304,7 +304,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Relax. Title status: canonical.
 Display: `PLUS-RELAX`. Complete speech: **Plus Relax**.
 
-Deepens physical and mental relaxation.
+Release physical and mental tension, restoring deep relaxation and calm.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -315,7 +315,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Reset. Title status: canonical.
 Display: `PLUS-RESET`. Complete speech: **Plus Reset**.
 
-Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence.
+Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -326,7 +326,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Habit Freedom. Title status: canonical.
 Display: `PLUS-FREE THIS HABIT`. Complete speech: **Plus Free This Habit**.
 
-Supports stepping away from habitual, repeated behavior patterns.
+Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -359,7 +359,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Light Foot. Title status: canonical.
 Display: `PLUS-LIGHT STEP`. Complete speech: **Plus Light Step**.
 
-Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.
+Move with lighter, quieter steps, improved balance, and greater efficiency.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -370,7 +370,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Hearing. Title status: canonical.
 Display: `PLUS-HEAR MORE`. Complete speech: **Plus Hear More**.
 
-Adjusts inward listening and perception in either direction using the MORE/LESS grammar.
+Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.
 
 Translator context: Vocabulary normalization: auditory magnitudes standardize on MORE/LESS.
 
@@ -381,7 +381,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Seeing. Title status: canonical.
 Display: `PLUS-SEE BETTER`. Complete speech: **Plus See Better**.
 
-Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images.
+Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.
 
 Translator context: The canonical activation command is PLUS-SEE BETTER, matching the approved narration. The previous MORE/LESS directional pair (PLUS-SEE MORE / PLUS-SEE LESS) is superseded and preserved as historical provenance.
 
@@ -392,7 +392,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Smell. Title status: canonical.
 Display: `PLUS-SMELL MORE`. Complete speech: **Plus Smell More**.
 
-Adjusts the felt sense of smell in either direction using the MORE/LESS grammar.
+Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.
 
 Translator context: Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.
 
@@ -403,7 +403,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Taste. Title status: canonical.
 Display: `PLUS-TASTE MORE`. Complete speech: **Plus Taste More**.
 
-Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.
+Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.
 
 Translator context: Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.
 
@@ -414,7 +414,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Touch. Title status: canonical.
 Display: `PLUS-TOUCH MORE`. Complete speech: **Plus Touch More**.
 
-Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.
+Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.
 
 Translator context: Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.
 
@@ -447,7 +447,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Dream Theme. Title status: canonical.
 Display: `PLUS-DREAM`. Complete speech: **Plus Dream**.
 
-Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.
+Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -458,7 +458,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Sleep Insight. Title status: canonical.
 Display: `PLUS-SLEEP INSIGHT`. Complete speech: **Plus Sleep Insight**.
 
-Requests an answer or constructive solution through sleep, with useful insight recognized on awakening.
+Find answers, explore solutions, and gain deeper understanding through sleep.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -469,7 +469,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Sleep Easy. Title status: canonical.
 Display: `PLUS-SLEEP EASY`. Complete speech: **Plus Sleep Easy**.
 
-Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings.
+Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -480,7 +480,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Stay Awake. Title status: canonical.
 Display: `PLUS-AWAKE`. Complete speech: **Plus Awake**.
 
-Supports staying awake and alert when needed; activation cue PLUS-AWAKE.
+Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 

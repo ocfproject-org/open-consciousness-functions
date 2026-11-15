@@ -49,7 +49,10 @@ def test_approval_provenance_and_resolved_text_hashes_live_with_canonical_resour
         assert approval["approval_id"] == "OCF-APPROVED-CANDIDATES-001"
         assert approval["decision"] == "approve_full_draft"
         actual = {row["key"]: row["resolved_text_sha256"] for row in preview["entries"]}
-        assert actual == approval["resolved_text_sha256"]
+        from ocf_tools.editorial_successor import expected_entries
+
+        approved = expected_entries(approval["resolved_text_sha256"], resolved=True)
+        assert actual == approved
         assert approval["release_ready"] is approval["listening_approval"] is False
     assert [row["version"] for row in review("manifest-v2")["entries"]] == [
         "1.2.0",
@@ -85,9 +88,7 @@ def test_distinct_clear_zone_ids_and_exact_procedure():
     ]
     for command in owner.command_records:
         assert [step["operation"] for step in resolve_procedure(command, {})] == [
-            "inhale",
             "think-or-say-command",
-            "exhale",
         ]
     descriptions = " ".join(owner.data["lifecycle"]["trigger_conditions"])
     for phrase in (
