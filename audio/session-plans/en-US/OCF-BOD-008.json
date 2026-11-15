@@ -5,7 +5,7 @@
   },
   "defaults": {
     "file": "_shared.json",
-    "sha256": "d7499758c2203e77ab85682d2caf44ebe8d41b9dfa2efa399c9237662a9a1705"
+    "sha256": "e114398498a94ffd57b6cf4b57401bc54c8cb8f8d8b212105a48f3aadc7e56fe"
   },
   "function_id": "OCF-BOD-008",
   "generation": {
@@ -29,10 +29,10 @@
       "fallback": false,
       "key": "hplus.function.ocf-bod-008.function-body",
       "locale": "en-US",
-      "raw_template_sha256": "eae6db70151eb82b8e532979ce49a4fb66a81e30751301a0d18a8b726e388264",
+      "raw_template_sha256": "40b8cbe9e454439261ee930531bcd4ab2ebbedea0b6e60a98115bd5300a22c87",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "6f857fb22bea3d0e54e0217471828090813db25fe5b5fdbfddb8c4de77ae4fe2",
+      "text_sha256": "58127ad438d8aa12ec28f7cb6aa11f4f87cf84a492d1503e8626d8495b180d1f",
       "version": "1.2.1"
     },
     {
@@ -41,7 +41,7 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "60460e3d8ef56b697de1d32676a27f11ce1dcfbbef8bcd473f2904784a497209",
+      "text_sha256": "53a6849d1b922ce163a50c807d68a8cd7604044a58739e09f88aaaf74ffb68f0",
       "version": "1.2.0"
     }
   ],

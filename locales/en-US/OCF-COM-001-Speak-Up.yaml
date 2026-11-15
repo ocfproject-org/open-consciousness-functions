@@ -7,7 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports confident, clear verbal expression.
+  text: Clear, fluent, confident speaking and reading aloud, with natural expression
+    and precise pronunciation.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -44,41 +45,32 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-com-001.function-body
-      before_steps:
-      - id: select-speaking-task
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-speaking-task
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands: []
 tags:
@@ -106,13 +98,9 @@ entries:
   hplus.function.ocf-com-001.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to speak, read aloud, and communicate
-
-      clearly, confidently, and effectively,
-
-      expressing yourself naturally and with ease.'
+    text: 'This OCF exercise will strengthen your ability to speak, read aloud, and
+      communicate clearly, confidently, and effectively, expressing yourself naturally
+      and with ease.'
   hplus.function.ocf-com-001.function-body:
     status: reviewed
     version: 1.1.0
@@ -120,136 +108,67 @@ entries:
       function_id: OCF-COM-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to speak,
+    text: 'From this moment forward, let your ability to speak, read aloud, and communicate
+      become clearer, stronger, and more effective.
 
-      read aloud, and communicate with others
 
-      is becoming clearer, stronger, and more effective.
+      Your thoughts organize naturally into meaningful words, allowing you to express
+      your ideas clearly and accurately.
 
 
-      Your thoughts naturally organize themselves
+      You speak fluently and confidently, with comfortable rhythm, precise pronunciation,
+      and natural expression.
 
-      into clear, meaningful words,
 
-      allowing you to express exactly
+      Your breathing supports your voice with smooth, steady airflow.
 
-      what you wish to communicate.
 
+      Your vocal cords, throat, tongue, lips, and mouth work together in natural coordination,
+      allowing words to form easily and clearly.
 
-      You speak calmly, confidently,
 
-      and fluently, without unnecessary
+      Whenever you read aloud, you recognize written words quickly, understand their
+      meaning, and pronounce them accurately.
 
-      hesitation, effort, or strain.
 
+      Your ideas flow smoothly into spoken expression, helping you communicate exactly
+      what you intend.
 
-      Your breathing becomes smooth and natural,
 
-      providing the comfortable, steady airflow
+      Whether speaking with familiar people, meeting someone new, addressing a group,
+      or reading aloud, you remain calm, confident, and articulate.
 
-      needed for clear and effortless speech.
 
+      You express yourself naturally, without unnecessary hesitation, tension, or
+      effort.
 
-      Your vocal cords, throat, mouth,
 
-      tongue, and lips work together
+      This ability to speak and communicate clearly is permanently established within
+      you.
 
-      in smooth and precise coordination.
 
+      Your mind, breathing, and voice continue working together automatically, strengthening
+      your natural fluency and confidence through everyday communication.
 
-      Words form naturally and easily,
 
-      with clear pronunciation,
+      Whenever you wish to reinforce this ability, take a deep breath in and gently
+      hold it.
 
-      comfortable rhythm, and confident expression.
 
+      While holding your breath, silently say to yourself,
 
-      Whenever you read aloud,
+      "{{ cue.primary }}."
 
-      you recognize written words quickly,
 
-      understand their meaning,
+      Then slowly exhale through your mouth.
 
-      and pronounce them clearly and accurately.
 
+      As you exhale, let your thoughts flow into clear, confident speech, allowing
+      you to communicate naturally and effectively.
 
-      Your mind selects the appropriate words
 
-      and arranges them naturally,
-
-      allowing your ideas to flow
-
-      smoothly into spoken expression.
-
-
-      You communicate with clarity,
-
-      confidence, and understanding,
-
-      expressing your meaning exactly
-
-      as you intend.
-
-
-      Even in unfamiliar situations,
-
-      you remain calm and self-assured,
-
-      speaking naturally and effectively.
-
-
-      From this moment forward,
-
-      these abilities are permanently
-
-      established and growing within you.
-
-
-      Your mind, breathing, and voice
-
-      will automatically work together,
-
-      making fluent and confident
-
-      communication increasingly natural.
-
-
-      Whenever you wish to strengthen
-
-      your speaking ability even more,
-
-      inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      Your thoughts will flow smoothly
-
-      into clear, confident speech,
-
-      and you will express yourself
-
-      naturally, comfortably, and effectively.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to speak and communicate
-
-      becomes easier, clearer, and more effective.
-
-
-      This growing ability remains with you,
-
-      strengthening naturally every day
-
-      through speaking, reading, and communication.'
+      The more you use this command, the easier and more effective this reinforcement
+      becomes.'
   hplus.function.ocf-com-001.closer:
     status: reviewed
     version: 1.1.0
@@ -257,21 +176,16 @@ entries:
       function_id: OCF-COM-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to speak,
-
-      read aloud, or communicate more clearly
-
-      and confidently, inhale deeply
-
-      and hold your breath.
+    text: 'Remember, whenever you wish to speak, read aloud, or communicate more clearly
+      and confidently, inhale deeply and gently hold your breath.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Silently say to yourself,
+
+      "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Speak Up exercise.'
@@ -287,13 +201,13 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -326,31 +240,36 @@ editorial:
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Speak Up
     recommended_primary_cue: PLUS-SPEAK UP
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Automatic articulation, organization, vocal coordination, reading and everyday
-      fluency; optional inhale/hold/cue/candle-like reinforcement. Speak Up is not volume-only or assertiveness-only.
-    pair_reason: Natural spoken phrasing, a recognizable title and clear communication intent already
-      align.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise verb,
-      outcome or contextual mode can reinforce an umbrella title without copying it. Natural spoken phrasing,
-      a recognizable title and clear communication intent already align.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Automatic articulation, organization, vocal coordination, reading
+      and everyday fluency; optional inhale/hold/cue/candle-like reinforcement. Speak
+      Up is not volume-only or assertiveness-only.
+    pair_reason: Natural spoken phrasing, a recognizable title and clear communication
+      intent already align.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. Natural spoken phrasing, a recognizable title and clear communication
+      intent already align.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
-    documentary_intent: Improve speaking/reading communication, articulatory coordination and confidence,
-      with optional intensification.
+    documentary_intent: Improve speaking/reading communication, articulatory coordination
+      and confidence, with optional intensification.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 69dfbc1793438b8942657cea684da4af3bb5b75fea169903e17838464eb9a146
+  contract_sha256: b81487d236ecace089571f3ec92801e8fe91853a534e2a8e438d2e4591167cba
 record_metadata:
   legacy:
     command_ids:
@@ -373,14 +292,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -406,7 +326,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -592,8 +512,8 @@ content:
       source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -643,8 +563,8 @@ content:
       - automatic-whole-system-learning
       family: communication-enhancement
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -654,8 +574,9 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 39
           status: supported
-          summary: Pair the deliberately selected legacy cue with the target response and breathing procedure;
-            canonical spelling/compatibility remains separate metadata.
+          summary: Pair the deliberately selected legacy cue with the target response
+            and breathing procedure; canonical spelling/compatibility remains separate
+            metadata.
         closer:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -664,7 +585,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 44
           status: supported
-          summary: Reinforce future remembering/use and close the learning context to ten.
+          summary: Reinforce future remembering/use and close the learning context
+            to ten.
         consolidation:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -673,8 +595,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 52
           status: supported
-          summary: Counted sleep-to-twenty segment is present; automatic integration is a source assertion,
-            not established mechanism.
+          summary: Counted sleep-to-twenty segment is present; automatic integration
+            is a source assertion, not established mechanism.
         conversion:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -683,9 +605,9 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 34
           status: inferred
-          summary: Preserve voluntary target selection and learned association where appropriate; breath
-            holding, guaranteed response and automatic whole-system learning require editorial review
-            rather than scientific endorsement.
+          summary: Preserve voluntary target selection and learned association where
+            appropriate; breath holding, guaranteed response and automatic whole-system
+            learning require editorial review rather than scientific endorsement.
         future_use:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -694,8 +616,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 34
           status: supported
-          summary: Optional cue intensifies an asserted ongoing improvement; no specific aloud practice
-            trial or cancellation supplied.
+          summary: Optional cue intensifies an asserted ongoing improvement; no specific
+            aloud practice trial or cancellation supplied.
         handoff:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -713,8 +635,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 39
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -733,7 +655,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 31
           status: supported
-          summary: Orient to the target function and establish receptive learning context before the instruction.
+          summary: Orient to the target function and establish receptive learning
+            context before the instruction.
         preparation:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -742,8 +665,9 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 2
           status: supported
-          summary: Supported uninterrupted relaxed posture, settling movements/breathing, temporary setting-aside
-            in repository representation and counted ten-state entry.
+          summary: Supported uninterrupted relaxed posture, settling movements/breathing,
+            temporary setting-aside in repository representation and counted ten-state
+            entry.
         provenance:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -752,10 +676,11 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are not
-            independent corroboration. Source accuracy/authentication remains unresolved. Source-designated
-            derivative is not authenticated; ASR repetition/count artifacts do not establish original
-            wording, duration or repetition intent. Undeclared reset/termination remains unknown.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. Source-designated derivative is not authenticated; ASR repetition/count
+            artifacts do not establish original wording, duration or repetition intent.
+            Undeclared reset/termination remains unknown.
         purpose:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -764,8 +689,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 1
           status: supported
-          summary: Improve speaking/reading communication, articulatory coordination and confidence, with
-            optional intensification.
+          summary: Improve speaking/reading communication, articulatory coordination
+            and confidence, with optional intensification.
         rehearsal:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -774,8 +699,8 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 34
           status: not-present
-          summary: Repeated instruction does not establish a distinct listener performance trial; apparent
-            ambient transcription artifacts are not practice evidence.
+          summary: Repeated instruction does not establish a distinct listener performance
+            trial; apparent ambient transcription artifacts are not practice evidence.
         safety_claims:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -784,9 +709,9 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 32
           status: supported
-          summary: guaranteed-persistent-speaking-improvement; respiratory-articulatory-mechanism; perfect-control;
-            automatic-whole-system-learning. Claims are classified as source assertions, not accepted
-            OCF mechanisms/outcomes.
+          summary: guaranteed-persistent-speaking-improvement; respiratory-articulatory-mechanism;
+            perfect-control; automatic-whole-system-learning. Claims are classified
+            as source assertions, not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -795,8 +720,9 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 31
           status: supported
-          summary: Reference learning shell uses ten preparation, eleven opening, ten closure, sleep-to-twenty
-            and waking return where the available ending supports it; not an OCF runtime requirement.
+          summary: Reference learning shell uses ten preparation, eleven opening,
+            ten closure, sleep-to-twenty and waking return where the available ending
+            supports it; not an OCF runtime requirement.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
@@ -805,9 +731,10 @@ content:
             source_sha256: 92b9c54c581a0fac83c442729106fc6050c41d0d49d36edd5e6ffecf7c837bdc
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Source-designated
-            derivative is not authenticated; ASR repetition/count artifacts do not establish original
-            wording, duration or repetition intent. Undeclared reset/termination remains unknown.
+          summary: Investigated the full available source; this operation is not established.
+            Source-designated derivative is not authenticated; ASR repetition/count
+            artifacts do not establish original wording, duration or repetition intent.
+            Undeclared reset/termination remains unknown.
       source_extent:
         content_group_sha256: c689b04a798e12e7ce9880e27d5778e4e4247992cccd1c76af1eba09137366c9
         end_line: 87
@@ -889,10 +816,12 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Source-designated derivative is not authenticated; ASR repetition/count artifacts do not establish
-      original wording, duration or repetition intent. Undeclared reset/termination remains unknown.
-    - Preserve voluntary target selection and learned association where appropriate; breath holding, guaranteed
-      response and automatic whole-system learning require editorial review rather than scientific endorsement.
+    - Source-designated derivative is not authenticated; ASR repetition/count artifacts
+      do not establish original wording, duration or repetition intent. Undeclared
+      reset/termination remains unknown.
+    - Preserve voluntary target selection and learned association where appropriate;
+      breath holding, guaranteed response and automatic whole-system learning require
+      editorial review rather than scientific endorsement.
     states:
       preferred: []
       required: []

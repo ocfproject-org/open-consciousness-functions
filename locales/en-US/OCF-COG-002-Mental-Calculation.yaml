@@ -7,7 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Speeds mental arithmetic and number processing.
+  text: Strengthens numerical understanding, mathematical memory, calculation speed
+    and accuracy, pattern recognition, and problem-solving across basic and advanced
+    mathematics, with conscious reinforcement when desired.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -45,41 +47,32 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-cog-002.function-body
-      before_steps:
-      - id: select-mathematical-task
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-mathematical-task
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands: []
 tags:
@@ -103,8 +96,8 @@ relationships:
   - function_id: OCF-FND-002
     description_key: relationships.rel-cog002-fnd002.description
     description:
-      text: Number practice and directed attention address calculation and concentration respectively;
-        either may be practiced independently.
+      text: Number practice and directed attention address calculation and concentration
+        respectively; either may be practiced independently.
       status: reviewed
       version: 1.0.0
 changelog:
@@ -114,13 +107,9 @@ entries:
   hplus.function.ocf-cog-002.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to understand, remember, and work with numbers,
-
-      improving your mathematical understanding,
-
-      calculation speed, accuracy, and intuition.'
+    text: 'This OCF exercise will strengthen your ability to understand, remember,
+      and work with numbers, improving mathematical reasoning, calculation speed,
+      accuracy, and intuition.'
   hplus.function.ocf-cog-002.function-body:
     status: reviewed
     version: 1.2.0
@@ -128,132 +117,64 @@ entries:
       function_id: OCF-COG-002
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to understand,
+    text: 'From this moment forward, let your ability to understand, remember, and
+      work with numbers become stronger, faster, and more accurate.
 
-      remember, and work with numbers is becoming
 
-      stronger, faster, and more accurate.
+      Whenever you encounter numbers, mathematical symbols, or equations, let their
+      meaning become clear and understandable.
 
 
-      Whenever you see or hear numbers,
+      Let numbers and numerical sequences become easier to remember and retrieve whenever
+      you need them.
 
-      you recognize and understand them clearly.
 
+      Your ability to perform arithmetic, algebra, geometry, trigonometry, and advanced
+      mathematical operations becomes faster, clearer, and increasingly precise.
 
-      Numbers and numerical sequences become easier
 
-      to remember and retrieve whenever you need them.
+      Your mind recognizes relationships between numbers, quantities, shapes, angles,
+      equations, and patterns, understanding how they connect and work together.
 
 
-      Your ability to perform arithmetic, algebra,
+      Let mathematical principles become easier to recognize and apply, allowing you
+      to approach problems with clarity, confidence, and understanding.
 
-      geometry, trigonometry, and other mathematical
 
-      operations becomes faster, clearer,
+      New mathematical ideas, insights, and solutions emerge naturally into your conscious
+      awareness.
 
-      and increasingly accurate.
 
+      Your calculations become quicker and more accurate, and your ability to recognize
+      useful patterns and solve mathematical problems continues to strengthen.
 
-      Mathematical equations and symbols
 
-      become clear and meaningful to you.
+      This growing mathematical ability is permanently established within you.
 
 
-      You recognize relationships between numbers,
+      Your mind continues organizing and connecting numerical knowledge automatically,
+      whether you are awake, resting, or asleep, strengthening your mathematical understanding
+      through learning and experience.
 
-      shapes, angles, equations, and patterns,
 
-      understanding how they connect
+      Whenever you wish to reinforce these abilities, take a deep breath in and gently
+      hold it.
 
-      and work together.
 
+      While holding your breath, silently say to yourself,
 
-      Your mind naturally recognizes the connections
+      "{{ cue.primary }}."
 
-      between numbers, quantities, shapes,
 
-      patterns, form, and energy.
+      Then slowly exhale through your mouth.
 
 
-      From basic arithmetic to advanced mathematics,
+      As you exhale, let your mind become clear, focused, and responsive to the numbers
+      and mathematical problems before you.
 
-      your mind will naturally recognize underlying
 
-      principles, visualize solutions, and solve
-
-      problems with increasing clarity and precision.
-
-
-      New mathematical ideas, insights, and solutions
-
-      will emerge naturally into your conscious awareness.
-
-
-      You will express these ideas with clarity,
-
-      confidence, and precise mathematical accuracy.
-
-
-      From this moment forward, this growing ability
-
-      is permanently established within you.
-
-
-      Your mind will automatically recognize,
-
-      organize, and understand numerical information
-
-      with increasing speed and efficiency.
-
-
-      Your mathematical knowledge and understanding
-
-      will continue expanding naturally,
-
-      becoming stronger with every experience.
-
-
-      Whenever you wish to focus your mathematical
-
-      abilities more intensely, inhale deeply
-
-      and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      Your mind will immediately become clear,
-
-      focused, and responsive to the numbers
-
-      or mathematical problem before you.
-
-
-      Calculations will flow quickly and accurately,
-
-      and the relationships between numbers
-
-      will become clear and easy to understand.
-
-
-      Each time you use {{ cue.primary }},
-
-      your mathematical abilities become
-
-      easier, faster, and more effective.
-
-
-      Your natural ability to understand,
-
-      remember, and work with numbers
-
-      will continue strengthening automatically,
-
-      every day and every night.'
+      The more you use this command, the easier and more effective this reinforcement
+      becomes.'
   hplus.function.ocf-cog-002.closer:
     status: reviewed
     version: 1.2.1
@@ -261,17 +182,17 @@ entries:
       function_id: OCF-COG-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to strengthen
-
-      your ability to calculate or understand numbers,
-
-      inhale deeply and hold your breath.
+    text: 'Remember, whenever you wish to reinforce your ability to calculate, understand
+      numbers, or solve mathematical problems, inhale deeply and gently hold your
+      breath.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Silently say to yourself,
+
+      "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Mental Calculation exercise.'
@@ -287,13 +208,13 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -326,33 +247,38 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Mental Calculation
     recommended_primary_cue: PLUS-CALCULATE
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Automatic mathematical understanding, numerical memory and symbolic reasoning,
-      optionally intensified with inhale/hold/cue/candle-like exhale. Mental Calculation must not
-      narrow scope to arithmetic.
-    pair_reason: CALCULATE is a natural, memorable action. A descriptive title is clearer than the
-      Buy/By the Numbers pun without changing the cue or its broader numerical-memory purpose.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise
-      verb, outcome or contextual mode can reinforce an umbrella title without copying it. CALCULATE
-      is a natural, memorable action. A descriptive title is clearer than the Buy/By the Numbers pun
-      without changing the cue or its broader numerical-memory purpose.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Automatic mathematical understanding, numerical memory and
+      symbolic reasoning, optionally intensified with inhale/hold/cue/candle-like
+      exhale. Mental Calculation must not narrow scope to arithmetic.
+    pair_reason: CALCULATE is a natural, memorable action. A descriptive title is
+      clearer than the Buy/By the Numbers pun without changing the cue or its broader
+      numerical-memory purpose.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. CALCULATE is a natural, memorable action. A descriptive title is
+      clearer than the Buy/By the Numbers pun without changing the cue or its broader
+      numerical-memory purpose.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
-    documentary_intent: Improve numerical memory, arithmetic, symbolic understanding and mathematical
-      expression, with an optional intensification cue.
+    documentary_intent: Improve numerical memory, arithmetic, symbolic understanding
+      and mathematical expression, with an optional intensification cue.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes;
-        generated references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: e2eeb3427b51c67b4337bf1b2b99d0b2ce852151d7f0abb6b6c221acb3f66244
+  contract_sha256: c398bb75f697d9d46ff5a424357b36454a8dd0b16105e004e65106b8ae812702
 record_metadata:
   legacy:
     command_ids:
@@ -379,14 +305,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -415,12 +342,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup.
-      Preserve procedures, controls, semantics, provenance and separately flagged metadata questions.
-      Later user instruction releases the draft-pilot freeze; pilot bindings follow current approved
-      titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: d0aec76db86c79b835b8835f194db27be00babfca23f303f3a85823f441d5258
     status: accepted
     previous_values_sha256: 2765274247e4b9f90acdc2cd58efe13560ac7927c87e1437300223d99e4e13bf
@@ -431,28 +359,30 @@ record_metadata:
       hplus.function.ocf-cog-002.closer: f7e77eacf9c7f3bcf58f0cf15068eb6f01784c249f1984a66fd6cf4d93ebb250
     current_resolved_text_sha256:
       hplus.function.ocf-cog-002.closer: 7c628adfb28b0596792d0b3ba7095714307c0513be3dda0633b06a2bf985784d
-    review_note: Change title from Buy the Numbers to Mental Calculation and update exercise sign-off.
-      Keep display and spoken cue unchanged. Preserve full mathematical scope including numerical
-      memory, arithmetic, algebra, geometry, trigonometry, symbolic reasoning, visualization and problem-solving,
-      automatic development and optional conscious reinforcement. Preserve inhale/hold/cue/slow mouth
-      exhale; do not add candle-blowing instructions. Retain Buy the Numbers as historical lookup;
-      introduce no mode or release. Do not narrow scope to arithmetic alone.
+    review_note: Change title from Buy the Numbers to Mental Calculation and update
+      exercise sign-off. Keep display and spoken cue unchanged. Preserve full mathematical
+      scope including numerical memory, arithmetic, algebra, geometry, trigonometry,
+      symbolic reasoning, visualization and problem-solving, automatic development
+      and optional conscious reinforcement. Preserve inhale/hold/cue/slow mouth exhale;
+      do not add candle-blowing instructions. Retain Buy the Numbers as historical
+      lookup; introduce no mode or release. Do not narrow scope to arithmetic alone.
     approval_response: '1'
     review_position: 24
   - id: REL-COG002-FND002
     kind: approved-relationship
     source_commit: 0e7ca1199969f41f282b8cff5a5fb0ee459fdb46
-    scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
-    decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
-      2026-11-10.
+    scope: Optional listener-guide relationship only; no narration, cue, lifecycle
+      or DSP change.
+    decision_source: Explicit owner approval to implement the existing relationship-map
+      suggestions, 2026-11-10.
     source_row_sha256: 8f80b6d89838b2b7ce4970f6b7021bccc2588bb6f1d67331fb4b56bc29f9a51c
     current_values_sha256: 1b551bfd8aaeeee8d4105f60d1558a93e075001a4f7729c46abf0d451951eb8a
     status: accepted
-    approval_response: Draft optional suggestions should all be implemented vs being suggestions in
-      the guides/relationship-map.html
-    review_note: 'Original proposal description retained verbatim. Directional optional relationship;
-      no reciprocal approval inferred. Original evidence: [{"field": "description", "function_id":
-      "OCF-COG-002", "sha256": "57ff0a5168d935e358c53450af35cf5b5d20d57f4c4de0ce389d1353e4466c5b"},
+    approval_response: Draft optional suggestions should all be implemented vs being
+      suggestions in the guides/relationship-map.html
+    review_note: 'Original proposal description retained verbatim. Directional optional
+      relationship; no reciprocal approval inferred. Original evidence: [{"field":
+      "description", "function_id": "OCF-COG-002", "sha256": "57ff0a5168d935e358c53450af35cf5b5d20d57f4c4de0ce389d1353e4466c5b"},
       {"field": "description", "function_id": "OCF-FND-002", "sha256": "5589edf7e5fa4b3687d6ce74a83a0697d44ac80d155cee2f100481105c29d57d"}]'
     relationship_id: REL-COG002-FND002
     related_function_id: OCF-FND-002
@@ -462,7 +392,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -632,8 +562,8 @@ content:
       source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish
-      absence of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -682,8 +612,8 @@ content:
       - automatic-whole-system-learning
       family: cognitive-enhancement
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime
-        state binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -693,8 +623,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 88
           status: supported
-          summary: Inhale/hold, internally issue calculation cue, exhale; cue intensifies an otherwise
-            asserted persistent improvement.
+          summary: Inhale/hold, internally issue calculation cue, exhale; cue intensifies
+            an otherwise asserted persistent improvement.
         closer:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -703,8 +633,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 109
           status: supported
-          summary: Reinforce future remembering, close the learning channel and return to ten-state
-            rest.
+          summary: Reinforce future remembering, close the learning channel and return
+            to ten-state rest.
         consolidation:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -713,8 +643,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 126
           status: supported
-          summary: A subsequent numbered interval is present, but its complete sleep-entry explanation
-            and final exit are not preserved here.
+          summary: A subsequent numbered interval is present, but its complete sleep-entry
+            explanation and final exit are not preserved here.
         conversion:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -723,8 +653,9 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 67
           status: inferred
-          summary: Distinguish a deliberate math-task cue from promises of permanent ability; concrete
-            rehearsal must be an explicit OCF design, not recovered content.
+          summary: Distinguish a deliberate math-task cue from promises of permanent
+            ability; concrete rehearsal must be an explicit OCF design, not recovered
+            content.
         future_use:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -733,8 +664,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 88
           status: supported
-          summary: Use the cue to focus/intensify mathematical ability; repeated use is asserted to
-            improve efficiency.
+          summary: Use the cue to focus/intensify mathematical ability; repeated use
+            is asserted to improve efficiency.
         handoff:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -743,9 +674,9 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 126
           status: unknown
-          summary: Investigated the full available source; this operation is not established. ASR
-            count artifacts and missing later content do not establish timing, deliberate repetition
-            or a complete return sequence.
+          summary: Investigated the full available source; this operation is not established.
+            ASR count artifacts and missing later content do not establish timing,
+            deliberate repetition or a complete return sequence.
         identity:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -754,8 +685,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 88
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained;
-            source cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -774,7 +705,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 54
           status: supported
-          summary: Establish learning receptivity before broad mathematical-ability suggestions.
+          summary: Establish learning receptivity before broad mathematical-ability
+            suggestions.
         preparation:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -783,8 +715,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 9
           status: supported
-          summary: Comfortable uninterrupted posture, ordinary settling movements/breathing and temporary
-            setting-aside in a repository representation.
+          summary: Comfortable uninterrupted posture, ordinary settling movements/breathing
+            and temporary setting-aside in a repository representation.
         provenance:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -793,10 +725,10 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are
-            not independent corroboration. Source accuracy/authentication remains unresolved. ASR
-            count artifacts and missing later content do not establish timing, deliberate repetition
-            or a complete return sequence.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. ASR count artifacts and missing later content do not establish
+            timing, deliberate repetition or a complete return sequence.
         purpose:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -805,8 +737,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 7
           status: supported
-          summary: Improve numerical memory, arithmetic, symbolic understanding and mathematical expression,
-            with an optional intensification cue.
+          summary: Improve numerical memory, arithmetic, symbolic understanding and
+            mathematical expression, with an optional intensification cue.
         rehearsal:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -815,8 +747,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 67
           status: supported
-          summary: Instruction describes the procedure but no distinct listener practice trial is
-            established in the inspected intelligible portion.
+          summary: Instruction describes the procedure but no distinct listener practice
+            trial is established in the inspected intelligible portion.
         safety_claims:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -825,8 +757,9 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 59
           status: supported
-          summary: guaranteed-persistent-cognitive-improvement; broad-mathematical-accuracy; automatic-whole-system-learning.
-            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: guaranteed-persistent-cognitive-improvement; broad-mathematical-accuracy;
+            automatic-whole-system-learning. Claims are classified as source assertions,
+            not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -835,8 +768,8 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 26
           status: supported
-          summary: Ten-state entry, eleven learning opening, ten-state closing; subsequent numbered
-            sleep-like progression is incomplete and final return unavailable.
+          summary: Ten-state entry, eleven learning opening, ten-state closing; subsequent
+            numbered sleep-like progression is incomplete and final return unavailable.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
@@ -845,9 +778,9 @@ content:
             source_sha256: d5bd9c83dd44cf28b3b203eca19d9d8e314047384613a89af6c755c763357a7b
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. ASR
-            count artifacts and missing later content do not establish timing, deliberate repetition
-            or a complete return sequence.
+          summary: Investigated the full available source; this operation is not established.
+            ASR count artifacts and missing later content do not establish timing,
+            deliberate repetition or a complete return sequence.
       source_extent:
         content_group_sha256: 5ccbac82586a753196bfd5b349da32289ad0d5f603a7d50405d994d64498656e
         end_line: 330
@@ -929,10 +862,10 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - ASR count artifacts and missing later content do not establish timing, deliberate repetition
-      or a complete return sequence.
-    - Distinguish a deliberate math-task cue from promises of permanent ability; concrete rehearsal
-      must be an explicit OCF design, not recovered content.
+    - ASR count artifacts and missing later content do not establish timing, deliberate
+      repetition or a complete return sequence.
+    - Distinguish a deliberate math-task cue from promises of permanent ability; concrete
+      rehearsal must be an explicit OCF design, not recovered content.
     states:
       preferred: []
       required: []

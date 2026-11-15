@@ -136,6 +136,10 @@ entries:
     text: Permanent
     status: canonical
     version: 1.0.0
+  command.scope.persistent:
+    text: Persistent until deliberately changed
+    status: canonical
+    version: 1.0.0
   command.scope.access-channel-close:
     text: Access channel (separate from function persistence)
     status: canonical

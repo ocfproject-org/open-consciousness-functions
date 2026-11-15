@@ -7,17 +7,19 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Automates a desired way of being so it runs without active effort.
+  text: Turn learned skills and actions into smooth, natural habits that require less
+    conscious effort while remaining under your control.
   status: canonical
   version: 1.0.0
 metadata_entries:
   functions.ocf-aut-001.lifecycle.scopes.capability.description:
     text: The ability to develop automatic skills remains available.
   functions.ocf-aut-001.lifecycle.scopes.baseline.description:
-    text: Correctly learned selected skill patterns are retained; each performance remains observable,
-      adjustable and stoppable.
+    text: Learned selected skill patterns are retained; each performance remains observable,
+      adjustable, and stoppable.
   functions.ocf-aut-001.lifecycle.scopes.application.description:
-    text: One deliberate cue invocation or chosen performance; not continuously performing an action.
+    text: One deliberate cue invocation or chosen performance; not continuously performing
+      an action.
 activation:
   command_id: OCF-CMD-AUT-001-PRIMARY
   display_cue:
@@ -62,32 +64,32 @@ activation:
   - id: select-action
     operation: select-activity
     instruction:
-      text: Choose an activity.
-      status: canonical
+      text: Choose the activity you want to perform.
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands: []
 tags:
@@ -115,11 +117,8 @@ entries:
   hplus.function.ocf-aut-001.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to transform learned
-
-      actions and skills into smooth, natural, and automatic
-
-      abilities that you can use whenever you choose.'
+    text: This OCF exercise will teach you to turn learned actions and skills into
+      smooth, natural, automatic abilities that you can use whenever you choose.
   hplus.function.ocf-aut-001.function-body:
     status: reviewed
     version: 1.1.0
@@ -127,133 +126,30 @@ entries:
       function_id: OCF-AUT-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
-
-      to transform any correctly learned action
-
-      or skill into a natural, automatic response.
-
-
-      Your mind and body work together,
-
-      developing smooth, coordinated patterns
-
-      that become easier and more effortless
-
-      each time you perform them.
-
-
-      Whenever you wish to automate an activity,
-
-      first bring that activity clearly into your mind.
-
-
-      See yourself performing it correctly,
-
-      smoothly, and with complete confidence.
-
-
-      Imagine the beginning of the action,
-
-      each important movement or step,
-
-      and its successful completion.
-
-
-      Feel the entire sequence flowing naturally,
-
-      with every part working together
-
-      in perfect coordination.
-
-
-      Your brain and nervous system recognize
-
-      this complete pattern and organize it
-
-      into an efficient, automatic response.
-
-
-      Each correct repetition strengthens
-
-      the connections that support this skill,
-
-      making the action smoother, faster,
-
-      and more precise.
-
-
-      Unnecessary effort and hesitation disappear,
-
-      allowing the activity to flow naturally
-
-      without requiring constant conscious thought.
-
-
-      Now bring the complete action clearly
-
-      into your awareness.
-
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      The selected pattern is now becoming
-
-      firmly and permanently established within you.
-
-
-      Your mind and body will automatically
-
-      coordinate the learned activity
-
-      whenever you choose to perform it.
-
-
-      The action will become natural,
-
-      accurate, efficient, and effortless.
-
-
-      Your conscious mind remains free
-
-      to observe, guide, and adjust the activity
-
-      whenever necessary.
-
-
-      You remain in complete control,
-
-      able to begin, modify, improve,
-
-      or stop the action whenever you choose.
-
-
-      Each time you perform the selected skill,
-
-      its automatic pattern becomes stronger,
-
-      smoother, and more reliable.
-
-
-      The more you use {{ cue.primary }},
-
-      the easier and more effective
-
-      this process will become.
-
-
-      This lasting ability to develop
-
-      automatic skills is now permanently
-
-      available to you whenever you desire.'
+    text: "From this moment forward, you have the ability to turn learned actions\
+      \ and skills into smooth, natural, automatic responses.\n\nYour mind, nervous\
+      \ system, and body work together, developing coordinated patterns that become\
+      \ easier and more efficient through practice.\n\nEach repetition strengthens\
+      \ your familiarity with the selected activity, allowing its individual steps\
+      \ to flow together naturally.\n\nUnnecessary hesitation and effort diminish\
+      \ as the skill becomes increasingly automatic.\n\nWhenever you wish to develop\
+      \ this ability for a particular activity, first think of the skill or action\
+      \ you have already learned to perform.\n\nRecognize its important steps and\
+      \ the result you want to accomplish.\n\nYou do not need to picture yourself\
+      \ performing it. Simply know the activity and understand how it should be carried\
+      \ out.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath,\
+      \ silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through\
+      \ your mouth.\n\nAs you exhale, let the selected skill become more natural,\
+      \ coordinated, and automatic.\n\nYour mind and body organize the learned pattern\
+      \ so that, whenever you choose to perform the activity, its individual steps\
+      \ flow together with increasing ease, speed, and precision.\n\nYou remain fully\
+      \ aware and in control, able to begin, guide, adjust, improve, or stop the activity\
+      \ whenever you choose.\n\nThe learned pattern remains available without causing\
+      \ the action to occur on its own.\n\nEach time you perform the selected skill,\
+      \ its automatic pattern becomes stronger, smoother, and more reliable.\n\nThis\
+      \ ability to develop and retain automatic skills is permanently established\
+      \ within you.\n\nThe more you use \"{{ cue.primary }},\" the easier and more\
+      \ effective developing these learned patterns becomes."
   hplus.function.ocf-aut-001.closer:
     status: reviewed
     version: 1.2.1
@@ -261,23 +157,12 @@ entries:
       function_id: OCF-AUT-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to make a learned
-
-      action or skill automatic, picture yourself
-
-      performing it correctly and completely.
-
-
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Automatic Action exercise.'
+    text: "Remember, whenever you wish to make a learned action or skill more automatic,\
+      \ think of the activity and the result you want to accomplish.\n\nInhale deeply\
+      \ and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary\
+      \ }}.\"\n\nThen slowly exhale through your mouth.\n\nThe learned action becomes\
+      \ easier to perform while remaining under your conscious control.\n\nThis concludes\
+      \ your OCF Automatic Action exercise."
 slug: see-be
 classification:
   primary_domain: automation
@@ -290,7 +175,7 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
   scopes:
@@ -308,7 +193,7 @@ lifecycle:
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -341,30 +226,35 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Automatic Action
     recommended_primary_cue: PLUS-AUTOMATE
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Correctly learn the selected ordered action, rehearse correct completion, then
-      inhale/hold/cue/exhale. Automatic performance remains consciously observable, adjustable and stoppable;
-      not future-condition manifestation.
-    pair_reason: AUTOMATE states the learned-action goal directly; See-Be is much less discoverable. Distinguish
-      learned automatic performance from future-condition programming.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise verb,
-      outcome or contextual mode can reinforce an umbrella title without copying it. AUTOMATE states the
-      learned-action goal directly; See-Be is much less discoverable. Distinguish learned automatic performance
-      from future-condition programming.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Correctly learn the selected ordered action, rehearse correct
+      completion, then inhale/hold/cue/exhale. Automatic performance remains consciously
+      observable, adjustable and stoppable; not future-condition manifestation.
+    pair_reason: AUTOMATE states the learned-action goal directly; See-Be is much
+      less discoverable. Distinguish learned automatic performance from future-condition
+      programming.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. AUTOMATE states the learned-action goal directly; See-Be is much
+      less discoverable. Distinguish learned automatic performance from future-condition
+      programming.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
-    documentary_intent: Brochure describes moving a learned thought/action or mental-motor skill toward
-      automatic conditioned performance.
+    documentary_intent: Brochure describes moving a learned thought/action or mental-motor
+      skill toward automatic conditioned performance.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
   contract_sha256: 57611d926cbb4751150b486e6d2498d102eb6950c0d74e687339368aabd5a5e7
@@ -394,14 +284,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -430,11 +321,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup. Preserve
-      procedures, controls, semantics, provenance and separately flagged metadata questions. Later user
-      instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: 4963cae13742fc45228111a6a1d002714622060fc8b50768c1a67efd96667c75
     status: accepted
     previous_values_sha256: 336ef8f52f984e1783db06a0a4d885030ece6d84774ec12d74b56a00610e835d
@@ -445,11 +338,12 @@ record_metadata:
       hplus.function.ocf-aut-001.closer: d27acfb0e90accd949e3545da952742449e5fa432c0405ec0b34193332740672
     current_resolved_text_sha256:
       hplus.function.ocf-aut-001.closer: 7aec8055c1677ed98d8f976268b0da4aad5d3a04780babba5f912e161b07648e
-    review_note: Change title from See-Be to Automatic Action and update exercise sign-off. Keep display
-      and spoken cue unchanged. Preserve correctly learned action selection, ordered mental rehearsal
-      through successful completion, inhale/hold/cue/slow mouth exhale, and surrounding suggestions. Preserve
-      conscious ability to observe, adjust, improve or stop the action. Retain See-Be as historical lookup;
-      introduce no mode or release.
+    review_note: Change title from See-Be to Automatic Action and update exercise
+      sign-off. Keep display and spoken cue unchanged. Preserve correctly learned
+      action selection, ordered mental rehearsal through successful completion, inhale/hold/cue/slow
+      mouth exhale, and surrounding suggestions. Preserve conscious ability to observe,
+      adjust, improve or stop the action. Retain See-Be as historical lookup; introduce
+      no mode or release.
     approval_response: '1'
     review_position: 18
     separate_review_needed: true
@@ -466,7 +360,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -676,8 +570,8 @@ content:
       source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: unverified
       completeness: pending-source-review
@@ -719,8 +613,8 @@ content:
       - improved-skill-efficiency
       family: learned-action-automation
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -730,8 +624,9 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 54
           status: inferred
-          summary: Known command/purpose metadata is paired in the mockup with a proposed internal cue/breath
-            procedure; the exact historical association wording/method is unknown.
+          summary: Known command/purpose metadata is paired in the mockup with a proposed
+            internal cue/breath procedure; the exact historical association wording/method
+            is unknown.
         closer:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -740,8 +635,8 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 126
           status: inferred
-          summary: Historical closer unknown; annotated mockup borrows remember/use, access close and
-            return shell from related transcripts.
+          summary: Historical closer unknown; annotated mockup borrows remember/use,
+            access close and return shell from related transcripts.
         consolidation:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -750,8 +645,8 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 126
           status: inferred
-          summary: Historical target consolidation unknown; proposed sleep/ambient segment is related-function
-            inference, never measured target timing.
+          summary: Historical target consolidation unknown; proposed sleep/ambient
+            segment is related-function inference, never measured target timing.
         conversion:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -760,9 +655,9 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 1
           status: inferred
-          summary: Original OCF design is still required; do not convert mockup expression by synonyms
-            or adopt unsupported mechanisms. Any safer/material reframing needs explicit human review,
-            not historical promotion.
+          summary: Original OCF design is still required; do not convert mockup expression
+            by synonyms or adopt unsupported mechanisms. Any safer/material reframing
+            needs explicit human review, not historical promotion.
         future_use:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -777,8 +672,8 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: inferred
-          summary: Brochure names skill efficiency and companions; mockup adds explicit chunk/order/correct-practice
-            safeguards, not recovered installation steps.
+          summary: Brochure names skill efficiency and companions; mockup adds explicit
+            chunk/order/correct-practice safeguards, not recovered installation steps.
         handoff:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -787,7 +682,8 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 126
           status: inferred
-          summary: Historical handoff unknown; mockup's waking return/reminder is inferred, not recovered.
+          summary: Historical handoff unknown; mockup's waking return/reminder is
+            inferred, not recovered.
         identity:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -802,8 +698,8 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -822,8 +718,8 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 1
           status: inferred
-          summary: Historical opener unknown; mockup supplies purpose orientation and related-function
-            learning shell as structural inference.
+          summary: Historical opener unknown; mockup supplies purpose orientation
+            and related-function learning shell as structural inference.
         preparation:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -838,9 +734,10 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: supported
-          summary: Brochure gives prior Preparation Exercise or prior H-PLUS learning, a quiet supported
-            position, soft stereo/headphone listening and next-day target exercise. Exact lost narration
-            procedure is unknown; mockup shell is related-function inference.
+          summary: Brochure gives prior Preparation Exercise or prior H-PLUS learning,
+            a quiet supported position, soft stereo/headphone listening and next-day
+            target exercise. Exact lost narration procedure is unknown; mockup shell
+            is related-function inference.
         provenance:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -855,12 +752,13 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: inferred
-          summary: Complete available reconstructed_mockup text inspected; shared representations are
-            not independent corroboration. Source accuracy/authentication remains unresolved. Annotated
-            VERIFIED labels are reconstruction-author assertions, not independent authentication. Catalogue
-            purpose/command/use limits and proposed mockup operations are separate evidence axes. Missing
-            historical operations remain unknown. Both brochure pages inspected separately; catalogue
-            assertions are documentary evidence, not recovered audio instructions.
+          summary: Complete available reconstructed_mockup text inspected; shared
+            representations are not independent corroboration. Source accuracy/authentication
+            remains unresolved. Annotated VERIFIED labels are reconstruction-author
+            assertions, not independent authentication. Catalogue purpose/command/use
+            limits and proposed mockup operations are separate evidence axes. Missing
+            historical operations remain unknown. Both brochure pages inspected separately;
+            catalogue assertions are documentary evidence, not recovered audio instructions.
         purpose:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -875,8 +773,8 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: supported
-          summary: Brochure describes moving a learned thought/action or mental-motor skill toward automatic
-            conditioned performance.
+          summary: Brochure describes moving a learned thought/action or mental-motor
+            skill toward automatic conditioned performance.
         rehearsal:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -885,10 +783,11 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Annotated
-            VERIFIED labels are reconstruction-author assertions, not independent authentication. Catalogue
-            purpose/command/use limits and proposed mockup operations are separate evidence axes. Missing
-            historical operations remain unknown.
+          summary: Investigated the full available source; this operation is not established.
+            Annotated VERIFIED labels are reconstruction-author assertions, not independent
+            authentication. Catalogue purpose/command/use limits and proposed mockup
+            operations are separate evidence axes. Missing historical operations remain
+            unknown.
         safety_claims:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -903,8 +802,8 @@ content:
             page: 2
             source_sha256: 6386d2651bb9c6b47ea4bfb995d1bb629487f73758d3c8a30d76d0d61c0b6231
           status: inferred
-          summary: conditioned-reflex-automation; autonomic-transfer; improved-skill-efficiency. Claims
-            are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: conditioned-reflex-automation; autonomic-transfer; improved-skill-efficiency.
+            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -913,8 +812,9 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 1
           status: inferred
-          summary: Historical target recording's exact state sequence remains unknown. Mockup imports
-            ten/eleven/ten/sleep/waking grammar from surviving Hearing/Seeing, not recovered target audio.
+          summary: Historical target recording's exact state sequence remains unknown.
+            Mockup imports ten/eleven/ten/sleep/waking grammar from surviving Hearing/Seeing,
+            not recovered target audio.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
@@ -923,10 +823,11 @@ content:
             source_sha256: 9efb1a15bcf3fd31e8a3fb5747b1759a124ac9e73c5306618cc10d1156f93948
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Annotated
-            VERIFIED labels are reconstruction-author assertions, not independent authentication. Catalogue
-            purpose/command/use limits and proposed mockup operations are separate evidence axes. Missing
-            historical operations remain unknown.
+          summary: Investigated the full available source; this operation is not established.
+            Annotated VERIFIED labels are reconstruction-author assertions, not independent
+            authentication. Catalogue purpose/command/use limits and proposed mockup
+            operations are separate evidence axes. Missing historical operations remain
+            unknown.
       source_extent:
         content_group_sha256: 9ce6ed9da1aa2a9d6eea8b333f8cb52f4c5fd786f8994d4eaaac302f949eaf9b
         end_line: 129
@@ -1008,11 +909,12 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Annotated VERIFIED labels are reconstruction-author assertions, not independent authentication.
-      Catalogue purpose/command/use limits and proposed mockup operations are separate evidence axes.
-      Missing historical operations remain unknown.
-    - Original OCF design is still required; do not convert mockup expression by synonyms or adopt unsupported
-      mechanisms. Any safer/material reframing needs explicit human review, not historical promotion.
+    - Annotated VERIFIED labels are reconstruction-author assertions, not independent
+      authentication. Catalogue purpose/command/use limits and proposed mockup operations
+      are separate evidence axes. Missing historical operations remain unknown.
+    - Original OCF design is still required; do not convert mockup expression by synonyms
+      or adopt unsupported mechanisms. Any safer/material reframing needs explicit
+      human review, not historical promotion.
     states:
       preferred: []
       required: []

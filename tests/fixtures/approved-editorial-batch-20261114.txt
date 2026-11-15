@@ -1,0 +1,1584 @@
+# OCF — consolidated approved editorial implementation handoff (23 functions)
+
+You are the OpenCode 2 implementation agent for `ocfproject-org/open-consciousness-functions`. The owner explicitly requests implementing ONLY the **23 completely approved function revisions and approved cross-cutting editorial corrections** below. This document supersedes the earlier 9-function overnight editorial handoff; **do not execute both independently** or accidentally overwrite newer approved revisions. Perform the work now, autonomously through successful tests and a reviewable PR. No merge, tag, release, publication, deployment, or audio rerender is authorized by this prompt.
+
+## 1. Required safe working process
+
+1. Inspect `git status`, main SHA, current worktrees, pending work, open PRs, canonical locale YAML, and existing test suite. Reference pinned editorial review baseline `704440da8e0379cee8dfd332203bc0001c0a5f27` only as historical ground truth. **Do not reset current main**, overwrite concurrent agent changes, or discard newer approved edits; report and reconcile conflicts by exact field.
+2. Create a separate conflict-safe worktree/feature branch, or safely reuse an existing editorial implementation branch without duplicating work. Record before/after SHA and file hashes. Current source of truth is one `locales/en-US/<function-id>-<name>.yaml` per function/locale, not extra parallel registries.
+3. Replace the descriptions and three narration entries for every listed function with EXACT owner-approved text below. YAML folding/formatting is allowed if the **resolved spoken words and punctuation** match. The visible `Plus ...` phrases are resolved spoken cues; preserve the catalog's `cue_template`/`{{ cue.primary }}` and supported distinct secondary cue bindings rather than hardcoding speech when existing architecture calls for bindings. Avoid double narration of commands.
+4. Apply ONLY the explicitly specified activation and lifecycle changes in each entry's `Implementation invariants`, including `activation.procedure_steps`, `activation.control.procedure` and its `ref` / `before_steps` / any secondary mode or release procedures, `lifecycle.scopes` where relevant, generated function guides/pages, localization/command references and tests. Do not change shared procedure semantics for unrelated functions. Preserve all IDs and command meanings unless the owner explicitly changed them.
+5. Global approved editorial standard: eliminate the *candle-blowing analogy* in the 23 current narration replacements. Say the simple exhalation instruction while keeping actual exhale mode, open-eye behavior, and timing function-specific. This is a wording change, **not blanket permission to modify unreviewed functions**. The owner also batch-approved succinct direct descriptions for the initial 17; those are reflected verbatim below.
+6. Preserve the existing `narration.sequence`: one opener, **four body passes**, one closer for each function. Preserve all historical release records, snapshots, old audio transcripts, ownership/provenance, and voice assets. Do not regenerate audio, rewrite approved legacy releases, or invent current public audio replacements.
+7. Existing safety, evidence quality, metadata and clinical caveats must remain where appropriate; no false claim of scientifically demonstrated mechanisms. Do not append repetitive disclaimers to narrated body or short descriptions.
+8. Update current **active** instructions, documentation, and generated current pages only when source authority or renderer contract requires. Do not resurrect deactivated historic cues on live function pages, change titles/identities, or silently edit historical mapping. Avoid introducing new mandatory visualization, physical sensations, task selection, eye closure or new commands unless listed.
+
+## 2. Regression and completion requirements
+
+- For every function, verify the resolved opener/body/closer against the exact text below and JSON companion (including secondary command interpolation). Verify exact short description and 1/4/1 narration schedule.
+- Explicit activation tests: Sleep now uses **close eyes → inhale → hold → Plus Sleep while holding → exhale → keep eyes closed**, replacing exhale-only and removing both former purpose steps. Nutricia uses **Food More/Food Less** with **last-selected persistent mode** and NO close/open eyes, no activation per meal. Regenerate REQUIRES selected body part while Body Tune-Up and Restorative Sleep default to whole body with optional area. Temporary Numbing requires a target for both Plus Numb and Plus Release. Information Access requires question-before-command and no breath sequence. Access to Energy requires purpose with no breath or imagery. Other functions as individually noted.
+- Verify eye rules: Brain Flow has open-eyes following exhalation in body and closer; Circulation retains its closer's open-eyes; Body Tune-Up and Regenerate close/open eyes; Heart Flow, Comfort, Detox, Blood Pressure Balance and Restorative Sleep do not gain an open-eyes requirement; Breathe Better, Immune Readiness, Nutricia, Hormonal Transitions, Mental Calculation, Think Fast, Speak Up, Coordination, Access to Energy, Automatic Action and Do This Now gain no eye closure.
+- Nutricia: last selected persists across meals/rest/sleep until other command selected; repeat same command is optional reinforcement; no default Food Less. Preserve food modes as distinct, not an intensity adjustment. Test mode transitions and first-use unspecified selection; maintain nutritional/medical safeguards in docs.
+- Preserve automatic baseline vs temporary application on Blood Pressure Balance, Hormonal Transitions, Body Tune-Up, Information Access and Automatic Action. Preserve Restorative Sleep lasting learned ability but temporary sleep-time application. Do not convert normal user actions into involuntary behavior.
+- Test the removal of mandatory visual and felt-state gates and of unneeded selection steps. Test the specific required targeting exceptions. Verify no unwanted legacy phrases, extra cue duplication, or narration fields accidentally abandoned.
+- Run targeted tests, full CI-equivalent suite, lint/schema validation, integration checks and existing statement/branch coverage gates. Repair caused failures without lowering gates, skipping tests, or claiming a passing result without evidence. Treat unrelated pre-existing failures separately.
+- Commit a reviewable PR with exact-head checks, a change list, a parity report for all 23 records (hashes acceptable), and a concise list of deferred/unreviewed functions. **Do not merge or publish**. If blocked, report the exact obstacle and successful independent work.
+
+## 3. Owner-approved complete replacement content
+
+The text inside each section is authoritative, with these already-approved follow-up corrections baked in. No alternative prose is authorized without owner review.
+
+### OCF-BOD-001 — Brain Flow
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-001-Brain-Flow.yaml`
+
+**Implementation invariants:** Remove redundant target focus; ensure post-exhale eye opening in body and closer; no required imagery. Retain existing description pending separate explicit review.
+
+**Approved short description:**
+
+```text
+Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen healthy circulation
+and natural maintenance throughout your brain
+and the blood vessels in your neck that supply it,
+supporting clear thinking and mental sharpness.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let healthy circulation, renewal,
+and maintenance work together throughout your brain
+and the blood vessels in your neck that supply it.
+
+Let blood flow smoothly and evenly,
+carrying oxygen and nourishment to every part of your brain.
+Let these pathways remain open, strong, and flexible,
+with renewal and maintenance working together in natural balance.
+
+This pattern is permanently established within you
+and continues automatically, whether you are awake, resting, or asleep,
+adjusting to your body's needs without conscious effort.
+
+Your mind becomes clearer, your thinking sharper,
+and your concentration steadier.
+Your thoughts flow smoothly,
+and your responses become quicker and more precise.
+
+Whenever you wish to reinforce this pattern, simply close your eyes.
+Take a deep breath in and gently hold it.
+While holding your breath, silently say to yourself,
+"Plus Brain Flow."
+Then slowly exhale through your mouth and open your eyes.
+
+As you exhale, let this pattern of healthy circulation, renewal,
+and maintenance continue throughout your brain and neck.
+
+The more you use this command,
+the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce healthy circulation and maintenance
+in your brain and neck, close your eyes.
+Inhale deeply and gently hold your breath.
+Silently say to yourself, "Plus Brain Flow."
+Then slowly exhale through your mouth and open your eyes.
+
+This concludes your OCF Brain Flow exercise.
+```
+
+### OCF-BOD-006 — Heart Flow
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-006-Heart-Flow.yaml`
+
+**Implementation invariants:** Remove target focus; no eye-opening after exhale; no mandatory imagery or sensations.
+
+**Approved short description:**
+
+```text
+Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to reinforce steady,
+coordinated heart function, healthy circulation,
+and your heart's natural renewal and maintenance.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your heart's natural strength,
+coordination, circulation, and maintenance work together
+in lasting balance.
+
+Let its muscles work smoothly and efficiently,
+with the strength needed to circulate blood without unnecessary strain.
+Let the signals guiding each heartbeat remain clear and coordinated,
+bringing the heart's activity into a steady, balanced rhythm.
+
+Let the blood vessels within and around your heart
+remain open, strong, and flexible,
+supplying the oxygen and nourishment it needs.
+Let renewal and maintenance support every part of your heart.
+
+Your heart responds naturally to your body's changing needs,
+increasing its activity when needed
+and returning to an easy rhythm during rest.
+
+This pattern is permanently established within you
+and continues automatically, whether you are awake, resting, or asleep,
+without conscious effort.
+
+Whenever you wish to reinforce this pattern, simply close your eyes.
+Take a deep breath in and gently hold it.
+While holding your breath, silently say to yourself,
+"Plus Heart Flow."
+Then slowly exhale through your mouth.
+
+The more you use this command,
+the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce healthy heart function,
+circulation, and maintenance, close your eyes.
+Inhale deeply and gently hold your breath.
+Silently say to yourself, "Plus Heart Flow."
+Then slowly exhale through your mouth.
+
+This concludes your OCF Heart Flow exercise.
+```
+
+### OCF-BOD-003 — Comfort
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-003-Comfort.yaml`
+
+**Implementation invariants:** Single selected-area step before inhaling; no diagnostic cause task; no eye-opening or new release; application remains temporary.
+
+**Approved short description:**
+
+```text
+Eases physical discomfort in a selected area of the body.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to ease physical discomfort
+in a selected area of your body.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, whenever you wish to ease physical discomfort,
+you can use this method to bring comfort to the area you choose.
+
+Close your eyes and bring the area where you want comfort into your awareness.
+Take a deep breath in and gently hold it.
+While holding your breath, silently say to yourself,
+"Plus Comfort."
+Then slowly exhale through your mouth.
+
+As you exhale, let discomfort ease,
+becoming less intense and less demanding of your attention.
+Let your body settle into comfort and relaxation,
+while your mind remains calm, clear, and peaceful.
+
+You remain aware of your body's needs
+and free to focus on what you choose.
+
+The more you use this command,
+the easier and more effective this response becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember this method for easing physical discomfort.
+Close your eyes and bring the area where you want comfort into your awareness.
+Inhale deeply and gently hold your breath.
+Silently say to yourself, "Plus Comfort."
+Then slowly exhale through your mouth.
+
+This concludes your OCF Comfort exercise.
+```
+
+### OCF-SLP-002 — Sleep
+
+Canonical locale YAML: `locales/en-US/OCF-SLP-002-Sleep.yaml`
+
+**Implementation invariants:** IMPORTANT: Explicitly approved NEW standardized breath-HOLD timing supersedes old sleep exhale-only procedure. Remove both redundant purpose-selection steps; add close-eyes. Update procedure reference and structured steps, tests, docs, without accidentally changing other functions that reuse original OCF-PROC-SLEEP-EXHALE. No candle exhale; maintain desired waking time; no new guarantee.
+
+**Approved short description:**
+
+```text
+Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to enter normal, natural, restful sleep whenever you choose, and awaken at the time you desire.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, you have the ability to enter normal, natural, restful sleep whenever you choose.
+
+When you are ready for sleep, make yourself comfortable and allow your body and mind to begin relaxing.
+
+Simply close your eyes.
+Take a deep breath in and gently hold it.
+While holding your breath, silently say to yourself,
+"Plus Sleep."
+Then slowly exhale and continue breathing naturally.
+
+As you exhale, allow yourself to move more deeply into peaceful, natural sleep.
+
+Your thoughts become quiet. Unnecessary effort and tension fade away. Your mind and body recognize that the time for sleep has arrived.
+
+You fall asleep smoothly and naturally, without needing to force the process.
+
+Throughout your sleep, your mind and body settle into their natural rhythms of rest, balance, maintenance, and renewal.
+
+You enjoy the restful sleep you desire, awakening at your chosen time, refreshed, alert, and ready for the day ahead.
+
+This ability remains available whenever you consciously choose to use it. At other times, your ordinary waking awareness remains clear and active.
+
+Each time you use "Plus Sleep," entering natural sleep becomes easier and more familiar.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to enter normal, natural, restful sleep, close your eyes.
+
+Take a deep breath in and gently hold it.
+While holding your breath, silently say to yourself,
+"Plus Sleep."
+Then slowly exhale and continue breathing naturally.
+
+Allow yourself to settle into restful sleep.
+
+This concludes your OCF Sleep exercise.
+```
+
+### OCF-BOD-004 — Detox
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-004-Detox.yaml`
+
+**Implementation invariants:** Remove organ/target pre-focus. Keep description unchanged and do not add eye opening.
+
+**Approved short description:**
+
+```text
+Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen and reinforce your body's natural processes of cleansing, renewal, and maintenance, establishing a lasting, automatic pattern of healthy balance throughout your body.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural processes of cleansing, renewal, and maintenance work together smoothly and efficiently.
+
+Your liver, kidneys, lungs, digestive system, and other natural cleansing pathways each perform their important work.
+
+Let your body retain and use what is beneficial, while processing and eliminating natural waste products and substances it no longer needs.
+
+Let every organ, tissue, and supporting system work together in healthy balance, providing nourishment, protection, maintenance, and renewal throughout your body.
+
+This pattern is permanently established within you and continues automatically, whether you are awake, resting, or asleep, adjusting naturally to your body's changing needs without conscious effort.
+
+Whenever you wish to reinforce this pattern, simply close your eyes.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself, "Plus Detox."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let this pattern of natural cleansing, renewal, and maintenance continue throughout your body.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce your body's natural cleansing, renewal, and maintenance, close your eyes.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself, "Plus Detox."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Detox exercise.
+```
+
+### OCF-BOD-002 — Circulation
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-002-Circulation.yaml`
+
+**Implementation invariants:** Remove area focus everywhere. Preserve closer eye-opening as approved; body does NOT add an eye-opening instruction.
+
+**Approved short description:**
+
+```text
+Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen healthy circulation throughout your entire body, supporting smooth blood flow, nourishment, renewal, and natural maintenance.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let healthy circulation, nourishment, renewal, and maintenance work together throughout your entire body.
+
+Let your blood flow smoothly and evenly through your arteries, veins, and smaller blood vessels, carrying oxygen and nourishment wherever they are needed.
+
+Let these pathways remain open, strong, and flexible, supporting steady and efficient circulation.
+
+Your lungs supply oxygen, and your digestive system provides nourishment. Your blood carries these essential resources throughout your body, while your kidneys, liver, lungs, and other natural systems help process waste and maintain healthy balance.
+
+Every organ and tissue receives the circulation and nourishment it needs, with blood flow adjusting naturally to your body's changing demands.
+
+This pattern is permanently established within you and continues automatically, whether you are awake, resting, or asleep, without conscious effort.
+
+Your body's natural circulation and maintenance systems work together smoothly, supporting strength, balance, renewal, and vitality throughout your everyday life.
+
+Whenever you wish to reinforce this pattern, simply close your eyes.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself, "Plus Circulate."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let this pattern of smooth, balanced circulation and natural maintenance continue throughout your entire body.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce healthy circulation and natural maintenance throughout your body, close your eyes.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself, "Plus Circulate."
+
+Then slowly exhale through your mouth and open your eyes.
+
+This concludes your OCF Circulation exercise.
+```
+
+### OCF-BOD-007 — Blood Pressure Balance
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-007-Blood-Pressure-Balance.yaml`
+
+**Implementation invariants:** Remove area focus; preserve permanent adaptive baseline and temporary manual reinforcement. Do not claim continuously lower pressure. Keep medical safety metadata separate.
+
+**Approved short description:**
+
+```text
+Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to reinforce your body's natural ability to regulate blood pressure, supporting healthy circulation, cardiovascular balance, and coordinated heart and blood vessel function.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural systems of blood pressure regulation, circulation, and cardiovascular maintenance work together in healthy balance.
+
+Let your heart and blood vessels work smoothly and efficiently, supporting the circulation of oxygen and nourishment throughout your body.
+
+Let your blood vessels remain healthy, strong, and naturally flexible, responding appropriately to your body's changing needs.
+
+When you are resting, let your cardiovascular system settle into calm, comfortable, and efficient activity.
+
+When you are active, let your heart and blood vessels adjust naturally, providing the circulation and support your body requires.
+
+Let unnecessary physical tension ease, allowing your breathing, muscles, and mind to return to a comfortable, balanced state.
+
+This pattern of healthy cardiovascular regulation and maintenance is permanently established within you.
+
+It continues automatically, whether you are awake, resting, or asleep, adjusting to your body's needs without conscious effort.
+
+Whenever you wish to reinforce this established pattern, simply close your eyes.
+
+Take a comfortable breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Balance Blood Pressure."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your heart and blood vessels continue working together in natural balance, supporting healthy circulation and appropriate blood pressure regulation.
+
+The more you use this command, the easier and more effective this conscious reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce your body's natural blood pressure regulation and cardiovascular balance, close your eyes.
+
+Inhale comfortably and gently hold your breath.
+
+Silently say to yourself,
+"Plus Balance Blood Pressure."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Blood Pressure Balance exercise.
+```
+
+### OCF-SLP-001 — Restorative Sleep
+
+Canonical locale YAML: `locales/en-US/OCF-SLP-001-Restorative-Sleep.yaml`
+
+**Implementation invariants:** Whole-body default, optional targeting; add close-eyes in activation and closer; preserve temporary sleep application and permanent availability of learned ability; no eye opening.
+
+**Approved short description:**
+
+```text
+Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to direct your total self toward deep restoration, healing, repair, and regeneration throughout your natural sleep.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, whenever you prepare for sleep, you can direct your total self toward deep healing, restoration, and regeneration throughout your rest.
+
+Let this intention extend throughout your entire body and being. If there is a particular area you wish to restore, you may include it in your intention.
+
+When you are ready, simply close your eyes.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Restorative Sleep."
+
+Then slowly exhale through your mouth, and continue breathing naturally.
+
+Allow yourself to move easily into deep, peaceful, natural sleep.
+
+As your conscious mind rests, let your subconscious mind, higher self, and physical body work together, directing their natural resources toward healing, repair, renewal, and regeneration.
+
+Let your body's natural maintenance and restorative processes work in harmony, supporting balance, recovery, and renewed vitality throughout your entire being.
+
+Areas of weariness, strain, or imbalance receive the care and attention needed for natural restoration.
+
+This restorative pattern continues automatically throughout your sleep, without requiring conscious direction, observation, or effort.
+
+As your sleep is complete, awaken naturally, deeply rested and refreshed, with renewed energy, clarity, and strength.
+
+Your ability to invoke this restorative sleep pattern remains permanently available whenever you choose. Each use makes entering restorative sleep and directing your total self toward renewal easier and more familiar.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to direct your total self toward healing, restoration, and regeneration during sleep, simply close your eyes.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Restorative Sleep."
+
+Then slowly exhale through your mouth, and continue resting naturally.
+
+This concludes your OCF Restorative Sleep exercise.
+```
+
+### OCF-BOD-009 — Breathe Better
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-009-Breathe-Better.yaml`
+
+**Implementation invariants:** No target or eye closure. Exhale through mouth but NO candle simile. Description unchanged.
+
+**Approved short description:**
+
+```text
+Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen your respiratory system's natural processes of breathing, renewal, and maintenance, establishing a lasting, automatic pattern of healthy, efficient breathing.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your entire respiratory system become stronger, healthier, and more efficient.
+
+Let your nose, throat, airways, and lungs work together smoothly, providing the oxygen your body needs.
+
+Let your nasal passages remain clear and comfortable, warming and moistening incoming air, while tiny protective cilia help carry mucus and trapped particles out of your airways.
+
+Let your airways remain open and flexible, allowing air to move smoothly and naturally.
+
+Within your lungs, millions of tiny air sacs exchange oxygen and carbon dioxide. Oxygen enters your bloodstream to nourish your body, while carbon dioxide passes into your lungs to be released as you exhale.
+
+Let this exchange remain smooth, balanced, and efficient.
+
+Your diaphragm and breathing muscles work together with natural strength and coordination, allowing you to breathe comfortably without unnecessary effort.
+
+Your body's natural processes of maintenance and renewal support the strength, flexibility, and healthy function of your entire respiratory system.
+
+This pattern of efficient breathing and respiratory maintenance is permanently established within you.
+
+It continues automatically, whether you are awake, resting, or asleep, adjusting naturally to your body's changing needs without conscious effort.
+
+Whenever you wish to reinforce this established pattern, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Breathe Better."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let this pattern of smooth, efficient breathing and natural respiratory maintenance continue throughout your body.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, to reinforce healthy breathing and your respiratory system's natural maintenance, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Breathe Better."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Breathe Better exercise.
+```
+
+### OCF-BOD-008 — Immune Readiness
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-008-Immune-Readiness.yaml`
+
+**Implementation invariants:** Complete narration was approved AFTER the overnight batch. Preserve exact existing description; no eye-close or target requirement; maintain natural protective response returning to balance.
+
+**Approved short description:**
+
+```text
+Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen and reinforce your body's natural immune defenses, establishing a lasting, automatic pattern of protection, renewal, and healthy balance.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural immune defenses become stronger, more accurate, and more effective.
+
+Throughout your body, your immune system continually monitors for harmful organisms and other threats, recognizing what requires attention and responding appropriately.
+
+Let your protective immune cells work together with precision, identifying harmful organisms, clearing infected and damaged cells, and coordinating effective defensive responses.
+
+Let your immune system distinguish between what belongs in your body and what may cause harm, protecting healthy tissue while directing its resources where they are needed.
+
+Your immune memory retains knowledge of previous encounters, supporting quicker and more coordinated responses to familiar threats.
+
+When a threat has been controlled, let unnecessary immune activity subside, returning your body to its natural, healthy balance.
+
+This pattern of coordinated immune readiness, protection, and maintenance is permanently established within you.
+
+It continues automatically, whether you are awake, resting, or asleep, responding to your body's needs without conscious direction or effort.
+
+Whenever you wish to reinforce this established pattern, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Immune Ready."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your body's natural immune defenses continue working with accuracy, coordination, and balance.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to reinforce your body's natural immune readiness and coordinated protective responses, inhale deeply and gently hold your breath.
+
+Silently say to yourself, "Plus Immune Ready."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Immune Readiness exercise.
+```
+
+### OCF-BOD-010 — Nutricia
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-010-Nutricia.yaml`
+
+**Implementation invariants:** Explicit owner lifecycle change: last chosen mode persists until changed, no universal default. IMPORTANT user approved full narration ONLY with CLOSE EYES and OPEN EYES requirements removed everywhere. Use both primary and secondary cue bindings. Update lifecycle capability/baseline/application, command modes, tests and docs; no effect at every meal or on its own before first selection.
+
+**Approved short description:**
+
+```text
+Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to direct how your body uses energy and nourishment from the food you eat, establishing a lasting pattern that remains active until you choose to change it.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural processes of digestion, nourishment, and energy utilization work together smoothly and efficiently.
+
+Your body receives the nourishment it needs, uses available energy appropriately, and maintains its natural processes of balance and renewal.
+
+You have two commands for directing this pattern.
+
+The first is "Plus Food More."
+
+This mode encourages your body to extract and make fuller use of the available energy and useful nourishment from the food you eat.
+
+The second is "Plus Food Less."
+
+This mode encourages your body to obtain sufficient nourishment for healthy function while reducing unnecessary energy retention and storage.
+
+In either mode, your body's essential nutritional needs remain supported.
+
+Now understand that whichever mode you select becomes your active pattern.
+
+Your selected mode continues automatically throughout your everyday life, including meals, activities, rest, and sleep, without requiring repeated activation.
+
+It remains active until you deliberately select the other mode.
+
+When you switch modes, your new selection replaces the previous one.
+
+To select or change your mode, simply decide which response you want.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself either "Plus Food More" or "Plus Food Less," according to your choice.
+
+Then slowly exhale through your mouth.
+
+Your chosen mode is now established and remains active until you change it.
+
+There is no need to repeat the command before each meal.
+
+Whenever you wish to reinforce your current selection, you may use its command again.
+
+The more familiar you become with these commands, the easier and more natural selecting and reinforcing your chosen mode becomes.
+
+Your body's natural processes of nourishment, energy utilization, and maintenance continue automatically, working in accordance with your selected pattern.
+```
+
+**Approved closer:**
+
+```text
+Remember, Nutricia allows you to select between fuller nourishment and energy utilization with "Plus Food More," or sufficient nourishment with reduced unnecessary retention and storage with "Plus Food Less."
+
+Your last selected mode remains active until you deliberately change it.
+
+To select, change, or reinforce your mode, inhale deeply and gently hold your breath.
+
+Silently say to yourself either "Plus Food More" or "Plus Food Less."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Nutricia exercise.
+```
+
+### OCF-BOD-011 — Hormonal Transitions
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-011-Hormonal-Transitions.yaml`
+
+**Implementation invariants:** Broaden scope through life; eliminate optional gratitude closer action; preserve permanent adaptive baseline and temporary reinforcement, not fixed hormone levels. Candle analogy removed per later global approval.
+
+**Approved short description:**
+
+```text
+Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen your body's natural ability to regulate and balance its hormonal systems, supporting physical comfort, emotional stability, mental clarity, and overall well-being throughout the hormonal changes of life.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural processes of hormonal regulation and adaptation work together smoothly, efficiently, and in healthy balance.
+
+Your body's hormonal systems communicate and coordinate with one another, adjusting naturally to your changing needs throughout life.
+
+Let your body maintain the hormonal balance appropriate for each stage of your life, responding to natural changes without unnecessary strain or imbalance.
+
+During periods of hormonal transition, let your body adapt smoothly and comfortably, supporting your physical strength, energy, and natural well-being.
+
+Let unnecessary physical tension and discomfort ease.
+
+Your emotions become calmer and steadier, your thoughts clearer, and your ability to respond to everyday situations more balanced and confident.
+
+Your body continues adapting to its changing needs, maintaining healthy coordination among its natural regulatory systems.
+
+This pattern of hormonal regulation, adaptation, and balance is permanently established within you.
+
+It continues automatically, whether you are awake, resting, or asleep, adjusting naturally as your body's needs change without conscious effort.
+
+Whenever you wish to reinforce this established pattern, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Hormone Balance."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let this pattern of healthy hormonal regulation and adaptation continue throughout your body, supporting physical comfort, emotional steadiness, and mental clarity.
+
+The more you use this command, the easier and more effective this conscious reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to reinforce your body's natural hormonal regulation and balance, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Hormone Balance."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Hormonal Transitions exercise.
+```
+
+### OCF-BOD-013 — Body Tune-Up
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-013-Body-Tune-Up.yaml`
+
+**Implementation invariants:** Whole-body default, selected area OPTIONAL. Preserve permanent baseline, temporary targeted application, close/open eyes.
+
+**Approved short description:**
+
+```text
+Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to strengthen your body's natural processes of healing, repair, regeneration, and ongoing maintenance, establishing a lasting pattern of healthy balance throughout your entire body.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural processes of healing, repair, regeneration, and renewal work together smoothly and efficiently throughout your entire physical body.
+
+Let every cell, tissue, organ, and supporting system receive the nourishment and care needed to maintain healthy strength, balance, and function.
+
+Your body's natural maintenance systems work together, recognizing areas that need attention and coordinating the appropriate processes of repair and restoration.
+
+Let these processes support your entire body, strengthening natural vitality and maintaining healthy balance.
+
+This pattern of whole-body maintenance and renewal is permanently established within you.
+
+It continues automatically, whether you are awake, resting, or asleep, adjusting naturally to your body's needs without conscious effort.
+
+Whenever you wish to reinforce this established pattern, you can do so easily.
+
+Simply close your eyes.
+
+If there is a particular area you wish to support, you may bring that area into your awareness. Otherwise, let the reinforcement apply throughout your entire body.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Tune Up."
+
+Then slowly exhale through your mouth and open your eyes.
+
+As you exhale, let your body's natural processes of healing, repair, and renewal continue throughout your body, with additional attention to any area you have chosen.
+
+The more you use this command, the easier and more effective this conscious reinforcement becomes.
+
+Your body's natural maintenance and renewal continue automatically, supporting healthy balance every day and every night.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to reinforce your body's natural healing, repair, regeneration, and maintenance, simply close your eyes.
+
+You may include a particular area in your intention, or allow the reinforcement to apply throughout your entire body.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Tune Up."
+
+Then slowly exhale through your mouth and open your eyes.
+
+This concludes your OCF Body Tune-Up exercise.
+```
+
+### OCF-BOD-014 — Regenerate
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-014-Regenerate.yaml`
+
+**Implementation invariants:** CRITICAL: Unlike Body Tune-Up, Regenerate REQUIRES thinking of a SPECIFIC part or structure. No mandatory imagery. Close/open eyes and same command timing.
+
+**Approved short description:**
+
+```text
+Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to direct your body's natural processes of repair, regeneration, and reconstruction toward a specific part of your physical body, supporting the restoration of damaged, weakened, or missing structures toward their healthy form and function.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your body's natural processes of repair, rebuilding, and regeneration become stronger, more coordinated, and more effective.
+
+Your physical body contains the biological patterns and instructions that guide the formation, maintenance, and renewal of its structures.
+
+Let your cells work together through their natural processes of growth, specialization, and repair, supporting the restoration of healthy tissue and function.
+
+Let circulation supply the oxygen and nourishment needed for this work, while your body's maintenance systems process damaged and unnecessary material.
+
+Let these regenerative processes work together with precision, supporting the reconstruction of healthy structures in their proper form, position, and organization.
+
+This pattern of repair, reconstruction, and regeneration is permanently established within you.
+
+Your body's natural maintenance and regenerative processes continue automatically, whether you are awake, resting, or asleep, without conscious effort.
+
+Whenever you wish to direct additional regeneration toward a particular part of your body, you can do so easily.
+
+Simply close your eyes and think of the specific part you wish to regenerate.
+
+You do not need to know its internal anatomy or picture it in your mind. Simply identify the part you wish to restore and its intended healthy function.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Regenerate."
+
+Then slowly exhale through your mouth and open your eyes.
+
+As you exhale, let your body's natural processes of repair, regeneration, and reconstruction support the selected part, working toward its healthy structure and function.
+
+The more you use this command, the easier and more effective this conscious reinforcement becomes.
+
+Your body's natural processes of maintenance and renewal continue automatically, supporting the restoration and healthy function of its structures.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to direct regeneration toward a specific part of your physical body, close your eyes and think of the part you wish to restore.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Regenerate."
+
+Then slowly exhale through your mouth and open your eyes.
+
+This concludes your OCF Regenerate exercise.
+```
+
+### OCF-BOD-015 — Temporary Numbing
+
+Canonical locale YAML: `locales/en-US/OCF-BOD-015-Temporary-Numbing.yaml`
+
+**Implementation invariants:** REQUIRED target for both activation and release; two different commands (Plus Numb and Plus Release), no mandatory felt result. Temporary application and learned ability; retain supporting safety warnings regarding injury/pain.
+
+**Approved short description:**
+
+```text
+Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to temporarily reduce discomfort and sensitivity in a specific part of your body, and restore ordinary sensitivity whenever you choose.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, you have the ability to temporarily reduce discomfort and sensitivity in a specific part of your physical body.
+
+This ability allows you to direct a temporary numbing response toward the area you choose, while keeping your mind clear, alert, and aware.
+
+Whenever you wish to activate this response, simply close your eyes and think of the specific part of your body where you want temporary numbing.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Numb."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let discomfort and sensitivity in the selected area diminish, becoming less intense and less demanding of your attention.
+
+Let the selected area become comfortably numb, while the rest of your body maintains its ordinary sensitivity.
+
+Your mind remains clear and alert, allowing you to direct your attention where it is needed.
+
+This response is temporary and applies only to the specific area you have chosen.
+
+Whenever you wish to end the numbing response and restore ordinary sensitivity, use your release command.
+
+Close your eyes and think of the same selected area.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Release."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let the temporary numbing response end, allowing ordinary sensitivity to return smoothly and naturally to the selected area.
+
+You remain in conscious control of when to activate or release this temporary response.
+
+Your ability to use these commands is permanently available, while each numbing application remains temporary.
+
+The more you use these commands, the easier and more familiar activating and releasing the response becomes.
+
+At all other times, your body maintains its ordinary awareness and sensitivity.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to temporarily reduce discomfort or sensitivity in a specific part of your body, close your eyes and think of the area you wish to affect.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Numb."
+
+Then slowly exhale through your mouth.
+
+Whenever you wish to restore ordinary sensitivity, repeat the same sequence for that area using
+"Plus Release."
+
+This concludes your OCF Temporary Numbing exercise.
+```
+
+### OCF-COG-001 — Information Access
+
+Canonical locale YAML: `locales/en-US/OCF-COG-001-Information-Access.yaml`
+
+**Implementation invariants:** Question FIRST then Plus Access Info; no breath sequence or eye closing. Baseline knowledge organization persistent, individual query temporary; preserve practice segment.
+
+**Approved short description:**
+
+```text
+Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to access your personal library of information, knowledge, and experience, bringing the information you desire directly into your conscious awareness.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your ability to access your personal library of information, knowledge, and experience become stronger, faster, and more effective.
+
+Everything you have learned, observed, experienced, and understood contributes to this library of knowledge within you.
+
+Your mind continues organizing this information, connecting related memories, ideas, and experiences, even when you are not consciously thinking about them.
+
+This ability to organize and access your knowledge is permanently established within you.
+
+Whenever you wish to retrieve information or understand something more clearly, you can call upon this ability directly.
+
+First, think of a question or something you wish to know.
+
+Then silently say to yourself,
+"Plus Access Info."
+
+Allow the relevant information, memories, ideas, and understanding to come into your conscious awareness.
+
+Information may become available as words, memories, ideas, images, or simple understanding.
+
+There is no need to experience it in any particular way. Simply recognize what becomes available to you.
+
+Your mind brings together related knowledge and experiences, helping you recognize connections and develop clearer understanding.
+
+Sometimes the information becomes apparent immediately. At other times, additional details and connections may emerge naturally as your mind continues working with your request.
+
+Each time you use this command, accessing and recognizing relevant knowledge becomes easier and more familiar.
+
+Your personal library remains available whenever you choose to consult it.
+
+Now, for practice, think of something you would like to remember or understand more clearly.
+
+Silently say to yourself,
+"Plus Access Info."
+
+Allow whatever relevant information or understanding becomes available to enter your awareness.
+
+You can use this ability whenever you desire, while your mind continues organizing and connecting knowledge automatically.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to access your personal library of knowledge, first think of a question or the information you desire.
+
+Silently say to yourself,
+"Plus Access Info."
+
+Allow relevant memories, knowledge, and understanding to come into your conscious awareness.
+
+This concludes your OCF Information Access exercise.
+```
+
+### OCF-COG-002 — Mental Calculation
+
+Canonical locale YAML: `locales/en-US/OCF-COG-002-Mental-Calculation.yaml`
+
+**Implementation invariants:** No intention-selection prerequisite; no eye closure or compulsory visualization. Broad math and permanent capability.
+
+**Approved short description:**
+
+```text
+Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will strengthen your ability to understand, remember, and work with numbers, improving mathematical reasoning, calculation speed, accuracy, and intuition.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your ability to understand, remember, and work with numbers become stronger, faster, and more accurate.
+
+Whenever you encounter numbers, mathematical symbols, or equations, let their meaning become clear and understandable.
+
+Let numbers and numerical sequences become easier to remember and retrieve whenever you need them.
+
+Your ability to perform arithmetic, algebra, geometry, trigonometry, and advanced mathematical operations becomes faster, clearer, and increasingly precise.
+
+Your mind recognizes relationships between numbers, quantities, shapes, angles, equations, and patterns, understanding how they connect and work together.
+
+Let mathematical principles become easier to recognize and apply, allowing you to approach problems with clarity, confidence, and understanding.
+
+New mathematical ideas, insights, and solutions emerge naturally into your conscious awareness.
+
+Your calculations become quicker and more accurate, and your ability to recognize useful patterns and solve mathematical problems continues to strengthen.
+
+This growing mathematical ability is permanently established within you.
+
+Your mind continues organizing and connecting numerical knowledge automatically, whether you are awake, resting, or asleep, strengthening your mathematical understanding through learning and experience.
+
+Whenever you wish to reinforce these abilities, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Calculate."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your mind become clear, focused, and responsive to the numbers and mathematical problems before you.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to reinforce your ability to calculate, understand numbers, or solve mathematical problems, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Calculate."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Mental Calculation exercise.
+```
+
+### OCF-COG-007 — Think Fast
+
+Canonical locale YAML: `locales/en-US/OCF-COG-007-Think-Fast.yaml`
+
+**Implementation invariants:** No select-intention prerequisite, no eyes or visual imagery required, learned ability lasts.
+
+**Approved short description:**
+
+```text
+Faster, clearer thinking, sharper reasoning, and more accurate problem-solving.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will strengthen your ability to think quickly, clearly, and accurately, helping you understand information, reason effectively, and solve problems.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your thinking become faster, clearer, and more accurate.
+
+Your mind processes information quickly, recognizing important details and understanding their meaning.
+
+Your thoughts become organized and precise, allowing you to recognize patterns, connect ideas, and understand complex situations with increasing ease.
+
+You retain relevant information in your awareness, bringing ideas together to form a clear understanding.
+
+Whenever you encounter a problem, your mind examines the available information, recognizes useful possibilities, and identifies effective solutions.
+
+New ideas and insights emerge naturally, helping you adapt to changing circumstances and consider different perspectives.
+
+Even when time is limited, your mind remains calm, confident, focused, and alert.
+
+You think quickly without rushing, responding with clarity, accuracy, and sound judgment.
+
+This growing ability to think clearly and rapidly is permanently established within you.
+
+Your mind continues strengthening its natural ability to process information, recognize connections, and solve problems through learning and experience.
+
+Whenever you wish to reinforce your thinking speed and mental clarity, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Think."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your mind become clear, alert, focused, and responsive.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to think more quickly, clearly, and accurately, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Think."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Think Fast exercise.
+```
+
+### OCF-COM-001 — Speak Up
+
+Canonical locale YAML: `locales/en-US/OCF-COM-001-Speak-Up.yaml`
+
+**Implementation invariants:** Owner approved full narration conditional on removal of candle analogy, as shown. No purpose-selection requirement or eye close.
+
+**Approved short description:**
+
+```text
+Clear, fluent, confident speaking and reading aloud, with natural expression and precise pronunciation.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will strengthen your ability to speak, read aloud, and communicate clearly, confidently, and effectively, expressing yourself naturally and with ease.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your ability to speak, read aloud, and communicate become clearer, stronger, and more effective.
+
+Your thoughts organize naturally into meaningful words, allowing you to express your ideas clearly and accurately.
+
+You speak fluently and confidently, with comfortable rhythm, precise pronunciation, and natural expression.
+
+Your breathing supports your voice with smooth, steady airflow.
+
+Your vocal cords, throat, tongue, lips, and mouth work together in natural coordination, allowing words to form easily and clearly.
+
+Whenever you read aloud, you recognize written words quickly, understand their meaning, and pronounce them accurately.
+
+Your ideas flow smoothly into spoken expression, helping you communicate exactly what you intend.
+
+Whether speaking with familiar people, meeting someone new, addressing a group, or reading aloud, you remain calm, confident, and articulate.
+
+You express yourself naturally, without unnecessary hesitation, tension, or effort.
+
+This ability to speak and communicate clearly is permanently established within you.
+
+Your mind, breathing, and voice continue working together automatically, strengthening your natural fluency and confidence through everyday communication.
+
+Whenever you wish to reinforce this ability, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Speak Up."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your thoughts flow into clear, confident speech, allowing you to communicate naturally and effectively.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to speak, read aloud, or communicate more clearly and confidently, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Speak Up."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Speak Up exercise.
+```
+
+### OCF-PRF-003 — Coordination
+
+Canonical locale YAML: `locales/en-US/OCF-PRF-003-Coordination.yaml`
+
+**Implementation invariants:** No select-purpose prerequisite; simplify mouth exhale; no eye closure.
+
+**Approved short description:**
+
+```text
+Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will strengthen the coordination of your mind, nervous system, and muscles, allowing your body to move smoothly, rapidly, precisely, and with natural ease.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, let your mind, nervous system, and muscles work together in increasingly smooth and precise coordination.
+
+Signals throughout your nervous system travel quickly and efficiently, allowing your muscles to respond accurately and at the right moment.
+
+Your entire body moves with greater balance, control, accuracy, and natural ease.
+
+Each movement flows smoothly into the next, without unnecessary hesitation, tension, or effort.
+
+Your hands, feet, eyes, and muscles coordinate naturally, supporting accurate timing and effortless movement.
+
+When quick action is needed, your responses become faster and more precise.
+
+When careful control is needed, your movements remain steady, balanced, and accurate.
+
+Your mind and body work together automatically, allowing you to move without consciously directing every muscle or action.
+
+This pattern of improved coordination is permanently established within you.
+
+Your natural balance, timing, and movement precision continue strengthening through everyday activity and experience.
+
+Whenever you wish to reinforce this coordination, take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Coordinate."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your entire physical system work together in smoother, faster, and more accurate coordination.
+
+The more you use this command, the easier and more effective this reinforcement becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to reinforce the speed, smoothness, balance, and precision of your movements, inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Coordinate."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Coordination exercise.
+```
+
+### OCF-FND-001 — Access to Energy
+
+Canonical locale YAML: `locales/en-US/OCF-FND-001-Access-to-Energy.yaml`
+
+**Implementation invariants:** Preserve conceptual M energy/total self, chosen goal required, no mandatory picture/sensation/eyes/breathing. CRITICAL preserve separate PLUS RELEASE ELEVEN ACCESS special Access Channel close command and entry unchanged; do not conflate.
+
+**Approved short description:**
+
+```text
+Access and direct M energy toward chosen goals, including vitality, strength, restoration, protection, and mental clarity.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to recognize, access, and direct your M energy, the vast reserve of energy within your total self, toward any purpose you consciously choose.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, you have the ability to recognize, access, and direct the M energy of your total self.
+
+M energy is the energy available throughout your total being, connecting your conscious mind, subconscious mind, and higher self.
+
+You can call upon this energy whenever you choose, directing it toward the goals and purposes that matter to you.
+
+You may recognize M energy as warmth, light, movement, vibration, or a simple sense of knowing.
+
+No particular sensation or mental image is required. You can access and direct M energy simply through conscious intention.
+
+Your conscious mind, subconscious mind, and higher self work together, coordinating this energy toward the purpose you select.
+
+You may direct M energy toward healing and restoration, protection and balance, strength and stamina, clear thinking, insight, or heightened awareness.
+
+You may direct it toward your physical body, your total self, or broader purposes you consciously choose.
+
+Your intention gives this energy its direction, allowing your total self to work toward the result you desire.
+
+This ability to access and direct M energy is permanently established within you.
+
+Whenever you wish to use it, first think of the purpose or result you want to accomplish.
+
+Silently say to yourself,
+"Plus Energize."
+
+Then hold your intended result in your awareness.
+
+There is no need to picture it. Simply know what you want to accomplish and allow your total self to respond to that intention.
+
+Let your M energy organize and flow toward your chosen purpose, working naturally without unnecessary effort.
+
+The more you use this command, the easier and more effective directing your M energy becomes.
+
+Now, take a moment to practice.
+
+Choose something you wish to accomplish or strengthen.
+
+Silently say to yourself,
+"Plus Energize."
+
+Recognize your chosen purpose and allow your total self to direct its resources toward that result.
+
+Your ability to access and direct M energy remains available whenever you choose to use it.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to access and direct your M energy, think of the purpose or result you desire.
+
+Silently say to yourself,
+"Plus Energize."
+
+Hold your intended result in your awareness and allow your total self to direct its energy toward that purpose.
+
+This concludes your OCF Access to Energy exercise.
+```
+
+### OCF-AUT-001 — Automatic Action
+
+Canonical locale YAML: `locales/en-US/OCF-AUT-001-Automatic-Action.yaml`
+
+**Implementation invariants:** Owner APPROVED narration with explicit correction removing "correctly" qualifiers, including opening/body/closer and description. Preserve chosen activity, conscious adjustable performance, not involuntary ongoing action. No eye closure.
+
+**Approved short description:**
+
+```text
+Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to turn learned actions and skills into smooth, natural, automatic abilities that you can use whenever you choose.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, you have the ability to turn learned actions and skills into smooth, natural, automatic responses.
+
+Your mind, nervous system, and body work together, developing coordinated patterns that become easier and more efficient through practice.
+
+Each repetition strengthens your familiarity with the selected activity, allowing its individual steps to flow together naturally.
+
+Unnecessary hesitation and effort diminish as the skill becomes increasingly automatic.
+
+Whenever you wish to develop this ability for a particular activity, first think of the skill or action you have already learned to perform.
+
+Recognize its important steps and the result you want to accomplish.
+
+You do not need to picture yourself performing it. Simply know the activity and understand how it should be carried out.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Automate."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let the selected skill become more natural, coordinated, and automatic.
+
+Your mind and body organize the learned pattern so that, whenever you choose to perform the activity, its individual steps flow together with increasing ease, speed, and precision.
+
+You remain fully aware and in control, able to begin, guide, adjust, improve, or stop the activity whenever you choose.
+
+The learned pattern remains available without causing the action to occur on its own.
+
+Each time you perform the selected skill, its automatic pattern becomes stronger, smoother, and more reliable.
+
+This ability to develop and retain automatic skills is permanently established within you.
+
+The more you use "Plus Automate," the easier and more effective developing these learned patterns becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to make a learned action or skill more automatic, think of the activity and the result you want to accomplish.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Automate."
+
+Then slowly exhale through your mouth.
+
+The learned action becomes easier to perform while remaining under your conscious control.
+
+This concludes your OCF Automatic Action exercise.
+```
+
+### OCF-PRF-001 — Do This Now
+
+Canonical locale YAML: `locales/en-US/OCF-PRF-001-Do-This-Now.yaml`
+
+**Implementation invariants:** REQUIRED chosen activity, no imagery/eye close, breath hold cue then mouth exhale; currently temporary invocation, learned ability available; 4 body repetitions.
+
+**Approved short description:**
+
+```text
+Turn intentions into action, overcome hesitation, build momentum, and follow through to completion.
+```
+
+**Approved opener:**
+
+```text
+This OCF exercise will teach you to turn your intentions into action, bringing energy, enthusiasm, and momentum to starting, continuing, and completing the activities you choose.
+```
+
+**Approved body (four scheduled passes):**
+
+```text
+From this moment forward, you have the ability to turn your intentions into action whenever you choose.
+
+Whether you wish to begin something new, continue an activity already underway, or bring something to completion, your total self is ready to move forward.
+
+Your conscious mind, subconscious mind, physical body, and higher self work together, directing their resources toward the activity you choose.
+
+Unnecessary hesitation, delay, and resistance fade away, allowing energy, willingness, and enthusiasm to arise naturally.
+
+You move into action with confidence, clarity, and a sense of purpose.
+
+Each step creates momentum for the next, making it easier to maintain your progress and complete what you have chosen to accomplish.
+
+Your attention and energy remain aligned with the activity, helping you follow through from beginning to completion.
+
+Whenever you wish to activate this ability, think of the activity you want to begin, continue, or complete.
+
+Take a deep breath in and gently hold it.
+
+While holding your breath, silently say to yourself,
+"Plus Do This Now."
+
+Then slowly exhale through your mouth.
+
+As you exhale, let your intention become action, moving forward with confidence and momentum.
+
+This ability to begin, continue, and complete chosen activities remains available whenever you need it.
+
+The more you use this command, the easier and more natural moving from intention into action becomes.
+```
+
+**Approved closer:**
+
+```text
+Remember, whenever you wish to begin, continue, or complete an activity, think of the activity you choose.
+
+Inhale deeply and gently hold your breath.
+
+Silently say to yourself,
+"Plus Do This Now."
+
+Then slowly exhale through your mouth.
+
+This concludes your OCF Do This Now exercise.
+```
+
+## 4. Boundaries and final engineering report
+
+These 23 replacements are **the full scope**. The other 35 canonical functions remain editorially unapproved for this handoff. Keep concurrent, newer approvals if already merged to main and reconcile field conflicts without silent overwrite. If a recorded-approved function's text was already implemented, verify exact parity and do not generate pointless churn. For historical review receipts or previous releases, create additive provenance/checkpoint records only, never edit old evidence. Open a PR, not a release. Return repository base/head SHA, branch, PR link, 23-by-23 parity status, changed files, test commands/results and any remaining blockers.

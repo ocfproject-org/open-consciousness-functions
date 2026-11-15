@@ -26,14 +26,14 @@ def test_plan_reuses_completeness_catalog_and_retains_exact_baseline(monkeypatch
     text = serialize({"plan": plan, "shared": shared, "expanded": expanded})
     assert (
         hashlib.sha256(text.encode()).hexdigest()
-        == "ae27430581c07530080850eeee87d1189ae018cdb23992a0baf33ca84cde00bc"
+        == "953941d5ffd2d59f34c964b3dac0ecf2187f3dff79b6385163768879353ca21b"
     )
     # Source-only editorial021 changes only default identity/shared fingerprints
     # for this unaffected function. Prove exact020 semantics before older checks.
     editorial_replacements = {
-        "OCF-AUDIO-DEFAULTS-HPLUS-021": "OCF-AUDIO-DEFAULTS-HPLUS-020",
-        "a5a8e37be856cc890d4ec8f3f352569d1974b5e45b91920751cbf7b827673c5b": "339ff152899937803c91808ac0d12e306d87930296c4c71790c0e5282e418ac2",
-        "d7499758c2203e77ab85682d2caf44ebe8d41b9dfa2efa399c9237662a9a1705": "4e93f381960d57172c6fe231cc6a55ce815da2ab88f97da25178e80ac744d50e",
+        "OCF-AUDIO-DEFAULTS-HPLUS-022": "OCF-AUDIO-DEFAULTS-HPLUS-020",
+        "05fcb04b428949613122bd50b92c6f6175be5af3dda65a25d0062c26c99e11bf": "339ff152899937803c91808ac0d12e306d87930296c4c71790c0e5282e418ac2",
+        "e114398498a94ffd57b6cf4b57401bc54c8cb8f8d8b212105a48f3aadc7e56fe": "4e93f381960d57172c6fe231cc6a55ce815da2ab88f97da25178e80ac744d50e",
     }
     for current, previous in editorial_replacements.items():
         assert text.count(current) == 1

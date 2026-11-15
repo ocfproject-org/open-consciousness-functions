@@ -75,7 +75,9 @@ def test_reference_renders_scope_secondary_roles_and_role_specific_procedures():
     short_fix = render_function_sheet(functions["OCF-BOD-015"], index)
     release_section = short_fix.split("## PLUS-RELEASE", 1)[1]
     assert "Release sequence" in release_section
-    assert "Close your eyes" not in release_section
+    assert release_section.index("Close your eyes") < release_section.index(
+        "Think of the same selected area"
+    )
 
     access = render_function_sheet(functions["OCF-FND-001"], index)
     assert "Access-channel close cue" in access

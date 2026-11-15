@@ -16,7 +16,8 @@ procedures:
     localization_key: command.procedure.exhale
   source_narration_keys:
   - hplus.function.ocf-aut-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-CLOSE-FOCUS
   steps:
   - id: close-eyes
@@ -39,7 +40,8 @@ procedures:
     localization_key: command.procedure.exhale
   source_narration_keys:
   - hplus.function.ocf-bod-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-CLOSE-FOCUS-OPEN
   steps:
   - id: close-eyes
@@ -65,7 +67,8 @@ procedures:
     localization_key: command.procedure.open-eyes
   source_narration_keys:
   - hplus.function.ocf-bod-014.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-CLOSE-INHALE-HOLD
   steps:
   - id: close-eyes
@@ -85,7 +88,8 @@ procedures:
     localization_key: command.procedure.exhale
   source_narration_keys:
   - hplus.function.ocf-bod-010.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-CLOSE-NATURAL
   steps:
   - id: close-eyes
@@ -108,7 +112,8 @@ procedures:
     localization_key: command.procedure.breathe-normally
   source_narration_keys:
   - hplus.function.ocf-cog-003.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-CLOSE-OPEN
   steps:
   - id: close-eyes
@@ -131,7 +136,8 @@ procedures:
     localization_key: command.procedure.open-eyes
   source_narration_keys:
   - hplus.function.ocf-sen-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-INHALE-CLOSE-OPEN
   steps:
   - id: inhale
@@ -154,7 +160,8 @@ procedures:
     localization_key: command.procedure.open-eyes
   source_narration_keys:
   - hplus.function.ocf-fnd-005.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-THINK-COMMAND
   steps:
   - id: command
@@ -162,7 +169,8 @@ procedures:
     localization_key: command.procedure.think-or-say-command
   source_narration_keys:
   - hplus.function.ocf-cog-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-QUESTION
   steps:
   - id: question
@@ -173,7 +181,8 @@ procedures:
     localization_key: command.procedure.think-or-say-command
   source_narration_keys:
   - hplus.function.ocf-cog-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-M-ENERGY
   steps:
   - id: purpose
@@ -187,7 +196,8 @@ procedures:
     localization_key: command.procedure.represent-result
   source_narration_keys:
   - hplus.function.ocf-fnd-001.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-IMPRINT
   steps:
   - id: memory
@@ -210,7 +220,8 @@ procedures:
     localization_key: command.procedure.exhale
   source_narration_keys:
   - hplus.function.ocf-cog-004.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-OPTIONS
   steps:
   - id: close-eyes
@@ -233,7 +244,8 @@ procedures:
     localization_key: command.procedure.exhale
   source_narration_keys:
   - hplus.function.ocf-cog-005.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-SLEEP-EXHALE
   steps:
   - id: sleep-intention
@@ -250,7 +262,8 @@ procedures:
     localization_key: command.procedure.breathe-normally
   source_narration_keys:
   - hplus.function.ocf-slp-002.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-INHALE-HOLD-NATURAL
   steps:
   - id: inhale
@@ -270,7 +283,8 @@ procedures:
     localization_key: command.procedure.breathe-normally
   source_narration_keys:
   - hplus.function.ocf-bod-012.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
 - id: OCF-PROC-SLOW-BREATH
   steps:
   - id: inhale
@@ -290,4 +304,54 @@ procedures:
     localization_key: command.procedure.breathe-slowly-deeply
   source_narration_keys:
   - hplus.function.ocf-slp-003.function-body
-  notes: Semantic sequence abstracted from approved English narration; function-specific evidence is linked on each command record.
+  notes: Semantic sequence abstracted from approved English narration; function-specific
+    evidence is linked on each command record.
+- id: OCF-PROC-SLEEP-HOLD
+  steps:
+  - id: close-eyes
+    operation: close-eyes
+    localization_key: command.procedure.close-eyes
+  - id: inhale
+    operation: inhale
+    localization_key: command.procedure.inhale
+  - id: hold
+    operation: hold-breath
+    localization_key: command.procedure.hold-breath
+  - id: command
+    operation: think-or-say-command
+    localization_key: command.procedure.think-or-say-command
+  - id: exhale
+    operation: exhale
+    localization_key: command.procedure.exhale
+  - id: continue-breathing
+    operation: breathe-normally
+    localization_key: command.procedure.breathe-normally
+  source_narration_keys:
+  - hplus.function.ocf-slp-002.function-body
+  notes: Function-specific approved close-eyes, inhale, breath-hold command timing;
+    preserves eyes closed and natural breathing. Does not change the shared legacy
+    sleep exhale-only procedure.
+- id: OCF-PROC-COMFORT-SELECTED-AREA
+  steps:
+  - id: close-eyes
+    operation: close-eyes
+    localization_key: command.procedure.close-eyes
+  - id: focus-target
+    operation: focus-target
+    localization_key: command.procedure.focus-target
+  - id: inhale
+    operation: inhale
+    localization_key: command.procedure.inhale
+  - id: hold
+    operation: hold-breath
+    localization_key: command.procedure.hold-breath
+  - id: command
+    operation: think-or-say-command
+    localization_key: command.procedure.think-or-say-command
+  - id: exhale
+    operation: exhale
+    localization_key: command.procedure.exhale
+  source_narration_keys:
+  - hplus.function.ocf-bod-003.function-body
+  notes: Function-specific selected-area step follows eye closure and precedes inhalation;
+    no diagnosis or release command.
