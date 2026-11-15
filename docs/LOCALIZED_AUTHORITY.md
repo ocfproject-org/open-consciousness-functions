@@ -24,7 +24,9 @@ templates remain separate only when they serve multiple functions.
 Locale completeness is `complete`, `partial`, `missing` or `needs-review`.
 Missing translations are reported, never fabricated. Spanish remains partial;
 there is no English spoken-cue or narration inheritance. Cue-template raw and
-resolved-text hashes remain distinct.
+resolved text are computed by LocaleCatalog when needed for rendering and cache
+identity. Those fingerprints are derived metadata, not source checksums for
+editors to maintain.
 
 ## Reader outputs
 
@@ -38,7 +40,6 @@ overwritten. Guide generation is not listening approval or release approval.
 
 Previous versions are recoverable from ordinary Git history. Current runtime
 function loading does not consult prior function YAML or archived locale copies.
-Old versioned migration/review ledgers are historical records, not current
-authoring sources. Historical verification that requires a prior revision must
-read the exact Git object and verify its recorded hash; it must not recreate an
-alternate source tree in the current checkout.
+Old migration/review files are not current function authorities. Inspect prior
+wording with ordinary Git history (`git show COMMIT:path`) when a review needs it;
+do not create or maintain checksum sidecars to make ordinary source edits valid.

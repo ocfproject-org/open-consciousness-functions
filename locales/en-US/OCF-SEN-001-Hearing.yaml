@@ -367,7 +367,6 @@ editorial:
   - id: OCF-TITLE-CUE-SEN-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: e4d40ab0e6a424a902b5952b5193971c43fc66452b321367c211568c8105c45b
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Hearing
     recommended_primary_cue: PLUS-HEAR MORE
@@ -397,7 +396,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: d46d313f8ffd834005879c89542ecf07a84a8a712f31f2f336b8cc026b2138e7
 record_metadata:
   legacy:
     command_ids:
@@ -477,16 +475,9 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 741358d7ad4be7e7355af800f32114c3f9eb6624935ffc7b6406deff5698a02b
     status: accepted
-    previous_values_sha256: d57e98b1b1c5307caf3754bb4e6957905f3b637e4dc4481496f00e5e70747ff8
-    current_values_sha256: 248c3e32a8521cce7e37f7a2a2707104a92e3266835093d64eaae565b5085cee
     changed_narration_keys:
     - hplus.function.ocf-sen-001.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-sen-001.closer: 77cb40b753b08dfb449b0fb9666c759caafd62f2ee93ca95b5febe5c6cc63f98
-    current_resolved_text_sha256:
-      hplus.function.ocf-sen-001.closer: 593ecefdbbf8dc4588b5dc60375ec5f1fadb05ba1023d2e4fe3decfa72ec24ee
     review_note: 'Change title from Sensory: Hearing to Hearing and update exercise sign-off. Keep BOTH
       cues unchanged: PLUS-HEAR MORE / Plus Hear More and PLUS-HEAR LESS / Plus Hear Less. Preserve close
       eyes/inhale/hold/selected cue/slow mouth exhale/open eyes sequence, consciously selected adjustments,

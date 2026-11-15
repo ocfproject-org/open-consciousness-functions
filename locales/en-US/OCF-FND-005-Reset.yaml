@@ -301,7 +301,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: a171d8f07121f1f2629693e6784ea369c0666b0d53e0ab4ea27fba41c2e3d553
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Reset
     recommended_primary_cue: PLUS-RESET
@@ -332,7 +331,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 71c6c922351c2a383f5a1ea3cde92e80341bfadfa265701014753e1667c23356
 record_metadata:
   legacy:
     command_ids:
@@ -413,19 +411,10 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 46d76c443657a61a349092c610b55cbe110dafa713676077d6e7858855017c5b
     status: accepted
-    previous_values_sha256: 1c01c3ac0bcf22f7c051b39d98df61735ff608e8b89e18f7cbf4e59b3811b7fe
-    current_values_sha256: 393d120de2fc1808bd21f4bfac4a16ce8529cc19475ed61762b03e0144f7aa2d
     changed_narration_keys:
     - hplus.function.ocf-fnd-005.closer
     - hplus.function.ocf-fnd-005.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-fnd-005.function-body: 3afe64e22d1f0e85e9c202f309db7a717622c56982baed0adeae897a5c02fe9e
-      hplus.function.ocf-fnd-005.closer: 02bb3ba32dd83859a7d9e5467bf0889f0f0e18d28015ffef3ae3d4e00d6ad6e8
-    current_resolved_text_sha256:
-      hplus.function.ocf-fnd-005.function-body: 1dbc05bea4b27a2e74694356059bdd5e0fea7fb4ff30b0219fa3619221a5a0be
-      hplus.function.ocf-fnd-005.closer: cc9b6ea94baa92e888cde93745dc16f2121f45985e0c3d41c01fcc67baee3632
     review_note: Shorten two body mentions and one closer mention from Plus Reset Reset to Plus Reset.
       Preserve title, breathing and eye sequence, and surrounding suggestions. Retain repeated legacy
       phrase as historical lookup; introduce no mode or release. Preserve energized waking-state intent,
@@ -439,9 +428,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-FND-005:purpose
     decision_source: Please do
-    source_row_sha256: 251ab17da515a8a1dbaf3df9cee38a3cc69540b508da2197c45f32c74d6d7023
     status: accepted
-    current_values_sha256: ac1cd506cf0bdaf2d8abce56466387789e5b21b401eb5ff690b609f6c657481a
     review_note: 'Reset: 1'
     approval_response: approve
 content:

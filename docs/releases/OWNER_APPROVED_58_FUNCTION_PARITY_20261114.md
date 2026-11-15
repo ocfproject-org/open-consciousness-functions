@@ -11,14 +11,14 @@ Partial implementation manifest; this is not a claim of 58/58 exact-script parit
 - Nested machine-readable approved material SHA-256: `c170288cf4830057c9e39d5fc9d464b94d49bf585802308cab6887e39fdcd3d6`
 - Functions 24–58 ledger SHA-256: `dc139a5807b7abf11ad0e291fa8fd53edc736bbb36734d86526cc9648f30012b`
 - Master prompt SHA-256: `aa5daaf619336b00d18237c0afa2e4feb3537bcd8992b927a198a9bff2dcbc79`
-- Current canonical YAML SHA-256 appears on every row. The extension receipt separately binds the approved source-ledger digest and hash-only before/after semantics; it contains no duplicate narration authority.
+- Current canonical YAML SHA-256 appears on every row as a review-time snapshot only. No validator or runtime requires these values; canonical YAML remains editable without refreshing this report.
 - PR #42 contains 23 exact opener/body/closer revisions and matching scoped behavior. This branch additionally contains 28 exact ledger descriptions; explicit breath/selection/mode edits; Touch's approved candle removal; a precisely specified Hearing paragraph; and removal of Strong-Quick's release behavior.
 - Global candle analogy was removed from active function narration where found. Only explicitly approved breath-independent or target-selection changes were applied; other breathing/eye order, session timing, DSP/audio profiles, voices, and rendered assets were not altered. Current generated plans only received source/default hashes; no audio was rendered.
 - Exact full replacement narration still required for: `OCF-BOD-005, OCF-COG-003, OCF-COG-004, OCF-COG-005, OCF-COG-006, OCF-EMO-001, OCF-EMO-002, OCF-EMO-003, OCF-EXP-001, OCF-EXP-002, OCF-EXP-003, OCF-EXP-005, OCF-EXP-006, OCF-FND-002, OCF-FND-003, OCF-FND-004, OCF-FND-005, OCF-FND-006, OCF-LIF-001, OCF-PRF-002, OCF-PRF-004, OCF-PRF-005, OCF-PRF-006, OCF-SEN-001, OCF-SLP-003, OCF-SLP-006`.
 - Exact approved short-description source still unavailable for: `OCF-PRF-002`, `OCF-PRF-005`, `OCF-EXP-001`, `OCF-EXP-002`, `OCF-EXP-003`, `OCF-EXP-006`, `OCF-EMO-003`.
 - Offload/Let Go approved deletion sentences do not match the current predecessor body strings; no approximate deletion was invented. Their final replacement scripts remain blocked with the transcript dependency.
 - Strong-Quick's old command ID is preserved in `historical_lookup`; it is not an active command. The shared Plus Release remains available for other functions.
-- Engineering configuration successors: HPLUS-023, HPLUS-024, HPLUS-025 are hash-only, locked, release-not-ready, with unchanged template/pacing/DSP profiles and dependency membership. Prior baseline bytes are unchanged.
+- Active HPLUS-026 locks audio templates/background/DSP engineering inputs only; editable locale text is excluded. HPLUS-001 through HPLUS-025 remain historical files; no existing audio, profile or release artifact is changed.
 
 | Function ID | Title | Parity status | Approved source | Current canonical YAML SHA-256 |
 |---|---|---|---|---|

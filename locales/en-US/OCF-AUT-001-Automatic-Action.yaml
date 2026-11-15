@@ -222,7 +222,6 @@ editorial:
   - id: OCF-TITLE-CUE-AUT-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: cbca91da7e39005ee3dbe10b55499c496040a8aae5c1f7c6fa7f91b0a3e56899
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Automatic Action
     recommended_primary_cue: PLUS-AUTOMATE
@@ -257,7 +256,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 57611d926cbb4751150b486e6d2498d102eb6950c0d74e687339368aabd5a5e7
 record_metadata:
   legacy:
     command_ids:
@@ -328,16 +326,9 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 4963cae13742fc45228111a6a1d002714622060fc8b50768c1a67efd96667c75
     status: accepted
-    previous_values_sha256: 336ef8f52f984e1783db06a0a4d885030ece6d84774ec12d74b56a00610e835d
-    current_values_sha256: 780f027c69e46ce6b698fd543dff7580519d1ccd6e5db601fa5d6a516698e950
     changed_narration_keys:
     - hplus.function.ocf-aut-001.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-aut-001.closer: d27acfb0e90accd949e3545da952742449e5fa432c0405ec0b34193332740672
-    current_resolved_text_sha256:
-      hplus.function.ocf-aut-001.closer: 7aec8055c1677ed98d8f976268b0da4aad5d3a04780babba5f912e161b07648e
     review_note: Change title from See-Be to Automatic Action and update exercise
       sign-off. Keep display and spoken cue unchanged. Preserve correctly learned
       action selection, ordered mental rehearsal through successful completion, inhale/hold/cue/slow
@@ -352,9 +343,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-AUT-001:persistence
     decision_source: Please do
-    source_row_sha256: 9611df01d570756b974016a813826dc8a2d61c2e3b2570507ffffea24d48b6dd
     status: accepted
-    current_values_sha256: c2eaebb3506b8ed1f2dddadb1c3c51fe309225d1680b51cd79572eb80b7aa0f7
     review_note: 'Automatic Action: 1'
     approval_response: approve
 content:

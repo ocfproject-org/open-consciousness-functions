@@ -288,7 +288,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-006
     status: pending
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 96c68ac7b1c28a478a89b4303ac38a404cc50c48cfe8efff402009c20dd140ff
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Strong-Quick
     recommended_primary_cue: PLUS-STRONG QUICK
@@ -319,7 +318,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: d0a83b0230a3a6c681e6bfdbb11efefaf40a51fe039b963e986f89e3f2c963af
 record_metadata:
   legacy:
     command_ids:

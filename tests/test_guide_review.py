@@ -13,7 +13,7 @@ from ocf_tools.models import FunctionRecord
 
 
 @pytest.mark.integration
-def test_owner_approved_relationships_are_hash_provenance_and_canonical_text():
+def test_relationship_decisions_are_provenance_and_current_canonical_text():
     assert review.verify() == []
     rows = review.record()["decisions"]
     assert len(rows) == 33
@@ -26,7 +26,7 @@ def test_owner_approved_relationships_are_hash_provenance_and_canonical_text():
         )
         assert projection["approved_explanation"]
         assert projection["dependency"] == "optional"
-        assert len(projection["source_row_sha256"]) == 64
+        assert "source_row_sha256" not in projection
         assert "before" not in projection
 
 

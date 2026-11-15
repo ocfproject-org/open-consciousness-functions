@@ -241,7 +241,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 61275e52b81522939fc992001948f33ac55353a6731d1b196106ffaede45ef62
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Access to Energy
     recommended_primary_cue: PLUS-ENERGIZE
@@ -277,7 +276,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 3c6e20879a801778abcb143c97074e85919fd2f163c86e7665585ffe84f2e4c6
 record_metadata:
   legacy:
     command_ids:

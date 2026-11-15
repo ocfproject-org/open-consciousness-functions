@@ -36,7 +36,7 @@ def test_candidate_preview_preserves_status_text_and_four_passes(name):
         review(name, locale="es")
 
 
-def test_approval_provenance_and_resolved_text_hashes_live_with_canonical_resources():
+def test_approval_scope_and_current_canonical_text_live_with_canonical_resources():
     assert verify_approvals() == []
     catalog = LocaleCatalog()
     for slug, identifier in CANDIDATES.items():
@@ -48,11 +48,10 @@ def test_approval_provenance_and_resolved_text_hashes_live_with_canonical_resour
         assert preview["authority"] == preview["narration_authority"]
         assert approval["approval_id"] == "OCF-APPROVED-CANDIDATES-001"
         assert approval["decision"] == "approve_full_draft"
-        actual = {row["key"]: row["resolved_text_sha256"] for row in preview["entries"]}
-        from ocf_tools.editorial_successor import expected_entries
-
-        approved = expected_entries(approval["resolved_text_sha256"], resolved=True)
-        assert actual == approved
+        assert "resolved_text_sha256" not in approval
+        for entry in preview["entries"]:
+            assert entry["text"]
+            assert entry["status"] in {"reviewed", "canonical"}
         assert approval["release_ready"] is approval["listening_approval"] is False
     assert [row["version"] for row in review("manifest-v2")["entries"]] == [
         "1.2.0",

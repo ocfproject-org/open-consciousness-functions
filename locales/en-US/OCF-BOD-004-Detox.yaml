@@ -259,7 +259,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: a77dd4c16b62fb2b430a40f9971846a09b0bae3945ec79082ba789530d149e00
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Body Cleansing
     recommended_primary_cue: PLUS-CLEAN CLEAR
@@ -291,7 +290,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: c146679590f8ef5290d1a88ccbb59cf7d6c67b7f2a04fba40f33a1b653636e9d
 record_metadata:
   legacy:
     command_ids:
@@ -380,19 +378,10 @@ record_metadata:
       unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration
       task
-    source_row_sha256: 98b2a5ea44f44854c94cd904c1393afc1d4f3798d371fdb1b8942cbd2c83c44c
     status: accepted
-    previous_values_sha256: 9ad9c98f3907b3b3178e5fdfdc04c7e963948defc43574c7bd42f5839ecf874a
-    current_values_sha256: 3a8fc4d19f69ac2906d2ecabcfd657eee4901d3378899605e3d53f6bbf6933b7
     changed_narration_keys:
     - hplus.function.ocf-bod-004.closer
     - hplus.function.ocf-bod-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-004.function-body: 6b3ac83f2647648316a32facbdb6260ab6390978d9d596edb7a9d00dfd079a5a
-      hplus.function.ocf-bod-004.closer: 5488350b941ede6ca0167eb63fe4ae78e0ce1e583a60dee94a277738432007a3
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-004.function-body: fcac6e12d0d8a42b9a6cf1ea355220ea0aa1b94bcfd3122252d6013c676a96d8
-      hplus.function.ocf-bod-004.closer: b8123ec9832f3d00929ecb2e025346f8ec1b4a81a20626fcc4f3ce1b26b8f3df
     review_note: Detox is the selected title and cue. Preserve current bodily cleansing
       scope; no Body Cleansing/Body Cleanse title or new medical mechanism.
 content:

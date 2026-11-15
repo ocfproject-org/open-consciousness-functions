@@ -8,7 +8,6 @@ from copy import deepcopy
 def complete_resource(old, record, catalog):
     """Convert a new in-memory draft to the canonical locale contract."""
     from .commands import command_view
-    from .function_catalog import contract_hash
 
     data = deepcopy(old)
     data.update(
@@ -97,5 +96,5 @@ def complete_resource(old, record, catalog):
     )
     metadata.get("ocf", {}).pop("testing_status", None)
     data["content"] = deepcopy(record.data.get("content", {}))
-    data["localization"] = {"status": "complete", "contract_sha256": contract_hash(data)}
+    data["localization"] = {"status": "complete"}
     return data

@@ -299,7 +299,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: b36e90f7f0f7410f8b46bf0bdb8174033a3b4d9eed3546d63db6e523b51f71d0
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Inner Power
     recommended_primary_cue: PLUS-INNER POWER
@@ -329,7 +328,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 3baa96b86a986547dc45a0791eb993f5ec0034221d1595482e58bc8745b3d294
 record_metadata:
   legacy:
     command_ids:
@@ -415,19 +413,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: e8633356d526bd307741821de03d6b12e67f6b6fff35e0b4212d87350494028c
     status: accepted
-    previous_values_sha256: ddb011c68f264eaae4110941e192af51581fc387633cc9787e3044df8bb279d0
-    current_values_sha256: 24031da2c2a07903291766b8693b3df4f0ddbb9f2e12a443f45d8f82159a5d17
     changed_narration_keys:
     - hplus.function.ocf-prf-002.closer
     - hplus.function.ocf-prf-002.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-prf-002.function-body: 17f429d2edcf48cc91b2ded2a7282c4ac381ee79167c7a115e26f6e9f7483a73
-      hplus.function.ocf-prf-002.closer: 332215b91a10a5e20ad4d46a352e27ba46ca647977103b69deb8cf12d54e1a4b
-    current_resolved_text_sha256:
-      hplus.function.ocf-prf-002.function-body: 9ddc7f135a7cc0e763bc356c6f1f05314452f2a414dbf1e246e03a4d627be407
-      hplus.function.ocf-prf-002.closer: 50ea2c64e0ed16ece928c5c15643bf9f2a4c04bfafe161dbfcadfb0a8e01b070
     review_note: Retain total-self strength, unity, resources and expression; not only confidence
       or temporary physical performance.
   - id: REL-PRF002-FND005
@@ -436,8 +425,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 2c70b69ec64e13d4f1eff38cfb88bcfd8b64d65e761f71c80bf22784d3712d28
-    current_values_sha256: 9db77afe124667da81b26a3eb310418e3aaa72d346257a6e37de582c7e0b29e3
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

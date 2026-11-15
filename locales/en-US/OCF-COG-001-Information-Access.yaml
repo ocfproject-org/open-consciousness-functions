@@ -250,7 +250,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: fb979f33b0a4335ec5404e0492eb8e776fe74284f06330096f4881caa1ec7a61
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Information Access
     recommended_primary_cue: PLUS-ACCESS INFO
@@ -280,7 +279,6 @@ editorial:
         rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: d7cc8cf3cbb26bd025046709796ba084d1cc390003ca334f2b6ff870d8b3bebf
 record_metadata:
   legacy:
     command_ids:
@@ -362,19 +360,10 @@ record_metadata:
       the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's request.
       Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 3684f24fdefeb93c8847c3a2c8c62b04acfb6c5928cb7725be7ea26c59a0cd6b
     status: accepted
-    previous_values_sha256: d37d527fa6ef57a1482447b24362b609e6e2fe276dcdd43930f21eb2d6b43177
-    current_values_sha256: ef82a6702761db9e07319e8c3f58d10bc5ef447f581275c0d463889b071048a9
     changed_narration_keys:
     - hplus.function.ocf-cog-001.closer
     - hplus.function.ocf-cog-001.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-cog-001.function-body: 1ff0d6d16bc19ccc09447bbb9f722ec25ac242b345a60a00aa690b829b2ac330
-      hplus.function.ocf-cog-001.closer: edcef1a9939bbfe1310cc94e9c394140cf97c341cac4c3bf5a87feb0207177c0
-    current_resolved_text_sha256:
-      hplus.function.ocf-cog-001.function-body: b2dd5c1e089d361c8798bcdca7366e271867ec841e86d81173c61d47aaa739bf
-      hplus.function.ocf-cog-001.closer: 736ed362121f2b09638b735363637fce1d128375b4e7684476951741ae298bd4
     review_note: Change title from Access to Information to Information Access and update exercise sign-off. Replace
       three body mentions and one closer mention from Plus Retrieve to Plus Access Info. Preserve personal knowledge-library
       scope, cue-first then information-selection main instruction and closer, target-first practice passage, and
@@ -388,9 +377,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-COG-001:persistence
     decision_source: Please do
-    source_row_sha256: 23fe5b07fbd84e6697b08f7fabe6ec97a89c0208aaf815124f4f36728f42bc8c
     status: accepted
-    current_values_sha256: a41248f8929ff3348a433617d2eba531b8ddad287028de252bd615d4fadf42ad
     review_note: 'Information Access: 1'
     approval_response: approve
 content:

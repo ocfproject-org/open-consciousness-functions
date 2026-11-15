@@ -411,7 +411,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 9f4fa11b9369d703dcfd294cc0de5add041cddc427cd5035412ea9e40b9ce387
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Imprint
     recommended_primary_cue: PLUS-IMPRINT
@@ -441,7 +440,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 73558164bec64ab8fff581970c16d65ad0c4fd4cda8c9601971e295d03636f12
 record_metadata:
   legacy:
     command_ids:
@@ -531,19 +529,10 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0a1f0fbe0549a0a609f78c9cc26bc84c0c240e174c36483bb715d9b2eb6fd713
     status: accepted
-    previous_values_sha256: 7325bab7efb48ce33d54a3ac7ac6193d59b39478279a66deb30829ff927012ae
-    current_values_sha256: 98c44c6bda0ea30aa1d2b576f82a96b3b0a96eb26f7ab30ffb4c2504620542b1
     changed_narration_keys:
     - hplus.function.ocf-cog-004.closer
     - hplus.function.ocf-cog-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-cog-004.function-body: 7cbaa66d2d445f7b0251534958fa5642409697f29ce4c3c19f6cdd3440683419
-      hplus.function.ocf-cog-004.closer: 500eac99a1a761fed33272b8170fd8f0c043c9081a46a67bd5a421226d8694e0
-    current_resolved_text_sha256:
-      hplus.function.ocf-cog-004.function-body: 35d356c7b19b77ed8c0360920fe0d7af4b7bdceaed97ce17160d9486a326b212
-      hplus.function.ocf-cog-004.closer: 7f07c48613b98a737cf77fa1186778f8727319267a7b09396a248fbcf793bf5a
     review_note: Shorten two body mentions and one closer mention from Plus Imprint Imprint to Plus
       Imprint. Preserve title, breathing/attention sequence and memory suggestions. Keep Plus Recall
       active and unchanged; retain repeated legacy phrase as historical lookup.
@@ -555,9 +544,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-COG-004:persistence
     decision_source: Please do
-    source_row_sha256: c7e0b476dd560678ede68e3bb8826fa41fa2f61368e2f1cbec729b890591df8a
     status: accepted
-    current_values_sha256: bc56f9cec40be3793fd652de8620c5c1bfe5e8fe972a24aee4773e848accdcfd
     review_note: 'Imprint: 1'
     approval_response: approve
   - id: REL-COG004-COG006
@@ -566,8 +553,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 5342f6ee388c29a203190f5ffd240ee06c1f0a4b7cc9e01cc8b694f1c36c5002
-    current_values_sha256: e5f24ca6ef4ffa030390fb8f7c0132f119e526b9dde5432cf9909a2e474b2c1e
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

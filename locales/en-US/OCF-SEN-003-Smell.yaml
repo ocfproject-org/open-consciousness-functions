@@ -411,7 +411,6 @@ editorial:
   - id: OCF-TITLE-CUE-SEN-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 112b7f2100b74e842561ad4da52b8259411bdadd0624d2db5b0d02322da6b2d1
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Smell
     recommended_primary_cue: PLUS-SMELL MORE
@@ -441,7 +440,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: a8ce1412c8400662da3bcda8039ae85ee29805e3868a97ced74842e36c6d4a2a
 record_metadata:
   legacy:
     command_ids:
@@ -538,16 +536,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: e868ea59e2c9a744f50c70e80d169863a5769dd24f0bea931b47c1900490c4b9
     status: accepted
-    previous_values_sha256: 4718242a38c8473cf6048cfd78dc0c30aa58690e63bafb392aa7066c877e3d75
-    current_values_sha256: acade4714e0fe7a404af827a56297f8fecd6e859bd037393aa60d773394df386
     changed_narration_keys:
     - hplus.function.ocf-sen-003.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-sen-003.closer: 2ef41769c22f385743e2432faea57f5b838cec794c97fc30f89ffb28bdf083f8
-    current_resolved_text_sha256:
-      hplus.function.ocf-sen-003.closer: 2b038d8e7dfc6f29d6effc7a4be098097ae50099583f2a47392104d8164be875
     review_note: 'Change title from Sensory: Smell to Smell and update exercise sign-off. Keep BOTH
       cues unchanged: PLUS-SMELL MORE / Plus Smell More and PLUS-SMELL LESS / Plus Smell Less. Preserve
       close eyes/inhale/hold/selected cue/slow mouth exhale/open eyes sequence, consciously selected
@@ -562,8 +553,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 72a8569c066ed3c2f1f2ed09ee3efdd131721665719f98f8290a674458800c34
-    current_values_sha256: dc6af962e5bac99e4daf2071ddf649a060f0d9ac008b1ba1ac6e03440d3bcc2f
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

@@ -81,7 +81,6 @@
               "id",
               "status",
               "source_revision",
-              "source_row_sha256",
               "classification",
               "recommended_title",
               "recommended_primary_cue",
@@ -111,9 +110,6 @@
               "source_revision": {
                 "type": "string",
                 "pattern": "^[a-f0-9]{40}$"
-              },
-              "source_row_sha256": {
-                "$ref": "#/definitions/hash"
               },
               "classification": {
                 "type": "string",
@@ -202,10 +198,7 @@
     "localization": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "status",
-        "contract_sha256"
-      ],
+      "required": ["status"],
       "properties": {
         "status": {
           "enum": [
@@ -214,10 +207,6 @@
             "missing",
             "needs-review"
           ]
-        },
-        "contract_sha256": {
-          "type": "string",
-          "pattern": "^[0-9a-f]{64}$"
         }
       }
     },
@@ -653,8 +642,6 @@
             "user_response",
             "implementation_confirmation",
             "scope",
-            "presented_snapshot_sha256",
-            "resolved_text_sha256",
             "listening_approval",
             "release_ready"
           ],
@@ -682,19 +669,6 @@
             "implementation_note": {
               "type": "string",
               "minLength": 1
-            },
-            "presented_snapshot_sha256": {
-              "$ref": "#/definitions/hash"
-            },
-            "presented_function_sha256": {
-              "$ref": "#/definitions/hash"
-            },
-            "resolved_text_sha256": {
-              "type": "object",
-              "minProperties": 1,
-              "additionalProperties": {
-                "$ref": "#/definitions/hash"
-              }
             },
             "listening_approval": {
               "const": false
@@ -745,45 +719,11 @@
                 "type": "string",
                 "minLength": 1
               },
-              "previous_resolved_text_sha256": {
-                "type": "object",
-                "additionalProperties": {
-                  "$ref": "#/definitions/hash"
-                },
-                "propertyNames": {
-                  "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$"
-                }
-              },
-              "current_resolved_text_sha256": {
-                "type": "object",
-                "additionalProperties": {
-                  "$ref": "#/definitions/hash"
-                },
-                "propertyNames": {
-                  "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$"
-                }
-              },
-              "previous_raw_template_sha256": {
-                "type": "object",
-                "additionalProperties": {
-                  "$ref": "#/definitions/hash"
-                },
-                "propertyNames": {
-                  "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$"
-                }
-              },
-              "unchanged_protected_count": {
-                "type": "integer",
-                "minimum": 0
-              },
               "listening_approval": {
                 "const": false
               },
               "release_ready": {
                 "const": false
-              },
-              "source_row_sha256": {
-                "$ref": "#/definitions/hash"
               },
               "status": {
                 "enum": [
@@ -792,12 +732,6 @@
                   "pending",
                   "superseded"
                 ]
-              },
-              "previous_values_sha256": {
-                "$ref": "#/definitions/hash"
-              },
-              "current_values_sha256": {
-                "$ref": "#/definitions/hash"
               },
               "changed_narration_keys": {
                 "type": "array",

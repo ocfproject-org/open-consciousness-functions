@@ -297,7 +297,6 @@ editorial:
   - id: OCF-TITLE-CUE-SLP-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 8d261511186674b716d06f6d9038061965ed97d6919ba9eec82c15583c1f41ea
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Restorative Sleep
     recommended_primary_cue: PLUS-RESTORATIVE SLEEP
@@ -332,7 +331,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: e9f7914d0455390a513360c19308142dd7de63600cff1e8d8ed558d6c436711b
 record_metadata:
   legacy:
     command_ids:
@@ -422,19 +420,10 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 4d899f4d153dfc46375c921da4d1b0e49a083d0c13d81d02bda6e7a47e9f2087
     status: accepted
-    previous_values_sha256: 2def2e918f8e041ce68bf39da43e4fdbfab5382b4f99d4ad7383574d9c9c4155
-    current_values_sha256: b74b0077d35802e462fdb4ae59de8d5111a59d5b17ad9eb5a4cb0bc0776137b8
     changed_narration_keys:
     - hplus.function.ocf-slp-001.closer
     - hplus.function.ocf-slp-001.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-slp-001.function-body: d1a75c9ab8e64dc0da74ef5e89e4d3ac1c0d9d8434030bee77aa11788c9e505c
-      hplus.function.ocf-slp-001.closer: 3a29a9da4495aff76a52e1ddbaec91517b1caffb2988d0a8c51dfb6863b082c6
-    current_resolved_text_sha256:
-      hplus.function.ocf-slp-001.function-body: ad1a587aaceecb9d3552cec427e020da01b5bcee51ade0e495fdb0e5a0349466
-      hplus.function.ocf-slp-001.closer: d87cf0ee184116a01f864a5f6463278b8aea1a5a2c36ed9e46eb8cf138d824f3
     review_note: Change display cue to PLUS-RESTORATIVE SLEEP. Replace one body mention
       and one closer mention from Plus Heal Heal to Plus Restorative Sleep. Preserve
       title, restoration suggestions, chosen intention, overall balance and inhale/hold/cue/candle-like

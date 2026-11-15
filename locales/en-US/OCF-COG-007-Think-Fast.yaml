@@ -242,7 +242,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-007
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 45fd4dcfe85e0c9cc80228be958bd3bd462e7314c44b082c86cddbf93045e7cf
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Think Fast
     recommended_primary_cue: PLUS-THINK
@@ -275,7 +274,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: aa37c146d22231f3a176cc860e29ae3e3a663190731c96b1d793632389f2d8ef
 record_metadata:
   legacy:
     command_ids:
@@ -337,8 +335,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: aa0ce3aebc26d29f12b4dce4ec23763924788d62a837a8336b857cc1de9d7eda
-    current_values_sha256: 78403f18739627dbd84cfbcff70f639f215222d60b46365d916a6b25778c165e
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

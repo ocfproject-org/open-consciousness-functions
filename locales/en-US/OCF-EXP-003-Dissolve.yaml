@@ -314,7 +314,6 @@ editorial:
   command_review: approved
 localization:
   status: complete
-  contract_sha256: efa9755bcc5b08e38278c1234dfab43e55cf8e062671b7148b29b8adc8a46d46
 record_metadata:
   legacy:
     source_system: null
@@ -367,11 +366,6 @@ record_metadata:
     implementation_confirmation: Confirm implementation
     scope: Exact presented narration, cues and procedures for all four candidates; Intuition registration;
       no DSP, pacing, listening or release approval.
-    presented_snapshot_sha256: 929f81f7d6fc3f6d44f5d3c00e1890c86765c1b7e0ce06bab75a6dbde953c471
-    resolved_text_sha256:
-      hplus.function.ocf-exp-003.closer: b9ff19524160322e0692e64b0f825881fc64dae9529f4721f48d9567a552f4fd
-      hplus.function.ocf-exp-003.function-body: 1ccd21d6e9d4e3e8e6dad4975994ff0cd28ffb8ac69450f3668cd3b2a5e5b451
-      hplus.function.ocf-exp-003.opener: 39f21edbf745061de4f0deba2f001da071488bfdb4a300ea6523e49798048c06
     listening_approval: false
     release_ready: false
     source_commit: 911dbd0f24618091e34e8a816275ab7eabbf97bb
@@ -381,9 +375,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: 204cdee0e12dde1d8e4d0bae57bfe2efbef0948882d89dccb39db07f3d6e0955
     status: accepted
-    current_values_sha256: dcee3df0a102e4a67fff85e1e5f0c5644ec094190e5fdbbc84d41525e8363496
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'

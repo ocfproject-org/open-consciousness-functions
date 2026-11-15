@@ -281,7 +281,6 @@ editorial:
   - id: OCF-TITLE-CUE-EMO-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: a9233ad05437bdc22b5f77dcc5f3f3a54cf50b62b6bd27d1c60e6c3f3262d46e
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Empathize
     recommended_primary_cue: PLUS-EMPATHIZE
@@ -311,7 +310,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 1998ab0888bd1e79c1f016a75a916a3da60b46a86563e3a26a989ebdd4cb4e9a
 record_metadata:
   legacy:
     command_ids:
@@ -391,19 +389,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: 8e2a6a69fc2a0c734f0329aaeaa2ffda54d3329fdece31658275da438a293c81
     status: accepted
-    previous_values_sha256: 3a4e4992c1e25f75755ddf224bbb543422f2005c7f308c2b0bda7abc96e3bfd2
-    current_values_sha256: b340110e2e70a885c7b262779cab823bc4211e3ecc9127eb28acba00c15cced5
     changed_narration_keys:
     - hplus.function.ocf-emo-003.closer
     - hplus.function.ocf-emo-003.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-emo-003.function-body: dc2ec188fdd65f4c2a89b16e020d29d9fe10dc939a9699bc8177dac213efdda0
-      hplus.function.ocf-emo-003.closer: 7b3dbbe7a1eff06d71094912f9bfe5c38789b17073e72f93aef43f4c3176926a
-    current_resolved_text_sha256:
-      hplus.function.ocf-emo-003.function-body: 02a6808b7d0a5db61b3d679eee9108f95d4a33b9dc9aa70be8708c84c8c4bf91
-      hplus.function.ocf-emo-003.closer: c042c3988afe45d63ee4193465f233f2fb81f687f207719ee4fbf48727895e06
     review_note: Retain the existing understanding/communication and total-self intention; impressions
       are not independently verified knowledge.
   - id: REL-EMO003-COM001
@@ -412,8 +401,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 68d7d0579f409792b1f554b32c6f324847b5590bcb459e90b477d5e15c90d08f
-    current_values_sha256: c8fec461757bc1da38255776395467bc94f5044c06c59b209b9dec625d273b64
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

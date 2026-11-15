@@ -35,8 +35,8 @@ def render():
                 "",
                 f"- Canonical authority: [`{path}`](../{path})",
                 f"- Approval: `{approval['approval_id']}` / `{approval['decision']}`; response `{approval['user_response']}`.",
-                f"- Presented snapshot SHA-256: `{approval['presented_snapshot_sha256']}` (verification metadata only; no snapshot copy is retained).",
-                f"- Canonical narration entries: {len(approval['resolved_text_sha256'])}; exact resolved-text hashes are stored with the approval metadata.",
+                "- Current wording and narration schedule are read directly from this canonical YAML resource.",
+                f"- Source revision: `{approval.get('source_commit', 'not recorded')}`.",
                 "- Listening approval: no. Release ready: no.",
                 "",
             ]

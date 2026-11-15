@@ -418,7 +418,6 @@ editorial:
   - id: OCF-TITLE-CUE-SEN-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: b86b3549aebc2f82ff29a895ed82c28e75ca2452b2d6e2a92241de8c531ccce6
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Touch
     recommended_primary_cue: PLUS-TOUCH MORE
@@ -448,7 +447,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 50ab535c9e4deaaa6970a826fa000a47bf4fd3e698deb06047dc49fcd0ef1c7e
 record_metadata:
   legacy:
     command_ids:
@@ -545,16 +543,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 9598de6cb3bb1a276f7a15bf8e57e2e85f41705ac20801cad8c25d2bc1706578
     status: accepted
-    previous_values_sha256: 098bd7f8f3ab7288799272e344557aa1be7f42d1044eaaedf44a0d243c382dba
-    current_values_sha256: 0715b9d9bffbe5d8ada8b8502b565c0a8cf13b73fc6821e22927d4b56a89df7d
     changed_narration_keys:
     - hplus.function.ocf-sen-005.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-sen-005.closer: 49564642f0827a2970122d0289e51d1bfef1d86bc28dc4012c59b3e131902ba7
-    current_resolved_text_sha256:
-      hplus.function.ocf-sen-005.closer: 4c776b0d5e63ac17a7fbbce2e69ea16f940a3ebf58849995424daeb68b9773b9
     review_note: 'Change title from Sensory: Touch to Touch and update exercise sign-off. Keep BOTH
       cues unchanged: PLUS-TOUCH MORE / Plus Touch More and PLUS-TOUCH LESS / Plus Touch Less. Preserve
       consciously controlled reversible physical adjustments, lasting tactile recall and imagination,
@@ -570,8 +561,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: c752325e624f7271a24981491d7fff34f5f318ffa9cf18c14ec217e1e74cefdc
-    current_values_sha256: c233a857207d3ca239814ce839710962e00f50c13e7663918eb704c5ab9a6138
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

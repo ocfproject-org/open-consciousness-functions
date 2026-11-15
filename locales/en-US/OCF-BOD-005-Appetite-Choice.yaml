@@ -398,7 +398,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 53079937fa1123577da6decd7ecb9a542ecb66dd259de7a1ec9d367bbf5ce81b
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Appetite Choice
     recommended_primary_cue: PLUS-SATISFIED, SUPPLIED
@@ -430,7 +429,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b1af13863eca6860320bea443227b31ea98cb245ab67a1d769ce856cc43afcaf
 record_metadata:
   legacy:
     command_ids:
@@ -509,16 +507,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0a2e497a96d7ff508c40dcec4db84708afd5688fae57c0b2bb53ceb54e795c2d
     status: accepted
-    previous_values_sha256: 79baeb1c8ed7fee601ff4d7ce012178c12e1f9648590c92e6b137e90d63d3e28
-    current_values_sha256: c3cfed37e9709df2ac38ce03dbed0f93f9dee15d77e74d17e485d98e3184604e
     changed_narration_keys:
     - hplus.function.ocf-bod-005.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-005.closer: c652817fbd3d05fa0f420e64cd77f15cb89ff1a6f202a8f4aa149fc85fb21128
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-005.closer: e2aa5229b7f58a55b80ceba459795b36603db6b45e59e71f31c885b72bdf5501
     review_note: Change title from Eat/No Eat to Appetite Choice and update exercise sign-off. Keep
       complete display and spoken cue unchanged. Preserve breathing sequence, automatic reinforcement,
       genuine nutritional need recognition and freedom to eat when chosen. Retain Eat/No Eat as historical
@@ -532,9 +523,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-005:purpose
     decision_source: Please do
-    source_row_sha256: a2a3df31e137aabb405ac446718a949db00845dc8125bd827258d419a8e603f5
     status: accepted
-    current_values_sha256: 823cb37b452e4ca8e49517a7da92117086241c8209a0c0766de5f6358a96ca12
     review_note: 'Appetite Choice: 1'
     approval_response: approve
   - id: OCF-FUNCTIONAL-METADATA-PERSISTENCE
@@ -542,9 +531,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-005:persistence
     decision_source: Please do
-    source_row_sha256: 300be13be22971d0b681800f7f43f88b6b8d475b858c50732ab41b1912500cdd
     status: accepted
-    current_values_sha256: 0264984651521a7a648e83ab44891aa00ab8aaf97f16002ebf7d25b7dc7036ea
     review_note: 'Appetite Choice: 1'
     approval_response: approve
   - id: OCF-COMMAND-SIMPLIFICATION-001
@@ -553,13 +540,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle,
       procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 6899c7b27f20d7b2e5d8463a77b0bd01a8a373c424d8ff3c91f529d7d9e2a353
     status: accepted
-    previous_values_sha256: 795863c8f79b89082727c8efddefe733b26a1bd8c31e99e39f26eb801f57f430
-    current_values_sha256: 591542bb23c9bbaf67588b6f82dc2880e232dedcc94e72bc5cbf63c621ed09f8
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical
       wording; listening and release approval remain false.
   - id: REL-BOD005-LIF001
@@ -568,8 +550,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: b93cfa7f712421adb552e0fc3fb5027f97d484054d0a934c7f9a0329aeb40777
-    current_values_sha256: ebdf93f3476aba607b1e51642a3e4a4ce46a8fb7301b6ef8aeed292acfdccaa0
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

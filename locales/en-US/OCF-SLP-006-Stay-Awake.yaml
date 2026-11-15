@@ -293,7 +293,6 @@ editorial:
   - id: OCF-TITLE-CUE-SLP-006
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 3f5f3c9c54d543187dc6ea07b75f378fd61c9633ce6cf4a759011f4ca475abfd
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Stay Awake
     recommended_primary_cue: PLUS-AWAKE
@@ -324,7 +323,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 3e38e329458a1e28d129f0383235a876b3885bd31b0afffc8f60c0027c45a364
 record_metadata:
   legacy:
     command_ids:
@@ -407,19 +405,10 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: ab6eea36acaa541785aad88a31a7fca7a680d2d2f84baab8f87211967bbd6188
     status: accepted
-    previous_values_sha256: f22a4c97ac9d0bb2af75701da8013e48ccbf62fe828a93325d1a563df3ae92be
-    current_values_sha256: 69b84b4e913fe8ee63b53559346a56fa8674728a5edb1ed929c15052461d33a6
     changed_narration_keys:
     - hplus.function.ocf-slp-006.closer
     - hplus.function.ocf-slp-006.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-slp-006.function-body: dc61ddcca824371d2a2b0ae10b7f2bf48c49e02aa23fc928eb731902b5532075
-      hplus.function.ocf-slp-006.closer: 0d973760c884ff19411a051fa9b89779cf6f255f9af48ffdf7d9a0168f8ded0d
-    current_resolved_text_sha256:
-      hplus.function.ocf-slp-006.function-body: 799829cfb832ace99050f5d3c20b7fe5ca927366c2058e232d6774c994c6b923
-      hplus.function.ocf-slp-006.closer: 8c0bfa72261fe8a015bcfc8c9907f3db35f36a42d8aa2f1362b0da918831e2de
     review_note: Replace one body mention and one closer mention from Plus One Awake Alert One One to
       Plus Awake. Preserve title, essential immediate selected-need focus, inhale/hold/cue/slow mouth
       exhale and surrounding alertness suggestions. Retain longer legacy phrase as historical lookup;

@@ -475,7 +475,6 @@ editorial:
   - id: OCF-TITLE-CUE-EXP-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 60c947da9550e6871cac5055d8a9df8c406b8f82f62e368add98483b382f3951
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Thermal Comfort
     recommended_primary_cue: PLUS-INSULATE
@@ -507,7 +506,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: c20247ae8a458071ef973ffee629f5534ae2ec4f27cf529d106b1fa31a4b9581
 record_metadata:
   legacy:
     command_ids:
@@ -612,19 +610,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: 9fda11b8ac0ceec914aa1b18582493055e836aa056a9b08a0169d995879b4d7f
     status: accepted
-    previous_values_sha256: 483617285d8a217e66af516c79e150bed694822d146d170f27a4280ad1911b05
-    current_values_sha256: 515b9fabae3c689df57bfe1aff219696efd30b8620dcba8a5e42818a69097344
     changed_narration_keys:
     - hplus.function.ocf-exp-002.closer
     - hplus.function.ocf-exp-002.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-exp-002.function-body: 84ee0efb4b50af7cb8c3c4748fdba24664ff7bb67a93f5b05b6f958f1b065b2f
-      hplus.function.ocf-exp-002.closer: 16cbce6cc115b2fa5734098941c5ae2f31a882864b4eff1cf7d98aad12b67e68
-    current_resolved_text_sha256:
-      hplus.function.ocf-exp-002.function-body: 1f78fb1b9dc042f5053d82ad19c8e899858f92b4aa5e540be7dcd0673e132b4e
-      hplus.function.ocf-exp-002.closer: 50986eafe3f56f994fa8e0fcb3337f1c7ca4a915b13387f9c666d6c166b042fd
     review_note: Temperature-comfort scope. Cancel ends the current adjustment; Release puts the selected
       application on hold. Preserve both operations.
 content:

@@ -8,6 +8,11 @@ and narration sequence. Filenames are not translated identity contracts.
 Translations do not inherit English spoken cues or narration. Shared session
 preparation remains a separate reusable resource.
 
+Direct editing of the canonical function YAML is the supported authoring
+workflow. A source change requires schema/behavior validation and regeneration of
+derived indexes and plans—not a manual checksum, text approval receipt, or
+secondary wording manifest. Git history records prior function definitions.
+
 The existing `FunctionRecord` interface remains a read-only compatibility view,
 not an additional editable registry. Historical identity and approved provenance
 are embedded as non-authoritative metadata in each locale resource. Runtime
@@ -45,18 +50,13 @@ The before inventory includes all 58 records and 147 observed leaf paths. Git
 history remains the recovery mechanism for predecessors; no archived function
 definition participates in current resolution.
 
-### Immutable audio-default provenance
+### Audio-default scope
 
-The immutable `audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-001.json` through
-`...-015.json` locks are preserved byte-for-byte. Their 825 historical
-`locales/en-US/hplus-OCF-*.yaml` dependency keys are hash-bound provenance, not
-function definitions and not paths that runtime resolves or reads. When a
-historical key's file is absent, audio-default verification may match its
-stable function ID to the canonical resource's recorded predecessor digest;
-it does not open or restore a retired YAML file. Do not edit these historical
-locks or create successor locks as part of the single-source migration. The
-active function catalog, authoring, validation, and session-plan paths use the
-locale manifest and canonical locale resources only.
+Historical audio-default lock files remain unchanged as Git history. The active
+audio-default lock covers audio templates and background/DSP engineering inputs,
+not editable function or locale text. Canonical YAML edits update derived session
+plans when regenerated; they do not require a new audio-default lock. No lock or
+plan change renders audio or grants listening/release approval.
 
 ## Locale completeness
 

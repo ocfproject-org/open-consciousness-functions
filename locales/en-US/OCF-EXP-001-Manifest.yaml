@@ -364,7 +364,6 @@ editorial:
   - id: OCF-TITLE-CUE-EXP-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: f7fcae99700c26ee36742ff07f25f8a74f05151c7331f21ccb5d2bb6219f0246
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Future Pattern
     recommended_primary_cue: PLUS-MANIFEST
@@ -399,7 +398,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b95460e51105d95f0808fbe4b80737a5726c72d292717659c7ed8ec77ba02a37
 record_metadata:
   legacy:
     command_ids:
@@ -485,11 +483,6 @@ record_metadata:
     implementation_confirmation: Confirm implementation
     scope: Exact presented narration, cues and procedures for all four candidates; Intuition registration;
       no DSP, pacing, listening or release approval.
-    presented_snapshot_sha256: 6dc76e9827512efc1c2f4f532366def13480b68bf4d6793e8f7ca13f4903e608
-    resolved_text_sha256:
-      hplus.function.ocf-exp-001.closer: 88659b8cff9bb39e90eebe8ccff6b984668380e1fda11a774d2aa2bc42af7c7c
-      hplus.function.ocf-exp-001.function-body: ff908129faceac6740b5dc80057c95c6c9cb0635e265349ae12420180c06cd86
-      hplus.function.ocf-exp-001.opener: 5dd1bd0cc258c0d0f39d028667effe8a634e525abc9db11363748ea7345b1722
     listening_approval: false
     release_ready: false
     source_commit: 911dbd0f24618091e34e8a816275ab7eabbf97bb
@@ -503,19 +496,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: 9cb4bacaf93168ae2add9e5458495b5503406ae56860dd8fcf3b88fee129f034
     status: accepted
-    previous_values_sha256: 65c73d7ae2147756412c53ddc9624b3f8334fb711ce7ff2f684fead16f93e915
-    current_values_sha256: f8d7f827607ef73a5d290a540b139d758e0e00a025e13d2ea6fbabae5589b0d8
     changed_narration_keys:
     - hplus.function.ocf-exp-001.closer
     - hplus.function.ocf-exp-001.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-exp-001.function-body: 8250a18acc38c42206c22db0c6f879ccd161353944bbb86e567f8168676faf6c
-      hplus.function.ocf-exp-001.closer: 32a2fba7dc6754b73eff9b1194f672f6761ca62aeb32dbb462c54ac2ae1c5933
-    current_resolved_text_sha256:
-      hplus.function.ocf-exp-001.function-body: 025a052d05f536dcd341c349513d625a7676f1552890b171dd3da3fb8d78243c
-      hplus.function.ocf-exp-001.closer: 0a06b27050830d6fa36f437579fee509b9518ba6a5d50e357d80786db6a112ca
     review_note: Retain desired future-condition selection, completion time and total-self manifestation;
       not generic productivity or loop-breaking.
   - id: REL-EXP001-EXP003
@@ -523,9 +507,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: a2cd3d6e5fcde830e336fa17e5e9a303dcec48d6d2c6587d3101d587a2b66b43
     status: accepted
-    current_values_sha256: ad92c02a0f2d9e2f8c3a5ab68aafface1df3348e6bfa9f728d1c7d596ac5a27e
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'
@@ -539,9 +521,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: 1c3f5add604a24f292d82d493e7cff2dc69d59ab0c84ab6da448ea7f5e793ef5
     status: accepted
-    current_values_sha256: 42a885ee57407150fc5039d9db6cb935ae4819b753dc25592349af6835339728
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'

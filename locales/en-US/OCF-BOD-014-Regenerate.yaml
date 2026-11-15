@@ -284,7 +284,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-014
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 55ae13f44ea08b5b7efa90d41512d6e7c0a21c3a68a193476ecd146b1671dae1
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Regenerate
     recommended_primary_cue: PLUS-REGENERATE
@@ -314,7 +313,6 @@ editorial:
         rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: e69d0305a5263926e46b7e36b4c19c86be0e6852cb867bc823a860ba21dfd1b3
 record_metadata:
   legacy:
     command_ids:
@@ -400,19 +398,10 @@ record_metadata:
       Historical Build Live lookup retained; no procedure, persistence, mechanism, mode, timing or translation change.
     decision_source: User response '1' to OCF FUNCTION REVIEW [2/32], explicitly approving Regenerate / PLUS-REGENERATE
       / Plus Regenerate
-    source_row_sha256: 0ba0887af856d5957f7c37746384c6a29239828a6751717b0022a3a3fbca6025
     status: accepted
-    previous_values_sha256: b41f0166f92dfad67648def21787057e24781fb195a98a15e5341a8b4ec6b966
-    current_values_sha256: 68c0d7bfddca43d443905cb58a3d0dda3e00743f753c191ce6645c65e5ab881e
     changed_narration_keys:
     - hplus.function.ocf-bod-014.closer
     - hplus.function.ocf-bod-014.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-014.function-body: 3ca7b66bae8526730df908748bca3de4b7fb4be28495a402d7524d35e1f99f3b
-      hplus.function.ocf-bod-014.closer: 4253396a13716d7362f6b703f845f1286d3dd216f48901208ccefe0ef430ef89
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-014.function-body: a08749de7579962b1c9f69f5013cdee34c7c8e215af079ca919d2642221edb12
-      hplus.function.ocf-bod-014.closer: 4a6d471865b0b9af6be308f366d239f9dd720117ab78dc5c13825c26b119d197
     review_note: 'Preserve lasting automatic repair/reconstruction suggestions and optional conscious targeting:
       close eyes, picture healthy form and function, inhale/hold, internal cue, exhale and open eyes. Permanent
       persistence; no separate mode or release. Preserve reconstruction provenance and historical source-unavailable

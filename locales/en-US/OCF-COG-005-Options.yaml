@@ -404,7 +404,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 5512bc72e74006795040da21341790e28ceb5ae31408fcd9f430fe3c104645ae
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Options
     recommended_primary_cue: PLUS-OPTIONS
@@ -434,7 +433,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 7dd9be2830900fee2135cd5dead7450e865df806d6587183ff5ab45f18532ba8
 record_metadata:
   legacy:
     command_ids:
@@ -515,16 +513,6 @@ record_metadata:
     scope: Approved substitution of the primary Options command from the historical teaching phrase
       to the canonical cue; only two narration entries changed. No DSP, pacing, listening, or release
       approval.
-    previous_resolved_text_sha256:
-      hplus.function.ocf-cog-005.closer: 5116920052aab54b5e9fca23909db9d9cc0af7b4203f5caae663b1e9f772e848
-      hplus.function.ocf-cog-005.function-body: 311b98d65798bb5b6e35c4ee78002e98e8372c53cfcfa580e3ea7eb462126b3e
-    current_resolved_text_sha256:
-      hplus.function.ocf-cog-005.closer: d80d2493b8529d3f6968897c8cc40f316216e35324bee745291402bfedd36ce2
-      hplus.function.ocf-cog-005.function-body: 7e83a3bf12972e1c85bf87c0e06adf3f83b369bd2255feb83ece4a7bc2aed9ac
-    previous_raw_template_sha256:
-      hplus.function.ocf-cog-005.closer: 37057b339d1466e6e02c28504726d4209255bfdd6d297b1b181892331a775454
-      hplus.function.ocf-cog-005.function-body: 167106b02f9dca55f45c3e63608bb8894404afbdc76fb23ef24fe84508a66ce5
-    unchanged_protected_count: 175
     listening_approval: false
     release_ready: false
   - id: OCF-EDITORIAL-TITLE-CUES-004-KEPT
@@ -535,12 +523,8 @@ record_metadata:
       alias.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: d0ae183302fa48de2fee709bffc9aac4b37788bc48a29f86ebbd6b305aa021db
     status: retained
-    current_values_sha256: 875f0d9d70d51af56f578c34fd4ff36dbdbf55801e833464ae764463ba3d2545
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Close eyes, inhale/hold, select situation, complete cue, exhale with eyes remaining
       closed. Explore greater-self possibilities/probabilities and consequences while preserving choice.
       Plus Options is nested only, not independently taught or verified prediction.
@@ -549,9 +533,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-COG-005:persistence
     decision_source: Please do
-    source_row_sha256: 51036e767548c34c70ea3ad2d48d337d3c2f45a181b20e2592218b5afeb8574c
     status: accepted
-    current_values_sha256: 3a40971c1021c1b9f971ef5e4f5488a1efd2f5a8e429c36f90b91ede84ba2285
     review_note: 'Options: 1'
     approval_response: approve
   - id: REL-COG005-EXP006
@@ -560,8 +542,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 3fbac700068c00141fa612c8989ad7cc00d6f465c4b12a4bb8470321157fbeb2
-    current_values_sha256: 4c1c04afbbd820e481bcf0c67ab2422f00cdb40ecfbc584f8852038b537df20e
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

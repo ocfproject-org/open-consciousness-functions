@@ -113,8 +113,7 @@
     "stable_primary_identities": 58,
     "resolved_active_spoken_cues": 72,
     "approved_candidate_narrations": 4,
-    "protected_entries": 177,
-    "embedded_approval_text_hashes": 77,
+    "narration_entries": 375,
     "remaining_metadata_teaching_differences": 0
   },
   "functions": [
@@ -138,7 +137,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -153,15 +152,11 @@
       ],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-aut-001.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-AUT-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "cbca91da7e39005ee3dbe10b55499c496040a8aae5c1f7c6fa7f91b0a3e56899",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Automatic Action",
           "recommended_primary_cue": "PLUS-AUTOMATE",
@@ -201,7 +196,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -228,16 +223,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-001.closer",
-        "hplus.function.ocf-bod-001.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "c664886773d2aa5594ea9c32e2704513131842ee7fd100a9d7a311822ab298b3",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Brain Flow",
           "recommended_primary_cue": "PLUS-BRAIN FLOW",
@@ -277,7 +267,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -299,13 +289,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "e0ee501a2f45112922ecf8e1f78f1bd96d6704129ab66578d9d0c148ab8579e6",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Circulation",
           "recommended_primary_cue": "PLUS-FLOW SMOOTH",
@@ -345,7 +333,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Eases physical discomfort in a selected area of the body.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -372,16 +360,11 @@
       ],
       "context": "User approved Comfort / PLUS-COMFORT / Plus Comfort in OCF-EDITORIAL-TITLE-CUES-002. Numeric wording remains historical lookup only; no bridge lesson is added.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-003.closer",
-        "hplus.function.ocf-bod-003.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "d598f39235265ab6b5619b5507acb36b7d8d28d12ed513eac4083fdeffd3d236",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Comfort",
           "recommended_primary_cue": "PLUS-COMFORT",
@@ -421,7 +404,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -448,16 +431,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-004.closer",
-        "hplus.function.ocf-bod-004.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "a77dd4c16b62fb2b430a40f9971846a09b0bae3945ec79082ba789530d149e00",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Body Cleansing",
           "recommended_primary_cue": "PLUS-CLEAN CLEAR",
@@ -497,7 +475,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -524,15 +502,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-005.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "53079937fa1123577da6decd7ecb9a542ecb66dd259de7a1ec9d367bbf5ce81b",
           "classification": "RESOLVE PURPOSE OR MODES BEFORE NAMING",
           "recommended_title": "Appetite Choice",
           "recommended_primary_cue": "PLUS-SATISFIED, SUPPLIED",
@@ -572,7 +546,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -616,16 +590,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-006.closer",
-        "hplus.function.ocf-bod-006.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-006",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "b6143aa1892ee6df2565b6ed35cf98915534fba0d134f7f0cdeb5eadf1e8c2a4",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Heart Renewal",
           "recommended_primary_cue": "PLUS-HEART, BETTER, BETTER",
@@ -665,7 +634,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -686,15 +655,11 @@
       ],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-007.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-007",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "db243fd031e72879624217c905399156b089c286f3a14467401ce9294974000b",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Blood Pressure Balance",
           "recommended_primary_cue": "PLUS-BALANCE BLOOD PRESSURE",
@@ -734,7 +699,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -761,16 +726,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-008.closer",
-        "hplus.function.ocf-bod-008.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-008",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "dfead05c560a9a1545ef5c75aaf1e0cb5ad152d4ffd21798b4f9175d9e987529",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Immune Readiness",
           "recommended_primary_cue": "PLUS-IMMUNE READY",
@@ -810,7 +770,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -837,15 +797,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-009.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-009",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "3cfeb2dfe3b29f3c0e05caf4b90e78d1ed296e0b6db604801bcb582a7a1626f4",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Breathe Better",
           "recommended_primary_cue": "PLUS-BREATHE BETTER",
@@ -885,7 +841,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": "Food Energy Use",
@@ -894,13 +850,11 @@
       "historical_lookup": [],
       "context": "Historical Food More/Food Less wording is retained for alternative food-energy responses, not an incremental appetite or intensity scale.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-010",
           "status": "pending",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "bd98d44b085cc75c7be78e57af3982b1cf50b0fed5ef804d75b1b8bea7c9a91d",
           "classification": "RESOLVE PURPOSE OR MODES BEFORE NAMING",
           "recommended_title": "Food Energy Use",
           "recommended_primary_cue": "PLUS-USE FOOD ENERGY",
@@ -946,7 +900,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -973,16 +927,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-011.closer",
-        "hplus.function.ocf-bod-011.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-011",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "9ae865ef6636cc442b05ba3c140449d58e78c2e80c25ed004610bf881db48eeb",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Hormonal Transitions",
           "recommended_primary_cue": "PLUS-HORMONE BALANCE",
@@ -1022,7 +971,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.",
-      "decision_status": "REVIEW REQUIRED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": "Sex Drive",
@@ -1031,13 +980,11 @@
       "historical_lookup": [],
       "context": "Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-012",
           "status": "pending",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "d428452095ffcc8e967884189b249bdb5be9e5b0ae05c02962a0d6cc5289b70f",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Sex Drive",
           "recommended_primary_cue": "PLUS-SEX MORE",
@@ -1077,7 +1024,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1104,15 +1051,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-013.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-013",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "55c7a7ac7d46a6cec582fc76e18ac137fe9aece22ced8823eb9aa58ce0bc39fd",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Body Tune-Up",
           "recommended_primary_cue": "PLUS-BALANCE, HEAL",
@@ -1152,7 +1095,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1174,16 +1117,11 @@
       ],
       "context": "User approved Regenerate / PLUS-REGENERATE / Plus Regenerate in OCF-EDITORIAL-TITLE-CUES-003. Build Live wording remains historical lookup only; no bridge lesson is added.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-014.closer",
-        "hplus.function.ocf-bod-014.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-014",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "55ae13f44ea08b5b7efa90d41512d6e7c0a21c3a68a193476ecd146b1671dae1",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Regenerate",
           "recommended_primary_cue": "PLUS-REGENERATE",
@@ -1223,7 +1161,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1244,16 +1182,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-bod-015.closer",
-        "hplus.function.ocf-bod-015.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-BOD-015",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "51c964cbde5c3afe7c29e16cee8ba4a165112f0b28780f297d9789278fb0824d",
           "classification": "RESOLVE PURPOSE OR MODES BEFORE NAMING",
           "recommended_title": "Temporary Numbing",
           "recommended_primary_cue": "PLUS-NUMB",
@@ -1293,7 +1226,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1320,16 +1253,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-cog-001.closer",
-        "hplus.function.ocf-cog-001.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "fb979f33b0a4335ec5404e0492eb8e776fe74284f06330096f4881caa1ec7a61",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Information Access",
           "recommended_primary_cue": "PLUS-ACCESS INFO",
@@ -1369,7 +1297,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1384,15 +1312,11 @@
       ],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-cog-002.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "ee16a2f65c41824aeb68972d5a245dbe2bda1f1d84118d85ce5c2a5516ebd198",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Mental Calculation",
           "recommended_primary_cue": "PLUS-CALCULATE",
@@ -1432,7 +1356,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Open communication with your total self for deeper reflection, insight, and understanding.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1441,13 +1365,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "d8d43d0a4833e3d60495512d797dfe8c1c703db87cf1574d6497522050f22951",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Contemplation",
           "recommended_primary_cue": "PLUS-OPEN",
@@ -1493,7 +1415,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Capture and retain selected information and experiences for clear, reliable recall.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1509,16 +1431,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-cog-004.closer",
-        "hplus.function.ocf-cog-004.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "9f4fa11b9369d703dcfd294cc0de5add041cddc427cd5035412ea9e40b9ce387",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Imprint",
           "recommended_primary_cue": "PLUS-IMPRINT",
@@ -1558,7 +1475,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Discover new possibilities, explore alternative choices, and understand potential outcomes.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1574,16 +1491,11 @@
       ],
       "context": "Plus Options Choices is historical vocabulary; the approved active cue is Plus Options.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-cog-005.closer",
-        "hplus.function.ocf-cog-005.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "5512bc72e74006795040da21341790e28ceb5ae31408fcd9f430fe3c104645ae",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Options",
           "recommended_primary_cue": "PLUS-OPTIONS",
@@ -1623,7 +1535,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Recall past experiences, memories, and learned information with greater clarity and detail.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1632,13 +1544,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-006",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "bd2cba172fa0161f855eedbb0e822e4a7127eb6ca9a543a6f4d278777efa023d",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Recall",
           "recommended_primary_cue": "PLUS-RECALL",
@@ -1678,7 +1588,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Faster, clearer thinking, sharper reasoning, and more accurate problem-solving.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1687,13 +1597,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COG-007",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "45fd4dcfe85e0c9cc80228be958bd3bd462e7314c44b082c86cddbf93045e7cf",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Think Fast",
           "recommended_primary_cue": "PLUS-THINK",
@@ -1733,7 +1641,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Clear, fluent, confident speaking and reading aloud, with natural expression and precise pronunciation.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1742,13 +1650,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-COM-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "19a3860224b65b3c4eebfeb0b0206874fec493a78264535d1588e05f1ca6d1e4",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Speak Up",
           "recommended_primary_cue": "PLUS-SPEAK UP",
@@ -1788,7 +1694,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1815,15 +1721,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-emg-001.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EMG-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "64da993b49234f3f9636736444cf11c2240be1d0c6575e9117af1ebd450b6964",
           "classification": "RESOLVE PURPOSE OR MODES BEFORE NAMING",
           "recommended_title": "Injury Response",
           "recommended_primary_cue": "PLUS-CONTROL, BALANCE, RESTORE",
@@ -1863,7 +1765,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1890,15 +1792,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-emg-002.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EMG-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "4cb439dfe1412ca17c97efd79d4c716fd3c444087b52b6b8a06c4f62383532a8",
           "classification": "RESOLVE PURPOSE OR MODES BEFORE NAMING",
           "recommended_title": "Toxic Exposure Response",
           "recommended_primary_cue": "PLUS-CLEAR, REMOVE",
@@ -1938,7 +1836,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Release unwanted emotions and emotional tension, restoring calm and clarity.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -1947,13 +1845,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EMO-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "b3fb06e3e0a0c2cc8ed129964a54b217e1ac1029cc7c255cd83f98e45e3a1e3a",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Let Go",
           "recommended_primary_cue": "PLUS-LET GO",
@@ -1993,7 +1889,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2020,16 +1916,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-emo-002.closer",
-        "hplus.function.ocf-emo-002.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EMO-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "823b29816e502844ea68b687a6bc2845f13bc3144b6b2cc778442585cc21257a",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Offload",
           "recommended_primary_cue": "PLUS-OFFLOAD",
@@ -2069,7 +1960,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2096,16 +1987,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-emo-003.closer",
-        "hplus.function.ocf-emo-003.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EMO-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "a9233ad05437bdc22b5f77dcc5f3f3a54cf50b62b6bd27d1c60e6c3f3262d46e",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Empathize",
           "recommended_primary_cue": "PLUS-EMPATHIZE",
@@ -2150,7 +2036,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Sets a consciously selected future condition and completion time through intention and total-self alignment.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2177,17 +2063,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-exp-001.closer",
-        "hplus.function.ocf-exp-001.function-body",
-        "hplus.function.ocf-exp-001.opener"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EXP-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "f7fcae99700c26ee36742ff07f25f8a74f05151c7331f21ccb5d2bb6219f0246",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Future Pattern",
           "recommended_primary_cue": "PLUS-MANIFEST",
@@ -2233,7 +2113,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2260,16 +2140,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-exp-002.closer",
-        "hplus.function.ocf-exp-002.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-EXP-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "60c947da9550e6871cac5055d8a9df8c406b8f82f62e368add98483b382f3951",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Thermal Comfort",
           "recommended_primary_cue": "PLUS-INSULATE",
@@ -2309,7 +2184,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
       "pending_title": null,
@@ -2318,11 +2193,6 @@
       "historical_lookup": [],
       "context": "Original draft; no historical command is being replaced.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-exp-003.closer",
-        "hplus.function.ocf-exp-003.function-body",
-        "hplus.function.ocf-exp-003.opener"
-      ],
       "editorial_proposals": []
     },
     {
@@ -2345,7 +2215,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
       "pending_title": null,
@@ -2354,11 +2224,6 @@
       "historical_lookup": [],
       "context": "Original draft; no historical command is being replaced.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-exp-005.closer",
-        "hplus.function.ocf-exp-005.function-body",
-        "hplus.function.ocf-exp-005.opener"
-      ],
       "editorial_proposals": []
     },
     {
@@ -2381,7 +2246,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
       "pending_title": null,
@@ -2390,11 +2255,6 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-exp-006.closer",
-        "hplus.function.ocf-exp-006.function-body",
-        "hplus.function.ocf-exp-006.opener"
-      ],
       "editorial_proposals": []
     },
     {
@@ -2417,7 +2277,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Access and direct M energy toward chosen goals, including vitality, strength, restoration, protection, and mental clarity.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2426,13 +2286,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "61275e52b81522939fc992001948f33ac55353a6731d1b196106ffaede45ef62",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Access to Energy",
           "recommended_primary_cue": "PLUS-ENERGIZE",
@@ -2472,7 +2330,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen concentration, sustain attention, and reduce distractions.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
       "pending_title": null,
@@ -2487,13 +2345,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "7004edcb8ddf6559e33247138b84310605cc714c145783714ba1b819761c6153",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Attention",
           "recommended_primary_cue": "PLUS-FOCUS",
@@ -2533,7 +2389,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Enter a short, restorative sleep and awaken refreshed, alert, and energized.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2548,15 +2404,11 @@
       ],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-fnd-003.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "775ab67bf8c426b4c25521fff049fb272b8e2b6c61aadaa5da04d94a20b531c7",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Quick Recharge",
           "recommended_primary_cue": "PLUS-RECHARGE",
@@ -2596,7 +2448,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Release physical and mental tension, restoring deep relaxation and calm.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2612,16 +2464,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-fnd-004.closer",
-        "hplus.function.ocf-fnd-004.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "90934a8b84588c8be2f8371257ffaf40f60ed3e1ac79267f43cc1294c0a9fc18",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Relax",
           "recommended_primary_cue": "PLUS-RELAX",
@@ -2661,7 +2508,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2677,16 +2524,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-fnd-005.closer",
-        "hplus.function.ocf-fnd-005.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "a171d8f07121f1f2629693e6784ea369c0666b0d53e0ab4ea27fba41c2e3d553",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Reset",
           "recommended_primary_cue": "PLUS-RESET",
@@ -2726,7 +2568,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "End selected temporary OCF function applications without losing their learned abilities.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2735,13 +2577,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-FND-006",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "ec3899f53d96158e4389e749a913ae2210265a7772f961f1c51b4bf4d1814e89",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Release",
           "recommended_primary_cue": "PLUS-RELEASE",
@@ -2786,7 +2626,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2813,16 +2653,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-lif-001.closer",
-        "hplus.function.ocf-lif-001.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-LIF-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "69b0ec561328d58dec96076542457d8582c8e2cea7a467dc307b493f474b108b",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Habit Freedom",
           "recommended_primary_cue": "PLUS-FREE THIS HABIT",
@@ -2867,7 +2702,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Turn intentions into action, overcome hesitation, build momentum, and follow through to completion.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2876,13 +2711,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "d4df5d9709a52c96698e1315bbf6d9f1b53818d3b5ad0f723a7ca31cdaba51da",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Do This Now",
           "recommended_primary_cue": "PLUS-DO-THIS-NOW",
@@ -2922,7 +2755,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -2949,16 +2782,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-prf-002.closer",
-        "hplus.function.ocf-prf-002.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "b36e90f7f0f7410f8b46bf0bdb8174033a3b4d9eed3546d63db6e523b51f71d0",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Inner Power",
           "recommended_primary_cue": "PLUS-INNER POWER",
@@ -3003,7 +2831,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3030,15 +2858,11 @@
       ],
       "context": "Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-prf-003.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "1abb1e737a147763b7cb2fe6e79caf6077f23382c393c3f3736fdf3f28c52999",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Coordination",
           "recommended_primary_cue": "PLUS-SMOOTH, FAST",
@@ -3078,7 +2902,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Move with lighter, quieter steps, improved balance, and greater efficiency.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3100,16 +2924,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-prf-004.closer",
-        "hplus.function.ocf-prf-004.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "6ded86aab9a92dfe7930cce84f23a5ecf79324a3155a6391a27b9a9bdb3bd1b7",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Light Foot",
           "recommended_primary_cue": "PLUS-LIGHT STEP",
@@ -3149,7 +2968,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Sets a deliberate tone for the day ahead.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3158,13 +2977,11 @@
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "2ba92cea927f9e79b411dded3878e99e7b54cfa98776b5d8f6f1b65a35014995",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Make Your Day",
           "recommended_primary_cue": "PLUS-THIS DAY",
@@ -3204,7 +3021,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Call upon exceptional strength, speed, and coordination when immediate action is needed.",
-      "decision_status": "REVIEW REQUIRED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": "Strong-Quick",
@@ -3220,13 +3037,11 @@
       ],
       "context": "Hyphenated legacy cue PLUS-STRONG-QUICK reads as one word; canonical PLUS-STRONG QUICK is proposed for review.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-PRF-006",
           "status": "pending",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "96c68ac7b1c28a478a89b4303ac38a404cc50c48cfe8efff402009c20dd140ff",
           "classification": "KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT",
           "recommended_title": "Strong-Quick",
           "recommended_primary_cue": "PLUS-STRONG QUICK",
@@ -3266,7 +3081,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3281,15 +3096,11 @@
       ],
       "context": "Vocabulary normalization: auditory magnitudes standardize on MORE/LESS.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-sen-001.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SEN-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "e4d40ab0e6a424a902b5952b5193971c43fc66452b321367c211568c8105c45b",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Hearing",
           "recommended_primary_cue": "PLUS-HEAR MORE",
@@ -3329,7 +3140,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3344,15 +3155,11 @@
       ],
       "context": "The canonical activation command is PLUS-SEE BETTER, matching the approved narration. The previous MORE/LESS directional pair (PLUS-SEE MORE / PLUS-SEE LESS) is superseded and preserved as historical provenance.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-sen-002.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SEN-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "ec99572dab42e71926472669cfb07cc915fc88263e1e39e89afa25d52c98d635",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Seeing",
           "recommended_primary_cue": "PLUS-SEE BETTER",
@@ -3392,7 +3199,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3407,15 +3214,11 @@
       ],
       "context": "Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-sen-003.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SEN-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "112b7f2100b74e842561ad4da52b8259411bdadd0624d2db5b0d02322da6b2d1",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Smell",
           "recommended_primary_cue": "PLUS-SMELL MORE",
@@ -3455,7 +3258,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3470,15 +3273,11 @@
       ],
       "context": "Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-sen-004.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SEN-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "2f24f74e97b927a2a5f142f8f294897d52b63800563f3c62ba23706269ec5730",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Taste",
           "recommended_primary_cue": "PLUS-TASTE MORE",
@@ -3518,7 +3317,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3533,15 +3332,11 @@
       ],
       "context": "Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-sen-005.closer"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SEN-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "b86b3549aebc2f82ff29a895ed82c28e75ca2452b2d6e2a92241de8c531ccce6",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Touch",
           "recommended_primary_cue": "PLUS-TOUCH MORE",
@@ -3581,7 +3376,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3603,16 +3398,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-001.closer",
-        "hplus.function.ocf-slp-001.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-001",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "8d261511186674b716d06f6d9038061965ed97d6919ba9eec82c15583c1f41ea",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Restorative Sleep",
           "recommended_primary_cue": "PLUS-RESTORATIVE SLEEP",
@@ -3652,7 +3442,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3668,16 +3458,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-002.closer",
-        "hplus.function.ocf-slp-002.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-002",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "bd0d79b8ee2aa4fe52868a811a6606fb1c5dadb8b8651cc6b034283c42c66362",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Sleep",
           "recommended_primary_cue": "PLUS-SLEEP",
@@ -3717,7 +3502,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3738,16 +3523,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-003.closer",
-        "hplus.function.ocf-slp-003.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-003",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "d7f6717e01217dc85f72a937217b85e58606613e93add049eb018d2024d65d39",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Dream Theme",
           "recommended_primary_cue": "PLUS-DREAM",
@@ -3787,7 +3567,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Find answers, explore solutions, and gain deeper understanding through sleep.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3814,16 +3594,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-004.closer",
-        "hplus.function.ocf-slp-004.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-004",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "cfc3bc439984be8138a688ad438aafab133b3232f30255cad223a121ed7abce5",
           "classification": "RENAME TITLE/CUE — UPDATE TEACHING",
           "recommended_title": "Sleep Insight",
           "recommended_primary_cue": "PLUS-SLEEP INSIGHT",
@@ -3863,7 +3638,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3890,16 +3665,11 @@
       ],
       "context": "Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-005.closer",
-        "hplus.function.ocf-slp-005.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-005",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "c9b233476f7d00695dd2d604853138d942fb5b77b16153a0f2839b8386312c50",
           "classification": "NEEDS HUMAN DECISION",
           "recommended_title": "Sleep Easy",
           "recommended_primary_cue": "PLUS-SLEEP EASY",
@@ -3945,7 +3715,7 @@
         "resource_status": "reviewed"
       },
       "current_purpose": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.",
-      "decision_status": "APPROVED AND IMPLEMENTED",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
       "pending_title": null,
@@ -3961,16 +3731,11 @@
       ],
       "context": "Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-      "changed_keys": [
-        "hplus.function.ocf-slp-006.closer",
-        "hplus.function.ocf-slp-006.function-body"
-      ],
       "editorial_proposals": [
         {
           "id": "OCF-TITLE-CUE-SLP-006",
           "status": "historical-review",
           "source_revision": "fb66fbce11dd3d71e57fac4d5784365128d41c82",
-          "source_row_sha256": "3f5f3c9c54d543187dc6ea07b75f378fd61c9633ce6cf4a759011f4ca475abfd",
           "classification": "KEEP CUE — ALIGN TITLE OR NARRATION",
           "recommended_title": "Stay Awake",
           "recommended_primary_cue": "PLUS-AWAKE",
@@ -10994,65 +10759,5 @@
       ],
       "review": "Role/selected-target reuse retained; no new unrelated primary collision"
     }
-  ],
-  "input_sha256": {
-    "locales/en-US/OCF-AUT-001-Automatic-Action.yaml": "7d2d078213e1d1402144ebe619fb0d1b0110a4cdd7fcf7ad05cc50e6ec0439c1",
-    "locales/en-US/OCF-BOD-001-Brain-Flow.yaml": "b194e3686802e4d9fd9e8dd25f0beb776c37fac471410e2212ca5bcc5629c73d",
-    "locales/en-US/OCF-BOD-002-Circulation.yaml": "93d52191d677ac5b61ab4ceb8c0f373ad43fd677cad89b8d992888bfe2551071",
-    "locales/en-US/OCF-BOD-003-Comfort.yaml": "5c579d4f5e58363096a89efd9e45369b6b8a048b4312d77b75924adc6da5838c",
-    "locales/en-US/OCF-BOD-004-Detox.yaml": "f46ee555782c077dfeab1282c110728b523c90cc0fea6276e951ca4174405d9c",
-    "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml": "e5c4896f850acb6dafa9adab1ef64edd9a0779f331373f14062dbc2dc9f15834",
-    "locales/en-US/OCF-BOD-006-Heart-Flow.yaml": "12a6127f029d77889c47db68559c7cb9d86a7b102f850e74c9e0246ac465ca13",
-    "locales/en-US/OCF-BOD-007-Blood-Pressure-Balance.yaml": "ef7effd6bbbac98341dfd4a8b396cd526e023209e68b71ebb729c847658cb97e",
-    "locales/en-US/OCF-BOD-008-Immune-Readiness.yaml": "42685bd33b0cd29955ab53cb78ea7bc23754d7b6e223354ae9cf14a215a68002",
-    "locales/en-US/OCF-BOD-009-Breathe-Better.yaml": "c8bdf526a9d59256c263434df714bb1c9ef7551f23285887d6d2b200806ddb4b",
-    "locales/en-US/OCF-BOD-010-Nutricia.yaml": "a9637423db8e8e467c86080da7cd985b590d89103f330102a762d024e90e3243",
-    "locales/en-US/OCF-BOD-011-Hormonal-Transitions.yaml": "beb2ffc2f6e4e0f845490d9796da6b500e7cbe3cc2348236295350ee82d7cf65",
-    "locales/en-US/OCF-BOD-012-Sex-Drive.yaml": "1f2cbb48c248ec4d4aadb06dacf1e45160f809087ef2574cdeb0adc32f83f015",
-    "locales/en-US/OCF-BOD-013-Body-Tune-Up.yaml": "2a22a00d80dbd2cc851d1c3bd1612c4f12c145ed54cc64c1ea0cfadbcfb49220",
-    "locales/en-US/OCF-BOD-014-Regenerate.yaml": "ce8bff7747c94c516474eff1478d1670695cbe20d09b1df53b90182b8885617c",
-    "locales/en-US/OCF-BOD-015-Temporary-Numbing.yaml": "51a7a82d277cbe6e8386bc69516dfb40a3b0a84cfaed24e3647d5f159168b41f",
-    "locales/en-US/OCF-COG-001-Information-Access.yaml": "16ceb2ff983ad0a5a8e9909b3241b3eb0f4c7d46035c5033a05a03710bb5b1de",
-    "locales/en-US/OCF-COG-002-Mental-Calculation.yaml": "6f6e15f26cec5f6506b5899a4bb1991f715313400b0b7808db34a9fa3e7f3453",
-    "locales/en-US/OCF-COG-003-Contemplation.yaml": "d99b72bde9bf21dfe4ba6af5f7b662af790fae7d71c4167af17ab32c295fc939",
-    "locales/en-US/OCF-COG-004-Imprint.yaml": "e745f43018dff2dc975853687fc1ceedecd04446a8581b4579570e6e44b50bbb",
-    "locales/en-US/OCF-COG-005-Options.yaml": "36d8dc7f1ca4b01ea1d3670cc518be4462855c7759b85172c7169e1b11e81c69",
-    "locales/en-US/OCF-COG-006-Recall.yaml": "aa204b6823247771e8b31af81109ce17443ad2437ec710ce8895f364d6e49100",
-    "locales/en-US/OCF-COG-007-Think-Fast.yaml": "d9ff7fe98dab171e7dc38904d7583b278c5cfa46bb984417237d69f627a37d07",
-    "locales/en-US/OCF-COM-001-Speak-Up.yaml": "ab8917dc832583b1db7fd8b57a7bf6be0da53ad6822609bc301c87a5b0b4253a",
-    "locales/en-US/OCF-EMG-001-Injury-Response.yaml": "5ac67041ccc74d7a2dffb9264433d1e1826be5049f85bc207bccb7b83d8caf2f",
-    "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml": "ddd2bcd067e67021d48818dcd89167cf18422071b748de412c010df056109cf6",
-    "locales/en-US/OCF-EMO-001-Let-Go.yaml": "b147287bead12a9bda6b964a71ae442b653b9fc796ca68e9b93a047cd4a37356",
-    "locales/en-US/OCF-EMO-002-Offload.yaml": "09eba56a0e02d725b429b360667304d58082993e09d49d3e0fd6069cde13fa8d",
-    "locales/en-US/OCF-EMO-003-Empathize.yaml": "0720610539756c19da6afbafea66ff62d8466ade9ce4591c7159dcacdd8d40ba",
-    "locales/en-US/OCF-EXP-001-Manifest.yaml": "eeede28e6c21668f5b9a94ac77c7fc23a9282531c57506fd976bf2696b2225bb",
-    "locales/en-US/OCF-EXP-002-Insulate.yaml": "ebe99f52f2ef5f3495279d9cbcfa3241ed5169bc44104c35e887638c28ea5e9c",
-    "locales/en-US/OCF-EXP-003-Dissolve.yaml": "a84e5c9f23699e253b2706c5c11b0b6e8aa77adf4370ee769da4a39a2aabe2b3",
-    "locales/en-US/OCF-EXP-005-Clear-Zone.yaml": "b483f572db33f7b131acd3c6a70fbf96407fa61b16868f26949e5e709a99eeb1",
-    "locales/en-US/OCF-EXP-006-Intuition.yaml": "bd851cad8088b409176f373bf4df3425d9c3d58a2253cbbe5ec073b9a2f91873",
-    "locales/en-US/OCF-FND-001-Access-to-Energy.yaml": "d4ff428b1dca164bbc9d6210a379d1b4b2b8bf28ea70ea9e014a8c9d687e5a7c",
-    "locales/en-US/OCF-FND-002-Focus.yaml": "5110e5a247b8b5d33c0209fbd1d6cea8ffd5dfd39b90827e97a082ad1f3d4ed4",
-    "locales/en-US/OCF-FND-003-Quick-Recharge.yaml": "1383950ee3e748d40ccc2e01d5bd716d499e68c5b14c289cb9e8cf55e6ed90da",
-    "locales/en-US/OCF-FND-004-Relax.yaml": "5c758abc0579c4112b00f7c18e3504e7afe4f1a0058f05bae095539d565b7711",
-    "locales/en-US/OCF-FND-005-Reset.yaml": "c8769122e5cb9e7b09bdd727c4df8237ddeed9e6d0f042fb9da55be5fb89014f",
-    "locales/en-US/OCF-FND-006-Release.yaml": "28ba8a38ca83ebabd0f007dfcbc7477849caeac093670e3f7dcffa3859d19072",
-    "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml": "23d61c4aa7e221fd8ba62fd2dfa8e5007c74b2a83aece93dd36a4c5f6f6003d2",
-    "locales/en-US/OCF-PRF-001-Do-This-Now.yaml": "0a83876e5626f65f060bc1befc1c4e3a29997d298850daa090ff0151f0f945d4",
-    "locales/en-US/OCF-PRF-002-Inner-Power.yaml": "e6a47f2021149f023636936cd574de79c8acd79292beebe14978d4bbfd76556b",
-    "locales/en-US/OCF-PRF-003-Coordination.yaml": "80f31b62cdfeecaad6c530baae543672789c9ed0d8cbc7116b056f6bbdc78435",
-    "locales/en-US/OCF-PRF-004-Light-Foot.yaml": "1a263ed330857f03192a5d3d829a9ead64911a998d83ec895b9170f9ab9e5666",
-    "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml": "6769b70cd5f50f9f76b9778cb0221b158ba6958acaa038e728662858ffc85e84",
-    "locales/en-US/OCF-PRF-006-Strong-Quick.yaml": "394a3e92210c3761b6bb8a4facab50dc7913848cbf6381ee5cbee2493c54017e",
-    "locales/en-US/OCF-SEN-001-Hearing.yaml": "d68ed0820287c2ee4fad6eb5a0654c1cf3c9366ed078ce98014ffd39b1dc22c4",
-    "locales/en-US/OCF-SEN-002-Seeing.yaml": "768c530493d2cfed22546c0f3b7afae0e2cd6810dfd1c50c9916235b58a84d22",
-    "locales/en-US/OCF-SEN-003-Smell.yaml": "91c09b9b7c0d1b796500099a59bbd8309c46572d2da707cdc388ffb09414c587",
-    "locales/en-US/OCF-SEN-004-Taste.yaml": "99f37d9b4bad1a230fb9d4483921e14775c15b09de3ca3340219ee84436a3886",
-    "locales/en-US/OCF-SEN-005-Touch.yaml": "85e41689d8d824944d112d0fb25f998d00d1c50dc8f5ba63396e68b7a0040eef",
-    "locales/en-US/OCF-SLP-001-Restorative-Sleep.yaml": "359c80d9df428a7b4874853178df1a660e1021665308de6a3967c44a9e27627b",
-    "locales/en-US/OCF-SLP-002-Sleep.yaml": "63ea51b70c5cc66644f7b3e8c5862a7eaccdd7d50ce18fdf0796792ee2d0f94e",
-    "locales/en-US/OCF-SLP-003-Dream-Theme.yaml": "51bb8cb32994524807e9aab70984aea046f54ca8020b6237335d32b87b62c921",
-    "locales/en-US/OCF-SLP-004-Sleep-Insight.yaml": "cda36ac3dde0683993266ac3678e86dbf9c05f1df1941001eb22ec928aabdc38",
-    "locales/en-US/OCF-SLP-005-Sleep-Easy.yaml": "c88d99979d9542a71ef248ad516b14b4370a4481525af670462b4e3688431195",
-    "locales/en-US/OCF-SLP-006-Stay-Awake.yaml": "c12ae6268413080bcc6a6ef11687d851d4c595c88308efb79b8a36ecf886ee07"
-  }
+  ]
 }

@@ -354,7 +354,6 @@ editorial:
   - id: OCF-TITLE-CUE-EMG-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 4cb439dfe1412ca17c97efd79d4c716fd3c444087b52b6b8a06c4f62383532a8
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Toxic Exposure Response
     recommended_primary_cue: PLUS-CLEAR, REMOVE
@@ -385,7 +384,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 008e7898b89aa945459d7c25045de79e100ec6dc335e27e2d60ca42b9040712d
 record_metadata:
   legacy:
     command_ids:
@@ -463,16 +461,9 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 01b93eb9711172392d9de8583245ab315209745849abb998e73fa6e3f43fb732
     status: accepted
-    previous_values_sha256: 6833d2a8d64cbb4207ccdb69e9e5f6b56c7270bb946fad8f00cc3c080481d9ec
-    current_values_sha256: 887bdbd1d1c27eb0b7e60dc47f55fa58598c192ee810079d1a7c90577957bd2d
     changed_narration_keys:
     - hplus.function.ocf-emg-002.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-emg-002.closer: 6b70238a60b26eeb03b7134dd88b27a5025073e442918fcf7d8f2870c042dd42
-    current_resolved_text_sha256:
-      hplus.function.ocf-emg-002.closer: 639b43e7a06d14fab0e1637d889c84ec6c6f649582ed00660b805cd1e9578ab5
     review_note: 'Change title from Emergency: Toxic to Toxic Exposure Response and update exercise sign-off.
       Keep display and spoken cue unchanged. Preserve inhale/hold/complete cue/slow mouth exhale and surrounding
       physical harmful-exposure response suggestions. Retain Emergency: Toxic as historical lookup. Clear
@@ -486,9 +477,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-EMG-002:activation-triggers
     decision_source: Please do
-    source_row_sha256: 75a17ebe19fc5881d355e8f25737023f277486681252cb4da25d726bb2110f54
     status: accepted
-    current_values_sha256: 8b1d22f4a18e46de0a0e0a496d6381ddc98d39b6a7ed2701cd61c2dc3525dcfa
     review_note: 'Toxic Exposure Response: 1'
     approval_response: approve
   - id: OCF-COMMAND-SIMPLIFICATION-001
@@ -497,13 +486,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle, procedure
       and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: bcb475571264f74984dff0242d43d17d8bb0b335fd15757278adb908e969256a
     status: accepted
-    previous_values_sha256: 27ed8d3ad31eb993c41b043c336f82ff21dd6bcb3a925def2fdce9c6c02df5b1
-    current_values_sha256: 6923584495b3ead8753bd274700cc057b26e44c08c006fa5fecf6a4e86ab1fa4
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical wording;
       listening and release approval remain false.
 content:

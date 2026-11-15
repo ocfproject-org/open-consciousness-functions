@@ -615,7 +615,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 90934a8b84588c8be2f8371257ffaf40f60ed3e1ac79267f43cc1294c0a9fc18
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Relax
     recommended_primary_cue: PLUS-RELAX
@@ -774,7 +773,6 @@ lifecycle:
   trigger_conditions: []
 locale: en-US
 localization:
-  contract_sha256: 3df6d4a029c89c36ce5bdd72daaf6ab1925aad003b969abf6192f5031fea91c1
   status: complete
 metadata_entries: {}
 narration:
@@ -869,19 +867,10 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0e0e2868d893c6677b34e55273cbbf51299486823b55189f676c029ed62803bb
     status: accepted
-    previous_values_sha256: 00ed167545e8781ed5f34bbc1a6847b9151e6fa0792c8d3b26aa499ccfcf2555
-    current_values_sha256: 848f09d28cffdb25a9a3acb9303e1214e3c000cd0d4530594cb9fd7817cabd93
     changed_narration_keys:
     - hplus.function.ocf-fnd-004.closer
     - hplus.function.ocf-fnd-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-fnd-004.function-body: fff6ea64533f065d0e168e79c9b4affe2e26ee8fd883bb1984389d084fa40025
-      hplus.function.ocf-fnd-004.closer: b50e92a4a87c11711876c96f23638848d1920c11c295e93dc6ed75acd770441f
-    current_resolved_text_sha256:
-      hplus.function.ocf-fnd-004.function-body: 9798a9e119c48a21e1cc8395e95273389855df3cff80de3920c7a8cd9e21b8c0
-      hplus.function.ocf-fnd-004.closer: 92c53b9251e5167cc02235548ab3c290deb01870e991c2290a6cce9eb4bbe64c
     review_note: Shorten two current function-body mentions and one closer mention from Plus Relax
       Relax to Plus Relax. Preserve title, breathing sequence, surrounding suggestions and alert activity.
       Retain repeated legacy phrase as historical lookup; introduce no mode or release. This approval
@@ -895,8 +884,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 33af72e56072d21d85c6106dbc4299a2b7358d54632d2258de280b1ab7fa9dc4
-    current_values_sha256: 3298bf8ab9a6cbc5851fc43544da57e5b334836d61e289aa919e5f3751b09f0c
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

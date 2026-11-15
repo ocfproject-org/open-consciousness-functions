@@ -310,7 +310,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 6ded86aab9a92dfe7930cce84f23a5ecf79324a3155a6391a27b9a9bdb3bd1b7
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Light Foot
     recommended_primary_cue: PLUS-LIGHT STEP
@@ -340,7 +339,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: c14c9b31b1fa468678116b663480cb8db4155dc5bf63d0151cea294b9e51b90b
 record_metadata:
   legacy:
     command_ids:
@@ -427,19 +425,10 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 792a37ae239b3d4ec5d27398171746b0384acddb7da3941f3f12b2985ed85e78
     status: accepted
-    previous_values_sha256: 09333c77a5cdc0d6518b86d50c7d92b353c305eeff78618d1e8ce2894dd0520b
-    current_values_sha256: 6292ca3d494d783b98077704526d33105bf9c50dae74de7046e2be10538c2de8
     changed_narration_keys:
     - hplus.function.ocf-prf-004.closer
     - hplus.function.ocf-prf-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-prf-004.function-body: 10e9bfc960925b5aaafcf5cf8c6db42f75280c0a67627f9cedbe42e7d99865a5
-      hplus.function.ocf-prf-004.closer: c1f4ab3838bfce228293c048f7af94b62b6d0979f2b413921463c6d03abb15db
-    current_resolved_text_sha256:
-      hplus.function.ocf-prf-004.function-body: ee5962f5aebe304a7edb71dee26d9f2b9cd9968081389d86e9f0a899cb1d7c4a
-      hplus.function.ocf-prf-004.closer: 54cdc579aecbe14e371d164669f7f07ce5a358ab0a30801f1877a60dd9155dcb
     review_note: Change display cue to PLUS-LIGHT STEP; replace two body mentions and one closer mention
       with Plus Light Step. Keep Light Foot title, automatic everyday baseline, optional reinforcement,
       breathing procedure and surrounding movement suggestions. Retain superseded cue wording as historical
@@ -452,9 +441,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-PRF-004:persistence
     decision_source: Please do
-    source_row_sha256: 0ef98695a59e1e69ae29800f0e655230f6e561e0070d75d183bd49b41cbc278b
     status: accepted
-    current_values_sha256: 9821a99d255a8e0531082de4c56291da26f539dcb23fab1fa3dcf728e685296c
     review_note: 'Light Foot: 1'
     approval_response: approve
 content:

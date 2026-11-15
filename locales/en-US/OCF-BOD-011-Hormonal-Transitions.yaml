@@ -250,7 +250,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-011
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 9ae865ef6636cc442b05ba3c140449d58e78c2e80c25ed004610bf881db48eeb
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Hormonal Transitions
     recommended_primary_cue: PLUS-HORMONE BALANCE
@@ -279,7 +278,6 @@ editorial:
         rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b8039f6b6e415d031aa406a1245380303d61d895d2f8611d856caebc79206d63
 record_metadata:
   legacy:
     command_ids:
@@ -361,19 +359,10 @@ record_metadata:
       the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's request.
       Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 85108686b5501f45a194a9b7415a8f9347599c87d9839c91edaf81409b45d882
     status: accepted
-    previous_values_sha256: 93f700dbe2c73fa23cce50ee7ddab29210a445919fa3f6cdcaaac74e39b81ba1
-    current_values_sha256: 79085ba9967a538b3444717af63994f7d75d2b4795418adfb463baff35a02d29
     changed_narration_keys:
     - hplus.function.ocf-bod-011.closer
     - hplus.function.ocf-bod-011.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-011.function-body: 3c54ae617a86950a66b0e8d36eaae8b49b8fdb1e816af5d4433fe559f3b09157
-      hplus.function.ocf-bod-011.closer: d6c4c9d0dfda2ef8debd46c5ef35781878fc03aad2602ec4fecdf6031ba89016
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-011.function-body: dbf1cefe096cd6a4fa07a8444b58c1b86d535d2d1c119f31501c8223eea35c5d
-      hplus.function.ocf-bod-011.closer: 2302d75095241802683fabbe5f1187d24fba7b975ab339a2d2e62d70d2976d04
     review_note: Change title from Passages to Hormonal Transitions and update exercise sign-off. Replace two body
       mentions and one closer mention from Plus Equalize Harmonize to Plus Hormone Balance. Preserve premenstrual/perimenopausal/menopausal/postmenopausal
       scope, automatic adaptation to changing needs, physical comfort, emotional stability, mental clarity, inhale/hold/cue/candle-like
@@ -388,9 +377,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-011:persistence
     decision_source: Please do
-    source_row_sha256: a8c176cde34c86e0e8587cd96dac761ca6f7402e6e3242f315a81b7396411b61
     status: accepted
-    current_values_sha256: 8f41df3385a7bbaea83b1cdca87a1ed6e76bfcb4171acf3a28254681e804cb38
     review_note: 'Hormonal Transitions: 1'
     approval_response: approve
 content:

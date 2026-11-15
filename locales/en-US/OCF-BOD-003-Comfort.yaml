@@ -227,7 +227,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: d598f39235265ab6b5619b5507acb36b7d8d28d12ed513eac4083fdeffd3d236
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Comfort
     recommended_primary_cue: PLUS-COMFORT
@@ -264,7 +263,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 29a82c5c8612be2be33dcf74707a1dd95bddc610acc45a7b0070e7f9b64d381b
 record_metadata:
   legacy:
     command_ids:
@@ -355,19 +353,10 @@ record_metadata:
       persistence, mechanism, mode, timing or translation change.
     decision_source: User response '1' to OCF FUNCTION REVIEW [1/32], explicitly approving
       Comfort / PLUS-COMFORT / Plus Comfort
-    source_row_sha256: ebf4b5a091c8d0c16c9e13a8b84c4d18c60235e2f2a457196834da19d391e465
     status: accepted
-    previous_values_sha256: ff84892fae5569c93b49e4aba708db999bb62e72b3adbea54d6c852df6476b6a
-    current_values_sha256: b4b8a43281d8dd7c16fbd39b8544e3e78dc68f00121860895d5571e1d77b016f
     changed_narration_keys:
     - hplus.function.ocf-bod-003.closer
     - hplus.function.ocf-bod-003.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-003.function-body: 2e036b97bbbd507429ae09e3716f2fde966e652df6a6aabc17533eb42d5e8597
-      hplus.function.ocf-bod-003.closer: 0899beb5c4f1f3ddd1c357cb4606ebdfddfe42992bde156c5b06abd28498586b
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-003.function-body: 2ca65cb982d284bd894e933bf30869da8a4093437a18ff8e25df3309ebd6c2fb
-      hplus.function.ocf-bod-003.closer: 13a57c7669c928555124e68094d9ded80c26acf25c9f506303538931db4a66b1
     review_note: Selected physical discomfort/signal salience, with bodily awareness
       retained. Preserve targeting, close eyes, inhale/hold, internal cue and candle-like
       exhale; no separate mode or release is introduced.
@@ -378,8 +367,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: b2f13c200b70e5c8e699836ece963e0bf4d6111a2c24599691a8a8e9487ab258
-    current_values_sha256: 429a35f17d1ac61e5bfc6da1f7f6fd78f49c4ee32618335bc2d8bec242aae4cb
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

@@ -54,8 +54,11 @@ controls, lifecycle, narration order/repetition and function-specific evidence,
 specification, decisions and bindings. Bindings never duplicate narration order.
 Do not add an external function-definition archive, registry, binding, or
 fallback. Use [strict cue templates](docs/SYMBOLIC_CUES.md) through LocaleCatalog
-before segmentation, cache keys or recording fingerprints. Check raw-template
-and resolved-text hashes separately.
+before segmentation, cache keys or recording fingerprints. Edit supported words,
+descriptions, commands, controls and lifecycle directly in canonical locale YAML;
+do not maintain a source checksum, approval hash, or duplicate text manifest.
+Raw/resolved fingerprints are derived cache or recording metadata, never source
+authority or a manual editing prerequisite.
 Review remaining vocabulary ONE function at a time; wait for explicit user input.
 
 - `locales/`: the sole per-locale function definitions plus shared localized
@@ -65,8 +68,10 @@ Review remaining vocabulary ONE function at a time; wait for explicit user input
 - `schemas/`: contracts; `scripts/ocf_tools/`: implementation and CLI services.
 - `audio/templates/`: session/stage/pacing inheritance; `audio/background/`: DSP
   profiles and explicit presets; `audio/voices/`: optional voice profiles.
-- `audio/defaults/`: immutable engineering configuration locks, not listening
-  approval. New revisions require a deliberate new baseline.
+- `audio/defaults/`: immutable audio-engineering configuration locks, not
+  listening approval. The active lock excludes canonical function YAML, so
+  ordinary source edits do not require a new baseline. Create a new lock only for
+  an approved audio-engineering configuration change.
 - `audio/session-plans/`: generated compact declarations; regenerate using
   `audio plan --all --locale en-US`, verify with `--check`.
 - Generated function/command indexes and matrices: `build-index`; never hand-edit.
@@ -81,10 +86,14 @@ Review remaining vocabulary ONE function at a time; wait for explicit user input
 - Preserve all 177 protected narration entries unless explicitly authorized.
   Never fabricate source wording, evidence, locators, provenance, translations,
   licensing, consent, authentication, efficacy or historical mechanisms.
-- Follow [source-first authoring](docs/SOURCE_FIRST_AUTHORING.md): immutable
-  SOURCE → exact initial WORKING → HUMAN edits → explicit RELEASE approval →
-  measured timing. Do not require paraphrasing, distancing or automatic
-  originality checks to edit. Record flags/corrections separately from wording.
+- Edit a function directly in `locales/<locale>/OCF-*.yaml`. Then run
+  `python scripts/ocf.py validate --all`, `python scripts/ocf.py build-index`,
+  and `python scripts/ocf.py audio plan --all --locale en-US` as applicable.
+  Generated indexes, guides and session plans are deterministic projections;
+  regenerate rather than editing their hashes by hand. Source-first block
+  authoring in [SOURCE_FIRST_AUTHORING.md](docs/SOURCE_FIRST_AUTHORING.md) is an
+  optional workflow for separately sourced material, not a prerequisite for
+  editing canonical function resources.
 - Keep source/working chunks local and out of packages. Rights clearance gates
   release inclusion, not working edits; it is not an automated legal conclusion.
   Do not mass-generate final narration or promote old candidates at runtime.

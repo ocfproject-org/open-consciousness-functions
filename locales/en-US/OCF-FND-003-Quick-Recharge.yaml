@@ -274,7 +274,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 775ab67bf8c426b4c25521fff049fb272b8e2b6c61aadaa5da04d94a20b531c7
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Quick Recharge
     recommended_primary_cue: PLUS-RECHARGE
@@ -303,7 +302,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: c3b352236c3f96448c479a37ec5a6dc207bc944eb7c66e308fcea04bd717e604
 record_metadata:
   legacy:
     command_ids:
@@ -372,16 +370,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 22386ace19503614491524c3b11e918b8441eb39026ceab3f0ec899f6d8625bf
     status: accepted
-    previous_values_sha256: d75756fa97568be3848fdf2997e2b8403f45f8464f72a55666778cd2944bd295
-    current_values_sha256: 881a09d1e2ac2f8521799111d1c0d8a87d67ee01e5123e07cbb1aad5ac09ab53
     changed_narration_keys:
     - hplus.function.ocf-fnd-003.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-fnd-003.closer: 4249c526990b9bddf49cbc2cbb4e8cf8b05f56d1293263f33aa2a7174b661af1
-    current_resolved_text_sha256:
-      hplus.function.ocf-fnd-003.closer: 60a480ee63089a5f1b323040657bf3eb137c1d95a3fd96a5d3153908fcc7be19
     review_note: Change title from Recharge to Quick Recharge and update exercise sign-off. Keep display
       and spoken cue unchanged. Preserve deliberately chosen brief natural sleep, restoration, natural
       awakening within minutes and inhale/hold/cue/candle-like exhale sequence. Retain Recharge as
@@ -395,8 +386,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: f2ef2c5702b7eb9463b430d224bb4d333c5afa22b3ea70264c1a28acf520af65
-    current_values_sha256: a7901574f21dc9e6e98631c24d5c825ed223d792be9b68ee086e08534eb091d3
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

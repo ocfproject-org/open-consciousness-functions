@@ -352,7 +352,6 @@ editorial:
   - id: OCF-TITLE-CUE-EMG-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 64da993b49234f3f9636736444cf11c2240be1d0c6575e9117af1ebd450b6964
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Injury Response
     recommended_primary_cue: PLUS-CONTROL, BALANCE, RESTORE
@@ -383,7 +382,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: fca13bb0dfefe8460bb69be3dee622535bce87c9787ff62efb1c74ce95ad2daa
 record_metadata:
   legacy:
     command_ids:
@@ -461,16 +459,9 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: f4be27fab897a765314e18e5ed32cd175e465333b36cbe1de14dda1b9a419ca0
     status: accepted
-    previous_values_sha256: bf624fa484007a4beb212873a2ec89d6531c314bf1c261655f089a44e36c1c08
-    current_values_sha256: 0975e5086ed4c02ec9ae4e9f57af6e52dca4fe62ff53711e42168e0b2881df17
     changed_narration_keys:
     - hplus.function.ocf-emg-001.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-emg-001.closer: a67f61ea70e0913353ad832a714e76a072a728887e09db586c2e7947fe0014d2
-    current_resolved_text_sha256:
-      hplus.function.ocf-emg-001.closer: e7395ff87ffcec7573414a672da19906cdf83c4a313a9cb6368e1d30acdbacf2
     review_note: 'Change title from Emergency: Injury to Injury Response and update exercise sign-off.
       Keep display and spoken cue unchanged. Preserve inhale/hold/complete cue/slow mouth exhale and surrounding
       protection, balance, healing and restoration suggestions. Retain Emergency: Injury as historical
@@ -483,9 +474,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-EMG-001:activation-triggers
     decision_source: Please do
-    source_row_sha256: d968df867eabd509f3afc5a48ea3a7e491d47634941600d1e089f95931e41cf4
     status: accepted
-    current_values_sha256: 128b6d514ed059be3609bb78ce39e2c74fb39ad2b67d6fd147e4b64ff9cec38e
     review_note: 'Injury Response: 1'
     approval_response: approve
   - id: OCF-COMMAND-SIMPLIFICATION-001
@@ -494,13 +483,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle, procedure
       and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: fe908807493287cd6d3aedc430dffcc3e0626df19b54a4907b32317b1fa69000
     status: accepted
-    previous_values_sha256: febea48090ffa20368403742295698ee8f5ae47d16378cb141047e698120fa32
-    current_values_sha256: fd184b2714642b125ea0b3ddf0afaaf565f362680d51834899038eea856dea9a
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical wording;
       listening and release approval remain false.
 content:

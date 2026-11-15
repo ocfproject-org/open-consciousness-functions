@@ -236,7 +236,6 @@ editorial:
   - id: OCF-TITLE-CUE-COM-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 19a3860224b65b3c4eebfeb0b0206874fec493a78264535d1588e05f1ca6d1e4
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Speak Up
     recommended_primary_cue: PLUS-SPEAK UP
@@ -269,7 +268,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b81487d236ecace089571f3ec92801e8fe91853a534e2a8e438d2e4591167cba
 record_metadata:
   legacy:
     command_ids:

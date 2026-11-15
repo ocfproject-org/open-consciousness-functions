@@ -243,7 +243,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: d4df5d9709a52c96698e1315bbf6d9f1b53818d3b5ad0f723a7ca31cdaba51da
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Do This Now
     recommended_primary_cue: PLUS-DO-THIS-NOW
@@ -277,7 +276,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 73bc2b514d81c7c605ac02f2800fd57c5529ad0c12265cc78beef8d295d35f0e
 record_metadata:
   legacy:
     command_ids:
@@ -339,8 +337,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: 9829ead6cf9f4d2d2064812b3f86efc493b79594351fcfd2caadcc09895caefc
-    current_values_sha256: b70c3e62ce86009dedea6485a79924adaeb3a7a60fe83506e3eac4ca979c3cb6
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

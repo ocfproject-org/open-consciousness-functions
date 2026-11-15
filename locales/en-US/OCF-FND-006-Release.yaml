@@ -274,7 +274,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-006
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: ec3899f53d96158e4389e749a913ae2210265a7772f961f1c51b4bf4d1814e89
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Release
     recommended_primary_cue: PLUS-RELEASE
@@ -304,7 +303,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: ac755e9806fbf7704c7a94ebc532114db434748e5f46693e8fc488412d27b39c
 record_metadata:
   legacy:
     command_ids:

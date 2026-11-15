@@ -384,7 +384,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: d8d43d0a4833e3d60495512d797dfe8c1c703db87cf1574d6497522050f22951
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Contemplation
     recommended_primary_cue: PLUS-OPEN
@@ -415,7 +414,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 12f7ad2126a338bc5fb7813611067d0c6f1788815e40c45288be8e9a1114c28e
 record_metadata:
   legacy:
     command_ids:
@@ -483,8 +481,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: b15e8a010bef3d2c0a7890abea8a32df7f4535d88159880095f3df3d6b306e78
-    current_values_sha256: 29966193e2d67ad28c6c45360db3ffe9f44c04fb1a31285b2db06e8a534a25e1
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

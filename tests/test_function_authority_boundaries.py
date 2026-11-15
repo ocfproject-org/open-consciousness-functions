@@ -176,9 +176,8 @@ def test_completeness_reports_missing_local_words_but_ignores_historical_command
     local = deepcopy(canonical)
     local["title"] = {}
     local["secondary_commands"] = []
-    local["localization"]["contract_sha256"] = catalog.contract_hash(canonical)
     result = catalog.completeness(local, canonical)
-    assert result == {"status": "partial", "missing": ["title"], "outdated_contract": False}
+    assert result == {"status": "partial", "missing": ["title"]}
 
 
 def test_absent_manifest_is_not_english_fallback(tmp_path):

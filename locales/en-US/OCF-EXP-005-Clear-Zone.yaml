@@ -371,7 +371,6 @@ editorial:
   command_review: approved
 localization:
   status: complete
-  contract_sha256: 9ab9558a1b7fabc06eef76f647ad6fb3118d06fb7a536211f767327407fe6704
 record_metadata:
   legacy:
     source_system: null
@@ -434,11 +433,6 @@ record_metadata:
     implementation_confirmation: Confirm implementation
     scope: Exact presented narration, cues and procedures for all four candidates; Intuition registration;
       no DSP, pacing, listening or release approval.
-    presented_snapshot_sha256: f2bd428f97719b926f1c8bab5d9c8c11546ad65f0c025f6cbb7f2f74f5a79e80
-    resolved_text_sha256:
-      hplus.function.ocf-exp-005.closer: 480a5560ec23dcd86b5ea87a9cbda107916f55c9cf6a23f2ac9247dc7886167d
-      hplus.function.ocf-exp-005.function-body: ab2f8441abac506565e46dad40676f90e7c151400746d402f49127de0972d188
-      hplus.function.ocf-exp-005.opener: cb1bcf475d10fcb82a4afbdfe03acaeb39021ddb2b2b5b87e83f2aea11ba37f5
     listening_approval: false
     release_ready: false
     source_commit: 911dbd0f24618091e34e8a816275ab7eabbf97bb

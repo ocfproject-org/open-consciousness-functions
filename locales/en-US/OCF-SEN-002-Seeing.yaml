@@ -291,7 +291,6 @@ editorial:
   - id: OCF-TITLE-CUE-SEN-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: ec99572dab42e71926472669cfb07cc915fc88263e1e39e89afa25d52c98d635
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Seeing
     recommended_primary_cue: PLUS-SEE BETTER
@@ -320,7 +319,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: a9f3a616c4cde592169a1ffb31308d9cbec47fef68be3f6005eb5f007352e52f
 record_metadata:
   legacy:
     command_ids:
@@ -404,16 +402,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: bd4dc512f5304898de333245b1d43ebafe7ed5f4a37d7ca13233871656370b58
     status: accepted
-    previous_values_sha256: 1144dfe4610a750f944d79541c259bb4a490700edbc8abc41cc09b5dc42fc43a
-    current_values_sha256: d2d80e6a7e3bd8ce86214e5a89c2d4b9e7d415cf1b78c90f0c60dafdb1d556af
     changed_narration_keys:
     - hplus.function.ocf-sen-002.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-sen-002.closer: 989ec5839d7690433c408ebf9fd7579fc6d00033bb7a587bad3354357d5df7e4
-    current_resolved_text_sha256:
-      hplus.function.ocf-sen-002.closer: 7275b828b049aed4d664189125507d661814f41587e0f0c7dd2aa129ab5abbc8
     review_note: 'Change title from Sensory: Seeing to Seeing and update exercise sign-off. Keep protected
       PLUS-SEE BETTER and spoken Plus See Better unchanged. Preserve physical sight and inner visualization
       scope, visual processing, imagination, visual memory, deliberate inner-image manipulation, continuing
@@ -427,9 +418,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-SEN-002:purpose
     decision_source: Please do
-    source_row_sha256: 9d42c88aa6246f4959bd953d3ddf2b7d6d8acc2fe42e5ac8d50eeb2106ea3230
     status: accepted
-    current_values_sha256: 1b88d67b0ab6a9c5104e393c32d620e1b4f516203d3bfbcd5796c5f43c5b17e7
     review_note: 'Seeing: 1'
     approval_response: approve
   - id: REL-SEN002-SEN001
@@ -438,8 +427,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: ab4649f068970f4b4ecb3ce83642f19b232a5e480e8c6ed094b3ff11728e043c
-    current_values_sha256: a0e34f2e93d893d0917bb584cddbaf45e3ad834f44adbe1405208d7517d4be2a
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

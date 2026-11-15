@@ -255,7 +255,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-007
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: db243fd031e72879624217c905399156b089c286f3a14467401ce9294974000b
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Blood Pressure Balance
     recommended_primary_cue: PLUS-BALANCE BLOOD PRESSURE
@@ -283,7 +282,6 @@ editorial:
         rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 70c5e067f37a3ff5b8f4ce171d0ee7b734905829dd0cec47e8bb3db0285b671b
 record_metadata:
   legacy:
     command_ids:
@@ -359,16 +357,9 @@ record_metadata:
       the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's request.
       Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 7e5af224ef2369f97facc8f086faa69195bb3c78776b0559684b748340ead9a1
     status: accepted
-    previous_values_sha256: eaf85746e7599fa6657768e82862a90bb12fc20875085fedce251f70dba241b5
-    current_values_sha256: 7758077efdf9c3604e842f3a4d5a0859f6a189eb261b206fa62adf24e6da6737
     changed_narration_keys:
     - hplus.function.ocf-bod-007.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-007.closer: b684f4e7732815d8ce1a6f24c34ffa27563173264a504f52a65808fd5df003b3
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-007.closer: 4c26c841479502e206c74ce55dd7d3dce8ce530f245c9fb10efd637abbbc4bc9
     review_note: Change title from Hypertension to Blood Pressure Balance and update exercise sign-off. Normalize
       display cue to PLUS-BALANCE BLOOD PRESSURE; keep spoken Plus Balance Blood Pressure unchanged. Preserve eye-closing,
       heart and blood-vessel attention, comfortable inhale/hold/cue/candle-like exhale and surrounding suggestions.
@@ -383,9 +374,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-007:persistence
     decision_source: Please do
-    source_row_sha256: 5b3509ffe12aebf52bc3da199b0b0583c46b5927a8394c8c3ed75e54fb065771
     status: accepted
-    current_values_sha256: 605a32979ec856b415de68ca3858deb3c41554a2bb733d435f32780db28e4b82
     review_note: 'Blood Pressure Balance: 1'
     approval_response: approve
 content:

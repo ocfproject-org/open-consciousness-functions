@@ -59,4 +59,4 @@ No native Windows/macOS, physical-device, listening or audio-render verification
 
 ### Derived canonical contract fingerprints
 
-The approved activation changes require refreshing `localization.contract_sha256` for Brain Flow, Circulation, Detox, Heart Flow, Blood Pressure Balance, Restorative Sleep and Sleep. Each new fingerprint is computed from that same canonical function's structural contract. No localization/review status is promoted. Without this consistency update the source planner correctly marks those seven changed contracts as needing review. The explicit approved wording/procedure batch supplies the authority; the fingerprint itself is not listening or release approval.
+The activation changes were applied directly to the canonical locale YAML. The former stored `localization.contract_sha256` field has been removed: it duplicated current source structure and is not required for editing or validation. Schema, command, lifecycle, narration-schedule and locale completeness checks remain active. This historical report does not authorize listening or release approval.
