@@ -315,7 +315,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Empathize. Title status: canonical.
 Display: `PLUS-EMPATHIZE`. Complete speech: **Plus Empathize**.
 
-Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.
+Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -326,7 +326,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Manifest. Title status: canonical.
 Display: `PLUS-MANIFEST`. Complete speech: **Plus Manifest**.
 
-Sets a consciously selected future condition and completion time through intention and total-self alignment.
+Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -337,7 +337,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Insulate. Title status: canonical.
 Display: `PLUS-INSULATE`. Complete speech: **Plus Insulate**.
 
-Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.
+Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -348,7 +348,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Dissolve. Title status: reviewed.
 Display: `PLUS-DISSOLVE`. Complete speech: **Plus Dissolve**.
 
-Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.
+Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.
 
 Translator context: Original draft; no historical command is being replaced.
 
@@ -370,7 +370,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Intuition. Title status: reviewed.
 Display: `PLUS-INTUITION`. Complete speech: **Plus Intuition**.
 
-Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.
+Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.
 
 Translator context: Canonical locale function resource.
 
@@ -469,7 +469,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Inner Power. Title status: canonical.
 Display: `PLUS-INNER POWER`. Complete speech: **Plus Inner Power**.
 
-Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.
+Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -502,7 +502,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Make Your Day. Title status: canonical.
 Display: `PLUS-THIS DAY`. Complete speech: **Plus This Day**.
 
-Sets a deliberate tone for the day ahead.
+Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.
 
 Translator context: Canonical locale function resource.
 

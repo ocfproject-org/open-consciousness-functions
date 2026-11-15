@@ -10,7 +10,9 @@ description:
   text: 'End selected temporary OCF function applications without losing their learned abilities.'
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-006.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-006-PRIMARY
   display_cue:
@@ -107,13 +109,8 @@ entries:
   hplus.function.ocf-fnd-006.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to release
-
-      the present application of a function when
-
-      its purpose is complete, while preserving
-
-      your ability to use it again whenever you choose.'
+    text: |-
+      This OCF exercise will teach you to end a temporary function application when it is no longer needed, while keeping the ability available for future use.
   hplus.function.ocf-fnd-006.function-body:
     status: reviewed
     version: 1.2.0
@@ -121,88 +118,35 @@ entries:
       function_id: OCF-FND-006
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to release the temporary application of any OCF function whenever its purpose is complete.
 
-      to release any temporary OCF function
+      The functions you have learned remain available, even after their temporary applications end.
 
-      when its present purpose is complete.
+      Whenever you wish to release an application, identify the function you want to end.
 
+      You may also select a group of temporary functions and release their current applications together.
 
-      The function you have learned remains yours.
+      Take a deep breath in and gently hold it.
 
-      You can end its current application
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      without losing the knowledge, ability,
+      Then slowly exhale through your mouth.
 
-      or benefits that remain part of you.
+      The selected function's temporary application ends, and its active effects fade naturally.
 
+      Your body and mind return to their normal state as the temporary response concludes.
 
-      Whenever you wish to release a temporary function,
+      Any selected group of temporary applications ends together.
 
-      bring that function clearly into your awareness.
+      Other functions and lasting abilities continue unaffected.
 
-      Know exactly what you are choosing to place on hold.
+      Your knowledge and learned capabilities remain available whenever you choose to use them again.
 
+      This ability to release selected temporary applications remains permanently available.
 
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      The selected function''s present application
-
-      will immediately begin to end.
-
-      Its temporary effects will fade smoothly,
-
-      and your body, mind, and emotions will return
-
-      to their natural, balanced condition.
-
-
-      The function itself is not forgotten or erased.
-
-      Everything you have learned remains available,
-
-      ready whenever you choose to activate it again.
-
-
-      If several temporary functions are working together,
-
-      you can bring that entire grouping into awareness
-
-      and release their present applications together
-
-      with the same command.
-
-
-      Only the temporary application you select will end.
-
-      Your other functions, lasting abilities,
-
-      and natural patterns of healthy balance
-
-      will continue as appropriate.
-
-
-      This ability to release and reset
-
-      selected applications is permanently
-
-      available to you whenever you desire.
-
-
-      Each time you use {{ cue.primary }},
-
-      ending an application and returning
-
-      to balance becomes easier, smoother,
-
-      and more effective.'
+      Each time you use "{{ cue.primary }}," ending a temporary application becomes easier and more natural.
   hplus.function.ocf-fnd-006.closer:
     status: reviewed
     version: 1.2.0
@@ -210,23 +154,17 @@ entries:
       function_id: OCF-FND-006
       allowed:
       - cue.primary
-    text: 'Remember, when a temporary OCF function
+    text: |-
+      Remember, when you wish to end a temporary OCF function application, identify the function or group you wish to release.
 
-      is no longer needed, bring that function
+      Take a deep breath in and gently hold it.
 
-      clearly into your awareness.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Release exercise.'
+      This concludes your OCF Release exercise.
 slug: release
 classification:
   primary_domain: foundation
@@ -242,6 +180,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-006.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

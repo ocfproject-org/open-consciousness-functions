@@ -129,6 +129,40 @@ def test_empathize_requires_a_being_but_is_breath_independent(functions):
     assert not {"inhale", "hold-breath", "exhale"} & set(_operations(command))
 
 
+def test_selected_emotional_and_thought_patterns_are_specific_before_activation(functions):
+    for identity, expected in (
+        ("OCF-EMO-001", "unwanted emotion"),
+        ("OCF-EMO-002", "unwanted thought, emotional response, or recurring pattern"),
+    ):
+        steps = functions[identity]["activation"]["procedure_steps"]
+        selected = steps[0]
+        assert selected["operation"] == "select-intention"
+        assert expected in selected["instruction"]["text"].lower()
+        assert functions[identity]["activation"]["control"]["procedure"]["before_steps"][0][
+            "localization_key"
+        ].startswith(f"functions.{identity.lower()}.procedure.")
+
+
+def test_temporary_responses_keep_their_learned_capability_permanently_available(functions):
+    for identity in (
+        "OCF-COG-003",
+        "OCF-COG-006",
+        "OCF-EMO-001",
+        "OCF-EMO-002",
+        "OCF-FND-002",
+        "OCF-FND-003",
+        "OCF-FND-004",
+        "OCF-FND-005",
+        "OCF-FND-006",
+        "OCF-PRF-006",
+        "OCF-SLP-003",
+        "OCF-SLP-006",
+    ):
+        lifecycle = functions[identity]["lifecycle"]
+        assert lifecycle["persistence"] == "temporary"
+        assert lifecycle["scopes"]["capability"]["persistence"] == "permanent"
+
+
 def test_clear_zone_commands_are_breath_independent_and_modes_are_temporary(functions):
     function = functions["OCF-EXP-005"]
     commands = [function["activation"], *function["secondary_commands"]]

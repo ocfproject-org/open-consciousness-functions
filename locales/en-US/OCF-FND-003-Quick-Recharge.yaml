@@ -10,7 +10,9 @@ description:
   text: 'Enter a short, restorative sleep and awaken refreshed, alert, and energized.'
   status: canonical
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-003.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-003-PRIMARY
   display_cue:
@@ -106,11 +108,8 @@ entries:
   hplus.function.ocf-fnd-003.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to enter a short,
-
-      natural sleep and rapidly recharge your body,
-
-      mind, and total self, awakening refreshed and alert.'
+    text: |-
+      This OCF exercise will teach you to enter a brief, restorative sleep, allowing your body, mind, and total self to recharge before awakening refreshed and alert.
   hplus.function.ocf-fnd-003.function-body:
     status: reviewed
     version: 1.1.0
@@ -118,90 +117,33 @@ entries:
       function_id: OCF-FND-003
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to recharge your body and mind through a short period of natural, restorative sleep.
 
-      to recharge and restore yourself through
+      Whenever you wish to take a brief rest, settle into a comfortable position where you can safely sleep.
 
-      a short period of natural, restful sleep.
+      Allow your body and mind to relax.
 
+      Take a deep breath in and gently hold it.
 
-      Whenever you choose to take a brief rest,
-
-      settle comfortably and allow your body
-
-      and mind to become quiet and relaxed.
-
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Your body and mind naturally enter a peaceful, restorative sleep.
 
-      You will move easily and quickly
+      As you rest, your conscious mind, subconscious mind, physical body, and total self work together to restore balance and replenish your energy.
 
-      into peaceful, natural sleep.
+      Unnecessary tension releases, your mind settles, and your natural restorative processes support renewed strength and vitality.
 
+      Throughout this brief period of sleep, your total self works toward restoring your physical and mental energy.
 
-      As you sleep, your total self will begin
+      As your short rest completes, you awaken naturally, refreshed, alert, and ready to resume your activities.
 
-      a rapid process of balance, equalization,
+      This ability to enter a short restorative sleep remains permanently available whenever you choose.
 
-      and restoration throughout your system.
-
-
-      Your body will release unnecessary tension.
-
-      Your mind will settle and become clear.
-
-      Your natural energies will replenish,
-
-      bringing renewed strength and vitality.
-
-
-      Every part of your being will work together,
-
-      restoring harmony and refreshing you
-
-      in the short time you have chosen to rest.
-
-
-      Within minutes, as your brief sleep completes,
-
-      you will awaken naturally, calm and confident,
-
-      with a clear mind and renewed energy.
-
-
-      You will feel refreshed, alert, and ready
-
-      to continue what you wish to do.
-
-
-      From this moment forward, the ability
-
-      to enter restorative short sleep
-
-      is permanently available whenever you choose.
-
-
-      Your normal wakefulness remains bright and clear,
-
-      and this response begins when you deliberately
-
-      choose to use {{ cue.primary }}.
-
-
-      Each time you use this function,
-
-      falling asleep briefly, restoring your energy,
-
-      and awakening refreshed will become
-
-      easier, smoother, and more effective.'
+      Each time you use "{{ cue.primary }}," entering restful sleep and awakening refreshed becomes easier and more natural.
   hplus.function.ocf-fnd-003.closer:
     status: reviewed
     version: 1.2.1
@@ -209,20 +151,17 @@ entries:
       function_id: OCF-FND-003
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to restore yourself
+    text: |-
+      Remember, whenever you wish to recharge through a short period of restorative sleep, settle comfortably.
 
-      through a short period of natural sleep,
+      Take a deep breath in and gently hold it.
 
-      inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth and allow yourself to sleep.
 
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then slowly exhale through your mouth.
-
-
-      This concludes your OCF Quick Recharge exercise.'
+      This concludes your OCF Quick Recharge exercise.
 slug: recharge
 classification:
   primary_domain: foundation
@@ -242,6 +181,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-003.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

@@ -163,13 +163,8 @@ entries:
       function_id: OCF-EXP-005
       allowed:
       - function.title
-    text: 'This OCF exercise will teach you to establish {{ function.title }},
-
-      a lasting intention for a calm space around your body,
-
-      encouraging unwanted insects to keep their distance
-
-      and move peacefully elsewhere.'
+    text: |-
+      This OCF exercise will teach you to establish {{ function.title }}, a lasting protective intention that maintains a calm, comfortable space around your body, encouraging unwanted insects to keep their distance and move peacefully elsewhere.
     notes: New OCF-authored adaptation of the supplied Clear Zone exercise. Introduces an ongoing, consciously
       chosen intention to discourage unwanted insect contact while maintaining calm awareness. No independently
       authenticated source, source checksum, or historical lineage is claimed. Proposed identity remains
@@ -184,85 +179,43 @@ entries:
       - cue.primary
       - cue.id.OCF-CMD-EXP-005-OBSERVE
       - cue.id.OCF-CMD-EXP-005-SUSPEND
-    text: 'From this moment forward, {{ function.title }} is permanently
+    text: |-
+      From this moment forward, {{ function.title }} is permanently established within your total self, maintaining a clear and comfortable space around your entire body.
 
-      established within your total self,
+      Your conscious mind, subconscious mind, physical being, and higher self work together, naturally discouraging unwanted insect contact.
 
-      operating automatically whenever needed.
+      Whenever insects approach, your total self maintains one clear intention: remain away, move away, and continue peacefully elsewhere.
 
+      This pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings.
 
-      Become aware of your body and the space around it.
+      {{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.
 
-      Picture, feel, or simply know this space as calm and clear.
+      Whenever you wish to reinforce or restore this pattern, simply say to yourself,
+      "{{ cue.primary }}."
 
+      Your total self strengthens the established intention, maintaining a clear personal space around you.
 
-      When unwanted insects or similar small pests approach
+      You also have two optional commands.
 
-      or make contact, your total self carries one steady intention:
-
-      remain away, move away, and continue peacefully elsewhere.
-
-      This intention extends around your whole body,
-
-      welcoming undisturbed space without harm to other life.
-
-
-      Your conscious mind, subconscious awareness, physical being,
-
-      and higher self work together around this purpose.
-
-      Your calm attention and natural actions cooperate with it,
-
-      without constant effort or repeated checking.
-
-
-      Whenever you wish to strengthen this pattern
-
-      or restore its automatic operation,
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Your total self renews this intention as one.
-
-
-      For deliberate observation or interaction with insects,
-
-      think or say in your mind,
-
+      When you wish to observe or interact with insects without discouraging their approach, silently say,
       "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}."
 
-      The outward encouragement pauses,
+      The outward insect-discouragement intention pauses, while your calm awareness remains available.
 
-      while your calm awareness remains active.
-
-
-      To pause the entire function, think or say in your mind,
-
+      Whenever you wish to pause the entire {{ function.title }} application, silently say,
       "{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}."
 
-      All activity of this function pauses.
+      The application rests, while your ordinary awareness and natural responses continue.
 
-      Your ordinary awareness and natural responses remain intact.
+      Each selected mode replaces the previous one.
 
+      Observe and Suspend are temporary. They end automatically when you enter normal sleep, lose consciousness, or deliberately invoke "{{ cue.primary }}" again.
 
-      Each chosen mode replaces the previous one.
+      Your original protective pattern then resumes.
 
-      Both overrides are temporary.
+      Your learned ability remains permanently available, regardless of which mode you choose.
 
-      When you next enter normal sleep or become unconscious,
-
-      either override ends and automatic operation resumes.
-
-      Deliberately using the primary command restores it sooner.
-
-
-      Your learned ability remains with you in every mode.
-
-      The more you use this function,
-
-      the more naturally your attention, intention,
-
-      and total self work together.'
+      The more you use these commands, the easier and more natural establishing and adjusting {{ function.title }} becomes.
     notes: New OCF wording based on the maintainer-supplied Clear Zone draft. Preserves permanent automatic
       operation as the intended baseline, whole-self participation, non-destructive insect discouragement,
       primary reinforcement and restoration, and distinct Observe and Suspend overrides. Observe pauses
@@ -287,19 +240,15 @@ entries:
       - cue.primary
       - cue.id.OCF-CMD-EXP-005-OBSERVE
       - cue.id.OCF-CMD-EXP-005-SUSPEND
-    text: 'Remember, to strengthen or restore {{ function.title }},
+    text: |-
+      Remember, whenever you wish to reinforce or restore your clear personal zone, silently say,
+      "{{ cue.primary }}."
 
-      think or say in your mind, "{{ cue.primary }}."
+      Use "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}" to temporarily allow intentional insect contact, or "{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}" to pause the entire application.
 
+      Your normal {{ function.title }} pattern resumes when you invoke its primary command or when a temporary override ends.
 
-      Use "{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}"
-
-      to allow intentional contact,
-
-      or "{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}" to pause the entire function.
-
-
-      This concludes your OCF exercise.'
+      This concludes your OCF {{ function.title }} exercise.
     notes: New OCF-authored reminder, not historical transcript wording. Includes the primary reinforcement/restoration
       cue and both distinct overrides. The body teaches automatic reset conditions; the closer does not
       repeat reinforcement or install a new control command. All three commands are breath-independent.

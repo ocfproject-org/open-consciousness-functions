@@ -2152,6 +2152,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command_id": "OCF-CMD-COG-003-CLOSED",
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -2175,7 +2180,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "12f7ad2126a338bc5fb7813611067d0c6f1788815e40c45288be8e9a1114c28e"
+      "sha256": "b9dca221e5e5a5d8a811880df1fabae3d4bd003792bd7413f56f571c362d48eb"
     },
     "OCF-COG-004": {
       "contract": {
@@ -2541,6 +2546,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -2564,7 +2574,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "8bab3d73bd9f0d49925df6a34e50bac12abf49966806c90b7f54c6eab17a6a7d"
+      "sha256": "236ec559a5f6bfb0bc1f49e28f648788d4ad844f94924367df0bbcd1864ca66b"
     },
     "OCF-COG-007": {
       "contract": {
@@ -2971,7 +2981,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "before_steps": [
                   {
                     "id": "select-emotion",
-                    "localization_key": "command.procedure.select-intention",
+                    "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                     "operation": "select-intention"
                   }
                 ],
@@ -3014,6 +3024,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -3037,7 +3052,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "72a39300a86ed2cb22f84bda63e18f44c77fcad339c4f2645890cf1ed4be9993"
+      "sha256": "1d880f8f1342a13869f02ecd2732e96cda4cdd39d530eb9267345953c8c52942"
     },
     "OCF-EMO-002": {
       "contract": {
@@ -3070,7 +3085,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "before_steps": [
                   {
                     "id": "select-thought-pattern",
-                    "localization_key": "command.procedure.select-intention",
+                    "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                     "operation": "select-intention"
                   }
                 ],
@@ -3136,6 +3151,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -3159,7 +3179,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "d9301dd8c39d3bbf20c55036238b3ac9724c271eaedbd40dba0e4be01096d771"
+      "sha256": "0cf67bb209098aedb859c171bd67b4b515b4634a96f7ea56e528a2d2aa7fb3c1"
     },
     "OCF-EMO-003": {
       "contract": {
@@ -4038,6 +4058,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4061,7 +4086,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "3c6e20879a801778abcb143c97074e85919fd2f163c86e7665585ffe84f2e4c6"
+      "sha256": "d7493bed3af164d4f5f29e2ef14c2fadb3a7cfed97b3b7b0822a6756ecfb6865"
     },
     "OCF-FND-002": {
       "contract": {
@@ -4129,6 +4154,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4152,7 +4182,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "16f543c8c672dea68be5de602ea307116b4331a5e92fc29d285baea3ec89d702"
+      "sha256": "6930fd7cf8d78bbfcff03c397deec099ce7bfe6094af6b546ac2672141a254c2"
     },
     "OCF-FND-003": {
       "contract": {
@@ -4218,6 +4248,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4241,7 +4276,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "c3b352236c3f96448c479a37ec5a6dc207bc944eb7c66e308fcea04bd717e604"
+      "sha256": "783dac68cc62f7ab3045770e1bffbc103d1b75a62c110b0272eab687e29f2245"
     },
     "OCF-FND-004": {
       "contract": {
@@ -4326,6 +4361,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4349,7 +4389,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "3df6d4a029c89c36ce5bdd72daaf6ab1925aad003b969abf6192f5031fea91c1"
+      "sha256": "d239a688496c44f5e09c21ee27d5edec6a5bad52c4845c84280b9159b32d2052"
     },
     "OCF-FND-005": {
       "contract": {
@@ -4438,6 +4478,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4461,7 +4506,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "71c6c922351c2a383f5a1ea3cde92e80341bfadfa265701014753e1667c23356"
+      "sha256": "0bcd92cc3fbb402311ede5e4caa07c782535499a37a57a7560c13c9a81fc9ce6"
     },
     "OCF-FND-006": {
       "contract": {
@@ -4533,6 +4578,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4556,7 +4606,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "ac755e9806fbf7704c7a94ebc532114db434748e5f46693e8fc488412d27b39c"
+      "sha256": "aab11682df4c09488c80a6e5570b6f173e45db0d16596b1403c142026355e7b9"
     },
     "OCF-LIF-001": {
       "contract": {
@@ -4737,6 +4787,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -4760,7 +4815,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "73bc2b514d81c7c605ac02f2800fd57c5529ad0c12265cc78beef8d295d35f0e"
+      "sha256": "111c751329c81684fbc20b9c40ddda88be702e4d751ecce86b4ea7a6ddd530ea"
     },
     "OCF-PRF-002": {
       "contract": {
@@ -5266,6 +5321,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -5289,7 +5349,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 1
       },
-      "sha256": "d0a83b0230a3a6c681e6bfdbb11efefaf40a51fe039b963e986f89e3f2c963af"
+      "sha256": "1542676205e37d90f55493cd8dd628be78cea23a70941c88e1b3c61a4598fb65"
     },
     "OCF-SEN-001": {
       "contract": {
@@ -6344,6 +6404,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -6367,7 +6432,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "f5d0fcce9fddd908c4dc0b60ef96ef497ceb78fa409dada2687f0f7a822c6725"
+      "sha256": "eea2dbd19011ba150c3b6cc1f6d7bd021ad05d48a3ad054d5507903126b1c5a6"
     },
     "OCF-SLP-003": {
       "contract": {
@@ -6464,6 +6529,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -6487,7 +6557,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "5b5644999cdd01c90c0a153fbfea1250ef7f8cf64bbc4ab4669e50ea66c92791"
+      "sha256": "e17623e46f7c5cc367670573ae4a0616be6e67af802b31ccea107acf8b4e4acc"
     },
     "OCF-SLP-004": {
       "contract": {
@@ -6814,6 +6884,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -6837,7 +6912,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 1
       },
-      "sha256": "3e38e329458a1e28d129f0383235a876b3885bd31b0afffc8f60c0027c45a364"
+      "sha256": "029b414fdc0c3dc5dde4c9169595f3268ab53353ab1005a86deb7d4260028aed"
     }
   },
   "generated": true

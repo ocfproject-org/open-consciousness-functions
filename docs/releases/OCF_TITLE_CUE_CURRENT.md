@@ -238,7 +238,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-EMPATHIZE`; complete teaching: **Plus Empathize**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.
+- Purpose: Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -246,7 +246,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-MANIFEST`; complete teaching: **Plus Manifest**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Sets a consciously selected future condition and completion time through intention and total-self alignment.
+- Purpose: Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -254,7 +254,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INSULATE`; complete teaching: **Plus Insulate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.
+- Purpose: Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -262,7 +262,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-DISSOLVE`; complete teaching: **Plus Dissolve**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.
+- Purpose: Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -278,7 +278,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INTUITION`; complete teaching: **Plus Intuition**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.
+- Purpose: Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -350,7 +350,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INNER POWER`; complete teaching: **Plus Inner Power**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.
+- Purpose: Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -374,7 +374,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-THIS DAY`; complete teaching: **Plus This Day**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Sets a deliberate tone for the day ahead.
+- Purpose: Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.
 - Pending title: None.
 - Other unselected proposal: null
 

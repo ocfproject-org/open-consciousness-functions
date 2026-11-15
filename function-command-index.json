@@ -6267,7 +6267,27 @@
       ],
       "effects": null,
       "function_id": "OCF-COG-003",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-cog-003.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -7423,7 +7443,27 @@
       ],
       "effects": null,
       "function_id": "OCF-COG-006",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-cog-006.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -8680,7 +8720,7 @@
             "before_steps": [
               {
                 "id": "select-emotion",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                 "operation": "select-intention"
               }
             ],
@@ -8700,7 +8740,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Select the unwanted emotion you wish to release.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -8798,7 +8838,27 @@
       ],
       "effects": null,
       "function_id": "OCF-EMO-001",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-emo-001.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -8932,7 +8992,7 @@
             "before_steps": [
               {
                 "id": "select-thought-pattern",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                 "operation": "select-intention"
               }
             ],
@@ -8952,7 +9012,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Select an unwanted thought, emotional response, or recurring pattern to offload.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -9063,7 +9123,27 @@
       ],
       "effects": null,
       "function_id": "OCF-EMO-002",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-emo-002.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -9272,7 +9352,7 @@
             "key": "functions.ocf-emo-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness."
+            "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
           },
           "related_commands": [],
           "relationships": {},
@@ -9335,7 +9415,7 @@
         "key": "functions.ocf-emo-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness."
+        "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9367,7 +9447,7 @@
         "key": "functions.ocf-emo-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness."
+        "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
       },
       "slug": "empathizing",
       "source_availability": "unavailable",
@@ -9556,7 +9636,7 @@
             "key": "functions.ocf-exp-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Sets a consciously selected future condition and completion time through intention and total-self alignment."
+            "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
           },
           "related_commands": [],
           "relationships": {},
@@ -9628,7 +9708,7 @@
         "key": "functions.ocf-exp-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets a consciously selected future condition and completion time through intention and total-self alignment."
+        "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9681,7 +9761,7 @@
         "key": "functions.ocf-exp-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets a consciously selected future condition and completion time through intention and total-self alignment."
+        "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
       },
       "slug": "mobius-west",
       "source_availability": "available",
@@ -9876,7 +9956,7 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold."
+            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
           },
           "related_commands": [],
           "relationships": {},
@@ -10021,7 +10101,7 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold."
+            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
           },
           "related_commands": [
             {
@@ -10206,7 +10286,7 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold."
+            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
           },
           "related_commands": [
             {
@@ -10319,7 +10399,7 @@
         "key": "functions.ocf-exp-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold."
+        "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -10329,7 +10409,7 @@
         "key": "functions.ocf-exp-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold."
+        "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
       },
       "slug": "zoning",
       "source_availability": "unavailable",
@@ -10621,7 +10701,7 @@
         "key": "functions.ocf-exp-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning."
+        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [
@@ -10653,7 +10733,7 @@
         "key": "functions.ocf-exp-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning."
+        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons."
       },
       "slug": "dissolve",
       "source_availability": "pending-source-review",
@@ -11311,7 +11391,7 @@
         "key": "functions.ocf-exp-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness."
+        "text": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [],
@@ -11321,7 +11401,7 @@
         "key": "functions.ocf-exp-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness."
+        "text": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness."
       },
       "slug": "intuition",
       "source_availability": "pending-source-review",
@@ -11604,7 +11684,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-001",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-001.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -11832,7 +11932,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-002",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-002.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [
           {
@@ -12123,7 +12243,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-003",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-003.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -12388,7 +12528,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-004",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-004.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [
           {
@@ -12679,7 +12839,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-005",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-005.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -12924,7 +13104,27 @@
       ],
       "effects": null,
       "function_id": "OCF-FND-006",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-006.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -13525,7 +13725,27 @@
       ],
       "effects": null,
       "function_id": "OCF-PRF-001",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-prf-001.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [
           {
@@ -13755,7 +13975,7 @@
             "key": "functions.ocf-prf-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life."
+            "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
           },
           "related_commands": [],
           "relationships": {},
@@ -13818,7 +14038,7 @@
         "key": "functions.ocf-prf-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life."
+        "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -13850,7 +14070,7 @@
         "key": "functions.ocf-prf-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life."
+        "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
       },
       "slug": "eight-great",
       "source_availability": "available",
@@ -14603,7 +14823,7 @@
             "key": "functions.ocf-prf-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Sets a deliberate tone for the day ahead."
+            "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
           },
           "related_commands": [],
           "relationships": {},
@@ -14666,7 +14886,7 @@
         "key": "functions.ocf-prf-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets a deliberate tone for the day ahead."
+        "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -14698,7 +14918,7 @@
         "key": "functions.ocf-prf-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Sets a deliberate tone for the day ahead."
+        "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
       },
       "slug": "make-your-day",
       "source_availability": "unavailable",
@@ -14988,7 +15208,27 @@
       ],
       "effects": null,
       "function_id": "OCF-PRF-006",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-prf-006.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []
@@ -18318,7 +18558,27 @@
       ],
       "effects": null,
       "function_id": "OCF-SLP-002",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-slp-002.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -18615,7 +18875,27 @@
       ],
       "effects": null,
       "function_id": "OCF-SLP-003",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-slp-003.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -19487,7 +19767,27 @@
       ],
       "effects": null,
       "function_id": "OCF-SLP-006",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-slp-006.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability remains permanently available for deliberate future use."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": []

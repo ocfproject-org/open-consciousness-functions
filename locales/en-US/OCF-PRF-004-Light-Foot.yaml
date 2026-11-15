@@ -133,11 +133,8 @@ entries:
   hplus.function.ocf-prf-004.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to move with lightness,
-
-      quiet precision, and natural efficiency, making smooth,
-
-      effortless steps an increasingly permanent part of the way you move.'
+    text: |-
+      This OCF exercise will teach you to move with lighter, quieter steps, improved balance, and natural efficiency.
   hplus.function.ocf-prf-004.function-body:
     status: reviewed
     version: 1.2.1
@@ -145,86 +142,31 @@ entries:
       function_id: OCF-PRF-004
       allowed:
       - cue.primary
-    text: 'From this moment forward, your body will learn
+    text: |-
+      From this moment forward, your body learns a lighter, quieter, and more efficient way of moving.
 
-      a lighter, quieter, and more efficient way of moving.
+      Whether walking, climbing stairs, jogging, or running, your feet and legs work together with natural ease and precision.
 
+      Your feet lift cleanly from the ground and return with the pressure needed for stable support.
 
-      Whether walking through daily life, climbing steps,
+      Your steps become smoother and quieter as unnecessary tension, impact, and wasted movement decrease.
 
-      jogging, or running, your feet and legs will work
+      Your posture, balance, and rhythm work together, allowing you to place each foot accurately and adapt naturally to the ground beneath you.
 
-      together with natural ease and precision.
+      Your conscious mind, subconscious mind, physical body, and total self establish this improved movement pattern as your natural way of moving.
 
+      It continues automatically during everyday activities without requiring conscious attention or repeated commands.
 
-      Your feet will lift cleanly from the ground,
+      Whenever you wish to reinforce this lightness and efficiency, take a deep breath in and gently hold it.
 
-      moving forward without dragging or scraping.
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Each foot will return gently and deliberately,
+      Then slowly exhale through your mouth.
 
-      with just the pressure needed for stable support.
+      Your movement becomes lighter, quieter, and more efficient, maintaining balance and awareness appropriate to your surroundings.
 
-
-      Your steps will grow quieter, smoother, and lighter.
-
-      Unnecessary impact, tension, and wasted motion
-
-      will fade from the way you move.
-
-
-      Your posture, balance, and rhythm will adjust together.
-
-      You will place each foot where you intend,
-
-      adapting naturally to the ground beneath you
-
-      and the movement you have chosen.
-
-
-      Your total self will learn this pattern so thoroughly
-
-      that it becomes your natural way of walking,
-
-      without needing to think about each separate step.
-
-
-      This improvement will remain part of your everyday
-
-      movement, even when you are not consciously
-
-      using the Light Foot command.
-
-
-      Whenever you wish to strengthen this lightness
-
-      and efficiency even further, inhale deeply
-
-      and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      Your movement will immediately become lighter,
-
-      quieter, more balanced, and more economical,
-
-      while maintaining the awareness and control
-
-      appropriate to your surroundings.
-
-
-      Each time you move, your body will reinforce
-
-      this effortless pattern. Each time you use
-
-      {{ cue.primary }}, it will become easier
-
-      and more effective to express at will.'
+      Each time you use "{{ cue.primary }}," this learned movement pattern becomes easier and more natural.
   hplus.function.ocf-prf-004.closer:
     status: reviewed
     version: 1.2.1
@@ -232,21 +174,17 @@ entries:
       function_id: OCF-PRF-004
       allowed:
       - cue.primary
-    text: 'Remember, your lighter, quieter, more efficient way
+    text: |-
+      Remember, your lighter, quieter movement pattern continues naturally.
 
-      of moving will continue naturally, and whenever
+      Whenever you wish to reinforce it, inhale deeply and gently hold your breath.
 
-      you wish to strengthen it, inhale deeply,
-
-      hold your breath, and think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Light Foot exercise.'
+      This concludes your OCF Light Foot exercise.
 slug: light-foot
 classification:
   primary_domain: performance

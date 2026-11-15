@@ -10,7 +10,9 @@ description:
   text: 'Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.'
   status: canonical
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-005.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-005-PRIMARY
   display_cue:
@@ -139,13 +141,8 @@ entries:
   hplus.function.ocf-fnd-005.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to reset your
-
-      physical and mental state quickly, shifting from
-
-      weariness and feeling low to renewed energy,
-
-      clarity, strength, and confidence.'
+    text: |-
+      This OCF exercise will teach you to quickly reset your physical and mental state, replacing weariness and low energy with renewed alertness, clarity, and confidence.
   hplus.function.ocf-fnd-005.function-body:
     status: reviewed
     version: 1.2.1
@@ -153,84 +150,33 @@ entries:
       function_id: OCF-FND-005
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to quickly reset your physical and mental state whenever you choose.
 
-      to change your physical and mental pattern
+      Whenever you feel tired, weary, or emotionally low, you can shift into a renewed state of energy, clarity, strength, and confidence.
 
-      quickly and completely whenever you desire.
+      Your conscious mind, subconscious mind, physical body, and total self work together to restore your natural balance and alertness.
 
+      To activate this ability, take a deep breath in, close your eyes, and gently hold your breath.
 
-      Whenever you feel tired, weary, or emotionally low,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      you can immediately reset your state and return
+      Then slowly exhale through your mouth and open your eyes.
 
-      to renewed strength, clarity, and confidence.
+      Your physical and mental state begins to change immediately.
 
+      Weariness and heaviness diminish as renewed energy and vitality become available throughout your body.
 
-      Inhale deeply, close your eyes,
+      Your mind becomes clearer and sharper, supporting focused attention and effective action.
 
-      and gently hold your breath.
+      Your emotions return toward balance as confidence, strength, and steady awareness increase.
 
+      Your total self establishes the refreshed, alert state you have chosen.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      This ability to reset your physical and mental state remains permanently available whenever you choose.
 
-
-      Then exhale slowly through your mouth
-
-      and open your eyes.
-
-
-      As you exhale, weariness and heaviness
-
-      will flow out of your body and mind.
-
-      With each new breath, fresh energy and vitality
-
-      will flow throughout your entire system.
-
-
-      Your body will feel renewed, balanced,
-
-      comfortable, and ready for action.
-
-      Your mind will become clear, clean, sharp,
-
-      and smooth, with bright, steady awareness.
-
-
-      Your emotions will return to balance.
-
-      You will feel strong and sure,
-
-      calm and confident, ready to move forward.
-
-
-      This change will take place immediately,
-
-      bringing your entire being into the
-
-      clear, energized state you have chosen.
-
-
-      From this moment forward, this ability
-
-      to reset your state is permanently
-
-      available whenever you wish to use it.
-
-
-      Your natural balance remains intact,
-
-      and you can invoke this renewed wakefulness
-
-      whenever a change of pattern is desired.
-
-
-      Each time you use {{ cue.primary }},
-
-      this shift becomes easier, faster,
-
-      and more effective.'
+      Each time you use "{{ cue.primary }}," making this change becomes easier and more natural.
   hplus.function.ocf-fnd-005.closer:
     status: reviewed
     version: 1.2.1
@@ -238,22 +184,15 @@ entries:
       function_id: OCF-FND-005
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to change
+    text: |-
+      Remember, whenever you wish to shift from weariness or low energy into a refreshed and alert state, take a deep breath in, close your eyes, and gently hold your breath.
 
-      from tired and low to energized and strong,
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      inhale deeply, close your eyes, and hold your breath.
+      Then slowly exhale through your mouth and open your eyes.
 
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth
-
-      and open your eyes.
-
-
-      This concludes your OCF Reset exercise.'
+      This concludes your OCF Reset exercise.
 slug: reset
 classification:
   primary_domain: foundation
@@ -269,6 +208,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-005.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

@@ -11,7 +11,9 @@ description:
     through to completion.
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-prf-001.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-PRF-001-PRIMARY
   display_cue:
@@ -211,6 +213,10 @@ lifecycle:
     command:
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-prf-001.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

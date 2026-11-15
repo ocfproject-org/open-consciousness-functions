@@ -10,7 +10,9 @@ description:
   text: 'Call upon exceptional strength, speed, and coordination when immediate action is needed.'
   status: reviewed
   version: 1.0.2
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-prf-006.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-PRF-006-PRIMARY
   display_cue:
@@ -134,11 +136,8 @@ entries:
   hplus.function.ocf-prf-006.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to call upon
-
-      extraordinary strength and quickness within your total self,
-
-      bringing them into action immediately when they are needed most.'
+    text: |-
+      This OCF exercise will teach you to call upon exceptional strength and quickness, directing your total self toward immediate, decisive action whenever needed.
   hplus.function.ocf-prf-006.function-body:
     status: reviewed
     version: 1.2.0
@@ -146,79 +145,35 @@ entries:
       function_id: OCF-PRF-006
       allowed:
       - cue.primary
-    text: 'From this moment forward, within your total self
+    text: |-
+      From this moment forward, you have the ability to call upon exceptional reserves of strength and quickness within your total self.
 
-      there is an exceptional reserve of strength and quickness,
+      When an immediate need arises, your mind and body can work together with increased speed, strength, precision, and coordination.
 
-      ready to be called upon when an immediate need arises.
+      To activate this ability, identify the action you need to perform.
 
+      Take a deep breath in and gently hold it.
 
-      You will recognize the moment that calls for action.
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Your awareness will become clear and direct.
+      Then slowly exhale through your mouth.
 
-      Your mind and body will unite around what must be done.
+      Your total self responds to your intention, bringing your available strength, speed, and coordination into the chosen action.
 
+      Your conscious mind, subconscious mind, nervous system, and muscles work together, reducing unnecessary hesitation and wasted movement.
 
-      When you need this extraordinary response,
+      Your awareness remains clear as your movements become direct, rapid, and precise.
 
-      bring the necessary action clearly into your awareness.
+      Your body directs its available resources toward the immediate task, maintaining the awareness and control needed for effective action.
 
-      Inhale deeply and gently hold your breath.
+      This enhanced response continues for as long as the immediate need exists.
 
+      When the need has passed, the enhanced response ends naturally, and your mind and body return to their normal operating state.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Your learned ability remains permanently available for future use.
 
-
-      Then exhale slowly through your mouth.
-
-
-      Immediately, your total self will respond as one.
-
-      Your conscious mind, subconscious mind, nervous system,
-
-      and muscles will work together in complete coordination.
-
-
-      Hesitation and unnecessary thought will fall away.
-
-      Your movements will become direct, rapid, and precise.
-
-      Every part of your body needed for the action
-
-      will contribute its strength in perfect timing.
-
-
-      You will draw upon reserves of power and speed
-
-      beyond what you ordinarily recognize within yourself,
-
-      concentrating your entire capacity into the moment.
-
-
-      Your awareness will remain clear.
-
-      Your action will be decisive.
-
-      The strength and quickness you call upon
-
-      will be directed toward the immediate purpose.
-
-
-      This exceptional response is temporary,
-
-      arising when you deliberately call upon it.
-
-      Your learned ability will remain available
-
-      whenever another need arises.
-
-
-      Each time you use this function,
-
-      your total self will recognize and respond
-
-      to your intention more readily and effectively.'
+      Each time you use "{{ cue.primary }}," accessing and directing this ability becomes easier and more natural.
   hplus.function.ocf-prf-006.closer:
     status: reviewed
     version: 1.2.0
@@ -226,16 +181,19 @@ entries:
       function_id: OCF-PRF-006
       allowed:
       - cue.primary
-    text: 'Remember, when an immediate need calls for extraordinary
+    text: |-
+      Remember, when you need exceptional strength and quickness, identify the action you wish to perform.
 
-      strength and quickness, inhale deeply, hold your breath,
+      Inhale deeply and gently hold your breath.
 
-      and think or say in your mind, "{{ cue.primary }}."
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      Then exhale slowly through your mouth.
+      Then slowly exhale through your mouth.
 
+      The enhanced response ends automatically when the need has passed.
 
-      This concludes your OCF Strong-Quick exercise.'
+      This concludes your OCF Strong-Quick exercise.
 slug: strong-quick
 classification:
   primary_domain: performance
@@ -256,6 +214,10 @@ lifecycle:
     required: false
   trigger_conditions:
   - The temporary enhanced response ends automatically when the immediate need passes.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-prf-006.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

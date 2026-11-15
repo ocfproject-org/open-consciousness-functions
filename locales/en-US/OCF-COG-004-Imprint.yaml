@@ -200,13 +200,8 @@ entries:
   hplus.function.ocf-cog-004.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to capture and
-
-      permanently store information, knowledge, and
-
-      experiences deep within your memory, preserving
-
-      them clearly and accurately for future recall.'
+    text: |-
+      This OCF exercise will teach you to capture and retain information, knowledge, and experiences in memory for future recall.
   hplus.function.ocf-cog-004.function-body:
     status: reviewed
     version: 1.2.1
@@ -215,120 +210,38 @@ entries:
       allowed:
       - cue.id.OCF-CMD-COG-004-RECALL
       - cue.primary
-    text: 'From this moment forward, your ability to capture,
+    text: |-
+      From this moment forward, you have the ability to consciously capture, store, and recall information and experiences whenever you choose.
 
-      store, and remember information and experiences
+      Your conscious mind, subconscious mind, and total self work together to strengthen your ability to remember.
 
-      is becoming stronger, clearer, and more accurate.
+      Whenever you wish to preserve information or an experience, direct your attention to what you want to remember.
 
+      Take a deep breath in and gently hold it.
 
-      Whenever you wish to preserve something in memory,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      bring your complete attention to the information
+      Keep your attention on the selected information or experience.
 
-      or experience you desire to remember.
+      Then slowly exhale through your mouth.
 
+      Your mind receives and organizes the selected information, connecting it with your existing knowledge and establishing it within long-term memory.
 
-      Inhale deeply and gently hold your breath.
+      The important details of what you have chosen to imprint are preserved and maintained.
 
+      Your natural memory processes continue strengthening and organizing this information, whether you are awake, resting, or sleeping.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Whenever you wish to retrieve information you have imprinted, think of what you want to remember.
 
-
-      Focus clearly on what you wish to remember,
-
-      then exhale slowly and easily.
-
-
-      Your senses will become more attentive
-
-      to every important detail of your experience.
-
-
-      Images, sounds, words, feelings, and sensations
-
-      will be perceived clearly and precisely.
-
-
-      Your mind will organize this information,
-
-      connecting it with your existing knowledge
-
-      and placing it securely into long-term memory.
-
-
-      Every important detail will be preserved,
-
-      clear, complete, and accurate.
-
-
-      The information you have chosen to imprint
-
-      will remain firmly established within you,
-
-      available whenever you desire to remember it.
-
-
-      From this moment forward, your mind will
-
-      automatically strengthen and maintain
-
-      the memories you have consciously imprinted.
-
-
-      Whether awake, resting, or sleeping,
-
-      your natural processes of memory consolidation
-
-      will continue organizing and reinforcing
-
-      the information you have chosen to preserve.
-
-
-      Whenever you wish to remember an imprinted
-
-      experience or any part of its details,
-
-      simply think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.id.OCF-CMD-COG-004-RECALL }}."
 
+      The selected information becomes available to your conscious awareness, allowing you to remember its details and meaning.
 
-      The information will return immediately
+      Your ability to consciously imprint and retrieve information remains permanently available.
 
-      into your conscious awareness,
-
-      clear, vivid, and complete.
-
-
-      You will remember the knowledge,
-
-      sensations, and details you have stored
-
-      with confidence and accuracy.
-
-
-      From this moment forward, this ability
-
-      to consciously imprint information
-
-      is permanently available to you.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to capture and retain
-
-      information becomes easier, faster,
-
-      and more effective.
-
-
-      Your selected memories will remain
-
-      clear and accessible, ready to return
-
-      to your awareness whenever you desire.'
+      Each time you use "{{ cue.primary }}," capturing and retaining information becomes easier and more natural.
   hplus.function.ocf-cog-004.closer:
     status: reviewed
     version: 1.2.1
@@ -336,22 +249,20 @@ entries:
       function_id: OCF-COG-004
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to preserve
+    text: |-
+      Remember, whenever you wish to preserve information or an experience, direct your attention to what you want to remember.
 
-      information or an experience in your memory,
+      Inhale deeply and gently hold your breath.
 
-      inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Keep your attention on the selected information, then slowly exhale through your mouth.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      To retrieve imprinted information, think of what you wish to remember and silently say,
+      "Plus Recall."
 
-
-      Focus on what you wish to remember,
-
-      then exhale slowly and easily.
-
-
-      This concludes your OCF Imprint exercise.'
+      This concludes your OCF Imprint exercise.
 slug: imprint
 classification:
   primary_domain: cognition

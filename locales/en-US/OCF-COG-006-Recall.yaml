@@ -10,7 +10,9 @@ description:
   text: 'Recall past experiences, memories, and learned information with greater clarity and detail.'
   status: canonical
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-cog-006.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-COG-006-PRIMARY
   display_cue:
@@ -113,13 +115,8 @@ entries:
   hplus.function.ocf-cog-006.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to recall information and past experiences
-
-      clearly, accurately, and in great detail,
-
-      whenever you desire.'
+    text: |-
+      This OCF exercise will strengthen your ability to recall memories, learned information, and past experiences clearly and in detail whenever you choose.
   hplus.function.ocf-cog-006.function-body:
     status: reviewed
     version: 1.2.0
@@ -127,81 +124,31 @@ entries:
       function_id: OCF-COG-006
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to remember
+    text: |-
+      From this moment forward, your ability to remember and recall information and experiences becomes stronger, clearer, and more effective.
 
-      and recall information and experiences is becoming
+      Your conscious mind, subconscious mind, and total self work together to organize and retrieve the knowledge and experiences stored within your memory.
 
-      stronger, clearer, and more effective.
+      Whenever you wish to remember something, think of the information or experience you want to recall.
 
+      Take a deep breath in and gently hold it.
 
-      Your mind naturally organizes and preserves your memories,
-
-      keeping the knowledge and experiences of your life
-
-      available whenever you wish to remember them.
-
-
-      Whenever you desire to recall something,
-
-      begin by focusing on the information
-
-      or experience you wish to remember.
-
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Your mind brings the selected memory or information into your conscious awareness.
 
-      The memory you seek will immediately come into
+      Relevant details become clearer, allowing you to recognize and understand what you remember.
 
-      your conscious awareness, clear, vivid, and complete.
+      Your memory may return through words, thoughts, sounds, feelings, or direct understanding.
 
+      Your total self helps you access the knowledge and experiences already available within your memory.
 
-      You will remember the details of the experience,
+      This ability to recall information and past experiences remains permanently available whenever you choose.
 
-      including the images, words, sounds, feelings,
-
-      and sensations associated with it.
-
-
-      The information will return naturally and effortlessly,
-
-      allowing you to recognize and understand
-
-      what you remember.
-
-
-      From this moment forward, this ability to recall
-
-      information and experiences is permanently
-
-      established within you.
-
-
-      Whenever you use {{ cue.primary }}, your mind will bring
-
-      the desired information into your awareness
-
-      quickly, clearly, and in great detail.
-
-
-      Each time you use this function, recalling
-
-      information becomes easier, faster,
-
-      and more effective.
-
-
-      Your memories remain available to you,
-
-      ready to return to your conscious awareness
-
-      whenever you desire.'
+      Each time you use "{{ cue.primary }}," retrieving memories and learned information becomes easier and more natural.
   hplus.function.ocf-cog-006.closer:
     status: reviewed
     version: 1.2.0
@@ -209,23 +156,17 @@ entries:
       function_id: OCF-COG-006
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to recall
+    text: |-
+      Remember, whenever you wish to recall information or a past experience, think of what you want to remember.
 
-      information or a past experience,
+      Take a deep breath in and gently hold it.
 
-      focus on what you desire to remember.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Recall exercise.'
+      This concludes your OCF Recall exercise.
 slug: recall
 classification:
   primary_domain: cognition
@@ -241,6 +182,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-cog-006.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

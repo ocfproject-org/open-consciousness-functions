@@ -29,10 +29,10 @@
       "fallback": false,
       "key": "hplus.function.ocf-exp-006.function-body",
       "locale": "en-US",
-      "raw_template_sha256": "113359dce451135a4a5abd1b75f2e54c85f1c635aa2f44e354f68148b7a4e89b",
+      "raw_template_sha256": "69974193451706d84c5723f174782fab0b2696fa446bd7eed9ebb995bdfef79b",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "4639860bd9f4177b4346656b2d29d596f19157875fdd66178714ee60e26db74b",
+      "text_sha256": "cf845b6208eb2c29a4f0fee57285c983cd53acd4adc05ec12c0436792b1fe7e6",
       "version": "1.0.0"
     },
     {

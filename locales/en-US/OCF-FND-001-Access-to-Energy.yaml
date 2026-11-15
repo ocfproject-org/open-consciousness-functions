@@ -11,7 +11,9 @@ description:
     restoration, protection, and mental clarity.
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-001.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-001-PRIMARY
   display_cue:
@@ -209,6 +211,10 @@ lifecycle:
     command:
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-001.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

@@ -10,7 +10,11 @@ description:
   text: 'Release unwanted emotions and emotional tension, restoring calm and clarity.'
   status: canonical
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-emo-001.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
+  functions.ocf-emo-001.procedure.select-emotion:
+    text: Select the unwanted emotion you wish to release.
 activation:
   command_id: OCF-CMD-EMO-001-PRIMARY
   display_cue:
@@ -47,13 +51,13 @@ activation:
       before_steps:
       - id: select-emotion
         operation: select-intention
-        localization_key: command.procedure.select-intention
+        localization_key: functions.ocf-emo-001.procedure.select-emotion
     relationships: {}
   procedure_steps:
   - id: select-emotion
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Select the unwanted emotion you wish to release.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -106,13 +110,8 @@ entries:
   hplus.function.ocf-emo-001.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to release
-
-      unwanted or interfering emotions whenever
-
-      you choose, restoring calmness, clarity,
-
-      and control over how you feel and respond.'
+    text: |-
+      This OCF exercise will teach you to release unwanted emotions and emotional tension whenever you choose, restoring calm and clarity.
   hplus.function.ocf-emo-001.function-body:
     status: reviewed
     version: 1.2.0
@@ -120,114 +119,33 @@ entries:
       function_id: OCF-EMO-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to release unwanted or interfering emotions whenever you choose.
 
-      to release any unwanted or interfering emotion
+      Your mind and body work together to maintain emotional balance, allowing you to experience emotions without being controlled by them.
 
-      whenever you choose.
+      Whenever an emotion interferes with your peace, clarity, or actions, identify the feeling you wish to release.
 
+      Take a deep breath in and gently hold it.
 
-      Your mind and body are becoming more balanced,
-
-      allowing you to experience your emotions
-
-      without being controlled by them.
-
-
-      Whenever an emotion begins to interfere
-
-      with your peace, clarity, or actions,
-
-      simply recognize the feeling
-
-      you wish to release.
-
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      As you exhale, let the unwanted emotion release its hold on you.
 
-      As you exhale, the unwanted emotion
+      Its intensity fades, allowing you to regain calm, clarity, and freedom in how you respond.
 
-      will flow out of you with your breath,
+      Unnecessary emotional tension releases, while your natural ability to feel, understand, and express emotions remains intact.
 
-      moving farther and farther away.
+      You retain useful memories and understanding from the experience without continuing to carry the unwanted emotional disturbance.
 
+      Your mind and body naturally return to emotional balance.
 
-      Its intensity will immediately diminish,
+      This ability to consciously release unwanted emotions is permanently established within you and remains available whenever you choose.
 
-      fading until it no longer troubles you
-
-      or interferes with your thoughts and actions.
-
-
-      Your body will relax,
-
-      releasing unnecessary tension,
-
-      while your mind remains bright,
-
-      clear, calm, and fully alert.
-
-
-      You will retain any understanding
-
-      or useful lessons from the experience,
-
-      while releasing the emotional disturbance
-
-      that no longer serves you.
-
-
-      Your natural ability to feel,
-
-      understand, and express emotions
-
-      remains clear and complete.
-
-
-      From this moment forward, this ability
-
-      to consciously release interfering emotions
-
-      is permanently established within you.
-
-
-      Your mind and body will naturally
-
-      return to emotional balance
-
-      more quickly and easily.
-
-
-      Whenever you use {{ cue.primary }},
-
-      the chosen emotion will release
-
-      smoothly and completely,
-
-      leaving you calm, confident,
-
-      and in control of your response.
-
-
-      Each time you use this function,
-
-      letting go becomes easier,
-
-      faster, and more effective.
-
-
-      You are free to experience your emotions
-
-      while choosing which feelings
-
-      you wish to release and which to retain.'
+      Each time you use "{{ cue.primary }}," releasing unwanted emotions becomes easier and more natural.
   hplus.function.ocf-emo-001.closer:
     status: reviewed
     version: 1.2.0
@@ -235,20 +153,17 @@ entries:
       function_id: OCF-EMO-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to release
+    text: |-
+      Remember, whenever you wish to release an unwanted emotion, first identify the feeling you want to let go.
 
-      an unwanted or interfering emotion,
+      Take a deep breath in and gently hold it.
 
-      inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
-
-      This concludes your OCF Let Go exercise.'
+      This concludes your OCF Let Go exercise.
 slug: let-go
 classification:
   primary_domain: emotion
@@ -268,6 +183,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-emo-001.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield

@@ -9304,6 +9304,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command_id": "OCF-CMD-COG-003-CLOSED",
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-cog-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -10829,6 +10836,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-cog-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -12932,7 +12946,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "before_steps": [
                 {
                   "id": "select-emotion",
-                  "localization_key": "command.procedure.select-intention",
+                  "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                   "operation": "select-intention"
                 }
               ],
@@ -12946,7 +12960,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "resolved_procedure_steps": [
               {
                 "id": "select-emotion",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                 "operation": "select-intention"
               },
               {
@@ -13238,6 +13252,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-emo-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -13386,7 +13407,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "before_steps": [
                 {
                   "id": "select-thought-pattern",
-                  "localization_key": "command.procedure.select-intention",
+                  "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                   "operation": "select-intention"
                 }
               ],
@@ -13400,7 +13421,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "resolved_procedure_steps": [
               {
                 "id": "select-thought-pattern",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                 "operation": "select-intention"
               },
               {
@@ -13697,6 +13718,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-emo-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -14242,7 +14270,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.",
+        "purpose": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -14718,7 +14746,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets a consciously selected future condition and completion time through intention and total-self alignment.",
+        "purpose": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -15424,7 +15452,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.",
+        "purpose": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -15674,7 +15702,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": null,
-        "purpose": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.",
+        "purpose": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.",
         "safety": {
           "level": "experimental",
           "medical_relevance": false,
@@ -16224,7 +16252,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": null,
-        "purpose": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.",
+        "purpose": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.",
         "safety": {
           "level": "experimental",
           "notes": [
@@ -16676,6 +16704,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -17114,6 +17149,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -17575,6 +17617,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -18026,6 +18075,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-004.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -18519,6 +18575,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-005.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -19024,6 +19087,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -19957,6 +20027,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-prf-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -20449,7 +20526,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.",
+        "purpose": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -21946,7 +22023,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets a deliberate tone for the day ahead.",
+        "purpose": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -22457,6 +22534,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-prf-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": [
             "The temporary enhanced response ends automatically when the immediate need passes."
@@ -26469,6 +26553,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -26938,6 +27029,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -28482,6 +28580,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": [
             "The temporary alertness ends naturally when the immediate need passes."

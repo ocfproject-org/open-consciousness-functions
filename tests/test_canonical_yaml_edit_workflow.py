@@ -65,8 +65,8 @@ def test_narration_edit_regenerates_derived_data_without_touching_receipts(tmp_p
     checkout = tmp_path / "checkout"
     checkout.mkdir()
     _copy_checkout(checkout)
-    sentence = "Unnecessary distractions will fade away,"
-    replacement = "Unnecessary distractions will fade naturally away,"
+    sentence = "Your mind and senses work together to recognize important details and understand what you are experiencing."
+    replacement = "Your mind and senses work together to notice important details and understand what you are experiencing."
     description = "Strengthen concentration, sustain attention, and reduce distractions."
     revised_description = description[:-1] + " consistently."
     function = checkout / "locales/en-US/OCF-FND-002-Focus.yaml"

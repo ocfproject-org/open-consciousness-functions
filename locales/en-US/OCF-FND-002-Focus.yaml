@@ -10,7 +10,9 @@ description:
   text: 'Strengthen concentration, sustain attention, and reduce distractions.'
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-002.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-002-PRIMARY
   display_cue:
@@ -115,11 +117,8 @@ entries:
   hplus.function.ocf-fnd-002.opener:
     status: reviewed
     version: 1.3.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to focus your attention completely,
-
-      whenever and wherever you choose.'
+    text: |-
+      This OCF exercise will strengthen your ability to focus your attention on whatever you choose, maintaining clear and steady concentration.
   hplus.function.ocf-fnd-002.function-body:
     status: reviewed
     version: 1.3.0
@@ -127,84 +126,31 @@ entries:
       function_id: OCF-FND-002
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to direct
+    text: |-
+      From this moment forward, you have the ability to direct and sustain your attention with greater clarity and concentration.
 
-      and sustain your attention is becoming stronger,
+      Your conscious mind, subconscious mind, physical body, and total self work together to focus your awareness.
 
-      clearer, and more effective.
+      Whenever you wish to concentrate, take a deep breath in and gently hold it.
 
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Your attention naturally centers on whatever you are doing or choose to do.
 
-      Your mind, body, and senses will immediately
+      Unnecessary distractions fade, allowing you to concentrate more clearly and steadily.
 
-      bring their attention together.
+      Your mind and senses work together to recognize important details and understand what you are experiencing.
 
+      Information relevant to your current activity becomes easier to recognize, understand, and remember.
 
-      Your concentration will become clear,
+      Your concentration remains steady without unnecessary mental strain, naturally following your attention as you move between activities.
 
-      steady, and unwavering.
+      This ability to focus remains permanently available.
 
-
-      Unnecessary distractions will fade away,
-
-      and your attention will remain naturally
-
-      centered on what matters to you.
-
-
-      You will perceive important details clearly,
-
-      understanding what you see, hear, feel,
-
-      and experience with greater awareness.
-
-
-      The information you attend to will become
-
-      vivid and distinct in your memory,
-
-      ready for clear and accurate recall.
-
-
-      You will remain bright, alert, calm,
-
-      confident, and completely at ease.
-
-
-      From this moment forward, this ability
-
-      to focus your attention is permanently
-
-      available to you whenever you desire.
-
-
-      You remain in complete control,
-
-      able to direct or shift your attention
-
-      whenever you choose.
-
-
-      Each time you use {{ cue.primary }},
-
-      concentration becomes easier, stronger,
-
-      and more effective.
-
-
-      Your natural ability to focus will continue
-
-      improving through every experience,
-
-      becoming an effortless part of your daily life.'
+      Each time you use "{{ cue.primary }}," directing and sustaining your attention becomes easier and more natural.
   hplus.function.ocf-fnd-002.closer:
     status: reviewed
     version: 1.4.0
@@ -212,21 +158,17 @@ entries:
       function_id: OCF-FND-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to focus your attention
+    text: |-
+      Remember, whenever you wish to strengthen your concentration, take a deep breath in and gently hold it.
 
-        completely.
-
-
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Your attention naturally focuses on whatever you are doing.
 
-      This concludes your OCF Focus exercise.'
+      This concludes your OCF Focus exercise.
 slug: attention
 classification:
   primary_domain: foundation
@@ -246,6 +188,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-002.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: reference-master

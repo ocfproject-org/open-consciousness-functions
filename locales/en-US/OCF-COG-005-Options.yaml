@@ -155,15 +155,8 @@ entries:
   hplus.function.ocf-cog-005.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to explore
-
-      the choices and possibilities available to you,
-
-      drawing upon your greater consciousness
-
-      to understand potential outcomes
-
-      and discover new directions in your life.'
+    text: |-
+      This OCF exercise will teach you to explore choices, possibilities, and potential outcomes, drawing upon your total self to discover new directions and opportunities.
   hplus.function.ocf-cog-005.function-body:
     status: reviewed
     version: 1.2.0
@@ -171,150 +164,39 @@ entries:
       function_id: OCF-COG-005
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to explore the possibilities and choices available to you in any area of your life.
 
-      to explore the possibilities and choices
+      Your conscious mind, subconscious mind, higher self, and total self work together, drawing upon your experiences, knowledge, and greater awareness.
 
-      available to you in any area of your life.
+      This connection allows you to recognize possibilities and opportunities beyond those ordinarily considered by your conscious mind.
 
+      Whenever you wish to explore your options, close your eyes.
 
-      Your total self holds a greater perspective,
+      Take a deep breath in and gently hold it.
 
-      drawing upon your experiences, knowledge,
+      While holding your breath, think of the situation, decision, or activity you wish to explore.
 
-      subconscious awareness, and higher consciousness.
-
-
-      Through this greater awareness,
-
-      you can perceive possibilities and pathways
-
-      beyond those ordinarily recognized
-
-      by your waking conscious mind.
-
-
-      Whenever you wish to explore your options,
-
-      close your eyes and inhale deeply.
-
-
-      Gently hold your breath and think clearly
-
-      of the situation, decision, or life activity
-
-      you wish to understand.
-
-
-      Think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth, keeping your eyes closed.
 
-      Then exhale slowly through your mouth,
+      Your total self brings forward possibilities, alternative choices, and potential outcomes related to your selected situation.
 
-      keeping your eyes closed.
+      Different pathways become clearer, along with their opportunities, advantages, challenges, and possible consequences.
 
+      Your greater awareness draws upon your knowledge, experiences, intuition, and higher consciousness to reveal options you may not previously have considered.
 
-      Your greater self will bring into
+      Insights may arise as thoughts, memories, feelings, intuitive understanding, or new ideas.
 
-      your conscious awareness the possibilities,
+      You can consider each possibility, recognize its potential, and understand how different choices may influence your direction.
 
-      choices, and potential outcomes
+      Your ability to explore possibilities remains permanently available.
 
-      related to your selected situation.
+      Your total self continues forming useful connections and insights, even when you are not consciously exploring a particular situation.
 
-
-      You will recognize different paths
-
-      available to you and understand
-
-      where each choice can lead.
-
-
-      The probabilities, opportunities,
-
-      advantages, and consequences
-
-      of these paths will become clearer.
-
-
-      Your greater self will draw upon
-
-      your personal experiences and knowledge,
-
-      together with information and understanding
-
-      beyond your ordinary waking awareness.
-
-
-      These insights will come to you as
-
-      images, words, feelings, intuitive knowing,
-
-      or clear and direct understanding.
-
-
-      You will perceive and understand
-
-      the information calmly and confidently,
-
-      recognizing possibilities you had
-
-      not previously considered.
-
-
-      New choices and opportunities
-
-      will become visible to you,
-
-      expanding your understanding
-
-      of what is possible.
-
-
-      You remain completely free to choose
-
-      the direction you wish to follow.
-
-
-      Each choice creates new possibilities,
-
-      and your greater awareness will help
-
-      you recognize the paths available.
-
-
-      From this moment forward, this ability
-
-      to explore possibilities and probabilities
-
-      is permanently established within you.
-
-
-      Your mind and greater self will continue
-
-      forming useful connections and insights,
-
-      bringing new understanding into
-
-      your awareness whenever it is needed.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to perceive and understand
-
-      your available options becomes easier,
-
-      clearer, and more effective.
-
-
-      Your greater awareness is always available,
-
-      ready to help you explore the possibilities
-
-      and choices before you.'
+      Each time you use "{{ cue.primary }}," recognizing and understanding available choices becomes easier and more natural.
   hplus.function.ocf-cog-005.closer:
     status: reviewed
     version: 1.3.0
@@ -322,29 +204,19 @@ entries:
       function_id: OCF-COG-005
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to explore
+    text: |-
+      Remember, whenever you wish to explore your possibilities, close your eyes.
 
-      the choices and possibilities available to you,
+      Take a deep breath in and gently hold it.
 
-      close your eyes and inhale deeply.
+      Think of the situation or decision you wish to explore.
 
-
-      Hold your breath and focus on
-
-      the situation you wish to understand.
-
-
-      Think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth, keeping your eyes closed.
 
-      Then exhale slowly through your mouth,
-
-      keeping your eyes closed.
-
-
-      This concludes your OCF Options exercise.'
+      This concludes your OCF Options exercise.
 slug: options
 classification:
   primary_domain: cognition

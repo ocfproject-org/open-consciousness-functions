@@ -1,82 +1,86 @@
-# Owner-approved 58-function editorial parity checkpoint — 2026-11-15
+# Owner-approved 58-function editorial parity — recovery follow-up
 
-Partial implementation manifest; this is not a claim of 58/58 exact-script parity.
+**Status: partial implementation; not 58/58 narration parity.** All 58 approved descriptions are verified against the recovered package. Exact resolved descriptions/opener/body/closer are verified for 42 functions (the original 23 plus 19 newly recovered scripts). Nine functions have explicitly limited description/minor-edit approvals. Seven functions have exact approved descriptions and behavior contracts but no recoverable complete approved script; their previous narration is not reconstructed.
 
-- Repository: `ocfproject-org/open-consciousness-functions`
-- Main base SHA: `6b4a9861ab89bea849ef6a97575af9cac6065d9b`
-- Editorial branch base: PR #42 head `0597df40bbffdc07012ef2fe7a318a084850342b`
-- Historical editorial baseline (reference only): `704440da8e0379cee8dfd332203bc0001c0a5f27`
-- Supplied outer handoff ZIP SHA-256: `adb1e707a5850d5810c60c3c8ecaf46fa65ed53892b6f13571f06f22a23e8b3b`
-- Nested 23-function handoff ZIP SHA-256: `3d356062bcf5720ba57afdcd6e6041d21fbd5af4739dc5b57f8b622b99c1899a`
-- Nested machine-readable approved material SHA-256: `c170288cf4830057c9e39d5fc9d464b94d49bf585802308cab6887e39fdcd3d6`
-- Functions 24–58 ledger SHA-256: `dc139a5807b7abf11ad0e291fa8fd53edc736bbb36734d86526cc9648f30012b`
-- Master prompt SHA-256: `aa5daaf619336b00d18237c0afa2e4feb3537bcd8992b927a198a9bff2dcbc79`
-- Current canonical YAML SHA-256 appears on every row as a review-time snapshot only. No validator or runtime requires these values; canonical YAML remains editable without refreshing this report.
-- PR #42 contains 23 exact opener/body/closer revisions and matching scoped behavior. This branch additionally contains 28 exact ledger descriptions; explicit breath/selection/mode edits; Touch's approved candle removal; a precisely specified Hearing paragraph; and removal of Strong-Quick's release behavior.
-- Global candle analogy was removed from active function narration where found. Only explicitly approved breath-independent or target-selection changes were applied; other breathing/eye order, session timing, DSP/audio profiles, voices, and rendered assets were not altered. Current generated plans only received source/default hashes; no audio was rendered.
-- Exact full replacement narration still required for: `OCF-BOD-005, OCF-COG-003, OCF-COG-004, OCF-COG-005, OCF-COG-006, OCF-EMO-001, OCF-EMO-002, OCF-EMO-003, OCF-EXP-001, OCF-EXP-002, OCF-EXP-003, OCF-EXP-005, OCF-EXP-006, OCF-FND-002, OCF-FND-003, OCF-FND-004, OCF-FND-005, OCF-FND-006, OCF-LIF-001, OCF-PRF-002, OCF-PRF-004, OCF-PRF-005, OCF-PRF-006, OCF-SEN-001, OCF-SLP-003, OCF-SLP-006`.
-- Exact approved short-description source still unavailable for: `OCF-PRF-002`, `OCF-PRF-005`, `OCF-EXP-001`, `OCF-EXP-002`, `OCF-EXP-003`, `OCF-EXP-006`, `OCF-EMO-003`.
-- Offload/Let Go approved deletion sentences do not match the current predecessor body strings; no approximate deletion was invented. Their final replacement scripts remain blocked with the transcript dependency.
-- Strong-Quick's old command ID is preserved in `historical_lookup`; it is not an active command. The shared Plus Release remains available for other functions.
-- Active HPLUS-026 locks audio templates/background/DSP engineering inputs only; editable locale text is excluded. HPLUS-001 through HPLUS-025 remain historical files; no existing audio, profile or release artifact is changed.
+- Existing draft PR: #43, branch `editorial/58-function-parity-20261114`; no competing PR created.
+- PR #42's approved branch remains unmodified. PRs remain unmerged and draft.
+- Source package: `OCF_58_Approved_Editorial_Recovery_Followup.zip`; its internal SHA256SUMS manifest verified before applying.
+- Current authority: one canonical locale YAML per function. Git history preserves prior source; no text checksums or secondary wording receipts gate editing.
+- All canonical function schedules remain one opener, four body repetitions, one closer.
+- Existing release manifests and audio artifacts are preserved. No audio was rendered.
 
-| Function ID | Title | Parity status | Approved source | Current canonical YAML SHA-256 |
-|---|---|---|---|---|
-| OCF-AUT-001 | Automatic Action | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `7d2d078213e1d1402144ebe619fb0d1b0110a4cdd7fcf7ad05cc50e6ec0439c1` |
-| OCF-BOD-001 | Brain Flow | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `b194e3686802e4d9fd9e8dd25f0beb776c37fac471410e2212ca5bcc5629c73d` |
-| OCF-BOD-002 | Circulation | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `93d52191d677ac5b61ab4ceb8c0f373ad43fd677cad89b8d992888bfe2551071` |
-| OCF-BOD-003 | Comfort | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `5c579d4f5e58363096a89efd9e45369b6b8a048b4312d77b75924adc6da5838c` |
-| OCF-BOD-004 | Detox | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `f46ee555782c077dfeab1282c110728b523c90cc0fea6276e951ca4174405d9c` |
-| OCF-BOD-005 | Appetite Choice | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `e5c4896f850acb6dafa9adab1ef64edd9a0779f331373f14062dbc2dc9f15834` |
-| OCF-BOD-006 | Heart Flow | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `12a6127f029d77889c47db68559c7cb9d86a7b102f850e74c9e0246ac465ca13` |
-| OCF-BOD-007 | Blood Pressure Balance | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `ef7effd6bbbac98341dfd4a8b396cd526e023209e68b71ebb729c847658cb97e` |
-| OCF-BOD-008 | Immune Readiness | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `42685bd33b0cd29955ab53cb78ea7bc23754d7b6e223354ae9cf14a215a68002` |
-| OCF-BOD-009 | Breathe Better | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `c8bdf526a9d59256c263434df714bb1c9ef7551f23285887d6d2b200806ddb4b` |
-| OCF-BOD-010 | Nutricia | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `a9637423db8e8e467c86080da7cd985b590d89103f330102a762d024e90e3243` |
-| OCF-BOD-011 | Hormonal Transitions | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `beb2ffc2f6e4e0f845490d9796da6b500e7cbe3cc2348236295350ee82d7cf65` |
-| OCF-BOD-012 | Sex Drive | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `1f2cbb48c248ec4d4aadb06dacf1e45160f809087ef2574cdeb0adc32f83f015` |
-| OCF-BOD-013 | Body Tune-Up | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `2a22a00d80dbd2cc851d1c3bd1612c4f12c145ed54cc64c1ea0cfadbcfb49220` |
-| OCF-BOD-014 | Regenerate | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `ce8bff7747c94c516474eff1478d1670695cbe20d09b1df53b90182b8885617c` |
-| OCF-BOD-015 | Temporary Numbing | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `51a7a82d277cbe6e8386bc69516dfb40a3b0a84cfaed24e3647d5f159168b41f` |
-| OCF-COG-001 | Information Access | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `16ceb2ff983ad0a5a8e9909b3241b3eb0f4c7d46035c5033a05a03710bb5b1de` |
-| OCF-COG-002 | Mental Calculation | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `6f6e15f26cec5f6506b5899a4bb1991f715313400b0b7808db34a9fa3e7f3453` |
-| OCF-COG-003 | Contemplation | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `d99b72bde9bf21dfe4ba6af5f7b662af790fae7d71c4167af17ab32c295fc939` |
-| OCF-COG-004 | Imprint | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `e745f43018dff2dc975853687fc1ceedecd04446a8581b4579570e6e44b50bbb` |
-| OCF-COG-005 | Options | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `36d8dc7f1ca4b01ea1d3670cc518be4462855c7759b85172c7169e1b11e81c69` |
-| OCF-COG-006 | Recall | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `aa204b6823247771e8b31af81109ce17443ad2437ec710ce8895f364d6e49100` |
-| OCF-COG-007 | Think Fast | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `d9ff7fe98dab171e7dc38904d7583b278c5cfa46bb984417237d69f627a37d07` |
-| OCF-COM-001 | Speak Up | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `ab8917dc832583b1db7fd8b57a7bf6be0da53ad6822609bc301c87a5b0b4253a` |
-| OCF-EMG-001 | Injury Response | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `5ac67041ccc74d7a2dffb9264433d1e1826be5049f85bc207bccb7b83d8caf2f` |
-| OCF-EMG-002 | Toxic Exposure Response | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `ddd2bcd067e67021d48818dcd89167cf18422071b748de412c010df056109cf6` |
-| OCF-EMO-001 | Let Go | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `b147287bead12a9bda6b964a71ae442b653b9fc796ca68e9b93a047cd4a37356` |
-| OCF-EMO-002 | Offload | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `09eba56a0e02d725b429b360667304d58082993e09d49d3e0fd6069cde13fa8d` |
-| OCF-EMO-003 | Empathize | implemented: independently specified procedure/lifecycle/scope delta; exact final description/script still blocked | master prompt and EDITORIAL_DECISIONS_24_TO_58.md; exact complete script unavailable | `0720610539756c19da6afbafea66ff62d8466ade9ce4591c7159dcacdd8d40ba` |
-| OCF-EXP-001 | Manifest | implemented: independently specified procedure/lifecycle/scope delta; exact final description/script still blocked | master prompt and EDITORIAL_DECISIONS_24_TO_58.md; exact complete script unavailable | `eeede28e6c21668f5b9a94ac77c7fc23a9282531c57506fd976bf2696b2225bb` |
-| OCF-EXP-002 | Insulate | implemented: independently specified procedure/lifecycle/scope delta; exact final description/script still blocked | master prompt and EDITORIAL_DECISIONS_24_TO_58.md; exact complete script unavailable | `ebe99f52f2ef5f3495279d9cbcfa3241ed5169bc44104c35e887638c28ea5e9c` |
-| OCF-EXP-003 | Dissolve | blocked: exact owner-approved description and/or complete narration unavailable | EDITORIAL_DECISIONS_24_TO_58.md; separate review transcript/export not found | `a84e5c9f23699e253b2706c5c11b0b6e8aa77adf4370ee769da4a39a2aabe2b3` |
-| OCF-EXP-005 | Clear Zone | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `b483f572db33f7b131acd3c6a70fbf96407fa61b16868f26949e5e709a99eeb1` |
-| OCF-EXP-006 | Intuition | blocked: exact owner-approved description and/or complete narration unavailable | EDITORIAL_DECISIONS_24_TO_58.md; separate review transcript/export not found | `bd851cad8088b409176f373bf4df3425d9c3d58a2253cbbe5ec073b9a2f91873` |
-| OCF-FND-001 | Access to Energy | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `d4ff428b1dca164bbc9d6210a379d1b4b2b8bf28ea70ea9e014a8c9d687e5a7c` |
-| OCF-FND-002 | Focus | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `5110e5a247b8b5d33c0209fbd1d6cea8ffd5dfd39b90827e97a082ad1f3d4ed4` |
-| OCF-FND-003 | Quick Recharge | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `1383950ee3e748d40ccc2e01d5bd716d499e68c5b14c289cb9e8cf55e6ed90da` |
-| OCF-FND-004 | Relax | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `5c758abc0579c4112b00f7c18e3504e7afe4f1a0058f05bae095539d565b7711` |
-| OCF-FND-005 | Reset | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `c8769122e5cb9e7b09bdd727c4df8237ddeed9e6d0f042fb9da55be5fb89014f` |
-| OCF-FND-006 | Release | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `28ba8a38ca83ebabd0f007dfcbc7477849caeac093670e3f7dcffa3859d19072` |
-| OCF-LIF-001 | Habit Freedom | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `23d61c4aa7e221fd8ba62fd2dfa8e5007c74b2a83aece93dd36a4c5f6f6003d2` |
-| OCF-PRF-001 | Do This Now | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `0a83876e5626f65f060bc1befc1c4e3a29997d298850daa090ff0151f0f945d4` |
-| OCF-PRF-002 | Inner Power | implemented: independently specified procedure/lifecycle/scope delta; exact final description/script still blocked | master prompt and EDITORIAL_DECISIONS_24_TO_58.md; exact complete script unavailable | `e6a47f2021149f023636936cd574de79c8acd79292beebe14978d4bbfd76556b` |
-| OCF-PRF-003 | Coordination | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `80f31b62cdfeecaad6c530baae543672789c9ed0d8cbc7116b056f6bbdc78435` |
-| OCF-PRF-004 | Light Foot | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `1a263ed330857f03192a5d3d829a9ead64911a998d83ec895b9170f9ab9e5666` |
-| OCF-PRF-005 | Make Your Day | implemented: independently specified procedure/lifecycle/scope delta; exact final description/script still blocked | master prompt and EDITORIAL_DECISIONS_24_TO_58.md; exact complete script unavailable | `6769b70cd5f50f9f76b9778cb0221b158ba6958acaa038e728662858ffc85e84` |
-| OCF-PRF-006 | Strong-Quick | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `394a3e92210c3761b6bb8a4facab50dc7913848cbf6381ee5cbee2493c54017e` |
-| OCF-SEN-001 | Hearing | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `d68ed0820287c2ee4fad6eb5a0654c1cf3c9366ed078ce98014ffd39b1dc22c4` |
-| OCF-SEN-002 | Seeing | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `768c530493d2cfed22546c0f3b7afae0e2cd6810dfd1c50c9916235b58a84d22` |
-| OCF-SEN-003 | Smell | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `91c09b9b7c0d1b796500099a59bbd8309c46572d2da707cdc388ffb09414c587` |
-| OCF-SEN-004 | Taste | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `99f37d9b4bad1a230fb9d4483921e14775c15b09de3ca3340219ee84436a3886` |
-| OCF-SEN-005 | Touch | implemented: exact approved description and specific closer candle removal; broader final script remains blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description + closer instruction | `85e41689d8d824944d112d0fb25f998d00d1c50dc8f5ba63396e68b7a0040eef` |
-| OCF-SLP-001 | Restorative Sleep | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `359c80d9df428a7b4874853178df1a660e1021665308de6a3967c44a9e27627b` |
-| OCF-SLP-002 | Sleep | implemented: exact approved description/opener/body/closer and scoped behavior inherited from PR #42 | nested approved_23_functions.json; archive digest below | `63ea51b70c5cc66644f7b3e8c5862a7eaccdd7d50ce18fdf0796792ee2d0f94e` |
-| OCF-SLP-003 | Dream Theme | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `51bb8cb32994524807e9aab70984aea046f54ca8020b6237335d32b87b62c921` |
-| OCF-SLP-004 | Sleep Insight | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `cda36ac3dde0683993266ac3678e86dbf9c05f1df1941001eb22ec928aabdc38` |
-| OCF-SLP-005 | Sleep Easy | implemented: exact approved description; narration explicitly remains unchanged | EDITORIAL_DECISIONS_24_TO_58.md exact description | `c88d99979d9542a71ef248ad516b14b4370a4481525af670462b4e3688431195` |
-| OCF-SLP-006 | Stay Awake | implemented: exact approved description; full replacement narration blocked | EDITORIAL_DECISIONS_24_TO_58.md exact description | `c12ae6268413080bcc6a6ef11687d851d4c595c88308efb79b8a36ecf886ee07` |
+## 58-function field parity
+
+| Function ID | Name | Description/narration status | Procedure/lifecycle status |
+|---|---|---|---|
+| OCF-AUT-001 | Automatic Action | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-001 | Brain Flow | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-002 | Circulation | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-003 | Comfort | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-004 | Detox | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-005 | Appetite Choice | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-BOD-006 | Heart Flow | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-007 | Blood Pressure Balance | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-008 | Immune Readiness | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-009 | Breathe Better | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-010 | Nutricia | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-011 | Hormonal Transitions | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-012 | Sex Drive | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-BOD-013 | Body Tune-Up | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-014 | Regenerate | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-BOD-015 | Temporary Numbing | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-COG-001 | Information Access | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-COG-002 | Mental Calculation | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-COG-003 | Contemplation | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-COG-004 | Imprint | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-COG-005 | Options | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-COG-006 | Recall | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-COG-007 | Think Fast | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-COM-001 | Speak Up | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-EMG-001 | Injury Response | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-EMG-002 | Toxic Exposure Response | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-EMO-001 | Let Go | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-EMO-002 | Offload | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-EMO-003 | Empathize | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Selected-being step precedes cue; no breathing step; exact full script unavailable. |
+| OCF-EXP-001 | Manifest | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Outcome and desired completion time are selected before standard breath/cue; exact full script unavailable. |
+| OCF-EXP-002 | Insulate | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Insulate/Cancel/Release controls and explicit capability/application scopes remain; broader replacement wording is unverified. |
+| OCF-EXP-003 | Dissolve | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Selected pattern is required; permanent capability and conditional application plus retained-learning semantics remain; exact full script unavailable. |
+| OCF-EXP-005 | Clear Zone | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-EXP-006 | Intuition | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Question precedes cue; command is breath-independent. Removed mandatory heart-focus instruction; exact full script unavailable. |
+| OCF-FND-001 | Access to Energy | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-FND-002 | Focus | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-FND-003 | Quick Recharge | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-FND-004 | Relax | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-FND-005 | Reset | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-FND-006 | Release | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-LIF-001 | Habit Freedom | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-PRF-001 | Do This Now | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-PRF-002 | Inner Power | Exact description verified; full approved replacement script unavailable; existing narration preserved. | No purpose-selection procedure; standard breath retained; exact full script unavailable. |
+| OCF-PRF-003 | Coordination | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-PRF-004 | Light Foot | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-PRF-005 | Make Your Day | Exact description verified; full approved replacement script unavailable; existing narration preserved. | Day-specific intended outcome is selected; daily scope and standard breath retained. Existing required visualization conflicts with optional-visualization contract; exact full script unavailable. |
+| OCF-PRF-006 | Strong-Quick | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-SEN-001 | Hearing | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-SEN-002 | Seeing | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-SEN-003 | Smell | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-SEN-004 | Taste | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-SEN-005 | Touch | Exact description verified; only the expressly approved Touch closer correction is also applied. | Procedure and controls preserved as explicitly directed. |
+| OCF-SLP-001 | Restorative Sleep | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-SLP-002 | Sleep | Exact description/opener/body/closer verified against recovered approved material. | PR #42 behavior retained and independently revalidated. |
+| OCF-SLP-003 | Dream Theme | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+| OCF-SLP-004 | Sleep Insight | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-SLP-005 | Sleep Easy | Exact description verified; opener/body/closer otherwise preserved. | Procedure and controls preserved as explicitly directed. |
+| OCF-SLP-006 | Stay Awake | Exact description/opener/body/closer verified against recovered approved material. | Replacement script installed; see procedure/lifecycle behavior gate below. |
+
+## Counts and blockers
+
+- 23/23 original first-batch scripts: exact resolved text parity verified.
+- 19/19 recovered later scripts: exact resolved text parity verified.
+- 9/9 limited edits: exact descriptions verified; eight retain all narration, Touch retains all but its approved closer correction.
+- 7/7 remaining exact descriptions verified, but full script parity remains unverified: OCF-PRF-002, OCF-PRF-005, OCF-EXP-001, OCF-EXP-002, OCF-EXP-003, OCF-EXP-006, and OCF-EMO-003. The recovery package contains contracts, not complete approved narration.
+- Do not claim 58/58 complete. The owner must supply the exact approved scripts for those seven before narration parity can be closed.
+- Remaining procedure/lifecycle or behavior discrepancies are called out per row instead of being masked by script matches.
+
+## Validation state
+
+This report records recovered-source field comparison; final repository gates, full coverage, remote PR head and hosted CI must be rechecked after all source edits. Audio rendering/listening/release review were not performed.

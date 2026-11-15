@@ -124,13 +124,8 @@ entries:
   hplus.function.ocf-lif-001.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to release
-
-      and eliminate unwanted physical and mental
-
-      habit patterns that interfere with your
-
-      well-being, freedom, and growth.'
+    text: |-
+      This OCF exercise will teach you to eliminate unwanted physical and mental habits, freeing yourself from automatic behavior patterns that no longer serve you.
   hplus.function.ocf-lif-001.function-body:
     status: reviewed
     version: 1.3.1
@@ -138,90 +133,33 @@ entries:
       function_id: OCF-LIF-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to eliminate unwanted physical and mental habit patterns whenever you choose.
 
-      to eliminate any unwanted physical or mental
+      Habits are repeated patterns that become automatic over time. You can recognize and change these patterns at their source.
 
-      habit pattern that you choose to release.
+      Whenever an unwanted habit begins to arise, recognize the habit you wish to eliminate.
 
+      Take a deep breath in and gently hold it.
 
-      A habit is a pattern repeated until it begins
-
-      to operate automatically. You can recognize
-
-      such a pattern and change it at its source.
-
-
-      Whenever the unwanted habit begins to arise,
-
-      recognize the particular pattern you wish
-
-      to eliminate and bring it clearly into your mind.
-
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      The unwanted habit begins to lose its influence over your thoughts and actions.
 
-      The unwanted pattern will immediately
+      Its familiar impulses grow weaker, allowing your mind and body to respond naturally in the way you choose.
 
-      begin to weaken throughout your entire system.
+      Your conscious mind, subconscious mind, physical body, and total self work together to release the unwanted pattern.
 
+      The old habit continues to fade until it no longer operates as an automatic response.
 
-      Its familiar impulse will become smaller,
+      Your useful memories, knowledge, and skills remain intact as the unwanted behavior loses its place in your life.
 
-      quieter, and less compelling, until it
+      This ability to eliminate unwanted habits is permanently established within you and remains available whenever you choose.
 
-      no longer directs your thoughts or actions.
-
-
-      Your conscious mind, subconscious mind,
-
-      physical body, and total self will release
-
-      the old pattern together, completely.
-
-
-      Each time the pattern would once have occurred,
-
-      your freedom to choose will grow stronger.
-
-      Your mind and body will respond naturally
-
-      in the way you now desire.
-
-
-      The unwanted habit will continue fading
-
-      until it is completely eliminated
-
-      from your automatic responses.
-
-
-      Your useful memories, knowledge, and skills
-
-      will remain intact, while the unwanted
-
-      pattern loses its place in your life.
-
-
-      From this moment forward, this ability
-
-      to change and eliminate unwanted habits
-
-      is permanently available whenever you choose.
-
-
-      The more you use {{ cue.primary }},
-
-      the easier, faster, and more effective
-
-      this lasting change will become.'
+      Each time you use "{{ cue.primary }}," changing unwanted habits becomes easier and more natural.
   hplus.function.ocf-lif-001.closer:
     status: reviewed
     version: 1.2.1
@@ -229,23 +167,17 @@ entries:
       function_id: OCF-LIF-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever an unwanted physical
+    text: |-
+      Remember, whenever an unwanted habit begins to arise, recognize the habit you wish to eliminate.
 
-      or mental habit begins to arise, bring
+      Take a deep breath in and gently hold it.
 
-      that pattern clearly into your awareness.
-
-
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
-
-      This concludes your OCF Habit Freedom exercise.'
+      This concludes your OCF Habit Freedom exercise.
 slug: de-hab
 classification:
   primary_domain: lifestyle

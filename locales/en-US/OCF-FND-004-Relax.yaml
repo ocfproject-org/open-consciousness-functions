@@ -648,20 +648,15 @@ entries:
       - cue.primary
       function_id: OCF-FND-004
     status: reviewed
-    text: 'Remember, whenever you wish to relax
+    text: |-
+      Remember, whenever you wish to relax your body and mind, take a deep breath in and gently hold it.
 
-      your body and mind, inhale deeply
-
-      and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
-
-      This concludes your OCF Relax exercise.'
+      This concludes your OCF Relax exercise.
     version: 1.2.1
   hplus.function.ocf-fnd-004.function-body:
     cue_template:
@@ -669,95 +664,36 @@ entries:
       - cue.primary
       function_id: OCF-FND-004
     status: reviewed
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to relax your entire body and mind deeply and naturally whenever you choose.
 
-      to relax your entire body and mind deeply,
+      Your conscious mind, subconscious mind, physical body, and total self work together to release unnecessary tension and restore balance.
 
-      naturally, and whenever you desire.
+      Whenever you wish to relax, take a deep breath in and gently hold it.
 
-
-      Your body knows how to release unnecessary
-
-      effort, strain, and tension, returning
-
-      to a comfortable state of balance.
-
-
-      Whenever you wish to relax, inhale deeply
-
-      and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Unnecessary physical tension releases throughout your body.
 
-      With this breath, all unnecessary tension
+      Your muscles relax, your breathing becomes smooth and natural, and your body settles into a comfortable state of ease.
 
-      and stress will flow out of your body,
+      Mental tension and unnecessary effort diminish, allowing your thoughts to become quieter and clearer.
 
-      leaving you comfortably relaxed.
+      You can use this ability while resting or remain comfortably alert when you need to think, move, or act.
 
+      Your body and mind naturally respond to the intention to relax, without requiring conscious attention to individual muscles or areas.
 
-      Your muscles will soften and release,
+      This ability to enter a state of physical and mental relaxation remains permanently available whenever you choose.
 
-      from your face and shoulders to your hands,
-
-      back, legs, and feet.
-
-
-      Your breathing will become smooth and easy.
-
-      Your nervous system will settle into
-
-      a calm, balanced rhythm throughout your body.
-
-
-      Your thoughts will become quiet and clear.
-
-      Your mind will remain serene and at ease,
-
-      free of unnecessary effort or distraction.
-
-
-      You can enter this peaceful state while resting
-
-      or remain comfortably alert when you need
-
-      to think, move, or act.
-
-
-      From this moment forward, your ability
-
-      to release tension is permanently available,
-
-      and your body will return to balance
-
-      more naturally with each experience.
-
-
-      Whenever you use {{ cue.primary }},
-
-      relaxation will flow through your total self,
-
-      deeper and more easily than before.
-
-
-      Each time you use this function,
-
-      becoming calm, comfortable, and relaxed
-
-      will be easier, faster, and more effective.'
+      Each time you use "{{ cue.primary }}," releasing tension and entering relaxation becomes easier and more natural.
     version: 1.3.1
   hplus.function.ocf-fnd-004.opener:
     status: reviewed
-    text: 'This OCF exercise will teach you to release
-
-      physical and mental tension and enter a state
-
-      of deep, natural relaxation whenever you choose.'
+    text: |-
+      This OCF exercise will teach you to release physical and mental tension, allowing your body and mind to relax deeply whenever you choose.
     version: 1.2.0
 function_id: OCF-FND-004
 function_version:
@@ -771,10 +707,16 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-004.lifecycle.scopes.capability.description
 locale: en-US
 localization:
   status: complete
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-004.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 narration:
   sequence:
   - key: hplus.function.ocf-fnd-004.opener

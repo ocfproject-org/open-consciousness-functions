@@ -17258,7 +17258,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-005.closer/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "Remember, from this moment forward,\nyou will recognize your body's genuine\nneed for nourishment and remain in control\nof your eating decisions.\n\nWhenever you wish to release an unnecessary\ncraving or desire for food, simply pause.\n\nInhale and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Appetite Choice exercise.",
+          "value": "Remember, whenever you wish to release an unnecessary food craving, recognize the desire you want to release.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Appetite Choice exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-005.closer/text"
         },
         "/entries/hplus.function.ocf-bod-005.closer/version": {
@@ -17283,7 +17283,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-005.function-body/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "From this moment forward, you will have greater\ncontrol over your appetite and your desire for food.\n\nYou will recognize the difference between your body's\ngenuine need for nourishment and the passing desire\nto eat out of habit, boredom, or impulse.\n\nYour mind and body will work together in harmony,\nhelping you make clear, confident decisions\nabout when and what you choose to eat.\n\nWhen your body needs nourishment, you will recognize\nthat need clearly and respond appropriately.\n\nWhen a temporary craving arises and you consciously\nchoose not to eat, you will remain calm,\ncomfortable, and in complete control of your decision.\n\nFrom this moment forward, this awareness\nwill become a natural and automatic part\nof your everyday life.\n\nYou will find it easier to recognize when you\nhave eaten enough, to enjoy the food you choose,\nand to stop eating when you are comfortably satisfied.\n\nYour choices will become clearer,\nyour habits more intentional,\nand your confidence stronger.\n\nWhenever you wish to release a passing craving\nor an unnecessary desire for food,\nyou can do so quickly and easily.\n\nSimply pause and bring your awareness\nto the desire you wish to release.\n\nTake a comfortable breath in\nand gently hold it.\n\nWhile holding your breath, silently\nsay to yourself, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nAs you exhale, the unnecessary desire to eat\nwill become less and less important to you.\n\nYour thoughts will become calm and clear.\n\nYou will feel satisfied with your decision\nand free to direct your attention\ntoward whatever you choose.\n\nFood will no longer demand your attention\nsimply because it is present,\nbecause you see it, or because you smell it.\n\nYou will remain free to enjoy food\nwhen you consciously choose to eat.\n\nYour body will continue to communicate\nits genuine needs clearly and naturally.\n\nYou will respond to those needs with confidence,\nmaintaining the nourishment and balance\nyour body requires.\n\nNow know that this pattern of conscious choice\nis becoming firmly established within you.\n\nFrom this moment forward, your ability\nto recognize unnecessary cravings\nand release them will operate automatically.\n\nYour mind will naturally pause before\nhabitual or impulsive eating,\nallowing you to make a clear decision.\n\nYou will feel comfortable and confident\nchoosing when to eat and when to wait.\n\nEach time you use {{ cue.primary }},\nyour ability to release unnecessary cravings\nbecomes easier, smoother, and more effective.\n\nRemember, your appetite is something\nyou can understand and consciously direct.\n\nYou will recognize your body's needs,\nmake your decisions clearly,\nand remain in control of your choices.\n\nThis lasting pattern of awareness,\nsatisfaction, and self-control\nwill continue strengthening every day.",
+          "value": "From this moment forward, you have greater control over your appetite and your desire for food.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to establish a natural pattern of appetite awareness and conscious choice.\n\nYou recognize the difference between genuine hunger and the desire to eat from habit, boredom, or impulse.\n\nWhen your body needs nourishment, you recognize that need and respond appropriately.\n\nYou become more aware of when you have eaten enough, enjoying your food and recognizing comfortable satisfaction.\n\nThis awareness becomes a natural and automatic part of your everyday life.\n\nWhenever an unnecessary craving arises, you can consciously choose to release it.\n\nRecognize the craving you wish to release.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe unnecessary craving loses its influence over your attention and desire to eat.\n\nYour mind and body return to a comfortable state of satisfaction, allowing you to continue your activities without the unwanted impulse.\n\nYou remain free to enjoy food whenever you choose and continue recognizing your body's genuine nutritional needs.\n\nYour ability to recognize unnecessary cravings and make deliberate eating choices remains permanently established.\n\nEach time you use \"{{ cue.primary }},\" releasing unwanted cravings becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-005.function-body/text"
         },
         "/entries/hplus.function.ocf-bod-005.function-body/version": {
@@ -17298,7 +17298,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-005.opener/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "This OCF exercise will teach you to consciously direct\nyour appetite and desire for food, giving you greater\ncontrol over when and why you choose to eat.",
+          "value": "This OCF exercise will teach you to recognize genuine hunger, release unnecessary food cravings, and consciously direct your appetite and eating choices.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-005.opener/text"
         },
         "/entries/hplus.function.ocf-bod-005.opener/version": {
@@ -57227,7 +57227,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-003.closer/text": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
-          "value": "Remember, whenever you wish to commune\nwith your total self, close your eyes,\ninhale deeply, and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand breathe naturally.\n\nWhen you wish to end the contemplation,\nthink or say in your mind, \"{{ cue.id.OCF-CMD-COG-003-CLOSED }}.\"\n\nThis concludes your OCF Contemplation exercise.",
+          "value": "Remember, whenever you wish to communicate with your total self, close your eyes.\n\nInhale deeply and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and continue breathing naturally.\n\nWhen you wish to end contemplation, silently say,\n\"{{ cue.id.OCF-CMD-COG-003-CLOSED }}.\"\n\nThis concludes your OCF Contemplation exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-003.closer/text"
         },
         "/entries/hplus.function.ocf-cog-003.closer/version": {
@@ -57257,7 +57257,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-003.function-body/text": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
-          "value": "From this moment forward, you have the ability\nto commune with your total self whenever you desire.\n\nYour conscious mind, your subconscious mind,\nyour higher self, and all deeper aspects\nof your being are connected as one complete self.\n\nWhenever you wish to open this communication,\nsimply close your eyes, inhale deeply,\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand breathe naturally.\n\nYour physical body will become deeply relaxed,\nwhile your mind remains bright, awake,\ncalm, and fully aware.\n\nCommunication throughout your total self\nwill become clear, open, and effortless.\n\nYou will be able to ask questions,\nreceive answers, and understand the knowledge,\nwisdom, and experiences within your greater self.\n\nInformation will come into your awareness\nas words, images, memories, feelings,\nsensations, or direct intuitive understanding.\n\nYour subconscious mind will communicate\nfreely with your conscious awareness,\nbringing forward knowledge and understanding\nthat was previously beyond your waking attention.\n\nYour higher self will become open\nto communication, offering its greater\nperspective, wisdom, and understanding.\n\nMemories and experiences held within\nyour total self will become available\nwhenever you desire to perceive them.\n\nYou will recognize, understand, and remember\nwhat you experience, remaining calm,\nconfident, and serene throughout.\n\nFrom this moment forward, this ability\nto communicate with your total self\nis permanently established within you.\n\nWhenever you choose to enter contemplation,\nthis deeper communication will open\nnaturally and easily.\n\nWhenever you wish to end the present\nstate of contemplation, simply think\nor say in your mind, \"{{ cue.id.OCF-CMD-COG-003-CLOSED }}.\"\n\nYour conscious awareness will return\nsmoothly to its normal state,\nwhile the knowledge and understanding\nyou have gained remain available to you.\n\nYou remain in complete control,\nable to open or close this communication\nwhenever you choose.\n\nEach time you use this function,\ncommunion with your total self\nbecomes easier, clearer, and more effective.\n\nThis lasting ability is always available,\nready whenever you choose to explore\nthe deeper consciousness of your total self.",
+          "value": "From this moment forward, you have the ability to communicate with your total self whenever you choose.\n\nYour conscious mind, subconscious mind, higher self, and deeper aspects of your being are connected as one complete self.\n\nWhenever you wish to open this communication, close your eyes.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and continue breathing naturally.\n\nYour body relaxes while your mind remains calm, awake, and aware.\n\nCommunication throughout your total self opens naturally, allowing knowledge, understanding, and deeper perspectives to enter your conscious awareness.\n\nYou may ask questions, explore ideas, and receive insights from the greater awareness of your total self.\n\nInformation may arise as thoughts, memories, words, feelings, or direct intuitive understanding.\n\nYour subconscious mind and higher self cooperate with your conscious awareness, bringing forward information and perspectives relevant to your contemplation.\n\nYou can recognize and remember the understanding gained through this communication.\n\nThis ability to commune with your total self remains permanently available whenever you choose.\n\nWhen you wish to end the present contemplation, silently say to yourself,\n\"{{ cue.id.OCF-CMD-COG-003-CLOSED }}.\"\n\nThe contemplative state ends, and your awareness returns naturally to its ordinary state.\n\nThe knowledge and understanding gained remain available to you.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-003.function-body/text"
         },
         "/entries/hplus.function.ocf-cog-003.function-body/version": {
@@ -57272,7 +57272,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-003.opener/text": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
-          "value": "This OCF exercise will teach you to commune with\nyour total self, opening communication between\nyour conscious mind, your subconscious mind,\nyour higher self, and the greater whole of your being.",
+          "value": "This OCF exercise will teach you to open communication with your total self, connecting your conscious mind, subconscious mind, and higher self for deeper understanding.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-003.opener/text"
         },
         "/entries/hplus.function.ocf-cog-003.opener/version": {
@@ -57325,6 +57325,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
+          "value": "functions.ocf-cog-003.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
           "value": [],
@@ -57339,6 +57349,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-cog-003.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-cog-003.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
@@ -60275,7 +60290,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-004.closer/text": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "Remember, whenever you wish to preserve\ninformation or an experience in your memory,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nFocus on what you wish to remember,\nthen exhale slowly and easily.\n\nThis concludes your OCF Imprint exercise.",
+          "value": "Remember, whenever you wish to preserve information or an experience, direct your attention to what you want to remember.\n\nInhale deeply and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nKeep your attention on the selected information, then slowly exhale through your mouth.\n\nTo retrieve imprinted information, think of what you wish to remember and silently say,\n\"Plus Recall.\"\n\nThis concludes your OCF Imprint exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-004.closer/text"
         },
         "/entries/hplus.function.ocf-cog-004.closer/version": {
@@ -60305,7 +60320,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-004.function-body/text": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "From this moment forward, your ability to capture,\nstore, and remember information and experiences\nis becoming stronger, clearer, and more accurate.\n\nWhenever you wish to preserve something in memory,\nbring your complete attention to the information\nor experience you desire to remember.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nFocus clearly on what you wish to remember,\nthen exhale slowly and easily.\n\nYour senses will become more attentive\nto every important detail of your experience.\n\nImages, sounds, words, feelings, and sensations\nwill be perceived clearly and precisely.\n\nYour mind will organize this information,\nconnecting it with your existing knowledge\nand placing it securely into long-term memory.\n\nEvery important detail will be preserved,\nclear, complete, and accurate.\n\nThe information you have chosen to imprint\nwill remain firmly established within you,\navailable whenever you desire to remember it.\n\nFrom this moment forward, your mind will\nautomatically strengthen and maintain\nthe memories you have consciously imprinted.\n\nWhether awake, resting, or sleeping,\nyour natural processes of memory consolidation\nwill continue organizing and reinforcing\nthe information you have chosen to preserve.\n\nWhenever you wish to remember an imprinted\nexperience or any part of its details,\nsimply think or say in your mind,\n\"{{ cue.id.OCF-CMD-COG-004-RECALL }}.\"\n\nThe information will return immediately\ninto your conscious awareness,\nclear, vivid, and complete.\n\nYou will remember the knowledge,\nsensations, and details you have stored\nwith confidence and accuracy.\n\nFrom this moment forward, this ability\nto consciously imprint information\nis permanently available to you.\n\nEach time you use {{ cue.primary }},\nyour ability to capture and retain\ninformation becomes easier, faster,\nand more effective.\n\nYour selected memories will remain\nclear and accessible, ready to return\nto your awareness whenever you desire.",
+          "value": "From this moment forward, you have the ability to consciously capture, store, and recall information and experiences whenever you choose.\n\nYour conscious mind, subconscious mind, and total self work together to strengthen your ability to remember.\n\nWhenever you wish to preserve information or an experience, direct your attention to what you want to remember.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nKeep your attention on the selected information or experience.\n\nThen slowly exhale through your mouth.\n\nYour mind receives and organizes the selected information, connecting it with your existing knowledge and establishing it within long-term memory.\n\nThe important details of what you have chosen to imprint are preserved and maintained.\n\nYour natural memory processes continue strengthening and organizing this information, whether you are awake, resting, or sleeping.\n\nWhenever you wish to retrieve information you have imprinted, think of what you want to remember.\n\nSilently say to yourself,\n\"{{ cue.id.OCF-CMD-COG-004-RECALL }}.\"\n\nThe selected information becomes available to your conscious awareness, allowing you to remember its details and meaning.\n\nYour ability to consciously imprint and retrieve information remains permanently available.\n\nEach time you use \"{{ cue.primary }},\" capturing and retaining information becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-004.function-body/text"
         },
         "/entries/hplus.function.ocf-cog-004.function-body/version": {
@@ -60320,7 +60335,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-004.opener/text": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "This OCF exercise will teach you to capture and\npermanently store information, knowledge, and\nexperiences deep within your memory, preserving\nthem clearly and accurately for future recall.",
+          "value": "This OCF exercise will teach you to capture and retain information, knowledge, and experiences in memory for future recall.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-004.opener/text"
         },
         "/entries/hplus.function.ocf-cog-004.opener/version": {
@@ -63633,7 +63648,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-005.closer/text": {
           "file": "locales/en-US/OCF-COG-005-Options.yaml",
-          "value": "Remember, whenever you wish to explore\nthe choices and possibilities available to you,\nclose your eyes and inhale deeply.\n\nHold your breath and focus on\nthe situation you wish to understand.\n\nThink or say in your mind,\n\"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nkeeping your eyes closed.\n\nThis concludes your OCF Options exercise.",
+          "value": "Remember, whenever you wish to explore your possibilities, close your eyes.\n\nTake a deep breath in and gently hold it.\n\nThink of the situation or decision you wish to explore.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth, keeping your eyes closed.\n\nThis concludes your OCF Options exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-005.closer/text"
         },
         "/entries/hplus.function.ocf-cog-005.closer/version": {
@@ -63658,7 +63673,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-005.function-body/text": {
           "file": "locales/en-US/OCF-COG-005-Options.yaml",
-          "value": "From this moment forward, you have the ability\nto explore the possibilities and choices\navailable to you in any area of your life.\n\nYour total self holds a greater perspective,\ndrawing upon your experiences, knowledge,\nsubconscious awareness, and higher consciousness.\n\nThrough this greater awareness,\nyou can perceive possibilities and pathways\nbeyond those ordinarily recognized\nby your waking conscious mind.\n\nWhenever you wish to explore your options,\nclose your eyes and inhale deeply.\n\nGently hold your breath and think clearly\nof the situation, decision, or life activity\nyou wish to understand.\n\nThink or say in your mind,\n\"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth,\nkeeping your eyes closed.\n\nYour greater self will bring into\nyour conscious awareness the possibilities,\nchoices, and potential outcomes\nrelated to your selected situation.\n\nYou will recognize different paths\navailable to you and understand\nwhere each choice can lead.\n\nThe probabilities, opportunities,\nadvantages, and consequences\nof these paths will become clearer.\n\nYour greater self will draw upon\nyour personal experiences and knowledge,\ntogether with information and understanding\nbeyond your ordinary waking awareness.\n\nThese insights will come to you as\nimages, words, feelings, intuitive knowing,\nor clear and direct understanding.\n\nYou will perceive and understand\nthe information calmly and confidently,\nrecognizing possibilities you had\nnot previously considered.\n\nNew choices and opportunities\nwill become visible to you,\nexpanding your understanding\nof what is possible.\n\nYou remain completely free to choose\nthe direction you wish to follow.\n\nEach choice creates new possibilities,\nand your greater awareness will help\nyou recognize the paths available.\n\nFrom this moment forward, this ability\nto explore possibilities and probabilities\nis permanently established within you.\n\nYour mind and greater self will continue\nforming useful connections and insights,\nbringing new understanding into\nyour awareness whenever it is needed.\n\nEach time you use {{ cue.primary }},\nyour ability to perceive and understand\nyour available options becomes easier,\nclearer, and more effective.\n\nYour greater awareness is always available,\nready to help you explore the possibilities\nand choices before you.",
+          "value": "From this moment forward, you have the ability to explore the possibilities and choices available to you in any area of your life.\n\nYour conscious mind, subconscious mind, higher self, and total self work together, drawing upon your experiences, knowledge, and greater awareness.\n\nThis connection allows you to recognize possibilities and opportunities beyond those ordinarily considered by your conscious mind.\n\nWhenever you wish to explore your options, close your eyes.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, think of the situation, decision, or activity you wish to explore.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth, keeping your eyes closed.\n\nYour total self brings forward possibilities, alternative choices, and potential outcomes related to your selected situation.\n\nDifferent pathways become clearer, along with their opportunities, advantages, challenges, and possible consequences.\n\nYour greater awareness draws upon your knowledge, experiences, intuition, and higher consciousness to reveal options you may not previously have considered.\n\nInsights may arise as thoughts, memories, feelings, intuitive understanding, or new ideas.\n\nYou can consider each possibility, recognize its potential, and understand how different choices may influence your direction.\n\nYour ability to explore possibilities remains permanently available.\n\nYour total self continues forming useful connections and insights, even when you are not consciously exploring a particular situation.\n\nEach time you use \"{{ cue.primary }},\" recognizing and understanding available choices becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-005.function-body/text"
         },
         "/entries/hplus.function.ocf-cog-005.function-body/version": {
@@ -63673,7 +63688,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-005.opener/text": {
           "file": "locales/en-US/OCF-COG-005-Options.yaml",
-          "value": "This OCF exercise will teach you to explore\nthe choices and possibilities available to you,\ndrawing upon your greater consciousness\nto understand potential outcomes\nand discover new directions in your life.",
+          "value": "This OCF exercise will teach you to explore choices, possibilities, and potential outcomes, drawing upon your total self to discover new directions and opportunities.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-005.opener/text"
         },
         "/entries/hplus.function.ocf-cog-005.opener/version": {
@@ -66766,7 +66781,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-006.closer/text": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "Remember, whenever you wish to recall\ninformation or a past experience,\nfocus on what you desire to remember.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Recall exercise.",
+          "value": "Remember, whenever you wish to recall information or a past experience, think of what you want to remember.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Recall exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-006.closer/text"
         },
         "/entries/hplus.function.ocf-cog-006.closer/version": {
@@ -66791,7 +66806,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-006.function-body/text": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "From this moment forward, your ability to remember\nand recall information and experiences is becoming\nstronger, clearer, and more effective.\n\nYour mind naturally organizes and preserves your memories,\nkeeping the knowledge and experiences of your life\navailable whenever you wish to remember them.\n\nWhenever you desire to recall something,\nbegin by focusing on the information\nor experience you wish to remember.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe memory you seek will immediately come into\nyour conscious awareness, clear, vivid, and complete.\n\nYou will remember the details of the experience,\nincluding the images, words, sounds, feelings,\nand sensations associated with it.\n\nThe information will return naturally and effortlessly,\nallowing you to recognize and understand\nwhat you remember.\n\nFrom this moment forward, this ability to recall\ninformation and experiences is permanently\nestablished within you.\n\nWhenever you use {{ cue.primary }}, your mind will bring\nthe desired information into your awareness\nquickly, clearly, and in great detail.\n\nEach time you use this function, recalling\ninformation becomes easier, faster,\nand more effective.\n\nYour memories remain available to you,\nready to return to your conscious awareness\nwhenever you desire.",
+          "value": "From this moment forward, your ability to remember and recall information and experiences becomes stronger, clearer, and more effective.\n\nYour conscious mind, subconscious mind, and total self work together to organize and retrieve the knowledge and experiences stored within your memory.\n\nWhenever you wish to remember something, think of the information or experience you want to recall.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour mind brings the selected memory or information into your conscious awareness.\n\nRelevant details become clearer, allowing you to recognize and understand what you remember.\n\nYour memory may return through words, thoughts, sounds, feelings, or direct understanding.\n\nYour total self helps you access the knowledge and experiences already available within your memory.\n\nThis ability to recall information and past experiences remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" retrieving memories and learned information becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-006.function-body/text"
         },
         "/entries/hplus.function.ocf-cog-006.function-body/version": {
@@ -66806,7 +66821,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-cog-006.opener/text": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "This OCF exercise will strengthen your ability\nto recall information and past experiences\nclearly, accurately, and in great detail,\nwhenever you desire.",
+          "value": "This OCF exercise will strengthen your ability to recall memories, learned information, and past experiences clearly and in detail whenever you choose.",
           "yaml_pointer": "/entries/hplus.function.ocf-cog-006.opener/text"
         },
         "/entries/hplus.function.ocf-cog-006.opener/version": {
@@ -66854,6 +66869,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-COG-006-Recall.yaml",
+          "value": "functions.ocf-cog-006.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-COG-006-Recall.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
           "value": [],
@@ -66868,6 +66893,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-cog-006.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-COG-006-Recall.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-cog-006.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
@@ -79331,7 +79361,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/procedure/before_steps/0/localization_key": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "command.procedure.select-intention",
+          "value": "functions.ocf-emo-001.procedure.select-emotion",
           "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
         },
         "/activation/control/procedure/before_steps/0/operation": {
@@ -79401,7 +79431,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "Choose an intention.",
+          "value": "Select the unwanted emotion you wish to release.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -81631,7 +81661,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-001.closer/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "Remember, whenever you wish to release\nan unwanted or interfering emotion,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Let Go exercise.",
+          "value": "Remember, whenever you wish to release an unwanted emotion, first identify the feeling you want to let go.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Let Go exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-001.closer/text"
         },
         "/entries/hplus.function.ocf-emo-001.closer/version": {
@@ -81656,7 +81686,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-001.function-body/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "From this moment forward, you have the ability\nto release any unwanted or interfering emotion\nwhenever you choose.\n\nYour mind and body are becoming more balanced,\nallowing you to experience your emotions\nwithout being controlled by them.\n\nWhenever an emotion begins to interfere\nwith your peace, clarity, or actions,\nsimply recognize the feeling\nyou wish to release.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nAs you exhale, the unwanted emotion\nwill flow out of you with your breath,\nmoving farther and farther away.\n\nIts intensity will immediately diminish,\nfading until it no longer troubles you\nor interferes with your thoughts and actions.\n\nYour body will relax,\nreleasing unnecessary tension,\nwhile your mind remains bright,\nclear, calm, and fully alert.\n\nYou will retain any understanding\nor useful lessons from the experience,\nwhile releasing the emotional disturbance\nthat no longer serves you.\n\nYour natural ability to feel,\nunderstand, and express emotions\nremains clear and complete.\n\nFrom this moment forward, this ability\nto consciously release interfering emotions\nis permanently established within you.\n\nYour mind and body will naturally\nreturn to emotional balance\nmore quickly and easily.\n\nWhenever you use {{ cue.primary }},\nthe chosen emotion will release\nsmoothly and completely,\nleaving you calm, confident,\nand in control of your response.\n\nEach time you use this function,\nletting go becomes easier,\nfaster, and more effective.\n\nYou are free to experience your emotions\nwhile choosing which feelings\nyou wish to release and which to retain.",
+          "value": "From this moment forward, you have the ability to release unwanted or interfering emotions whenever you choose.\n\nYour mind and body work together to maintain emotional balance, allowing you to experience emotions without being controlled by them.\n\nWhenever an emotion interferes with your peace, clarity, or actions, identify the feeling you wish to release.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nAs you exhale, let the unwanted emotion release its hold on you.\n\nIts intensity fades, allowing you to regain calm, clarity, and freedom in how you respond.\n\nUnnecessary emotional tension releases, while your natural ability to feel, understand, and express emotions remains intact.\n\nYou retain useful memories and understanding from the experience without continuing to carry the unwanted emotional disturbance.\n\nYour mind and body naturally return to emotional balance.\n\nThis ability to consciously release unwanted emotions is permanently established within you and remains available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" releasing unwanted emotions becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-001.function-body/text"
         },
         "/entries/hplus.function.ocf-emo-001.function-body/version": {
@@ -81671,7 +81701,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-001.opener/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "This OCF exercise will teach you to release\nunwanted or interfering emotions whenever\nyou choose, restoring calmness, clarity,\nand control over how you feel and respond.",
+          "value": "This OCF exercise will teach you to release unwanted emotions and emotional tension whenever you choose, restoring calm and clarity.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-001.opener/text"
         },
         "/entries/hplus.function.ocf-emo-001.opener/version": {
@@ -81719,6 +81749,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
+          "value": "functions.ocf-emo-001.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
           "value": [],
@@ -81733,6 +81773,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-emo-001.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-001.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-emo-001.procedure.select-emotion/text": {
+          "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
+          "value": "Select the unwanted emotion you wish to release.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-001.procedure.select-emotion/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
@@ -82099,7 +82149,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/procedure/before_steps/0/localization_key": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "command.procedure.select-intention",
+          "value": "functions.ocf-emo-002.procedure.select-thought-pattern",
           "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
         },
         "/activation/control/procedure/before_steps/0/operation": {
@@ -82169,7 +82219,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "Choose an intention.",
+          "value": "Select an unwanted thought, emotional response, or recurring pattern to offload.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -84399,7 +84449,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-002.closer/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "Remember, whenever you wish to release\na recurring thought or unwanted emotional\npattern, bring it clearly into your mind.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand breathe deeply and naturally.\n\nThis concludes your OCF Offload exercise.",
+          "value": "Remember, whenever you wish to release an unwanted thought or recurring emotional pattern, first think of what you want to offload.\n\nInhale deeply and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and continue breathing naturally.\n\nThis concludes your OCF Offload exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-002.closer/text"
         },
         "/entries/hplus.function.ocf-emo-002.closer/version": {
@@ -84424,7 +84474,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-002.function-body/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "From this moment forward, you have the ability\nto release unwanted thoughts and emotional patterns\nthat continue to interfere with your awareness.\n\nWhenever a recurring thought, feeling,\nor mental pattern no longer serves you,\nyou can choose to release it completely.\n\nBring the particular thought or pattern\nyou wish to remove clearly into your mind.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand breathe deeply and naturally.\n\nAs you exhale, the unwanted thought\nor emotional pattern will immediately\nbegin to fade from your awareness.\n\nFeel it becoming weaker and weaker,\nsmaller and smaller, moving farther away\nuntil it disappears completely.\n\nIts influence over your attention\nand emotions will fade away,\nleaving your mind peaceful,\nclear, and free.\n\nThe selected pattern will remain\noutside your conscious awareness,\nquiet and inactive,\nuntil you consciously desire otherwise.\n\nYour memories, knowledge, and useful\nunderstanding will remain available,\nwhile the unwanted interference\nno longer occupies your mind.\n\nYour thoughts will become calm and organized,\nand your attention will return naturally\nto whatever you choose.\n\nFrom this moment forward, this ability\nto off-load unwanted mental patterns\nis permanently established within you.\n\nOnce you release a selected pattern,\nyour mind will naturally maintain\nthat freedom from unnecessary interference.\n\nYou remain in complete control,\nchoosing what to release\nand what you wish to retain.\n\nEach time you use {{ cue.primary }},\nreleasing unwanted thought patterns\nbecomes easier, faster, and more effective.\n\nYour mind remains clear, calm, and free\nto focus on the thoughts, feelings,\nand experiences you truly desire.",
+          "value": "From this moment forward, you have the ability to release unwanted thoughts and emotional patterns that interfere with your awareness.\n\nWhenever a recurring thought, emotional response, or mental pattern no longer serves you, you can choose to release its influence.\n\nSimply think of the unwanted thought or pattern you wish to offload.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and continue breathing naturally.\n\nAs you exhale, let the unwanted thought or emotional pattern lose its hold on your awareness.\n\nIts influence fades, becoming less demanding of your attention until it no longer interferes with your thoughts, emotions, or daily activities.\n\nThe selected pattern becomes quiet and inactive, remaining outside your conscious awareness until you deliberately choose otherwise.\n\nYour memories, knowledge, and valuable understanding remain available, while the unwanted interference fades away.\n\nYour mind becomes clearer and calmer, allowing your attention to return naturally to whatever you choose.\n\nEnergy and attention previously occupied by the unwanted pattern become available for clear thinking, meaningful experiences, and purposeful action.\n\nYou remain in conscious control, choosing what to release and what you wish to retain.\n\nThis ability to offload unwanted thoughts and emotional patterns remains permanently available to you.\n\nOnce you release a selected pattern, your mind naturally maintains freedom from its unnecessary interference.\n\nThe more you use \"{{ cue.primary }},\" the easier and more effective releasing unwanted mental and emotional patterns becomes.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-002.function-body/text"
         },
         "/entries/hplus.function.ocf-emo-002.function-body/version": {
@@ -84439,7 +84489,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-002.opener/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "This OCF exercise will teach you to release\nand fade away unwanted thoughts,\nrecurring emotional patterns, and mental\ndistractions whenever you choose.",
+          "value": "This OCF exercise will teach you to release unwanted thoughts, recurring emotional patterns, and mental distractions, freeing your mind and attention whenever you choose.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-002.opener/text"
         },
         "/entries/hplus.function.ocf-emo-002.opener/version": {
@@ -84487,6 +84537,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
+          "value": "functions.ocf-emo-002.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
           "value": [],
@@ -84501,6 +84561,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-emo-002.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-002.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-emo-002.procedure.select-thought-pattern/text": {
+          "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
+          "value": "Select an unwanted thought, emotional response, or recurring pattern to offload.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-002.procedure.select-thought-pattern/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
@@ -87587,7 +87657,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.",
+          "value": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -90535,7 +90605,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "Sets a consciously selected future condition and completion time through intention and total-self alignment.",
+          "value": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -94313,7 +94383,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.",
+          "value": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -96131,7 +96201,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.",
+          "value": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -97044,7 +97114,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.closer/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Remember, to strengthen or restore {{ function.title }},\nthink or say in your mind, \"{{ cue.primary }}.\"\n\nUse \"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}\"\nto allow intentional contact,\nor \"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}\" to pause the entire function.\n\nThis concludes your OCF exercise.",
+          "value": "Remember, whenever you wish to reinforce or restore your clear personal zone, silently say,\n\"{{ cue.primary }}.\"\n\nUse \"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}\" to temporarily allow intentional insect contact, or \"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}\" to pause the entire application.\n\nYour normal {{ function.title }} pattern resumes when you invoke its primary command or when a temporary override ends.\n\nThis concludes your OCF {{ function.title }} exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.closer/text"
         },
         "/entries/hplus.function.ocf-exp-005.closer/version": {
@@ -97089,7 +97159,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.function-body/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "From this moment forward, {{ function.title }} is permanently\nestablished within your total self,\noperating automatically whenever needed.\n\nBecome aware of your body and the space around it.\nPicture, feel, or simply know this space as calm and clear.\n\nWhen unwanted insects or similar small pests approach\nor make contact, your total self carries one steady intention:\nremain away, move away, and continue peacefully elsewhere.\nThis intention extends around your whole body,\nwelcoming undisturbed space without harm to other life.\n\nYour conscious mind, subconscious awareness, physical being,\nand higher self work together around this purpose.\nYour calm attention and natural actions cooperate with it,\nwithout constant effort or repeated checking.\n\nWhenever you wish to strengthen this pattern\nor restore its automatic operation,\nThink or say in your mind, \"{{ cue.primary }}.\"\nYour total self renews this intention as one.\n\nFor deliberate observation or interaction with insects,\nthink or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\nThe outward encouragement pauses,\nwhile your calm awareness remains active.\n\nTo pause the entire function, think or say in your mind,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\nAll activity of this function pauses.\nYour ordinary awareness and natural responses remain intact.\n\nEach chosen mode replaces the previous one.\nBoth overrides are temporary.\nWhen you next enter normal sleep or become unconscious,\neither override ends and automatic operation resumes.\nDeliberately using the primary command restores it sooner.\n\nYour learned ability remains with you in every mode.\nThe more you use this function,\nthe more naturally your attention, intention,\nand total self work together.",
+          "value": "From this moment forward, {{ function.title }} is permanently established within your total self, maintaining a clear and comfortable space around your entire body.\n\nYour conscious mind, subconscious mind, physical being, and higher self work together, naturally discouraging unwanted insect contact.\n\nWhenever insects approach, your total self maintains one clear intention: remain away, move away, and continue peacefully elsewhere.\n\nThis pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings.\n\n{{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.\n\nWhenever you wish to reinforce or restore this pattern, simply say to yourself,\n\"{{ cue.primary }}.\"\n\nYour total self strengthens the established intention, maintaining a clear personal space around you.\n\nYou also have two optional commands.\n\nWhen you wish to observe or interact with insects without discouraging their approach, silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\n\nThe outward insect-discouragement intention pauses, while your calm awareness remains available.\n\nWhenever you wish to pause the entire {{ function.title }} application, silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\n\nThe application rests, while your ordinary awareness and natural responses continue.\n\nEach selected mode replaces the previous one.\n\nObserve and Suspend are temporary. They end automatically when you enter normal sleep, lose consciousness, or deliberately invoke \"{{ cue.primary }}\" again.\n\nYour original protective pattern then resumes.\n\nYour learned ability remains permanently available, regardless of which mode you choose.\n\nThe more you use these commands, the easier and more natural establishing and adjusting {{ function.title }} becomes.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-005.function-body/version": {
@@ -97119,7 +97189,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.opener/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "This OCF exercise will teach you to establish {{ function.title }},\na lasting intention for a calm space around your body,\nencouraging unwanted insects to keep their distance\nand move peacefully elsewhere.",
+          "value": "This OCF exercise will teach you to establish {{ function.title }}, a lasting protective intention that maintains a calm, comfortable space around your body, encouraging unwanted insects to keep their distance and move peacefully elsewhere.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.opener/text"
         },
         "/entries/hplus.function.ocf-exp-005.opener/version": {
@@ -98267,7 +98337,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.",
+          "value": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -98327,7 +98397,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-006.function-body/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "From this moment forward, your intuitive awareness develops\nas a calm and beneficial part of your everyday life.\nYour conscious mind, subconscious mind, physical being,\nand higher self cooperate in deeper understanding.\n\nCenter your attention in your heart.\nWelcome an attitude of kindness, openness, and discernment.\nYou may recognize guidance as a feeling, an image,\na quiet understanding, or a connection that becomes clear over time.\nYour own way of experiencing awareness is welcome.\n\nWhenever you wish to understand something more deeply,\nbring one question or situation into your awareness.\nThink or say in your mind, \"{{ cue.primary }}.\"\nAllow a quiet moment to notice what arises,\nthen consider what it means and choose your response.\n\nYour total self works together around your intention.\nThe wisdom of your heart, subconscious mind, and higher self\nbecomes available to your conscious understanding.\nRemain open to the wider consciousness you recognize,\ngrounded in your present experience and free to discern.\n\nAn impression is an invitation to explore.\nYou can welcome it, reflect upon it, or let it pass.\nCompare what you sense with what you can observe and learn.\nGive important decisions the time, evidence, and care they deserve.\nClear understanding includes recognizing when you do not yet know.\n\nYour intuition supports constructive, purposeful action.\nChoose responses that respect your well-being\nand the freedom and well-being of others.\nWhen greater clarity is needed, allow understanding to develop\nthrough reflection, experience, and thoughtful conversation.\n\nThis beneficial development continues without constant effort.\nYour attention remains available for the life before you.\nIntuitive impressions can come gently and leave freely;\nyou decide which deserve your attention and how to respond.\n\nThe more you practice with openness and discernment,\nthe more naturally your total self contributes\nto clear understanding and purposeful action.",
+          "value": "From this moment forward, your intuitive awareness develops\nas a calm and beneficial part of your everyday life.\nYour conscious mind, subconscious mind, physical being,\nand higher self cooperate in deeper understanding.\n\nWelcome an attitude of kindness, openness, and discernment.\nYou may recognize guidance as a feeling, an image,\na quiet understanding, or a connection that becomes clear over time.\nYour own way of experiencing awareness is welcome.\n\nWhenever you wish to understand something more deeply,\nbring one question or situation into your awareness.\nThink or say in your mind, \"{{ cue.primary }}.\"\nAllow a quiet moment to notice what arises,\nthen consider what it means and choose your response.\n\nYour total self works together around your intention.\nThe wisdom of your heart, subconscious mind, and higher self\nbecomes available to your conscious understanding.\nRemain open to the wider consciousness you recognize,\ngrounded in your present experience and free to discern.\n\nAn impression is an invitation to explore.\nYou can welcome it, reflect upon it, or let it pass.\nCompare what you sense with what you can observe and learn.\nGive important decisions the time, evidence, and care they deserve.\nClear understanding includes recognizing when you do not yet know.\n\nYour intuition supports constructive, purposeful action.\nChoose responses that respect your well-being\nand the freedom and well-being of others.\nWhen greater clarity is needed, allow understanding to develop\nthrough reflection, experience, and thoughtful conversation.\n\nThis beneficial development continues without constant effort.\nYour attention remains available for the life before you.\nIntuitive impressions can come gently and leave freely;\nyou decide which deserve your attention and how to respond.\n\nThe more you practice with openness and discernment,\nthe more naturally your total self contributes\nto clear understanding and purposeful action.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-006.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-006.function-body/version": {
@@ -100988,6 +101058,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
+          "value": "functions.ocf-fnd-001.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
           "value": [],
@@ -101002,6 +101082,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-001.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-001.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-001-Access-to-Energy.yaml",
@@ -103793,7 +103878,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-002.closer/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Remember, whenever you wish to focus your attention\ncompletely.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Focus exercise.",
+          "value": "Remember, whenever you wish to strengthen your concentration, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour attention naturally focuses on whatever you are doing.\n\nThis concludes your OCF Focus exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-002.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-002.closer/version": {
@@ -103818,7 +103903,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-002.function-body/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "From this moment forward, your ability to direct\nand sustain your attention is becoming stronger,\nclearer, and more effective.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour mind, body, and senses will immediately\nbring their attention together.\n\nYour concentration will become clear,\nsteady, and unwavering.\n\nUnnecessary distractions will fade away,\nand your attention will remain naturally\ncentered on what matters to you.\n\nYou will perceive important details clearly,\nunderstanding what you see, hear, feel,\nand experience with greater awareness.\n\nThe information you attend to will become\nvivid and distinct in your memory,\nready for clear and accurate recall.\n\nYou will remain bright, alert, calm,\nconfident, and completely at ease.\n\nFrom this moment forward, this ability\nto focus your attention is permanently\navailable to you whenever you desire.\n\nYou remain in complete control,\nable to direct or shift your attention\nwhenever you choose.\n\nEach time you use {{ cue.primary }},\nconcentration becomes easier, stronger,\nand more effective.\n\nYour natural ability to focus will continue\nimproving through every experience,\nbecoming an effortless part of your daily life.",
+          "value": "From this moment forward, you have the ability to direct and sustain your attention with greater clarity and concentration.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to focus your awareness.\n\nWhenever you wish to concentrate, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour attention naturally centers on whatever you are doing or choose to do.\n\nUnnecessary distractions fade, allowing you to concentrate more clearly and steadily.\n\nYour mind and senses work together to recognize important details and understand what you are experiencing.\n\nInformation relevant to your current activity becomes easier to recognize, understand, and remember.\n\nYour concentration remains steady without unnecessary mental strain, naturally following your attention as you move between activities.\n\nThis ability to focus remains permanently available.\n\nEach time you use \"{{ cue.primary }},\" directing and sustaining your attention becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-002.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-002.function-body/version": {
@@ -103833,7 +103918,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-002.opener/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "This OCF exercise will strengthen your ability\nto focus your attention completely,\nwhenever and wherever you choose.",
+          "value": "This OCF exercise will strengthen your ability to focus your attention on whatever you choose, maintaining clear and steady concentration.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-002.opener/text"
         },
         "/entries/hplus.function.ocf-fnd-002.opener/version": {
@@ -103881,6 +103966,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
+          "value": "functions.ocf-fnd-002.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
           "value": [],
@@ -103895,6 +103990,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-002.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-002-Focus.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-002.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
@@ -106936,7 +107036,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-003.closer/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Remember, whenever you wish to restore yourself\nthrough a short period of natural sleep,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Quick Recharge exercise.",
+          "value": "Remember, whenever you wish to recharge through a short period of restorative sleep, settle comfortably.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and allow yourself to sleep.\n\nThis concludes your OCF Quick Recharge exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-003.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-003.closer/version": {
@@ -106961,7 +107061,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-003.function-body/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "From this moment forward, you have the ability\nto recharge and restore yourself through\na short period of natural, restful sleep.\n\nWhenever you choose to take a brief rest,\nsettle comfortably and allow your body\nand mind to become quiet and relaxed.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYou will move easily and quickly\ninto peaceful, natural sleep.\n\nAs you sleep, your total self will begin\na rapid process of balance, equalization,\nand restoration throughout your system.\n\nYour body will release unnecessary tension.\nYour mind will settle and become clear.\nYour natural energies will replenish,\nbringing renewed strength and vitality.\n\nEvery part of your being will work together,\nrestoring harmony and refreshing you\nin the short time you have chosen to rest.\n\nWithin minutes, as your brief sleep completes,\nyou will awaken naturally, calm and confident,\nwith a clear mind and renewed energy.\n\nYou will feel refreshed, alert, and ready\nto continue what you wish to do.\n\nFrom this moment forward, the ability\nto enter restorative short sleep\nis permanently available whenever you choose.\n\nYour normal wakefulness remains bright and clear,\nand this response begins when you deliberately\nchoose to use {{ cue.primary }}.\n\nEach time you use this function,\nfalling asleep briefly, restoring your energy,\nand awakening refreshed will become\neasier, smoother, and more effective.",
+          "value": "From this moment forward, you have the ability to recharge your body and mind through a short period of natural, restorative sleep.\n\nWhenever you wish to take a brief rest, settle into a comfortable position where you can safely sleep.\n\nAllow your body and mind to relax.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour body and mind naturally enter a peaceful, restorative sleep.\n\nAs you rest, your conscious mind, subconscious mind, physical body, and total self work together to restore balance and replenish your energy.\n\nUnnecessary tension releases, your mind settles, and your natural restorative processes support renewed strength and vitality.\n\nThroughout this brief period of sleep, your total self works toward restoring your physical and mental energy.\n\nAs your short rest completes, you awaken naturally, refreshed, alert, and ready to resume your activities.\n\nThis ability to enter a short restorative sleep remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" entering restful sleep and awakening refreshed becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-003.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-003.function-body/version": {
@@ -106976,7 +107076,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-003.opener/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "This OCF exercise will teach you to enter a short,\nnatural sleep and rapidly recharge your body,\nmind, and total self, awakening refreshed and alert.",
+          "value": "This OCF exercise will teach you to enter a brief, restorative sleep, allowing your body, mind, and total self to recharge before awakening refreshed and alert.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-003.opener/text"
         },
         "/entries/hplus.function.ocf-fnd-003.opener/version": {
@@ -107024,6 +107124,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
+          "value": "functions.ocf-fnd-003.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
           "value": [],
@@ -107038,6 +107148,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-003.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-003.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
@@ -109934,7 +110049,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-004.closer/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "Remember, whenever you wish to relax\nyour body and mind, inhale deeply\nand hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Relax exercise.",
+          "value": "Remember, whenever you wish to relax your body and mind, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Relax exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-004.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-004.closer/version": {
@@ -109959,7 +110074,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-004.function-body/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "From this moment forward, you have the ability\nto relax your entire body and mind deeply,\nnaturally, and whenever you desire.\n\nYour body knows how to release unnecessary\neffort, strain, and tension, returning\nto a comfortable state of balance.\n\nWhenever you wish to relax, inhale deeply\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nWith this breath, all unnecessary tension\nand stress will flow out of your body,\nleaving you comfortably relaxed.\n\nYour muscles will soften and release,\nfrom your face and shoulders to your hands,\nback, legs, and feet.\n\nYour breathing will become smooth and easy.\nYour nervous system will settle into\na calm, balanced rhythm throughout your body.\n\nYour thoughts will become quiet and clear.\nYour mind will remain serene and at ease,\nfree of unnecessary effort or distraction.\n\nYou can enter this peaceful state while resting\nor remain comfortably alert when you need\nto think, move, or act.\n\nFrom this moment forward, your ability\nto release tension is permanently available,\nand your body will return to balance\nmore naturally with each experience.\n\nWhenever you use {{ cue.primary }},\nrelaxation will flow through your total self,\ndeeper and more easily than before.\n\nEach time you use this function,\nbecoming calm, comfortable, and relaxed\nwill be easier, faster, and more effective.",
+          "value": "From this moment forward, you have the ability to relax your entire body and mind deeply and naturally whenever you choose.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to release unnecessary tension and restore balance.\n\nWhenever you wish to relax, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nUnnecessary physical tension releases throughout your body.\n\nYour muscles relax, your breathing becomes smooth and natural, and your body settles into a comfortable state of ease.\n\nMental tension and unnecessary effort diminish, allowing your thoughts to become quieter and clearer.\n\nYou can use this ability while resting or remain comfortably alert when you need to think, move, or act.\n\nYour body and mind naturally respond to the intention to relax, without requiring conscious attention to individual muscles or areas.\n\nThis ability to enter a state of physical and mental relaxation remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" releasing tension and entering relaxation becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-004.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-004.function-body/version": {
@@ -109974,7 +110089,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-004.opener/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "This OCF exercise will teach you to release\nphysical and mental tension and enter a state\nof deep, natural relaxation whenever you choose.",
+          "value": "This OCF exercise will teach you to release physical and mental tension, allowing your body and mind to relax deeply whenever you choose.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-004.opener/text"
         },
         "/entries/hplus.function.ocf-fnd-004.opener/version": {
@@ -110022,6 +110137,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-004-Relax.yaml",
+          "value": "functions.ocf-fnd-004.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-004-Relax.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
           "value": [],
@@ -110036,6 +110161,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-004.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-004-Relax.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-004.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
@@ -113052,7 +113182,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-005.closer/text": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
-          "value": "Remember, whenever you wish to change\nfrom tired and low to energized and strong,\ninhale deeply, close your eyes, and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand open your eyes.\n\nThis concludes your OCF Reset exercise.",
+          "value": "Remember, whenever you wish to shift from weariness or low energy into a refreshed and alert state, take a deep breath in, close your eyes, and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and open your eyes.\n\nThis concludes your OCF Reset exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-005.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-005.closer/version": {
@@ -113077,7 +113207,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-005.function-body/text": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
-          "value": "From this moment forward, you have the ability\nto change your physical and mental pattern\nquickly and completely whenever you desire.\n\nWhenever you feel tired, weary, or emotionally low,\nyou can immediately reset your state and return\nto renewed strength, clarity, and confidence.\n\nInhale deeply, close your eyes,\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth\nand open your eyes.\n\nAs you exhale, weariness and heaviness\nwill flow out of your body and mind.\nWith each new breath, fresh energy and vitality\nwill flow throughout your entire system.\n\nYour body will feel renewed, balanced,\ncomfortable, and ready for action.\nYour mind will become clear, clean, sharp,\nand smooth, with bright, steady awareness.\n\nYour emotions will return to balance.\nYou will feel strong and sure,\ncalm and confident, ready to move forward.\n\nThis change will take place immediately,\nbringing your entire being into the\nclear, energized state you have chosen.\n\nFrom this moment forward, this ability\nto reset your state is permanently\navailable whenever you wish to use it.\n\nYour natural balance remains intact,\nand you can invoke this renewed wakefulness\nwhenever a change of pattern is desired.\n\nEach time you use {{ cue.primary }},\nthis shift becomes easier, faster,\nand more effective.",
+          "value": "From this moment forward, you have the ability to quickly reset your physical and mental state whenever you choose.\n\nWhenever you feel tired, weary, or emotionally low, you can shift into a renewed state of energy, clarity, strength, and confidence.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to restore your natural balance and alertness.\n\nTo activate this ability, take a deep breath in, close your eyes, and gently hold your breath.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and open your eyes.\n\nYour physical and mental state begins to change immediately.\n\nWeariness and heaviness diminish as renewed energy and vitality become available throughout your body.\n\nYour mind becomes clearer and sharper, supporting focused attention and effective action.\n\nYour emotions return toward balance as confidence, strength, and steady awareness increase.\n\nYour total self establishes the refreshed, alert state you have chosen.\n\nThis ability to reset your physical and mental state remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" making this change becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-005.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-005.function-body/version": {
@@ -113092,7 +113222,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-005.opener/text": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
-          "value": "This OCF exercise will teach you to reset your\nphysical and mental state quickly, shifting from\nweariness and feeling low to renewed energy,\nclarity, strength, and confidence.",
+          "value": "This OCF exercise will teach you to quickly reset your physical and mental state, replacing weariness and low energy with renewed alertness, clarity, and confidence.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-005.opener/text"
         },
         "/entries/hplus.function.ocf-fnd-005.opener/version": {
@@ -113140,6 +113270,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-005-Reset.yaml",
+          "value": "functions.ocf-fnd-005.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-005-Reset.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
           "value": [],
@@ -113154,6 +113294,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-005.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-005-Reset.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-005.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
@@ -116555,7 +116700,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-006.closer/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "Remember, when a temporary OCF function\nis no longer needed, bring that function\nclearly into your awareness.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Release exercise.",
+          "value": "Remember, when you wish to end a temporary OCF function application, identify the function or group you wish to release.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Release exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-006.closer/text"
         },
         "/entries/hplus.function.ocf-fnd-006.closer/version": {
@@ -116580,7 +116725,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-006.function-body/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "From this moment forward, you have the ability\nto release any temporary OCF function\nwhen its present purpose is complete.\n\nThe function you have learned remains yours.\nYou can end its current application\nwithout losing the knowledge, ability,\nor benefits that remain part of you.\n\nWhenever you wish to release a temporary function,\nbring that function clearly into your awareness.\nKnow exactly what you are choosing to place on hold.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nThe selected function's present application\nwill immediately begin to end.\nIts temporary effects will fade smoothly,\nand your body, mind, and emotions will return\nto their natural, balanced condition.\n\nThe function itself is not forgotten or erased.\nEverything you have learned remains available,\nready whenever you choose to activate it again.\n\nIf several temporary functions are working together,\nyou can bring that entire grouping into awareness\nand release their present applications together\nwith the same command.\n\nOnly the temporary application you select will end.\nYour other functions, lasting abilities,\nand natural patterns of healthy balance\nwill continue as appropriate.\n\nThis ability to release and reset\nselected applications is permanently\navailable to you whenever you desire.\n\nEach time you use {{ cue.primary }},\nending an application and returning\nto balance becomes easier, smoother,\nand more effective.",
+          "value": "From this moment forward, you have the ability to release the temporary application of any OCF function whenever its purpose is complete.\n\nThe functions you have learned remain available, even after their temporary applications end.\n\nWhenever you wish to release an application, identify the function you want to end.\n\nYou may also select a group of temporary functions and release their current applications together.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe selected function's temporary application ends, and its active effects fade naturally.\n\nYour body and mind return to their normal state as the temporary response concludes.\n\nAny selected group of temporary applications ends together.\n\nOther functions and lasting abilities continue unaffected.\n\nYour knowledge and learned capabilities remain available whenever you choose to use them again.\n\nThis ability to release selected temporary applications remains permanently available.\n\nEach time you use \"{{ cue.primary }},\" ending a temporary application becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-006.function-body/text"
         },
         "/entries/hplus.function.ocf-fnd-006.function-body/version": {
@@ -116595,7 +116740,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-fnd-006.opener/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "This OCF exercise will teach you to release\nthe present application of a function when\nits purpose is complete, while preserving\nyour ability to use it again whenever you choose.",
+          "value": "This OCF exercise will teach you to end a temporary function application when it is no longer needed, while keeping the ability available for future use.",
           "yaml_pointer": "/entries/hplus.function.ocf-fnd-006.opener/text"
         },
         "/entries/hplus.function.ocf-fnd-006.opener/version": {
@@ -116643,6 +116788,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-FND-006-Release.yaml",
+          "value": "functions.ocf-fnd-006.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-FND-006-Release.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
           "value": [],
@@ -116657,6 +116812,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-fnd-006.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-FND-006-Release.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-fnd-006.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
@@ -119278,7 +119438,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-lif-001.closer/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "Remember, whenever an unwanted physical\nor mental habit begins to arise, bring\nthat pattern clearly into your awareness.\n\nInhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Habit Freedom exercise.",
+          "value": "Remember, whenever an unwanted habit begins to arise, recognize the habit you wish to eliminate.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Habit Freedom exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-lif-001.closer/text"
         },
         "/entries/hplus.function.ocf-lif-001.closer/version": {
@@ -119303,7 +119463,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-lif-001.function-body/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "From this moment forward, you have the ability\nto eliminate any unwanted physical or mental\nhabit pattern that you choose to release.\n\nA habit is a pattern repeated until it begins\nto operate automatically. You can recognize\nsuch a pattern and change it at its source.\n\nWhenever the unwanted habit begins to arise,\nrecognize the particular pattern you wish\nto eliminate and bring it clearly into your mind.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe unwanted pattern will immediately\nbegin to weaken throughout your entire system.\n\nIts familiar impulse will become smaller,\nquieter, and less compelling, until it\nno longer directs your thoughts or actions.\n\nYour conscious mind, subconscious mind,\nphysical body, and total self will release\nthe old pattern together, completely.\n\nEach time the pattern would once have occurred,\nyour freedom to choose will grow stronger.\nYour mind and body will respond naturally\nin the way you now desire.\n\nThe unwanted habit will continue fading\nuntil it is completely eliminated\nfrom your automatic responses.\n\nYour useful memories, knowledge, and skills\nwill remain intact, while the unwanted\npattern loses its place in your life.\n\nFrom this moment forward, this ability\nto change and eliminate unwanted habits\nis permanently available whenever you choose.\n\nThe more you use {{ cue.primary }},\nthe easier, faster, and more effective\nthis lasting change will become.",
+          "value": "From this moment forward, you have the ability to eliminate unwanted physical and mental habit patterns whenever you choose.\n\nHabits are repeated patterns that become automatic over time. You can recognize and change these patterns at their source.\n\nWhenever an unwanted habit begins to arise, recognize the habit you wish to eliminate.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe unwanted habit begins to lose its influence over your thoughts and actions.\n\nIts familiar impulses grow weaker, allowing your mind and body to respond naturally in the way you choose.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to release the unwanted pattern.\n\nThe old habit continues to fade until it no longer operates as an automatic response.\n\nYour useful memories, knowledge, and skills remain intact as the unwanted behavior loses its place in your life.\n\nThis ability to eliminate unwanted habits is permanently established within you and remains available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" changing unwanted habits becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-lif-001.function-body/text"
         },
         "/entries/hplus.function.ocf-lif-001.function-body/version": {
@@ -119318,7 +119478,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-lif-001.opener/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "This OCF exercise will teach you to release\nand eliminate unwanted physical and mental\nhabit patterns that interfere with your\nwell-being, freedom, and growth.",
+          "value": "This OCF exercise will teach you to eliminate unwanted physical and mental habits, freeing yourself from automatic behavior patterns that no longer serve you.",
           "yaml_pointer": "/entries/hplus.function.ocf-lif-001.opener/text"
         },
         "/entries/hplus.function.ocf-lif-001.opener/version": {
@@ -122144,6 +122304,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
+          "value": "functions.ocf-prf-001.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
           "value": [],
@@ -122158,6 +122328,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-prf-001.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-001.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-PRF-001-Do-This-Now.yaml",
@@ -124739,7 +124914,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.",
+          "value": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -131150,7 +131325,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-004.closer/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Remember, your lighter, quieter, more efficient way\nof moving will continue naturally, and whenever\nyou wish to strengthen it, inhale deeply,\nhold your breath, and think or say in your mind,\n\"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Light Foot exercise.",
+          "value": "Remember, your lighter, quieter movement pattern continues naturally.\n\nWhenever you wish to reinforce it, inhale deeply and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Light Foot exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-004.closer/text"
         },
         "/entries/hplus.function.ocf-prf-004.closer/version": {
@@ -131175,7 +131350,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-004.function-body/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "From this moment forward, your body will learn\na lighter, quieter, and more efficient way of moving.\n\nWhether walking through daily life, climbing steps,\njogging, or running, your feet and legs will work\ntogether with natural ease and precision.\n\nYour feet will lift cleanly from the ground,\nmoving forward without dragging or scraping.\nEach foot will return gently and deliberately,\nwith just the pressure needed for stable support.\n\nYour steps will grow quieter, smoother, and lighter.\nUnnecessary impact, tension, and wasted motion\nwill fade from the way you move.\n\nYour posture, balance, and rhythm will adjust together.\nYou will place each foot where you intend,\nadapting naturally to the ground beneath you\nand the movement you have chosen.\n\nYour total self will learn this pattern so thoroughly\nthat it becomes your natural way of walking,\nwithout needing to think about each separate step.\n\nThis improvement will remain part of your everyday\nmovement, even when you are not consciously\nusing the Light Foot command.\n\nWhenever you wish to strengthen this lightness\nand efficiency even further, inhale deeply\nand gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nYour movement will immediately become lighter,\nquieter, more balanced, and more economical,\nwhile maintaining the awareness and control\nappropriate to your surroundings.\n\nEach time you move, your body will reinforce\nthis effortless pattern. Each time you use\n{{ cue.primary }}, it will become easier\nand more effective to express at will.",
+          "value": "From this moment forward, your body learns a lighter, quieter, and more efficient way of moving.\n\nWhether walking, climbing stairs, jogging, or running, your feet and legs work together with natural ease and precision.\n\nYour feet lift cleanly from the ground and return with the pressure needed for stable support.\n\nYour steps become smoother and quieter as unnecessary tension, impact, and wasted movement decrease.\n\nYour posture, balance, and rhythm work together, allowing you to place each foot accurately and adapt naturally to the ground beneath you.\n\nYour conscious mind, subconscious mind, physical body, and total self establish this improved movement pattern as your natural way of moving.\n\nIt continues automatically during everyday activities without requiring conscious attention or repeated commands.\n\nWhenever you wish to reinforce this lightness and efficiency, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour movement becomes lighter, quieter, and more efficient, maintaining balance and awareness appropriate to your surroundings.\n\nEach time you use \"{{ cue.primary }},\" this learned movement pattern becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-004.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-004.function-body/version": {
@@ -131190,7 +131365,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-004.opener/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "This OCF exercise will teach you to move with lightness,\nquiet precision, and natural efficiency, making smooth,\neffortless steps an increasingly permanent part of the way you move.",
+          "value": "This OCF exercise will teach you to move with lighter, quieter steps, improved balance, and natural efficiency.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-004.opener/text"
         },
         "/entries/hplus.function.ocf-prf-004.opener/version": {
@@ -134338,7 +134513,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "Sets a deliberate tone for the day ahead.",
+          "value": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -137756,7 +137931,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.closer/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Remember, when an immediate need calls for extraordinary\nstrength and quickness, inhale deeply, hold your breath,\nand think or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Strong-Quick exercise.",
+          "value": "Remember, when you need exceptional strength and quickness, identify the action you wish to perform.\n\nInhale deeply and gently hold your breath.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe enhanced response ends automatically when the need has passed.\n\nThis concludes your OCF Strong-Quick exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-006.closer/text"
         },
         "/entries/hplus.function.ocf-prf-006.closer/version": {
@@ -137781,7 +137956,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.function-body/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "From this moment forward, within your total self\nthere is an exceptional reserve of strength and quickness,\nready to be called upon when an immediate need arises.\n\nYou will recognize the moment that calls for action.\nYour awareness will become clear and direct.\nYour mind and body will unite around what must be done.\n\nWhen you need this extraordinary response,\nbring the necessary action clearly into your awareness.\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nImmediately, your total self will respond as one.\nYour conscious mind, subconscious mind, nervous system,\nand muscles will work together in complete coordination.\n\nHesitation and unnecessary thought will fall away.\nYour movements will become direct, rapid, and precise.\nEvery part of your body needed for the action\nwill contribute its strength in perfect timing.\n\nYou will draw upon reserves of power and speed\nbeyond what you ordinarily recognize within yourself,\nconcentrating your entire capacity into the moment.\n\nYour awareness will remain clear.\nYour action will be decisive.\nThe strength and quickness you call upon\nwill be directed toward the immediate purpose.\n\nThis exceptional response is temporary,\narising when you deliberately call upon it.\nYour learned ability will remain available\nwhenever another need arises.\n\nEach time you use this function,\nyour total self will recognize and respond\nto your intention more readily and effectively.",
+          "value": "From this moment forward, you have the ability to call upon exceptional reserves of strength and quickness within your total self.\n\nWhen an immediate need arises, your mind and body can work together with increased speed, strength, precision, and coordination.\n\nTo activate this ability, identify the action you need to perform.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self responds to your intention, bringing your available strength, speed, and coordination into the chosen action.\n\nYour conscious mind, subconscious mind, nervous system, and muscles work together, reducing unnecessary hesitation and wasted movement.\n\nYour awareness remains clear as your movements become direct, rapid, and precise.\n\nYour body directs its available resources toward the immediate task, maintaining the awareness and control needed for effective action.\n\nThis enhanced response continues for as long as the immediate need exists.\n\nWhen the need has passed, the enhanced response ends naturally, and your mind and body return to their normal operating state.\n\nYour learned ability remains permanently available for future use.\n\nEach time you use \"{{ cue.primary }},\" accessing and directing this ability becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-006.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-006.function-body/version": {
@@ -137796,7 +137971,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-006.opener/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "This OCF exercise will teach you to call upon\nextraordinary strength and quickness within your total self,\nbringing them into action immediately when they are needed most.",
+          "value": "This OCF exercise will teach you to call upon exceptional strength and quickness, directing your total self toward immediate, decisive action whenever needed.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-006.opener/text"
         },
         "/entries/hplus.function.ocf-prf-006.opener/version": {
@@ -137844,6 +138019,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "functions.ocf-prf-006.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions/0": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "The temporary enhanced response ends automatically when the immediate need passes.",
@@ -137858,6 +138043,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-prf-006.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-006.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
@@ -140759,7 +140949,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-001.closer/text": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "Remember, to regulate your hearing or strengthen\nyour inner experience of sound, close your eyes,\ninhale deeply, and hold your breath.\nThink or say in your mind, \"{{ cue.primary }}\"\nor \"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }},\" according to your intention.\nThen exhale slowly through your mouth and open your eyes.\n\nThis concludes your OCF Hearing exercise.",
+          "value": "Remember, whenever you wish to adjust your awareness of sound, close your eyes.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}\" to increase awareness, or \"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}\" to reduce unwanted sound.\n\nThen slowly exhale through your mouth and open your eyes.\n\nThis concludes your OCF Hearing exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-001.closer/text"
         },
         "/entries/hplus.function.ocf-sen-001.closer/version": {
@@ -140789,7 +140979,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-001.function-body/text": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "From this moment forward, you have the ability\nto regulate your hearing and develop vivid,\nclear sound within your imagination.\n\nYour hearing will respond to your intention.\nYou can bring subtle sounds into clearer awareness\nor allow unwanted sounds to fade into the background.\n\nTo enhance your hearing, close your eyes,\ninhale deeply, and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth and open your eyes.\n\nFaint sounds will become clearer and more distinct.\nYou will notice delicate differences in pitch,\ntone, rhythm, and sounds both high and low.\nYour awareness will recognize the sounds\nyou wish to hear with greater ease.\n\nWhenever you wish to reduce unwanted or distracting sounds,\nuse the same breathing and eye sequence with the command,\n\"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}.\"\n\nUnwanted sounds, whether coming from your surroundings\nor arising within your own hearing awareness,\nbecome less prominent.\n\nYour attention naturally shifts toward the sounds you wish to hear,\nwhile unnecessary ringing, buzzing, humming,\nand other distracting sounds fade into the background.\n\nYou remain aware of important sounds around you\nand can change the adjustment whenever you choose.\n\nYour inner sense of hearing will also grow stronger.\nYou will recall familiar voices, melodies,\nconversations, and sounds of places you remember.\nEven in silence, you can imagine a voice speaking,\nmusic playing, or a sound moving through space.\n\nYou can hold an inner sound clearly, hear its\npitch and rhythm, change its volume or tone,\nand create new combinations through imagination.\nYou will recognize the difference between sounds\nyou imagine and sounds around your physical body.\n\nThis ability to remember and create sound within\nyour mind will become a permanent part of your total self.\nWhenever you choose, these commands can strengthen\nan imagined sound or allow it to gently fade.\n\nEach time you use this function, your hearing regulation\nand inner auditory imagery will become easier,\nclearer, and more effective.",
+          "value": "From this moment forward, you have the ability to adjust your awareness of sound and strengthen your inner sense of hearing.\n\nYour conscious mind, subconscious mind, physical senses, and total self work together to respond to your intentions.\n\nWhenever you wish to hear sounds more clearly, close your eyes.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth and open your eyes.\n\nYour awareness of sound becomes clearer and more detailed.\n\nSubtle sounds become easier to notice, including differences in pitch, tone, rhythm, and volume.\n\nWhenever you wish to reduce unwanted or distracting sounds, use the same breathing and eye sequence with the command,\n\"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }}.\"\n\nUnwanted sounds, whether coming from your surroundings or arising within your own hearing awareness, become less prominent.\n\nYour attention naturally shifts toward the sounds you wish to hear, while unnecessary ringing, buzzing, humming, and other distracting sounds fade into the background.\n\nYou remain aware of important sounds around you and can change the adjustment whenever you choose.\n\nYour inner sense of hearing also develops, strengthening your ability to remember familiar voices, music, conversations, and other sounds.\n\nYou may recall or imagine sounds with greater clarity, recognizing their details and qualities.\n\nYour total self supports both your awareness of external sounds and your ability to experience sound internally.\n\nThese abilities remain available whenever you choose to use them.\n\nEach time you use \"{{ cue.primary }}\" or \"{{ cue.id.OCF-CMD-SEN-001-HEAR-LESS }},\" adjusting your awareness of sound becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-001.function-body/text"
         },
         "/entries/hplus.function.ocf-sen-001.function-body/version": {
@@ -140804,7 +140994,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-001.opener/text": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "This OCF exercise will teach you to regulate\nyour sense of hearing and strengthen your ability\nto remember, imagine, and experience sounds within your mind.",
+          "value": "This OCF exercise will teach you to adjust your hearing awareness and strengthen your ability to remember, imagine, and experience sounds within your mind.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-001.opener/text"
         },
         "/entries/hplus.function.ocf-sen-001.opener/version": {
@@ -161725,6 +161915,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
+          "value": "functions.ocf-slp-002.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
           "value": [],
@@ -161739,6 +161939,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-slp-002.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-slp-002.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
@@ -164760,7 +164965,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-003.closer/text": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
-          "value": "Remember, whenever you wish to experience\na dream of your choosing and recall it clearly,\nbring your desired dream theme into your mind.\nInhale deeply and hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale and breathe slowly and deeply.\n\nThis concludes your OCF Dream Theme exercise.",
+          "value": "Remember, whenever you wish to experience a dream of your choosing, establish the theme you desire.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen exhale and continue breathing slowly and deeply.\n\nThis concludes your OCF Dream Theme exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-003.closer/text"
         },
         "/entries/hplus.function.ocf-slp-003.closer/version": {
@@ -164785,7 +164990,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-003.function-body/text": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
-          "value": "From this moment forward, you can choose\nthe dreams you desire to experience during sleep.\n\nWhenever you wish to dream a particular dream,\nbring its theme clearly into your awareness.\nIt may be a place, a person, an experience,\na question, a possibility, or a world of your creation.\n\nPicture what you wish to experience.\nKnow how you wish the dream to feel.\nInclude the sights, sounds, sensations,\nand emotions that give your dream its character.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale and breathe slowly and deeply.\n\nYou will move calmly and easily\ninto peaceful, normal, natural sleep.\nAs you sleep, your total self will receive\nthe pattern you have chosen and begin\ncomposing a dream experience around it.\n\nYour conscious intention, subconscious awareness,\nand higher self will work together,\nshaping a living dream of images, feelings,\nmovement, and meaningful experience.\n\nThe dream may unfold in ways beyond\nwhat you first imagined, while remaining\nconnected to the theme you have selected.\nYou will experience it naturally and vividly,\nallowing each scene to lead into the next.\n\nWhen you awaken, the dream will return\nclearly to your awareness. You will remember\nits scenes, sensations, emotions, and details\nwith joy, and recognize the experience as your own.\n\nThis ability to choose, experience, and remember\nyour dreams will remain permanently available.\nEach time you use {{ cue.primary }},\nyour dream experiences and their recall\nwill become clearer, richer, and easier.",
+          "value": "From this moment forward, you have the ability to choose the dreams you wish to experience during sleep.\n\nWhenever you wish to dream about something specific, choose the theme or experience you desire.\n\nIt may be a place, person, experience, question, possibility, or world of your own creation.\n\nEstablish your intention for the dream, including any details, experiences, or emotions you wish to explore.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale and continue breathing slowly and deeply.\n\nYour body and mind enter peaceful, natural sleep.\n\nAs you sleep, your conscious intention, subconscious awareness, higher self, and total self work together to develop a dream around your chosen theme.\n\nYour dream unfolds naturally, creating scenes, events, sensations, and experiences connected to your intention.\n\nThe dream may develop in unexpected directions while remaining connected to the theme you have chosen.\n\nYou experience the dream naturally, allowing the events and experiences to unfold.\n\nWhen you awaken, the dream returns clearly to your awareness.\n\nYou remember its events, details, and meaningful experiences, allowing you to reflect upon what you dreamed.\n\nThis ability to choose, experience, and remember your dreams remains permanently available.\n\nEach time you use \"{{ cue.primary }},\" creating and recalling your chosen dream experiences becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-003.function-body/text"
         },
         "/entries/hplus.function.ocf-slp-003.function-body/version": {
@@ -164800,7 +165005,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-003.opener/text": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
-          "value": "This OCF exercise will teach you to choose the dreams\nyou wish to experience, allowing your total self\nto create them during sleep and helping you remember\nthem clearly and joyfully when you awaken.",
+          "value": "This OCF exercise will teach you to choose the dreams you wish to experience, allowing your total self to create them during sleep and helping you remember them clearly when you awaken.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-003.opener/text"
         },
         "/entries/hplus.function.ocf-slp-003.opener/version": {
@@ -164848,6 +165053,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
+          "value": "functions.ocf-slp-003.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
           "value": [],
@@ -164862,6 +165077,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-slp-003.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-slp-003.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-SLP-003-Dream-Theme.yaml",
@@ -175064,7 +175284,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-006.closer/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Remember, when an essential need requires\nimmediate waking alertness, inhale deeply\nand hold your breath.\nThink or say in your mind,\n\"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Stay Awake exercise.",
+          "value": "Remember, whenever you need to remain awake and alert, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThe heightened response ends naturally when the immediate need has passed.\n\nThis concludes your OCF Stay Awake exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-006.closer/text"
         },
         "/entries/hplus.function.ocf-slp-006.closer/version": {
@@ -175089,7 +175309,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-006.function-body/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "From this moment forward, you have the ability\nto call upon a powerful state of waking alertness\nwhenever an essential, immediate need arises.\n\nWhen you must remain awake and responsive,\nbring the present need clearly into your awareness.\nKnow what requires your attention and action.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind,\n\"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nImmediately, your total self will begin to shift\ninto clear, active, focused wakefulness.\nYour thoughts will become sharp and orderly.\nYour awareness will brighten and become steady.\nYour mind will recognize what matters now.\n\nYour eyes, hearing, and other senses will work\ntogether in clear awareness of your surroundings.\nYour physical body will become responsive,\ncoordinated, and ready for the action required.\n\nFeel heaviness and mental dullness receding.\nYour attention will gather around the present need.\nUnnecessary thoughts will fall away,\nleaving calm, decisive, wakeful awareness.\n\nYour conscious mind, subconscious awareness,\nand physical body will cooperate as one,\ndirecting their available strength and energy\ntoward remaining alert in this essential moment.\n\nThis response is temporary and purposeful.\nIt will serve the immediate need for wakefulness,\nthen give way naturally when that need has passed\nand you can allow yourself to rest.\n\nThe ability to call upon this alertness\nwill remain permanently available within you,\nwithout keeping you continually stimulated.\nEach time you use this function,\nthe response will become clearer,\neasier, and more effective.",
+          "value": "From this moment forward, you have the ability to call upon a powerful state of waking alertness whenever an immediate need arises.\n\nYour conscious mind, subconscious mind, physical body, and total self work together to support clear, active wakefulness.\n\nWhenever you need to remain awake and alert, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self responds immediately, bringing your mind and body into a state of increased alertness.\n\nYour thoughts become clearer, your awareness sharpens, and your attention naturally centers on what is happening around you.\n\nYour senses and physical body work together to support responsiveness, coordination, and clear awareness.\n\nWeariness and mental dullness diminish as your available energy and attention support the present need for wakefulness.\n\nThis enhanced alertness continues for as long as the immediate need exists.\n\nWhen the need passes and you are able to rest, the heightened response ends naturally.\n\nYour learned ability to call upon this state remains permanently available without keeping you continually stimulated.\n\nEach time you use \"{{ cue.primary }},\" entering a state of clear, focused wakefulness becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-006.function-body/text"
         },
         "/entries/hplus.function.ocf-slp-006.function-body/version": {
@@ -175104,7 +175324,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-slp-006.opener/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "This OCF exercise will teach you to call upon\nimmediate mental and physical alertness when\nan essential need requires you to remain awake.",
+          "value": "This OCF exercise will teach you to call upon immediate mental and physical alertness when you need to remain awake.",
           "yaml_pointer": "/entries/hplus.function.ocf-slp-006.opener/text"
         },
         "/entries/hplus.function.ocf-slp-006.opener/version": {
@@ -175152,6 +175372,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
+          "value": "functions.ocf-slp-006.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
         "/lifecycle/trigger_conditions/0": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
           "value": "The temporary alertness ends naturally when the immediate need passes.",
@@ -175166,6 +175396,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-slp-006.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
+          "value": "The learned ability remains permanently available for deliberate future use.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-slp-006.lifecycle.scopes.capability.description/text"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
