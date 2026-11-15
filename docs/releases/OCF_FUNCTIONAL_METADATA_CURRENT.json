@@ -15,7 +15,7 @@
     {
       "id": "OCF-AUT-001",
       "title": "Automatic Action",
-      "purpose": "Automates a desired way of being so it runs without active effort.",
+      "purpose": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "permanent",
@@ -34,7 +34,7 @@
             "persistence": "permanent",
             "description_key": "functions.ocf-aut-001.lifecycle.scopes.baseline.description",
             "activation": "automatic",
-            "description": "Correctly learned selected skill patterns are retained; each performance remains observable, adjustable and stoppable."
+            "description": "Learned selected skill patterns are retained; each performance remains observable, adjustable, and stoppable."
           },
           "application": {
             "persistence": "temporary",
@@ -90,7 +90,7 @@
             "persistence": "permanent",
             "description_key": "functions.ocf-aut-001.lifecycle.scopes.baseline.description",
             "activation": "automatic",
-            "description": "Correctly learned selected skill patterns are retained; each performance remains observable, adjustable and stoppable."
+            "description": "Learned selected skill patterns are retained; each performance remains observable, adjustable, and stoppable."
           },
           "invocation_scope": {
             "persistence": "temporary",
@@ -254,7 +254,7 @@
     {
       "id": "OCF-BOD-007",
       "title": "Blood Pressure Balance",
-      "purpose": "A self-directed practice focused on supporting healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
+      "purpose": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "permanent",
@@ -372,7 +372,7 @@
     {
       "id": "OCF-BOD-008",
       "title": "Immune Readiness",
-      "purpose": "Supports a self-directed practice of immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
+      "purpose": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "permanent",
@@ -453,15 +453,34 @@
     {
       "id": "OCF-BOD-010",
       "title": "Nutricia",
-      "purpose": "Supports conscious selection between fuller use of food energy and nourishment, or sufficient nourishment with reduced unnecessary energy retention and storage.",
+      "purpose": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
       "lifecycle": {
         "activation": "manual",
-        "persistence": "temporary",
+        "persistence": "persistent",
         "release": {
           "command": null,
           "required": false
         },
-        "trigger_conditions": []
+        "trigger_conditions": [],
+        "scopes": {
+          "capability": {
+            "persistence": "permanent",
+            "description_key": "functions.ocf-bod-010.lifecycle.scopes.capability.description",
+            "description": "The ability to choose and change either food-energy mode remains available."
+          },
+          "baseline": {
+            "persistence": "persistent",
+            "activation": "conditional",
+            "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+            "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed."
+          },
+          "application": {
+            "persistence": "persistent",
+            "activation": "manual",
+            "description_key": "functions.ocf-bod-010.lifecycle.scopes.application.description",
+            "description": "The selected mode persists across meals, activities, rest, and sleep; it is not reapplied automatically before each meal."
+          }
+        }
       },
       "commands": [
         {
@@ -473,20 +492,14 @@
             "visible": true,
             "order": 1
           },
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_ref": "lifecycle.scopes.baseline.persistence",
           "procedure": {
-            "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
+            "ref": "OCF-PROC-INHALE-HOLD",
             "status": "documented",
             "evidence_keys": [
               "hplus.function.ocf-bod-010.function-body"
             ],
-            "before_steps": [
-              {
-                "id": "select-food-response",
-                "operation": "select-intention",
-                "localization_key": "command.procedure.select-intention"
-              }
-            ]
+            "before_steps": []
           },
           "relationships": {
             "pairs_with": [
@@ -505,18 +518,14 @@
           "spoken": "Plus Food More",
           "spoken_review": "reviewed",
           "phrase": "PLUS-FOOD MORE",
-          "effect_scope": "temporary",
+          "effect_scope": "persistent",
+          "effect_scope_details": {
+            "persistence": "persistent",
+            "activation": "conditional",
+            "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+            "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed."
+          },
           "resolved_procedure_steps": [
-            {
-              "id": "select-food-response",
-              "operation": "select-intention",
-              "localization_key": "command.procedure.select-intention"
-            },
-            {
-              "id": "close-eyes",
-              "operation": "close-eyes",
-              "localization_key": "command.procedure.close-eyes"
-            },
             {
               "id": "inhale",
               "operation": "inhale",
@@ -549,20 +558,14 @@
             "visible": true,
             "order": 11
           },
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_ref": "lifecycle.scopes.baseline.persistence",
           "procedure": {
-            "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
+            "ref": "OCF-PROC-INHALE-HOLD",
             "status": "documented",
             "evidence_keys": [
               "hplus.function.ocf-bod-010.function-body"
             ],
-            "before_steps": [
-              {
-                "id": "select-food-response",
-                "operation": "select-intention",
-                "localization_key": "command.procedure.select-intention"
-              }
-            ]
+            "before_steps": []
           },
           "relationships": {
             "pairs_with": [
@@ -581,18 +584,14 @@
           "spoken": "Plus Food Less",
           "spoken_review": "reviewed",
           "phrase": "PLUS-FOOD LESS",
-          "effect_scope": "temporary",
+          "effect_scope": "persistent",
+          "effect_scope_details": {
+            "persistence": "persistent",
+            "activation": "conditional",
+            "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+            "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed."
+          },
           "resolved_procedure_steps": [
-            {
-              "id": "select-food-response",
-              "operation": "select-intention",
-              "localization_key": "command.procedure.select-intention"
-            },
-            {
-              "id": "close-eyes",
-              "operation": "close-eyes",
-              "localization_key": "command.procedure.close-eyes"
-            },
             {
               "id": "inhale",
               "operation": "inhale",
@@ -624,7 +623,7 @@
     {
       "id": "OCF-BOD-011",
       "title": "Hormonal Transitions",
-      "purpose": "Supports graceful passage through internal transitions.",
+      "purpose": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "permanent",
@@ -737,7 +736,7 @@
     {
       "id": "OCF-BOD-013",
       "title": "Body Tune-Up",
-      "purpose": "A general self-directed balance-and-heal tune-up practice.",
+      "purpose": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "permanent",
@@ -756,13 +755,13 @@
             "persistence": "permanent",
             "description_key": "functions.ocf-bod-013.lifecycle.scopes.baseline.description",
             "activation": "automatic",
-            "description": "The narrated whole-body maintenance and renewal baseline persists."
+            "description": "The whole body maintenance and renewal baseline persists; no selected area is required."
           },
           "application": {
             "persistence": "temporary",
             "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
             "activation": "manual",
-            "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area."
+            "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area."
           }
         }
       },
@@ -779,7 +778,7 @@
           "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "invocation_scope_ref": "lifecycle.scopes.application",
           "procedure": {
-            "ref": "OCF-PROC-CLOSE-FOCUS-OPEN",
+            "ref": "OCF-PROC-CLOSE-OPEN",
             "status": "documented",
             "evidence_keys": [
               "hplus.function.ocf-bod-013.function-body"
@@ -806,24 +805,19 @@
             "persistence": "temporary",
             "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
             "activation": "manual",
-            "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area."
+            "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area."
           },
           "invocation_scope": {
             "persistence": "temporary",
             "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
             "activation": "manual",
-            "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area."
+            "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area."
           },
           "resolved_procedure_steps": [
             {
               "id": "close-eyes",
               "operation": "close-eyes",
               "localization_key": "command.procedure.close-eyes"
-            },
-            {
-              "id": "focus-target",
-              "operation": "focus-target",
-              "localization_key": "command.procedure.focus-target"
             },
             {
               "id": "inhale",
@@ -860,7 +854,7 @@
     {
       "id": "OCF-COG-001",
       "title": "Information Access",
-      "purpose": "Accesses intuition, memory, and inner knowledge on demand.",
+      "purpose": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
       "lifecycle": {
         "activation": "manual",
         "persistence": "temporary",

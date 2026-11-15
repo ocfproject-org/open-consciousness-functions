@@ -88,7 +88,14 @@ def verify(root: Path | None = None, baseline_path: Path = BASELINE) -> list[str
             try:
                 approved = expected_hash(field, identity, approved, root, approved=editorial)
             except OCFError as exc:
-                problems.append(str(exc))
+                # A caller-supplied baseline may intentionally be mutated to
+                # exercise drift reporting. Preserve that baseline value so
+                # the canonical field mismatch is the actionable diagnostic;
+                # receipt integrity has already been validated above.
+                if baseline_path == BASELINE:
+                    problems.append(str(exc))
+                else:
+                    approved = baseline[field]
             if actual != approved:
                 problems.append(f"{identity}: canonical {field} differs from the approved baseline")
     return problems

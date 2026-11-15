@@ -7,11 +7,21 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports conscious selection between fuller use of food energy and nourishment, or sufficient
-    nourishment with reduced unnecessary energy retention and storage.
+  text: 'Directs the intended use of food energy and nourishment through two modes:
+    Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment
+    with reduced unnecessary retention and storage. The last selected mode remains
+    active until deliberately changed.'
   status: canonical
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-bod-010.lifecycle.scopes.capability.description:
+    text: The ability to choose and change either food-energy mode remains available.
+  functions.ocf-bod-010.lifecycle.scopes.baseline.description:
+    text: No mode is active by default. After a deliberate selection, the last chosen
+      mode remains active until deliberately changed.
+  functions.ocf-bod-010.lifecycle.scopes.application.description:
+    text: The selected mode persists across meals, activities, rest, and sleep; it
+      is not reapplied automatically before each meal.
 activation:
   command_id: OCF-CMD-BOD-010-PRIMARY
   display_cue:
@@ -39,55 +49,40 @@ activation:
     documentation:
       visible: true
       order: 1
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.baseline.persistence
     procedure:
-      ref: OCF-PROC-CLOSE-INHALE-HOLD
+      ref: OCF-PROC-INHALE-HOLD
       status: documented
       evidence_keys:
       - hplus.function.ocf-bod-010.function-body
-      before_steps:
-      - id: select-food-response
-        operation: select-intention
-        localization_key: command.procedure.select-intention
+      before_steps: []
     relationships:
       pairs_with:
       - OCF-CMD-BOD-010-FOOD-LESS
-  procedure_steps:
-  - id: select-food-response
-    operation: select-intention
-    instruction:
-      text: Choose an intention.
-      status: canonical
-      version: 1.0.0
-  - id: close-eyes
-    operation: close-eyes
-    instruction:
-      text: Close your eyes.
-      status: canonical
-      version: 1.0.0
+  procedure_steps: &id001
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the selected mode command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands:
 - command_id: OCF-CMD-BOD-010-FOOD-LESS
@@ -101,13 +96,13 @@ secondary_commands:
     status: canonical
     version: 1.0.1
   explanation:
-    text: Selects the alternative retention response; it does not decrement or modify a Food More intensity
-      level.
+    text: Selects the alternative retention response; it does not decrement or modify
+      a Food More intensity level.
     status: canonical
     version: 1.0.1
   usage:
-    text: Use the complete Plus Food Less cue to select sufficient nourishment with reduced unnecessary
-      retention and storage.
+    text: Use the complete Plus Food Less cue to select sufficient nourishment with
+      reduced unnecessary retention and storage.
     status: canonical
     version: 1.0.1
   role: mode
@@ -119,56 +114,17 @@ secondary_commands:
     documentation:
       visible: true
       order: 11
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.baseline.persistence
     procedure:
-      ref: OCF-PROC-CLOSE-INHALE-HOLD
+      ref: OCF-PROC-INHALE-HOLD
       status: documented
       evidence_keys:
       - hplus.function.ocf-bod-010.function-body
-      before_steps:
-      - id: select-food-response
-        operation: select-intention
-        localization_key: command.procedure.select-intention
+      before_steps: []
     relationships:
       pairs_with:
       - OCF-CMD-BOD-010-PRIMARY
-  procedure_steps:
-  - id: select-food-response
-    operation: select-intention
-    instruction:
-      text: Choose an intention.
-      status: canonical
-      version: 1.0.0
-  - id: close-eyes
-    operation: close-eyes
-    instruction:
-      text: Close your eyes.
-      status: canonical
-      version: 1.0.0
-  - id: inhale
-    operation: inhale
-    instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
-  - id: hold
-    operation: hold-breath
-    instruction:
-      text: Hold your breath.
-      status: canonical
-      version: 1.0.0
-  - id: command
-    operation: think-or-say-command
-    instruction:
-      text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale
-    operation: exhale
-    instruction:
-      text: Exhale.
-      status: canonical
-      version: 1.0.0
+  procedure_steps: *id001
 tags:
 - text: nourishment
   status: draft
@@ -182,8 +138,8 @@ tags:
 common_uses:
 - text: Reflecting on the intention to make useful nourishment available from food.
   status: draft
-- text: Exploring the distinction between sufficient nourishment and unnecessary retention as imagery,
-    not a way to control metabolism or replace adequate eating.
+- text: Exploring the distinction between sufficient nourishment and unnecessary retention
+    as imagery, not a way to control metabolism or replace adequate eating.
   status: draft
 relationships:
   related_functions: []
@@ -195,152 +151,113 @@ entries:
   hplus.function.ocf-bod-010.opener:
     status: reviewed
     version: 1.3.0
-    text: 'This OCF exercise will teach you to direct how your
-
-      body extracts, uses, and retains energy and nourishment
-
-      from the food you eat.'
+    text: 'This OCF exercise will teach you to direct how your body uses energy and
+      nourishment from the food you eat, establishing a lasting pattern that remains
+      active until you choose to change it.'
   hplus.function.ocf-bod-010.function-body:
     status: reviewed
     version: 1.3.0
     cue_template:
       function_id: OCF-BOD-010
       allowed:
-      - cue.id.OCF-CMD-BOD-010-FOOD-LESS
       - cue.primary
-    text: 'From this moment forward, your body''s natural processes
-
-      of digestion, nourishment, and energy utilization
-
-      are becoming more efficient and balanced.
+      - cue.id.OCF-CMD-BOD-010-FOOD-LESS
+    text: 'From this moment forward, let your body''s natural processes of digestion,
+      nourishment, and energy utilization work together smoothly and efficiently.
 
 
-      Your body knows how to obtain the nourishment it needs,
-
-      use that nourishment effectively, and maintain
-
-      its natural balance.
+      Your body receives the nourishment it needs, uses available energy appropriately,
+      and maintains its natural processes of balance and renewal.
 
 
-      This healthy pattern is becoming a permanent,
-
-      automatic part of your body''s everyday function.
-
-
-      Whenever you wish to direct how your body
-
-      uses the food you eat, you have two commands.
+      You have two commands for directing this pattern.
 
 
       The first is "{{ cue.primary }}."
 
 
-      When you use {{ cue.primary }}, your body will
-
-      extract the greatest possible useful nourishment
-
-      and energy from the food you eat.
+      This mode encourages your body to extract and make fuller use of the available
+      energy and useful nourishment from the food you eat.
 
 
-      It will convert and distribute that nourishment
-
-      quickly and efficiently, making the fullest
-
-      possible use of the food available.
+      The second is "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}."
 
 
-      The second command is "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}."
+      This mode encourages your body to obtain sufficient nourishment for healthy
+      function while reducing unnecessary energy retention and storage.
 
 
-      When you use {{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}, your body will
-
-      recognize that nourishment is plentiful
-
-      and there is no need to store unnecessary excess.
+      In either mode, your body''s essential nutritional needs remain supported.
 
 
-      Your body will take from the food you eat
-
-      exactly what it needs for healthy energy,
-
-      balance, and maintenance.
+      Now understand that whichever mode you select becomes your active pattern.
 
 
-      Any excess that is not needed will be
-
-      safely and efficiently processed and released
-
-      through your body''s natural systems,
-
-      rather than unnecessarily retained or stored.
+      Your selected mode continues automatically throughout your everyday life, including
+      meals, activities, rest, and sleep, without requiring repeated activation.
 
 
-      Your body will maintain the nourishment it needs
-
-      while releasing what serves no useful purpose.
+      It remains active until you deliberately select the other mode.
 
 
-      Your body''s natural intelligence knows the difference
-
-      between what is needed and what is unnecessary.
+      When you switch modes, your new selection replaces the previous one.
 
 
-      To activate either function, close your eyes.
+      To select or change your mode, simply decide which response you want.
 
 
-      Inhale deeply and gently hold your breath.
+      Take a deep breath in and gently hold it.
 
 
-      Think or say in your mind, "{{ cue.primary }}"
-
-      or "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}," according to your desire.
-
-
-      Then exhale slowly through your mouth
-
-      and open your eyes.
+      While holding your breath, silently say to yourself either "{{ cue.primary }}"
+      or "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}," according to your choice.
 
 
-      Your body will respond to your chosen command,
-
-      directing its use of food energy accordingly.
+      Then slowly exhale through your mouth.
 
 
-      The more you use these functions,
-
-      the easier and more effective they will become.
+      Your chosen mode is now established and remains active until you change it.
 
 
-      Your body''s natural processes of nourishment,
+      There is no need to repeat the command before each meal.
 
-      energy utilization, and metabolic balance
 
-      will continue working automatically,
+      Whenever you wish to reinforce your current selection, you may use its command
+      again.
 
-      every day and every night.'
+
+      The more familiar you become with these commands, the easier and more natural
+      selecting and reinforcing your chosen mode becomes.
+
+
+      Your body''s natural processes of nourishment, energy utilization, and maintenance
+      continue automatically, working in accordance with your selected pattern.'
   hplus.function.ocf-bod-010.closer:
     status: reviewed
     version: 1.3.0
     cue_template:
       function_id: OCF-BOD-010
       allowed:
-      - cue.id.OCF-CMD-BOD-010-FOOD-LESS
       - cue.primary
-    text: 'Remember, whenever you wish to direct how your body
-
-      uses food energy, close your eyes, inhale deeply,
-
-      and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}"
-
-      or "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}," according to your desire.
+      - cue.id.OCF-CMD-BOD-010-FOOD-LESS
+    text: 'Remember, Nutricia allows you to select between fuller nourishment and
+      energy utilization with "{{ cue.primary }}," or sufficient nourishment with
+      reduced unnecessary retention and storage with "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS
+      }}."
 
 
-      Then exhale slowly through your mouth
+      Your last selected mode remains active until you deliberately change it.
 
-      and open your eyes.
+
+      To select, change, or reinforce your mode, inhale deeply and gently hold your
+      breath.
+
+
+      Silently say to yourself either "{{ cue.primary }}" or "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS
+      }}."
+
+
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Nutricia exercise.'
@@ -358,15 +275,27 @@ category_labels:
     status: canonical
 lifecycle:
   activation: manual
-  persistence: temporary
+  persistence: persistent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-bod-010.lifecycle.scopes.capability.description
+    baseline:
+      persistence: persistent
+      activation: conditional
+      description_key: functions.ocf-bod-010.lifecycle.scopes.baseline.description
+    application:
+      persistence: persistent
+      activation: manual
+      description_key: functions.ocf-bod-010.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -374,8 +303,8 @@ safety:
   level: health
   medical_relevance: true
   notes:
-  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment.
-    No guaranteed effects are claimed.
+  - Self-directed wellness practice; not a substitute for professional medical evaluation
+    or treatment. No guaranteed effects are claimed.
 function_version:
   created: '2026-09-12'
   current: 0.1.0
@@ -401,35 +330,41 @@ editorial:
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Food Energy Use
     recommended_primary_cue: PLUS-USE FOOD ENERGY
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: MORE selects useful food-energy extraction/conversion/distribution/use; LESS selects
-      sufficient nourishment with reduced unnecessary retention/storage. Close eyes, inhale/hold/select
-      complete cue/exhale/open eyes. Neither mode is permanently active; automatic baseline differs. Not
-      appetite control.
-    pair_reason: Useful energy utilization and reduced unnecessary retention are asymmetric operations.
-      Avoid Nourish Less, which can imply inadequate nourishment; decide both modes together.
-    title_cue_relationship_or_exception: Useful energy utilization and reduced unnecessary retention are
-      asymmetric operations. Avoid Nourish Less, which can imply inadequate nourishment; decide both modes
-      together.
-    teaching_disposition: New spoken association requires explicit body/reinforcement/closer approval
-    documentary_intent: Claimed control of food energy absorption/use rather than merely food desire.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: MORE selects useful food-energy extraction/conversion/distribution/use;
+      LESS selects sufficient nourishment with reduced unnecessary retention/storage.
+      Close eyes, inhale/hold/select complete cue/exhale/open eyes. Neither mode is
+      permanently active; automatic baseline differs. Not appetite control.
+    pair_reason: Useful energy utilization and reduced unnecessary retention are asymmetric
+      operations. Avoid Nourish Less, which can imply inadequate nourishment; decide
+      both modes together.
+    title_cue_relationship_or_exception: Useful energy utilization and reduced unnecessary
+      retention are asymmetric operations. Avoid Nourish Less, which can imply inadequate
+      nourishment; decide both modes together.
+    teaching_disposition: New spoken association requires explicit body/reinforcement/closer
+      approval
+    documentary_intent: Claimed control of food energy absorption/use rather than
+      merely food desire.
     alternatives:
     - title: Food Energy
       cue: PLUS-FOOD MORE
       secondary: PLUS-FOOD LESS
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 4cf93f0341d01e2c061ef0030baa6ff7f608f6dbd767e0488729951e3b2188e7
+  contract_sha256: 0bfdaee6abd71b94a1dd10cdf8a7bdbeefedaca48ba5c3fc0c5f071b8ba97fff
 record_metadata:
   legacy:
     command_ids:
@@ -451,22 +386,23 @@ record_metadata:
     legacy_commands:
     - PLUS-FOOD MORE
     - PLUS-FOOD LESS
-    rationale: Historical Food More/Food Less wording is retained for alternative food-energy responses,
-      not an incremental appetite or intensity scale.
+    rationale: Historical Food More/Food Less wording is retained for alternative
+      food-energy responses, not an incremental appetite or intensity scale.
     state: alias-listed
   status:
     evidence: community-hypothesis
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -499,22 +435,24 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004-KEPT
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: 'Keep Nutricia and BOTH current cues unchanged: PLUS-FOOD MORE / Plus Food More and PLUS-FOOD
-      LESS / Plus Food Less. Preserve all existing wording, metadata, distinct operations and active command
-      identities. Do not implement Food Energy Use, Plus Use Food Energy or Plus Retain Less Excess, and
-      do not retire either current cue.'
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: 'Keep Nutricia and BOTH current cues unchanged: PLUS-FOOD MORE / Plus Food
+      More and PLUS-FOOD LESS / Plus Food Less. Preserve all existing wording, metadata,
+      distinct operations and active command identities. Do not implement Food Energy
+      Use, Plus Use Food Energy or Plus Retain Less Excess, and do not retire either
+      current cue.'
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: 547f9531cf8ef9c0ff48923a4c0a86e7f9eafc10ea411bccc3629cd3e782c093
     status: retained
     current_values_sha256: dd087fa5457ce8e25a20235c2edf2b0077c75b4f90b0164246374919b3b521ea
     changed_narration_keys: []
     previous_resolved_text_sha256: {}
     current_resolved_text_sha256: {}
-    review_note: MORE selects useful food-energy extraction/conversion/distribution/use; LESS selects
-      sufficient nourishment with reduced unnecessary retention/storage. Close eyes, inhale/hold/select
-      complete cue/exhale/open eyes. Neither mode is permanently active; automatic baseline differs. Not
-      appetite control.
+    review_note: MORE selects useful food-energy extraction/conversion/distribution/use;
+      LESS selects sufficient nourishment with reduced unnecessary retention/storage.
+      Close eyes, inhale/hold/select complete cue/exhale/open eyes. Neither mode is
+      permanently active; automatic baseline differs. Not appetite control.
   - id: OCF-FUNCTIONAL-METADATA-PURPOSE
     kind: approved-functional-metadata
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
@@ -538,7 +476,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -728,8 +666,8 @@ content:
       source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -778,8 +716,8 @@ content:
       - perfect-nutritional-balance
       family: adjustable-food-energy-claims
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -789,8 +727,9 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: supported
-          summary: MORE cue claims maximal energy extraction; LESS cue claims only maintenance needs with
-            excess passing out. Opposing modes are not inferred from the title.
+          summary: MORE cue claims maximal energy extraction; LESS cue claims only
+            maintenance needs with excess passing out. Opposing modes are not inferred
+            from the title.
         closer:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -799,7 +738,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 57
           status: supported
-          summary: Reinforce remembered future use and close the learning context to ten.
+          summary: Reinforce remembered future use and close the learning context
+            to ten.
         consolidation:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -808,8 +748,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 65
           status: supported
-          summary: Sleep-to-twenty shell present; physiological/automatic integration is not established
-            by that instruction.
+          summary: Sleep-to-twenty shell present; physiological/automatic integration
+            is not established by that instruction.
         conversion:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -818,9 +758,10 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: inferred
-          summary: Do not reproduce unsupported physiological/medical mechanisms as fact or assume a psychological
-            reinterpretation is equivalent. Useful experiential operations and material purpose changes
-            require explicit content review; medical management and breath-hold issues remain outside
+          summary: Do not reproduce unsupported physiological/medical mechanisms as
+            fact or assume a psychological reinterpretation is equivalent. Useful
+            experiential operations and material purpose changes require explicit
+            content review; medical management and breath-hold issues remain outside
             software efficacy claims.
         future_use:
           locators:
@@ -830,8 +771,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: supported
-          summary: Select food-energy mode with the same procedure; source does not supply a mode-reset
-            phrase or measured nutritional effect.
+          summary: Select food-energy mode with the same procedure; source does not
+            supply a mode-reset phrase or measured nutritional effect.
         handoff:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -840,7 +781,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 182
           status: supported
-          summary: Counted waking/eyes-open return with target command reminder where intelligible.
+          summary: Counted waking/eyes-open return with target command reminder where
+            intelligible.
         identity:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -849,8 +791,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -859,8 +801,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: supported
-          summary: choose-more-or-less-food-energy-use; close-eyes-inhale-and-hold; represent-food-processing-region;
-            issue-selected-food-mode-cue; exhale-and-open-eyes
+          summary: choose-more-or-less-food-energy-use; close-eyes-inhale-and-hold;
+            represent-food-processing-region; issue-selected-food-mode-cue; exhale-and-open-eyes
         opener:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -869,8 +811,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 27
           status: supported
-          summary: Introduce a body-oriented intended response and receptive learning context, not evidence
-            that the physiology changed.
+          summary: Introduce a body-oriented intended response and receptive learning
+            context, not evidence that the physiology changed.
         preparation:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -879,8 +821,9 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 3
           status: supported
-          summary: Supported uninterrupted posture, settling movements/breathing, repository representation
-            for temporary setting-aside and counted ten-state preparation.
+          summary: Supported uninterrupted posture, settling movements/breathing,
+            repository representation for temporary setting-aside and counted ten-state
+            preparation.
         provenance:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -889,10 +832,11 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are not
-            independent corroboration. Source accuracy/authentication remains unresolved. Source-designated
-            derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact timing
-            or original underlay; unspecified cancellation remains unknown.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. Source-designated derivative is unauthenticated. Count/repetition/ambient
+            artifacts do not establish exact timing or original underlay; unspecified
+            cancellation remains unknown.
         purpose:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -901,7 +845,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 1
           status: supported
-          summary: Claimed control of food energy absorption/use rather than merely food desire.
+          summary: Claimed control of food energy absorption/use rather than merely
+            food desire.
         rehearsal:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -910,8 +855,8 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: not-present
-          summary: No distinct listener test of physiological outcome is established; teaching repetition
-            and ASR ambient tokens are not outcome verification.
+          summary: No distinct listener test of physiological outcome is established;
+            teaching repetition and ASR ambient tokens are not outcome verification.
         safety_claims:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -920,8 +865,9 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 33
           status: supported
-          summary: voluntary-caloric-absorption-control; excess-energy-elimination; perfect-nutritional-balance.
-            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: voluntary-caloric-absorption-control; excess-energy-elimination;
+            perfect-nutritional-balance. Claims are classified as source assertions,
+            not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -930,8 +876,9 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 27
           status: supported
-          summary: Reference learning shell prepares ten, opens eleven, closes to ten and uses sleep-to-twenty
-            plus waking return where preserved; runtime OCF requirements remain separate and unknown.
+          summary: Reference learning shell prepares ten, opens eleven, closes to
+            ten and uses sleep-to-twenty plus waking return where preserved; runtime
+            OCF requirements remain separate and unknown.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
@@ -940,9 +887,10 @@ content:
             source_sha256: c57a1573700b190e1b76d34f083d6fb70de0d81aad43f540e09458a45abb7bb6
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Source-designated
-            derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact timing
-            or original underlay; unspecified cancellation remains unknown.
+          summary: Investigated the full available source; this operation is not established.
+            Source-designated derivative is unauthenticated. Count/repetition/ambient
+            artifacts do not establish exact timing or original underlay; unspecified
+            cancellation remains unknown.
       source_extent:
         content_group_sha256: a4722ea4cc6e024374663ac2997577ef99a71eba81c290d0190813340e4d419b
         end_line: 199
@@ -1025,12 +973,13 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Source-designated derivative is unauthenticated. Count/repetition/ambient artifacts do not establish
-      exact timing or original underlay; unspecified cancellation remains unknown.
-    - Do not reproduce unsupported physiological/medical mechanisms as fact or assume a psychological
-      reinterpretation is equivalent. Useful experiential operations and material purpose changes require
-      explicit content review; medical management and breath-hold issues remain outside software efficacy
-      claims.
+    - Source-designated derivative is unauthenticated. Count/repetition/ambient artifacts
+      do not establish exact timing or original underlay; unspecified cancellation
+      remains unknown.
+    - Do not reproduce unsupported physiological/medical mechanisms as fact or assume
+      a psychological reinterpretation is equivalent. Useful experiential operations
+      and material purpose changes require explicit content review; medical management
+      and breath-hold issues remain outside software efficacy claims.
     states:
       preferred: []
       required: []

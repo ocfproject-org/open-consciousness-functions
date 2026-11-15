@@ -175,6 +175,7 @@ def test_release_and_cancel_procedures_match_their_command_context():
         command for command in short_fix.command_records if command.role == "release"
     )
     assert [step["operation"] for step in resolve_procedure(short_fix_release, procedures)] == [
+        "close-eyes",
         "focus-target",
         "inhale",
         "hold-breath",

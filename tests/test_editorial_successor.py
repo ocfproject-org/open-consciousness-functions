@@ -13,13 +13,12 @@ pytestmark = pytest.mark.integration
 
 def test_exact_approved_resources_and_immutable_receipts():
     receipt = editorial_successor.verify_resources()
-    assert len(receipt["resources"]) == 10
+    assert len(receipt["resources"]) == 23
     assert receipt["publication_authorized"] is False
     keys = receipt["hashes"]["resolved_entries"]
-    assert len([key for key in keys if key.startswith("hplus.")]) == 28
-    assert not any(
-        "ocf-bod-008.opener" in key or "ocf-bod-008.function-body" in key for key in keys
-    )
+    assert len([key for key in keys if key.startswith("hplus.")]) == 69
+    assert any("ocf-bod-008.opener" in key for key in keys)
+    assert any("ocf-bod-008.function-body" in key for key in keys)
 
 
 @pytest.mark.parametrize("field", ["cue", "lifecycle", "immune-body", "narration", "relationship"])

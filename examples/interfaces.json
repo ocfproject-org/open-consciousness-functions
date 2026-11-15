@@ -2009,7 +2009,7 @@
       "verification": "runtime JSON schema checked by --execute-read-only"
     },
     {
-      "example_sha256": "cf351653305d19a01a71a185acbe82d1df10e8292db03747574c72017565858e",
+      "example_sha256": "7571e9651d2152ce15cefb4e75fe81888fbaf754b5e864d28ce91e96b3336efd",
       "schema": "command-procedure.schema.json",
       "source": "function-content/command-procedures.yaml",
       "verification": "structural schema only; not semantic, asset, rights or release approval"
@@ -2180,7 +2180,7 @@
       "verification": "structural schema only; not semantic, asset, rights or release approval"
     },
     {
-      "example_sha256": "8be1cc72a7a77bbf492c44843c7f2635ca325b66776e67a928b704459465edf5",
+      "example_sha256": "f0d9823e90e20e7b4b53e227473aebfbda41da3acc7b5c660bc27e3e6429df07",
       "schema": "session-plan.schema.json",
       "source": "audio/session-plans/en-US/OCF-FND-002.json",
       "verification": "structural schema only; not semantic, asset, rights or release approval"

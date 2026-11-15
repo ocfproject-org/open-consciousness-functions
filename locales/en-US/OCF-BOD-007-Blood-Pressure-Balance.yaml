@@ -7,17 +7,16 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: A self-directed practice focused on supporting healthy blood pressure regulation, coordinated
-    heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing
-    needs, with conscious reinforcement when desired.
+  text: Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular
+    balance that adapts to the body's changing needs, with conscious reinforcement when desired.
   status: canonical
   version: 1.0.0
 metadata_entries:
   functions.ocf-bod-007.lifecycle.scopes.capability.description:
     text: The ability to reinforce cardiovascular awareness and relaxation remains available.
   functions.ocf-bod-007.lifecycle.scopes.baseline.description:
-    text: The narrated adaptive cardiovascular maintenance baseline persists, adjusting to rest and activity;
-      not fixed pressure or continuous lowering.
+    text: The narrated adaptive cardiovascular maintenance baseline persists, adjusting to rest and activity; not
+      fixed pressure or continuous lowering.
   functions.ocf-bod-007.lifecycle.scopes.application.description:
     text: Optional conscious reinforcement of the adaptive baseline; not a permanently intensified state.
 activation:
@@ -85,7 +84,7 @@ activation:
   - id: exhale
     operation: exhale
     instruction:
-      text: Then slowly exhale through your mouth, as though gently blowing out a candle.
+      text: Then slowly exhale through your mouth.
       status: reviewed
       version: 1.0.0
 secondary_commands: []
@@ -102,8 +101,7 @@ tags:
 common_uses:
 - text: Practicing calm awareness of the heart and blood vessels.
   status: draft
-- text: Reflecting on relaxation and balance without using felt sensations as a blood-pressure measurement
-    or treatment.
+- text: Reflecting on relaxation and balance without using felt sensations as a blood-pressure measurement or treatment.
   status: draft
 relationships:
   related_functions: []
@@ -115,9 +113,8 @@ entries:
   hplus.function.ocf-bod-007.opener:
     status: reviewed
     version: 1.2.0
-    text: This OCF exercise will teach you to reinforce your body's natural ability to regulate blood
-      pressure, supporting healthy circulation, cardiovascular balance, and coordinated heart and blood
-      vessel function.
+    text: This OCF exercise will teach you to reinforce your body's natural ability to regulate blood pressure,
+      supporting healthy circulation, cardiovascular balance, and coordinated heart and blood vessel function.
   hplus.function.ocf-bod-007.function-body:
     status: reviewed
     version: 1.2.0
@@ -129,32 +126,30 @@ entries:
       and cardiovascular maintenance work together in healthy balance.
 
 
-      Let your heart and blood vessels work smoothly and efficiently, supporting the circulation of oxygen
-      and nourishment throughout your body.
+      Let your heart and blood vessels work smoothly and efficiently, supporting the circulation of oxygen and nourishment
+      throughout your body.
 
 
-      Let your blood vessels remain healthy, strong, and naturally flexible, responding appropriately
-      to your body''s changing needs.
+      Let your blood vessels remain healthy, strong, and naturally flexible, responding appropriately to your body''s
+      changing needs.
 
 
-      When you are resting, let your cardiovascular system settle into calm, comfortable, and efficient
-      activity.
+      When you are resting, let your cardiovascular system settle into calm, comfortable, and efficient activity.
 
 
-      When you are active, let your heart and blood vessels adjust naturally, providing the circulation
-      and support your body requires.
+      When you are active, let your heart and blood vessels adjust naturally, providing the circulation and support
+      your body requires.
 
 
-      Let unnecessary physical tension ease, allowing your breathing, muscles, and mind to return to a
-      comfortable, balanced state.
+      Let unnecessary physical tension ease, allowing your breathing, muscles, and mind to return to a comfortable,
+      balanced state.
 
 
-      This pattern of healthy cardiovascular regulation and maintenance is permanently established within
-      you.
+      This pattern of healthy cardiovascular regulation and maintenance is permanently established within you.
 
 
-      It continues automatically, whether you are awake, resting, or asleep, adjusting to your body''s
-      needs without conscious effort.
+      It continues automatically, whether you are awake, resting, or asleep, adjusting to your body''s needs without
+      conscious effort.
 
 
       Whenever you wish to reinforce this established pattern, simply close your eyes.
@@ -168,11 +163,11 @@ entries:
       "{{ cue.primary }}."
 
 
-      Then slowly exhale through your mouth, as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
-      As you exhale, let your heart and blood vessels continue working together in natural balance, supporting
-      healthy circulation and appropriate blood pressure regulation.
+      As you exhale, let your heart and blood vessels continue working together in natural balance, supporting healthy
+      circulation and appropriate blood pressure regulation.
 
 
       The more you use this command, the easier and more effective this conscious reinforcement becomes.'
@@ -183,8 +178,8 @@ entries:
       function_id: OCF-BOD-007
       allowed:
       - cue.primary
-    text: 'Remember, to reinforce your body''s natural blood pressure regulation and cardiovascular balance,
-      close your eyes.
+    text: 'Remember, to reinforce your body''s natural blood pressure regulation and cardiovascular balance, close
+      your eyes.
 
 
       Inhale comfortably and gently hold your breath.
@@ -195,7 +190,7 @@ entries:
       "{{ cue.primary }}."
 
 
-      Then slowly exhale through your mouth, as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Blood Pressure Balance exercise.'
@@ -211,7 +206,7 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
   scopes:
@@ -229,7 +224,7 @@ lifecycle:
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -237,8 +232,8 @@ safety:
   level: health
   medical_relevance: true
   notes:
-  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment.
-    No guaranteed effects are claimed.
+  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment. No guaranteed
+    effects are claimed.
 function_version:
   created: '2026-09-12'
   current: 0.1.0
@@ -264,28 +259,28 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Blood Pressure Balance
     recommended_primary_cue: PLUS-BALANCE BLOOD PRESSURE
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Appropriate cardiovascular regulation for rest/activity, not indiscriminate lowering.
-      Close eyes, attend to heart/vessels, comfortable inhale/hold/cue/exhale. Keep Blood explicit; do
-      not invent up/down modes.
-    pair_reason: Noun title and natural verb cue retain the explicit blood-pressure target and complete
-      spoken word order.
-    title_cue_relationship_or_exception: Noun title and natural verb cue retain the explicit blood-pressure
-      target and complete spoken word order.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer association
+      plan; approve controls together. No narration replacement text selected.
+    contextual_review: Appropriate cardiovascular regulation for rest/activity, not indiscriminate lowering. Close
+      eyes, attend to heart/vessels, comfortable inhale/hold/cue/exhale. Keep Blood explicit; do not invent up/down
+      modes.
+    pair_reason: Noun title and natural verb cue retain the explicit blood-pressure target and complete spoken word
+      order.
+    title_cue_relationship_or_exception: Noun title and natural verb cue retain the explicit blood-pressure target
+      and complete spoken word order.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
-    documentary_intent: Claimed perception and adjustment of a selected heart/vessel condition, framed
-      for high blood pressure.
+    documentary_intent: Claimed perception and adjustment of a selected heart/vessel condition, framed for high
+      blood pressure.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured timing;
+        do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved active changes; generated references
+        are current metadata, not proof of taught speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every composed
+        nonspoken marker; preserve originals. No recording relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech and final
+        rendered transcripts unverified.
 localization:
   status: complete
   contract_sha256: 70c5e067f37a3ff5b8f4ce171d0ee7b734905829dd0cec47e8bb3db0285b671b
@@ -319,10 +314,10 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
@@ -359,11 +354,11 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup. Preserve
-      procedures, controls, semantics, provenance and separately flagged metadata questions. Later user
-      instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical lookup. Preserve procedures,
+      controls, semantics, provenance and separately flagged metadata questions. Later user instruction releases
+      the draft-pilot freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's request.
+      Options and Nutricia kept unchanged; Comfort and Regenerate already published.
     source_row_sha256: 7e5af224ef2369f97facc8f086faa69195bb3c78776b0559684b748340ead9a1
     status: accepted
     previous_values_sha256: eaf85746e7599fa6657768e82862a90bb12fc20875085fedce251f70dba241b5
@@ -374,12 +369,12 @@ record_metadata:
       hplus.function.ocf-bod-007.closer: b684f4e7732815d8ce1a6f24c34ffa27563173264a504f52a65808fd5df003b3
     current_resolved_text_sha256:
       hplus.function.ocf-bod-007.closer: 4c26c841479502e206c74ce55dd7d3dce8ce530f245c9fb10efd637abbbc4bc9
-    review_note: Change title from Hypertension to Blood Pressure Balance and update exercise sign-off.
-      Normalize display cue to PLUS-BALANCE BLOOD PRESSURE; keep spoken Plus Balance Blood Pressure unchanged.
-      Preserve eye-closing, heart and blood-vessel attention, comfortable inhale/hold/cue/candle-like
-      exhale and surrounding suggestions. Retain Hypertension and former display spelling as historical
-      lookup. Preserve appropriate cardiovascular adjustment to bodily needs rather than indiscriminate
-      lowering; introduce no pressure-up, pressure-down or release mode.
+    review_note: Change title from Hypertension to Blood Pressure Balance and update exercise sign-off. Normalize
+      display cue to PLUS-BALANCE BLOOD PRESSURE; keep spoken Plus Balance Blood Pressure unchanged. Preserve eye-closing,
+      heart and blood-vessel attention, comfortable inhale/hold/cue/candle-like exhale and surrounding suggestions.
+      Retain Hypertension and former display spelling as historical lookup. Preserve appropriate cardiovascular
+      adjustment to bodily needs rather than indiscriminate lowering; introduce no pressure-up, pressure-down or
+      release mode.
     approval_response: '1'
     review_position: 19
     separate_review_needed: true
@@ -396,7 +391,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -585,8 +580,8 @@ content:
       source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match does not establish absence of
+      an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -629,8 +624,7 @@ content:
       - automatic-self-regulation
       family: targeted-body-perception-and-balance
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication or runtime state binding
       sections:
         association:
           locators:
@@ -640,8 +634,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 51
           status: supported
-          summary: Pair source cue/breathing with the selected body-related response; actual canonical
-            and legacy command variants stay in identity metadata.
+          summary: Pair source cue/breathing with the selected body-related response; actual canonical and legacy
+            command variants stay in identity metadata.
         closer:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -659,8 +653,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 97
           status: supported
-          summary: Sleep-to-twenty shell present; physiological/automatic integration is not established
-            by that instruction.
+          summary: Sleep-to-twenty shell present; physiological/automatic integration is not established by that
+            instruction.
         conversion:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -669,8 +663,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 51
           status: inferred
-          summary: Subjective awareness cannot diagnose vascular state or establish blood-pressure treatment.
-            Any safer body-awareness design would materially alter those claims and needs review.
+          summary: Subjective awareness cannot diagnose vascular state or establish blood-pressure treatment. Any
+            safer body-awareness design would materially alter those claims and needs review.
         future_use:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -698,8 +692,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 51
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source cue association
+            inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -718,8 +712,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 43
           status: supported
-          summary: Introduce a body-oriented intended response and receptive learning context, not evidence
-            that the physiology changed.
+          summary: Introduce a body-oriented intended response and receptive learning context, not evidence that
+            the physiology changed.
         preparation:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -728,8 +722,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 5
           status: supported
-          summary: Supported uninterrupted posture, settling movements/breathing, repository representation
-            for temporary setting-aside and counted ten-state preparation.
+          summary: Supported uninterrupted posture, settling movements/breathing, repository representation for
+            temporary setting-aside and counted ten-state preparation.
         provenance:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -738,10 +732,10 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are not
-            independent corroboration. Source accuracy/authentication remains unresolved. Source-designated
-            derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact timing
-            or original underlay; unspecified cancellation remains unknown.
+          summary: Complete available source_transcript text inspected; shared representations are not independent
+            corroboration. Source accuracy/authentication remains unresolved. Source-designated derivative is unauthenticated.
+            Count/repetition/ambient artifacts do not establish exact timing or original underlay; unspecified cancellation
+            remains unknown.
         purpose:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -750,8 +744,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 3
           status: supported
-          summary: Claimed perception and adjustment of a selected heart/vessel condition, framed for
-            high blood pressure.
+          summary: Claimed perception and adjustment of a selected heart/vessel condition, framed for high blood
+            pressure.
         rehearsal:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -760,8 +754,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 51
           status: not-present
-          summary: No distinct listener test of physiological outcome is established; teaching repetition
-            and ASR ambient tokens are not outcome verification.
+          summary: No distinct listener test of physiological outcome is established; teaching repetition and ASR
+            ambient tokens are not outcome verification.
         safety_claims:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -780,8 +774,8 @@ content:
             source_sha256: 3765f87d7e0f095764dbf8e7b4435134b550a19682ce5c0ff94a0a424a93d09a
             start_line: 43
           status: supported
-          summary: Reference learning shell prepares ten, opens eleven, closes to ten and uses sleep-to-twenty
-            plus waking return where preserved; runtime OCF requirements remain separate and unknown.
+          summary: Reference learning shell prepares ten, opens eleven, closes to ten and uses sleep-to-twenty plus
+            waking return where preserved; runtime OCF requirements remain separate and unknown.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
@@ -791,8 +785,8 @@ content:
             start_line: 1
           status: unknown
           summary: Investigated the full available source; this operation is not established. Source-designated
-            derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact timing
-            or original underlay; unspecified cancellation remains unknown.
+            derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact timing or original
+            underlay; unspecified cancellation remains unknown.
       source_extent:
         content_group_sha256: 6f407e876aa7b93275165b395dfb13bc301f75315583e5436577111bb9894bb7
         end_line: 204
@@ -875,10 +869,10 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Source-designated derivative is unauthenticated. Count/repetition/ambient artifacts do not establish
-      exact timing or original underlay; unspecified cancellation remains unknown.
-    - Subjective awareness cannot diagnose vascular state or establish blood-pressure treatment. Any safer
-      body-awareness design would materially alter those claims and needs review.
+    - Source-designated derivative is unauthenticated. Count/repetition/ambient artifacts do not establish exact
+      timing or original underlay; unspecified cancellation remains unknown.
+    - Subjective awareness cannot diagnose vascular state or establish blood-pressure treatment. Any safer body-awareness
+      design would materially alter those claims and needs review.
     states:
       preferred: []
       required: []

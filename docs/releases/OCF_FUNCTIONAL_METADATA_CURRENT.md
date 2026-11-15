@@ -12,12 +12,12 @@ See [scope semantics](../FUNCTIONAL_METADATA.md). Functional metadata decision n
 
 ## OCF-AUT-001 — Automatic Action
 
-Automates a desired way of being so it runs without active effort.
+Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
 
 Function summary: `permanent` / `manual`; triggers: `[]`.
 
 - **capability** (`permanent`): The ability to develop automatic skills remains available.
-- **baseline** (`permanent`): Correctly learned selected skill patterns are retained; each performance remains observable, adjustable and stoppable.
+- **baseline** (`permanent`): Learned selected skill patterns are retained; each performance remains observable, adjustable, and stoppable.
 - **application** (`temporary`): One deliberate cue invocation or chosen performance; not continuously performing an action.
 
 - `OCF-CMD-AUT-001-PRIMARY`: `PLUS-AUTOMATE`; role `activation`; effect `permanent`; invocation `manual` / `temporary`.
@@ -36,7 +36,7 @@ Function summary: `permanent` / `manual`; triggers: `[]`.
 
 ## OCF-BOD-007 — Blood Pressure Balance
 
-A self-directed practice focused on supporting healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
+Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
 
 Function summary: `permanent` / `manual`; triggers: `[]`.
 
@@ -48,7 +48,7 @@ Function summary: `permanent` / `manual`; triggers: `[]`.
 
 ## OCF-BOD-008 — Immune Readiness
 
-Supports a self-directed practice of immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
 
 Function summary: `permanent` / `manual`; triggers: `[]`.
 
@@ -56,16 +56,20 @@ Function summary: `permanent` / `manual`; triggers: `[]`.
 
 ## OCF-BOD-010 — Nutricia
 
-Supports conscious selection between fuller use of food energy and nourishment, or sufficient nourishment with reduced unnecessary energy retention and storage.
+Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.
 
-Function summary: `temporary` / `manual`; triggers: `[]`.
+Function summary: `persistent` / `manual`; triggers: `[]`.
 
-- `OCF-CMD-BOD-010-PRIMARY`: `PLUS-FOOD MORE`; role `activation`; effect `temporary`; invocation `manual` / `unspecified`.
-- `OCF-CMD-BOD-010-FOOD-LESS`: `PLUS-FOOD LESS`; role `mode`; effect `temporary`; invocation `manual` / `unspecified`.
+- **capability** (`permanent`): The ability to choose and change either food-energy mode remains available.
+- **baseline** (`persistent`): No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed.
+- **application** (`persistent`): The selected mode persists across meals, activities, rest, and sleep; it is not reapplied automatically before each meal.
+
+- `OCF-CMD-BOD-010-PRIMARY`: `PLUS-FOOD MORE`; role `activation`; effect `persistent`; invocation `manual` / `unspecified`.
+- `OCF-CMD-BOD-010-FOOD-LESS`: `PLUS-FOOD LESS`; role `mode`; effect `persistent`; invocation `manual` / `unspecified`.
 
 ## OCF-BOD-011 — Hormonal Transitions
 
-Supports graceful passage through internal transitions.
+Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
 
 Function summary: `permanent` / `manual`; triggers: `[]`.
 
@@ -77,19 +81,19 @@ Function summary: `permanent` / `manual`; triggers: `[]`.
 
 ## OCF-BOD-013 — Body Tune-Up
 
-A general self-directed balance-and-heal tune-up practice.
+Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
 
 Function summary: `permanent` / `manual`; triggers: `[]`.
 
 - **capability** (`permanent`): The ability to direct attention toward a selected body area remains available.
-- **baseline** (`permanent`): The narrated whole-body maintenance and renewal baseline persists.
-- **application** (`temporary`): Conscious selected-area reinforcement; not continuous intensified repair in that area.
+- **baseline** (`permanent`): The whole body maintenance and renewal baseline persists; no selected area is required.
+- **application** (`temporary`): Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area.
 
 - `OCF-CMD-BOD-013-PRIMARY`: `PLUS-TUNE-UP`; role `activation`; effect `temporary`; invocation `manual` / `temporary`.
 
 ## OCF-COG-001 — Information Access
 
-Accesses intuition, memory, and inner knowledge on demand.
+Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
 
 Function summary: `temporary` / `manual`; triggers: `[]`.
 
