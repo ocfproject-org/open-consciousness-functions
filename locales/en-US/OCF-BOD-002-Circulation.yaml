@@ -324,7 +324,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-bod-002-primary.explanation
       display_cue_key: commands.ocf-cmd-bod-002-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-bod-002-primary.spoken-cue
-  predecessor_resource_sha256: 0f1fc183194fb7ca9a2355fcfee696d683b6c0f6be41e0902115f119cd9cb13b
   editorial_decisions:
   - id: OCF-COMMAND-SIMPLIFICATION-001
     kind: approved-command-simplification

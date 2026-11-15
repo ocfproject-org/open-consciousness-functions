@@ -532,7 +532,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-sen-005-legacy-02.usage
       purpose_key: functions.ocf-sen-005.purpose
       explanation_key: commands.ocf-cmd-sen-005-legacy-02.explanation
-  predecessor_resource_sha256: b259a3f228714b1f3d5aa540ecb69d785ff15fa04c7e10a10e5c7a9b6a404a03
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

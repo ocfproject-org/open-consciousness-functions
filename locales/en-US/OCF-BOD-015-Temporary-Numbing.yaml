@@ -520,7 +520,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-015-legacy-02.usage
       purpose_key: functions.ocf-bod-015.purpose
       explanation_key: commands.ocf-cmd-bod-015-legacy-02.explanation
-  predecessor_resource_sha256: 28ad465da67ce686877b94444392dca654f4bee1a7b855165e02611ab9dbddf3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

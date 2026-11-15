@@ -602,7 +602,6 @@ record_metadata:
     phrase: Plus Release
     source_narration_key: hplus.function.ocf-exp-002.function-body
     status: observed
-  predecessor_resource_sha256: b8a5f8c2408e5816c8c9e3099a8f1e99163863815708bf462b369002c98b4f9f
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

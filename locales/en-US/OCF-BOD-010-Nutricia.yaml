@@ -428,7 +428,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-010-food-less.usage
       purpose_key: functions.ocf-bod-010.purpose
       explanation_key: commands.ocf-cmd-bod-010-food-less.explanation
-  predecessor_resource_sha256: eb9330abc8fd5b03ccc15aea644ceb4990051a1dae42797f41dc036c9b40c494
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004-KEPT
     kind: approved-title-cue

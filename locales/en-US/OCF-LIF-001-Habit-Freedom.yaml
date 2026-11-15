@@ -342,7 +342,6 @@ record_metadata:
       text: Plus Free This Habit
       narration_key: hplus.function.ocf-lif-001.function-body
       relationship: canonical-match
-  predecessor_resource_sha256: 3557fcd51563c091a7df3396c5abacc27f41cd0d59ee1084ebaccfeffb6cd096
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

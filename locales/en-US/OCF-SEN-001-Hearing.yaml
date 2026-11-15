@@ -399,7 +399,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-sen-001-hear-less.usage
       purpose_key: functions.ocf-sen-001.purpose
       explanation_key: commands.ocf-cmd-sen-001-hear-less.explanation
-  predecessor_resource_sha256: 02726d88ddc42a1d272dde7d6b6a9f315e2127530c632109f01430f2b4ed16ba
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

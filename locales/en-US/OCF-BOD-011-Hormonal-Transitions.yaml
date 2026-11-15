@@ -349,7 +349,6 @@ record_metadata:
       text: Plus Hormone Balance
       narration_key: hplus.function.ocf-bod-011.function-body
       relationship: canonical-match
-  predecessor_resource_sha256: f9cb58f3505b7a02e6ad59fc418d5964e31a0aca663fe9ea94c3e9065d1ebdc2
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

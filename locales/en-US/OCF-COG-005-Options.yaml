@@ -374,7 +374,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-cog-005-legacy-01.usage
       purpose_key: functions.ocf-cog-005.purpose
       explanation_key: commands.ocf-cmd-cog-005-legacy-01.explanation
-  predecessor_resource_sha256: ba35e3c78529f4b51005a70a178305941634f35739c2b45c3388259578a84a30
   editorial_decisions:
   - id: OCF-OPTIONS-001
     kind: approved-command-presentation-change

@@ -374,7 +374,6 @@ record_metadata:
       label_key: commands.ocf-cmd-emo-002-legacy-01.label
       purpose_key: functions.ocf-emo-002.purpose
       usage_key: commands.ocf-cmd-emo-002-legacy-01.usage
-  predecessor_resource_sha256: 5a1650db8f0ff5d1775faa01d09ae1a91c84ba70c822d4ec763180ac3194fbc6
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

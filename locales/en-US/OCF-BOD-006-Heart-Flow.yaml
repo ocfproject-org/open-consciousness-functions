@@ -355,7 +355,6 @@ record_metadata:
       narration_key: hplus.function.ocf-bod-006.function-body
       relationship: canonical-match
       text: Plus Heart Flow
-  predecessor_resource_sha256: a3a66f0dc363405f51f59d80b75bd26b2250eafaf452192e79f8d345ca268bae
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

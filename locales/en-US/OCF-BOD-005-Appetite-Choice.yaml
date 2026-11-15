@@ -347,7 +347,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-bod-005-primary.explanation
       display_cue_key: commands.ocf-cmd-bod-005-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-bod-005-primary.spoken-cue
-  predecessor_resource_sha256: ba7e61adbd9892bfd19a59ddcdd0f8abc309e8bd10e61df308e4d4bbb5834046
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

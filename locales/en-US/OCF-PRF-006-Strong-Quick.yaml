@@ -348,7 +348,6 @@ record_metadata:
     kind: former-teaching
     command_id: OCF-CMD-PRF-006-RELEASE
     decision: Removed from active Strong-Quick use; retained for historical lookup.
-  predecessor_resource_sha256: a62055246485a3d24c6aa1834ec73afb4ec9f6d57c6281f24b7f77daeb55116b
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

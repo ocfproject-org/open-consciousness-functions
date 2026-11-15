@@ -347,7 +347,6 @@ record_metadata:
       text: Plus Balance Blood Pressure
       narration_key: hplus.function.ocf-bod-007.function-body
       relationship: variant
-  predecessor_resource_sha256: 09fe7fb961237e475f312b2d17817f9168d9ee4bb549cec6af40f9496e86e8e9
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

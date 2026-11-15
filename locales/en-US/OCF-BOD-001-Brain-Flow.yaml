@@ -363,7 +363,6 @@ record_metadata:
       narration_key: hplus.function.ocf-bod-001.function-body
       relationship: canonical-match
       text: Plus Brain Flow
-  predecessor_resource_sha256: 5c7a9c6426fd2f4732862adb1246e8d61fe55a908ef9db2e94703e11e6264abd
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

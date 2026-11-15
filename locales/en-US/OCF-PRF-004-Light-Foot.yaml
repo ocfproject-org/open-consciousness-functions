@@ -353,7 +353,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-prf-004-legacy-01.usage
       purpose_key: functions.ocf-prf-004.purpose
       explanation_key: commands.ocf-cmd-prf-004-legacy-01.explanation
-  predecessor_resource_sha256: 0b6e79e874f90f1a5ed5507696249555621e1898ea366307fbd7dfbb7081ea64
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

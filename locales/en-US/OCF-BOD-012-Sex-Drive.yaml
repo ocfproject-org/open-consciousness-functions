@@ -567,7 +567,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-012-legacy-02.usage
       purpose_key: functions.ocf-bod-012.purpose
       explanation_key: commands.ocf-cmd-bod-012-legacy-02.explanation
-  predecessor_resource_sha256: 385497e469468d2ebdf6c3f601875d01b399e8521fe18884722d70470f8a91f7
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

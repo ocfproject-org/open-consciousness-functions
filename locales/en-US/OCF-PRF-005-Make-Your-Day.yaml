@@ -349,7 +349,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-prf-005-primary.usage
       purpose_key: functions.ocf-prf-005.purpose
       explanation_key: commands.ocf-cmd-prf-005-primary.explanation
-  predecessor_resource_sha256: 014ce0e90f86f0b18f18e892d0740e6de038ac4b4e25e554f659ae50977f327a
   editorial_decisions:
   - id: REL-PRF005-EXP001
     kind: approved-relationship

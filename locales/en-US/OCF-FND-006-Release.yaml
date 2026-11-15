@@ -296,7 +296,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-fnd-006-primary.usage
       purpose_key: functions.ocf-fnd-006.purpose
       explanation_key: commands.ocf-cmd-fnd-006-primary.explanation
-  predecessor_resource_sha256: f838516135c05cdf82caccf31d36c3da0e8e6720d717f9e787319fb970a0faf8
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

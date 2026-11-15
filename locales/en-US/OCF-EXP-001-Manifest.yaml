@@ -475,7 +475,6 @@ record_metadata:
       label_key: commands.ocf-cmd-exp-001-legacy-01.label
       purpose_key: functions.ocf-exp-001.purpose
       usage_key: commands.ocf-cmd-exp-001-legacy-01.usage
-  predecessor_resource_sha256: d10b1950b856f5dd12893b240cefab2b8f60e476a5922c67d0d17862b47332d6
   editorial_approval:
     approval_id: OCF-APPROVED-CANDIDATES-001
     decision: approve_full_draft

@@ -302,7 +302,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-fnd-003-primary.explanation
       display_cue_key: commands.ocf-cmd-fnd-003-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-fnd-003-primary.spoken-cue
-  predecessor_resource_sha256: 856a02db3ca015bfe37ef9989e5af50865e88a62d3ceddc0e37528676c228b71
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

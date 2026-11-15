@@ -332,7 +332,6 @@ record_metadata:
       narration_key: hplus.function.ocf-bod-009.function-body
       relationship: canonical-match
       text: Plus Breathe Better
-  predecessor_resource_sha256: c797f9420b237a52ac42bfc963be16a9ab6b08b33d3fb037fcbeda7549bfc3f9
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

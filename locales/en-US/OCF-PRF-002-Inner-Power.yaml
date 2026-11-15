@@ -405,7 +405,6 @@ record_metadata:
       label_key: commands.ocf-cmd-prf-002-legacy-01.label
       purpose_key: functions.ocf-prf-002.purpose
       usage_key: commands.ocf-cmd-prf-002-legacy-01.usage
-  predecessor_resource_sha256: 4cfe5b2000451582f67e7a3b5375c22b3145e81da892a3ce14dcec029c7678d4
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

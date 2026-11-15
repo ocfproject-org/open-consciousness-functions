@@ -298,7 +298,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-emo-001-primary.usage
       purpose_key: functions.ocf-emo-001.purpose
       explanation_key: commands.ocf-cmd-emo-001-primary.explanation
-  predecessor_resource_sha256: 46ac1604fd56a7bb7089e0e8def1eac0a89d80e46e0c421df6004f5995a17cb3
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

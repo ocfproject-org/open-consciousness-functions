@@ -337,7 +337,6 @@ record_metadata:
       text: Plus Immune Ready
       narration_key: hplus.function.ocf-bod-008.function-body
       relationship: canonical-match
-  predecessor_resource_sha256: 39083f8f3c8e41ce37965fb9dfbdfcd70494940e5c7e490ff23a46e8990184e3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

@@ -320,7 +320,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-com-001-primary.usage
       purpose_key: functions.ocf-com-001.purpose
       explanation_key: commands.ocf-cmd-com-001-primary.explanation
-  predecessor_resource_sha256: 7188ca74dc3b2dbacc677cd68f9cc9ca3d9068063239a1b74fa7cbb12eba3869
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

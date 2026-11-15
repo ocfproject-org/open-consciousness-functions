@@ -600,11 +600,6 @@
         "documentation": {
           "$ref": "function.schema.json#/properties/documentation"
         },
-        "predecessor_resource_sha256": {
-          "description": "Non-authoritative hash of the pre-consolidation locale bytes, retained for immutable lock verification; it cannot resolve or supply function data.",
-          "type": "string",
-          "pattern": "^[a-f0-9]{64}$"
-        },
         "commands": {
           "type": "array",
           "items": {

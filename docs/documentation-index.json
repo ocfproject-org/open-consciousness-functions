@@ -4205,7 +4205,7 @@
         "schemas/localized-function.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "5053cc9f8045892def89191e6c036e2522485496046d3d22cb3b7711c532ee13",
+      "sha256": "9e5e3105af23e4fe2818c22471efbb130169e659ac09ce08e4e1523ae4044054",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

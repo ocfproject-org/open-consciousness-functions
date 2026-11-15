@@ -345,7 +345,6 @@ record_metadata:
     phrase: Plus Release Eleven Access
     source_narration_key: hplus.function.ocf-fnd-001.access-close
     status: observed
-  predecessor_resource_sha256: 163b3601fefff57c66963dabc02a2da396e92e4a9e5643e4068b12fda55d7d6a
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

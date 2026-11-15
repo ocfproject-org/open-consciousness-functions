@@ -385,7 +385,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-fnd-002-primary.explanation
       display_cue_key: commands.ocf-cmd-fnd-002-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-fnd-002-primary.spoken-cue
-  predecessor_resource_sha256: 14dce1373af20dcf74240f67c98bccaf03311a6861a512fe852659127aaa36ec
   editorial_decisions:
   - id: OCF-COMMAND-SIMPLIFICATION-001
     kind: approved-command-simplification

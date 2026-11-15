@@ -1,5 +1,6 @@
 """Version selection, immutable writes, membership and exact dependency failures."""
 
+import hashlib
 import json
 
 import pytest
@@ -60,7 +61,14 @@ def test_explicit_successor_and_predecessor_verify_matching_versions(monkeypatch
 @pytest.mark.parametrize("mutation", ["identity", "unknown", "missing-dependency", "profile"])
 def test_successor_rejects_forged_or_incomplete_lock(monkeypatch, tmp_path, mutation):
     source, old, new = setup(monkeypatch, tmp_path)
-    defaults.create_lock(new, dependency_names=["content.yaml"])
+    engine_key = "audio/templates/sessions/test-engine.yaml"
+    engine_path = tmp_path / engine_key
+    engine_path.parent.mkdir(parents=True)
+    engine_path.write_text("locked engine input\n", encoding="utf-8")
+    predecessor = json.loads(old.read_text(encoding="utf-8"))
+    predecessor["files"][engine_key] = hashlib.sha256(engine_path.read_bytes()).hexdigest()
+    old.write_text(json.dumps(predecessor), encoding="utf-8")
+    defaults.create_lock(new, dependency_names=["content.yaml", engine_key])
     data = json.loads(new.read_text())
     if mutation == "identity":
         data["id"] = defaults.PREVIOUS_BASELINE_ID
@@ -105,11 +113,9 @@ def test_atomic_immutable_write_refuses_a_racing_creator(monkeypatch, tmp_path):
     assert new.read_text() == "concurrent human data\n"
 
 
-def test_missing_historical_function_key_uses_predecessor_digest_without_reading_it(
+def test_successor_lock_preserves_missing_historical_dependency_from_old_lock(
     monkeypatch, tmp_path
 ):
-    from ocf_tools import function_catalog
-
     monkeypatch.setattr(defaults, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(
         semantic_dsp, "load_profile", lambda identifier: {"id": identifier, "version": "1"}
@@ -129,7 +135,8 @@ def test_missing_historical_function_key_uses_predecessor_digest_without_reading
                     "template": {"id": "OCF-TPL-SESSION-HPLUS-LOCKED-004"},
                     "pacing": {"id": "OCF-PACING-HPLUS-LOCKED-004"},
                     "dsp": {"id": "OCF-DSP-HPLUS-LOCKED-002"},
-                }
+                },
+                "files": {},
             }
         ),
         encoding="utf-8",
@@ -137,25 +144,16 @@ def test_missing_historical_function_key_uses_predecessor_digest_without_reading
     legacy_key = "locales/en-US/hplus-OCF-COG-001.yaml"
     legacy_path = tmp_path / legacy_key
     expected = "a" * 64
-    monkeypatch.setattr(
-        function_catalog,
-        "resources",
-        lambda root: [
-            (
-                root / "locales/en-US/OCF-COG-001-Information-Access.yaml",
-                {
-                    "function_id": "OCF-COG-001",
-                    "record_metadata": {"predecessor_resource_sha256": expected},
-                },
-            )
-        ],
-    )
+    predecessor = json.loads(previous.read_text(encoding="utf-8"))
+    predecessor["files"][legacy_key] = expected
+    previous.write_text(json.dumps(predecessor), encoding="utf-8")
 
     def forbidden_file_read(path):
         pytest.fail(f"historical path must not be opened: {path}")
 
     monkeypatch.setattr(defaults, "sha256_of_file", forbidden_file_read)
-    lock = defaults.configuration_lock([legacy_key], baseline_id=defaults.PREVIOUS_BASELINE_ID)
+    lock = defaults.configuration_lock([legacy_key], baseline_id=defaults.BASELINE_ID)
 
     assert not legacy_path.exists()
     assert lock["files"] == {legacy_key: expected}
+    assert legacy_key in lock["excluded_predecessor_files"]

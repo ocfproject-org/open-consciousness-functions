@@ -408,7 +408,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-slp-001-legacy-01.usage
       purpose_key: functions.ocf-slp-001.purpose
       explanation_key: commands.ocf-cmd-slp-001-legacy-01.explanation
-  predecessor_resource_sha256: 87f8b3052e71c16b6fd5fa30cb0acdf83c2553393e581729b789ab988d0d4252
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

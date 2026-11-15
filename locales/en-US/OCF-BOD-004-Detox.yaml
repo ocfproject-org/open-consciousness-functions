@@ -368,7 +368,6 @@ record_metadata:
       label_key: commands.ocf-cmd-bod-004-legacy-01.label
       purpose_key: functions.ocf-bod-004.purpose
       usage_key: commands.ocf-cmd-bod-004-legacy-01.usage
-  predecessor_resource_sha256: 8985d20038bc9bc6174ec7b16d6670ee672da4c3deeee22f7cd72cea04d6b0a3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue

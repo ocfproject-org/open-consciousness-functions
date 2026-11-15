@@ -451,7 +451,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-emg-002-primary.explanation
       display_cue_key: commands.ocf-cmd-emg-002-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-emg-002-primary.spoken-cue
-  predecessor_resource_sha256: 0307dbf09d817284c9b47b57971c5c960bbdbc2689b03e3bb5ba98b0dc5e4ae3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

@@ -798,7 +798,6 @@ record_metadata:
     evidence: source-described
     implementation: specification-only
     maturity: legacy-mapped
-  predecessor_resource_sha256: 69861a0439aa8ec80f96f7f8a9dede9a61857ed523dfe5d824af8ab5ea6deed7
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

@@ -350,7 +350,6 @@ record_metadata:
       text: Plus Access Info
       narration_key: hplus.function.ocf-cog-001.function-body
       relationship: canonical-match
-  predecessor_resource_sha256: 35ccc6b8bc5020ecca19373b24166bc5188bc0b90f49564a03023f48741f0f8a
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue

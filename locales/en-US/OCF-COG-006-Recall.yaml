@@ -299,7 +299,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-cog-006-primary.usage
       purpose_key: functions.ocf-cog-006.purpose
       explanation_key: commands.ocf-cmd-cog-006-primary.explanation
-  predecessor_resource_sha256: 4af80f09eacd62aa71cc3891f726ce2cac01c56100d2e6b83e7768ae7b6c30f6
   editorial_decisions:
   - id: REL-COG006-COG001
     kind: approved-relationship

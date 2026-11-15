@@ -381,7 +381,6 @@ record_metadata:
       narration_key: hplus.function.ocf-emo-003.function-body
       relationship: canonical-match
       text: Plus Empathize
-  predecessor_resource_sha256: f662c37bc151b606ba630dd3ad17d1de572b028348475c75c6a953697bf862bd
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
