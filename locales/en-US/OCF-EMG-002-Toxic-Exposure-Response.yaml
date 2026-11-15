@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency
-    services, or medical evaluation.
+  text: 'Strengthen your body''s natural protective, detoxification, and elimination responses to harmful substances.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries:
   functions.ocf-emg-002.lifecycle.scopes.capability.description:
     text: Narrated harmful-exposure response readiness remains available, including when conscious invocation

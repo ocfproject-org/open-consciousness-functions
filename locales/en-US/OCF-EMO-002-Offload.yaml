@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Reduces selected recurring thought and emotional-pattern interference while retaining useful
-    memories and conscious choice.
+  text: 'Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-EMO-002-PRIMARY

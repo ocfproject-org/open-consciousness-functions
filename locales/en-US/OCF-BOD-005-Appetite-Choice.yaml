@@ -7,8 +7,7 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports deliberate eating choices and release of unnecessary cravings while preserving awareness
-    of genuine nutritional needs.
+  text: 'Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.'
   status: canonical
   version: 1.0.1
 metadata_entries:

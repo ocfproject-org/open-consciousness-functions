@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.
+  text: 'Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SEN-005-PRIMARY
@@ -367,9 +367,7 @@ entries:
 
       or "{{ cue.id.OCF-CMD-SEN-005-TOUCH-LESS }}," according to your intention.
 
-      Then exhale through your mouth as though gently
-
-      blowing out a candle, and open your eyes.
+      Then slowly exhale through your mouth and open your eyes.
 
 
       This concludes your OCF Touch exercise.'

@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting
-    surroundings.
+  text: 'Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SLP-005-PRIMARY

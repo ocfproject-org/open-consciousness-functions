@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services,
-    first aid, or professional care.
+  text: 'Strengthen your body''s automatic protective, healing, and restorative responses to physical injury.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries:
   functions.ocf-emg-001.lifecycle.scopes.capability.description:
     text: Narrated injury-response readiness remains available, including when conscious invocation is

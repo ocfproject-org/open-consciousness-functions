@@ -1567,7 +1567,7 @@
             "key": "functions.ocf-bod-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs."
+            "text": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices."
           },
           "related_commands": [],
           "relationships": {},
@@ -1688,7 +1688,7 @@
         "key": "functions.ocf-bod-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs."
+        "text": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -1720,7 +1720,7 @@
         "key": "functions.ocf-bod-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs."
+        "text": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices."
       },
       "slug": "eat-no-eat",
       "source_availability": "available",
@@ -3797,7 +3797,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
           },
           "related_commands": [
             {
@@ -3989,7 +3989,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
           },
           "related_commands": [
             {
@@ -4102,7 +4102,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
           },
           "related_commands": [],
           "relationships": {},
@@ -4175,7 +4175,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
           },
           "related_commands": [],
           "relationships": {},
@@ -4228,7 +4228,7 @@
         "key": "functions.ocf-bod-012.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+        "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -4238,7 +4238,7 @@
         "key": "functions.ocf-bod-012.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar."
+        "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
       },
       "slug": "sex-drive",
       "source_availability": "available",
@@ -6098,7 +6098,7 @@
             "key": "functions.ocf-cog-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Opens an internal space for quiet reflection; closes it again on completion."
+            "text": "Open communication with your total self for deeper reflection, insight, and understanding."
           },
           "related_commands": [],
           "relationships": {},
@@ -6198,7 +6198,7 @@
             "key": "functions.ocf-cog-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Opens an internal space for quiet reflection; closes it again on completion."
+            "text": "Open communication with your total self for deeper reflection, insight, and understanding."
           },
           "related_commands": [
             {
@@ -6282,7 +6282,7 @@
         "key": "functions.ocf-cog-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Opens an internal space for quiet reflection; closes it again on completion."
+        "text": "Open communication with your total self for deeper reflection, insight, and understanding."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -6314,7 +6314,7 @@
         "key": "functions.ocf-cog-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Opens an internal space for quiet reflection; closes it again on completion."
+        "text": "Open communication with your total self for deeper reflection, insight, and understanding."
       },
       "slug": "contemplation",
       "source_availability": "available",
@@ -6530,7 +6530,7 @@
             "key": "functions.ocf-cog-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval."
+            "text": "Capture and retain selected information and experiences for clear, reliable recall."
           },
           "related_commands": [],
           "relationships": {},
@@ -6650,7 +6650,7 @@
             "key": "functions.ocf-cog-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval."
+            "text": "Capture and retain selected information and experiences for clear, reliable recall."
           },
           "related_commands": [
             {
@@ -6792,7 +6792,7 @@
         "key": "functions.ocf-cog-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval."
+        "text": "Capture and retain selected information and experiences for clear, reliable recall."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -6824,7 +6824,7 @@
         "key": "functions.ocf-cog-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval."
+        "text": "Capture and retain selected information and experiences for clear, reliable recall."
       },
       "slug": "imprint",
       "source_availability": "available",
@@ -7040,7 +7040,7 @@
             "key": "functions.ocf-cog-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Opens perception of choices and alternatives."
+            "text": "Discover new possibilities, explore alternative choices, and understand potential outcomes."
           },
           "related_commands": [],
           "relationships": {},
@@ -7161,7 +7161,7 @@
         "key": "functions.ocf-cog-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Opens perception of choices and alternatives."
+        "text": "Discover new possibilities, explore alternative choices, and understand potential outcomes."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -7193,7 +7193,7 @@
         "key": "functions.ocf-cog-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Opens perception of choices and alternatives."
+        "text": "Discover new possibilities, explore alternative choices, and understand potential outcomes."
       },
       "slug": "options",
       "source_availability": "available",
@@ -7375,7 +7375,7 @@
             "key": "functions.ocf-cog-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Brings specific memories or learned material to mind on request."
+            "text": "Recall past experiences, memories, and learned information with greater clarity and detail."
           },
           "related_commands": [],
           "relationships": {},
@@ -7438,7 +7438,7 @@
         "key": "functions.ocf-cog-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Brings specific memories or learned material to mind on request."
+        "text": "Recall past experiences, memories, and learned information with greater clarity and detail."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -7470,7 +7470,7 @@
         "key": "functions.ocf-cog-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Brings specific memories or learned material to mind on request."
+        "text": "Recall past experiences, memories, and learned information with greater clarity and detail."
       },
       "slug": "recall",
       "source_availability": "available",
@@ -8178,7 +8178,7 @@
             "key": "functions.ocf-emg-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care."
+            "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
           },
           "related_commands": [],
           "relationships": {},
@@ -8289,7 +8289,7 @@
         "key": "functions.ocf-emg-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care."
+        "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -8299,7 +8299,7 @@
         "key": "functions.ocf-emg-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care."
+        "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
       },
       "slug": "emergency-injury",
       "source_availability": "unavailable",
@@ -8485,7 +8485,7 @@
             "key": "functions.ocf-emg-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation."
+            "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
           },
           "related_commands": [],
           "relationships": {},
@@ -8596,7 +8596,7 @@
         "key": "functions.ocf-emg-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation."
+        "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -8606,7 +8606,7 @@
         "key": "functions.ocf-emg-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation."
+        "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
       },
       "slug": "emergency-toxic",
       "source_availability": "unavailable",
@@ -8788,7 +8788,7 @@
             "key": "functions.ocf-emo-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Releases clinging, tension, or unwanted mental objects."
+            "text": "Release unwanted emotions and emotional tension, restoring calm and clarity."
           },
           "related_commands": [],
           "relationships": {},
@@ -8841,7 +8841,7 @@
         "key": "functions.ocf-emo-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Releases clinging, tension, or unwanted mental objects."
+        "text": "Release unwanted emotions and emotional tension, restoring calm and clarity."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -8851,7 +8851,7 @@
         "key": "functions.ocf-emo-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Releases clinging, tension, or unwanted mental objects."
+        "text": "Release unwanted emotions and emotional tension, restoring calm and clarity."
       },
       "slug": "let-go",
       "source_availability": "available",
@@ -9053,7 +9053,7 @@
             "key": "functions.ocf-emo-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice."
+            "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
           },
           "related_commands": [],
           "relationships": {},
@@ -9116,7 +9116,7 @@
         "key": "functions.ocf-emo-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice."
+        "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9148,7 +9148,7 @@
         "key": "functions.ocf-emo-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice."
+        "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
       },
       "slug": "off-loading",
       "source_availability": "available",
@@ -11173,7 +11173,7 @@
         "key": "functions.ocf-exp-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness."
+        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [],
@@ -11183,7 +11183,7 @@
         "key": "functions.ocf-exp-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness."
+        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings."
       },
       "slug": "clear-zone",
       "source_availability": "pending-source-review",
@@ -11907,7 +11907,7 @@
             "key": "functions.ocf-fnd-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Directs and sustains focused attention."
+            "text": "Strengthen concentration, sustain attention, and reduce distractions."
           },
           "related_commands": [],
           "relationships": {},
@@ -11980,7 +11980,7 @@
         "key": "functions.ocf-fnd-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Directs and sustains focused attention."
+        "text": "Strengthen concentration, sustain attention, and reduce distractions."
       },
       "reimplementation_status": "complete",
       "related_functions": [
@@ -12033,7 +12033,7 @@
         "key": "functions.ocf-fnd-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Directs and sustains focused attention."
+        "text": "Strengthen concentration, sustain attention, and reduce distractions."
       },
       "slug": "attention",
       "source_availability": "available",
@@ -12217,7 +12217,7 @@
             "key": "functions.ocf-fnd-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Replenishes a felt sense of energy and freshness."
+            "text": "Enter a short, restorative sleep and awaken refreshed, alert, and energized."
           },
           "related_commands": [],
           "relationships": {},
@@ -12280,7 +12280,7 @@
         "key": "functions.ocf-fnd-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Replenishes a felt sense of energy and freshness."
+        "text": "Enter a short, restorative sleep and awaken refreshed, alert, and energized."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -12312,7 +12312,7 @@
         "key": "functions.ocf-fnd-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Replenishes a felt sense of energy and freshness."
+        "text": "Enter a short, restorative sleep and awaken refreshed, alert, and energized."
       },
       "slug": "recharge",
       "source_availability": "available",
@@ -12482,7 +12482,7 @@
             "key": "functions.ocf-fnd-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Deepens physical and mental relaxation."
+            "text": "Release physical and mental tension, restoring deep relaxation and calm."
           },
           "related_commands": [],
           "relationships": {},
@@ -12545,7 +12545,7 @@
         "key": "functions.ocf-fnd-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Deepens physical and mental relaxation."
+        "text": "Release physical and mental tension, restoring deep relaxation and calm."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -12577,7 +12577,7 @@
         "key": "functions.ocf-fnd-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Deepens physical and mental relaxation."
+        "text": "Release physical and mental tension, restoring deep relaxation and calm."
       },
       "slug": "relax",
       "source_availability": "available",
@@ -12773,7 +12773,7 @@
             "key": "functions.ocf-fnd-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence."
+            "text": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence."
           },
           "related_commands": [],
           "relationships": {},
@@ -12826,7 +12826,7 @@
         "key": "functions.ocf-fnd-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence."
+        "text": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -12836,7 +12836,7 @@
         "key": "functions.ocf-fnd-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence."
+        "text": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence."
       },
       "slug": "reset",
       "source_availability": "available",
@@ -13018,7 +13018,7 @@
             "key": "functions.ocf-fnd-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Releases unhelpful states, prompts, or lingering experiences."
+            "text": "End selected temporary OCF function applications without losing their learned abilities."
           },
           "related_commands": [],
           "relationships": {},
@@ -13071,7 +13071,7 @@
         "key": "functions.ocf-fnd-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Releases unhelpful states, prompts, or lingering experiences."
+        "text": "End selected temporary OCF function applications without losing their learned abilities."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -13081,7 +13081,7 @@
         "key": "functions.ocf-fnd-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Releases unhelpful states, prompts, or lingering experiences."
+        "text": "End selected temporary OCF function applications without losing their learned abilities."
       },
       "slug": "release",
       "source_availability": "unavailable",
@@ -13290,7 +13290,7 @@
             "key": "functions.ocf-lif-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports stepping away from habitual, repeated behavior patterns."
+            "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
           },
           "related_commands": [],
           "relationships": {},
@@ -13411,7 +13411,7 @@
         "key": "functions.ocf-lif-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports stepping away from habitual, repeated behavior patterns."
+        "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -13443,7 +13443,7 @@
         "key": "functions.ocf-lif-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports stepping away from habitual, repeated behavior patterns."
+        "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
       },
       "slug": "de-hab",
       "source_availability": "available",
@@ -14492,7 +14492,7 @@
             "key": "functions.ocf-prf-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP."
+            "text": "Move with lighter, quieter steps, improved balance, and greater efficiency."
           },
           "related_commands": [],
           "relationships": {},
@@ -14603,7 +14603,7 @@
         "key": "functions.ocf-prf-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP."
+        "text": "Move with lighter, quieter steps, improved balance, and greater efficiency."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -14613,7 +14613,7 @@
         "key": "functions.ocf-prf-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP."
+        "text": "Move with lighter, quieter steps, improved balance, and greater efficiency."
       },
       "slug": "light-foot",
       "source_availability": "unavailable",
@@ -15072,7 +15072,7 @@
             "key": "functions.ocf-prf-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK."
+            "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
           },
           "related_commands": [],
           "relationships": {},
@@ -15145,7 +15145,7 @@
             "key": "functions.ocf-prf-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK."
+            "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
           },
           "related_commands": [],
           "relationships": {},
@@ -15303,7 +15303,7 @@
             "key": "functions.ocf-prf-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK."
+            "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
           },
           "related_commands": [
             {
@@ -15377,7 +15377,7 @@
         "key": "functions.ocf-prf-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK."
+        "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -15387,7 +15387,7 @@
         "key": "functions.ocf-prf-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK."
+        "text": "Call upon exceptional strength, speed, and coordination when immediate action is needed."
       },
       "slug": "strong-quick",
       "source_availability": "unavailable",
@@ -15578,7 +15578,7 @@
             "key": "functions.ocf-sen-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar."
+            "text": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination."
           },
           "related_commands": [
             {
@@ -15764,7 +15764,7 @@
             "key": "functions.ocf-sen-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar."
+            "text": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination."
           },
           "related_commands": [
             {
@@ -15857,7 +15857,7 @@
         "key": "functions.ocf-sen-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar."
+        "text": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -15867,7 +15867,7 @@
         "key": "functions.ocf-sen-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar."
+        "text": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination."
       },
       "slug": "hearing",
       "source_availability": "available",
@@ -16037,7 +16037,7 @@
             "key": "functions.ocf-sen-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images."
+            "text": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images."
           },
           "related_commands": [],
           "relationships": {},
@@ -16110,7 +16110,7 @@
             "key": "functions.ocf-sen-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images."
+            "text": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images."
           },
           "related_commands": [],
           "relationships": {},
@@ -16173,7 +16173,7 @@
         "key": "functions.ocf-sen-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images."
+        "text": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -16205,7 +16205,7 @@
         "key": "functions.ocf-sen-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images."
+        "text": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images."
       },
       "slug": "seeing",
       "source_availability": "available",
@@ -16396,7 +16396,7 @@
             "key": "functions.ocf-sen-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
           },
           "related_commands": [
             {
@@ -16582,7 +16582,7 @@
             "key": "functions.ocf-sen-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
           },
           "related_commands": [
             {
@@ -16695,7 +16695,7 @@
             "key": "functions.ocf-sen-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
           },
           "related_commands": [],
           "relationships": {},
@@ -16768,7 +16768,7 @@
             "key": "functions.ocf-sen-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
           },
           "related_commands": [],
           "relationships": {},
@@ -16831,7 +16831,7 @@
         "key": "functions.ocf-sen-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+        "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -16863,7 +16863,7 @@
         "key": "functions.ocf-sen-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar."
+        "text": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents."
       },
       "slug": "smell",
       "source_availability": "unavailable",
@@ -17054,7 +17054,7 @@
             "key": "functions.ocf-sen-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
           },
           "related_commands": [
             {
@@ -17240,7 +17240,7 @@
             "key": "functions.ocf-sen-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
           },
           "related_commands": [
             {
@@ -17353,7 +17353,7 @@
             "key": "functions.ocf-sen-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
           },
           "related_commands": [],
           "relationships": {},
@@ -17426,7 +17426,7 @@
             "key": "functions.ocf-sen-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+            "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
           },
           "related_commands": [],
           "relationships": {},
@@ -17479,7 +17479,7 @@
         "key": "functions.ocf-sen-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+        "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -17489,7 +17489,7 @@
         "key": "functions.ocf-sen-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar."
+        "text": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes."
       },
       "slug": "taste",
       "source_availability": "unavailable",
@@ -17680,7 +17680,7 @@
             "key": "functions.ocf-sen-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+            "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
           },
           "related_commands": [
             {
@@ -17866,7 +17866,7 @@
             "key": "functions.ocf-sen-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+            "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
           },
           "related_commands": [
             {
@@ -17979,7 +17979,7 @@
             "key": "functions.ocf-sen-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+            "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
           },
           "related_commands": [],
           "relationships": {},
@@ -18052,7 +18052,7 @@
             "key": "functions.ocf-sen-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+            "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
           },
           "related_commands": [],
           "relationships": {},
@@ -18115,7 +18115,7 @@
         "key": "functions.ocf-sen-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+        "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -18147,7 +18147,7 @@
         "key": "functions.ocf-sen-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar."
+        "text": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch."
       },
       "slug": "touch",
       "source_availability": "unavailable",
@@ -19215,7 +19215,7 @@
             "key": "functions.ocf-slp-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening."
+            "text": "Find answers, explore solutions, and gain deeper understanding through sleep."
           },
           "related_commands": [],
           "relationships": {},
@@ -19278,7 +19278,7 @@
         "key": "functions.ocf-slp-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening."
+        "text": "Find answers, explore solutions, and gain deeper understanding through sleep."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -19310,7 +19310,7 @@
         "key": "functions.ocf-slp-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening."
+        "text": "Find answers, explore solutions, and gain deeper understanding through sleep."
       },
       "slug": "wake-know",
       "source_availability": "available",
@@ -19525,7 +19525,7 @@
             "key": "functions.ocf-slp-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings."
+            "text": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions."
           },
           "related_commands": [],
           "relationships": {},
@@ -19588,7 +19588,7 @@
         "key": "functions.ocf-slp-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings."
+        "text": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -19620,7 +19620,7 @@
         "key": "functions.ocf-slp-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings."
+        "text": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions."
       },
       "slug": "sleep-easy",
       "source_availability": "unavailable",
@@ -19809,7 +19809,7 @@
             "key": "functions.ocf-slp-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE."
+            "text": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake."
           },
           "related_commands": [],
           "relationships": {},
@@ -19862,7 +19862,7 @@
         "key": "functions.ocf-slp-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE."
+        "text": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -19872,7 +19872,7 @@
         "key": "functions.ocf-slp-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE."
+        "text": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake."
       },
       "slug": "stay-awake",
       "source_availability": "unavailable",

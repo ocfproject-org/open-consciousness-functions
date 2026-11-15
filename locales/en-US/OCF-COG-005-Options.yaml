@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Opens perception of choices and alternatives.
+  text: 'Discover new possibilities, explore alternative choices, and understand potential outcomes.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries:
   functions.ocf-cog-005.lifecycle.scopes.capability.description:
     text: The ability to explore possibilities remains available.

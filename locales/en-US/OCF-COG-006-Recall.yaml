@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Brings specific memories or learned material to mind on request.
+  text: 'Recall past experiences, memories, and learned information with greater clarity and detail.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-COG-006-PRIMARY

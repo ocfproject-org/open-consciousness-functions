@@ -17368,7 +17368,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-005-Appetite-Choice.yaml",
-          "value": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs.",
+          "value": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -38919,12 +38919,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-012-Sex-Drive.yaml",
-          "value": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar.",
+          "value": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-BOD-012-Sex-Drive.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -58117,12 +58117,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
-          "value": "Opens an internal space for quiet reflection; closes it again on completion.",
+          "value": "Open communication with your total self for deeper reflection, insight, and understanding.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-COG-003-Contemplation.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -61200,12 +61200,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval.",
+          "value": "Capture and retain selected information and experiences for clear, reliable recall.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "1.0.1",
+          "value": "1.0.2",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -64623,12 +64623,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-005-Options.yaml",
-          "value": "Opens perception of choices and alternatives.",
+          "value": "Discover new possibilities, explore alternative choices, and understand potential outcomes.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-COG-005-Options.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -67831,12 +67831,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "Brings specific memories or learned material to mind on request.",
+          "value": "Recall past experiences, memories, and learned information with greater clarity and detail.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-COG-006-Recall.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -76535,12 +76535,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMG-001-Injury-Response.yaml",
-          "value": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care.",
+          "value": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-EMG-001-Injury-Response.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -79838,12 +79838,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml",
-          "value": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation.",
+          "value": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -82936,12 +82936,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "Releases clinging, tension, or unwanted mental objects.",
+          "value": "Release unwanted emotions and emotional tension, restoring calm and clarity.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-EMO-001-Let-Go.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -85714,12 +85714,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice.",
+          "value": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -98764,7 +98764,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness.",
+          "value": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -105683,7 +105683,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-002-Focus.yaml",
-          "value": "Directs and sustains focused attention.",
+          "value": "Strengthen concentration, sustain attention, and reduce distractions.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -108906,12 +108906,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "Replenishes a felt sense of energy and freshness.",
+          "value": "Enter a short, restorative sleep and awaken refreshed, alert, and energized.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-FND-003-Quick-Recharge.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -111949,7 +111949,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-004-Relax.yaml",
-          "value": "Deepens physical and mental relaxation.",
+          "value": "Release physical and mental tension, restoring deep relaxation and calm.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -115122,7 +115122,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-005-Reset.yaml",
-          "value": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence.",
+          "value": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -118675,7 +118675,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "Releases unhelpful states, prompts, or lingering experiences.",
+          "value": "End selected temporary OCF function applications without losing their learned abilities.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -121408,12 +121408,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "Supports stepping away from habitual, repeated behavior patterns.",
+          "value": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -133600,12 +133600,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.",
+          "value": "Move with lighter, quieter steps, improved balance, and greater efficiency.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-PRF-004-Light-Foot.yaml",
-          "value": "1.0.1",
+          "value": "1.0.2",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -140281,12 +140281,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.",
+          "value": "Call upon exceptional strength, speed, and coordination when immediate action is needed.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-PRF-006-Strong-Quick.yaml",
-          "value": "1.0.1",
+          "value": "1.0.2",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -143589,12 +143589,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar.",
+          "value": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SEN-001-Hearing.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -146717,12 +146717,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SEN-002-Seeing.yaml",
-          "value": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images.",
+          "value": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SEN-002-Seeing.yaml",
-          "value": "1.0.1",
+          "value": "1.0.2",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -150185,12 +150185,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SEN-003-Smell.yaml",
-          "value": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar.",
+          "value": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SEN-003-Smell.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -154043,12 +154043,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SEN-004-Taste.yaml",
-          "value": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.",
+          "value": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SEN-004-Taste.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -158151,12 +158151,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SEN-005-Touch.yaml",
-          "value": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.",
+          "value": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SEN-005-Touch.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -158276,7 +158276,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-005.closer/text": {
           "file": "locales/en-US/OCF-SEN-005-Touch.yaml",
-          "value": "Remember, to regulate your physical sense of touch\nor strengthen your inner experience of it, close your eyes,\ninhale deeply, and hold your breath.\nThink or say in your mind, \"{{ cue.primary }}\"\nor \"{{ cue.id.OCF-CMD-SEN-005-TOUCH-LESS }},\" according to your intention.\nThen exhale through your mouth as though gently\nblowing out a candle, and open your eyes.\n\nThis concludes your OCF Touch exercise.",
+          "value": "Remember, to regulate your physical sense of touch\nor strengthen your inner experience of it, close your eyes,\ninhale deeply, and hold your breath.\nThink or say in your mind, \"{{ cue.primary }}\"\nor \"{{ cue.id.OCF-CMD-SEN-005-TOUCH-LESS }},\" according to your intention.\nThen slowly exhale through your mouth and open your eyes.\n\nThis concludes your OCF Touch exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-005.closer/text"
         },
         "/entries/hplus.function.ocf-sen-005.closer/version": {
@@ -170983,12 +170983,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-004-Sleep-Insight.yaml",
-          "value": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening.",
+          "value": "Find answers, explore solutions, and gain deeper understanding through sleep.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SLP-004-Sleep-Insight.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -174766,12 +174766,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-005-Sleep-Easy.yaml",
-          "value": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings.",
+          "value": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
           "file": "locales/en-US/OCF-SLP-005-Sleep-Easy.yaml",
-          "value": "1.0.0",
+          "value": "1.0.1",
           "yaml_pointer": "/description/version"
         },
         "/editorial/command_review": {
@@ -178389,7 +178389,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-006-Stay-Awake.yaml",
-          "value": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE.",
+          "value": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {

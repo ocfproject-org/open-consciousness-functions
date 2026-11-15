@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.
+  text: 'Call upon exceptional strength, speed, and coordination when immediate action is needed.'
   status: reviewed
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-PRF-006-PRIMARY

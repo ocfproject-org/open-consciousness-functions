@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Releases clinging, tension, or unwanted mental objects.
+  text: 'Release unwanted emotions and emotional tension, restoring calm and clarity.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-EMO-001-PRIMARY

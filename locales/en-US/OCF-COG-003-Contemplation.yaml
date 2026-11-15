@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Opens an internal space for quiet reflection; closes it again on completion.
+  text: 'Open communication with your total self for deeper reflection, insight, and understanding.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-COG-003-PRIMARY

@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Consciously capture and retain selected information or experiences, with Plus Recall for deliberate
-    retrieval.
+  text: 'Capture and retain selected information and experiences for clear, reliable recall.'
   status: reviewed
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries:
   functions.ocf-cog-004.lifecycle.scopes.capability.description:
     text: Learned imprinting ability remains available.

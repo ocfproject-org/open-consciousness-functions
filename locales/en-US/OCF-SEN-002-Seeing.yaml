@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports physical seeing and inner visualization, including visual processing, visual memory,
-    and deliberate creation and manipulation of mental images.
+  text: 'Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.'
   status: canonical
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SEN-002-PRIMARY

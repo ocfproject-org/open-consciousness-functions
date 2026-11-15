@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Adjusts inward listening and perception in either direction using the MORE/LESS grammar.
+  text: 'Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SEN-001-PRIMARY

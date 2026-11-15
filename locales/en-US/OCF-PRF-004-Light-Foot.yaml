@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.
+  text: 'Move with lighter, quieter steps, improved balance, and greater efficiency.'
   status: reviewed
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries:
   functions.ocf-prf-004.lifecycle.scopes.capability.description:
     text: The learned movement ability remains available.

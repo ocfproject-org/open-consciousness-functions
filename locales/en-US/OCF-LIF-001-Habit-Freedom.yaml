@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports stepping away from habitual, repeated behavior patterns.
+  text: 'Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries:
   functions.ocf-lif-001.lifecycle.scopes.capability.description:
     text: The ability to change selected unwanted habits remains available.
