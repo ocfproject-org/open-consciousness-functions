@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 import sys
@@ -50,16 +49,7 @@ def build():
         commands.extend(current_commands)
         presentation = cue_presentation(record, "en-US", catalog=catalog)
         taught = presentation.get("spoken_cue")
-        approval = local.get("record_metadata", {}).get("editorial_approval")
-        decisions = local.get("record_metadata", {}).get("editorial_decisions", [])
         proposals = local.get("editorial", {}).get("proposals", [])
-        command_review = record.data.get("ocf", {}).get("command_review")
-        changed_keys = sorted((approval or {}).get("resolved_text_sha256", {}))
-        changed_keys.extend(
-            key
-            for decision in decisions
-            for key in decision.get("current_resolved_text_sha256", {})
-        )
         functions.append(
             {
                 "function_id": record.id,
@@ -68,12 +58,7 @@ def build():
                 "spoken_teaching": taught,
                 "cue_presentation": presentation,
                 "current_purpose": record.purpose_summary,
-                "decision_status": "APPROVED AND IMPLEMENTED"
-                if approval
-                or decisions
-                or command_review == "approved"
-                or record.id in approval_ids
-                else "REVIEW REQUIRED",
+                "decision_status": "CANONICAL YAML; review flags retained separately",
                 "metadata_teaching_consistent": bool(taught)
                 and words(record.canonical_command) == words(taught),
                 "title_status": local.get("title", {}).get("status", "unknown"),
@@ -91,7 +76,6 @@ def build():
                 "context": record.data.get("compatibility", {}).get("rationale")
                 or "Canonical locale function resource.",
                 "teaching_source": "Canonical locale resource; missing speech is not inherited.",
-                "changed_keys": sorted(set(changed_keys)),
                 "editorial_proposals": proposals,
             }
         )
@@ -101,11 +85,6 @@ def build():
             groups[words(row["phrase"])].append(
                 {"id": row["id"], "function_id": row["function_id"], "role": row["role"]}
             )
-    baseline = json.loads(
-        (REPO_ROOT / "tests/fixtures/hplus-narration-text-baseline-008.json").read_text(
-            encoding="utf-8"
-        )
-    )
     return {
         "schema_version": "1.0",
         "decision_id": "canonical-locale-function-authority",
@@ -140,8 +119,9 @@ def build():
                 for row in commands
             ),
             "approved_candidate_narrations": len(approval_ids),
-            "protected_entries": len(baseline),
-            "embedded_approval_text_hashes": sum(len(row["changed_keys"]) for row in functions),
+            "narration_entries": sum(
+                entry.domain == "narration" for entry in catalog.require("en-US").entries.values()
+            ),
             "remaining_metadata_teaching_differences": sum(
                 not row["metadata_teaching_consistent"] for row in functions
             ),
@@ -170,12 +150,6 @@ def build():
             for key, owners in sorted(groups.items())
             if len(owners) > 1
         ],
-        "input_sha256": {
-            record.path.relative_to(REPO_ROOT).as_posix(): hashlib.sha256(
-                record.path.read_bytes()
-            ).hexdigest()
-            for record in records
-        },
     }
 
 
@@ -203,7 +177,7 @@ def render(data):
     teaching = [
         "# Current exact-teaching status",
         "",
-        "Exact current wording and any approval hashes are stored with canonical locale resources. The path-free semantic and narration fixtures verify current approved invariants. Literal teaching is separate from source quotation and historical lookup.",
+        "Canonical locale YAML owns current wording, commands, procedures, and lifecycle. Derived indexes and guides are regenerated from that source; listening and release approval remain separate.",
         "",
     ]
     for row in data["functions"]:
@@ -226,20 +200,19 @@ def render(data):
         teaching += [
             f"- {row['function_id']}: `{row['display_cue']}` / {row['spoken_teaching']}; metadata match {row['metadata_teaching_consistent']}; {row['teaching_source']}."
         ]
-        if row["changed_keys"]:
-            terms += [
-                f"## {row['function_id']} / {row['cue_presentation']['command_id']}",
-                "",
-                f"Title: {row['current_title']}. Title status: {row['title_status']}.",
-                f"Display: `{row['display_cue']}`. Complete speech: **{row['spoken_teaching']}**.",
-                "",
-                row["current_purpose"],
-                "",
-                "Translator context: " + row["context"],
-                "",
-                "Review: English primary cue approved and implemented. Preserve controls/procedures. Other language terminology and prefix treatment require review.",
-                "",
-            ]
+        terms += [
+            f"## {row['function_id']} / {row['cue_presentation']['command_id']}",
+            "",
+            f"Title: {row['current_title']}. Title status: {row['title_status']}.",
+            f"Display: `{row['display_cue']}`. Complete speech: **{row['spoken_teaching']}**.",
+            "",
+            row["current_purpose"],
+            "",
+            "Translator context: " + row["context"],
+            "",
+            "Review: Preserve the canonical cue and command semantics; localize terminology separately.",
+            "",
+        ]
     lines += ["## Rejected or superseded proposals"]
     if data["rejected_or_superseded"]:
         lines += ["", *["- " + text for text in data["rejected_or_superseded"]]]

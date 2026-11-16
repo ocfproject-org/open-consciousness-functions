@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.
+  text: 'Move with lighter, quieter steps, improved balance, and greater efficiency.'
   status: reviewed
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries:
   functions.ocf-prf-004.lifecycle.scopes.capability.description:
     text: The learned movement ability remains available.
@@ -52,18 +52,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-prf-004.function-body
-      before_steps:
-      - id: select-movement-context
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-movement-context
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -142,11 +133,8 @@ entries:
   hplus.function.ocf-prf-004.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to move with lightness,
-
-      quiet precision, and natural efficiency, making smooth,
-
-      effortless steps an increasingly permanent part of the way you move.'
+    text: |-
+      This OCF exercise will teach you to move with lighter, quieter steps, improved balance, and natural efficiency.
   hplus.function.ocf-prf-004.function-body:
     status: reviewed
     version: 1.2.1
@@ -154,86 +142,31 @@ entries:
       function_id: OCF-PRF-004
       allowed:
       - cue.primary
-    text: 'From this moment forward, your body will learn
+    text: |-
+      From this moment forward, your body learns a lighter, quieter, and more efficient way of moving.
 
-      a lighter, quieter, and more efficient way of moving.
+      Whether walking, climbing stairs, jogging, or running, your feet and legs work together with natural ease and precision.
 
+      Your feet lift cleanly from the ground and return with the pressure needed for stable support.
 
-      Whether walking through daily life, climbing steps,
+      Your steps become smoother and quieter as unnecessary tension, impact, and wasted movement decrease.
 
-      jogging, or running, your feet and legs will work
+      Your posture, balance, and rhythm work together, allowing you to place each foot accurately and adapt naturally to the ground beneath you.
 
-      together with natural ease and precision.
+      Your conscious mind, subconscious mind, physical body, and total self establish this improved movement pattern as your natural way of moving.
 
+      It continues automatically during everyday activities without requiring conscious attention or repeated commands.
 
-      Your feet will lift cleanly from the ground,
+      Whenever you wish to reinforce this lightness and efficiency, take a deep breath in and gently hold it.
 
-      moving forward without dragging or scraping.
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Each foot will return gently and deliberately,
+      Then slowly exhale through your mouth.
 
-      with just the pressure needed for stable support.
+      Your movement becomes lighter, quieter, and more efficient, maintaining balance and awareness appropriate to your surroundings.
 
-
-      Your steps will grow quieter, smoother, and lighter.
-
-      Unnecessary impact, tension, and wasted motion
-
-      will fade from the way you move.
-
-
-      Your posture, balance, and rhythm will adjust together.
-
-      You will place each foot where you intend,
-
-      adapting naturally to the ground beneath you
-
-      and the movement you have chosen.
-
-
-      Your total self will learn this pattern so thoroughly
-
-      that it becomes your natural way of walking,
-
-      without needing to think about each separate step.
-
-
-      This improvement will remain part of your everyday
-
-      movement, even when you are not consciously
-
-      using the Light Foot command.
-
-
-      Whenever you wish to strengthen this lightness
-
-      and efficiency even further, inhale deeply
-
-      and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      Your movement will immediately become lighter,
-
-      quieter, more balanced, and more economical,
-
-      while maintaining the awareness and control
-
-      appropriate to your surroundings.
-
-
-      Each time you move, your body will reinforce
-
-      this effortless pattern. Each time you use
-
-      {{ cue.primary }}, it will become easier
-
-      and more effective to express at will.'
+      Each time you use "{{ cue.primary }}," this learned movement pattern becomes easier and more natural.
   hplus.function.ocf-prf-004.closer:
     status: reviewed
     version: 1.2.1
@@ -241,21 +174,17 @@ entries:
       function_id: OCF-PRF-004
       allowed:
       - cue.primary
-    text: 'Remember, your lighter, quieter, more efficient way
+    text: |-
+      Remember, your lighter, quieter movement pattern continues naturally.
 
-      of moving will continue naturally, and whenever
+      Whenever you wish to reinforce it, inhale deeply and gently hold your breath.
 
-      you wish to strengthen it, inhale deeply,
-
-      hold your breath, and think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Light Foot exercise.'
+      This concludes your OCF Light Foot exercise.
 slug: light-foot
 classification:
   primary_domain: performance
@@ -319,7 +248,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 6ded86aab9a92dfe7930cce84f23a5ecf79324a3155a6391a27b9a9bdb3bd1b7
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Light Foot
     recommended_primary_cue: PLUS-LIGHT STEP
@@ -349,7 +277,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: f124f44697d726ae367d7a02c137e8d50dfd146c0728a7ac2378891201c7a1c0
 record_metadata:
   legacy:
     command_ids:
@@ -426,7 +353,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-prf-004-legacy-01.usage
       purpose_key: functions.ocf-prf-004.purpose
       explanation_key: commands.ocf-cmd-prf-004-legacy-01.explanation
-  predecessor_resource_sha256: 0b6e79e874f90f1a5ed5507696249555621e1898ea366307fbd7dfbb7081ea64
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -436,19 +362,10 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 792a37ae239b3d4ec5d27398171746b0384acddb7da3941f3f12b2985ed85e78
     status: accepted
-    previous_values_sha256: 09333c77a5cdc0d6518b86d50c7d92b353c305eeff78618d1e8ce2894dd0520b
-    current_values_sha256: 6292ca3d494d783b98077704526d33105bf9c50dae74de7046e2be10538c2de8
     changed_narration_keys:
     - hplus.function.ocf-prf-004.closer
     - hplus.function.ocf-prf-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-prf-004.function-body: 10e9bfc960925b5aaafcf5cf8c6db42f75280c0a67627f9cedbe42e7d99865a5
-      hplus.function.ocf-prf-004.closer: c1f4ab3838bfce228293c048f7af94b62b6d0979f2b413921463c6d03abb15db
-    current_resolved_text_sha256:
-      hplus.function.ocf-prf-004.function-body: ee5962f5aebe304a7edb71dee26d9f2b9cd9968081389d86e9f0a899cb1d7c4a
-      hplus.function.ocf-prf-004.closer: 54cdc579aecbe14e371d164669f7f07ce5a358ab0a30801f1877a60dd9155dcb
     review_note: Change display cue to PLUS-LIGHT STEP; replace two body mentions and one closer mention
       with Plus Light Step. Keep Light Foot title, automatic everyday baseline, optional reinforcement,
       breathing procedure and surrounding movement suggestions. Retain superseded cue wording as historical
@@ -461,9 +378,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-PRF-004:persistence
     decision_source: Please do
-    source_row_sha256: 0ef98695a59e1e69ae29800f0e655230f6e561e0070d75d183bd49b41cbc278b
     status: accepted
-    current_values_sha256: 9821a99d255a8e0531082de4c56291da26f539dcb23fab1fa3dcf728e685296c
     review_note: 'Light Foot: 1'
     approval_response: approve
 content:

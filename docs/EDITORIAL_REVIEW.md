@@ -14,6 +14,11 @@ It does not imply historical authentication, rights clearance, listening
 approval, or release readiness. Previous files and drafts are recoverable from
 Git history, not from runtime archives or path-based replay helpers.
 
+Edit the owning canonical YAML directly. Current source validation does not
+compare it with a frozen wording hash or require updating an approval receipt.
+Derived reports and indexes are regenerated from current YAML; prior published
+audio remains untouched until a separate explicit render/release workflow.
+
 Editorial proposals remain data on the owning canonical locale resource and are
 not active command or narration authorities. `status: pending` requires an
 explicit human decision. Reviews of remaining vocabulary are handled one

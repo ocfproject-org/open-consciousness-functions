@@ -6,18 +6,15 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from ocf_tools.canonical_integrity import verify as verify_canonical  # noqa: E402
 from ocf_tools.commands import command_view  # noqa: E402
 from ocf_tools.functional_metadata import record  # noqa: E402
 from ocf_tools.indexes import load_all_functions  # noqa: E402
 from ocf_tools.paths import REPO_ROOT  # noqa: E402
 from ocf_tools.utils import OCFError, write_text_atomic  # noqa: E402
+from tools.check_hplus_narration_integrity import narration_texts  # noqa: E402
 
 
 def build():
-    problems = verify_canonical()
-    if problems:
-        raise OCFError("functional metadata integrity: " + " | ".join(problems))
     ledger = record()
     ids = {row["function_id"] for row in ledger["decisions"]}
     return {
@@ -27,12 +24,7 @@ def build():
         "reviewed": len(ledger["decisions"]),
         "approved": len(ledger["decisions"]),
         "deferred": [],
-        "narration_changed": 0,
-        "narration_unchanged": len(
-            json.loads(
-                (REPO_ROOT / "tests/fixtures/hplus-narration-text-baseline-008.json").read_text()
-            )
-        ),
+        "narration_entry_count": len(narration_texts(REPO_ROOT)),
         "runtime_policy": ledger["runtime_policy"],
         "locales_requiring_review": ledger["locales_requiring_review"],
         "functions": [
@@ -60,11 +52,11 @@ def render(data):
         "",
         f"{data['id']}: {data['approved']} explicitly approved decisions across {len(data['functions'])} functions.",
         "",
-        "Historical metadata decision confirmation: **Please do**. That metadata-only decision left all 177 resolved narration entries unchanged. The subsequent source-only approved editorial batch is documented separately in [the editorial batch report](APPROVED_EDITORIAL_BATCH_20261114.md); it does not grant audio or publication approval.",
+        "Current narration is read directly from canonical locale YAML. Editing source text requires no secondary text hash or approval receipt; listening approval and release readiness remain separate decisions.",
         "",
         data["runtime_policy"],
         "",
-        "See [scope semantics](../FUNCTIONAL_METADATA.md). Functional metadata decision notes, provenance hashes, and their current values are stored with each canonical locale resource; this report is derived.",
+        f"This report derives current command/lifecycle values from canonical locale YAML ({data['narration_entry_count']} narration entries resolve). See [scope semantics](../FUNCTIONAL_METADATA.md). Historical decision notes remain provenance, not a competing definition of current text.",
         "",
     ]
     for function in data["functions"]:

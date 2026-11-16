@@ -1,5 +1,18 @@
 # Source-first working authoring
 
+## Canonical function editing comes first
+
+For current OCF function definitions, edit `locales/<locale>/OCF-*.yaml`
+directly. This is the sole current authority for that function and locale. Run
+schema/behavior validation and regenerate derived indexes/session plans; do not
+manually update checksums, approval hashes, or a secondary wording manifest.
+Git history preserves previous versions, and existing published audio remains
+unchanged when the source is edited. Listening/release review is a separate step.
+
+The optional source-first workflow below is for projects that need distinct
+SOURCE/WORKING blocks, source locators, rights review, or transcript analysis. It
+does not replace or gate ordinary direct edits to canonical function YAML.
+
 Status: shipped local `ocf content` workflow. Existing function-content sidecars,
 semantic stage schemas and runtime narration interfaces remain unchanged. New
 `editorial-function.schema.json` and `editorial-block.schema.json` validate the
@@ -70,11 +83,13 @@ rights statuses are `verified_redistributable` and `user_cleared`; neither is a
 tool-generated legal determination. Source presence, analytical completion,
 unchanged text and a reviewed status do not independently approve release.
 
-Any text change makes its prior approval stale: the current text hash must match
-the approval hash. Unreviewed, uncertain, blocked, pending, stale or uncleared
-blocks cannot enter release preview or packages. A release containing shared
-references must satisfy these requirements for all referenced blocks as well.
-Do not relabel retained source wording as OCF-original.
+Within this optional source-first workspace, a text change makes its prior
+release approval stale: the release preview must match its approval snapshot.
+This release gate does not apply to ordinary canonical YAML editing. Unreviewed,
+uncertain, blocked, pending, stale or uncleared working blocks cannot enter this
+source-first release preview or package. A release containing shared references
+must satisfy these requirements for all referenced blocks as well. Do not
+relabel retained source wording as OCF-original.
 
 ## Commands
 
@@ -129,7 +144,7 @@ remain intact. The substitution and every referenced block require release revie
 Cycles and semantic changes fail rather than rewriting a function.
 
 Mark `reviewed_unchanged` to deliberately retain exact wording, or
-`reviewed_modified` after intentional changes. The named human reviewer is
+`reviewed_modified` after intentional changes in this optional workspace. The named human reviewer is
 acknowledging the attached claims/accessibility/boundary flags; there is no automatic
 claims correction. Review and approval history is recorded with text hashes. Manual
 edits remain visible against SOURCE and invalidate prior review/release hashes.

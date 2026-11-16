@@ -112,7 +112,7 @@ def contract_hash(data):
 def completeness(data, canonical):
     missing = []
     if data is None:
-        return {"status": "missing", "missing": ["function"], "outdated_contract": False}
+        return {"status": "missing", "missing": ["function"]}
     for field in ("title", "description"):
         if not data.get(field, {}).get("text"):
             missing.append(field)
@@ -133,7 +133,6 @@ def completeness(data, canonical):
     for key in canonical["entries"]:
         if not data.get("entries", {}).get(key, {}).get("text"):
             missing.append(key)
-    outdated = data.get("localization", {}).get("contract_sha256") != contract_hash(canonical)
     unreviewed = any(
         entry.get("status") not in {"canonical", "reviewed"}
         for entry in data.get("entries", {}).values()
@@ -147,12 +146,12 @@ def completeness(data, canonical):
     declared = data.get("localization", {}).get("status", "partial")
     status = (
         "needs-review"
-        if outdated or unreviewed or declared == "needs-review"
+        if unreviewed or declared == "needs-review"
         else "partial"
         if missing or declared == "partial"
         else "complete"
     )
-    return {"status": status, "missing": missing, "outdated_contract": outdated}
+    return {"status": status, "missing": missing}
 
 
 def project(data, path, root):

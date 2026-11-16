@@ -47,6 +47,7 @@ Discovery normalization uses NFC, case folding and whitespace folding only. It i
 - OCF-PRF-002 → Inner Power / `PLUS-INNER POWER`; historical matches: Eight-Great; PLUS-STRONG; Plus Eight Great.
 - OCF-PRF-003 → Coordination / `PLUS-COORDINATE`; historical matches: Synchronizing; PLUS-SMOOTH, FAST; Plus Smooth Fast.
 - OCF-PRF-004 → Light Foot / `PLUS-LIGHT STEP`; historical matches: PLUS-LIGHT; Plus Lighter Lighter.
+- OCF-PRF-006 → Strong-Quick / `PLUS-STRONG QUICK`; historical matches: Plus Release.
 - OCF-SEN-001 → Hearing / `PLUS-HEAR MORE`; historical matches: Sensory: Hearing.
 - OCF-SEN-002 → Seeing / `PLUS-SEE BETTER`; historical matches: Sensory: Seeing.
 - OCF-SEN-003 → Smell / `PLUS-SMELL MORE`; historical matches: Sensory: Smell.

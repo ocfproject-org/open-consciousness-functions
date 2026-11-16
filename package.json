@@ -1,0 +1,16 @@
+{
+  "name": "ocf-markdown-validation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint:markdown": "markdownlint-cli2"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.14.0"
+  },
+  "overrides": {
+    "js-yaml": "4.3.2",
+    "markdown-it": "14.3.3",
+    "katex": "0.18.2"
+  }
+}

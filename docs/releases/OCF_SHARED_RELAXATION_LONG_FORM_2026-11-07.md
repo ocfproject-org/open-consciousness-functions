@@ -1,5 +1,11 @@
 # Approved original long-form shared relaxation successor
 
+> Current architecture note (2026-11-15): this document records the historical
+> 2026-11-07 review checkpoint. Current wording is authored in
+> `locales/en-US/relaxation-long-002.yaml`; Git history, not a source checksum
+> ledger, is the record of earlier text. The old source-only hash sidecar was
+> retired when canonical YAML editing became the supported workflow.
+
 ## Baseline checkpoint
 
 Task branch: `engineering/shared-relaxation-long-form-20261107`, starting at
@@ -43,15 +49,9 @@ The last entry includes the entire integration/handoff paragraph. The isolated
 spoken count sequence is exactly One, Two, Three, Four, Five, Six, Seven, Eight,
 Nine, Ten. Neither legacy `torso` nor legacy `legs` participates in this stage.
 
-The exact assembled 688-word passage (two LF characters between resources,
-unchanged internal lines/paragraphs, no leading/trailing LF) has SHA-256:
-`2c5ece916a8dc35f0c99b8843244093040cd8670df5fbbdeccf552ac0dd75421`.
-The locale resource file SHA-256 is
-`9536f63e6e5b7741480bca8f9073d2a05348f08d256609ad5317527adce6ba42`.
-Per-entry successor hashes, explicit additions/removals, predecessor hashes,
-1,112 unchanged canonical entry hashes and frozen-file receipts are in
-`function-content/editorial/relaxation-long-002.json`. This ledger stores hashes,
-not a second copy of the new narration or a retired source-authority file.
+The approved long-form text and its eleven ordered resources reside in the
+canonical locale resource. Earlier approval and exact wording are recoverable
+from Git history; no current checksum receipt gates edits to that resource.
 
 All 58 canonical function bindings deliberately select
 `OCF-TPL-SESSION-HPLUS-LOCKED-005` → `OCF-TPL-SESSION-HPLUS-LOCKED-006` (6.0.0).

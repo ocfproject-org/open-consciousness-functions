@@ -7,9 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.
+  text: 'Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SEN-004-PRIMARY
@@ -403,7 +403,6 @@ editorial:
   - id: OCF-TITLE-CUE-SEN-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 2f24f74e97b927a2a5f142f8f294897d52b63800563f3c62ba23706269ec5730
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Taste
     recommended_primary_cue: PLUS-TASTE MORE
@@ -433,7 +432,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 21b735298863bae8e6c77bc8fd9305649bd333bac2537b9d1c43357f3990c2fd
 record_metadata:
   legacy:
     command_ids:
@@ -519,7 +517,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-sen-004-legacy-02.usage
       purpose_key: functions.ocf-sen-004.purpose
       explanation_key: commands.ocf-cmd-sen-004-legacy-02.explanation
-  predecessor_resource_sha256: 129234478ff99e4bb99f2ca6bb1a5959d3627852b1bb33cbe134148241e9591d
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -529,16 +526,9 @@ record_metadata:
       instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 269ab2cf8a2aeabeab613f8c95805099e01c596fc568d9e691b84732aa6684a9
     status: accepted
-    previous_values_sha256: 0b68a4907e62109e9d097c0ff05e7e6ddaf191e28e0d2a1c965d2fb0d8edd9bc
-    current_values_sha256: ae72cdc732a23a67946d7c88f562b5adba458985f7a2cb2a2e41a6f2f941ce39
     changed_narration_keys:
     - hplus.function.ocf-sen-004.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-sen-004.closer: 31c2f80d9f6585dc39bb2376261ad2aa957b105b50146e630a0e57a7d98b9833
-    current_resolved_text_sha256:
-      hplus.function.ocf-sen-004.closer: f89ee0b1c156835d59a3c803b7a4b84f2e94a19af02a6ed0f2f8ed257ac2fa9a
     review_note: 'Change title from Sensory: Taste to Taste and update exercise sign-off. Keep BOTH cues
       unchanged: PLUS-TASTE MORE / Plus Taste More and PLUS-TASTE LESS / Plus Taste Less. Preserve close
       eyes/inhale/hold/selected cue/slow mouth exhale/open eyes sequence, consciously controlled selected

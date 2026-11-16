@@ -7,10 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: 'Directs the intended use of food energy and nourishment through two modes:
-    Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment
-    with reduced unnecessary retention and storage. The last selected mode remains
-    active until deliberately changed.'
+  text: |-
+    Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.
   status: canonical
   version: 1.0.1
 metadata_entries:
@@ -326,7 +324,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-010
     status: pending
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: bd98d44b085cc75c7be78e57af3982b1cf50b0fed5ef804d75b1b8bea7c9a91d
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Food Energy Use
     recommended_primary_cue: PLUS-USE FOOD ENERGY
@@ -364,7 +361,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 0bfdaee6abd71b94a1dd10cdf8a7bdbeefedaca48ba5c3fc0c5f071b8ba97fff
 record_metadata:
   legacy:
     command_ids:
@@ -430,7 +426,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-010-food-less.usage
       purpose_key: functions.ocf-bod-010.purpose
       explanation_key: commands.ocf-cmd-bod-010-food-less.explanation
-  predecessor_resource_sha256: eb9330abc8fd5b03ccc15aea644ceb4990051a1dae42797f41dc036c9b40c494
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004-KEPT
     kind: approved-title-cue
@@ -443,12 +438,8 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 547f9531cf8ef9c0ff48923a4c0a86e7f9eafc10ea411bccc3629cd3e782c093
     status: retained
-    current_values_sha256: dd087fa5457ce8e25a20235c2edf2b0077c75b4f90b0164246374919b3b521ea
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: MORE selects useful food-energy extraction/conversion/distribution/use;
       LESS selects sufficient nourishment with reduced unnecessary retention/storage.
       Close eyes, inhale/hold/select complete cue/exhale/open eyes. Neither mode is
@@ -458,9 +449,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-010:purpose
     decision_source: Please do
-    source_row_sha256: 17874ba4fa9d434761e3d770f3c35595b5c27d7f846c40baba99c1cc0033d0be
     status: accepted
-    current_values_sha256: 8472dacf832847ea7b6e789ad1c8df2fe52abe25656bcedb3ffcb6d4944407ef
     review_note: 'Nutricia: 1'
     approval_response: approve
   - id: OCF-FUNCTIONAL-METADATA-COMMAND-ROLE
@@ -468,9 +457,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-010:command-role
     decision_source: Please do
-    source_row_sha256: 843e2e12b809a8162ce84f51d168e51d1eecba7ff9e83fd7d9f0ed0f3227443f
     status: accepted
-    current_values_sha256: 2048b2a29d0c559175475e736d92fc279994d25f7a23270d3b6504f14f49928e
     review_note: 'Nutricia: 1'
     approval_response: approve
 content:

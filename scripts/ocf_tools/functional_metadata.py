@@ -26,7 +26,6 @@ def record(root=REPO_ROOT):
                     "decision": {
                         "choice": item["approval_response"],
                         "user_text": response,
-                        "approved_values_sha256": item["current_values_sha256"],
                     },
                 }
             )

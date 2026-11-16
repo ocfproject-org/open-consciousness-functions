@@ -7,9 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Temporarily reduces discomfort and sensitivity in a selected body area using
-    Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The
-    learned ability remains available for future use.
+  text: |-
+    Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.
   status: reviewed
   version: 1.0.1
 metadata_entries:
@@ -397,7 +396,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-015
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 51c964cbde5c3afe7c29e16cee8ba4a165112f0b28780f297d9789278fb0824d
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Temporary Numbing
     recommended_primary_cue: PLUS-NUMB
@@ -434,7 +432,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: d5522abbdd898ef64f61eddf2d8a56ff2f27546268eebf3e972d4aa3e79f7a05
 record_metadata:
   legacy:
     command_ids:
@@ -522,7 +519,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-015-legacy-02.usage
       purpose_key: functions.ocf-bod-015.purpose
       explanation_key: commands.ocf-cmd-bod-015-legacy-02.explanation
-  predecessor_resource_sha256: 28ad465da67ce686877b94444392dca654f4bee1a7b855165e02611ab9dbddf3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -534,19 +530,10 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: ef20c740e8c508d8ee4588c42ebde9bb71b85fe05111fa31fef6487e443e3984
     status: accepted
-    previous_values_sha256: 345dd6aa98842596de18dd8cdeb700688195d2ecf9e073041a69018e6af1b063
-    current_values_sha256: 35366dcb3f9afa4c1471c1510ef65c0d4f5ebbb232f0a1348bc7d007a4070463
     changed_narration_keys:
     - hplus.function.ocf-bod-015.closer
     - hplus.function.ocf-bod-015.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-015.function-body: c2495b56ad2708a53127aa11efd68d08640945bd84427e18f8e3f2415318619b
-      hplus.function.ocf-bod-015.closer: a3727113e7c87ab2a32b45054f36e5d662ee534ff95defe9d910b20d80ee6880
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-015.function-body: 83d9aa9359998eada25118ddf0885769f6653d7e73678e4990712fcdeb1190c9
-      hplus.function.ocf-bod-015.closer: d91f94a7c018074395f5fa500f0e8d5d3cf06fda21ed622209981aa9a245510b
     review_note: One body and one closer primary-cue substitution; Short Fix body
       reference and exercise sign-off become Temporary Numbing. Retain Short Fix and
       repeated legacy primary wording as historical lookup. Keep active PLUS-RELEASE

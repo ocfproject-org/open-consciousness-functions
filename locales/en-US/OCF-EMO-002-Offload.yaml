@@ -7,11 +7,15 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Reduces selected recurring thought and emotional-pattern interference while retaining useful
-    memories and conscious choice.
+  text: |-
+    Release unwanted thoughts and recurring emotional patterns to clear mental interference.
   status: canonical
-  version: 1.0.0
-metadata_entries: {}
+  version: 1.0.1
+metadata_entries:
+  functions.ocf-emo-002.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
+  functions.ocf-emo-002.procedure.select-thought-pattern:
+    text: Select an unwanted thought, emotional response, or recurring pattern to offload.
 activation:
   command_id: OCF-CMD-EMO-002-PRIMARY
   display_cue:
@@ -44,7 +48,7 @@ activation:
     procedure:
       before_steps:
       - id: select-thought-pattern
-        localization_key: command.procedure.select-intention
+        localization_key: functions.ocf-emo-002.procedure.select-thought-pattern
         operation: select-intention
       evidence_keys:
       - hplus.function.ocf-emo-002.function-body
@@ -55,7 +59,7 @@ activation:
   - id: select-thought-pattern
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Select an unwanted thought, emotional response, or recurring pattern to offload.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -150,13 +154,8 @@ entries:
   hplus.function.ocf-emo-002.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to release
-
-      and fade away unwanted thoughts,
-
-      recurring emotional patterns, and mental
-
-      distractions whenever you choose.'
+    text: |-
+      This OCF exercise will teach you to release unwanted thoughts, recurring emotional patterns, and mental distractions, freeing your mind and attention whenever you choose.
   hplus.function.ocf-emo-002.function-body:
     status: reviewed
     version: 1.2.1
@@ -164,117 +163,39 @@ entries:
       function_id: OCF-EMO-002
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to release unwanted thoughts and emotional patterns that interfere with your awareness.
 
-      to release unwanted thoughts and emotional patterns
+      Whenever a recurring thought, emotional response, or mental pattern no longer serves you, you can choose to release its influence.
 
-      that continue to interfere with your awareness.
+      Simply think of the unwanted thought or pattern you wish to offload.
 
+      Take a deep breath in and gently hold it.
 
-      Whenever a recurring thought, feeling,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      or mental pattern no longer serves you,
+      Then slowly exhale through your mouth and continue breathing naturally.
 
-      you can choose to release it completely.
+      As you exhale, let the unwanted thought or emotional pattern lose its hold on your awareness.
 
+      Its influence fades, becoming less demanding of your attention until it no longer interferes with your thoughts, emotions, or daily activities.
 
-      Bring the particular thought or pattern
+      The selected pattern becomes quiet and inactive, remaining outside your conscious awareness until you deliberately choose otherwise.
 
-      you wish to remove clearly into your mind.
+      Your memories, knowledge, and valuable understanding remain available, while the unwanted interference fades away.
 
+      Your mind becomes clearer and calmer, allowing your attention to return naturally to whatever you choose.
 
-      Inhale deeply and gently hold your breath.
+      Energy and attention previously occupied by the unwanted pattern become available for clear thinking, meaningful experiences, and purposeful action.
 
+      You remain in conscious control, choosing what to release and what you wish to retain.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      This ability to offload unwanted thoughts and emotional patterns remains permanently available to you.
 
+      Once you release a selected pattern, your mind naturally maintains freedom from its unnecessary interference.
 
-      Then exhale slowly through your mouth
-
-      and breathe deeply and naturally.
-
-
-      As you exhale, the unwanted thought
-
-      or emotional pattern will immediately
-
-      begin to fade from your awareness.
-
-
-      Feel it becoming weaker and weaker,
-
-      smaller and smaller, moving farther away
-
-      until it disappears completely.
-
-
-      Its influence over your attention
-
-      and emotions will fade away,
-
-      leaving your mind peaceful,
-
-      clear, and free.
-
-
-      The selected pattern will remain
-
-      outside your conscious awareness,
-
-      quiet and inactive,
-
-      until you consciously desire otherwise.
-
-
-      Your memories, knowledge, and useful
-
-      understanding will remain available,
-
-      while the unwanted interference
-
-      no longer occupies your mind.
-
-
-      Your thoughts will become calm and organized,
-
-      and your attention will return naturally
-
-      to whatever you choose.
-
-
-      From this moment forward, this ability
-
-      to off-load unwanted mental patterns
-
-      is permanently established within you.
-
-
-      Once you release a selected pattern,
-
-      your mind will naturally maintain
-
-      that freedom from unnecessary interference.
-
-
-      You remain in complete control,
-
-      choosing what to release
-
-      and what you wish to retain.
-
-
-      Each time you use {{ cue.primary }},
-
-      releasing unwanted thought patterns
-
-      becomes easier, faster, and more effective.
-
-
-      Your mind remains clear, calm, and free
-
-      to focus on the thoughts, feelings,
-
-      and experiences you truly desire.'
+      The more you use "{{ cue.primary }}," the easier and more effective releasing unwanted mental and emotional patterns becomes.
   hplus.function.ocf-emo-002.closer:
     status: reviewed
     version: 1.1.1
@@ -282,25 +203,17 @@ entries:
       function_id: OCF-EMO-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to release
+    text: |-
+      Remember, whenever you wish to release an unwanted thought or recurring emotional pattern, first think of what you want to offload.
 
-      a recurring thought or unwanted emotional
+      Inhale deeply and gently hold your breath.
 
-      pattern, bring it clearly into your mind.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth and continue breathing naturally.
 
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth
-
-      and breathe deeply and naturally.
-
-
-      This concludes your OCF Offload exercise.'
+      This concludes your OCF Offload exercise.
 slug: off-loading
 classification:
   primary_domain: emotion
@@ -320,6 +233,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-emo-002.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -352,7 +269,6 @@ editorial:
   - id: OCF-TITLE-CUE-EMO-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 823b29816e502844ea68b687a6bc2845f13bc3144b6b2cc778442585cc21257a
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Offload
     recommended_primary_cue: PLUS-OFFLOAD
@@ -382,7 +298,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: d9301dd8c39d3bbf20c55036238b3ac9724c271eaedbd40dba0e4be01096d771
 record_metadata:
   legacy:
     command_ids:
@@ -460,7 +375,6 @@ record_metadata:
       label_key: commands.ocf-cmd-emo-002-legacy-01.label
       purpose_key: functions.ocf-emo-002.purpose
       usage_key: commands.ocf-cmd-emo-002-legacy-01.usage
-  predecessor_resource_sha256: 5a1650db8f0ff5d1775faa01d09ae1a91c84ba70c822d4ec763180ac3194fbc6
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
@@ -468,19 +382,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: b4da3cf57da1f29b1428337e66957d6b8740b1e3317514cb7fe2c1a1bc375fba
     status: accepted
-    previous_values_sha256: 1017f015ef6fc5bcc08b0fc1356e5aa7f89d1768caef9868e9e2ed42908680e2
-    current_values_sha256: 3773b94b838814fc224909661d97f01a91496ec41513c82ce0b1b6f3cd0df72e
     changed_narration_keys:
     - hplus.function.ocf-emo-002.closer
     - hplus.function.ocf-emo-002.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-emo-002.function-body: 91b971b55d1409fcf90f5266c2031c54c634a96bb4d1fe01de5a2bbd62fbd34e
-      hplus.function.ocf-emo-002.closer: 7f9540728b2b664af572bda93ed9dddd4da2c4fe72ea95a70593be44bca7b3b3
-    current_resolved_text_sha256:
-      hplus.function.ocf-emo-002.function-body: 0ef7a2cf24e93e88c26d530d3886fd1ce61ddad6e91f09ab0543959d1a3dd198
-      hplus.function.ocf-emo-002.closer: 734dea8ffc6db26279ceb329a591de8822cd73a704940b192cf2a761beb9770f
     review_note: Selected recurring thought/emotional-pattern interference, useful memory and conscious
       choice; not indiscriminate clearing or memory erasure.
   - id: REL-EMO002-EXP003
@@ -489,8 +394,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 54296a99514275ac31cb7c536d753a9197a81982d9e80f273012b14282f7dcef
-    current_values_sha256: 4afca31238b93ce56582ed4afd7ae1050b285a3c64640db2c25aa15ce161ae85
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

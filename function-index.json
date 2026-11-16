@@ -484,7 +484,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
+        "purpose": "Perform learned skills and activities naturally and automatically, with less conscious effort.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -949,7 +949,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.",
+        "purpose": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -1395,7 +1395,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.",
+        "purpose": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -1859,7 +1859,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Eases physical discomfort in a selected area of the body.",
+        "purpose": "Ease physical discomfort in a selected area of the body.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -2309,7 +2309,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.",
+        "purpose": "Enhance the body's natural cleansing, detoxification, and renewal processes.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -2802,7 +2802,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports deliberate eating choices and release of unnecessary cravings while preserving awareness of genuine nutritional needs.",
+        "purpose": "Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -3264,7 +3264,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.",
+        "purpose": "Improve heart function, circulation, and natural cardiovascular maintenance.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -3744,7 +3744,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
+        "purpose": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -4188,7 +4188,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
+        "purpose": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -4644,7 +4644,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.",
+        "purpose": "Improve breathing efficiency, respiratory function, and natural airway maintenance.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -5192,7 +5192,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
+        "purpose": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -5668,7 +5668,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
+        "purpose": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -6288,7 +6288,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Adjusts felt sexual drive in either direction using the MORE/LESS grammar.",
+        "purpose": "Increase or decrease sexual desire, arousal, and responsiveness.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -6781,7 +6781,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
+        "purpose": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -7299,7 +7299,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.",
+        "purpose": "Regenerate and restore damaged, weakened, or missing structures in a selected body part.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -7910,7 +7910,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.",
+        "purpose": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -8375,7 +8375,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
+        "purpose": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -8822,7 +8822,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.",
+        "purpose": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -9304,6 +9304,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command_id": "OCF-CMD-COG-003-CLOSED",
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-cog-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -9342,7 +9349,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Opens an internal space for quiet reflection; closes it again on completion.",
+        "purpose": "Open communication with your total self for deeper reflection, insight, and understanding.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -9913,7 +9920,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Consciously capture and retain selected information or experiences, with Plus Recall for deliberate retrieval.",
+        "purpose": "Capture and retain information and experiences for clear, reliable recall.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -10409,7 +10416,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Opens perception of choices and alternatives.",
+        "purpose": "Discover new possibilities, explore alternative choices, and understand potential outcomes.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -10830,6 +10837,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-cog-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -10868,7 +10882,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Brings specific memories or learned material to mind on request.",
+        "purpose": "Recall past experiences, memories, and learned information with greater clarity and detail.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -12281,7 +12295,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Emergency-oriented practice to stay calm and take helpful action. Does NOT replace emergency services, first aid, or professional care.",
+        "purpose": "Enhance automatic protection, healing, and recovery following physical injury.",
         "safety": {
           "level": "emergency",
           "medical_relevance": true,
@@ -12816,7 +12830,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Emergency-oriented practice for toxic-exposure situations. Does NOT replace poison control, emergency services, or medical evaluation.",
+        "purpose": "Enhance the body's response to harmful substances through protection, detoxification, and elimination.",
         "safety": {
           "level": "emergency",
           "medical_relevance": true,
@@ -12932,7 +12946,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "before_steps": [
                 {
                   "id": "select-emotion",
-                  "localization_key": "command.procedure.select-intention",
+                  "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                   "operation": "select-intention"
                 }
               ],
@@ -12946,7 +12960,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "resolved_procedure_steps": [
               {
                 "id": "select-emotion",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-001.procedure.select-emotion",
                 "operation": "select-intention"
               },
               {
@@ -13238,6 +13252,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-emo-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -13266,7 +13287,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Releases clinging, tension, or unwanted mental objects.",
+        "purpose": "Release unwanted emotions and emotional tension, restoring calm and clarity.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -13386,7 +13407,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "before_steps": [
                 {
                   "id": "select-thought-pattern",
-                  "localization_key": "command.procedure.select-intention",
+                  "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                   "operation": "select-intention"
                 }
               ],
@@ -13400,7 +13421,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "resolved_procedure_steps": [
               {
                 "id": "select-thought-pattern",
-                "localization_key": "command.procedure.select-intention",
+                "localization_key": "functions.ocf-emo-002.procedure.select-thought-pattern",
                 "operation": "select-intention"
               },
               {
@@ -13698,6 +13719,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-emo-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -13736,7 +13764,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Reduces selected recurring thought and emotional-pattern interference while retaining useful memories and conscious choice.",
+        "purpose": "Release unwanted thoughts and recurring emotional patterns to clear mental interference.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -13831,8 +13859,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 1,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "conditional",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each selected-being connection is a separate deliberate, breath-independent application.",
+              "description_key": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+              "persistence": "conditional"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EMO-003",
             "id": "OCF-CMD-EMO-003-PRIMARY",
             "localization": {
@@ -13853,34 +13887,28 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [],
+              "before_steps": [
+                {
+                  "id": "select-being",
+                  "operation": "select-intention"
+                }
+              ],
               "evidence_keys": [
                 "hplus.function.ocf-emo-003.function-body"
               ],
-              "ref": "OCF-PROC-INHALE-HOLD",
+              "ref": "OCF-PROC-THINK-COMMAND",
               "status": "documented"
             },
             "relationships": {},
             "resolved_procedure_steps": [
               {
-                "id": "inhale",
-                "localization_key": "command.procedure.inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "localization_key": "command.procedure.hold-breath",
-                "operation": "hold-breath"
+                "id": "select-being",
+                "operation": "select-intention"
               },
               {
                 "id": "command",
                 "localization_key": "command.procedure.think-or-say-command",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "localization_key": "command.procedure.exhale",
-                "operation": "exhale"
               }
             ],
             "role": "activation",
@@ -14210,7 +14238,22 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
-          "trigger_conditions": []
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each selected-being connection is a separate deliberate, breath-independent application.",
+              "description_key": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+              "persistence": "conditional"
+            },
+            "capability": {
+              "description": "The ability to establish empathetic and intuitive communication remains permanently available.",
+              "description_key": "functions.ocf-emo-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": [
+            "Select another being before deliberately invoking Plus Empathize."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -14248,7 +14291,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Develops consciously directed understanding and communication with another being through sensory, intuitive, and total-self awareness.",
+        "purpose": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -14343,8 +14386,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 1,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "conditional",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each deliberate application is defined by its selected outcome and desired completion timeframe.",
+              "description_key": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+              "persistence": "conditional"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-001",
             "id": "OCF-CMD-EXP-001-PRIMARY",
             "localization": {
@@ -14677,7 +14726,22 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
-          "trigger_conditions": []
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each deliberate application is defined by its selected outcome and desired completion timeframe.",
+              "description_key": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+              "persistence": "conditional"
+            },
+            "capability": {
+              "description": "The learned ability to direct intention through the total self remains permanently available.",
+              "description_key": "functions.ocf-exp-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": [
+            "Select an outcome and its desired completion time before invoking Plus Manifest."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -14724,7 +14788,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets a consciously selected future condition and completion time through intention and total-self alignment.",
+        "purpose": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -14821,8 +14885,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 1,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "persistent",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "persistent"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-PRIMARY",
             "localization": {
@@ -14843,13 +14913,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-comfort-zone",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-exp-002.function-body"
               ],
@@ -14858,11 +14922,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-comfort-zone",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -14908,8 +14967,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 11,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "persistent",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "persistent"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-CANCEL",
             "localization": {
@@ -14982,8 +15047,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 200,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "persistent",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "persistent"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-EXP-002",
             "id": "OCF-CMD-EXP-002-RELEASE",
             "localization": {
@@ -15000,9 +15071,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "procedure": {
               "before_steps": [
                 {
-                  "id": "focus-zoning",
-                  "localization_key": "command.procedure.focus-target",
-                  "operation": "focus-target"
+                  "id": "recall-insulate-application",
+                  "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+                  "operation": "other"
                 }
               ],
               "evidence_keys": [
@@ -15018,9 +15089,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "resolved_procedure_steps": [
               {
-                "id": "focus-zoning",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
+                "id": "recall-insulate-application",
+                "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+                "operation": "other"
               },
               {
                 "id": "inhale",
@@ -15371,6 +15442,19 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command_id": "OCF-CMD-EXP-002-RELEASE",
             "required": false
           },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
+              "persistence": "persistent"
+            },
+            "capability": {
+              "description": "The ability to apply adaptive physical, environmental, emotional, and energetic insulation remains available for future use.",
+              "description_key": "functions.ocf-exp-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -15399,7 +15483,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Establishes an adjustable whole-body zone of temperature comfort; Cancel ends the current adjustment and Release places the selected application on hold.",
+        "purpose": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -15649,7 +15733,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": null,
-        "purpose": "Consciously dissolve a selected unwanted belief, expectation, emotional response or recurring life pattern while preserving useful learning.",
+        "purpose": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.",
         "safety": {
           "level": "experimental",
           "medical_relevance": false,
@@ -15767,32 +15851,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "activation",
@@ -15842,32 +15910,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "mode",
@@ -15917,32 +15969,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ],
               "override_steps": [
                 {
-                  "id": "inhale-easily",
-                  "operation": "inhale"
-                },
-                {
                   "id": "think-or-say-in-mind",
                   "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale-naturally",
-                  "operation": "exhale"
                 }
               ],
               "status": "documented"
             },
             "resolved_procedure_steps": [
               {
-                "id": "inhale-easily",
-                "operation": "inhale"
-              },
-              {
                 "id": "think-or-say-in-mind",
                 "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale-naturally",
-                "operation": "exhale"
               }
             ],
             "role": "mode",
@@ -16034,7 +16070,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": null,
-        "purpose": "Establish an ongoing intention to discourage unwanted insect contact while maintaining calm awareness.",
+        "purpose": "Maintain a clear personal zone that naturally discourages unwanted insect contact.",
         "safety": {
           "level": "experimental",
           "medical_relevance": false,
@@ -16247,7 +16283,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": null,
-        "purpose": "Recognize, receive and understand intuitive guidance through the total self, heart-centered awareness, subconscious, higher self and wider consciousness.",
+        "purpose": "Access intuitive guidance through your total self, higher self, and wider consciousness.",
         "safety": {
           "level": "experimental",
           "notes": [
@@ -16699,6 +16735,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -16839,13 +16882,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-attention-target",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-fnd-002.function-body"
               ],
@@ -16854,11 +16891,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-attention-target",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -17149,6 +17181,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -17197,7 +17236,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Directs and sustains focused attention.",
+        "purpose": "Strengthen concentration, sustain attention, and reduce distractions.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -17309,13 +17348,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-rest-period",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-fnd-003.function-body"
               ],
@@ -17324,11 +17357,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-rest-period",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -17620,6 +17648,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -17658,7 +17693,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Replenishes a felt sense of energy and freshness.",
+        "purpose": "Enter a short, restorative sleep and awaken refreshed, alert, and energized.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -18072,6 +18107,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-004.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [
@@ -18137,7 +18179,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           }
         ],
         "preparation": [],
-        "purpose": "Deepens physical and mental relaxation.",
+        "purpose": "Release physical and mental tension, restoring deep relaxation and calm.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -18565,6 +18607,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-005.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -18593,7 +18642,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports a deliberately invoked shift from tiredness, weariness, or feeling emotionally low toward renewed wakefulness, energy, clarity, and confidence.",
+        "purpose": "Shift from tiredness and low energy to renewed alertness, clarity, strength, and confidence.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -19070,6 +19119,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-fnd-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -19098,7 +19154,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Releases unhelpful states, prompts, or lingering experiences.",
+        "purpose": "End selected temporary OCF applications without losing learned abilities.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -19595,7 +19651,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports stepping away from habitual, repeated behavior patterns.",
+        "purpose": "Eliminate unwanted habits and automatic behavior patterns.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -20002,6 +20058,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-prf-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -20157,13 +20220,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-quality",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-002.function-body"
               ],
@@ -20172,11 +20229,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-quality",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -20505,7 +20557,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Strengthens recognition and expression of total-self strength, unity, resources, and power throughout daily life.",
+        "purpose": "Draw on your total self's strength, wisdom, and confidence in everyday life.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -20952,7 +21004,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.",
+        "purpose": "Move with greater coordination, speed, and precision.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -21082,13 +21134,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-movement-context",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-004.function-body"
               ],
@@ -21097,11 +21143,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-movement-context",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -21496,7 +21537,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Eases the felt sense of physical lightness and ease of movement; activation cue PLUS-LIGHT STEP.",
+        "purpose": "Move with lighter, quieter steps, improved balance, and greater efficiency.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -21592,7 +21633,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "visible": true
             },
             "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day.",
+              "description_key": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
             "function_id": "OCF-PRF-005",
             "id": "OCF-CMD-PRF-005-PRIMARY",
             "localization": {
@@ -21975,7 +22022,22 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
-          "trigger_conditions": []
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day.",
+              "description_key": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "description": "The ability to shape daily experiences through conscious intention remains permanently available.",
+              "description_key": "functions.ocf-prf-005.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": [
+            "Select day-specific intended outcomes; each application applies to the current day."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -22013,7 +22075,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets a deliberate tone for the day ahead.",
+        "purpose": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -22202,91 +22264,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "legacy-alias",
             "spoken": null,
             "spoken_review": "unresolved"
-          },
-          {
-            "cue_presentation": {
-              "binding_status": "resolved",
-              "command_id": "OCF-CMD-PRF-006-RELEASE",
-              "display_cue": "Plus Release",
-              "display_fallback": false,
-              "display_locale": "en-US",
-              "requested_locale": "en-US",
-              "resource_status": "reviewed",
-              "spoken_cue": "Plus Release",
-              "spoken_cue_key": "commands.ocf-cmd-prf-006-release.spoken-cue",
-              "spoken_fallback": false,
-              "spoken_locale": "en-US",
-              "version": null
-            },
-            "designation": "special",
-            "documentation": {
-              "order": 200,
-              "visible": true
-            },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
-            "function_id": "OCF-PRF-006",
-            "id": "OCF-CMD-PRF-006-RELEASE",
-            "localization": {
-              "explanation_key": "commands.ocf-cmd-prf-006-release.explanation",
-              "label_key": "commands.ocf-cmd-prf-006-release.label",
-              "purpose_key": "functions.ocf-prf-006.purpose",
-              "usage_key": "commands.ocf-cmd-prf-006-release.usage"
-            },
-            "phrase": "Plus Release",
-            "phrase_ref": {
-              "phrase_id": "OCF-CMD-PRF-006-RELEASE",
-              "source": "special-phrase"
-            },
-            "procedure": {
-              "before_steps": [
-                {
-                  "id": "focus-strong-quick",
-                  "localization_key": "command.procedure.focus-target",
-                  "operation": "focus-target"
-                }
-              ],
-              "evidence_keys": [
-                "hplus.function.ocf-prf-006.function-body"
-              ],
-              "ref": "OCF-PROC-INHALE-HOLD",
-              "status": "documented"
-            },
-            "relationships": {
-              "releases": [
-                "OCF-CMD-PRF-006-PRIMARY"
-              ]
-            },
-            "resolved_procedure_steps": [
-              {
-                "id": "focus-strong-quick",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
-              },
-              {
-                "id": "inhale",
-                "localization_key": "command.procedure.inhale",
-                "operation": "inhale"
-              },
-              {
-                "id": "hold",
-                "localization_key": "command.procedure.hold-breath",
-                "operation": "hold-breath"
-              },
-              {
-                "id": "command",
-                "localization_key": "command.procedure.think-or-say-command",
-                "operation": "think-or-say-command"
-              },
-              {
-                "id": "exhale",
-                "localization_key": "command.procedure.exhale",
-                "operation": "exhale"
-              }
-            ],
-            "role": "release",
-            "spoken": "Plus Release",
-            "spoken_review": "reviewed"
           }
         ],
         "common_uses": [
@@ -22296,7 +22273,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           },
           {
             "status": "draft",
-            "text": "Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks."
+            "text": "Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks."
           }
         ],
         "companions": [],
@@ -22608,10 +22585,18 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "command": null,
-            "command_id": "OCF-CMD-PRF-006-RELEASE",
             "required": false
           },
-          "trigger_conditions": []
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-prf-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": [
+            "The temporary enhanced response ends automatically when the immediate need passes."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -22639,7 +22624,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.",
+        "purpose": "Call upon exceptional strength, speed, and coordination when immediate action is needed.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -22685,7 +22670,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ]
       },
       "command_review": "review-required",
-      "common_uses": "Reviewing the exercise's intention of prompt, coordinated action. (draft); Reflecting on the documented release after an immediate need passes, without assuming exceptional strength or taking physical risks. (draft)",
+      "common_uses": "Reviewing the exercise's intention of prompt, coordinated action. (draft); Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks. (draft)",
       "compatibility": "bridge-trainable",
       "domains": "performance;body",
       "legacy_command": "PLUS-STRONG-QUICK",
@@ -23207,7 +23192,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           }
         ],
         "preparation": [],
-        "purpose": "Adjusts inward listening and perception in either direction using the MORE/LESS grammar.",
+        "purpose": "Enhance or reduce your awareness of external and internal sounds while strengthening auditory memory and imagination.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -23698,7 +23683,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports physical seeing and inner visualization, including visual processing, visual memory, and deliberate creation and manipulation of mental images.",
+        "purpose": "Strengthen physical sight, visual processing, visual memory, and the ability to create and manipulate mental images.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -24379,7 +24364,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Adjusts the felt sense of smell in either direction using the MORE/LESS grammar.",
+        "purpose": "Strengthen your sense of smell, adjust sensitivity to odors, and enhance your ability to remember and imagine scents.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -25048,7 +25033,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Adjusts the felt sense of taste in either direction using the MORE/LESS grammar.",
+        "purpose": "Strengthen your sense of taste, adjust sensitivity to flavors, and enhance your ability to remember and imagine tastes.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -25727,7 +25712,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Adjusts the felt sense of touch or skin sensation using the MORE/LESS grammar.",
+        "purpose": "Strengthen your sense of touch, adjust sensitivity to physical sensations, and enhance your ability to remember and imagine touch.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -26192,7 +26177,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.",
+        "purpose": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -26620,6 +26605,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-002.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -26658,7 +26650,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.",
+        "purpose": "Fall asleep naturally, rest deeply, and awaken at your desired time.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -27090,6 +27082,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-003.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -27128,7 +27127,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.",
+        "purpose": "Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -27596,7 +27595,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Requests an answer or constructive solution through sleep, with useful insight recognized on awakening.",
+        "purpose": "Find answers, explore solutions, and gain deeper understanding through sleep.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -28157,7 +28156,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           }
         ],
         "preparation": [],
-        "purpose": "Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting surroundings.",
+        "purpose": "Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -28278,13 +28277,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-immediate-need",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-slp-006.function-body"
               ],
@@ -28293,11 +28286,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-immediate-need",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -28645,7 +28633,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
-          "trigger_conditions": []
+          "scopes": {
+            "capability": {
+              "description": "The learned ability remains permanently available for deliberate future use.",
+              "description_key": "functions.ocf-slp-006.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": [
+            "The temporary alertness ends naturally when the immediate need passes."
+          ]
         },
         "locales": [],
         "localized_relationships": {
@@ -28673,7 +28670,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports staying awake and alert when needed; activation cue PLUS-AWAKE.",
+        "purpose": "Increase wakefulness, mental clarity, and physical alertness when you need to stay awake.",
         "safety": {
           "level": "general",
           "medical_relevance": false,

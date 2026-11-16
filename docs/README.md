@@ -5,9 +5,10 @@ loading the entire documentation tree:
 
 - Start as a listener or create your first session: [quickstart](QUICKSTART.md).
 - Make a private reference-based voice: [voice pack walkthrough](VOICE_PACKS.md).
-- Author a function: [lifecycle](FUNCTION_LIFECYCLE.md), then
-  [source-first narration](SOURCE_FIRST_AUTHORING.md), within the
+- Edit a function: [canonical YAML workflow](CANONICAL_EDITING.md), within the
   [per-locale function authority](PER_LOCALE_FUNCTION_AUTHORITY.md) model.
+  [Source-first narration](SOURCE_FIRST_AUTHORING.md) is optional for sourced
+  material and not a gate for direct YAML edits.
 - Review current titles/cues and historical lookup: [implemented decisions](EDITORIAL_REVIEW.md).
 - Review new original drafts and the Manifest successor: [editorial candidates](EDITORIAL_CANDIDATES.md).
 - Inspect the implemented four-function approval: [batch successor](EDITORIAL_BATCH_APPROVAL.md).
@@ -49,8 +50,8 @@ loading the entire documentation tree:
 - Find checked CLI/MCP/schema examples: [interface library](../examples/README.md).
 
 `documentation-index.json` inventories tracked Markdown, schemas, CLI help and
-wizard source. It records content fingerprints, references, audiences and
-machine-audit findings. Historical research, release checkpoints and draft
+wizard source. It records references, audiences and machine-audit findings.
+Its freshness data is generated, not a source authority. Historical research, release checkpoints and draft
 designs are retained as history; they do not override current commands or
 constitute current verification. A machine inventory is not a claim of human
 semantic review of every document.

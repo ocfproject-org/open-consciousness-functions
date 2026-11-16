@@ -7,10 +7,19 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Sets a deliberate tone for the day ahead.
+  text: |-
+    Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-prf-005.lifecycle.scopes.capability.description:
+    text: The ability to shape daily experiences through conscious intention remains permanently available.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-prf-005.lifecycle.scopes.application.description:
+    text: Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-PRF-005-PRIMARY
   display_cue:
@@ -38,7 +47,7 @@ activation:
     documentation:
       visible: true
       order: 1
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       ref: OCF-PROC-INHALE-HOLD
       status: documented
@@ -53,7 +62,7 @@ activation:
   - id: select-day-outcome
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Choose the outcomes you intend for today.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -113,11 +122,8 @@ entries:
   hplus.function.ocf-prf-005.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to shape the day ahead,
-
-      establishing the experiences, conditions, and outcomes
-
-      you desire for yourself, beginning with this day.'
+    text: |-
+      This OCF exercise will teach you to shape the experiences, opportunities, and outcomes of your day through the conscious direction of your total self.
   hplus.function.ocf-prf-005.function-body:
     status: reviewed
     version: 1.1.0
@@ -125,83 +131,39 @@ entries:
       function_id: OCF-PRF-005
       allowed:
       - cue.primary
-    text: 'From this moment forward, you can begin each morning
+    text: |-
+      From this moment forward, you have the ability to shape the experiences, conditions, and outcomes you desire for each day.
 
-      by creating the pattern you desire for the day ahead.
+      Your conscious mind, subconscious mind, higher self, and total self work together to establish the pattern you choose for the day ahead.
 
+      Each morning, before beginning your activities, consider what you wish to experience and accomplish today.
 
-      Before the activities of the day begin,
+      Choose the physical, mental, and emotional conditions you desire, along with the opportunities, circumstances, and outcomes you wish to bring into your day.
 
-      bring this day clearly into your awareness.
+      Establish these intentions clearly, knowing what you wish to experience before this day is complete.
 
-      See it unfolding as you most desire.
+      Take a deep breath in and gently hold it.
 
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Picture your physical self strong, comfortable,
+      Then slowly exhale through your mouth.
 
-      and moving through the day with ease.
+      Your total self responds to your intentions, bringing your thoughts, choices, actions, and greater awareness into alignment with the day you have chosen.
 
-      See your mind clear, capable, and aware.
+      Your subconscious mind and higher self cooperate with your conscious intentions, helping favorable circumstances and opportunities develop throughout the day.
 
-      Feel the emotional harmony and confidence
+      You recognize possibilities that support your intentions and respond naturally to opportunities as they arise.
 
-      you wish to experience throughout this day.
+      The events and experiences of your day begin unfolding in alignment with the pattern you have established.
 
+      Remain open to unexpected opportunities and outcomes that may fulfill your intentions in ways beyond those you initially considered.
 
-      Now look beyond yourself to the day around you.
+      This pattern applies to the current day.
 
-      See the meetings, events, opportunities,
+      Each new morning, you can establish fresh intentions for the day ahead.
 
-      and circumstances taking shape in your favor.
-
-      Picture the outcomes you desire as already
-
-      becoming part of this day''s unfolding pattern.
-
-
-      Express your intention clearly, in words
-
-      and in the image or knowing you hold within.
-
-      Be definite about what you wish to experience
-
-      and accomplish before this day is complete.
-
-
-      Inhale deeply and gently hold your breath.
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale slowly through your mouth.
-
-
-      Your conscious mind, subconscious mind,
-
-      higher self, and total being will immediately
-
-      begin working together toward the pattern selected.
-
-      Your thoughts, feelings, choices, and actions
-
-      will align with the day you have envisioned.
-
-
-      Opportunities and favorable possibilities
-
-      will become apparent as events unfold.
-
-      Remain open to unexpected ways your intention
-
-      may take form, even better than you imagined.
-
-
-      This pattern is for today, here and now.
-
-      Each morning you may create a new one,
-
-      and with each use, shaping your day through
-
-      clear intention will become easier and stronger.'
+      Your ability to shape your daily experiences through conscious intention remains permanently available.
   hplus.function.ocf-prf-005.closer:
     status: reviewed
     version: 1.2.0
@@ -209,18 +171,17 @@ entries:
       function_id: OCF-PRF-005
       allowed:
       - cue.primary
-    text: 'Remember, each morning, clearly picture and express
+    text: |-
+      Remember, whenever you wish to shape the day ahead, establish the experiences and outcomes you desire for today.
 
-      the experiences and outcomes you desire for this day.
+      Take a deep breath in and gently hold it.
 
-      Inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Then slowly exhale through your mouth.
 
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Make Your Day exercise.'
+      This concludes your OCF Make Your Day exercise.
 slug: make-your-day
 classification:
   primary_domain: performance
@@ -235,7 +196,16 @@ lifecycle:
   release:
     command: null
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - Select day-specific intended outcomes; each application applies to the current day.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-prf-005.lifecycle.scopes.capability.description
+    application:
+      persistence: temporary
+      activation: manual
+      description_key: functions.ocf-prf-005.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
@@ -268,7 +238,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 2ba92cea927f9e79b411dded3878e99e7b54cfa98776b5d8f6f1b65a35014995
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Make Your Day
     recommended_primary_cue: PLUS-THIS DAY
@@ -298,7 +267,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: fed5cda2b2905b03b82aaf8b37a3c583580aca798a91bc5b486c8075e0a3957e
 record_metadata:
   legacy:
     command_ids:
@@ -350,7 +318,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-prf-005-primary.usage
       purpose_key: functions.ocf-prf-005.purpose
       explanation_key: commands.ocf-cmd-prf-005-primary.explanation
-  predecessor_resource_sha256: 014ce0e90f86f0b18f18e892d0740e6de038ac4b4e25e554f659ae50977f327a
   editorial_decisions:
   - id: REL-PRF005-EXP001
     kind: approved-relationship
@@ -358,8 +325,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: fecc91f05198696f3311482a1f3f7313a20b7ff8fba235f2dec9de9bad90555c
-    current_values_sha256: 47350699787775fc1bae2b2a2826505fc800f0dda57e8c9cdd378a48c0e2ab76
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

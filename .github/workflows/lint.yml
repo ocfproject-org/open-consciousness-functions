@@ -34,11 +34,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@v17
+      - uses: actions/setup-python@v5
         with:
-          config: .markdownlint.json
-          globs: "**/*.md"
+          python-version: "3.12"
+      - name: Set up pinned Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install locked Markdownlint dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: markdownlint
+        run: make lint-markdown
       - name: Check generated-file headers
         run: |
           for f in FUNCTION_INDEX.md legacy/hplus-command-map.csv docs/COMMAND_REVIEW.md; do

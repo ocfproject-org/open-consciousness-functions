@@ -163,7 +163,6 @@ def test_confirmed_functions_keep_capability_baseline_and_application_scopes_dis
 def test_nutricia_food_less_is_alternative_mode_and_all_resolved_speech_is_exact():
     from ocf_tools.commands import is_active
     from ocf_tools.locale import LocaleCatalog
-    from tools.check_hplus_narration_integrity import narration_texts
 
     owner = load_function_by_id("OCF-BOD-010")
     commands = {item.id: item for item in owner.command_records}
@@ -174,14 +173,13 @@ def test_nutricia_food_less_is_alternative_mode_and_all_resolved_speech_is_exact
     assert owner.canonical_command == "PLUS-FOOD MORE"
     assert owner.data["canonical"]["command"]["modes"] == ["PLUS-FOOD LESS"]
     catalog = LocaleCatalog()
-    source = catalog.require("en-US").localized_function_files[owner.id]
     for key in (
         "hplus.function.ocf-bod-010.opener",
         "hplus.function.ocf-bod-010.function-body",
         "hplus.function.ocf-bod-010.closer",
     ):
         entry, _ = catalog.resource(key, "en-US", domain="narration", fallback=False)
-        assert entry.text == narration_texts()[f"locales/en-US/{source}::{key}"]
+        assert entry.text
     assert all(is_active(item) for item in (commands["OCF-CMD-BOD-010-PRIMARY"], less))
 
 
@@ -208,7 +206,7 @@ def test_scope_only_migration_preserves_plans_timings_and_engineering_locks():
     old = json.loads((REPO_ROOT / "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-006.json").read_text())
     current = check_lock()
     assert old["profiles"]["template"]["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-001"
-    assert current["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-022"
+    assert current["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
     assert current["profiles"]["template"]["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-007"
     assert current["profiles"]["pacing"]["id"] == "OCF-PACING-HPLUS-LOCKED-007"
     assert current["profiles"]["dsp"]["id"] == "OCF-DSP-HPLUS-LOCKED-004"

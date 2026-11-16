@@ -41,6 +41,28 @@ Use `@ocf-investigator` for a narrow flow question and
 `@ocf-test-reviewer` for regression/test-taxonomy review. Ask for symbols,
 precedence, and tests, not a repository-wide summary.
 
+## Edit canonical functions
+
+Edit `locales/<locale>/OCF-*.yaml` directly. This is the only current function
+definition for that locale. Descriptions, narration entries, command controls,
+procedure steps, lifecycle scopes, and metadata are authored there; do not update
+a checksum receipt, approval hash, or parallel text registry after an ordinary
+source edit. Git history records prior revisions.
+
+After editing, run:
+
+```bash
+python scripts/ocf.py validate --all
+python scripts/ocf.py build-index
+python scripts/ocf.py audio plan --all --locale en-US
+```
+
+Indexes, command guides, and session plans are derived outputs. Use their
+`--check` commands after generation. Planning updates text/config fingerprints
+but does not render or replace published audio. Existing release manifests and
+recorded audio remain immutable; a new source version never silently updates an
+existing recording. See [canonical YAML editing](CANONICAL_EDITING.md).
+
 ## Commands
 
 ```bash

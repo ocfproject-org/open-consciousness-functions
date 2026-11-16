@@ -7,9 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Strengthens the body's natural processes of healing, repair, regeneration,
-    renewal, and maintenance throughout the entire body, with optional reinforcement
-    of specific areas.
+  text: |-
+    Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.
   status: canonical
   version: 1.0.0
 metadata_entries:
@@ -295,7 +294,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-013
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 55c7a7ac7d46a6cec582fc76e18ac137fe9aece22ced8823eb9aa58ce0bc39fd
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Body Tune-Up
     recommended_primary_cue: PLUS-BALANCE, HEAL
@@ -330,7 +328,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: eba297d3dcf3e674e06618c4b8ec1739159b50932a05b6fed8ecb8b5909c18d0
 record_metadata:
   legacy:
     command_ids:
@@ -399,7 +396,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-bod-013-primary.explanation
       display_cue_key: commands.ocf-cmd-bod-013-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-bod-013-primary.spoken-cue
-  predecessor_resource_sha256: ab9595652bfcff17fb87f7d843b7ba2fd474c448c6de2b1a0b5683d9f38d4950
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -411,16 +407,9 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 5e036473f24a7aea4d7f2904e9c8e5bd08a99be87938e95c25534573ed3b4d4a
     status: accepted
-    previous_values_sha256: 5d995556d6eaaa9b22af1841c004b5318a8b4faf071df0d156308290b311c1cd
-    current_values_sha256: e5b26702904b76b13e81dd5a33b0049747d5e2cdf950997c672c22595d72e7d7
     changed_narration_keys:
     - hplus.function.ocf-bod-013.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-013.closer: 2bde3e2a218aa1956b01ca13fa517b63f2fd6c00d835ee24b609f13201388ccc
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-013.closer: 3a4f5099d915674b677cc4ff4578f40fe190f0632f35a6b8fa5c8a9e89940e42
     review_note: Change title from Tune-Up to Body Tune-Up and update exercise sign-off.
       Keep display and spoken cue unchanged. Preserve selected-area inward attention,
       close eyes/inhale/hold/complete cue/slow mouth exhale/open eyes sequence and
@@ -435,9 +424,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-013:persistence
     decision_source: Please do
-    source_row_sha256: ffd73a0ae4fa6a5eff93a4a3ce2ed04903c6f7e057ee56d70d02659d704bb4d6
     status: accepted
-    current_values_sha256: 72c6688a3a1bb200c0c08295c0af504b23ebf8abf1ff0c16914775387185be88
     review_note: 'Body Tune-Up: 1'
     approval_response: approve
   - id: OCF-COMMAND-SIMPLIFICATION-001
@@ -446,13 +433,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands,
       lifecycle, procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 771814f87529e78dd2cc3e982bd9bce2b5d0c58679916891e0baa23e54853b02
     status: accepted
-    previous_values_sha256: 40053342ce3821c8315614dd68e97c59270d85e953be901db43f1dc05a845556
-    current_values_sha256: d9ec862fe349785fbe4e5e41e3080f74cb33ebad719587ec774980a8a5464fba
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved
       canonical wording; listening and release approval remain false.
   - id: REL-BOD013-BOD014
@@ -462,8 +444,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: 83a8911930818c2ae253afe2f639327fc99bcc47a861af601cfed3467f79063f
-    current_values_sha256: 573f5d30faecc34ef76f60f325024840010c4a318f2a38ea9c3b207693d47134
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

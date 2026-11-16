@@ -7,9 +7,10 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Adjusts felt sexual drive in either direction using the MORE/LESS grammar.
+  text: |-
+    Increase or decrease sexual desire, arousal, and responsiveness.
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-BOD-012-PRIMARY
@@ -460,7 +461,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-012
     status: pending
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: d428452095ffcc8e967884189b249bdb5be9e5b0ae05c02962a0d6cc5289b70f
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Sex Drive
     recommended_primary_cue: PLUS-SEX MORE
@@ -489,7 +489,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 96a6b9e6ba85d2c8c393369bde584da380814eea5b6284284fa11a5b20514fc8
 record_metadata:
   legacy:
     command_ids:
@@ -569,7 +568,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-bod-012-legacy-02.usage
       purpose_key: functions.ocf-bod-012.purpose
       explanation_key: commands.ocf-cmd-bod-012-legacy-02.explanation
-  predecessor_resource_sha256: 385497e469468d2ebdf6c3f601875d01b399e8521fe18884722d70470f8a91f7
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
