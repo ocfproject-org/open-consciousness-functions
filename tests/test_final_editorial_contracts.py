@@ -123,10 +123,13 @@ def test_removed_selection_steps_and_explicit_outcome_selections(functions):
 
 
 def test_empathize_requires_a_being_but_is_breath_independent(functions):
-    command = functions["OCF-EMO-003"]["activation"]
+    function = functions["OCF-EMO-003"]
+    command = function["activation"]
     assert _operations(command) == ["select-intention", "think-or-say-command"]
     assert command["control"]["procedure"]["before_steps"][0]["id"] == "select-being"
     assert not {"inhale", "hold-breath", "exhale"} & set(_operations(command))
+    assert function["lifecycle"]["scopes"]["capability"]["persistence"] == "permanent"
+    assert function["lifecycle"]["scopes"]["application"]["persistence"] == "conditional"
 
 
 def test_selected_emotional_and_thought_patterns_are_specific_before_activation(functions):
@@ -191,6 +194,66 @@ def test_strong_quick_has_no_active_release_and_ends_automatically(functions):
         for row in function["lifecycle"]["trigger_conditions"]
     )
     assert "OCF-CMD-PRF-006-RELEASE" not in str(function["entries"])
+
+
+def test_final_insulate_and_dissolve_procedures_match_selected_scope_contracts(functions):
+    insulate = functions["OCF-EXP-002"]
+    primary = insulate["activation"]
+    assert _operations(primary) == ["inhale", "hold-breath", "think-or-say-command", "exhale"]
+    assert primary["control"]["procedure"]["before_steps"] == []
+
+    commands = {row["role"]: row for row in insulate["secondary_commands"]}
+    assert set(commands) >= {"cancel", "release"}
+    assert _operations(commands["cancel"]) == [
+        "inhale",
+        "hold-breath",
+        "think-or-say-command",
+        "exhale",
+    ]
+    release = commands["release"]
+    assert _operations(release) == [
+        "other",
+        "inhale",
+        "hold-breath",
+        "think-or-say-command",
+        "exhale",
+    ]
+    assert "current Insulate application" in release["procedure_steps"][0]["instruction"]["text"]
+    assert insulate["lifecycle"]["scopes"]["capability"]["persistence"] == "permanent"
+    assert insulate["lifecycle"]["scopes"]["application"]["persistence"] == "persistent"
+
+    dissolve_step = functions["OCF-EXP-003"]["activation"]["procedure_steps"][0]
+    assert dissolve_step["operation"] == "select-intention"
+    assert (
+        "unwanted belief, expectation, emotional response"
+        in dissolve_step["instruction"]["text"].lower()
+    )
+
+
+def test_final_manifest_make_your_day_and_intuition_contracts(functions):
+    manifest = functions["OCF-EXP-001"]
+    manifest_steps = manifest["activation"]["procedure_steps"]
+    assert "desired completion time" in manifest_steps[0]["instruction"]["text"].lower()
+    assert _operations(manifest["activation"]) == [
+        "select-intention",
+        "inhale",
+        "hold-breath",
+        "think-or-say-command",
+        "exhale",
+    ]
+    assert manifest["lifecycle"]["scopes"]["capability"]["persistence"] == "permanent"
+    assert manifest["lifecycle"]["scopes"]["application"]["persistence"] == "conditional"
+
+    make_day = functions["OCF-PRF-005"]
+    assert "today" in make_day["activation"]["procedure_steps"][0]["instruction"]["text"].lower()
+    assert make_day["lifecycle"]["scopes"]["capability"]["persistence"] == "permanent"
+    assert make_day["lifecycle"]["scopes"]["application"]["persistence"] == "temporary"
+    assert any("current day" in row.lower() for row in make_day["lifecycle"]["trigger_conditions"])
+
+    intuition = functions["OCF-EXP-006"]["activation"]
+    operations = _operations(intuition)
+    assert operations[:2] == ["select-question", "think-or-say-command"]
+    assert not {"close-eyes", "inhale", "hold-breath", "exhale", "focus-target"} & set(operations)
 
 
 def test_hearing_tinnitus_paragraph_and_touch_exhale_resolve_exactly():

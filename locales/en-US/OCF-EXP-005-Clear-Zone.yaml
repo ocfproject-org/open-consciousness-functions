@@ -6,7 +6,8 @@ title:
   text: Clear Zone
   status: reviewed
 description:
-  text: 'Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.'
+  text: |-
+    Maintain a clear personal zone that naturally discourages unwanted insect contact.
   status: reviewed
 metadata_entries:
   functions.ocf-exp-005.capability:

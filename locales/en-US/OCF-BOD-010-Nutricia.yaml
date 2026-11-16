@@ -7,10 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: 'Directs the intended use of food energy and nourishment through two modes:
-    Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment
-    with reduced unnecessary retention and storage. The last selected mode remains
-    active until deliberately changed.'
+  text: |-
+    Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.
   status: canonical
   version: 1.0.1
 metadata_entries:

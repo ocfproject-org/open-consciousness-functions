@@ -173,7 +173,7 @@
             "key": "functions.ocf-aut-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control."
+            "text": "Perform learned skills and activities naturally and automatically, with less conscious effort."
           },
           "related_commands": [],
           "relationships": {},
@@ -284,7 +284,7 @@
         "key": "functions.ocf-aut-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control."
+        "text": "Perform learned skills and activities naturally and automatically, with less conscious effort."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -294,7 +294,7 @@
         "key": "functions.ocf-aut-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control."
+        "text": "Perform learned skills and activities naturally and automatically, with less conscious effort."
       },
       "slug": "see-be",
       "source_availability": "unavailable",
@@ -490,7 +490,7 @@
             "key": "functions.ocf-bod-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired."
+            "text": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration."
           },
           "related_commands": [],
           "relationships": {},
@@ -553,7 +553,7 @@
         "key": "functions.ocf-bod-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired."
+        "text": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -585,7 +585,7 @@
         "key": "functions.ocf-bod-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired."
+        "text": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration."
       },
       "slug": "brain-repairs",
       "source_availability": "available",
@@ -763,7 +763,7 @@
             "key": "functions.ocf-bod-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired."
+            "text": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels."
           },
           "related_commands": [],
           "relationships": {},
@@ -816,7 +816,7 @@
         "key": "functions.ocf-bod-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired."
+        "text": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -826,7 +826,7 @@
         "key": "functions.ocf-bod-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired."
+        "text": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels."
       },
       "slug": "circulation",
       "source_availability": "available",
@@ -1022,7 +1022,7 @@
             "key": "functions.ocf-bod-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Eases physical discomfort in a selected area of the body."
+            "text": "Ease physical discomfort in a selected area of the body."
           },
           "related_commands": [],
           "relationships": {},
@@ -1085,7 +1085,7 @@
         "key": "functions.ocf-bod-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eases physical discomfort in a selected area of the body."
+        "text": "Ease physical discomfort in a selected area of the body."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -1117,7 +1117,7 @@
         "key": "functions.ocf-bod-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eases physical discomfort in a selected area of the body."
+        "text": "Ease physical discomfort in a selected area of the body."
       },
       "slug": "de-discomfort",
       "source_availability": "available",
@@ -1300,7 +1300,7 @@
             "key": "functions.ocf-bod-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired."
+            "text": "Enhance the body's natural cleansing, detoxification, and renewal processes."
           },
           "related_commands": [],
           "relationships": {},
@@ -1353,7 +1353,7 @@
         "key": "functions.ocf-bod-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired."
+        "text": "Enhance the body's natural cleansing, detoxification, and renewal processes."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -1363,7 +1363,7 @@
         "key": "functions.ocf-bod-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired."
+        "text": "Enhance the body's natural cleansing, detoxification, and renewal processes."
       },
       "slug": "de-tox-body",
       "source_availability": "available",
@@ -1903,7 +1903,7 @@
             "key": "functions.ocf-bod-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired."
+            "text": "Improve heart function, circulation, and natural cardiovascular maintenance."
           },
           "related_commands": [],
           "relationships": {},
@@ -1966,7 +1966,7 @@
         "key": "functions.ocf-bod-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired."
+        "text": "Improve heart function, circulation, and natural cardiovascular maintenance."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -1998,7 +1998,7 @@
         "key": "functions.ocf-bod-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired."
+        "text": "Improve heart function, circulation, and natural cardiovascular maintenance."
       },
       "slug": "heart-repairs",
       "source_availability": "available",
@@ -2201,7 +2201,7 @@
             "key": "functions.ocf-bod-007.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired."
+            "text": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs."
           },
           "related_commands": [],
           "relationships": {},
@@ -2312,7 +2312,7 @@
         "key": "functions.ocf-bod-007.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired."
+        "text": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -2322,7 +2322,7 @@
         "key": "functions.ocf-bod-007.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired."
+        "text": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs."
       },
       "slug": "hypertension",
       "source_availability": "available",
@@ -2492,7 +2492,7 @@
             "key": "functions.ocf-bod-008.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled."
+            "text": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue."
           },
           "related_commands": [],
           "relationships": {},
@@ -2545,7 +2545,7 @@
         "key": "functions.ocf-bod-008.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled."
+        "text": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -2555,7 +2555,7 @@
         "key": "functions.ocf-bod-008.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled."
+        "text": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue."
       },
       "slug": "immunizing",
       "source_availability": "available",
@@ -2725,7 +2725,7 @@
             "key": "functions.ocf-bod-009.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired."
+            "text": "Improve breathing efficiency, respiratory function, and natural airway maintenance."
           },
           "related_commands": [],
           "relationships": {},
@@ -2788,7 +2788,7 @@
         "key": "functions.ocf-bod-009.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired."
+        "text": "Improve breathing efficiency, respiratory function, and natural airway maintenance."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -2820,7 +2820,7 @@
         "key": "functions.ocf-bod-009.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired."
+        "text": "Improve breathing efficiency, respiratory function, and natural airway maintenance."
       },
       "slug": "lungs-repairs",
       "source_availability": "available",
@@ -2989,7 +2989,7 @@
             "key": "functions.ocf-bod-010.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed."
+            "text": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage."
           },
           "related_commands": [
             {
@@ -3155,7 +3155,7 @@
             "key": "functions.ocf-bod-010.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed."
+            "text": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage."
           },
           "related_commands": [
             {
@@ -3287,7 +3287,7 @@
         "key": "functions.ocf-bod-010.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed."
+        "text": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -3297,7 +3297,7 @@
         "key": "functions.ocf-bod-010.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed."
+        "text": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage."
       },
       "slug": "nutricia",
       "source_availability": "available",
@@ -3487,7 +3487,7 @@
             "key": "functions.ocf-bod-011.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired."
+            "text": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity."
           },
           "related_commands": [],
           "relationships": {},
@@ -3598,7 +3598,7 @@
         "key": "functions.ocf-bod-011.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired."
+        "text": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -3608,7 +3608,7 @@
         "key": "functions.ocf-bod-011.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired."
+        "text": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity."
       },
       "slug": "passages",
       "source_availability": "available",
@@ -3803,7 +3803,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+            "text": "Increase or decrease sexual desire, arousal, and responsiveness."
           },
           "related_commands": [
             {
@@ -3995,7 +3995,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+            "text": "Increase or decrease sexual desire, arousal, and responsiveness."
           },
           "related_commands": [
             {
@@ -4108,7 +4108,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+            "text": "Increase or decrease sexual desire, arousal, and responsiveness."
           },
           "related_commands": [],
           "relationships": {},
@@ -4181,7 +4181,7 @@
             "key": "functions.ocf-bod-012.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+            "text": "Increase or decrease sexual desire, arousal, and responsiveness."
           },
           "related_commands": [],
           "relationships": {},
@@ -4234,7 +4234,7 @@
         "key": "functions.ocf-bod-012.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+        "text": "Increase or decrease sexual desire, arousal, and responsiveness."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -4244,7 +4244,7 @@
         "key": "functions.ocf-bod-012.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness."
+        "text": "Increase or decrease sexual desire, arousal, and responsiveness."
       },
       "slug": "sex-drive",
       "source_availability": "available",
@@ -4468,7 +4468,7 @@
             "key": "functions.ocf-bod-013.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas."
+            "text": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas."
           },
           "related_commands": [],
           "relationships": {},
@@ -4589,7 +4589,7 @@
         "key": "functions.ocf-bod-013.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas."
+        "text": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -4621,7 +4621,7 @@
         "key": "functions.ocf-bod-013.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas."
+        "text": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas."
       },
       "slug": "tune-up",
       "source_availability": "available",
@@ -4830,7 +4830,7 @@
             "key": "functions.ocf-bod-014.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function."
+            "text": "Regenerate and restore damaged, weakened, or missing structures in a selected body part."
           },
           "related_commands": [],
           "relationships": {},
@@ -4883,7 +4883,7 @@
         "key": "functions.ocf-bod-014.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function."
+        "text": "Regenerate and restore damaged, weakened, or missing structures in a selected body part."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -4893,7 +4893,7 @@
         "key": "functions.ocf-bod-014.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function."
+        "text": "Regenerate and restore damaged, weakened, or missing structures in a selected body part."
       },
       "slug": "regenerate",
       "source_availability": "unavailable",
@@ -5089,7 +5089,7 @@
             "key": "functions.ocf-bod-015.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use."
+            "text": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired."
           },
           "related_commands": [],
           "relationships": {},
@@ -5254,7 +5254,7 @@
             "key": "functions.ocf-bod-015.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use."
+            "text": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired."
           },
           "related_commands": [
             {
@@ -5367,7 +5367,7 @@
         "key": "functions.ocf-bod-015.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use."
+        "text": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -5377,7 +5377,7 @@
         "key": "functions.ocf-bod-015.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use."
+        "text": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired."
       },
       "slug": "short-fix",
       "source_availability": "unavailable",
@@ -5541,7 +5541,7 @@
             "key": "functions.ocf-cog-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information."
+            "text": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions."
           },
           "related_commands": [],
           "relationships": {},
@@ -5652,7 +5652,7 @@
         "key": "functions.ocf-cog-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information."
+        "text": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -5662,7 +5662,7 @@
         "key": "functions.ocf-cog-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information."
+        "text": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions."
       },
       "slug": "access-to-information",
       "source_availability": "available",
@@ -5827,7 +5827,7 @@
             "key": "functions.ocf-cog-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired."
+            "text": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving."
           },
           "related_commands": [],
           "relationships": {},
@@ -5890,7 +5890,7 @@
         "key": "functions.ocf-cog-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired."
+        "text": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -5922,7 +5922,7 @@
         "key": "functions.ocf-cog-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired."
+        "text": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving."
       },
       "slug": "buy-the-numbers",
       "source_availability": "available",
@@ -6563,7 +6563,7 @@
             "key": "functions.ocf-cog-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Capture and retain selected information and experiences for clear, reliable recall."
+            "text": "Capture and retain information and experiences for clear, reliable recall."
           },
           "related_commands": [],
           "relationships": {},
@@ -6683,7 +6683,7 @@
             "key": "functions.ocf-cog-004.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Capture and retain selected information and experiences for clear, reliable recall."
+            "text": "Capture and retain information and experiences for clear, reliable recall."
           },
           "related_commands": [
             {
@@ -6825,7 +6825,7 @@
         "key": "functions.ocf-cog-004.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Capture and retain selected information and experiences for clear, reliable recall."
+        "text": "Capture and retain information and experiences for clear, reliable recall."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -6857,7 +6857,7 @@
         "key": "functions.ocf-cog-004.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Capture and retain selected information and experiences for clear, reliable recall."
+        "text": "Capture and retain information and experiences for clear, reliable recall."
       },
       "slug": "imprint",
       "source_availability": "available",
@@ -8193,7 +8193,7 @@
             "key": "functions.ocf-emg-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
+            "text": "Enhance automatic protection, healing, and recovery following physical injury."
           },
           "related_commands": [],
           "relationships": {},
@@ -8304,7 +8304,7 @@
         "key": "functions.ocf-emg-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
+        "text": "Enhance automatic protection, healing, and recovery following physical injury."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -8314,7 +8314,7 @@
         "key": "functions.ocf-emg-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury."
+        "text": "Enhance automatic protection, healing, and recovery following physical injury."
       },
       "slug": "emergency-injury",
       "source_availability": "unavailable",
@@ -8500,7 +8500,7 @@
             "key": "functions.ocf-emg-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
+            "text": "Enhance the body's response to harmful substances through protection, detoxification, and elimination."
           },
           "related_commands": [],
           "relationships": {},
@@ -8611,7 +8611,7 @@
         "key": "functions.ocf-emg-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
+        "text": "Enhance the body's response to harmful substances through protection, detoxification, and elimination."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -8621,7 +8621,7 @@
         "key": "functions.ocf-emg-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances."
+        "text": "Enhance the body's response to harmful substances through protection, detoxification, and elimination."
       },
       "slug": "emergency-toxic",
       "source_availability": "unavailable",
@@ -9088,7 +9088,7 @@
             "key": "functions.ocf-emo-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
+            "text": "Release unwanted thoughts and recurring emotional patterns to clear mental interference."
           },
           "related_commands": [],
           "relationships": {},
@@ -9171,7 +9171,7 @@
         "key": "functions.ocf-emo-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
+        "text": "Release unwanted thoughts and recurring emotional patterns to clear mental interference."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9203,7 +9203,7 @@
         "key": "functions.ocf-emo-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding."
+        "text": "Release unwanted thoughts and recurring emotional patterns to clear mental interference."
       },
       "slug": "off-loading",
       "source_availability": "available",
@@ -9270,8 +9270,14 @@
             "order": 1,
             "visible": true
           },
-          "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope": "conditional",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each selected-being connection is a separate deliberate, breath-independent application.",
+            "description_key": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+            "persistence": "conditional"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-emo-003-primary.explanation",
@@ -9352,17 +9358,17 @@
             "key": "functions.ocf-emo-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
+            "text": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses."
           },
           "related_commands": [],
           "relationships": {},
           "role": "activation",
           "scope_label": {
             "fallback": false,
-            "key": "command.scope.temporary",
+            "key": "command.scope.conditional",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporary"
+            "text": "Conditional application"
           },
           "spoken": "Plus Empathize",
           "spoken_review": "reviewed",
@@ -9387,7 +9393,46 @@
       ],
       "effects": null,
       "function_id": "OCF-EMO-003",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-emo-003.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The ability to establish empathetic and intuitive communication remains permanently available."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        },
+        {
+          "activation": "manual",
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Each selected-being connection is a separate deliberate, breath-independent application."
+          },
+          "kind": "application",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.application",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Individual invocation / application"
+          },
+          "persistence": "conditional"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [
           {
@@ -9415,7 +9460,7 @@
         "key": "functions.ocf-emo-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
+        "text": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9447,7 +9492,7 @@
         "key": "functions.ocf-emo-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses."
+        "text": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses."
       },
       "slug": "empathizing",
       "source_availability": "unavailable",
@@ -9514,8 +9559,14 @@
             "order": 1,
             "visible": true
           },
-          "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope": "conditional",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each deliberate application is defined by its selected outcome and desired completion timeframe.",
+            "description_key": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+            "persistence": "conditional"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-exp-001-primary.explanation",
@@ -9636,17 +9687,17 @@
             "key": "functions.ocf-exp-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
+            "text": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment."
           },
           "related_commands": [],
           "relationships": {},
           "role": "activation",
           "scope_label": {
             "fallback": false,
-            "key": "command.scope.temporary",
+            "key": "command.scope.conditional",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporary"
+            "text": "Conditional application"
           },
           "spoken": "Plus Manifest",
           "spoken_review": "reviewed",
@@ -9671,7 +9722,46 @@
       ],
       "effects": null,
       "function_id": "OCF-EXP-001",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-001.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The learned ability to direct intention through the total self remains permanently available."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        },
+        {
+          "activation": "manual",
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Each deliberate application is defined by its selected outcome and desired completion timeframe."
+          },
+          "kind": "application",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.application",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Individual invocation / application"
+          },
+          "persistence": "conditional"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -9708,7 +9798,7 @@
         "key": "functions.ocf-exp-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
+        "text": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -9761,7 +9851,7 @@
         "key": "functions.ocf-exp-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities."
+        "text": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment."
       },
       "slug": "mobius-west",
       "source_availability": "available",
@@ -9828,12 +9918,12 @@
             "order": 1,
             "visible": true
           },
-          "effect_scope": "temporary",
+          "effect_scope": "persistent",
           "effect_scope_details": {
             "activation": "manual",
-            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
             "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-            "persistence": "temporary"
+            "persistence": "persistent"
           },
           "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
@@ -9870,13 +9960,7 @@
             "source": "canonical-primary"
           },
           "procedure": {
-            "before_steps": [
-              {
-                "id": "select-comfort-zone",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              }
-            ],
+            "before_steps": [],
             "evidence_keys": [
               "hplus.function.ocf-exp-002.function-body"
             ],
@@ -9886,23 +9970,10 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "select-comfort-zone",
-              "instruction": {
-                "fallback": false,
-                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/0",
-                "requested_locale": "en-US",
-                "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Choose the purpose for using this function.",
-                "version": "1.0.0"
-              },
-              "operation": "select-purpose"
-            },
-            {
               "id": "inhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/1",
+                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -9915,7 +9986,7 @@
               "id": "hold",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/2",
+                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/1",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -9928,7 +9999,7 @@
               "id": "command",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/3",
+                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/2",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -9941,7 +10012,7 @@
               "id": "exhale",
               "instruction": {
                 "fallback": false,
-                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/4",
+                "key": "OCF-EXP-002/OCF-CMD-EXP-002-PRIMARY/procedure_steps/3",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
@@ -9956,17 +10027,17 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
+            "text": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences."
           },
           "related_commands": [],
           "relationships": {},
           "role": "activation",
           "scope_label": {
             "fallback": false,
-            "key": "command.scope.temporary",
+            "key": "command.scope.persistent",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporary"
+            "text": "Persistent until deliberately changed"
           },
           "spoken": "Plus Insulate",
           "spoken_review": "reviewed",
@@ -9998,12 +10069,12 @@
             "order": 11,
             "visible": true
           },
-          "effect_scope": "temporary",
+          "effect_scope": "persistent",
           "effect_scope_details": {
             "activation": "manual",
-            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
             "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-            "persistence": "temporary"
+            "persistence": "persistent"
           },
           "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
@@ -10101,7 +10172,7 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
+            "text": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences."
           },
           "related_commands": [
             {
@@ -10129,10 +10200,10 @@
           "role": "cancel",
           "scope_label": {
             "fallback": false,
-            "key": "command.scope.temporary",
+            "key": "command.scope.persistent",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporary"
+            "text": "Persistent until deliberately changed"
           },
           "spoken": "Plus Cancel",
           "spoken_review": "reviewed",
@@ -10164,12 +10235,12 @@
             "order": 200,
             "visible": true
           },
-          "effect_scope": "temporary",
+          "effect_scope": "persistent",
           "effect_scope_details": {
             "activation": "manual",
-            "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+            "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
             "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-            "persistence": "temporary"
+            "persistence": "persistent"
           },
           "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
@@ -10202,9 +10273,9 @@
           "procedure": {
             "before_steps": [
               {
-                "id": "focus-zoning",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
+                "id": "recall-insulate-application",
+                "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+                "operation": "other"
               }
             ],
             "evidence_keys": [
@@ -10216,17 +10287,17 @@
           "procedure_status": "documented",
           "procedure_steps": [
             {
-              "id": "focus-zoning",
+              "id": "recall-insulate-application",
               "instruction": {
                 "fallback": false,
                 "key": "OCF-EXP-002/OCF-CMD-EXP-002-RELEASE/procedure_steps/0",
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
-                "status": "canonical",
-                "text": "Focus attention on the selected target.",
+                "status": "reviewed",
+                "text": "Bring the current Insulate application into awareness.",
                 "version": "1.0.0"
               },
-              "operation": "focus-target"
+              "operation": "other"
             },
             {
               "id": "inhale",
@@ -10286,7 +10357,7 @@
             "key": "functions.ocf-exp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
+            "text": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences."
           },
           "related_commands": [
             {
@@ -10314,10 +10385,10 @@
           "role": "release",
           "scope_label": {
             "fallback": false,
-            "key": "command.scope.temporary",
+            "key": "command.scope.persistent",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Temporary"
+            "text": "Persistent until deliberately changed"
           },
           "spoken": "Plus Release",
           "spoken_review": "reviewed",
@@ -10369,7 +10440,7 @@
             "key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+            "text": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold."
           },
           "kind": "application",
           "label": {
@@ -10379,7 +10450,7 @@
             "resolved_locale": "en-US",
             "text": "Individual invocation / application"
           },
-          "persistence": "temporary"
+          "persistence": "persistent"
         }
       ],
       "localized_relationships": {
@@ -10399,7 +10470,7 @@
         "key": "functions.ocf-exp-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
+        "text": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -10409,7 +10480,7 @@
         "key": "functions.ocf-exp-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs."
+        "text": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences."
       },
       "slug": "zoning",
       "source_availability": "unavailable",
@@ -10544,7 +10615,7 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "canonical",
-                "text": "Choose an intention.",
+                "text": "Select the unwanted belief, expectation, emotional response, or recurring pattern you wish to dissolve.",
                 "version": "1.0.0"
               },
               "operation": "select-intention"
@@ -10701,7 +10772,7 @@
         "key": "functions.ocf-exp-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons."
+        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [
@@ -10733,7 +10804,7 @@
         "key": "functions.ocf-exp-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons."
+        "text": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns."
       },
       "slug": "dissolve",
       "source_availability": "pending-source-review",
@@ -11162,7 +11233,7 @@
         "key": "functions.ocf-exp-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings."
+        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [],
@@ -11172,7 +11243,7 @@
         "key": "functions.ocf-exp-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings."
+        "text": "Maintain a clear personal zone that naturally discourages unwanted insect contact."
       },
       "slug": "clear-zone",
       "source_availability": "pending-source-review",
@@ -11391,7 +11462,7 @@
         "key": "functions.ocf-exp-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness."
+        "text": "Access intuitive guidance through your total self, higher self, and wider consciousness."
       },
       "reimplementation_status": "in-progress",
       "related_functions": [],
@@ -11401,7 +11472,7 @@
         "key": "functions.ocf-exp-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness."
+        "text": "Access intuitive guidance through your total self, higher self, and wider consciousness."
       },
       "slug": "intuition",
       "source_availability": "pending-source-review",
@@ -13069,7 +13140,7 @@
             "key": "functions.ocf-fnd-006.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "End selected temporary OCF function applications without losing their learned abilities."
+            "text": "End selected temporary OCF applications without losing learned abilities."
           },
           "related_commands": [],
           "relationships": {},
@@ -13142,7 +13213,7 @@
         "key": "functions.ocf-fnd-006.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "End selected temporary OCF function applications without losing their learned abilities."
+        "text": "End selected temporary OCF applications without losing learned abilities."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -13152,7 +13223,7 @@
         "key": "functions.ocf-fnd-006.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "End selected temporary OCF function applications without losing their learned abilities."
+        "text": "End selected temporary OCF applications without losing learned abilities."
       },
       "slug": "release",
       "source_availability": "unavailable",
@@ -13361,7 +13432,7 @@
             "key": "functions.ocf-lif-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
+            "text": "Eliminate unwanted habits and automatic behavior patterns."
           },
           "related_commands": [],
           "relationships": {},
@@ -13482,7 +13553,7 @@
         "key": "functions.ocf-lif-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
+        "text": "Eliminate unwanted habits and automatic behavior patterns."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -13514,7 +13585,7 @@
         "key": "functions.ocf-lif-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence."
+        "text": "Eliminate unwanted habits and automatic behavior patterns."
       },
       "slug": "de-hab",
       "source_availability": "available",
@@ -13975,7 +14046,7 @@
             "key": "functions.ocf-prf-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
+            "text": "Draw on your total self's strength, wisdom, and confidence in everyday life."
           },
           "related_commands": [],
           "relationships": {},
@@ -14038,7 +14109,7 @@
         "key": "functions.ocf-prf-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
+        "text": "Draw on your total self's strength, wisdom, and confidence in everyday life."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -14070,7 +14141,7 @@
         "key": "functions.ocf-prf-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life."
+        "text": "Draw on your total self's strength, wisdom, and confidence in everyday life."
       },
       "slug": "eight-great",
       "source_availability": "available",
@@ -14235,7 +14306,7 @@
             "key": "functions.ocf-prf-003.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles."
+            "text": "Move with greater coordination, speed, and precision."
           },
           "related_commands": [],
           "relationships": {},
@@ -14298,7 +14369,7 @@
         "key": "functions.ocf-prf-003.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles."
+        "text": "Move with greater coordination, speed, and precision."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -14330,7 +14401,7 @@
         "key": "functions.ocf-prf-003.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles."
+        "text": "Move with greater coordination, speed, and precision."
       },
       "slug": "synchronizing",
       "source_availability": "available",
@@ -14709,7 +14780,13 @@
             "visible": true
           },
           "effect_scope": "temporary",
-          "effect_scope_ref": "lifecycle.persistence",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day.",
+            "description_key": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
           "explanation": {
             "fallback": false,
             "key": "commands.ocf-cmd-prf-005-primary.explanation",
@@ -14823,7 +14900,7 @@
             "key": "functions.ocf-prf-005.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
+            "text": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes."
           },
           "related_commands": [],
           "relationships": {},
@@ -14858,7 +14935,46 @@
       ],
       "effects": null,
       "function_id": "OCF-PRF-005",
-      "lifecycle_scopes": [],
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-prf-005.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "The ability to shape daily experiences through conscious intention remains permanently available."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        },
+        {
+          "activation": "manual",
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day."
+          },
+          "kind": "application",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.application",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Individual invocation / application"
+          },
+          "persistence": "temporary"
+        }
+      ],
       "localized_relationships": {
         "complementary_functions": [],
         "related_functions": [
@@ -14886,7 +15002,7 @@
         "key": "functions.ocf-prf-005.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
+        "text": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -14918,7 +15034,7 @@
         "key": "functions.ocf-prf-005.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes."
+        "text": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes."
       },
       "slug": "make-your-day",
       "source_availability": "unavailable",
@@ -18225,7 +18341,7 @@
             "key": "functions.ocf-slp-001.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas."
+            "text": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration."
           },
           "related_commands": [],
           "relationships": {},
@@ -18317,7 +18433,7 @@
         "key": "functions.ocf-slp-001.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas."
+        "text": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration."
       },
       "reimplementation_status": "planned",
       "related_functions": [],
@@ -18327,7 +18443,7 @@
         "key": "functions.ocf-slp-001.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas."
+        "text": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration."
       },
       "slug": "restorative-sleep",
       "source_availability": "available",
@@ -18523,7 +18639,7 @@
             "key": "functions.ocf-slp-002.purpose",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time."
+            "text": "Fall asleep naturally, rest deeply, and awaken at your desired time."
           },
           "related_commands": [],
           "relationships": {},
@@ -18606,7 +18722,7 @@
         "key": "functions.ocf-slp-002.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time."
+        "text": "Fall asleep naturally, rest deeply, and awaken at your desired time."
       },
       "reimplementation_status": "planned",
       "related_functions": [
@@ -18638,7 +18754,7 @@
         "key": "functions.ocf-slp-002.short-description",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time."
+        "text": "Fall asleep naturally, rest deeply, and awaken at your desired time."
       },
       "slug": "sleep",
       "source_availability": "available",

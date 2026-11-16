@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports entering natural, restful sleep through relaxation and a simple mental
-    command, with the intention of awakening at the desired time.
+  text: |-
+    Fall asleep naturally, rest deeply, and awaken at your desired time.
   status: reviewed
   version: 1.0.1
 metadata_entries:

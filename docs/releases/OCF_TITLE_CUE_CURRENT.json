@@ -136,7 +136,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
+      "current_purpose": "Perform learned skills and activities naturally and automatically, with less conscious effort.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -195,7 +195,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.",
+      "current_purpose": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -266,7 +266,7 @@
         "version": "0.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.",
+      "current_purpose": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -332,7 +332,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Eases physical discomfort in a selected area of the body.",
+      "current_purpose": "Ease physical discomfort in a selected area of the body.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -403,7 +403,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.",
+      "current_purpose": "Enhance the body's natural cleansing, detoxification, and renewal processes.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -545,7 +545,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.",
+      "current_purpose": "Improve heart function, circulation, and natural cardiovascular maintenance.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -633,7 +633,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
+      "current_purpose": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -698,7 +698,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
+      "current_purpose": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -769,7 +769,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.",
+      "current_purpose": "Improve breathing efficiency, respiratory function, and natural airway maintenance.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -840,7 +840,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
+      "current_purpose": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -899,7 +899,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
+      "current_purpose": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -970,7 +970,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.",
+      "current_purpose": "Increase or decrease sexual desire, arousal, and responsiveness.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1023,7 +1023,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
+      "current_purpose": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1094,7 +1094,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.",
+      "current_purpose": "Regenerate and restore damaged, weakened, or missing structures in a selected body part.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1160,7 +1160,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.",
+      "current_purpose": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1225,7 +1225,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
+      "current_purpose": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1296,7 +1296,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.",
+      "current_purpose": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1414,7 +1414,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Capture and retain selected information and experiences for clear, reliable recall.",
+      "current_purpose": "Capture and retain information and experiences for clear, reliable recall.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1693,7 +1693,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury.",
+      "current_purpose": "Enhance automatic protection, healing, and recovery following physical injury.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1764,7 +1764,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.",
+      "current_purpose": "Enhance the body's response to harmful substances through protection, detoxification, and elimination.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1888,7 +1888,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.",
+      "current_purpose": "Release unwanted thoughts and recurring emotional patterns to clear mental interference.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -1959,7 +1959,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.",
+      "current_purpose": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2035,7 +2035,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.",
+      "current_purpose": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2112,7 +2112,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.",
+      "current_purpose": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2183,7 +2183,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.",
+      "current_purpose": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
@@ -2214,7 +2214,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.",
+      "current_purpose": "Maintain a clear personal zone that naturally discourages unwanted insect contact.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
@@ -2245,7 +2245,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.",
+      "current_purpose": "Access intuitive guidance through your total self, higher self, and wider consciousness.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "reviewed",
@@ -2567,7 +2567,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "End selected temporary OCF function applications without losing their learned abilities.",
+      "current_purpose": "End selected temporary OCF applications without losing learned abilities.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2625,7 +2625,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.",
+      "current_purpose": "Eliminate unwanted habits and automatic behavior patterns.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2754,7 +2754,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.",
+      "current_purpose": "Draw on your total self's strength, wisdom, and confidence in everyday life.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2830,7 +2830,7 @@
         "version": "1.1.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.",
+      "current_purpose": "Move with greater coordination, speed, and precision.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -2967,7 +2967,7 @@
         "version": null,
         "resource_status": "reviewed"
       },
-      "current_purpose": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.",
+      "current_purpose": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3375,7 +3375,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.",
+      "current_purpose": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -3441,7 +3441,7 @@
         "version": "1.0.0",
         "resource_status": "reviewed"
       },
-      "current_purpose": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.",
+      "current_purpose": "Fall asleep naturally, rest deeply, and awaken at your desired time.",
       "decision_status": "CANONICAL YAML; review flags retained separately",
       "metadata_teaching_consistent": true,
       "title_status": "canonical",
@@ -6837,7 +6837,7 @@
         "order": 1,
         "visible": true
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "before_steps": [
           {
@@ -6871,7 +6871,13 @@
         "text": "Plus Empathize"
       },
       "phrase": "PLUS-EMPATHIZE",
-      "effect_scope": "temporary",
+      "effect_scope": "conditional",
+      "effect_scope_details": {
+        "persistence": "conditional",
+        "activation": "manual",
+        "description_key": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+        "description": "Each selected-being connection is a separate deliberate, breath-independent application."
+      },
       "resolved_procedure_steps": [
         {
           "id": "select-being",
@@ -6907,7 +6913,7 @@
         "order": 1,
         "visible": true
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "before_steps": [
           {
@@ -6942,7 +6948,13 @@
         "text": "Plus Manifest"
       },
       "phrase": "PLUS-MANIFEST",
-      "effect_scope": "temporary",
+      "effect_scope": "conditional",
+      "effect_scope_details": {
+        "persistence": "conditional",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+        "description": "Each deliberate application is defined by its selected outcome and desired completion timeframe."
+      },
       "resolved_procedure_steps": [
         {
           "id": "select-outcome",
@@ -7032,13 +7044,7 @@
       },
       "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
-        "before_steps": [
-          {
-            "id": "select-comfort-zone",
-            "localization_key": "command.procedure.select-purpose",
-            "operation": "select-purpose"
-          }
-        ],
+        "before_steps": [],
         "evidence_keys": [
           "hplus.function.ocf-exp-002.function-body"
         ],
@@ -7065,19 +7071,14 @@
         "text": "Plus Insulate"
       },
       "phrase": "PLUS-INSULATE",
-      "effect_scope": "temporary",
+      "effect_scope": "persistent",
       "effect_scope_details": {
-        "persistence": "temporary",
+        "persistence": "persistent",
         "activation": "manual",
         "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+        "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold."
       },
       "resolved_procedure_steps": [
-        {
-          "id": "select-comfort-zone",
-          "localization_key": "command.procedure.select-purpose",
-          "operation": "select-purpose"
-        },
         {
           "id": "inhale",
           "operation": "inhale",
@@ -7150,12 +7151,12 @@
       "spoken": "Plus Cancel",
       "spoken_review": "reviewed",
       "phrase": "PLUS-CANCEL",
-      "effect_scope": "temporary",
+      "effect_scope": "persistent",
       "effect_scope_details": {
-        "persistence": "temporary",
+        "persistence": "persistent",
         "activation": "manual",
         "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+        "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold."
       },
       "resolved_procedure_steps": [
         {
@@ -7244,9 +7245,9 @@
       "procedure": {
         "before_steps": [
           {
-            "id": "focus-zoning",
-            "localization_key": "command.procedure.focus-target",
-            "operation": "focus-target"
+            "id": "recall-insulate-application",
+            "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+            "operation": "other"
           }
         ],
         "evidence_keys": [
@@ -7272,18 +7273,18 @@
       "spoken": "Plus Release",
       "spoken_review": "reviewed",
       "phrase": "Plus Release",
-      "effect_scope": "temporary",
+      "effect_scope": "persistent",
       "effect_scope_details": {
-        "persistence": "temporary",
+        "persistence": "persistent",
         "activation": "manual",
         "description_key": "functions.ocf-exp-002.lifecycle.scopes.application.description",
-        "description": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold."
+        "description": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold."
       },
       "resolved_procedure_steps": [
         {
-          "id": "focus-zoning",
-          "localization_key": "command.procedure.focus-target",
-          "operation": "focus-target"
+          "id": "recall-insulate-application",
+          "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+          "operation": "other"
         },
         {
           "id": "inhale",
@@ -8725,7 +8726,7 @@
         "visible": true,
         "order": 1
       },
-      "effect_scope_ref": "lifecycle.persistence",
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
       "procedure": {
         "ref": "OCF-PROC-INHALE-HOLD",
         "status": "documented",
@@ -8754,6 +8755,12 @@
       "spoken_review": "reviewed",
       "phrase": "PLUS-THIS DAY",
       "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+        "description": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day."
+      },
       "resolved_procedure_steps": [
         {
           "id": "select-day-outcome",

@@ -8,7 +8,7 @@ title:
   version: 1.0.0
 description:
   text: |-
-    Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.
+    Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.
   status: canonical
   version: 1.0.0
 metadata_entries:
@@ -17,7 +17,11 @@ metadata_entries:
     status: reviewed
     version: 1.0.0
   functions.ocf-exp-002.lifecycle.scopes.application.description:
-    text: Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.
+    text: The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-exp-002.procedure.recall-insulate-application:
+    text: Bring the current Insulate application into awareness.
     status: reviewed
     version: 1.0.0
 activation:
@@ -50,22 +54,13 @@ activation:
       visible: true
     effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
-      before_steps:
-      - id: select-comfort-zone
-        localization_key: command.procedure.select-purpose
-        operation: select-purpose
+      before_steps: []
       evidence_keys:
       - hplus.function.ocf-exp-002.function-body
       ref: OCF-PROC-INHALE-HOLD
       status: documented
     relationships: {}
   procedure_steps:
-  - id: select-comfort-zone
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -211,9 +206,9 @@ secondary_commands:
     effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
-      - id: focus-zoning
-        localization_key: command.procedure.focus-target
-        operation: focus-target
+      - id: recall-insulate-application
+        localization_key: functions.ocf-exp-002.procedure.recall-insulate-application
+        operation: other
       evidence_keys:
       - hplus.function.ocf-exp-002.function-body
       ref: OCF-PROC-INHALE-HOLD
@@ -222,11 +217,11 @@ secondary_commands:
       releases:
       - OCF-CMD-EXP-002-PRIMARY
   procedure_steps:
-  - id: focus-zoning
-    operation: focus-target
+  - id: recall-insulate-application
+    operation: other
     instruction:
-      text: Focus attention on the selected target.
-      status: canonical
+      text: Bring the current Insulate application into awareness.
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
@@ -278,13 +273,8 @@ entries:
   hplus.function.ocf-exp-002.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to establish
-
-      an insulating zone around your physical body,
-
-      adjusting it to maintain your desired comfort
-
-      as the surrounding temperature changes.'
+    text: |-
+      This OCF exercise will teach you to establish adaptive insulation around your entire being, maintaining comfort, harmony, and balance amid unwanted physical, environmental, emotional, and energetic influences.
   hplus.function.ocf-exp-002.function-body:
     status: reviewed
     version: 1.2.1
@@ -294,106 +284,63 @@ entries:
       - cue.id.OCF-CMD-EXP-002-CANCEL
       - cue.id.OCF-CMD-EXP-002-RELEASE
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to establish adaptive insulation around your physical body and throughout your total self.
 
-      to create a balanced zone of temperature comfort
+      Your conscious mind, subconscious mind, physical body, higher self, and greater consciousness work together to maintain this protective balance.
 
-      surrounding your entire physical body.
+      This insulation adapts to the conditions around you, reducing the influence of unwanted physical, environmental, emotional, and energetic disturbances.
 
+      When your surroundings are cold, your total self directs this insulation toward preserving comfortable warmth.
 
-      Whenever you desire this protection,
+      When your surroundings are hot, it adapts toward maintaining comfortable coolness and balance.
 
-      imagine a continuous, even layer of insulation
+      Unwanted environmental disturbances become less intrusive, allowing greater comfort amid changing surroundings.
 
-      extending around you from head to toe.
+      Emotional pressures, unwanted influences from others, and disruptive energies become less able to disturb your inner harmony.
 
+      Your awareness remains clear, and your total self adjusts the insulation according to your changing needs.
 
-      Inhale deeply and gently hold your breath.
+      Whenever you wish to establish this protection, take a deep breath in and gently hold it.
 
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Then slowly exhale through your mouth.
 
+      Your total self establishes the insulating pattern, naturally adjusting its strength and character to maintain comfort and balance.
 
-      Then exhale slowly through your mouth.
+      Your higher self and greater consciousness cooperate with this intention, guiding the insulation toward what best serves your well-being.
 
+      The insulation operates automatically without requiring you to monitor it, imagine a barrier, or consciously select every influence you wish to reduce.
 
-      Your zone will immediately begin to form,
+      As your circumstances change, the pattern adapts, allowing beneficial experiences and interactions while reducing unwanted disturbances.
 
-      surrounding you in a smooth, balanced field
+      The established insulation continues until you deliberately change, cancel, or release its present application.
 
-      adjusted to the comfort you desire.
+      Whenever you wish to end the current insulation adjustment, take a deep breath in and gently hold it.
 
+      Silently say to yourself,
+      "{{ cue.id.OCF-CMD-EXP-002-CANCEL }}."
 
-      When the surroundings are cold,
+      Then slowly exhale through your mouth.
 
-      the zone will resist excessive cooling,
+      The current adjustment ends, allowing you to establish a different one whenever desired.
 
-      conserving comfortable warmth around your body.
+      Whenever you wish to place the entire Insulate application on hold, bring Insulate into your awareness.
 
+      Take a deep breath in and gently hold it.
 
-      When the surroundings are hot,
+      Silently say to yourself,
+      "{{ cue.id.OCF-CMD-EXP-002-RELEASE }}."
 
-      the zone will resist excessive heating,
+      Then slowly exhale through your mouth.
 
-      maintaining a comfortable, balanced condition.
+      The present application rests, while your learned ability remains available whenever you choose to use it again.
 
+      This ability to establish and adjust adaptive insulation is permanently available within your total self.
 
-      As the environment changes, your zone
-
-      will adjust continuously and evenly,
-
-      strengthening or easing its insulating effect
-
-      according to what is needed.
-
-
-      Your physical body and your total self
-
-      will work together in this pattern of balance,
-
-      maintaining the zone without constant attention.
-
-
-      The ability to use Insulate is now
-
-      permanently available whenever you choose,
-
-      and the selected zone continues operating
-
-      until you consciously change or release it.
-
-
-      To cancel the current temperature adjustment,
-
-      inhale, hold your breath, think or say
-
-      in your mind, "{{ cue.id.OCF-CMD-EXP-002-CANCEL }}," then exhale.
-
-
-      That adjustment will end, leaving you free
-
-      to establish a different one whenever desired.
-
-
-      When you wish to place the entire Insulate
-
-      application on hold, bring Insulate into your mind.
-
-      Inhale, hold your breath, think or say
-
-      in your mind, "{{ cue.id.OCF-CMD-EXP-002-RELEASE }}," then exhale.
-
-
-      The present zone will rest, while your ability
-
-      to create it remains ready for future use.
-
-
-      Each time you use Insulate, establishing
-
-      and adjusting your zone will become
-
-      easier, smoother, and more effective.'
+      Each time you use "{{ cue.primary }}," establishing and maintaining this balance becomes easier and more natural.
   hplus.function.ocf-exp-002.closer:
     status: reviewed
     version: 1.2.1
@@ -403,22 +350,19 @@ entries:
       - cue.id.OCF-CMD-EXP-002-CANCEL
       - cue.id.OCF-CMD-EXP-002-RELEASE
       - cue.primary
-    text: 'Remember, to establish your zone of temperature comfort,
+    text: |-
+      Remember, whenever you wish to establish adaptive insulation, take a deep breath in and gently hold it.
 
-      inhale deeply, hold your breath, and think
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      or say in your mind, "{{ cue.primary }}."
+      Then slowly exhale through your mouth.
 
+      Use "{{ cue.id.OCF-CMD-EXP-002-CANCEL }}" to end the current adjustment, or "{{ cue.id.OCF-CMD-EXP-002-RELEASE }}" to place the entire application on hold.
 
-      Then exhale slowly through your mouth.
+      Use the same breathing sequence with either command.
 
-
-      Use "{{ cue.id.OCF-CMD-EXP-002-CANCEL }}" to end the current adjustment,
-
-      or "{{ cue.id.OCF-CMD-EXP-002-RELEASE }}" to place Insulate on hold.
-
-
-      This concludes your OCF Insulate exercise.'
+      This concludes your OCF Insulate exercise.
 slug: zoning
 classification:
   primary_domain: experimental
@@ -440,7 +384,7 @@ lifecycle:
       persistence: permanent
       description_key: functions.ocf-exp-002.lifecycle.scopes.capability.description
     application:
-      persistence: temporary
+      persistence: persistent
       activation: manual
       description_key: functions.ocf-exp-002.lifecycle.scopes.application.description
 audio:

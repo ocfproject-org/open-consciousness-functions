@@ -8,7 +8,7 @@ title:
   version: 1.0.0
 description:
   text: |-
-    Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.
+    Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.
   status: canonical
   version: 1.0.0
 metadata_entries:
@@ -16,6 +16,14 @@ metadata_entries:
     text: Align your intention with the reality you choose
     status: reviewed
     version: 1.1.0
+  functions.ocf-exp-001.lifecycle.scopes.capability.description:
+    text: The learned ability to direct intention through the total self remains permanently available.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-exp-001.lifecycle.scopes.application.description:
+    text: Each deliberate application is defined by its selected outcome and desired completion timeframe.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-EXP-001-PRIMARY
   display_cue:
@@ -44,7 +52,7 @@ activation:
     documentation:
       order: 1
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
       - id: select-outcome
@@ -155,11 +163,8 @@ entries:
   hplus.function.ocf-exp-001.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to manifest with clear,
-
-      positive intention, aligning your total self with the reality
-
-      you choose to create.'
+    text: |-
+      This OCF exercise will teach you to manifest a chosen outcome through clear intention, aligning your total self and greater consciousness with the reality you wish to create.
     notes: 'OCF-adapted opener based on the unverified Möbius West transcript. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78;
       line 1. Original reference remains unchanged. Rewords the existing future-patterning purpose around
@@ -174,95 +179,45 @@ entries:
       function_id: OCF-EXP-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you will direct your total self
+    text: |-
+      From this moment forward, you have the ability to direct your total self toward the reality you choose to create.
 
-      toward the reality you choose to create,
+      Your conscious mind, subconscious mind, higher self, and greater consciousness work together to bring your intentions into manifestation.
 
-      with clear, positive intention.
+      Whenever you wish to manifest a particular outcome, clearly establish what you desire and when you wish it to become reality.
 
+      Know the outcome you are choosing, whether its fulfillment is immediate or sometime in the future.
 
-      Whenever you desire a change, choose the outcome
+      You may imagine the completed result, experience its emotional significance, or simply hold the intention clearly within your awareness.
 
-      and when you wish it to take form.
+      Take a deep breath in and gently hold it.
 
-      Whether the need is immediate or further ahead,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      picture, feel, or simply know the result as fulfilled.
+      Then slowly exhale through your mouth.
 
+      Your total self aligns with your chosen intention, bringing your thoughts, awareness, decisions, and actions into harmony with the reality you desire.
 
-      Inhale deeply and gently hold your breath.
+      Your higher self and greater consciousness cooperate with this intention, guiding the development of circumstances, connections, and opportunities that contribute to its fulfillment.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Release unnecessary struggle, doubt, impatience, and the need to control every step of the process.
 
-      Then exhale slowly through your mouth.
+      You may strengthen this alignment through feelings of love, gratitude, inner harmony, or awareness of your heart and energy centers.
 
+      Remain receptive to the wisdom and guidance of your higher self, universal consciousness, and the greater awareness available beyond your physical senses.
 
-      Your total self will immediately align with your intention.
+      Your intuition becomes more responsive, helping you recognize meaningful opportunities and directions as they arise.
 
-      Your conscious mind, subconscious mind, higher self,
+      The intention you have established continues working within your total self without requiring constant conscious attention or repeated commands.
 
-      and physical being will work together in harmony.
+      Your chosen outcome unfolds in harmony with your highest good and the well-being of others, without destructive effects.
 
+      Remain open to its fulfillment or an outcome that serves your intention in an even greater way.
 
-      Struggle, fear, harsh judgment, and impatience will fall away.
+      This ability to manifest through conscious intention and total-self cooperation remains permanently available.
 
-      Your intention remains clear as you release the need
-
-      to force each step or continually check the result.
-
-
-      Center yourself in your heart.
-
-      Let love fill your being and bring your energy centers
-
-      into open, balanced harmony.
-
-      Remain grounded and present, receptive to energy and light.
-
-      You are worthy to create and receive good.
-
-
-      Welcome the loving guidance of your higher self
-
-      and the helpers you recognize.
-
-      Your intuition will become clearer,
-
-      guiding you to recognize opportunities and act.
-
-
-      Your greater awareness will reach beyond your physical body,
-
-      connecting with universal consciousness.
-
-      Your intention will draw together and sustain
-
-      the conditions and connections that support your chosen reality.
-
-
-      Hold the essence of your desire while welcoming
-
-      its fulfillment or something better,
-
-      in harmony with your highest good and the good of others,
-
-      without destructive effects upon anyone.
-
-
-      This pattern will continue without constant conscious effort,
-
-      unfolding immediately or through its natural sequence.
-
-      Once learned, this ability remains permanently available,
-
-      ready for everyday use with your intention, breath, and command.
-
-
-      The more you use this function,
-
-      the clearer your intention, the stronger your alignment,
-
-      and the easier and more effective manifestation becomes.'
+      Each time you use "{{ cue.primary }}," establishing and maintaining alignment with your chosen reality becomes easier and more natural.
     notes: 'OCF-adapted narration based on the unverified Möbius West transcript. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78;
       lines 55–84. Original reference remains unchanged; duplicate second pass remains excluded. Preserves
@@ -290,21 +245,17 @@ entries:
       function_id: OCF-EXP-001
       allowed:
       - cue.primary
-    text: 'Remember, to manifest a chosen outcome,
+    text: |-
+      Remember, whenever you wish to manifest a chosen outcome, establish clearly what you desire and when you wish it to become reality.
 
-      bring it clearly into your awareness
+      Take a deep breath in and gently hold it.
 
-      and choose when you wish it to take form.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and gently hold your breath.
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF exercise.'
+      This concludes your OCF Manifest exercise.
     notes: 'OCF-authored closer adapted from the previously approved reminder. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78.
       The unverified source ends in numeric runs and has no recoverable function-specific closer. Retains
@@ -331,7 +282,16 @@ lifecycle:
   release:
     command: null
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - Select an outcome and its desired completion time before invoking Plus Manifest.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-exp-001.lifecycle.scopes.capability.description
+    application:
+      persistence: conditional
+      activation: manual
+      description_key: functions.ocf-exp-001.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield

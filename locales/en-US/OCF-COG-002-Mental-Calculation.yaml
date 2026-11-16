@@ -7,9 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Strengthens numerical understanding, mathematical memory, calculation speed
-    and accuracy, pattern recognition, and problem-solving across basic and advanced
-    mathematics, with conscious reinforcement when desired.
+  text: |-
+    Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.
   status: canonical
   version: 1.0.0
 metadata_entries: {}

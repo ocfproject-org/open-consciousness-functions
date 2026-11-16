@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Brings information, memories, knowledge, and understanding gathered through learning and experience into
-    conscious awareness, while supporting automatic organization and connection of information.
+  text: |-
+    Access stored knowledge, memories, and information, connecting what you've learned to answer questions.
   status: canonical
   version: 1.0.0
 metadata_entries:

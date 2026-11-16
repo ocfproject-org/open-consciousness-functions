@@ -8,10 +8,18 @@ title:
   version: 1.0.0
 description:
   text: |-
-    Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.
+    Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-emo-003.lifecycle.scopes.capability.description:
+    text: The ability to establish empathetic and intuitive communication remains permanently available.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-emo-003.lifecycle.scopes.application.description:
+    text: Each selected-being connection is a separate deliberate, breath-independent application.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-EMO-003-PRIMARY
   display_cue:
@@ -42,7 +50,7 @@ activation:
     documentation:
       order: 1
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
       - id: select-being
@@ -99,13 +107,8 @@ entries:
   hplus.function.ocf-emo-003.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to perceive, understand, and communicate with
-
-      another being through all levels of awareness,
-
-      including your senses, intuition, and total self.'
+    text: |-
+      This OCF exercise will strengthen your ability to understand and communicate with another being through your physical senses, intuition, higher self, and total-self awareness.
   hplus.function.ocf-emo-003.function-body:
     status: reviewed
     version: 1.3.0
@@ -113,105 +116,41 @@ entries:
       function_id: OCF-EMO-003
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to perceive
+    text: |-
+      From this moment forward, you have the ability to establish deeper understanding and communication with another being whenever you choose.
 
-      and understand another being is becoming deeper,
+      Your conscious mind, subconscious mind, higher self, and total self work together, expanding your capacity to perceive and understand other forms of consciousness.
 
-      clearer, and more complete.
+      Through your physical senses, you recognize expressions, movements, voices, emotions, and subtle changes in another being.
 
+      Beyond your physical senses, your intuitive awareness opens additional channels of understanding and communication.
 
-      You are connected to the greater whole of life.
+      You may become aware of another being's feelings, intentions, needs, perspectives, or state of consciousness through impressions, thoughts, emotions, or direct intuitive knowing.
 
-      Your conscious mind, subconscious mind,
+      Whenever you wish to understand or communicate with another being, bring that being into your awareness.
 
-      and higher self work together as your total self,
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      opening every available way of knowing.
+      Allow your total self to establish the connection and become receptive to communication and understanding.
 
+      Your conscious mind, subconscious mind, higher self, and greater awareness cooperate, bringing together information and impressions relevant to the being you have selected.
 
-      Whenever you desire to understand another being,
+      Communication becomes possible beyond spoken language, through feeling, awareness, intention, and direct understanding.
 
-      bring that being clearly into your awareness.
+      Whether you are physically present with another being or exploring consciousness in an out-of-body state, this ability remains available.
 
-      Relax your body, quiet your own expectations,
+      Your total self connects with the greater consciousness of which all beings are part, opening the possibility of communication beyond ordinary physical limitations.
 
-      and become calm, open, and receptive.
+      Understanding may arise naturally through thoughts, feelings, impressions, memories, or immediate knowing.
 
+      Your awareness remains distinct as you explore another being's perspective, allowing understanding and communication without losing your own sense of self.
 
-      Through your physical senses, you recognize
+      You can recognize and consider the understanding you receive, choosing how to respond and communicate.
 
-      expression, movement, voice, and subtle changes.
+      This ability to establish empathetic and intuitive communication remains permanently available whenever you choose.
 
-      Beyond those senses, you remain open to intuition,
-
-      emotional impressions, images, feelings,
-
-      and direct, wordless understanding.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Your total self will now bring together
-
-      every form of information available to you,
-
-      revealing a clearer understanding of the
-
-      other being''s feelings, needs, intentions,
-
-      and state of being.
-
-
-      Communication will become possible beyond words:
-
-      feeling to feeling, awareness to awareness,
-
-      and thought to thought.
-
-
-      Whether you are physically present or exploring
-
-      in an out-of-body state, your greater awareness
-
-      will remain open to subtle and nonphysical
-
-      impressions and communication.
-
-
-      Your higher self will help you recognize
-
-      the connection between yourself, the other being,
-
-      and the greater consciousness of which all are part.
-
-
-      Understanding will arrive in the form most natural
-
-      to you: a clear feeling, an image, a thought,
-
-      a sensation, or immediate inner knowing.
-
-
-      You will remain centered in your own awareness,
-
-      understanding without imposing your desires
-
-      or losing your sense of self.
-
-
-      From this moment forward, this ability
-
-      is permanently available whenever you choose
-
-      to open yourself to deeper understanding.
-
-
-      The more you use {{ cue.primary }},
-
-      the easier, clearer, and more effective
-
-      this communion and understanding will become.'
+      Each time you use "{{ cue.primary }}," establishing deeper understanding and communication becomes easier and more natural.
   hplus.function.ocf-emo-003.closer:
     status: reviewed
     version: 1.3.0
@@ -219,17 +158,15 @@ entries:
       function_id: OCF-EMO-003
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to understand
+    text: |-
+      Remember, whenever you wish to understand or communicate with another being, bring that being into your awareness.
 
-      another being through your senses and total self,
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      bring that being clearly into your awareness.
+      Allow your total self to establish the connection and become receptive to communication and understanding.
 
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      This concludes your OCF Empathize exercise.'
+      This concludes your OCF Empathize exercise.
 slug: empathizing
 classification:
   primary_domain: emotion
@@ -248,7 +185,16 @@ lifecycle:
   release:
     command: null
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - Select another being before deliberately invoking Plus Empathize.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-emo-003.lifecycle.scopes.capability.description
+    application:
+      persistence: conditional
+      activation: manual
+      description_key: functions.ocf-emo-003.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield

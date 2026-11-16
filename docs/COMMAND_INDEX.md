@@ -41,11 +41,11 @@ Canonical command phrases are shown exactly as registered and are not translated
 | [Toxic Exposure Response](../locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml) | PLUS-TOXIC-CLEAR | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Let Go](../locales/en-US/OCF-EMO-001-Let-Go.yaml) | PLUS-LET GO | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Offload](../locales/en-US/OCF-EMO-002-Offload.yaml) | PLUS-OFFLOAD | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
-| [Empathize](../locales/en-US/OCF-EMO-003-Empathize.yaml) | PLUS-EMPATHIZE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
-| [Manifest](../locales/en-US/OCF-EXP-001-Manifest.yaml) | PLUS-MANIFEST | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
-| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | PLUS-INSULATE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
-| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | PLUS-CANCEL | Cancellation command | Use to cancel the current adjustment. | Temporary |
-| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | Plus Release | Release command | Places Insulate on hold; PLUS-CANCEL ends the current adjustment. | Temporary |
+| [Empathize](../locales/en-US/OCF-EMO-003-Empathize.yaml) | PLUS-EMPATHIZE | Primary activation command | Use only when you choose to activate the documented function. | Conditional application |
+| [Manifest](../locales/en-US/OCF-EXP-001-Manifest.yaml) | PLUS-MANIFEST | Primary activation command | Use only when you choose to activate the documented function. | Conditional application |
+| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | PLUS-INSULATE | Primary activation command | Use only when you choose to activate the documented function. | Persistent until deliberately changed |
+| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | PLUS-CANCEL | Cancellation command | Use to cancel the current adjustment. | Persistent until deliberately changed |
+| [Insulate](../locales/en-US/OCF-EXP-002-Insulate.yaml) | Plus Release | Release command | Places Insulate on hold; PLUS-CANCEL ends the current adjustment. | Persistent until deliberately changed |
 | [Dissolve](../locales/en-US/OCF-EXP-003-Dissolve.yaml) | PLUS-DISSOLVE | Primary | Deliberately follow the ordered procedure; proposed exercise instructions, not software execution. | Conditional application |
 | [Clear Zone](../locales/en-US/OCF-EXP-005-Clear-Zone.yaml) | PLUS-CLEAR ZONE, OBSERVE | Observe | Deliberately follow the ordered procedure; proposed exercise instructions, not software execution. | Conditional application |
 | [Clear Zone](../locales/en-US/OCF-EXP-005-Clear-Zone.yaml) | PLUS-CLEAR ZONE | Primary | Deliberately follow the ordered procedure; proposed exercise instructions, not software execution. | Permanent |

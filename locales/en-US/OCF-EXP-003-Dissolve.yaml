@@ -7,7 +7,7 @@ title:
   status: reviewed
 description:
   text: |-
-    Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.
+    Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.
   status: reviewed
 metadata_entries:
   functions.ocf-exp-003.capability:
@@ -21,6 +21,10 @@ metadata_entries:
     text: Release unwanted beliefs and recurring patterns
     status: reviewed
     version: 1.1.0
+  functions.ocf-exp-003.procedure.select-unwanted-pattern:
+    text: Select the unwanted belief, expectation, emotional response, or recurring pattern you wish to dissolve.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-EXP-003-PRIMARY
   display_cue:
@@ -63,7 +67,7 @@ activation:
   - id: select-pattern
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Select the unwanted belief, expectation, emotional response, or recurring pattern you wish to dissolve.
       status: canonical
       version: 1.0.0
   - id: inhale-deeply
@@ -123,11 +127,8 @@ entries:
   hplus.function.ocf-exp-003.opener:
     status: reviewed
     version: 1.0.0
-    text: 'This OCF exercise will teach you to dissolve unwanted beliefs,
-
-      emotional responses, and recurring life patterns,
-
-      freeing your energy and attention for what you choose to create.'
+    text: |-
+      This OCF exercise will teach you to dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns, freeing your attention and energy for what you choose to create.
     notes: New OCF-authored narration proposal informed by the user-supplied Plus Dis-Create excerpt.
       Introduces conscious dissolution of selected beliefs, emotional responses, and recurring life patterns.
       No historical transcript identity or prior editorial approval is claimed. Proposed identity OCF-EXP-003
@@ -139,90 +140,43 @@ entries:
       function_id: OCF-EXP-003
       allowed:
       - cue.primary
-    text: 'From this moment forward, you are free to dissolve
+    text: |-
+      From this moment forward, you have the ability to dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns whenever you choose.
 
-      patterns that no longer belong in the life you choose to create.
+      Your conscious mind, subconscious mind, physical being, higher self, and total self work together to release patterns that no longer serve you.
 
+      Whenever you wish to dissolve a particular pattern, identify what you want to release.
 
-      Bring one unwanted pattern clearly into your awareness:
+      It may be an unwanted belief, an expectation, an emotional response, or a recurring pattern in your life.
 
-      a belief, an expectation, an emotional response,
+      Recognize the selected pattern without needing to examine every experience or circumstance that created it.
 
-      or a recurring pattern in your life.
+      Take a deep breath in and gently hold it.
 
-      Recognize what you are ready to release,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      without replaying its history or explaining every cause.
+      Then slowly exhale through your mouth.
 
+      Your total self responds to your intention, beginning the dissolution of the selected pattern throughout your conscious and subconscious awareness.
 
-      Inhale deeply and gently hold your breath.
+      The beliefs, expectations, and emotional connections maintaining the unwanted pattern begin to lose their influence.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      The pattern releases its hold over your thoughts, feelings, choices, and responses.
 
-      Then exhale slowly and easily.
+      Your higher self and greater awareness cooperate with this release, allowing the old pattern to dissolve completely.
 
+      Useful memories, knowledge, and understanding remain available without continuing to reinforce the unwanted pattern.
 
-      Your conscious mind, subconscious mind, physical being,
+      The emotional energy and attention previously occupied by the pattern become available for new experiences, creativity, and purposeful action.
 
-      and higher self unite around this intention.
+      This dissolution continues naturally without requiring constant conscious attention or repeated commands.
 
-      Every level of your total self participates
+      As the selected pattern dissolves, your total self establishes lasting freedom from its unwanted influence.
 
-      in releasing the pattern you have chosen.
+      The learned ability to dissolve unwanted patterns remains permanently available whenever you choose.
 
-
-      Picture, feel, or simply know its structure loosening.
-
-      The connections holding it together soften and separate.
-
-      Its emotional charge subsides. Its familiar pull releases.
-
-      The pattern loses its hold and dissolves
-
-      from the way you think, feel, and respond.
-
-
-      You are not required to fight what you are releasing.
-
-      Meet yourself with understanding and kindness.
-
-      The lessons and useful knowledge of your experience remain,
-
-      while you release the expectation that the past must repeat.
-
-
-      Energy and attention once tied to sustaining this pattern
-
-      return to your use, available for clarity, creativity,
-
-      love, and purposeful action.
-
-      You remain whole, grounded, and free to choose
-
-      what you wish to create in its place.
-
-
-      Let this change continue with steadiness and patience,
-
-      whether release is immediate or unfolds in layers.
-
-      Your total self carries the intention forward
-
-      without constant effort or repeated checking.
-
-
-      Your new freedom becomes a lasting part of your life.
-
-      The ability to dissolve a selected pattern remains
-
-      permanently available whenever you consciously choose it.
-
-
-      The more you use this function,
-
-      the more naturally you release what no longer serves you
-
-      and make room for what you choose next.'
+      Each time you use "{{ cue.primary }}," releasing unwanted patterns becomes easier and more natural.
     notes: New OCF-authored programming passage, not a transcription or synonym-only rewrite of the supplied
       comparison. Preserves deliberate selection, inhale-hold-command-exhale, total-self cooperation,
       dissolution rather than temporary concealment, and energy available for constructive use. Adds representation-neutral
@@ -241,19 +195,17 @@ entries:
       function_id: OCF-EXP-003
       allowed:
       - cue.primary
-    text: 'Remember, to dissolve an unwanted pattern,
+    text: |-
+      Remember, whenever you wish to dissolve an unwanted belief, expectation, emotional response, or recurring pattern, identify what you want to release.
 
-      bring what you wish to release clearly into your awareness.
+      Take a deep breath in and gently hold it.
 
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      Inhale deeply and gently hold your breath.
+      Then slowly exhale through your mouth.
 
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale slowly and easily.
-
-
-      This concludes your OCF exercise.'
+      This concludes your OCF Dissolve exercise.
     notes: New OCF-authored closer with one purpose reminder, deliberate pattern selection, the proposed
       primary cue, and the inhale-hold-command-exhale sequence. No repeated reinforcement, second function
       command, or session-state transition is included. Cue resolution requires the proposed function

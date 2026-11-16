@@ -7,7 +7,7 @@ This is a reviewed source-English terminology sheet, not a completed translation
 Title: Automatic Action. Title status: canonical.
 Display: `PLUS-AUTOMATE`. Complete speech: **Plus Automate**.
 
-Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
+Perform learned skills and activities naturally and automatically, with less conscious effort.
 
 Translator context: Canonical locale function resource.
 
@@ -18,7 +18,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Brain Flow. Title status: canonical.
 Display: `PLUS-BRAIN FLOW`. Complete speech: **Plus Brain Flow**.
 
-Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.
+Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -29,7 +29,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Circulation. Title status: canonical.
 Display: `PLUS-CIRCULATE`. Complete speech: **Plus Circulate**.
 
-Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.
+Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -40,7 +40,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Comfort. Title status: canonical.
 Display: `PLUS-COMFORT`. Complete speech: **Plus Comfort**.
 
-Eases physical discomfort in a selected area of the body.
+Ease physical discomfort in a selected area of the body.
 
 Translator context: User approved Comfort / PLUS-COMFORT / Plus Comfort in OCF-EDITORIAL-TITLE-CUES-002. Numeric wording remains historical lookup only; no bridge lesson is added.
 
@@ -51,7 +51,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Detox. Title status: canonical.
 Display: `PLUS-DETOX`. Complete speech: **Plus Detox**.
 
-Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.
+Enhance the body's natural cleansing, detoxification, and renewal processes.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -73,7 +73,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Heart Flow. Title status: canonical.
 Display: `PLUS-HEART-FLOW`. Complete speech: **Plus Heart Flow**.
 
-Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.
+Improve heart function, circulation, and natural cardiovascular maintenance.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -84,7 +84,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Blood Pressure Balance. Title status: canonical.
 Display: `PLUS-BALANCE BLOOD PRESSURE`. Complete speech: **Plus Balance Blood Pressure**.
 
-Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
+Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs.
 
 Translator context: Canonical locale function resource.
 
@@ -95,7 +95,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Immune Readiness. Title status: canonical.
 Display: `PLUS-IMMUNE READY`. Complete speech: **Plus Immune Ready**.
 
-Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -106,7 +106,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Breathe Better. Title status: canonical.
 Display: `PLUS-BREATHE BETTER`. Complete speech: **Plus Breathe Better**.
 
-Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.
+Improve breathing efficiency, respiratory function, and natural airway maintenance.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -117,7 +117,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Nutricia. Title status: canonical.
 Display: `PLUS-FOOD MORE`. Complete speech: **Plus Food More**.
 
-Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.
+Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.
 
 Translator context: Historical Food More/Food Less wording is retained for alternative food-energy responses, not an incremental appetite or intensity scale.
 
@@ -128,7 +128,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Hormonal Transitions. Title status: canonical.
 Display: `PLUS-HORMONE BALANCE`. Complete speech: **Plus Hormone Balance**.
 
-Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
+Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -139,7 +139,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Sex Drive. Title status: canonical.
 Display: `PLUS-SEX MORE`. Complete speech: **Plus Sex More**.
 
-Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.
+Increase or decrease sexual desire, arousal, and responsiveness.
 
 Translator context: Vocabulary normalization: GREATER/LESSER magnitudes standardize on MORE/LESS.
 
@@ -150,7 +150,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Body Tune-Up. Title status: canonical.
 Display: `PLUS-TUNE-UP`. Complete speech: **Plus Tune Up**.
 
-Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
+Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -161,7 +161,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Regenerate. Title status: canonical.
 Display: `PLUS-REGENERATE`. Complete speech: **Plus Regenerate**.
 
-Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.
+Regenerate and restore damaged, weakened, or missing structures in a selected body part.
 
 Translator context: User approved Regenerate / PLUS-REGENERATE / Plus Regenerate in OCF-EDITORIAL-TITLE-CUES-003. Build Live wording remains historical lookup only; no bridge lesson is added.
 
@@ -172,7 +172,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Temporary Numbing. Title status: canonical.
 Display: `PLUS-NUMB`. Complete speech: **Plus Numb**.
 
-Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.
+Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -183,7 +183,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Information Access. Title status: canonical.
 Display: `PLUS-ACCESS INFO`. Complete speech: **Plus Access Info**.
 
-Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
+Access stored knowledge, memories, and information, connecting what you've learned to answer questions.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -194,7 +194,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Mental Calculation. Title status: canonical.
 Display: `PLUS-CALCULATE`. Complete speech: **Plus Calculate**.
 
-Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.
+Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.
 
 Translator context: Canonical locale function resource.
 
@@ -216,7 +216,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Imprint. Title status: canonical.
 Display: `PLUS-IMPRINT`. Complete speech: **Plus Imprint**.
 
-Capture and retain selected information and experiences for clear, reliable recall.
+Capture and retain information and experiences for clear, reliable recall.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -271,7 +271,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Injury Response. Title status: canonical.
 Display: `PLUS-INJURY-RESPONSE`. Complete speech: **Plus Injury Response**.
 
-Strengthen your body's automatic protective, healing, and restorative responses to physical injury.
+Enhance automatic protection, healing, and recovery following physical injury.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -282,7 +282,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Toxic Exposure Response. Title status: canonical.
 Display: `PLUS-TOXIC-CLEAR`. Complete speech: **Plus Toxic Clear**.
 
-Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.
+Enhance the body's response to harmful substances through protection, detoxification, and elimination.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -304,7 +304,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Offload. Title status: canonical.
 Display: `PLUS-OFFLOAD`. Complete speech: **Plus Offload**.
 
-Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.
+Release unwanted thoughts and recurring emotional patterns to clear mental interference.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -315,7 +315,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Empathize. Title status: canonical.
 Display: `PLUS-EMPATHIZE`. Complete speech: **Plus Empathize**.
 
-Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.
+Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -326,7 +326,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Manifest. Title status: canonical.
 Display: `PLUS-MANIFEST`. Complete speech: **Plus Manifest**.
 
-Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.
+Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -337,7 +337,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Insulate. Title status: canonical.
 Display: `PLUS-INSULATE`. Complete speech: **Plus Insulate**.
 
-Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.
+Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -348,7 +348,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Dissolve. Title status: reviewed.
 Display: `PLUS-DISSOLVE`. Complete speech: **Plus Dissolve**.
 
-Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.
+Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.
 
 Translator context: Original draft; no historical command is being replaced.
 
@@ -359,7 +359,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Clear Zone. Title status: reviewed.
 Display: `PLUS-CLEAR ZONE`. Complete speech: **Plus Clear Zone**.
 
-Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.
+Maintain a clear personal zone that naturally discourages unwanted insect contact.
 
 Translator context: Original draft; no historical command is being replaced.
 
@@ -370,7 +370,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Intuition. Title status: reviewed.
 Display: `PLUS-INTUITION`. Complete speech: **Plus Intuition**.
 
-Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.
+Access intuitive guidance through your total self, higher self, and wider consciousness.
 
 Translator context: Canonical locale function resource.
 
@@ -436,7 +436,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Release. Title status: canonical.
 Display: `PLUS-RELEASE`. Complete speech: **Plus Release**.
 
-End selected temporary OCF function applications without losing their learned abilities.
+End selected temporary OCF applications without losing learned abilities.
 
 Translator context: Canonical locale function resource.
 
@@ -447,7 +447,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Habit Freedom. Title status: canonical.
 Display: `PLUS-FREE THIS HABIT`. Complete speech: **Plus Free This Habit**.
 
-Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.
+Eliminate unwanted habits and automatic behavior patterns.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -469,7 +469,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Inner Power. Title status: canonical.
 Display: `PLUS-INNER POWER`. Complete speech: **Plus Inner Power**.
 
-Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.
+Draw on your total self's strength, wisdom, and confidence in everyday life.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -480,7 +480,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Coordination. Title status: canonical.
 Display: `PLUS-COORDINATE`. Complete speech: **Plus Coordinate**.
 
-Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.
+Move with greater coordination, speed, and precision.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -502,7 +502,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Make Your Day. Title status: canonical.
 Display: `PLUS-THIS DAY`. Complete speech: **Plus This Day**.
 
-Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.
+Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.
 
 Translator context: Canonical locale function resource.
 
@@ -579,7 +579,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Restorative Sleep. Title status: canonical.
 Display: `PLUS-RESTORATIVE SLEEP`. Complete speech: **Plus Restorative Sleep**.
 
-Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.
+Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -590,7 +590,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Sleep. Title status: canonical.
 Display: `PLUS-SLEEP`. Complete speech: **Plus Sleep**.
 
-Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.
+Fall asleep naturally, rest deeply, and awaken at your desired time.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 

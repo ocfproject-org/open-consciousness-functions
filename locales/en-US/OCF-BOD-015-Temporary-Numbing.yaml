@@ -7,9 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Temporarily reduces discomfort and sensitivity in a selected body area using
-    Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The
-    learned ability remains available for future use.
+  text: |-
+    Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.
   status: reviewed
   version: 1.0.1
 metadata_entries:

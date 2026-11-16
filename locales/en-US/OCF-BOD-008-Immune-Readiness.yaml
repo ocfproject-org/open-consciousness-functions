@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports immune surveillance, coordinated protective responses, immune memory,
-    protection of healthy tissue, and return to balance after a threat is controlled.
+  text: |-
+    Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.
   status: canonical
   version: 1.0.1
 metadata_entries: {}

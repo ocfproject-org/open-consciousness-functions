@@ -7,7 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: 'Capture and retain selected information and experiences for clear, reliable recall.'
+  text: |-
+    Capture and retain information and experiences for clear, reliable recall.
   status: reviewed
   version: 1.0.2
 metadata_entries:

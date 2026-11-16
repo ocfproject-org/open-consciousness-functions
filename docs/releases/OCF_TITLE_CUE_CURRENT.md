@@ -14,7 +14,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-AUTOMATE`; complete teaching: **Plus Automate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
+- Purpose: Perform learned skills and activities naturally and automatically, with less conscious effort.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -22,7 +22,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-BRAIN FLOW`; complete teaching: **Plus Brain Flow**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.
+- Purpose: Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -30,7 +30,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-CIRCULATE`; complete teaching: **Plus Circulate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.
+- Purpose: Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -38,7 +38,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-COMFORT`; complete teaching: **Plus Comfort**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Eases physical discomfort in a selected area of the body.
+- Purpose: Ease physical discomfort in a selected area of the body.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -46,7 +46,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-DETOX`; complete teaching: **Plus Detox**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.
+- Purpose: Enhance the body's natural cleansing, detoxification, and renewal processes.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -62,7 +62,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-HEART-FLOW`; complete teaching: **Plus Heart Flow**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.
+- Purpose: Improve heart function, circulation, and natural cardiovascular maintenance.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -70,7 +70,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-BALANCE BLOOD PRESSURE`; complete teaching: **Plus Balance Blood Pressure**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
+- Purpose: Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -78,7 +78,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-IMMUNE READY`; complete teaching: **Plus Immune Ready**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+- Purpose: Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -86,7 +86,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-BREATHE BETTER`; complete teaching: **Plus Breathe Better**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.
+- Purpose: Improve breathing efficiency, respiratory function, and natural airway maintenance.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -94,7 +94,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-FOOD MORE`; complete teaching: **Plus Food More**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.
+- Purpose: Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.
 - Pending title: Food Energy Use
 - Other unselected proposal: null
 
@@ -102,7 +102,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-HORMONE BALANCE`; complete teaching: **Plus Hormone Balance**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
+- Purpose: Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -110,7 +110,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-SEX MORE`; complete teaching: **Plus Sex More**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.
+- Purpose: Increase or decrease sexual desire, arousal, and responsiveness.
 - Pending title: Sex Drive
 - Other unselected proposal: null
 
@@ -118,7 +118,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-TUNE-UP`; complete teaching: **Plus Tune Up**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
+- Purpose: Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -126,7 +126,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-REGENERATE`; complete teaching: **Plus Regenerate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.
+- Purpose: Regenerate and restore damaged, weakened, or missing structures in a selected body part.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -134,7 +134,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-NUMB`; complete teaching: **Plus Numb**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.
+- Purpose: Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -142,7 +142,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-ACCESS INFO`; complete teaching: **Plus Access Info**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
+- Purpose: Access stored knowledge, memories, and information, connecting what you've learned to answer questions.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -150,7 +150,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-CALCULATE`; complete teaching: **Plus Calculate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.
+- Purpose: Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -166,7 +166,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-IMPRINT`; complete teaching: **Plus Imprint**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Capture and retain selected information and experiences for clear, reliable recall.
+- Purpose: Capture and retain information and experiences for clear, reliable recall.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -206,7 +206,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INJURY-RESPONSE`; complete teaching: **Plus Injury Response**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthen your body's automatic protective, healing, and restorative responses to physical injury.
+- Purpose: Enhance automatic protection, healing, and recovery following physical injury.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -214,7 +214,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-TOXIC-CLEAR`; complete teaching: **Plus Toxic Clear**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.
+- Purpose: Enhance the body's response to harmful substances through protection, detoxification, and elimination.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -230,7 +230,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-OFFLOAD`; complete teaching: **Plus Offload**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.
+- Purpose: Release unwanted thoughts and recurring emotional patterns to clear mental interference.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -238,7 +238,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-EMPATHIZE`; complete teaching: **Plus Empathize**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.
+- Purpose: Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -246,7 +246,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-MANIFEST`; complete teaching: **Plus Manifest**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.
+- Purpose: Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -254,7 +254,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INSULATE`; complete teaching: **Plus Insulate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.
+- Purpose: Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -262,7 +262,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-DISSOLVE`; complete teaching: **Plus Dissolve**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.
+- Purpose: Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -270,7 +270,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-CLEAR ZONE`; complete teaching: **Plus Clear Zone**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.
+- Purpose: Maintain a clear personal zone that naturally discourages unwanted insect contact.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -278,7 +278,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INTUITION`; complete teaching: **Plus Intuition**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.
+- Purpose: Access intuitive guidance through your total self, higher self, and wider consciousness.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -326,7 +326,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-RELEASE`; complete teaching: **Plus Release**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: End selected temporary OCF function applications without losing their learned abilities.
+- Purpose: End selected temporary OCF applications without losing learned abilities.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -334,7 +334,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-FREE THIS HABIT`; complete teaching: **Plus Free This Habit**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.
+- Purpose: Eliminate unwanted habits and automatic behavior patterns.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -350,7 +350,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INNER POWER`; complete teaching: **Plus Inner Power**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.
+- Purpose: Draw on your total self's strength, wisdom, and confidence in everyday life.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -358,7 +358,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-COORDINATE`; complete teaching: **Plus Coordinate**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.
+- Purpose: Move with greater coordination, speed, and precision.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -374,7 +374,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-THIS DAY`; complete teaching: **Plus This Day**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.
+- Purpose: Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -430,7 +430,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-RESTORATIVE SLEEP`; complete teaching: **Plus Restorative Sleep**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.
+- Purpose: Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -438,7 +438,7 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-SLEEP`; complete teaching: **Plus Sleep**.
 - Status: CANONICAL YAML; review flags retained separately; title: canonical.
-- Purpose: Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.
+- Purpose: Fall asleep naturally, rest deeply, and awaken at your desired time.
 - Pending title: None.
 - Other unselected proposal: null
 

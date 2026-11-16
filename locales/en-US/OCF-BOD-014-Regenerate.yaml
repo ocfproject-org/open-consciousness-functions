@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming
-    to restore damaged, weakened, or missing structures toward their healthy form and function.
+  text: |-
+    Regenerate and restore damaged, weakened, or missing structures in a selected body part.
   status: canonical
   version: 1.0.0
 metadata_entries: {}

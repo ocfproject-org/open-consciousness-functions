@@ -864,7 +864,7 @@
       "purpose": "OCF Function Command Index",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "be8178ee654a9d53a8646051118b9226b9364e5353df5959e80f8e8ffdcde62d",
+      "sha256": "84b44b0f4a170b3f71c5491fd1e6f0b612fd7314a43fa838f808473e8939168f",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -882,7 +882,7 @@
       "purpose": "OCF Function Commands — Quick Reference",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "a6741876a3ecf77489bf357507d3d18c401db427eccb00a23d22dc6e2a2d66a1",
+      "sha256": "66ed368757191d4cd7fc817b3b511ec86d54745524697e79344fc06953046464",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2763,7 +2763,7 @@
       "purpose": "Source-English terminology sheet",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "0aa3d4a7fd9365908afdb4c085d15668609713ca63016b139e7151dd356eedc4",
+      "sha256": "206d8c2e92a8f9da2653b983ce7046901bef1032137c5c500737e7ace72d1131",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3223,7 +3223,7 @@
       "purpose": "Current title–cue decisions and implementation",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "d72c84c32765b80e0bf6314708db715694a8a04d82a2c80b006beadc6bb5c107",
+      "sha256": "bef34e560a51ccc7566f187b3c687f47e187bfb6d918d588044b001314a0d54d",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3280,10 +3280,10 @@
       ],
       "path": "docs/releases/OWNER_APPROVED_58_FUNCTION_PARITY_20261114.md",
       "proposed_correction": "retain historical claims; consult current workflow guides",
-      "purpose": "Owner-approved 58-function editorial parity — recovery follow-up",
+      "purpose": "Final owner-approved 58-function editorial parity — 2026-11-15",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "8da89f3494f1896662f2af132c2e72f34150c5890fe1b21100fbe7439678cff0",
+      "sha256": "e1248e6732553561149f7d1ce10fdc6555ac39a92bfd5a92e6242e4eea0e3801",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

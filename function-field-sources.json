@@ -2463,7 +2463,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-AUT-001-Automatic-Action.yaml",
-          "value": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
+          "value": "Perform learned skills and activities naturally and automatically, with less conscious effort.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -5411,7 +5411,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-001-Brain-Flow.yaml",
-          "value": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.",
+          "value": "Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -8369,7 +8369,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-002-Circulation.yaml",
-          "value": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.",
+          "value": "Improve blood circulation throughout the body, delivering oxygen and nutrients while maintaining healthy blood vessels.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -11232,7 +11232,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-003-Comfort.yaml",
-          "value": "Eases physical discomfort in a selected area of the body.",
+          "value": "Ease physical discomfort in a selected area of the body.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -14220,7 +14220,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-004-Detox.yaml",
-          "value": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.",
+          "value": "Enhance the body's natural cleansing, detoxification, and renewal processes.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -20221,7 +20221,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-006-Heart-Flow.yaml",
-          "value": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.",
+          "value": "Improve heart function, circulation, and natural cardiovascular maintenance.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -23294,7 +23294,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-007-Blood-Pressure-Balance.yaml",
-          "value": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
+          "value": "Regulate blood pressure naturally, adapting heart and blood vessel function to the body's changing needs.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -26222,7 +26222,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-008-Immune-Readiness.yaml",
-          "value": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
+          "value": "Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -29075,7 +29075,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-009-Breathe-Better.yaml",
-          "value": "Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.",
+          "value": "Improve breathing efficiency, respiratory function, and natural airway maintenance.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -32013,7 +32013,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
-          "value": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
+          "value": "Adjust how your body utilizes food energy and nourishment, from fuller utilization to reduced unnecessary storage.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -35151,7 +35151,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-011-Hormonal-Transitions.yaml",
-          "value": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
+          "value": "Balance hormonal changes throughout life for greater physical comfort, emotional stability, and mental clarity.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -38154,7 +38154,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-012-Sex-Drive.yaml",
-          "value": "Increase or decrease sexual desire and arousal, with greater control over your sexual responsiveness.",
+          "value": "Increase or decrease sexual desire, arousal, and responsiveness.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -41547,7 +41547,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-013-Body-Tune-Up.yaml",
-          "value": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
+          "value": "Enhance whole-body healing, repair, regeneration, and maintenance, with optional attention to specific areas.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -44925,7 +44925,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-014-Regenerate.yaml",
-          "value": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.",
+          "value": "Regenerate and restore damaged, weakened, or missing structures in a selected body part.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -48218,7 +48218,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-BOD-015-Temporary-Numbing.yaml",
-          "value": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.",
+          "value": "Temporarily reduce sensation and discomfort in a selected body area, restoring normal sensitivity when desired.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -51226,7 +51226,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-001-Information-Access.yaml",
-          "value": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
+          "value": "Access stored knowledge, memories, and information, connecting what you've learned to answer questions.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -54084,7 +54084,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-002-Mental-Calculation.yaml",
-          "value": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.",
+          "value": "Improve mathematical understanding, memory, calculation speed, accuracy, pattern recognition, and problem-solving.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -60080,7 +60080,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-COG-004-Imprint.yaml",
-          "value": "Capture and retain selected information and experiences for clear, reliable recall.",
+          "value": "Capture and retain information and experiences for clear, reliable recall.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -75145,7 +75145,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMG-001-Injury-Response.yaml",
-          "value": "Strengthen your body's automatic protective, healing, and restorative responses to physical injury.",
+          "value": "Enhance automatic protection, healing, and recovery following physical injury.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -78383,7 +78383,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMG-002-Toxic-Exposure-Response.yaml",
-          "value": "Strengthen your body's natural protective, detoxification, and elimination responses to harmful substances.",
+          "value": "Enhance the body's response to harmful substances through protection, detoxification, and elimination.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -84199,7 +84199,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMO-002-Offload.yaml",
-          "value": "Release unwanted thoughts and recurring emotional patterns, freeing your attention while preserving valuable memories and understanding.",
+          "value": "Release unwanted thoughts and recurring emotional patterns to clear mental interference.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -85117,7 +85117,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/activation/control/effect_scope_ref"
         },
         "/activation/control/phrase_ref/source": {
@@ -87517,7 +87517,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Deepen understanding and communication with another being through empathy, intuition, and total-self awareness, including connection beyond words and physical senses.",
+          "value": "Connect and communicate with another being through empathy, intuition, and total-self awareness beyond physical senses.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -87637,7 +87637,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-003.closer/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "Remember, whenever you wish to understand\nanother being through your senses and total self,\nbring that being clearly into your awareness.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThis concludes your OCF Empathize exercise.",
+          "value": "Remember, whenever you wish to understand or communicate with another being, bring that being into your awareness.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nAllow your total self to establish the connection and become receptive to communication and understanding.\n\nThis concludes your OCF Empathize exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.closer/text"
         },
         "/entries/hplus.function.ocf-emo-003.closer/version": {
@@ -87662,7 +87662,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-003.function-body/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "From this moment forward, your ability to perceive\nand understand another being is becoming deeper,\nclearer, and more complete.\n\nYou are connected to the greater whole of life.\nYour conscious mind, subconscious mind,\nand higher self work together as your total self,\nopening every available way of knowing.\n\nWhenever you desire to understand another being,\nbring that being clearly into your awareness.\nRelax your body, quiet your own expectations,\nand become calm, open, and receptive.\n\nThrough your physical senses, you recognize\nexpression, movement, voice, and subtle changes.\nBeyond those senses, you remain open to intuition,\nemotional impressions, images, feelings,\nand direct, wordless understanding.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nYour total self will now bring together\nevery form of information available to you,\nrevealing a clearer understanding of the\nother being's feelings, needs, intentions,\nand state of being.\n\nCommunication will become possible beyond words:\nfeeling to feeling, awareness to awareness,\nand thought to thought.\n\nWhether you are physically present or exploring\nin an out-of-body state, your greater awareness\nwill remain open to subtle and nonphysical\nimpressions and communication.\n\nYour higher self will help you recognize\nthe connection between yourself, the other being,\nand the greater consciousness of which all are part.\n\nUnderstanding will arrive in the form most natural\nto you: a clear feeling, an image, a thought,\na sensation, or immediate inner knowing.\n\nYou will remain centered in your own awareness,\nunderstanding without imposing your desires\nor losing your sense of self.\n\nFrom this moment forward, this ability\nis permanently available whenever you choose\nto open yourself to deeper understanding.\n\nThe more you use {{ cue.primary }},\nthe easier, clearer, and more effective\nthis communion and understanding will become.",
+          "value": "From this moment forward, you have the ability to establish deeper understanding and communication with another being whenever you choose.\n\nYour conscious mind, subconscious mind, higher self, and total self work together, expanding your capacity to perceive and understand other forms of consciousness.\n\nThrough your physical senses, you recognize expressions, movements, voices, emotions, and subtle changes in another being.\n\nBeyond your physical senses, your intuitive awareness opens additional channels of understanding and communication.\n\nYou may become aware of another being's feelings, intentions, needs, perspectives, or state of consciousness through impressions, thoughts, emotions, or direct intuitive knowing.\n\nWhenever you wish to understand or communicate with another being, bring that being into your awareness.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nAllow your total self to establish the connection and become receptive to communication and understanding.\n\nYour conscious mind, subconscious mind, higher self, and greater awareness cooperate, bringing together information and impressions relevant to the being you have selected.\n\nCommunication becomes possible beyond spoken language, through feeling, awareness, intention, and direct understanding.\n\nWhether you are physically present with another being or exploring consciousness in an out-of-body state, this ability remains available.\n\nYour total self connects with the greater consciousness of which all beings are part, opening the possibility of communication beyond ordinary physical limitations.\n\nUnderstanding may arise naturally through thoughts, feelings, impressions, memories, or immediate knowing.\n\nYour awareness remains distinct as you explore another being's perspective, allowing understanding and communication without losing your own sense of self.\n\nYou can recognize and consider the understanding you receive, choosing how to respond and communicate.\n\nThis ability to establish empathetic and intuitive communication remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" establishing deeper understanding and communication becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.function-body/text"
         },
         "/entries/hplus.function.ocf-emo-003.function-body/version": {
@@ -87677,7 +87677,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-emo-003.opener/text": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": "This OCF exercise will strengthen your ability\nto perceive, understand, and communicate with\nanother being through all levels of awareness,\nincluding your senses, intuition, and total self.",
+          "value": "This OCF exercise will strengthen your ability to understand and communicate with another being through your physical senses, intuition, higher self, and total-self awareness.",
           "yaml_pointer": "/entries/hplus.function.ocf-emo-003.opener/text"
         },
         "/entries/hplus.function.ocf-emo-003.opener/version": {
@@ -87725,10 +87725,35 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
-        "/lifecycle/trigger_conditions": {
+        "/lifecycle/scopes/application/activation": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
-          "value": [],
-          "yaml_pointer": "/lifecycle/trigger_conditions"
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/scopes/application/activation"
+        },
+        "/lifecycle/scopes/application/description_key": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "functions.ocf-emo-003.lifecycle.scopes.application.description",
+          "yaml_pointer": "/lifecycle/scopes/application/description_key"
+        },
+        "/lifecycle/scopes/application/persistence": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "conditional",
+          "yaml_pointer": "/lifecycle/scopes/application/persistence"
+        },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "functions.ocf-emo-003.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
+        "/lifecycle/trigger_conditions/0": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "Select another being before deliberately invoking Plus Empathize.",
+          "yaml_pointer": "/lifecycle/trigger_conditions/0"
         },
         "/locale": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
@@ -87739,6 +87764,36 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/status": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/status"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/text": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "Each selected-being connection is a separate deliberate, breath-independent application.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/text"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/version": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.application.description/version"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/status": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/status"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "The ability to establish empathetic and intuitive communication remains permanently available.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/version": {
+          "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-emo-003.lifecycle.scopes.capability.description/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EMO-003-Empathize.yaml",
@@ -88300,7 +88355,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/activation/control/effect_scope_ref"
         },
         "/activation/control/phrase_ref/source": {
@@ -90460,7 +90515,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "Manifest a desired outcome within a chosen timeframe through clear intention, total-self alignment, and openness to greater possibilities.",
+          "value": "Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -90590,7 +90645,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-001.closer/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "Remember, to manifest a chosen outcome,\nbring it clearly into your awareness\nand choose when you wish it to take form.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nThis concludes your OCF exercise.",
+          "value": "Remember, whenever you wish to manifest a chosen outcome, establish clearly what you desire and when you wish it to become reality.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Manifest exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-001.closer/text"
         },
         "/entries/hplus.function.ocf-exp-001.closer/version": {
@@ -90620,7 +90675,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-001.function-body/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "From this moment forward, you will direct your total self\ntoward the reality you choose to create,\nwith clear, positive intention.\n\nWhenever you desire a change, choose the outcome\nand when you wish it to take form.\nWhether the need is immediate or further ahead,\npicture, feel, or simply know the result as fulfilled.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nYour total self will immediately align with your intention.\nYour conscious mind, subconscious mind, higher self,\nand physical being will work together in harmony.\n\nStruggle, fear, harsh judgment, and impatience will fall away.\nYour intention remains clear as you release the need\nto force each step or continually check the result.\n\nCenter yourself in your heart.\nLet love fill your being and bring your energy centers\ninto open, balanced harmony.\nRemain grounded and present, receptive to energy and light.\nYou are worthy to create and receive good.\n\nWelcome the loving guidance of your higher self\nand the helpers you recognize.\nYour intuition will become clearer,\nguiding you to recognize opportunities and act.\n\nYour greater awareness will reach beyond your physical body,\nconnecting with universal consciousness.\nYour intention will draw together and sustain\nthe conditions and connections that support your chosen reality.\n\nHold the essence of your desire while welcoming\nits fulfillment or something better,\nin harmony with your highest good and the good of others,\nwithout destructive effects upon anyone.\n\nThis pattern will continue without constant conscious effort,\nunfolding immediately or through its natural sequence.\nOnce learned, this ability remains permanently available,\nready for everyday use with your intention, breath, and command.\n\nThe more you use this function,\nthe clearer your intention, the stronger your alignment,\nand the easier and more effective manifestation becomes.",
+          "value": "From this moment forward, you have the ability to direct your total self toward the reality you choose to create.\n\nYour conscious mind, subconscious mind, higher self, and greater consciousness work together to bring your intentions into manifestation.\n\nWhenever you wish to manifest a particular outcome, clearly establish what you desire and when you wish it to become reality.\n\nKnow the outcome you are choosing, whether its fulfillment is immediate or sometime in the future.\n\nYou may imagine the completed result, experience its emotional significance, or simply hold the intention clearly within your awareness.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self aligns with your chosen intention, bringing your thoughts, awareness, decisions, and actions into harmony with the reality you desire.\n\nYour higher self and greater consciousness cooperate with this intention, guiding the development of circumstances, connections, and opportunities that contribute to its fulfillment.\n\nRelease unnecessary struggle, doubt, impatience, and the need to control every step of the process.\n\nYou may strengthen this alignment through feelings of love, gratitude, inner harmony, or awareness of your heart and energy centers.\n\nRemain receptive to the wisdom and guidance of your higher self, universal consciousness, and the greater awareness available beyond your physical senses.\n\nYour intuition becomes more responsive, helping you recognize meaningful opportunities and directions as they arise.\n\nThe intention you have established continues working within your total self without requiring constant conscious attention or repeated commands.\n\nYour chosen outcome unfolds in harmony with your highest good and the well-being of others, without destructive effects.\n\nRemain open to its fulfillment or an outcome that serves your intention in an even greater way.\n\nThis ability to manifest through conscious intention and total-self cooperation remains permanently available.\n\nEach time you use \"{{ cue.primary }},\" establishing and maintaining alignment with your chosen reality becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-001.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-001.function-body/version": {
@@ -90640,7 +90695,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-001.opener/text": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": "This OCF exercise will teach you to manifest with clear,\npositive intention, aligning your total self with the reality\nyou choose to create.",
+          "value": "This OCF exercise will teach you to manifest a chosen outcome through clear intention, aligning your total self and greater consciousness with the reality you wish to create.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-001.opener/text"
         },
         "/entries/hplus.function.ocf-exp-001.opener/version": {
@@ -90688,10 +90743,35 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
-        "/lifecycle/trigger_conditions": {
+        "/lifecycle/scopes/application/activation": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
-          "value": [],
-          "yaml_pointer": "/lifecycle/trigger_conditions"
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/scopes/application/activation"
+        },
+        "/lifecycle/scopes/application/description_key": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "functions.ocf-exp-001.lifecycle.scopes.application.description",
+          "yaml_pointer": "/lifecycle/scopes/application/description_key"
+        },
+        "/lifecycle/scopes/application/persistence": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "conditional",
+          "yaml_pointer": "/lifecycle/scopes/application/persistence"
+        },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "functions.ocf-exp-001.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
+        "/lifecycle/trigger_conditions/0": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "Select an outcome and its desired completion time before invoking Plus Manifest.",
+          "yaml_pointer": "/lifecycle/trigger_conditions/0"
         },
         "/locale": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
@@ -90717,6 +90797,36 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
           "value": "1.1.0",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.artwork-description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/status": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/text": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "Each deliberate application is defined by its selected outcome and desired completion timeframe.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/version": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.application.description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/status": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "The learned ability to direct intention through the total self remains permanently available.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/version": {
+          "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-001.lifecycle.scopes.capability.description/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EXP-001-Manifest.yaml",
@@ -91541,20 +91651,10 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "canonical-primary",
           "yaml_pointer": "/activation/control/phrase_ref/source"
         },
-        "/activation/control/procedure/before_steps/0/id": {
+        "/activation/control/procedure/before_steps": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "select-comfort-zone",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/id"
-        },
-        "/activation/control/procedure/before_steps/0/localization_key": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "command.procedure.select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/localization_key"
-        },
-        "/activation/control/procedure/before_steps/0/operation": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "select-purpose",
-          "yaml_pointer": "/activation/control/procedure/before_steps/0/operation"
+          "value": [],
+          "yaml_pointer": "/activation/control/procedure/before_steps"
         },
         "/activation/control/procedure/evidence_keys/0": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
@@ -91608,7 +91708,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "select-comfort-zone",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/id"
         },
         "/activation/procedure_steps/0/instruction/status": {
@@ -91618,7 +91718,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Choose the purpose for using this function.",
+          "value": "Inhale.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -91628,12 +91728,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "select-purpose",
+          "value": "inhale",
           "yaml_pointer": "/activation/procedure_steps/0/operation"
         },
         "/activation/procedure_steps/1/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "inhale",
+          "value": "hold",
           "yaml_pointer": "/activation/procedure_steps/1/id"
         },
         "/activation/procedure_steps/1/instruction/status": {
@@ -91643,7 +91743,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/instruction/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Inhale.",
+          "value": "Hold your breath.",
           "yaml_pointer": "/activation/procedure_steps/1/instruction/text"
         },
         "/activation/procedure_steps/1/instruction/version": {
@@ -91653,12 +91753,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/1/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "inhale",
+          "value": "hold-breath",
           "yaml_pointer": "/activation/procedure_steps/1/operation"
         },
         "/activation/procedure_steps/2/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "hold",
+          "value": "command",
           "yaml_pointer": "/activation/procedure_steps/2/id"
         },
         "/activation/procedure_steps/2/instruction/status": {
@@ -91668,7 +91768,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/instruction/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Hold your breath.",
+          "value": "Think or say the command.",
           "yaml_pointer": "/activation/procedure_steps/2/instruction/text"
         },
         "/activation/procedure_steps/2/instruction/version": {
@@ -91678,12 +91778,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/2/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "hold-breath",
+          "value": "think-or-say-command",
           "yaml_pointer": "/activation/procedure_steps/2/operation"
         },
         "/activation/procedure_steps/3/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/id"
         },
         "/activation/procedure_steps/3/instruction/status": {
@@ -91693,7 +91793,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/instruction/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Think or say the command.",
+          "value": "Exhale.",
           "yaml_pointer": "/activation/procedure_steps/3/instruction/text"
         },
         "/activation/procedure_steps/3/instruction/version": {
@@ -91703,33 +91803,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/3/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "think-or-say-command",
+          "value": "exhale",
           "yaml_pointer": "/activation/procedure_steps/3/operation"
-        },
-        "/activation/procedure_steps/4/id": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/id"
-        },
-        "/activation/procedure_steps/4/instruction/status": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "canonical",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/status"
-        },
-        "/activation/procedure_steps/4/instruction/text": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Exhale.",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/text"
-        },
-        "/activation/procedure_steps/4/instruction/version": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "1.0.0",
-          "yaml_pointer": "/activation/procedure_steps/4/instruction/version"
-        },
-        "/activation/procedure_steps/4/operation": {
-          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "exhale",
-          "yaml_pointer": "/activation/procedure_steps/4/operation"
         },
         "/activation/role": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
@@ -94233,7 +94308,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Establish adaptive insulation from unwanted physical, environmental, emotional, and energetic influences, automatically maintaining comfort, harmony, and balance according to your needs.",
+          "value": "Adaptively insulate against unwanted physical, environmental, emotional, and energetic influences.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -94358,7 +94433,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-002.closer/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Remember, to establish your zone of temperature comfort,\ninhale deeply, hold your breath, and think\nor say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nUse \"{{ cue.id.OCF-CMD-EXP-002-CANCEL }}\" to end the current adjustment,\nor \"{{ cue.id.OCF-CMD-EXP-002-RELEASE }}\" to place Insulate on hold.\n\nThis concludes your OCF Insulate exercise.",
+          "value": "Remember, whenever you wish to establish adaptive insulation, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nUse \"{{ cue.id.OCF-CMD-EXP-002-CANCEL }}\" to end the current adjustment, or \"{{ cue.id.OCF-CMD-EXP-002-RELEASE }}\" to place the entire application on hold.\n\nUse the same breathing sequence with either command.\n\nThis concludes your OCF Insulate exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-002.closer/text"
         },
         "/entries/hplus.function.ocf-exp-002.closer/version": {
@@ -94393,7 +94468,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-002.function-body/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "From this moment forward, you have the ability\nto create a balanced zone of temperature comfort\nsurrounding your entire physical body.\n\nWhenever you desire this protection,\nimagine a continuous, even layer of insulation\nextending around you from head to toe.\n\nInhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen exhale slowly through your mouth.\n\nYour zone will immediately begin to form,\nsurrounding you in a smooth, balanced field\nadjusted to the comfort you desire.\n\nWhen the surroundings are cold,\nthe zone will resist excessive cooling,\nconserving comfortable warmth around your body.\n\nWhen the surroundings are hot,\nthe zone will resist excessive heating,\nmaintaining a comfortable, balanced condition.\n\nAs the environment changes, your zone\nwill adjust continuously and evenly,\nstrengthening or easing its insulating effect\naccording to what is needed.\n\nYour physical body and your total self\nwill work together in this pattern of balance,\nmaintaining the zone without constant attention.\n\nThe ability to use Insulate is now\npermanently available whenever you choose,\nand the selected zone continues operating\nuntil you consciously change or release it.\n\nTo cancel the current temperature adjustment,\ninhale, hold your breath, think or say\nin your mind, \"{{ cue.id.OCF-CMD-EXP-002-CANCEL }},\" then exhale.\n\nThat adjustment will end, leaving you free\nto establish a different one whenever desired.\n\nWhen you wish to place the entire Insulate\napplication on hold, bring Insulate into your mind.\nInhale, hold your breath, think or say\nin your mind, \"{{ cue.id.OCF-CMD-EXP-002-RELEASE }},\" then exhale.\n\nThe present zone will rest, while your ability\nto create it remains ready for future use.\n\nEach time you use Insulate, establishing\nand adjusting your zone will become\neasier, smoother, and more effective.",
+          "value": "From this moment forward, you have the ability to establish adaptive insulation around your physical body and throughout your total self.\n\nYour conscious mind, subconscious mind, physical body, higher self, and greater consciousness work together to maintain this protective balance.\n\nThis insulation adapts to the conditions around you, reducing the influence of unwanted physical, environmental, emotional, and energetic disturbances.\n\nWhen your surroundings are cold, your total self directs this insulation toward preserving comfortable warmth.\n\nWhen your surroundings are hot, it adapts toward maintaining comfortable coolness and balance.\n\nUnwanted environmental disturbances become less intrusive, allowing greater comfort amid changing surroundings.\n\nEmotional pressures, unwanted influences from others, and disruptive energies become less able to disturb your inner harmony.\n\nYour awareness remains clear, and your total self adjusts the insulation according to your changing needs.\n\nWhenever you wish to establish this protection, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self establishes the insulating pattern, naturally adjusting its strength and character to maintain comfort and balance.\n\nYour higher self and greater consciousness cooperate with this intention, guiding the insulation toward what best serves your well-being.\n\nThe insulation operates automatically without requiring you to monitor it, imagine a barrier, or consciously select every influence you wish to reduce.\n\nAs your circumstances change, the pattern adapts, allowing beneficial experiences and interactions while reducing unwanted disturbances.\n\nThe established insulation continues until you deliberately change, cancel, or release its present application.\n\nWhenever you wish to end the current insulation adjustment, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.id.OCF-CMD-EXP-002-CANCEL }}.\"\n\nThen slowly exhale through your mouth.\n\nThe current adjustment ends, allowing you to establish a different one whenever desired.\n\nWhenever you wish to place the entire Insulate application on hold, bring Insulate into your awareness.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.id.OCF-CMD-EXP-002-RELEASE }}.\"\n\nThen slowly exhale through your mouth.\n\nThe present application rests, while your learned ability remains available whenever you choose to use it again.\n\nThis ability to establish and adjust adaptive insulation is permanently available within your total self.\n\nEach time you use \"{{ cue.primary }},\" establishing and maintaining this balance becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-002.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-002.function-body/version": {
@@ -94408,7 +94483,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-002.opener/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "This OCF exercise will teach you to establish\nan insulating zone around your physical body,\nadjusting it to maintain your desired comfort\nas the surrounding temperature changes.",
+          "value": "This OCF exercise will teach you to establish adaptive insulation around your entire being, maintaining comfort, harmony, and balance amid unwanted physical, environmental, emotional, and energetic influences.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-002.opener/text"
         },
         "/entries/hplus.function.ocf-exp-002.opener/version": {
@@ -94473,7 +94548,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/lifecycle/scopes/application/persistence": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "temporary",
+          "value": "persistent",
           "yaml_pointer": "/lifecycle/scopes/application/persistence"
         },
         "/lifecycle/scopes/capability/description_key": {
@@ -94508,7 +94583,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Each selected insulation adjustment is temporary; Plus Cancel ends it, while Plus Release places it on hold.",
+          "value": "The adaptive insulation remains active until Plus Cancel ends the current adjustment or Plus Release places the application on hold.",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/text"
         },
         "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.application.description/version": {
@@ -94530,6 +94605,21 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
           "value": "1.0.0",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.lifecycle.scopes.capability.description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/status": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/status"
+        },
+        "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/text": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "Bring the current Insulate application into awareness.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/text"
+        },
+        "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/version": {
+          "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-002.procedure.recall-insulate-application/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
@@ -95373,17 +95463,17 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/2/control/procedure/before_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "focus-zoning",
+          "value": "recall-insulate-application",
           "yaml_pointer": "/secondary_commands/2/control/procedure/before_steps/0/id"
         },
         "/secondary_commands/2/control/procedure/before_steps/0/localization_key": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "command.procedure.focus-target",
+          "value": "functions.ocf-exp-002.procedure.recall-insulate-application",
           "yaml_pointer": "/secondary_commands/2/control/procedure/before_steps/0/localization_key"
         },
         "/secondary_commands/2/control/procedure/before_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "focus-target",
+          "value": "other",
           "yaml_pointer": "/secondary_commands/2/control/procedure/before_steps/0/operation"
         },
         "/secondary_commands/2/control/procedure/evidence_keys/0": {
@@ -95443,17 +95533,17 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/2/procedure_steps/0/id": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "focus-zoning",
+          "value": "recall-insulate-application",
           "yaml_pointer": "/secondary_commands/2/procedure_steps/0/id"
         },
         "/secondary_commands/2/procedure_steps/0/instruction/status": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "canonical",
+          "value": "reviewed",
           "yaml_pointer": "/secondary_commands/2/procedure_steps/0/instruction/status"
         },
         "/secondary_commands/2/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "Focus attention on the selected target.",
+          "value": "Bring the current Insulate application into awareness.",
           "yaml_pointer": "/secondary_commands/2/procedure_steps/0/instruction/text"
         },
         "/secondary_commands/2/procedure_steps/0/instruction/version": {
@@ -95463,7 +95553,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/2/procedure_steps/0/operation": {
           "file": "locales/en-US/OCF-EXP-002-Insulate.yaml",
-          "value": "focus-target",
+          "value": "other",
           "yaml_pointer": "/secondary_commands/2/procedure_steps/0/operation"
         },
         "/secondary_commands/2/procedure_steps/1/id": {
@@ -95786,7 +95876,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "Choose an intention.",
+          "value": "Select the unwanted belief, expectation, emotional response, or recurring pattern you wish to dissolve.",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
@@ -96046,7 +96136,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns while preserving valuable memories and lessons.",
+          "value": "Dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -96076,7 +96166,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-003.closer/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "Remember, to dissolve an unwanted pattern,\nbring what you wish to release clearly into your awareness.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly and easily.\n\nThis concludes your OCF exercise.",
+          "value": "Remember, whenever you wish to dissolve an unwanted belief, expectation, emotional response, or recurring pattern, identify what you want to release.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Dissolve exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-003.closer/text"
         },
         "/entries/hplus.function.ocf-exp-003.closer/version": {
@@ -96106,7 +96196,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-003.function-body/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "From this moment forward, you are free to dissolve\npatterns that no longer belong in the life you choose to create.\n\nBring one unwanted pattern clearly into your awareness:\na belief, an expectation, an emotional response,\nor a recurring pattern in your life.\nRecognize what you are ready to release,\nwithout replaying its history or explaining every cause.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly and easily.\n\nYour conscious mind, subconscious mind, physical being,\nand higher self unite around this intention.\nEvery level of your total self participates\nin releasing the pattern you have chosen.\n\nPicture, feel, or simply know its structure loosening.\nThe connections holding it together soften and separate.\nIts emotional charge subsides. Its familiar pull releases.\nThe pattern loses its hold and dissolves\nfrom the way you think, feel, and respond.\n\nYou are not required to fight what you are releasing.\nMeet yourself with understanding and kindness.\nThe lessons and useful knowledge of your experience remain,\nwhile you release the expectation that the past must repeat.\n\nEnergy and attention once tied to sustaining this pattern\nreturn to your use, available for clarity, creativity,\nlove, and purposeful action.\nYou remain whole, grounded, and free to choose\nwhat you wish to create in its place.\n\nLet this change continue with steadiness and patience,\nwhether release is immediate or unfolds in layers.\nYour total self carries the intention forward\nwithout constant effort or repeated checking.\n\nYour new freedom becomes a lasting part of your life.\nThe ability to dissolve a selected pattern remains\npermanently available whenever you consciously choose it.\n\nThe more you use this function,\nthe more naturally you release what no longer serves you\nand make room for what you choose next.",
+          "value": "From this moment forward, you have the ability to dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns whenever you choose.\n\nYour conscious mind, subconscious mind, physical being, higher self, and total self work together to release patterns that no longer serve you.\n\nWhenever you wish to dissolve a particular pattern, identify what you want to release.\n\nIt may be an unwanted belief, an expectation, an emotional response, or a recurring pattern in your life.\n\nRecognize the selected pattern without needing to examine every experience or circumstance that created it.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self responds to your intention, beginning the dissolution of the selected pattern throughout your conscious and subconscious awareness.\n\nThe beliefs, expectations, and emotional connections maintaining the unwanted pattern begin to lose their influence.\n\nThe pattern releases its hold over your thoughts, feelings, choices, and responses.\n\nYour higher self and greater awareness cooperate with this release, allowing the old pattern to dissolve completely.\n\nUseful memories, knowledge, and understanding remain available without continuing to reinforce the unwanted pattern.\n\nThe emotional energy and attention previously occupied by the pattern become available for new experiences, creativity, and purposeful action.\n\nThis dissolution continues naturally without requiring constant conscious attention or repeated commands.\n\nAs the selected pattern dissolves, your total self establishes lasting freedom from its unwanted influence.\n\nThe learned ability to dissolve unwanted patterns remains permanently available whenever you choose.\n\nEach time you use \"{{ cue.primary }},\" releasing unwanted patterns becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-003.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-003.function-body/version": {
@@ -96126,7 +96216,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-003.opener/text": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
-          "value": "This OCF exercise will teach you to dissolve unwanted beliefs,\nemotional responses, and recurring life patterns,\nfreeing your energy and attention for what you choose to create.",
+          "value": "This OCF exercise will teach you to dissolve unwanted beliefs, expectations, emotional responses, and recurring patterns, freeing your attention and energy for what you choose to create.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-003.opener/text"
         },
         "/entries/hplus.function.ocf-exp-003.opener/version": {
@@ -96248,6 +96338,21 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
           "value": "The learned ability is intended to remain available for deliberate use.",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-003.capability/text"
+        },
+        "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/status": {
+          "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/status"
+        },
+        "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/text": {
+          "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
+          "value": "Select the unwanted belief, expectation, emotional response, or recurring pattern you wish to dissolve.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/text"
+        },
+        "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/version": {
+          "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-003.procedure.select-unwanted-pattern/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-EXP-003-Dissolve.yaml",
@@ -96914,7 +97019,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "Maintain a clear personal zone that naturally discourages unwanted insect contact while preserving calm awareness of your surroundings.",
+          "value": "Maintain a clear personal zone that naturally discourages unwanted insect contact.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -98182,7 +98287,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "Access intuitive wisdom and guidance through your total self, higher self, and connection with wider consciousness.",
+          "value": "Access intuitive guidance through your total self, higher self, and wider consciousness.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
@@ -98212,7 +98317,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-006.closer/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "Remember, for deeper intuitive understanding,\nbring one question or situation into your awareness.\nThink or say in your mind, \"{{ cue.primary }}.\"\nAllow a quiet moment, consider what arises,\nand choose your response with care and discernment.\n\nThis concludes your OCF exercise.",
+          "value": "Remember, whenever you wish to receive intuitive guidance, bring your question or situation into awareness.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nAllow understanding to arise, and consider what it means.\n\nThis concludes your OCF Intuition exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-006.closer/text"
         },
         "/entries/hplus.function.ocf-exp-006.closer/version": {
@@ -98242,7 +98347,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-006.function-body/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "From this moment forward, your intuitive awareness develops\nas a calm and beneficial part of your everyday life.\nYour conscious mind, subconscious mind, physical being,\nand higher self cooperate in deeper understanding.\n\nWelcome an attitude of kindness, openness, and discernment.\nYou may recognize guidance as a feeling, an image,\na quiet understanding, or a connection that becomes clear over time.\nYour own way of experiencing awareness is welcome.\n\nWhenever you wish to understand something more deeply,\nbring one question or situation into your awareness.\nThink or say in your mind, \"{{ cue.primary }}.\"\nAllow a quiet moment to notice what arises,\nthen consider what it means and choose your response.\n\nYour total self works together around your intention.\nThe wisdom of your heart, subconscious mind, and higher self\nbecomes available to your conscious understanding.\nRemain open to the wider consciousness you recognize,\ngrounded in your present experience and free to discern.\n\nAn impression is an invitation to explore.\nYou can welcome it, reflect upon it, or let it pass.\nCompare what you sense with what you can observe and learn.\nGive important decisions the time, evidence, and care they deserve.\nClear understanding includes recognizing when you do not yet know.\n\nYour intuition supports constructive, purposeful action.\nChoose responses that respect your well-being\nand the freedom and well-being of others.\nWhen greater clarity is needed, allow understanding to develop\nthrough reflection, experience, and thoughtful conversation.\n\nThis beneficial development continues without constant effort.\nYour attention remains available for the life before you.\nIntuitive impressions can come gently and leave freely;\nyou decide which deserve your attention and how to respond.\n\nThe more you practice with openness and discernment,\nthe more naturally your total self contributes\nto clear understanding and purposeful action.",
+          "value": "From this moment forward, your intuitive awareness becomes a natural and increasingly accessible part of your everyday life.\n\nYour conscious mind, subconscious mind, physical being, higher self, and total self work together, opening deeper channels of awareness and understanding.\n\nThrough this connection, you become more receptive to the wisdom, knowledge, and guidance available beyond your ordinary conscious awareness.\n\nYour intuition draws upon your experiences, subconscious understanding, higher consciousness, and the greater awareness to which your total self is connected.\n\nWhenever you wish to receive intuitive guidance, bring a question or situation into your awareness.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nAllow understanding to arise naturally.\n\nGuidance may come as a thought, impression, feeling, memory, sudden recognition, or direct intuitive knowing.\n\nYour total self brings forward information and understanding relevant to your question, making connections that may not have been apparent to your conscious mind.\n\nYour higher self and wider consciousness contribute their greater perspectives, helping you recognize possibilities, meanings, and directions.\n\nAs intuitive understanding develops, you become more capable of recognizing its significance and applying it to your experiences and decisions.\n\nYou can consider the guidance you receive, allowing it to contribute to your understanding while choosing how to respond.\n\nYour connection with your total self and higher consciousness continues developing naturally, without requiring constant conscious attention.\n\nThis intuitive ability remains permanently available, becoming clearer and more accessible through experience.\n\nEach time you use \"{{ cue.primary }},\" accessing and understanding intuitive guidance becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-006.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-006.function-body/version": {
@@ -98262,7 +98367,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-006.opener/text": {
           "file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
-          "value": "This OCF exercise will strengthen your intuitive awareness, bringing the wisdom of your heart, subconscious mind, and higher self into clear understanding and purposeful action.",
+          "value": "This OCF exercise will strengthen your intuition, opening greater awareness of the wisdom and guidance available through your total self, higher self, and wider consciousness.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-006.opener/text"
         },
         "/entries/hplus.function.ocf-exp-006.opener/version": {
@@ -116400,7 +116505,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-FND-006-Release.yaml",
-          "value": "End selected temporary OCF function applications without losing their learned abilities.",
+          "value": "End selected temporary OCF applications without losing learned abilities.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -119133,7 +119238,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-LIF-001-Habit-Freedom.yaml",
-          "value": "Eliminate unwanted habits and automatic behavior patterns, freeing yourself from their influence.",
+          "value": "Eliminate unwanted habits and automatic behavior patterns.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -124719,7 +124824,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.",
+          "value": "Draw on your total self's strength, wisdom, and confidence in everyday life.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -124839,7 +124944,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-002.closer/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Remember, whenever you wish to strengthen\nyour awareness and expression of your total self,\ninhale deeply and hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Inner Power exercise.",
+          "value": "Remember, whenever you wish to reinforce your connection with the strength and wisdom of your total self, take a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Inner Power exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-002.closer/text"
         },
         "/entries/hplus.function.ocf-prf-002.closer/version": {
@@ -124864,7 +124969,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-002.function-body/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "Beginning now, and from this moment forward,\nyou will recognize more fully the greatness\nand power that are already within your total self.\n\nYour conscious mind, subconscious mind,\nhigher self, and entire being are united\nin the knowledge of your true inner strength.\n\nThis greatness is a natural part of who you are.\nYou will recognize it clearly, trust it completely,\nand express it calmly in your daily life.\n\nWhenever you encounter questions, challenges,\nor important moments, your total self will respond\nwith wisdom, clarity, strength, and assurance.\n\nYou will think and act smoothly, quickly,\nand effectively, drawing upon the full range\nof your abilities without strain or hesitation.\n\nYou will meet life's experiences with quiet happiness,\ncalm confidence, and the certainty that your\ninner resources are available whenever needed.\n\nEach day, your awareness of the strength,\nknowledge, and capability of your total self\nwill become clearer and more complete.\n\nThis knowing is permanently established within you,\ngrowing naturally through everything you experience.\n\nWhenever you wish to bring this awareness\neven more strongly into your life,\ninhale deeply and gently hold your breath.\n\nThink or say in your mind, \"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour awareness of your total self will immediately\nbecome stronger, clearer, and more complete.\nYou will feel and express your natural inner power\nwith calmness, confidence, and ease.\n\nThe more you use {{ cue.primary }},\nthe easier and more effective this recognition\nand expression of your total self will become.",
+          "value": "From this moment forward, you recognize more fully the strength, wisdom, and power already present within your total self.\n\nYour conscious mind, subconscious mind, higher self, and entire being work together, bringing your inner capabilities into greater awareness.\n\nYou become increasingly aware of your natural strength, knowledge, confidence, and ability to meet life's challenges.\n\nWhenever questions, opportunities, or difficult situations arise, your total self provides the wisdom, clarity, and strength needed to respond effectively.\n\nYour thoughts and actions become more purposeful, confident, and decisive.\n\nYou draw upon your inner resources naturally, allowing your abilities to express themselves throughout your everyday experiences.\n\nThis recognition of your total self becomes a permanent part of your awareness, continuing to develop through everything you experience.\n\nWhenever you wish to reinforce this connection, take a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour awareness of your total self strengthens, bringing its wisdom, confidence, and capabilities more fully into your conscious actions.\n\nEach time you use \"{{ cue.primary }},\" recognizing and expressing these abilities becomes easier and more natural.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-002.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-002.function-body/version": {
@@ -124879,7 +124984,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-002.opener/text": {
           "file": "locales/en-US/OCF-PRF-002-Inner-Power.yaml",
-          "value": "This OCF exercise will teach you to recognize\nand express the greatness, strength, and power\nof your total self in every part of your life.",
+          "value": "This OCF exercise will teach you to recognize and express the strength, wisdom, and power of your total self in every part of your life.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-002.opener/text"
         },
         "/entries/hplus.function.ocf-prf-002.opener/version": {
@@ -127782,7 +127887,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-003-Coordination.yaml",
-          "value": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.",
+          "value": "Move with greater coordination, speed, and precision.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -131918,7 +132023,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/control/effect_scope_ref": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "lifecycle.persistence",
+          "value": "lifecycle.scopes.application.persistence",
           "yaml_pointer": "/activation/control/effect_scope_ref"
         },
         "/activation/control/phrase_ref/source": {
@@ -134303,7 +134408,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "Shape the day ahead through clear intentions, aligned actions, and openness to favorable opportunities and outcomes.",
+          "value": "Shape your day through clear intentions, purposeful action, and favorable opportunities and outcomes.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -134418,7 +134523,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-005.closer/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "Remember, each morning, clearly picture and express\nthe experiences and outcomes you desire for this day.\nInhale deeply and hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nThis concludes your OCF Make Your Day exercise.",
+          "value": "Remember, whenever you wish to shape the day ahead, establish the experiences and outcomes you desire for today.\n\nTake a deep breath in and gently hold it.\n\nSilently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Make Your Day exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-005.closer/text"
         },
         "/entries/hplus.function.ocf-prf-005.closer/version": {
@@ -134443,7 +134548,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-005.function-body/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "From this moment forward, you can begin each morning\nby creating the pattern you desire for the day ahead.\n\nBefore the activities of the day begin,\nbring this day clearly into your awareness.\nSee it unfolding as you most desire.\n\nPicture your physical self strong, comfortable,\nand moving through the day with ease.\nSee your mind clear, capable, and aware.\nFeel the emotional harmony and confidence\nyou wish to experience throughout this day.\n\nNow look beyond yourself to the day around you.\nSee the meetings, events, opportunities,\nand circumstances taking shape in your favor.\nPicture the outcomes you desire as already\nbecoming part of this day's unfolding pattern.\n\nExpress your intention clearly, in words\nand in the image or knowing you hold within.\nBe definite about what you wish to experience\nand accomplish before this day is complete.\n\nInhale deeply and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth.\n\nYour conscious mind, subconscious mind,\nhigher self, and total being will immediately\nbegin working together toward the pattern selected.\nYour thoughts, feelings, choices, and actions\nwill align with the day you have envisioned.\n\nOpportunities and favorable possibilities\nwill become apparent as events unfold.\nRemain open to unexpected ways your intention\nmay take form, even better than you imagined.\n\nThis pattern is for today, here and now.\nEach morning you may create a new one,\nand with each use, shaping your day through\nclear intention will become easier and stronger.",
+          "value": "From this moment forward, you have the ability to shape the experiences, conditions, and outcomes you desire for each day.\n\nYour conscious mind, subconscious mind, higher self, and total self work together to establish the pattern you choose for the day ahead.\n\nEach morning, before beginning your activities, consider what you wish to experience and accomplish today.\n\nChoose the physical, mental, and emotional conditions you desire, along with the opportunities, circumstances, and outcomes you wish to bring into your day.\n\nEstablish these intentions clearly, knowing what you wish to experience before this day is complete.\n\nTake a deep breath in and gently hold it.\n\nWhile holding your breath, silently say to yourself,\n\"{{ cue.primary }}.\"\n\nThen slowly exhale through your mouth.\n\nYour total self responds to your intentions, bringing your thoughts, choices, actions, and greater awareness into alignment with the day you have chosen.\n\nYour subconscious mind and higher self cooperate with your conscious intentions, helping favorable circumstances and opportunities develop throughout the day.\n\nYou recognize possibilities that support your intentions and respond naturally to opportunities as they arise.\n\nThe events and experiences of your day begin unfolding in alignment with the pattern you have established.\n\nRemain open to unexpected opportunities and outcomes that may fulfill your intentions in ways beyond those you initially considered.\n\nThis pattern applies to the current day.\n\nEach new morning, you can establish fresh intentions for the day ahead.\n\nYour ability to shape your daily experiences through conscious intention remains permanently available.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-005.function-body/text"
         },
         "/entries/hplus.function.ocf-prf-005.function-body/version": {
@@ -134458,7 +134563,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-prf-005.opener/text": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": "This OCF exercise will teach you to shape the day ahead,\nestablishing the experiences, conditions, and outcomes\nyou desire for yourself, beginning with this day.",
+          "value": "This OCF exercise will teach you to shape the experiences, opportunities, and outcomes of your day through the conscious direction of your total self.",
           "yaml_pointer": "/entries/hplus.function.ocf-prf-005.opener/text"
         },
         "/entries/hplus.function.ocf-prf-005.opener/version": {
@@ -134506,10 +134611,35 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": false,
           "yaml_pointer": "/lifecycle/release/required"
         },
-        "/lifecycle/trigger_conditions": {
+        "/lifecycle/scopes/application/activation": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
-          "value": [],
-          "yaml_pointer": "/lifecycle/trigger_conditions"
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/scopes/application/activation"
+        },
+        "/lifecycle/scopes/application/description_key": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "functions.ocf-prf-005.lifecycle.scopes.application.description",
+          "yaml_pointer": "/lifecycle/scopes/application/description_key"
+        },
+        "/lifecycle/scopes/application/persistence": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "temporary",
+          "yaml_pointer": "/lifecycle/scopes/application/persistence"
+        },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "functions.ocf-prf-005.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
+        "/lifecycle/trigger_conditions/0": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "Select day-specific intended outcomes; each application applies to the current day.",
+          "yaml_pointer": "/lifecycle/trigger_conditions/0"
         },
         "/locale": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
@@ -134520,6 +134650,36 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
           "value": "complete",
           "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/status": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/status"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/text": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "Each selected daily pattern applies to the current day; fresh intentions may be chosen the next day.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/text"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/version": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.application.description/version"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/status": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/status"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "The ability to shape daily experiences through conscious intention remains permanently available.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/version": {
+          "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-prf-005.lifecycle.scopes.capability.description/version"
         },
         "/narration/sequence/0/key": {
           "file": "locales/en-US/OCF-PRF-005-Make-Your-Day.yaml",
@@ -158474,7 +158634,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-001-Restorative-Sleep.yaml",
-          "value": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.",
+          "value": "Deep, restorative sleep that enhances the body's natural healing, repair, renewal, and regeneration.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {
@@ -161462,7 +161622,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-SLP-002-Sleep.yaml",
-          "value": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.",
+          "value": "Fall asleep naturally, rest deeply, and awaken at your desired time.",
           "yaml_pointer": "/description/text"
         },
         "/description/version": {

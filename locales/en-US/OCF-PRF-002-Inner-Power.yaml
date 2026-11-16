@@ -8,7 +8,7 @@ title:
   version: 1.0.0
 description:
   text: |-
-    Recognize and express your total self's strength, wisdom, confidence, and inner power in everyday life.
+    Draw on your total self's strength, wisdom, and confidence in everyday life.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -134,11 +134,8 @@ entries:
   hplus.function.ocf-prf-002.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to recognize
-
-      and express the greatness, strength, and power
-
-      of your total self in every part of your life.'
+    text: |-
+      This OCF exercise will teach you to recognize and express the strength, wisdom, and power of your total self in every part of your life.
   hplus.function.ocf-prf-002.function-body:
     status: reviewed
     version: 1.1.1
@@ -146,87 +143,31 @@ entries:
       function_id: OCF-PRF-002
       allowed:
       - cue.primary
-    text: 'Beginning now, and from this moment forward,
+    text: |-
+      From this moment forward, you recognize more fully the strength, wisdom, and power already present within your total self.
 
-      you will recognize more fully the greatness
+      Your conscious mind, subconscious mind, higher self, and entire being work together, bringing your inner capabilities into greater awareness.
 
-      and power that are already within your total self.
+      You become increasingly aware of your natural strength, knowledge, confidence, and ability to meet life's challenges.
 
+      Whenever questions, opportunities, or difficult situations arise, your total self provides the wisdom, clarity, and strength needed to respond effectively.
 
-      Your conscious mind, subconscious mind,
+      Your thoughts and actions become more purposeful, confident, and decisive.
 
-      higher self, and entire being are united
+      You draw upon your inner resources naturally, allowing your abilities to express themselves throughout your everyday experiences.
 
-      in the knowledge of your true inner strength.
+      This recognition of your total self becomes a permanent part of your awareness, continuing to develop through everything you experience.
 
+      Whenever you wish to reinforce this connection, take a deep breath in and gently hold it.
 
-      This greatness is a natural part of who you are.
-
-      You will recognize it clearly, trust it completely,
-
-      and express it calmly in your daily life.
-
-
-      Whenever you encounter questions, challenges,
-
-      or important moments, your total self will respond
-
-      with wisdom, clarity, strength, and assurance.
-
-
-      You will think and act smoothly, quickly,
-
-      and effectively, drawing upon the full range
-
-      of your abilities without strain or hesitation.
-
-
-      You will meet life''s experiences with quiet happiness,
-
-      calm confidence, and the certainty that your
-
-      inner resources are available whenever needed.
-
-
-      Each day, your awareness of the strength,
-
-      knowledge, and capability of your total self
-
-      will become clearer and more complete.
-
-
-      This knowing is permanently established within you,
-
-      growing naturally through everything you experience.
-
-
-      Whenever you wish to bring this awareness
-
-      even more strongly into your life,
-
-      inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
+      Your awareness of your total self strengthens, bringing its wisdom, confidence, and capabilities more fully into your conscious actions.
 
-      Your awareness of your total self will immediately
-
-      become stronger, clearer, and more complete.
-
-      You will feel and express your natural inner power
-
-      with calmness, confidence, and ease.
-
-
-      The more you use {{ cue.primary }},
-
-      the easier and more effective this recognition
-
-      and expression of your total self will become.'
+      Each time you use "{{ cue.primary }}," recognizing and expressing these abilities becomes easier and more natural.
   hplus.function.ocf-prf-002.closer:
     status: reviewed
     version: 1.1.1
@@ -234,20 +175,15 @@ entries:
       function_id: OCF-PRF-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to strengthen
+    text: |-
+      Remember, whenever you wish to reinforce your connection with the strength and wisdom of your total self, take a deep breath in and gently hold it.
 
-      your awareness and expression of your total self,
-
-      inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
       Then slowly exhale through your mouth.
 
-
-      This concludes your OCF Inner Power exercise.'
+      This concludes your OCF Inner Power exercise.
 slug: eight-great
 classification:
   primary_domain: performance

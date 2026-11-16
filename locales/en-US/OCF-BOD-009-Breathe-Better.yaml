@@ -7,7 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports efficient breathing and respiratory maintenance, with conscious reinforcement when desired.
+  text: |-
+    Improve breathing efficiency, respiratory function, and natural airway maintenance.
   status: canonical
   version: 1.0.0
 metadata_entries: {}

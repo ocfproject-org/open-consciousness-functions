@@ -3204,7 +3204,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 1,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "source": "canonical-primary"
               },
@@ -3242,6 +3242,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "persistence": "conditional"
+            },
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -3263,9 +3272,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             }
           ]
         },
-        "trigger_count": 0
+        "trigger_count": 1
       },
-      "sha256": "1998ab0888bd1e79c1f016a75a916a3da60b46a86563e3a26a989ebdd4cb4e9a"
+      "sha256": "18fccd35a3146ded32aa549cc5509bba99c78221d67224bc0e0e1368502aa78e"
     },
     "OCF-EXP-001": {
       "contract": {
@@ -3291,7 +3300,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 1,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "source": "canonical-primary"
               },
@@ -3361,6 +3370,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "persistence": "conditional"
+            },
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -3382,9 +3400,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             }
           ]
         },
-        "trigger_count": 0
+        "trigger_count": 1
       },
-      "sha256": "b95460e51105d95f0808fbe4b80737a5726c72d292717659c7ed8ec77ba02a37"
+      "sha256": "f694e297c2ad1dfd5a73d4daea0f71f37244d5911f6ea53c0b3c164acaf29c87"
     },
     "OCF-EXP-002": {
       "contract": {
@@ -3410,13 +3428,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "source": "canonical-primary"
               },
               "procedure": {
-                "before_steps": [
-                  {
-                    "id": "select-comfort-zone",
-                    "localization_key": "command.procedure.select-purpose",
-                    "operation": "select-purpose"
-                  }
-                ],
+                "before_steps": [],
                 "evidence_keys": [
                   "hplus.function.ocf-exp-002.function-body"
                 ],
@@ -3427,10 +3439,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "role": "activation",
             "steps": [
-              {
-                "id": "select-comfort-zone",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "operation": "inhale"
@@ -3531,9 +3539,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "procedure": {
                 "before_steps": [
                   {
-                    "id": "focus-zoning",
-                    "localization_key": "command.procedure.focus-target",
-                    "operation": "focus-target"
+                    "id": "recall-insulate-application",
+                    "localization_key": "functions.ocf-exp-002.procedure.recall-insulate-application",
+                    "operation": "other"
                   }
                 ],
                 "evidence_keys": [
@@ -3551,8 +3559,8 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "role": "release",
             "steps": [
               {
-                "id": "focus-zoning",
-                "operation": "focus-target"
+                "id": "recall-insulate-application",
+                "operation": "other"
               },
               {
                 "id": "inhale",
@@ -3584,7 +3592,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "scopes": {
             "application": {
               "activation": "manual",
-              "persistence": "temporary"
+              "persistence": "persistent"
             },
             "capability": {
               "persistence": "permanent"
@@ -3612,7 +3620,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "c20247ae8a458071ef973ffee629f5534ae2ec4f27cf529d106b1fa31a4b9581"
+      "sha256": "fdb369848c1f23c063fb89f41ab9a6c6f79b560f6d14d358daad3bc23aa01e20"
     },
     "OCF-EXP-003": {
       "contract": {
@@ -5155,7 +5163,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "order": 1,
                 "visible": true
               },
-              "effect_scope_ref": "lifecycle.persistence",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
               "phrase_ref": {
                 "source": "canonical-primary"
               },
@@ -5206,6 +5214,15 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "persistence": "temporary",
           "release": {
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "persistence": "permanent"
+            }
           }
         },
         "narration": {
@@ -5227,9 +5244,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             }
           ]
         },
-        "trigger_count": 0
+        "trigger_count": 1
       },
-      "sha256": "fed5cda2b2905b03b82aaf8b37a3c583580aca798a91bc5b486c8075e0a3957e"
+      "sha256": "c27c35238528ab74f308a4f07bd2e102a37fc2399c11adc4a6c620ce9a09a86c"
     },
     "OCF-PRF-006": {
       "contract": {
