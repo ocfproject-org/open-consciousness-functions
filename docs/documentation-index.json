@@ -167,7 +167,7 @@
         "voice"
       ],
       "related_schemas": [],
-      "sha256": "b242989a7e9b7e788f7e5cad461d7c59529d0a9cf27a5d32af7eda56b7f2b43a",
+      "sha256": "0f07702d6feca84753b9d5455bc6c4bd60b867c3c93e64011fc35c3e4f0cf777",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2061,7 +2061,7 @@
         "voice smoke"
       ],
       "related_schemas": [],
-      "sha256": "62db21d829eb283a91a583e26ac48765b75fad4fd0cbd6b3dd7118934730bb22",
+      "sha256": "f9109139817465d1e87d542ffa3061b120da59759b53ef5fd741d8b536093f43",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

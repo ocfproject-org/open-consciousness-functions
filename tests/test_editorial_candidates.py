@@ -128,5 +128,5 @@ def test_dissolve_procedure_and_intuition_canonical_registration():
     assert approval["decision"] == "approve_full_draft"
     assert intuition.canonical_name == "Intuition"
     assert review("intuition")["entries"][0]["text"] == (
-        "This OCF exercise will strengthen your intuitive awareness, bringing the wisdom of your heart, subconscious mind, and higher self into clear understanding and purposeful action."
+        "This OCF exercise will strengthen your intuition, opening greater awareness of the wisdom and guidance available through your total self, higher self, and wider consciousness."
     )

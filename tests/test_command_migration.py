@@ -9,6 +9,7 @@ from ocf_tools.commands import (
     validate_command_collection,
 )
 from ocf_tools.indexes import load_all_functions
+from ocf_tools.locale import LocaleCatalog
 from ocf_tools.validators import validate_command_metadata
 
 pytestmark = pytest.mark.integration
@@ -161,12 +162,16 @@ def test_release_and_cancel_procedures_match_their_command_context():
     assert [
         step["operation"] for step in resolve_procedure(zoning_commands["release"], procedures)
     ] == [
-        "focus-target",
+        "other",
         "inhale",
         "hold-breath",
         "think-or-say-command",
         "exhale",
     ]
+    insulate_locale = LocaleCatalog().require("en-US").localized_functions["OCF-EXP-002"]
+    step_key = "functions.ocf-exp-002.procedure.recall-insulate-application"
+    assert "current Insulate application" in insulate_locale["metadata_entries"][step_key]["text"]
+    assert zoning.data["lifecycle"]["scopes"]["application"]["persistence"] == "persistent"
 
     short_fix = functions["OCF-BOD-015"]
     short_fix_release = next(

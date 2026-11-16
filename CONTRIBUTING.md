@@ -194,13 +194,21 @@ See `docs/FUNCTION_LIFECYCLE.md` and `docs/SUBMISSION_GUIDELINES.md`.
 
 ## Development
 
+Install the Python and Node development tools once on a fresh checkout:
+
 ```bash
 python3 -m pip install -r requirements-dev.txt
+npm ci --ignore-scripts --no-audit --no-fund
+```
+
+The Node version is pinned in `.nvmrc` (22.20.0). Then run:
+
+```bash
 python3 scripts/ocf.py doctor
 python3 -m pytest                 # tests
 python3 scripts/ocf.py validate --all
 python3 scripts/ocf.py build-index --check
-ruff check scripts tests          # lint
+make lint                         # Ruff, Markdownlint, and repository lint checks
 ```
 
 Filter code through `docs/ARCHITECTURE.md` and `GOVERNANCE.md` before

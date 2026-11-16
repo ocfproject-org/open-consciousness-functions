@@ -1,4 +1,18 @@
 {
-  // Preserve the supplied, SHA-256-pinned README verbatim (including spacing).
-  "ignores": ["brand/imports/ocf-cosmic-path-brand-kit-v1/README.md"]
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD024": { "siblings_only": true },
+    "MD033": false,
+    "MD041": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": [
+    // Local dependencies and private/user-supplied source material are not maintained OCF docs.
+    "node_modules/**",
+    ".ocf-work/**",
+    "ReusablePrompts/**",
+    "references/HumanPlusTranscripts/**",
+    "brand/imports/ocf-cosmic-path-brand-kit-v1/README.md"
+  ]
 }
