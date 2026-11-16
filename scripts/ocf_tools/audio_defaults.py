@@ -117,8 +117,11 @@ def configuration_lock(
 
     def file_hash(path):
         if not path.is_file():
-            previous = predecessor_files.get(path.relative_to(REPO_ROOT).as_posix())
-            if previous:
+            name = path.relative_to(REPO_ROOT).as_posix()
+            previous = predecessor_files.get(name)
+            # Only excluded historical inputs may retain provenance hashes.
+            # Locked engine inputs must exist in the current checkout.
+            if previous and name in excluded_predecessor_files:
                 return previous
             raise OCFError("locked dependency is missing from the canonical checkout")
         return sha256_of_file(path)

@@ -157,3 +157,34 @@ def test_successor_lock_preserves_missing_historical_dependency_from_old_lock(
     assert not legacy_path.exists()
     assert lock["files"] == {legacy_key: expected}
     assert legacy_key in lock["excluded_predecessor_files"]
+
+
+@pytest.mark.parametrize(
+    "engine_key",
+    [
+        "audio/background/manifests/OCF-BG-0006.yaml",
+        "audio/background/presets/farfield/focus-11-b.yaml",
+        "audio/templates/stages/test-stage.yaml",
+    ],
+)
+def test_deleted_predecessor_engine_dependency_fails_closed(monkeypatch, tmp_path, engine_key):
+    _, old, new = setup(monkeypatch, tmp_path)
+    engine_path = tmp_path / engine_key
+    engine_path.parent.mkdir(parents=True)
+    engine_path.write_text("locked engine input\n", encoding="utf-8")
+    predecessor = json.loads(old.read_text(encoding="utf-8"))
+    predecessor["files"][engine_key] = hashlib.sha256(engine_path.read_bytes()).hexdigest()
+    old.write_text(json.dumps(predecessor), encoding="utf-8")
+    defaults.create_lock(new)
+    defaults.check_lock(new)
+    original_lock = new.read_bytes()
+    engine_path.unlink()
+
+    with pytest.raises(OCFError, match="locked dependency is missing"):
+        defaults.check_lock(new)
+    # Both automatic discovery and explicit membership must reject the deletion.
+    with pytest.raises(OCFError, match="locked dependency is missing"):
+        defaults.configuration_lock()
+    with pytest.raises(OCFError, match="locked dependency is missing"):
+        defaults.configuration_lock([engine_key])
+    assert new.read_bytes() == original_lock
