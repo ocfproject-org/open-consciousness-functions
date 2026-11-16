@@ -7,10 +7,17 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports deep, restorative rest and recovery; activation cue PLUS-RESTORATIVE SLEEP.
+  text: Supports deep, restorative sleep and the body's natural processes of healing,
+    repair, renewal, and regeneration, with optional attention to specific areas.
   status: reviewed
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-slp-001.lifecycle.scopes.capability.description:
+    text: The learned ability to direct the total self toward restoration during sleep
+      remains available whenever chosen.
+  functions.ocf-slp-001.lifecycle.scopes.application.description:
+    text: Each chosen sleep period is a temporary application of the lasting learned
+      ability.
 activation:
   command_id: OCF-CMD-SLP-001-PRIMARY
   display_cue:
@@ -41,45 +48,55 @@ activation:
       order: 1
     effect_scope_ref: lifecycle.persistence
     procedure:
-      ref: OCF-PROC-INHALE-HOLD
+      ref: OCF-PROC-CLOSE-NATURAL
       status: documented
       evidence_keys:
       - hplus.function.ocf-slp-001.function-body
-      before_steps:
-      - id: select-restoration-target
-        operation: select-target-area
-        localization_key: command.procedure.select-target-area
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-restoration-target
+  - id: optional-restoration-target
     operation: select-target-area
     instruction:
-      text: Choose a target area.
-      status: canonical
+      text: Let your intention extend throughout your entire body; optionally include
+        a particular area you wish to restore.
+      status: reviewed
+      version: 1.0.0
+  - id: close-eyes
+    operation: close-eyes
+    instruction:
+      text: Close your eyes.
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
+      version: 1.0.0
+  - id: breathe-normally
+    operation: breathe-normally
+    instruction:
+      text: Continue breathing naturally.
+      status: reviewed
       version: 1.0.0
 secondary_commands:
 - command_id: OCF-CMD-SLP-001-LEGACY-01
@@ -94,7 +111,8 @@ secondary_commands:
     status: canonical
     version: 1.0.0
   usage:
-    text: Compatibility phrase retained by the registry; historical authentication is not implied.
+    text: Compatibility phrase retained by the registry; historical authentication
+      is not implied.
     status: canonical
     version: 1.0.0
   role: legacy-alias
@@ -123,7 +141,8 @@ tags:
 common_uses:
 - text: Setting an intention of restorative rest before sleep.
   status: draft
-- text: Reflecting on a sense of renewal without assuming sleep imagery treats illness or replaces care.
+- text: Reflecting on a sense of renewal without assuming sleep imagery treats illness
+    or replaces care.
   status: draft
 relationships:
   related_functions: []
@@ -135,11 +154,8 @@ entries:
   hplus.function.ocf-slp-001.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to direct your total self
-
-      toward deep restoration, healing, and regeneration
-
-      throughout your natural sleep.'
+    text: This OCF exercise will teach you to direct your total self toward deep restoration,
+      healing, repair, and regeneration throughout your natural sleep.
   hplus.function.ocf-slp-001.function-body:
     status: reviewed
     version: 1.2.1
@@ -147,88 +163,56 @@ entries:
       function_id: OCF-SLP-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, whenever you prepare for sleep,
-
-      you can direct your total self toward deep healing,
-
-      restoration, and regeneration throughout your rest.
+    text: 'From this moment forward, whenever you prepare for sleep, you can direct
+      your total self toward deep healing, restoration, and regeneration throughout
+      your rest.
 
 
-      Bring into awareness any part of your physical body
-
-      or total being that you desire to restore.
-
-      Form a clear intention for complete balance,
-
-      renewal, and natural, healthy functioning.
+      Let this intention extend throughout your entire body and being. If there is
+      a particular area you wish to restore, you may include it in your intention.
 
 
-      Inhale deeply and gently hold your breath.
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      When you are ready, simply close your eyes.
 
 
-      You will move easily and calmly into deep,
-
-      peaceful, natural sleep.
+      Take a deep breath in and gently hold it.
 
 
-      As you sleep, your conscious mind can rest
+      While holding your breath, silently say to yourself,
 
-      while your subconscious mind and higher self
-
-      work together with your physical body,
-
-      directing their resources toward restoration.
+      "{{ cue.primary }}."
 
 
-      Your entire system will adjust, equalize,
-
-      and return toward its natural balance.
-
-      Areas of weariness, strain, or imbalance
-
-      will receive the attention needed for renewal.
+      Then slowly exhale through your mouth, and continue breathing naturally.
 
 
-      Your total self will continue this restorative pattern
-
-      smoothly and automatically throughout your sleep,
-
-      supporting the healing, repair, and regeneration
-
-      you have clearly intended.
+      Allow yourself to move easily into deep, peaceful, natural sleep.
 
 
-      Each part of your being will cooperate with the others,
-
-      restoring harmony and strengthening natural vitality.
-
-      There is no need to follow or direct each step.
-
-      The process continues while you rest.
+      As your conscious mind rests, let your subconscious mind, higher self, and physical
+      body work together, directing their natural resources toward healing, repair,
+      renewal, and regeneration.
 
 
-      As your sleep is complete, you will awaken
-
-      naturally, deeply rested and refreshed,
-
-      with renewed energy, clarity, and strength.
+      Let your body''s natural maintenance and restorative processes work in harmony,
+      supporting balance, recovery, and renewed vitality throughout your entire being.
 
 
-      Your ability to invoke this restorative sleep pattern
+      Areas of weariness, strain, or imbalance receive the care and attention needed
+      for natural restoration.
 
-      will remain permanently available whenever you choose.
 
-      Each use will make entering restful sleep
+      This restorative pattern continues automatically throughout your sleep, without
+      requiring conscious direction, observation, or effort.
 
-      and directing your total self toward healing
 
-      easier, smoother, and more effective.'
+      As your sleep is complete, awaken naturally, deeply rested and refreshed, with
+      renewed energy, clarity, and strength.
+
+
+      Your ability to invoke this restorative sleep pattern remains permanently available
+      whenever you choose. Each use makes entering restorative sleep and directing
+      your total self toward renewal easier and more familiar.'
   hplus.function.ocf-slp-001.closer:
     status: reviewed
     version: 1.2.1
@@ -236,18 +220,19 @@ entries:
       function_id: OCF-SLP-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to direct your total self
-
-      toward healing and restoration during sleep,
-
-      inhale deeply and hold your breath.
+    text: 'Remember, whenever you wish to direct your total self toward healing, restoration,
+      and regeneration during sleep, simply close your eyes.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Inhale deeply and gently hold your breath.
 
-      Then exhale slowly through your mouth,
 
-      as though gently blowing out a candle.
+      Silently say to yourself,
+
+      "{{ cue.primary }}."
+
+
+      Then slowly exhale through your mouth, and continue resting naturally.
 
 
       This concludes your OCF Restorative Sleep exercise.'
@@ -267,13 +252,21 @@ lifecycle:
   activation: manual
   persistence: temporary
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-slp-001.lifecycle.scopes.capability.description
+    application:
+      persistence: temporary
+      activation: manual
+      description_key: functions.ocf-slp-001.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -281,8 +274,8 @@ safety:
   level: health
   medical_relevance: true
   notes:
-  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment.
-    No guaranteed effects are claimed.
+  - Self-directed wellness practice; not a substitute for professional medical evaluation
+    or treatment. No guaranteed effects are claimed.
 function_version:
   created: '2026-09-12'
   current: 0.1.0
@@ -308,33 +301,38 @@ editorial:
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Restorative Sleep
     recommended_primary_cue: PLUS-RESTORATIVE SLEEP
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Select restoration intention, deep inhale/gentle hold/cue/slow mouth candle-like
-      exhale. Total-self healing/restoration/regeneration during natural sleep; lasting availability is
-      not perpetual active application.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Select restoration intention, deep inhale/gentle hold/cue/slow
+      mouth candle-like exhale. Total-self healing/restoration/regeneration during
+      natural sleep; lasting availability is not perpetual active application.
     pair_reason: A sleep qualifier makes restoration more distinctive. Retain body-restoration/healing
-      intent as an intended goal if selected; do not reflexively replace it with generic relaxation or
-      imply an established result.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise verb,
-      outcome or contextual mode can reinforce an umbrella title without copying it. A sleep qualifier
-      makes restoration more distinctive. Retain body-restoration/healing intent as an intended goal if
-      selected; do not reflexively replace it with generic relaxation or imply an established result.
-    teaching_disposition: New spoken association requires explicit body/reinforcement/closer approval
+      intent as an intended goal if selected; do not reflexively replace it with generic
+      relaxation or imply an established result.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. A sleep qualifier makes restoration more distinctive. Retain body-restoration/healing
+      intent as an intended goal if selected; do not reflexively replace it with generic
+      relaxation or imply an established result.
+    teaching_disposition: New spoken association requires explicit body/reinforcement/closer
+      approval
     documentary_intent: Sleep with claimed body restoration/healing/regeneration.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b1f95c85f6ab31f2589fd4f75914bfd66c8d6aa283089c7dc288f5a869537999
+  contract_sha256: e9f7914d0455390a513360c19308142dd7de63600cff1e8d8ed558d6c436711b
 record_metadata:
   legacy:
     command_ids:
@@ -353,8 +351,8 @@ record_metadata:
   compatibility:
     legacy_commands:
     - PLUS-HEAL, HEAL
-    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is
-      historical lookup. Existing controls remain unchanged.
+    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded
+      primary wording is historical lookup. Existing controls remain unchanged.
     state: historical-lookup
   historical_lookup:
   - text: PLUS-RESTORE
@@ -370,14 +368,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -416,11 +415,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup. Preserve
-      procedures, controls, semantics, provenance and separately flagged metadata questions. Later user
-      instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: 4d899f4d153dfc46375c921da4d1b0e49a083d0c13d81d02bda6e7a47e9f2087
     status: accepted
     previous_values_sha256: 2def2e918f8e041ce68bf39da43e4fdbfab5382b4f99d4ad7383574d9c9c4155
@@ -434,17 +435,18 @@ record_metadata:
     current_resolved_text_sha256:
       hplus.function.ocf-slp-001.function-body: ad1a587aaceecb9d3552cec427e020da01b5bcee51ade0e495fdb0e5a0349466
       hplus.function.ocf-slp-001.closer: d87cf0ee184116a01f864a5f6463278b8aea1a5a2c36ed9e46eb8cf138d824f3
-    review_note: Change display cue to PLUS-RESTORATIVE SLEEP. Replace one body mention and one closer
-      mention from Plus Heal Heal to Plus Restorative Sleep. Preserve title, restoration suggestions,
-      chosen intention, overall balance and inhale/hold/cue/candle-like exhale. Retain superseded cue
-      wording as historical lookup; introduce no mode or release. Preserve restoration during the selected
-      sleep period and lasting availability of the ability. Frozen Sleep Easy pilot resources remain untouched.
+    review_note: Change display cue to PLUS-RESTORATIVE SLEEP. Replace one body mention
+      and one closer mention from Plus Heal Heal to Plus Restorative Sleep. Preserve
+      title, restoration suggestions, chosen intention, overall balance and inhale/hold/cue/candle-like
+      exhale. Retain superseded cue wording as historical lookup; introduce no mode
+      or release. Preserve restoration during the selected sleep period and lasting
+      availability of the ability. Frozen Sleep Easy pilot resources remain untouched.
     approval_response: '1'
     review_position: 9
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -623,8 +625,8 @@ content:
       source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -673,24 +675,27 @@ content:
       - guaranteed-refreshed-waking
       family: sleep-restoration-claims
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 42
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: supported
-          summary: Deliberate legacy cue paired with selected goal and breathing; canonical variants/aliases
-            are separate identity metadata, not silently changed source speech.
+          summary: Deliberate legacy cue paired with selected goal and breathing;
+            canonical variants/aliases are separate identity metadata, not silently
+            changed source speech.
         closer:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 61
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 53
           status: supported
@@ -699,100 +704,114 @@ content:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 250
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 62
           status: supported
-          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish reinforcement
-            or measured timing.
+          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish
+            reinforcement or measured timing.
         conversion:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 52
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: inferred
-          summary: Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath
-            holding and automatic whole-system learning need review. Reframing a physical/metaphysical
-            goal is a material choice, not assumed equivalence.
+          summary: Preserve deliberate agency/selection where useful, but guaranteed
+            outcomes, breath holding and automatic whole-system learning need review.
+            Reframing a physical/metaphysical goal is a material choice, not assumed
+            equivalence.
         future_use:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 57
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: supported
-          summary: Sleep activation with claimed overnight restoration and refreshed waking; no user-specified
-            waking interval established.
+          summary: Sleep activation with claimed overnight restoration and refreshed
+            waking; no user-specified waking interval established.
         handoff:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 250
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 79
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Final waking
-            ending is absent after repetitive twenties; don't infer intended session termination from
-            function title. Canonical RESTORE differs from source cue.
+          summary: Investigated the full available source; this operation is not established.
+            Final waking ending is absent after repetitive twenties; don't infer intended
+            session termination from function title. Canonical RESTORE differs from
+            source cue.
         identity:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 42
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 52
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: supported
-          summary: choose-sleep-restoration-goal; inhale-and-hold; issue-legacy-heal-heal-cue; exhale;
-            enter-sleep
+          summary: choose-sleep-restoration-goal; inhale-and-hold; issue-legacy-heal-heal-cue;
+            exhale; enter-sleep
         opener:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 33
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 28
           status: supported
-          summary: Orient to the function and establish receptive learning context before the target instruction.
+          summary: Orient to the function and establish receptive learning context
+            before the target instruction.
         preparation:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 27
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 3
           status: supported
-          summary: Supported uninterrupted relaxation, temporary repository setting-aside and counted
-            ten-state entry where described.
+          summary: Supported uninterrupted relaxation, temporary repository setting-aside
+            and counted ten-state entry where described.
         provenance:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 250
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are not
-            independent corroboration. Source accuracy/authentication remains unresolved. Final waking
-            ending is absent after repetitive twenties; don't infer intended session termination from
-            function title. Canonical RESTORE differs from source cue.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. Final waking ending is absent after repetitive twenties; don't
+            infer intended session termination from function title. Canonical RESTORE
+            differs from source cue.
         purpose:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 2
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 1
           status: supported
@@ -801,18 +820,21 @@ content:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 57
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Final waking
-            ending is absent after repetitive twenties; don't infer intended session termination from
-            function title. Canonical RESTORE differs from source cue.
+          summary: Investigated the full available source; this operation is not established.
+            Final waking ending is absent after repetitive twenties; don't infer intended
+            session termination from function title. Canonical RESTORE differs from
+            source cue.
         safety_claims:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 52
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 33
           status: supported
@@ -822,23 +844,27 @@ content:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 33
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 28
           status: supported
-          summary: Reference learning shell uses ten preparation, eleven opening, ten close and sleep-to-twenty/waking
-            return where preserved; not runtime OCF state requirements.
+          summary: Reference learning shell uses ten preparation, eleven opening,
+            ten close and sleep-to-twenty/waking return where preserved; not runtime
+            OCF state requirements.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
             end_line: 250
-            file: +Transcripts From available tapes/Restorative Sleep/Restorative Sleep.txt
+            file: +Transcripts From available tapes/Restorative Sleep/Restorative
+              Sleep.txt
             source_sha256: 059b990045c92c24597d27bba2795a4c825f5113799809cbba4101428f7d9411
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Final waking
-            ending is absent after repetitive twenties; don't infer intended session termination from
-            function title. Canonical RESTORE differs from source cue.
+          summary: Investigated the full available source; this operation is not established.
+            Final waking ending is absent after repetitive twenties; don't infer intended
+            session termination from function title. Canonical RESTORE differs from
+            source cue.
       source_extent:
         content_group_sha256: b58bbe16b2153dfda65cb0f401d262dded7e4c8bae428b9758f9651403f4f4c8
         end_line: 250
@@ -920,11 +946,12 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Final waking ending is absent after repetitive twenties; don't infer intended session termination
-      from function title. Canonical RESTORE differs from source cue.
-    - Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath holding and automatic
-      whole-system learning need review. Reframing a physical/metaphysical goal is a material choice,
-      not assumed equivalence.
+    - Final waking ending is absent after repetitive twenties; don't infer intended
+      session termination from function title. Canonical RESTORE differs from source
+      cue.
+    - Preserve deliberate agency/selection where useful, but guaranteed outcomes,
+      breath holding and automatic whole-system learning need review. Reframing a
+      physical/metaphysical goal is a material choice, not assumed equivalence.
     states:
       preferred: []
       required: []

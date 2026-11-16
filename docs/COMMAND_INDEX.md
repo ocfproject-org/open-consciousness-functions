@@ -16,8 +16,8 @@ Canonical command phrases are shown exactly as registered and are not translated
 | [Blood Pressure Balance](../locales/en-US/OCF-BOD-007-Blood-Pressure-Balance.yaml) | PLUS-BALANCE BLOOD PRESSURE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Immune Readiness](../locales/en-US/OCF-BOD-008-Immune-Readiness.yaml) | PLUS-IMMUNE READY | Primary activation command | Use only when you choose to activate the documented function. | Permanent |
 | [Breathe Better](../locales/en-US/OCF-BOD-009-Breathe-Better.yaml) | PLUS-BREATHE BETTER | Primary activation command | Use only when you choose to activate the documented function. | Permanent |
-| [Nutricia](../locales/en-US/OCF-BOD-010-Nutricia.yaml) | PLUS-FOOD MORE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
-| [Nutricia](../locales/en-US/OCF-BOD-010-Nutricia.yaml) | PLUS-FOOD LESS | Alternative food-energy mode | Use the complete Plus Food Less cue to select sufficient nourishment with reduced unnecessary retention and storage. | Temporary |
+| [Nutricia](../locales/en-US/OCF-BOD-010-Nutricia.yaml) | PLUS-FOOD MORE | Primary activation command | Use only when you choose to activate the documented function. | Persistent until deliberately changed |
+| [Nutricia](../locales/en-US/OCF-BOD-010-Nutricia.yaml) | PLUS-FOOD LESS | Alternative food-energy mode | Use the complete Plus Food Less cue to select sufficient nourishment with reduced unnecessary retention and storage. | Persistent until deliberately changed |
 | [Hormonal Transitions](../locales/en-US/OCF-BOD-011-Hormonal-Transitions.yaml) | PLUS-HORMONE BALANCE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Sex Drive](../locales/en-US/OCF-BOD-012-Sex-Drive.yaml) | PLUS-SEX MORE | Primary activation command | Use only when you choose to activate the documented function. | Temporary |
 | [Sex Drive](../locales/en-US/OCF-BOD-012-Sex-Drive.yaml) | PLUS-SEX LESS | Decrease mode | Use when you choose to decrease the selected function response. | Temporary |

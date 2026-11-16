@@ -7,7 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Induces a felt, deliberate movement into sleep onset; activation cue PLUS-SLEEP.
+  text: Supports entering natural, restful sleep through relaxation and a simple mental
+    command, with the intention of awakening at the desired time.
   status: reviewed
   version: 1.0.1
 metadata_entries: {}
@@ -41,45 +42,48 @@ activation:
       order: 1
     effect_scope_ref: lifecycle.persistence
     procedure:
-      ref: OCF-PROC-SLEEP-EXHALE
+      ref: OCF-PROC-SLEEP-HOLD
       status: documented
       evidence_keys:
       - hplus.function.ocf-slp-002.function-body
-      before_steps:
-      - id: select-sleep-and-wake-intention
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-sleep-and-wake-intention
-    operation: select-purpose
+  - id: close-eyes
+    operation: close-eyes
     instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
+      text: Close your eyes.
+      status: reviewed
       version: 1.0.0
-  - id: sleep-intention
-    operation: select-purpose
+  - id: inhale
+    operation: inhale
     instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
-  - id: breathe-slowly
-    operation: breathe-slowly-deeply
+  - id: hold
+    operation: hold-breath
     instruction:
-      text: Breathe slowly and deeply.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
-  - id: command-during-exhale
-    operation: think-command-during-exhale
+  - id: command
+    operation: think-or-say-command
     instruction:
-      text: Think the command during exhalation.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
-  - id: continue-breathing
+  - id: exhale
+    operation: exhale
+    instruction:
+      text: Then slowly exhale and continue breathing naturally.
+      status: reviewed
+      version: 1.0.0
+  - id: breathe-normally
     operation: breathe-normally
     instruction:
-      text: Continue breathing normally.
-      status: canonical
+      text: Continue breathing naturally; keep your eyes closed.
+      status: reviewed
       version: 1.0.0
 secondary_commands:
 - command_id: OCF-CMD-SLP-002-LEGACY-01
@@ -94,7 +98,8 @@ secondary_commands:
     status: canonical
     version: 1.0.0
   usage:
-    text: Compatibility phrase retained by the registry; historical authentication is not implied.
+    text: Compatibility phrase retained by the registry; historical authentication
+      is not implied.
     status: canonical
     version: 1.0.0
   role: legacy-alias
@@ -123,16 +128,16 @@ tags:
 common_uses:
 - text: Preparing for natural sleep in a safe place.
   status: draft
-- text: Reflecting on a desired waking time without relying on the exercise instead of an alarm when
-    timing matters.
+- text: Reflecting on a desired waking time without relying on the exercise instead
+    of an alarm when timing matters.
   status: draft
 relationships:
   related_functions:
   - function_id: OCF-SLP-005
     description_key: relationships.rel-slp002-slp005.description
     description:
-      text: Compare general sleep onset with rest amid unfamiliar or distracting surroundings; first
-        ensure the surroundings are safe.
+      text: Compare general sleep onset with rest amid unfamiliar or distracting surroundings;
+        first ensure the surroundings are safe.
       status: reviewed
       version: 1.0.0
   complementary_functions: []
@@ -143,11 +148,8 @@ entries:
   hplus.function.ocf-slp-002.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to enter normal,
-
-      natural, restful sleep whenever you choose,
-
-      and awaken at the time you desire.'
+    text: This OCF exercise will teach you to enter normal, natural, restful sleep
+      whenever you choose, and awaken at the time you desire.
   hplus.function.ocf-slp-002.function-body:
     status: reviewed
     version: 1.2.1
@@ -155,91 +157,49 @@ entries:
       function_id: OCF-SLP-002
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
-
-      to enter normal, natural, restful sleep
-
-      whenever you consciously desire.
+    text: 'From this moment forward, you have the ability to enter normal, natural,
+      restful sleep whenever you choose.
 
 
-      When you choose to sleep, allow your body
-
-      to settle comfortably and begin breathing
-
-      slowly, deeply, and easily.
+      When you are ready for sleep, make yourself comfortable and allow your body
+      and mind to begin relaxing.
 
 
-      As you exhale, think or say in your mind,
+      Simply close your eyes.
+
+      Take a deep breath in and gently hold it.
+
+      While holding your breath, silently say to yourself,
 
       "{{ cue.primary }}."
 
-
-      With each gentle breath and each repetition
-
-      of this command, you will move more deeply
-
-      into calm, peaceful, natural sleep.
+      Then slowly exhale and continue breathing naturally.
 
 
-      Your thoughts will become quiet.
-
-      Unnecessary effort and tension will fade.
-
-      Your mind and body will recognize that
-
-      the time for comfortable sleep has arrived.
+      As you exhale, allow yourself to move more deeply into peaceful, natural sleep.
 
 
-      You will fall asleep smoothly and naturally,
-
-      without needing to force or follow the process.
-
-
-      During sleep, your total self will work
-
-      toward harmony, balance, and equalization.
-
-      Your nervous system and physical body
-
-      will cooperate in their natural patterns
-
-      of rest, maintenance, and renewal.
+      Your thoughts become quiet. Unnecessary effort and tension fade away. Your mind
+      and body recognize that the time for sleep has arrived.
 
 
-      Each part of your system will settle
-
-      into the rhythms appropriate for sleep,
-
-      allowing your body and mind to recover
-
-      and restore their natural vitality.
+      You fall asleep smoothly and naturally, without needing to force the process.
 
 
-      You will remain peacefully asleep for
-
-      the rest you desire, and awaken at the
-
-      time you have chosen, refreshed, alert,
-
-      and ready to begin again.
+      Throughout your sleep, your mind and body settle into their natural rhythms
+      of rest, balance, maintenance, and renewal.
 
 
-      This ability to enter restful sleep
-
-      will remain permanently available to you.
-
-      It begins when you choose to use it,
-
-      leaving your ordinary waking state
-
-      clear and active at other times.
+      You enjoy the restful sleep you desire, awakening at your chosen time, refreshed,
+      alert, and ready for the day ahead.
 
 
-      Each time you use {{ cue.primary }},
+      This ability remains available whenever you consciously choose to use it. At
+      other times, your ordinary waking awareness remains clear and active.
 
-      entering natural sleep and awakening
 
-      refreshed will become easier and more effective.'
+      Each time you use "{{ cue.primary }}," entering natural sleep becomes easier
+      and more familiar.'
   hplus.function.ocf-slp-002.closer:
     status: reviewed
     version: 1.2.1
@@ -247,13 +207,20 @@ entries:
       function_id: OCF-SLP-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to enter normal,
+    text: 'Remember, whenever you wish to enter normal, natural, restful sleep, close
+      your eyes.
 
-      natural, restful sleep, breathe slowly and deeply.
 
-      As you exhale, think or say in your mind,
+      Take a deep breath in and gently hold it.
+
+      While holding your breath, silently say to yourself,
 
       "{{ cue.primary }}."
+
+      Then slowly exhale and continue breathing naturally.
+
+
+      Allow yourself to settle into restful sleep.
 
 
       This concludes your OCF Sleep exercise.'
@@ -269,13 +236,13 @@ lifecycle:
   activation: manual
   persistence: temporary
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -308,33 +275,39 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Sleep
     recommended_primary_cue: PLUS-SLEEP
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Choose sleep, breathe slowly/deeply/easily and cue DURING EXHALATION, repeating
-      with successive breaths. Retain chosen waking time. Do not insert inhale/hold or candle procedure;
-      registry SLEEP is not taught.
-    pair_reason: The title and direct sleep-onset cue align. Preserve the distinct exhalation procedure
-      and desire-dependent waking; do not merge with Sleep Easy or question incubation.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise
-      verb, outcome or contextual mode can reinforce an umbrella title without copying it. The title
-      and direct sleep-onset cue align. Preserve the distinct exhalation procedure and desire-dependent
-      waking; do not merge with Sleep Easy or question incubation.
-    teaching_disposition: New spoken association requires explicit body/reinforcement/closer approval
-    documentary_intent: Move into normal restful sleep when desired, with progressive cue use and
-      desire-dependent waking.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Choose sleep, breathe slowly/deeply/easily and cue DURING EXHALATION,
+      repeating with successive breaths. Retain chosen waking time. Do not insert
+      inhale/hold or candle procedure; registry SLEEP is not taught.
+    pair_reason: The title and direct sleep-onset cue align. Preserve the distinct
+      exhalation procedure and desire-dependent waking; do not merge with Sleep Easy
+      or question incubation.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. The title and direct sleep-onset cue align. Preserve the distinct
+      exhalation procedure and desire-dependent waking; do not merge with Sleep Easy
+      or question incubation.
+    teaching_disposition: New spoken association requires explicit body/reinforcement/closer
+      approval
+    documentary_intent: Move into normal restful sleep when desired, with progressive
+      cue use and desire-dependent waking.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes;
-        generated references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 45e9b8a36e17bc94f2a597dccb070645287e0f2a24c39c931e68f688b8c8689d
+  contract_sha256: f5d0fcce9fddd908c4dc0b60ef96ef497ceb78fa409dada2687f0f7a822c6725
 record_metadata:
   legacy:
     command_ids:
@@ -353,8 +326,8 @@ record_metadata:
   compatibility:
     legacy_commands:
     - PLUS-20-20
-    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording
-      is historical lookup. Existing controls remain unchanged.
+    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded
+      primary wording is historical lookup. Existing controls remain unchanged.
     state: historical-lookup
   historical_lookup:
   - text: Plus Twenty Twenty
@@ -366,14 +339,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -412,12 +386,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup.
-      Preserve procedures, controls, semantics, provenance and separately flagged metadata questions.
-      Later user instruction releases the draft-pilot freeze; pilot bindings follow current approved
-      titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: cf7b3c96ec93f05e8f2750ca04364f046755dd24d2863348d1ee1acaa3a1286f
     status: accepted
     previous_values_sha256: 2ec460ec74d06ce541d2cf4bd7c1ff5e0d8c37b2dc9bbec2480b236831689d96
@@ -431,27 +406,29 @@ record_metadata:
     current_resolved_text_sha256:
       hplus.function.ocf-slp-002.function-body: 4a30cab667ad3cdf68ba3c3254e949f8e99495412fe1b0be3c2ff0854e09bd33
       hplus.function.ocf-slp-002.closer: ef9c2624e22f72ce0e38238747fca833456fc82f29955e99ef022b37c920ba3e
-    review_note: Replace two body mentions and one closer mention from Plus Twenty Twenty to Plus
-      Sleep. Preserve title, cue during exhalation, successive gentle-breath repetition, chosen waking
-      time and surrounding suggestions. Do not add breath-hold or candle-blowing instructions. Retain
-      superseded numeric phrase as historical lookup; introduce no mode or release. Preserve deliberately
-      invoked sleep, lasting learned ability and clear ordinary waking awareness at other times.
+    review_note: Replace two body mentions and one closer mention from Plus Twenty
+      Twenty to Plus Sleep. Preserve title, cue during exhalation, successive gentle-breath
+      repetition, chosen waking time and surrounding suggestions. Do not add breath-hold
+      or candle-blowing instructions. Retain superseded numeric phrase as historical
+      lookup; introduce no mode or release. Preserve deliberately invoked sleep, lasting
+      learned ability and clear ordinary waking awareness at other times.
     approval_response: '1'
     review_position: 10
   - id: REL-SLP002-SLP005
     kind: approved-relationship
     source_commit: 0e7ca1199969f41f282b8cff5a5fb0ee459fdb46
-    scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
-    decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
-      2026-11-10.
+    scope: Optional listener-guide relationship only; no narration, cue, lifecycle
+      or DSP change.
+    decision_source: Explicit owner approval to implement the existing relationship-map
+      suggestions, 2026-11-10.
     source_row_sha256: 38e36e80e28bfee653c7d412d264adc04007ce3575b5a8e2a114e72e4bdfd690
     current_values_sha256: 417a48af7859c2df5e07430f2ff54a69d0f8f93fa4edcae4ecf5bc9a35f270a1
     status: accepted
-    approval_response: Draft optional suggestions should all be implemented vs being suggestions in
-      the guides/relationship-map.html
-    review_note: 'Original proposal description retained verbatim. Directional optional relationship;
-      no reciprocal approval inferred. Original evidence: [{"field": "description", "function_id":
-      "OCF-SLP-002", "sha256": "f25c3964bcb1d1c34e63bebd2bc7d271d5d05e9757459c0a65e171d7ca6c1bca"},
+    approval_response: Draft optional suggestions should all be implemented vs being
+      suggestions in the guides/relationship-map.html
+    review_note: 'Original proposal description retained verbatim. Directional optional
+      relationship; no reciprocal approval inferred. Original evidence: [{"field":
+      "description", "function_id": "OCF-SLP-002", "sha256": "f25c3964bcb1d1c34e63bebd2bc7d271d5d05e9757459c0a65e171d7ca6c1bca"},
       {"field": "description", "function_id": "OCF-SLP-005", "sha256": "c3a871929526f06ce83de524a830914f8bfad2b355a3f0c4534564eb5a9156e3"}]'
     relationship_id: REL-SLP002-SLP005
     related_function_id: OCF-SLP-005
@@ -461,7 +438,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -638,8 +615,8 @@ content:
       source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish
-      absence of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -688,8 +665,8 @@ content:
       - desire-dependent-awakening
       family: sleep-on-exhalation
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime
-        state binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -699,8 +676,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 72
           status: supported
-          summary: Exhalation rather than a required breath hold pairs with the cue; repeated cue
-            is associated with deeper sleep.
+          summary: Exhalation rather than a required breath hold pairs with the cue;
+            repeated cue is associated with deeper sleep.
         closer:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -718,8 +695,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 135
           status: supported
-          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish reinforcement
-            or measured timing.
+          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish
+            reinforcement or measured timing.
         conversion:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -728,9 +705,10 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 72
           status: inferred
-          summary: Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath
-            holding and automatic whole-system learning need review. Reframing a physical/metaphysical
-            goal is a material choice, not assumed equivalence.
+          summary: Preserve deliberate agency/selection where useful, but guaranteed
+            outcomes, breath holding and automatic whole-system learning need review.
+            Reframing a physical/metaphysical goal is a material choice, not assumed
+            equivalence.
         future_use:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -739,8 +717,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 72
           status: supported
-          summary: Use cue during slow breathing/exhalation; waking is described as desire-dependent,
-            without a measured timer or explicit cancel phrase.
+          summary: Use cue during slow breathing/exhalation; waking is described as
+            desire-dependent, without a measured timer or explicit cancel phrase.
         handoff:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -758,8 +736,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 72
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained;
-            source cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -778,8 +756,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 56
           status: supported
-          summary: Orient to the function and establish receptive learning context before the target
-            instruction.
+          summary: Orient to the function and establish receptive learning context
+            before the target instruction.
         preparation:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -788,8 +766,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 10
           status: supported
-          summary: Supported uninterrupted relaxation, temporary repository setting-aside and counted
-            ten-state entry where described.
+          summary: Supported uninterrupted relaxation, temporary repository setting-aside
+            and counted ten-state entry where described.
         provenance:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -798,10 +776,10 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are
-            not independent corroboration. Source accuracy/authentication remains unresolved. Source-designated
-            text is unauthenticated; corrupted counts/ambient material cannot establish original repetition,
-            timing or mechanism.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. Source-designated text is unauthenticated; corrupted counts/ambient
+            material cannot establish original repetition, timing or mechanism.
         purpose:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -810,8 +788,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 7
           status: supported
-          summary: Move into normal restful sleep when desired, with progressive cue use and desire-dependent
-            waking.
+          summary: Move into normal restful sleep when desired, with progressive cue
+            use and desire-dependent waking.
         rehearsal:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -820,8 +798,8 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 72
           status: not-present
-          summary: Repeated teaching does not prove an explicit listener performance trial; no distinct
-            intelligible trial established in the available text.
+          summary: Repeated teaching does not prove an explicit listener performance
+            trial; no distinct intelligible trial established in the available text.
         safety_claims:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -830,8 +808,9 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 80
           status: supported
-          summary: guaranteed-sleep-entry; physiological-equalization-and-restoration; desire-dependent-awakening.
-            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: guaranteed-sleep-entry; physiological-equalization-and-restoration;
+            desire-dependent-awakening. Claims are classified as source assertions,
+            not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -840,8 +819,9 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 56
           status: supported
-          summary: Reference learning shell uses ten preparation, eleven opening, ten close and sleep-to-twenty/waking
-            return where preserved; not runtime OCF state requirements.
+          summary: Reference learning shell uses ten preparation, eleven opening,
+            ten close and sleep-to-twenty/waking return where preserved; not runtime
+            OCF state requirements.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
@@ -850,9 +830,9 @@ content:
             source_sha256: 0cc14bfba521241845bb953fb31ffdc29140bd4e34b63cd102845d01068a61fd
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Source-designated
-            text is unauthenticated; corrupted counts/ambient material cannot establish original repetition,
-            timing or mechanism.
+          summary: Investigated the full available source; this operation is not established.
+            Source-designated text is unauthenticated; corrupted counts/ambient material
+            cannot establish original repetition, timing or mechanism.
       source_extent:
         content_group_sha256: 440a73690ff6bd0cb12419fb5d5e7a46be3e791c127ecffa73b40c21982dbaab
         end_line: 317
@@ -934,11 +914,11 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Source-designated text is unauthenticated; corrupted counts/ambient material cannot establish
-      original repetition, timing or mechanism.
-    - Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath holding and
-      automatic whole-system learning need review. Reframing a physical/metaphysical goal is a material
-      choice, not assumed equivalence.
+    - Source-designated text is unauthenticated; corrupted counts/ambient material
+      cannot establish original repetition, timing or mechanism.
+    - Preserve deliberate agency/selection where useful, but guaranteed outcomes,
+      breath holding and automatic whole-system learning need review. Reframing a
+      physical/metaphysical goal is a material choice, not assumed equivalence.
     states:
       preferred: []
       required: []

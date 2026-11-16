@@ -244,10 +244,11 @@ def test_whole_unaffected_map_commands_bindings_and_frozen_editions(approval):
     from ocf_tools.guide_review import approved_successor
 
     successor = approved_successor()
-    assert actual == {
-        **approval["unchanged_canonical_entries"],
-        **successor["added_canonical_entries"],
-    }
+    from ocf_tools.editorial_successor import expected_entry_pairs, expected_hash, receipt
+
+    prior = {**approval["unchanged_canonical_entries"], **successor["added_canonical_entries"]}
+    prior.update(receipt()["added_locale_entries"])
+    assert actual == expected_entry_pairs(prior)
     for record in load_all_functions():
         data = copy.deepcopy(record.data)
         binding = data["content"].pop("bindings")
@@ -256,14 +257,26 @@ def test_whole_unaffected_map_commands_bindings_and_frozen_editions(approval):
             row = successor["functions"][record.id]
             assert row["previous_record_without_bindings_sha256"] == expected
             expected = row["record_without_bindings_sha256"]
-        assert struct_sha(data) == expected
+        assert struct_sha(data) == expected_hash(
+            "record_without_bindings_sha256", record.id, expected
+        )
         assert binding.pop("default_session_template") == ROUTINE
         assert binding.pop("session_templates") == sorted(
             set(approval["previous_session_templates"][record.id]) | {ROUTINE}
         )
         assert struct_sha(binding) == approval["unchanged_binding_payload_sha256"][record.id]
     for name, expected in approval["frozen_file_sha256"].items():
-        assert hashlib.sha256((REPO_ROOT / name).read_bytes()).hexdigest() == expected, name
+        raw = (REPO_ROOT / name).read_bytes()
+        if name == "locales/en-US/shared-commands.yaml":
+            addition = (
+                b"  command.scope.persistent:\n"
+                b"    text: Persistent until deliberately changed\n"
+                b"    status: canonical\n"
+                b"    version: 1.0.0\n"
+            )
+            assert raw.count(addition) == 1
+            raw = raw.replace(addition, b"", 1)
+        assert hashlib.sha256(raw).hexdigest() == expected, name
     for owner, expected in approval["frozen_resolved_event_hashes"].items():
         old = build_complete_session_plan(owner, template="OCF-TPL-SESSION-HPLUS-LOCKED-006")
         events = iter_events(resolve_document(old["template_plan"], "en-US"))
@@ -274,7 +287,7 @@ def test_whole_unaffected_map_commands_bindings_and_frozen_editions(approval):
     assert {e["id"]: sha(e.get("text", "")) for e in iter_events(rc1)} == approval[
         "rc1_event_text_sha256"
     ]
-    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-020"
+    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-022"
 
 
 def test_long_form_revision_is_an_explicit_manifest_alias_without_duplicate_resource():

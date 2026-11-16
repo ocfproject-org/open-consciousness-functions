@@ -14,7 +14,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-AUTOMATE`; complete teaching: **Plus Automate**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Automates a desired way of being so it runs without active effort.
+- Purpose: Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -22,7 +22,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-BRAIN FLOW`; complete teaching: **Plus Brain Flow**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports balanced brain and neck circulation and maintenance, with conscious reinforcement when desired.
+- Purpose: Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -30,7 +30,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-CIRCULATE`; complete teaching: **Plus Circulate**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Promotes a felt sense of smooth, comfortable circulation.
+- Purpose: Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -38,7 +38,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-COMFORT`; complete teaching: **Plus Comfort**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Felt-discomfort support for self-directed comfort; activation cue PLUS-COMFORT.
+- Purpose: Eases physical discomfort in a selected area of the body.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -46,7 +46,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-DETOX`; complete teaching: **Plus Detox**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports the body's self-regulating cleansing, renewal, and maintenance, with conscious reinforcement when desired.
+- Purpose: Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -62,7 +62,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-HEART-FLOW`; complete teaching: **Plus Heart Flow**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Self-directed wellness practice supporting a felt sense of calm, steady heart function.
+- Purpose: Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -70,7 +70,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-BALANCE BLOOD PRESSURE`; complete teaching: **Plus Balance Blood Pressure**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Legacy practice associated with blood-pressure balance. Not a treatment and not a substitute for medical care.
+- Purpose: Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -78,7 +78,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-IMMUNE READY`; complete teaching: **Plus Immune Ready**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports a self-directed practice of immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+- Purpose: Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -94,7 +94,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-FOOD MORE`; complete teaching: **Plus Food More**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports conscious selection between fuller use of food energy and nourishment, or sufficient nourishment with reduced unnecessary energy retention and storage.
+- Purpose: Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.
 - Pending title: Food Energy Use
 - Other unselected proposal: null
 
@@ -102,7 +102,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-HORMONE BALANCE`; complete teaching: **Plus Hormone Balance**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports graceful passage through internal transitions.
+- Purpose: Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -118,7 +118,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-TUNE-UP`; complete teaching: **Plus Tune Up**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: A general self-directed balance-and-heal tune-up practice.
+- Purpose: Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -126,7 +126,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-REGENERATE`; complete teaching: **Plus Regenerate**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports a felt sense of body-wide regeneration and renewal; activation cue PLUS-REGENERATE.
+- Purpose: Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -134,7 +134,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-NUMB`; complete teaching: **Plus Numb**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Legacy rapid numbing practice (GO NUMB) with a release; activation cue PLUS-NUMB.
+- Purpose: Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -142,7 +142,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-ACCESS INFO`; complete teaching: **Plus Access Info**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Accesses intuition, memory, and inner knowledge on demand.
+- Purpose: Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -150,7 +150,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-CALCULATE`; complete teaching: **Plus Calculate**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Speeds mental arithmetic and number processing.
+- Purpose: Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -190,7 +190,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-THINK`; complete teaching: **Plus Think**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Accelerates thinking speed and mental processing.
+- Purpose: Faster, clearer thinking, sharper reasoning, and more accurate problem-solving.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -198,7 +198,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SPEAK UP`; complete teaching: **Plus Speak Up**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports confident, clear verbal expression.
+- Purpose: Clear, fluent, confident speaking and reading aloud, with natural expression and precise pronunciation.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -286,7 +286,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-ENERGIZE`; complete teaching: **Plus Energize**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Restores a felt sense of available energy on demand.
+- Purpose: Access and direct M energy toward chosen goals, including vitality, strength, restoration, protection, and mental clarity.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -342,7 +342,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-DO-THIS-NOW`; complete teaching: **Plus Do This Now**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Moves from deliberation into immediate, present action.
+- Purpose: Turn intentions into action, overcome hesitation, build momentum, and follow through to completion.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -358,7 +358,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-COORDINATE`; complete teaching: **Plus Coordinate**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Aligns and smooths internal rhythms toward feeling faster and steadier.
+- Purpose: Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -430,7 +430,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-RESTORATIVE SLEEP`; complete teaching: **Plus Restorative Sleep**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Supports deep, restorative rest and recovery; activation cue PLUS-RESTORATIVE SLEEP.
+- Purpose: Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.
 - Pending title: None.
 - Other unselected proposal: null
 
@@ -438,7 +438,7 @@ Counts: {"active_records": 83, "approved_candidate_narrations": 4, "embedded_app
 
 - Current display cue: `PLUS-SLEEP`; complete teaching: **Plus Sleep**.
 - Status: APPROVED AND IMPLEMENTED; title: canonical.
-- Purpose: Induces a felt, deliberate movement into sleep onset; activation cue PLUS-SLEEP.
+- Purpose: Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.
 - Pending title: None.
 - Other unselected proposal: null
 

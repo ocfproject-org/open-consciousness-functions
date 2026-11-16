@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports the body's self-regulating cleansing, renewal, and maintenance, with conscious reinforcement
-    when desired.
+  text: Supports the body's natural cleansing, renewal, and maintenance processes,
+    with conscious reinforcement when desired.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -45,7 +45,7 @@ activation:
       before_steps: []
       evidence_keys:
       - hplus.function.ocf-bod-004.function-body
-      ref: OCF-PROC-CLOSE-FOCUS
+      ref: OCF-PROC-CLOSE-INHALE-HOLD
       status: documented
     relationships: {}
   procedure_steps:
@@ -53,37 +53,31 @@ activation:
     operation: close-eyes
     instruction:
       text: Close your eyes.
-      status: canonical
-      version: 1.0.0
-  - id: focus-target
-    operation: focus-target
-    instruction:
-      text: Focus attention on the selected target.
-      status: canonical
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands:
 - command_id: OCF-CMD-BOD-004-LEGACY-01
@@ -98,7 +92,8 @@ secondary_commands:
     status: canonical
     version: 1.0.0
   usage:
-    text: Compatibility phrase retained by the registry; historical authentication is not implied.
+    text: Compatibility phrase retained by the registry; historical authentication
+      is not implied.
     status: canonical
     version: 1.0.0
   role: legacy-alias
@@ -127,8 +122,8 @@ tags:
 common_uses:
 - text: Visualizing the body's ordinary cleansing and maintenance processes.
   status: draft
-- text: Reflecting on a sense of freshness and balance without claiming removal of toxins or replacing
-    medical care.
+- text: Reflecting on a sense of freshness and balance without claiming removal of
+    toxins or replacing medical care.
   status: draft
 relationships:
   related_functions: []
@@ -140,13 +135,9 @@ entries:
   hplus.function.ocf-bod-004.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will strengthen and reinforce your body''s
-
-      natural ability to cleanse, renew, and maintain itself,
-
-      establishing a lasting, automatic pattern of healthy balance
-
-      and maintenance throughout your entire physical body.'
+    text: This OCF exercise will teach you to strengthen and reinforce your body's
+      natural processes of cleansing, renewal, and maintenance, establishing a lasting,
+      automatic pattern of healthy balance throughout your body.
   hplus.function.ocf-bod-004.function-body:
     status: reviewed
     version: 1.2.1
@@ -154,203 +145,46 @@ entries:
       function_id: OCF-BOD-004
       allowed:
       - cue.primary
-    text: 'From this moment forward, your body''s natural processes
+    text: 'From this moment forward, let your body''s natural processes of cleansing,
+      renewal, and maintenance work together smoothly and efficiently.
 
-      of cleansing, renewal, and maintenance will become stronger,
 
-      smoother, and more effective.
+      Your liver, kidneys, lungs, digestive system, and other natural cleansing pathways
+      each perform their important work.
 
 
-      Every part of your body will work together in complete
+      Let your body retain and use what is beneficial, while processing and eliminating
+      natural waste products and substances it no longer needs.
 
-      harmony, maintaining the healthy balance you are
 
-      naturally designed to achieve.
+      Let every organ, tissue, and supporting system work together in healthy balance,
+      providing nourishment, protection, maintenance, and renewal throughout your
+      body.
 
 
-      Bring your awareness to the many systems within your
+      This pattern is permanently established within you and continues automatically,
+      whether you are awake, resting, or asleep, adjusting naturally to your body''s
+      changing needs without conscious effort.
 
-      body that continually cleanse, protect, and renew you.
 
-
-      Your liver, kidneys, lungs, digestive system, and other
-
-      natural cleansing systems work together, each performing
-
-      its own important function.
-
-
-      See and feel these systems working smoothly, efficiently,
-
-      and in perfect coordination.
-
-
-      Your body recognizes what it needs and what it no
-
-      longer needs.
-
-
-      Everything useful and beneficial is retained and used
-
-      where it is needed.
-
-
-      Unwanted substances and natural waste products are
-
-      processed and eliminated through your body''s normal
-
-      cleansing pathways.
-
-
-      Visualize these processes becoming clearer, smoother,
-
-      and more effective throughout your entire body.
-
-
-      Imagine every cell receiving the nourishment it needs,
-
-      while your body''s natural maintenance systems keep
-
-      your internal environment clean and balanced.
-
-
-      Feel this sense of balance spreading throughout
-
-      your entire physical body.
-
-
-      Every organ, every tissue, and every system works
-
-      together to maintain your natural health and vitality.
-
-
-      Now know that this pattern of cleansing, renewal,
-
-      and maintenance is becoming permanently established
-
-      within you.
-
-
-      From this moment forward, your body will maintain
-
-      this pattern automatically, without any need for
-
-      conscious thought or effort.
-
-
-      Whether you are awake, resting, or sleeping,
-
-      your body''s natural cleansing and maintenance
-
-      processes will continue working for you.
-
-
-      These processes will always respond intelligently
-
-      to your body''s needs, becoming more active when
-
-      needed and returning to their normal balanced
-
-      activity when their work is complete.
-
-
-      Your body will continuously maintain this healthy
-
-      balance, retaining what is beneficial and
-
-      eliminating what is no longer needed.
-
-
-      This automatic pattern is now a natural and lasting
-
-      part of your everyday life.
-
-
-      Each day, your body''s natural processes of
-
-      cleansing and renewal will operate more smoothly,
-
-      efficiently, and effectively.
-
-
-      You will feel increasingly clean, refreshed,
-
-      balanced, and full of natural vitality.
-
-
-      Whenever you wish to consciously strengthen
-
-      or reinforce this cleansing pattern,
-
-      you can do so quickly and easily.
-
-
-      Simply close your eyes and bring your awareness
-
-      to your body''s natural cleansing systems.
+      Whenever you wish to reinforce this pattern, simply close your eyes.
 
 
       Take a deep breath in and gently hold it.
 
 
-      While holding your breath, silently say to yourself,
-
-      "{{ cue.primary }}."
+      While holding your breath, silently say to yourself, "{{ cue.primary }}."
 
 
-      Then slowly exhale through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
-      As you exhale, visualize your body''s cleansing
-
-      and maintenance systems working together
-
-      smoothly and in complete harmony.
+      As you exhale, let this pattern of natural cleansing, renewal, and maintenance
+      continue throughout your body.
 
 
-      Your body will reinforce its natural pattern
-
-      of cleansing, renewal, and healthy balance.
-
-
-      Every system will perform its function at exactly
-
-      the level needed to maintain your well-being.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to consciously reinforce
-
-      this pattern becomes easier, faster,
-
-      and more effective.
-
-
-      Remember, this process is now automatic.
-
-
-      Your body will continue its natural cleansing
-
-      and maintenance whether or not you
-
-      consciously think about it.
-
-
-      {{ cue.primary }} is always available whenever
-
-      you wish to give this established pattern
-
-      additional attention and reinforcement.
-
-
-      Your body knows how to maintain its natural
-
-      balance, and this pattern will continue
-
-      working for you every day and every night.'
+      The more you use this command, the easier and more effective this reinforcement
+      becomes.'
   hplus.function.ocf-bod-004.closer:
     status: reviewed
     version: 1.2.1
@@ -358,16 +192,8 @@ entries:
       function_id: OCF-BOD-004
       allowed:
       - cue.primary
-    text: 'Remember, your body''s natural processes of cleansing,
-
-      renewal, and maintenance are now firmly established
-
-      as a lasting, automatic pattern.
-
-
-      Whenever you wish to reinforce this pattern,
-
-      simply close your eyes.
+    text: 'Remember, to reinforce your body''s natural cleansing, renewal, and maintenance,
+      close your eyes.
 
 
       Inhale deeply and gently hold your breath.
@@ -376,9 +202,7 @@ entries:
       Silently say to yourself, "{{ cue.primary }}."
 
 
-      Then slowly exhale through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Detox exercise.'
@@ -398,13 +222,13 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -412,8 +236,8 @@ safety:
   level: health
   medical_relevance: true
   notes:
-  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment.
-    No guaranteed effects are claimed.
+  - Self-directed wellness practice; not a substitute for professional medical evaluation
+    or treatment. No guaranteed effects are claimed.
 function_version:
   created: '2026-09-12'
   current: 0.1.0
@@ -439,31 +263,35 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Body Cleansing
     recommended_primary_cue: PLUS-CLEAN CLEAR
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Coordinated whole-body cleansing systems retain useful material and process unneeded
-      material. Close eyes, attend to systems, inhale/hold/cue/exhale. Body Clarity would misleadingly
-      suggest psychological clarity.
-    pair_reason: Names the retained bodily cleansing intent; avoids Body Clarity's psychological ambiguity.
-      Cue already matches complete taught words.
-    title_cue_relationship_or_exception: Names the retained bodily cleansing intent; avoids Body Clarity's
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Coordinated whole-body cleansing systems retain useful material
+      and process unneeded material. Close eyes, attend to systems, inhale/hold/cue/exhale.
+      Body Clarity would misleadingly suggest psychological clarity.
+    pair_reason: Names the retained bodily cleansing intent; avoids Body Clarity's
       psychological ambiguity. Cue already matches complete taught words.
+    title_cue_relationship_or_exception: Names the retained bodily cleansing intent;
+      avoids Body Clarity's psychological ambiguity. Cue already matches complete
+      taught words.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
-    documentary_intent: Claimed removal of harmful/obstructing material and body equalization, optionally
-      accelerated by a cue.
+    documentary_intent: Claimed removal of harmful/obstructing material and body equalization,
+      optionally accelerated by a cue.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: acabbac24a597c9cc3357ebe82c28e52fbc4c08a30da6ac3b38ce9c3d712a980
+  contract_sha256: c146679590f8ef5290d1a88ccbb59cf7d6c67b7f2a04fba40f33a1b653636e9d
 record_metadata:
   legacy:
     command_ids:
@@ -480,8 +308,8 @@ record_metadata:
     names:
     - 'De-Tox: Body'
   compatibility:
-    rationale: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary
-      operational commands remain unchanged.
+    rationale: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001;
+      secondary operational commands remain unchanged.
     state: historical-lookup
   historical_lookup:
   - decision: OCF-EDITORIAL-TITLE-CUES-001
@@ -500,14 +328,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -546,9 +375,11 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
     source_commit: 21e63ac6f8bf5a7bce9506f033330df967aa4f97
-    scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
-      presentation summaries; procedures/mechanisms/secondary controls unchanged.
-    decision_source: Explicit user approval in the approved English title-cue migration task
+    scope: English primary cue, finalized title where supplied, exact teaching substitutions
+      and necessary presentation summaries; procedures/mechanisms/secondary controls
+      unchanged.
+    decision_source: Explicit user approval in the approved English title-cue migration
+      task
     source_row_sha256: 98b2a5ea44f44854c94cd904c1393afc1d4f3798d371fdb1b8942cbd2c83c44c
     status: accepted
     previous_values_sha256: 9ad9c98f3907b3b3178e5fdfdc04c7e963948defc43574c7bd42f5839ecf874a
@@ -562,12 +393,12 @@ record_metadata:
     current_resolved_text_sha256:
       hplus.function.ocf-bod-004.function-body: fcac6e12d0d8a42b9a6cf1ea355220ea0aa1b94bcfd3122252d6013c676a96d8
       hplus.function.ocf-bod-004.closer: b8123ec9832f3d00929ecb2e025346f8ec1b4a81a20626fcc4f3ce1b26b8f3df
-    review_note: Detox is the selected title and cue. Preserve current bodily cleansing scope; no Body
-      Cleansing/Body Cleanse title or new medical mechanism.
+    review_note: Detox is the selected title and cue. Preserve current bodily cleansing
+      scope; no Body Cleansing/Body Cleanse title or new medical mechanism.
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -736,8 +567,8 @@ content:
       source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: unverified
       completeness: pending-source-review
@@ -786,8 +617,8 @@ content:
       - automatic-whole-system-learning
       family: body-cleansing-intensification
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -797,8 +628,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 97
           status: supported
-          summary: Pair source cue/breathing with the selected body-related response; actual canonical
-            and legacy command variants stay in identity metadata.
+          summary: Pair source cue/breathing with the selected body-related response;
+            actual canonical and legacy command variants stay in identity metadata.
         closer:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -807,7 +638,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 131
           status: supported
-          summary: Reinforce remembered future use and close the learning context to ten.
+          summary: Reinforce remembered future use and close the learning context
+            to ten.
         consolidation:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -816,8 +648,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 152
           status: supported
-          summary: Sleep-to-twenty shell present; physiological/automatic integration is not established
-            by that instruction.
+          summary: Sleep-to-twenty shell present; physiological/automatic integration
+            is not established by that instruction.
         conversion:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -826,9 +658,10 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 89
           status: inferred
-          summary: Do not reproduce unsupported physiological/medical mechanisms as fact or assume a psychological
-            reinterpretation is equivalent. Useful experiential operations and material purpose changes
-            require explicit content review; medical management and breath-hold issues remain outside
+          summary: Do not reproduce unsupported physiological/medical mechanisms as
+            fact or assume a psychological reinterpretation is equivalent. Useful
+            experiential operations and material purpose changes require explicit
+            content review; medical management and breath-hold issues remain outside
             software efficacy claims.
         future_use:
           locators:
@@ -838,8 +671,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 97
           status: supported
-          summary: Use the cue/breathing procedure as described for the selected response; asserted effectiveness
-            is a claim, not an observed result.
+          summary: Use the cue/breathing procedure as described for the selected response;
+            asserted effectiveness is a claim, not an observed result.
         handoff:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -848,9 +681,10 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 193
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Opening
-            explanation and final waking ending are missing/unclear; later numeric-only material cannot
-            establish additional functions or reinforcement. DETOX metadata is not rewritten legacy speech.
+          summary: Investigated the full available source; this operation is not established.
+            Opening explanation and final waking ending are missing/unclear; later
+            numeric-only material cannot establish additional functions or reinforcement.
+            DETOX metadata is not rewritten legacy speech.
         identity:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -859,8 +693,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 97
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -879,8 +713,9 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 72
           status: supported
-          summary: Intelligible target instruction follows ten/eleven count material; a complete opening
-            explanation is not preserved, so its missing wording remains unknown.
+          summary: Intelligible target instruction follows ten/eleven count material;
+            a complete opening explanation is not preserved, so its missing wording
+            remains unknown.
         preparation:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -889,8 +724,9 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 10
           status: supported
-          summary: Supported uninterrupted posture, settling movements/breathing, repository representation
-            for temporary setting-aside and counted ten-state preparation.
+          summary: Supported uninterrupted posture, settling movements/breathing,
+            repository representation for temporary setting-aside and counted ten-state
+            preparation.
         provenance:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -899,10 +735,11 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 1
           status: supported
-          summary: Complete available partial_source_transcript text inspected; shared representations
-            are not independent corroboration. Source accuracy/authentication remains unresolved. Opening
-            explanation and final waking ending are missing/unclear; later numeric-only material cannot
-            establish additional functions or reinforcement. DETOX metadata is not rewritten legacy speech.
+          summary: Complete available partial_source_transcript text inspected; shared
+            representations are not independent corroboration. Source accuracy/authentication
+            remains unresolved. Opening explanation and final waking ending are missing/unclear;
+            later numeric-only material cannot establish additional functions or reinforcement.
+            DETOX metadata is not rewritten legacy speech.
         purpose:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -911,8 +748,8 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 8
           status: supported
-          summary: Claimed removal of harmful/obstructing material and body equalization, optionally accelerated
-            by a cue.
+          summary: Claimed removal of harmful/obstructing material and body equalization,
+            optionally accelerated by a cue.
         rehearsal:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -921,9 +758,10 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 89
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Opening
-            explanation and final waking ending are missing/unclear; later numeric-only material cannot
-            establish additional functions or reinforcement. DETOX metadata is not rewritten legacy speech.
+          summary: Investigated the full available source; this operation is not established.
+            Opening explanation and final waking ending are missing/unclear; later
+            numeric-only material cannot establish additional functions or reinforcement.
+            DETOX metadata is not rewritten legacy speech.
         safety_claims:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -932,8 +770,9 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 89
           status: supported
-          summary: physiological-detoxification; guaranteed-material-removal-and-balance; automatic-whole-system-learning.
-            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: physiological-detoxification; guaranteed-material-removal-and-balance;
+            automatic-whole-system-learning. Claims are classified as source assertions,
+            not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -942,8 +781,9 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 72
           status: supported
-          summary: Reference learning shell prepares ten, opens eleven, closes to ten and uses sleep-to-twenty
-            plus waking return where preserved; runtime OCF requirements remain separate and unknown.
+          summary: Reference learning shell prepares ten, opens eleven, closes to
+            ten and uses sleep-to-twenty plus waking return where preserved; runtime
+            OCF requirements remain separate and unknown.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
@@ -952,9 +792,10 @@ content:
             source_sha256: 2eba3f1368745e99e3473e8923fcc9236e55baf6159dacab6c98f327bb04c4fc
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Opening
-            explanation and final waking ending are missing/unclear; later numeric-only material cannot
-            establish additional functions or reinforcement. DETOX metadata is not rewritten legacy speech.
+          summary: Investigated the full available source; this operation is not established.
+            Opening explanation and final waking ending are missing/unclear; later
+            numeric-only material cannot establish additional functions or reinforcement.
+            DETOX metadata is not rewritten legacy speech.
       source_extent:
         content_group_sha256: f37942ad56ee007db6c49222e0397788c150b79559ee582e4c4b26cc8aef4a47
         end_line: 352
@@ -1035,12 +876,13 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Opening explanation and final waking ending are missing/unclear; later numeric-only material cannot
-      establish additional functions or reinforcement. DETOX metadata is not rewritten legacy speech.
-    - Do not reproduce unsupported physiological/medical mechanisms as fact or assume a psychological
-      reinterpretation is equivalent. Useful experiential operations and material purpose changes require
-      explicit content review; medical management and breath-hold issues remain outside software efficacy
-      claims.
+    - Opening explanation and final waking ending are missing/unclear; later numeric-only
+      material cannot establish additional functions or reinforcement. DETOX metadata
+      is not rewritten legacy speech.
+    - Do not reproduce unsupported physiological/medical mechanisms as fact or assume
+      a psychological reinterpretation is equivalent. Useful experiential operations
+      and material purpose changes require explicit content review; medical management
+      and breath-hold issues remain outside software efficacy claims.
     states:
       preferred: []
       required: []

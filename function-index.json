@@ -43,7 +43,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "effect_scope": "permanent",
             "effect_scope_details": {
               "activation": "automatic",
-              "description": "Correctly learned selected skill patterns are retained; each performance remains observable, adjustable and stoppable.",
+              "description": "Learned selected skill patterns are retained; each performance remains observable, adjustable, and stoppable.",
               "description_key": "functions.ocf-aut-001.lifecycle.scopes.baseline.description",
               "persistence": "permanent"
             },
@@ -446,7 +446,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "baseline": {
               "activation": "automatic",
-              "description": "Correctly learned selected skill patterns are retained; each performance remains observable, adjustable and stoppable.",
+              "description": "Learned selected skill patterns are retained; each performance remains observable, adjustable, and stoppable.",
               "description_key": "functions.ocf-aut-001.lifecycle.scopes.baseline.description",
               "persistence": "permanent"
             },
@@ -484,7 +484,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Automates a desired way of being so it runs without active effort.",
+        "purpose": "Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -605,7 +605,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-001.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-CLOSE-OPEN",
               "status": "documented"
             },
             "relationships": {},
@@ -614,11 +614,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -639,6 +634,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "exhale",
                 "localization_key": "command.procedure.exhale",
                 "operation": "exhale"
+              },
+              {
+                "id": "open-eyes",
+                "localization_key": "command.procedure.open-eyes",
+                "operation": "open-eyes"
               }
             ],
             "role": "activation",
@@ -949,7 +949,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports balanced brain and neck circulation and maintenance, with conscious reinforcement when desired.",
+        "purpose": "Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -1067,7 +1067,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-002.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {},
@@ -1076,11 +1076,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -1400,7 +1395,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Promotes a felt sense of smooth, comfortable circulation.",
+        "purpose": "Supports healthy circulation throughout the body, including smooth blood flow, oxygen and nutrient delivery, blood vessel maintenance, and natural renewal, with conscious reinforcement when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -1523,7 +1518,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-003.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-COMFORT-SELECTED-AREA",
               "status": "documented"
             },
             "relationships": {},
@@ -1864,7 +1859,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Felt-discomfort support for self-directed comfort; activation cue PLUS-COMFORT.",
+        "purpose": "Eases physical discomfort in a selected area of the body.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -1987,7 +1982,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-004.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {},
@@ -1996,11 +1991,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -2319,7 +2309,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports the body's self-regulating cleansing, renewal, and maintenance, with conscious reinforcement when desired.",
+        "purpose": "Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -2935,7 +2925,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-006.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {},
@@ -2944,11 +2934,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -3279,7 +3264,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Self-directed wellness practice supporting a felt sense of calm, steady heart function.",
+        "purpose": "Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -3415,7 +3400,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-007.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS",
+              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {},
@@ -3424,11 +3409,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -3764,7 +3744,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Legacy practice associated with blood-pressure balance. Not a treatment and not a substitute for medical care.",
+        "purpose": "Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -4208,7 +4188,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports a self-directed practice of immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
+        "purpose": "Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -4763,8 +4743,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 1,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "persistent",
+            "effect_scope_details": {
+              "activation": "conditional",
+              "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed.",
+              "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+              "persistence": "persistent"
+            },
+            "effect_scope_ref": "lifecycle.scopes.baseline.persistence",
             "function_id": "OCF-BOD-010",
             "id": "OCF-CMD-BOD-010-PRIMARY",
             "localization": {
@@ -4778,17 +4764,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-food-response",
-                  "localization_key": "command.procedure.select-intention",
-                  "operation": "select-intention"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-bod-010.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
+              "ref": "OCF-PROC-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {
@@ -4797,16 +4777,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ]
             },
             "resolved_procedure_steps": [
-              {
-                "id": "select-food-response",
-                "localization_key": "command.procedure.select-intention",
-                "operation": "select-intention"
-              },
-              {
-                "id": "close-eyes",
-                "localization_key": "command.procedure.close-eyes",
-                "operation": "close-eyes"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -4852,8 +4822,14 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "order": 11,
               "visible": true
             },
-            "effect_scope": "temporary",
-            "effect_scope_ref": "lifecycle.persistence",
+            "effect_scope": "persistent",
+            "effect_scope_details": {
+              "activation": "conditional",
+              "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed.",
+              "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+              "persistence": "persistent"
+            },
+            "effect_scope_ref": "lifecycle.scopes.baseline.persistence",
             "function_id": "OCF-BOD-010",
             "id": "OCF-CMD-BOD-010-FOOD-LESS",
             "localization": {
@@ -4868,17 +4844,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-mode"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-food-response",
-                  "localization_key": "command.procedure.select-intention",
-                  "operation": "select-intention"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-bod-010.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-INHALE-HOLD",
+              "ref": "OCF-PROC-INHALE-HOLD",
               "status": "documented"
             },
             "relationships": {
@@ -4887,16 +4857,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               ]
             },
             "resolved_procedure_steps": [
-              {
-                "id": "select-food-response",
-                "localization_key": "command.procedure.select-intention",
-                "operation": "select-intention"
-              },
-              {
-                "id": "close-eyes",
-                "localization_key": "command.procedure.close-eyes",
-                "operation": "close-eyes"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -5180,10 +5140,29 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "lifecycle": {
           "activation": "manual",
-          "persistence": "temporary",
+          "persistence": "persistent",
           "release": {
             "command": null,
             "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "The selected mode persists across meals, activities, rest, and sleep; it is not reapplied automatically before each meal.",
+              "description_key": "functions.ocf-bod-010.lifecycle.scopes.application.description",
+              "persistence": "persistent"
+            },
+            "baseline": {
+              "activation": "conditional",
+              "description": "No mode is active by default. After a deliberate selection, the last chosen mode remains active until deliberately changed.",
+              "description_key": "functions.ocf-bod-010.lifecycle.scopes.baseline.description",
+              "persistence": "persistent"
+            },
+            "capability": {
+              "description": "The ability to choose and change either food-energy mode remains available.",
+              "description_key": "functions.ocf-bod-010.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
           },
           "trigger_conditions": []
         },
@@ -5213,7 +5192,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports conscious selection between fuller use of food energy and nourishment, or sufficient nourishment with reduced unnecessary energy retention and storage.",
+        "purpose": "Directs the intended use of food energy and nourishment through two modes: Plus Food More for fuller utilization, or Plus Food Less for sufficient nourishment with reduced unnecessary retention and storage. The last selected mode remains active until deliberately changed.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -5267,7 +5246,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
       "legacy_command": "PLUS-FOOD MORE / PLUS-FOOD LESS",
       "legacy_name": "NUTRICIA",
       "ocf_id": "OCF-BOD-010",
-      "persistence": "temporary",
+      "persistence": "persistent",
       "reimplementation_status": "planned",
       "source_availability": "available",
       "source_file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
@@ -5689,7 +5668,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports graceful passage through internal transitions.",
+        "purpose": "Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -6409,7 +6388,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "effect_scope": "temporary",
             "effect_scope_details": {
               "activation": "manual",
-              "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area.",
+              "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area.",
               "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -6418,7 +6397,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "id": "OCF-CMD-BOD-013-PRIMARY",
             "invocation_scope": {
               "activation": "manual",
-              "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area.",
+              "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area.",
               "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -6440,7 +6419,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "evidence_keys": [
                 "hplus.function.ocf-bod-013.function-body"
               ],
-              "ref": "OCF-PROC-CLOSE-FOCUS-OPEN",
+              "ref": "OCF-PROC-CLOSE-OPEN",
               "status": "documented"
             },
             "relationships": {},
@@ -6449,11 +6428,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "close-eyes",
                 "localization_key": "command.procedure.close-eyes",
                 "operation": "close-eyes"
-              },
-              {
-                "id": "focus-target",
-                "localization_key": "command.procedure.focus-target",
-                "operation": "focus-target"
               },
               {
                 "id": "inhale",
@@ -6753,13 +6727,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "scopes": {
             "application": {
               "activation": "manual",
-              "description": "Conscious selected-area reinforcement; not continuous intensified repair in that area.",
+              "description": "Optional conscious reinforcement of a selected area; otherwise reinforcement applies throughout the whole body. This is not continuous intensified repair in one area.",
               "description_key": "functions.ocf-bod-013.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
             "baseline": {
               "activation": "automatic",
-              "description": "The narrated whole-body maintenance and renewal baseline persists.",
+              "description": "The whole body maintenance and renewal baseline persists; no selected area is required.",
               "description_key": "functions.ocf-bod-013.lifecycle.scopes.baseline.description",
               "persistence": "permanent"
             },
@@ -6807,7 +6781,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "A general self-directed balance-and-heal tune-up practice.",
+        "purpose": "Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -7325,7 +7299,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports a felt sense of body-wide regeneration and renewal; activation cue PLUS-REGENERATE.",
+        "purpose": "Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -7524,35 +7498,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "legacy-command"
             },
             "procedure": {
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-bod-015.function-body"
-              ],
-              "override_steps": [
-                {
-                  "id": "focus-selected-area",
-                  "localization_key": "command.procedure.focus-target",
-                  "operation": "focus-target"
-                },
-                {
-                  "id": "inhale",
-                  "localization_key": "command.procedure.inhale",
-                  "operation": "inhale"
-                },
-                {
-                  "id": "hold",
-                  "localization_key": "command.procedure.hold-breath",
-                  "operation": "hold-breath"
-                },
-                {
-                  "id": "command",
-                  "localization_key": "command.procedure.think-or-say-command",
-                  "operation": "think-or-say-command"
-                },
-                {
-                  "id": "exhale",
-                  "localization_key": "command.procedure.exhale",
-                  "operation": "exhale"
-                }
               ],
               "ref": "OCF-PROC-CLOSE-FOCUS",
               "status": "documented"
@@ -7564,7 +7512,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "resolved_procedure_steps": [
               {
-                "id": "focus-selected-area",
+                "id": "close-eyes",
+                "localization_key": "command.procedure.close-eyes",
+                "operation": "close-eyes"
+              },
+              {
+                "id": "focus-target",
                 "localization_key": "command.procedure.focus-target",
                 "operation": "focus-target"
               },
@@ -7916,6 +7869,19 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command_id": "OCF-CMD-BOD-015-LEGACY-02",
             "required": false
           },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each selected-area numbing response is temporary and can be released to restore ordinary sensitivity.",
+              "description_key": "functions.ocf-bod-015.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "description": "The ability to activate and release a selected-area numbing response remains available.",
+              "description_key": "functions.ocf-bod-015.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -7944,7 +7910,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Legacy rapid numbing practice (GO NUMB) with a release; activation cue PLUS-NUMB.",
+        "purpose": "Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -8409,7 +8375,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Accesses intuition, memory, and inner knowledge on demand.",
+        "purpose": "Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -8521,13 +8487,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-mathematical-task",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-cog-002.function-body"
               ],
@@ -8536,11 +8496,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-mathematical-task",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -8867,7 +8822,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Speeds mental arithmetic and number processing.",
+        "purpose": "Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -11023,13 +10978,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-cognitive-task",
-                  "localization_key": "command.procedure.select-intention",
-                  "operation": "select-intention"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-cog-007.function-body"
               ],
@@ -11038,11 +10987,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-cognitive-task",
-                "localization_key": "command.procedure.select-intention",
-                "operation": "select-intention"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -11369,7 +11313,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Accelerates thinking speed and mental processing.",
+        "purpose": "Faster, clearer thinking, sharper reasoning, and more accurate problem-solving.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -11479,13 +11423,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-speaking-task",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-com-001.function-body"
               ],
@@ -11494,11 +11432,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-speaking-task",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -11816,7 +11749,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports confident, clear verbal expression.",
+        "purpose": "Clear, fluent, confident speaking and reading aloud, with natural expression and precise pronunciation.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -16794,7 +16727,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Restores a felt sense of available energy on demand.",
+        "purpose": "Access and direct M energy toward chosen goals, including vitality, strength, restoration, protection, and mental clarity.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -19772,13 +19705,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-activity",
-                  "localization_key": "command.procedure.select-activity",
-                  "operation": "select-activity"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-001.function-body"
               ],
@@ -19787,11 +19714,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-activity",
-                "localization_key": "command.procedure.select-activity",
-                "operation": "select-activity"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -20118,7 +20040,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Moves from deliberation into immediate, present action.",
+        "purpose": "Turn intentions into action, overcome hesitation, build momentum, and follow through to completion.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -20695,13 +20617,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-movement-pattern",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-prf-003.function-body"
               ],
@@ -20710,11 +20626,6 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             },
             "relationships": {},
             "resolved_procedure_steps": [
-              {
-                "id": "select-movement-pattern",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
-              },
               {
                 "id": "inhale",
                 "localization_key": "command.procedure.inhale",
@@ -21041,7 +20952,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Aligns and smooths internal rhythms toward feeling faster and steadier.",
+        "purpose": "Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.",
         "safety": {
           "level": "general",
           "medical_relevance": false,
@@ -25933,25 +25844,19 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-restoration-target",
-                  "localization_key": "command.procedure.select-target-area",
-                  "operation": "select-target-area"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-slp-001.function-body"
               ],
-              "ref": "OCF-PROC-INHALE-HOLD",
+              "ref": "OCF-PROC-CLOSE-NATURAL",
               "status": "documented"
             },
             "relationships": {},
             "resolved_procedure_steps": [
               {
-                "id": "select-restoration-target",
-                "localization_key": "command.procedure.select-target-area",
-                "operation": "select-target-area"
+                "id": "close-eyes",
+                "localization_key": "command.procedure.close-eyes",
+                "operation": "close-eyes"
               },
               {
                 "id": "inhale",
@@ -25972,6 +25877,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
                 "id": "exhale",
                 "localization_key": "command.procedure.exhale",
                 "operation": "exhale"
+              },
+              {
+                "id": "breathe-normally",
+                "localization_key": "command.procedure.breathe-normally",
+                "operation": "breathe-normally"
               }
             ],
             "role": "activation",
@@ -26241,6 +26151,19 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "command": null,
             "required": false
           },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "Each chosen sleep period is a temporary application of the lasting learned ability.",
+              "description_key": "functions.ocf-slp-001.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "description": "The learned ability to direct the total self toward restoration during sleep remains available whenever chosen.",
+              "description_key": "functions.ocf-slp-001.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
           "trigger_conditions": []
         },
         "locales": [],
@@ -26269,7 +26192,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Supports deep, restorative rest and recovery; activation cue PLUS-RESTORATIVE SLEEP.",
+        "purpose": "Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.",
         "safety": {
           "level": "health",
           "medical_relevance": true,
@@ -26388,40 +26311,39 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "source": "canonical-primary"
             },
             "procedure": {
-              "before_steps": [
-                {
-                  "id": "select-sleep-and-wake-intention",
-                  "localization_key": "command.procedure.select-purpose",
-                  "operation": "select-purpose"
-                }
-              ],
+              "before_steps": [],
               "evidence_keys": [
                 "hplus.function.ocf-slp-002.function-body"
               ],
-              "ref": "OCF-PROC-SLEEP-EXHALE",
+              "ref": "OCF-PROC-SLEEP-HOLD",
               "status": "documented"
             },
             "relationships": {},
             "resolved_procedure_steps": [
               {
-                "id": "select-sleep-and-wake-intention",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
+                "id": "close-eyes",
+                "localization_key": "command.procedure.close-eyes",
+                "operation": "close-eyes"
               },
               {
-                "id": "sleep-intention",
-                "localization_key": "command.procedure.select-purpose",
-                "operation": "select-purpose"
+                "id": "inhale",
+                "localization_key": "command.procedure.inhale",
+                "operation": "inhale"
               },
               {
-                "id": "breathe-slowly",
-                "localization_key": "command.procedure.breathe-slowly-deeply",
-                "operation": "breathe-slowly-deeply"
+                "id": "hold",
+                "localization_key": "command.procedure.hold-breath",
+                "operation": "hold-breath"
               },
               {
-                "id": "command-during-exhale",
-                "localization_key": "command.procedure.think-command-during-exhale",
-                "operation": "think-command-during-exhale"
+                "id": "command",
+                "localization_key": "command.procedure.think-or-say-command",
+                "operation": "think-or-say-command"
+              },
+              {
+                "id": "exhale",
+                "localization_key": "command.procedure.exhale",
+                "operation": "exhale"
               },
               {
                 "id": "continue-breathing",
@@ -26736,7 +26658,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Induces a felt, deliberate movement into sleep onset; activation cue PLUS-SLEEP.",
+        "purpose": "Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.",
         "safety": {
           "level": "general",
           "medical_relevance": false,

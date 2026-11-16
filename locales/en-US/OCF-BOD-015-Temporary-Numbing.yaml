@@ -7,10 +7,18 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Legacy rapid numbing practice (GO NUMB) with a release; activation cue PLUS-NUMB.
+  text: Temporarily reduces discomfort and sensitivity in a selected body area using
+    Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The
+    learned ability remains available for future use.
   status: reviewed
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-bod-015.lifecycle.scopes.capability.description:
+    text: The ability to activate and release a selected-area numbing response remains
+      available.
+  functions.ocf-bod-015.lifecycle.scopes.application.description:
+    text: Each selected-area numbing response is temporary and can be released to
+      restore ordinary sensitivity.
 activation:
   command_id: OCF-CMD-BOD-015-PRIMARY
   display_cue:
@@ -52,37 +60,37 @@ activation:
     operation: close-eyes
     instruction:
       text: Close your eyes.
-      status: canonical
+      status: reviewed
       version: 1.0.0
   - id: focus-target
     operation: focus-target
     instruction:
-      text: Focus attention on the selected target.
-      status: canonical
+      text: Think of the specific selected area you wish to affect.
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands:
 - command_id: OCF-CMD-BOD-015-LEGACY-01
@@ -97,7 +105,8 @@ secondary_commands:
     status: canonical
     version: 1.0.0
   usage:
-    text: Compatibility phrase retained by the registry; historical authentication is not implied.
+    text: Compatibility phrase retained by the registry; historical authentication
+      is not implied.
     status: canonical
     version: 1.0.0
   role: legacy-alias
@@ -128,8 +137,8 @@ secondary_commands:
     status: canonical
     version: 1.0.0
   usage:
-    text: Ends the temporary numbing response; normal sensitivity returns while the learned ability remains
-      available.
+    text: Ends the temporary numbing response; normal sensitivity returns while the
+      learned ability remains available.
     status: canonical
     version: 1.0.0
   role: release
@@ -147,55 +156,46 @@ secondary_commands:
       status: documented
       evidence_keys:
       - hplus.function.ocf-bod-015.function-body
-      override_steps:
-      - id: focus-selected-area
-        operation: focus-target
-        localization_key: command.procedure.focus-target
-      - id: inhale
-        operation: inhale
-        localization_key: command.procedure.inhale
-      - id: hold
-        operation: hold-breath
-        localization_key: command.procedure.hold-breath
-      - id: command
-        operation: think-or-say-command
-        localization_key: command.procedure.think-or-say-command
-      - id: exhale
-        operation: exhale
-        localization_key: command.procedure.exhale
+      before_steps: []
     relationships:
       releases:
       - OCF-CMD-BOD-015-PRIMARY
   procedure_steps:
+  - id: close-eyes
+    operation: close-eyes
+    instruction:
+      text: Close your eyes.
+      status: reviewed
+      version: 1.0.0
   - id: focus-selected-area
     operation: focus-target
     instruction:
-      text: Focus attention on the selected target.
-      status: canonical
+      text: Think of the same selected area.
+      status: reviewed
       version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 tags:
 - text: comfort
@@ -208,10 +208,11 @@ tags:
   status: draft
   semantic_id: self-direction
 common_uses:
-- text: Comparing temporary, area-specific sensitivity imagery with general comfort practice.
+- text: Comparing temporary, area-specific sensitivity imagery with general comfort
+    practice.
   status: draft
-- text: Reviewing the documented distinction between temporary numbing and its release, without suppressing
-    warning signs or delaying care.
+- text: Reviewing the documented distinction between temporary numbing and its release,
+    without suppressing warning signs or delaying care.
   status: draft
 relationships:
   related_functions: []
@@ -223,170 +224,118 @@ entries:
   hplus.function.ocf-bod-015.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to quickly and
-
-      temporarily reduce discomfort and sensitivity
-
-      in a specific part of your physical body,
-
-      whenever you choose.'
+    text: 'This OCF exercise will teach you to temporarily reduce discomfort and sensitivity
+      in a specific part of your body, and restore ordinary sensitivity whenever you
+      choose.'
   hplus.function.ocf-bod-015.function-body:
     status: reviewed
     version: 1.1.1
     cue_template:
       function_id: OCF-BOD-015
       allowed:
-      - cue.id.OCF-CMD-BOD-015-LEGACY-02
       - cue.primary
-    text: 'From this moment forward, you have the ability
-
-      to quickly and temporarily reduce discomfort
-
-      and sensitivity in a chosen part of your body.
+      - cue.id.OCF-CMD-BOD-015-LEGACY-02
+    text: 'From this moment forward, you have the ability to temporarily reduce discomfort
+      and sensitivity in a specific part of your physical body.
 
 
-      Whenever a new, temporary discomfort or pain
-
-      signal arises, and you desire immediate relief,
-
-      bring the exact area clearly into your awareness.
+      This ability allows you to direct a temporary numbing response toward the area
+      you choose, while keeping your mind clear, alert, and aware.
 
 
-      Close your eyes and focus your attention
-
-      on the part of your body you wish to affect.
-
-
-      Inhale deeply and gently hold your breath.
+      Whenever you wish to activate this response, simply close your eyes and think
+      of the specific part of your body where you want temporary numbing.
 
 
-      Think or say in your mind,
+      Take a deep breath in and gently hold it.
+
+
+      While holding your breath, silently say to yourself,
 
       "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth.
+      Then slowly exhale through your mouth.
 
 
-      The discomfort signals from the selected area
-
-      will immediately begin to diminish.
-
-
-      Feel the sensitivity decreasing,
-
-      becoming less and less,
-
-      as the area grows comfortably numb.
+      As you exhale, let discomfort and sensitivity in the selected area diminish,
+      becoming less intense and less demanding of your attention.
 
 
-      The discomfort will quickly fade,
-
-      becoming weaker and less important
-
-      until it no longer demands your attention.
+      Let the selected area become comfortably numb, while the rest of your body maintains
+      its ordinary sensitivity.
 
 
-      Your mind will remain clear and alert,
-
-      free to concentrate on whatever is needed.
-
-
-      This temporary numbing response
-
-      will remain directed toward the
-
-      specific area you have chosen.
+      Your mind remains clear and alert, allowing you to direct your attention where
+      it is needed.
 
 
-      You will remain aware of your body''s needs
-
-      and the importance of appropriate care.
+      This response is temporary and applies only to the specific area you have chosen.
 
 
-      Whenever you wish to end the temporary
-
-      numbing response, you can do so
-
-      quickly and easily.
+      Whenever you wish to end the numbing response and restore ordinary sensitivity,
+      use your release command.
 
 
-      Bring the selected area into your awareness.
+      Close your eyes and think of the same selected area.
 
 
-      Inhale deeply and gently hold your breath.
+      Take a deep breath in and gently hold it.
 
 
-      Think or say in your mind, "{{ cue.id.OCF-CMD-BOD-015-LEGACY-02 }}."
+      While holding your breath, silently say to yourself,
+
+      "{{ cue.id.OCF-CMD-BOD-015-LEGACY-02 }}."
 
 
-      Then exhale slowly through your mouth.
+      Then slowly exhale through your mouth.
 
 
-      The temporary numbing response will end,
-
-      and normal sensitivity will return
-
-      smoothly and naturally to the selected area.
+      As you exhale, let the temporary numbing response end, allowing ordinary sensitivity
+      to return smoothly and naturally to the selected area.
 
 
-      You remain in complete control,
-
-      able to activate or release
-
-      this temporary response whenever appropriate.
+      You remain in conscious control of when to activate or release this temporary
+      response.
 
 
-      From this moment forward, this ability
-
-      is permanently available to you.
-
-
-      Each time you use Temporary Numbing,
-
-      directing and releasing the temporary
-
-      response becomes easier, faster,
-
-      and more effective.
+      Your ability to use these commands is permanently available, while each numbing
+      application remains temporary.
 
 
-      The function remains ready for conscious
+      The more you use these commands, the easier and more familiar activating and
+      releasing the response becomes.
 
-      use whenever you need it,
 
-      while your body''s normal sensitivity
-
-      continues at all other times.'
+      At all other times, your body maintains its ordinary awareness and sensitivity.'
   hplus.function.ocf-bod-015.closer:
     status: reviewed
     version: 1.2.1
     cue_template:
       function_id: OCF-BOD-015
       allowed:
-      - cue.id.OCF-CMD-BOD-015-LEGACY-02
       - cue.primary
-    text: 'Remember, whenever you wish to temporarily
-
-      reduce discomfort in a specific part of your body,
-
-      close your eyes and focus on that area.
-
-
-      Inhale deeply and hold your breath.
+      - cue.id.OCF-CMD-BOD-015-LEGACY-02
+    text: 'Remember, whenever you wish to temporarily reduce discomfort or sensitivity
+      in a specific part of your body, close your eyes and think of the area you wish
+      to affect.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Inhale deeply and gently hold your breath.
 
 
-      Then exhale slowly through your mouth.
+      Silently say to yourself,
+
+      "{{ cue.primary }}."
 
 
-      When you wish to restore normal sensitivity,
+      Then slowly exhale through your mouth.
 
-      repeat the breathing sequence and think
 
-      or say in your mind, "{{ cue.id.OCF-CMD-BOD-015-LEGACY-02 }}."
+      Whenever you wish to restore ordinary sensitivity, repeat the same sequence
+      for that area using
+
+      "{{ cue.id.OCF-CMD-BOD-015-LEGACY-02 }}."
 
 
       This concludes your OCF Temporary Numbing exercise.'
@@ -402,14 +351,22 @@ lifecycle:
   activation: manual
   persistence: temporary
   release:
-    command: null
+    command:
     command_id: OCF-CMD-BOD-015-LEGACY-02
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-bod-015.lifecycle.scopes.capability.description
+    application:
+      persistence: temporary
+      activation: manual
+      description_key: functions.ocf-bod-015.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -417,8 +374,8 @@ safety:
   level: health
   medical_relevance: true
   notes:
-  - Self-directed wellness practice; not a substitute for professional medical evaluation or treatment.
-    No guaranteed effects are claimed.
+  - Self-directed wellness practice; not a substitute for professional medical evaluation
+    or treatment. No guaranteed effects are claimed.
 function_version:
   created: '2026-09-12'
   current: 0.1.0
@@ -444,35 +401,40 @@ editorial:
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Temporary Numbing
     recommended_primary_cue: PLUS-NUMB
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: 'Temporary localized numbing of selected new discomfort: close eyes, focus area,
-      inhale/hold/complete cue/exhale. Selected-area Plus Release restores sensitivity; learning remains.
-      Clarify restriction/release metadata separately; do not equate this with Comfort.'
-    pair_reason: NUMB names the documented temporary de-tuning intent precisely. COMFORT QUICK would change
-      scope and overlap Comfort. Make the temporary application and its explicit PLUS-RELEASE procedure
-      clear before preferring a new name.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise verb,
-      outcome or contextual mode can reinforce an umbrella title without copying it. NUMB names the documented
-      temporary de-tuning intent precisely. COMFORT QUICK would change scope and overlap Comfort. Make
-      the temporary application and its explicit PLUS-RELEASE procedure clear before preferring a new
-      name.
-    teaching_disposition: New spoken association requires explicit body/reinforcement/closer approval
-    documentary_intent: Brochure describes temporary analgesia/de-tuning of new non-chronic discomfort
-      and lists activation plus RELEASE commands.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: 'Temporary localized numbing of selected new discomfort: close
+      eyes, focus area, inhale/hold/complete cue/exhale. Selected-area Plus Release
+      restores sensitivity; learning remains. Clarify restriction/release metadata
+      separately; do not equate this with Comfort.'
+    pair_reason: NUMB names the documented temporary de-tuning intent precisely. COMFORT
+      QUICK would change scope and overlap Comfort. Make the temporary application
+      and its explicit PLUS-RELEASE procedure clear before preferring a new name.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. NUMB names the documented temporary de-tuning intent precisely.
+      COMFORT QUICK would change scope and overlap Comfort. Make the temporary application
+      and its explicit PLUS-RELEASE procedure clear before preferring a new name.
+    teaching_disposition: New spoken association requires explicit body/reinforcement/closer
+      approval
+    documentary_intent: Brochure describes temporary analgesia/de-tuning of new non-chronic
+      discomfort and lists activation plus RELEASE commands.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes; generated
-        references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b74e76e6121ca0717551e7953edce68b1576ae2a63b9f32ad200b497f9713fe4
+  contract_sha256: d5522abbdd898ef64f61eddf2d8a56ff2f27546268eebf3e972d4aa3e79f7a05
 record_metadata:
   legacy:
     command_ids:
@@ -496,8 +458,8 @@ record_metadata:
     legacy_commands:
     - PLUS-GO NUMB, GO NUMB
     - PLUS-RELEASE
-    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is
-      historical lookup. Existing controls remain unchanged.
+    rationale: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded
+      primary wording is historical lookup. Existing controls remain unchanged.
     state: historical-lookup
   historical_lookup:
   - text: Short Fix
@@ -512,14 +474,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -564,11 +527,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup. Preserve
-      procedures, controls, semantics, provenance and separately flagged metadata questions. Later user
-      instruction releases the draft-pilot freeze; pilot bindings follow current approved titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: ef20c740e8c508d8ee4588c42ebde9bb71b85fe05111fa31fef6487e443e3984
     status: accepted
     previous_values_sha256: 345dd6aa98842596de18dd8cdeb700688195d2ecf9e073041a69018e6af1b063
@@ -582,18 +547,20 @@ record_metadata:
     current_resolved_text_sha256:
       hplus.function.ocf-bod-015.function-body: 83d9aa9359998eada25118ddf0885769f6653d7e73678e4990712fcdeb1190c9
       hplus.function.ocf-bod-015.closer: d91f94a7c018074395f5fa500f0e8d5d3cf06fda21ed622209981aa9a245510b
-    review_note: One body and one closer primary-cue substitution; Short Fix body reference and exercise
-      sign-off become Temporary Numbing. Retain Short Fix and repeated legacy primary wording as historical
-      lookup. Keep active PLUS-RELEASE / Plus Release, procedures, temporary response, lasting learned
-      ability, existing restriction and reconstruction provenance unchanged.
-    approval_response: 1. i approve   but can you walk me through asking for each one all at once before
-      you make the changes then do the code changes after were done iterating through all of the stuff
-      so i don't have to keep watching and waiting between each one?
+    review_note: One body and one closer primary-cue substitution; Short Fix body
+      reference and exercise sign-off become Temporary Numbing. Retain Short Fix and
+      repeated legacy primary wording as historical lookup. Keep active PLUS-RELEASE
+      / Plus Release, procedures, temporary response, lasting learned ability, existing
+      restriction and reconstruction provenance unchanged.
+    approval_response: 1. i approve   but can you walk me through asking for each
+      one all at once before you make the changes then do the code changes after were
+      done iterating through all of the stuff so i don't have to keep watching and
+      waiting between each one?
     review_position: 3
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -814,8 +781,8 @@ content:
       source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish absence
-      of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: unverified
       completeness: pending-source-review
@@ -857,8 +824,8 @@ content:
       - restored-sensitivity-after-release-inference
       family: temporary-distress-signal-reduction
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime state
-        binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -868,8 +835,9 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 45
           status: inferred
-          summary: Known command/purpose metadata is paired in the mockup with a proposed internal cue/breath
-            procedure; the exact historical association wording/method is unknown.
+          summary: Known command/purpose metadata is paired in the mockup with a proposed
+            internal cue/breath procedure; the exact historical association wording/method
+            is unknown.
         closer:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -878,8 +846,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 125
           status: inferred
-          summary: Historical closer unknown; annotated mockup borrows remember/use, access close and
-            return shell from related transcripts.
+          summary: Historical closer unknown; annotated mockup borrows remember/use,
+            access close and return shell from related transcripts.
         consolidation:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -888,8 +856,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 125
           status: inferred
-          summary: Historical target consolidation unknown; proposed sleep/ambient segment is related-function
-            inference, never measured target timing.
+          summary: Historical target consolidation unknown; proposed sleep/ambient
+            segment is related-function inference, never measured target timing.
         conversion:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -898,9 +866,9 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 1
           status: inferred
-          summary: Original OCF design is still required; do not convert mockup expression by synonyms
-            or adopt unsupported mechanisms. Any safer/material reframing needs explicit human review,
-            not historical promotion.
+          summary: Original OCF design is still required; do not convert mockup expression
+            by synonyms or adopt unsupported mechanisms. Any safer/material reframing
+            needs explicit human review, not historical promotion.
         future_use:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -915,8 +883,8 @@ content:
             page: 2
             source_sha256: ad546da097973b21ab42fc58e5e31e4a2a5aadfb7a364ea70881b3f9a316a4d1
           status: inferred
-          summary: Immediate temporary use for new/non-chronic signals; exact localization/breath sequence
-            remains reconstructed.
+          summary: Immediate temporary use for new/non-chronic signals; exact localization/breath
+            sequence remains reconstructed.
         handoff:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -925,7 +893,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 125
           status: inferred
-          summary: Historical handoff unknown; mockup's waking return/reminder is inferred, not recovered.
+          summary: Historical handoff unknown; mockup's waking return/reminder is
+            inferred, not recovered.
         identity:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -940,8 +909,8 @@ content:
             page: 2
             source_sha256: ad546da097973b21ab42fc58e5e31e4a2a5aadfb7a364ea70881b3f9a316a4d1
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained; source
-            cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -950,7 +919,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 36
           status: inferred
-          summary: select-new-discomfort-location; proposed-breath-and-go-numb-cue; proposed-reduced-signal-importance
+          summary: select-new-discomfort-location; proposed-breath-and-go-numb-cue;
+            proposed-reduced-signal-importance
         opener:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -959,8 +929,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 1
           status: inferred
-          summary: Historical opener unknown; mockup supplies purpose orientation and related-function
-            learning shell as structural inference.
+          summary: Historical opener unknown; mockup supplies purpose orientation
+            and related-function learning shell as structural inference.
         preparation:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -975,9 +945,10 @@ content:
             page: 2
             source_sha256: ad546da097973b21ab42fc58e5e31e4a2a5aadfb7a364ea70881b3f9a316a4d1
           status: supported
-          summary: Brochure gives prior Preparation Exercise or prior H-PLUS learning, a quiet supported
-            position, soft stereo/headphone listening and next-day target exercise. Exact lost narration
-            procedure is unknown; mockup shell is related-function inference.
+          summary: Brochure gives prior Preparation Exercise or prior H-PLUS learning,
+            a quiet supported position, soft stereo/headphone listening and next-day
+            target exercise. Exact lost narration procedure is unknown; mockup shell
+            is related-function inference.
         provenance:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -992,12 +963,13 @@ content:
             page: 2
             source_sha256: ad546da097973b21ab42fc58e5e31e4a2a5aadfb7a364ea70881b3f9a316a4d1
           status: inferred
-          summary: Complete available reconstructed_mockup text inspected; shared representations are
-            not independent corroboration. Source accuracy/authentication remains unresolved. Annotated
-            VERIFIED labels are reconstruction-author assertions, not independent authentication. Catalogue
-            purpose/command/use limits and proposed mockup operations are separate evidence axes. Missing
-            historical operations remain unknown. Both brochure pages inspected separately; catalogue
-            assertions are documentary evidence, not recovered audio instructions.
+          summary: Complete available reconstructed_mockup text inspected; shared
+            representations are not independent corroboration. Source accuracy/authentication
+            remains unresolved. Annotated VERIFIED labels are reconstruction-author
+            assertions, not independent authentication. Catalogue purpose/command/use
+            limits and proposed mockup operations are separate evidence axes. Missing
+            historical operations remain unknown. Both brochure pages inspected separately;
+            catalogue assertions are documentary evidence, not recovered audio instructions.
         purpose:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -1012,8 +984,8 @@ content:
             page: 2
             source_sha256: ad546da097973b21ab42fc58e5e31e4a2a5aadfb7a364ea70881b3f9a316a4d1
           status: supported
-          summary: Brochure describes temporary analgesia/de-tuning of new non-chronic discomfort and
-            lists activation plus RELEASE commands.
+          summary: Brochure describes temporary analgesia/de-tuning of new non-chronic
+            discomfort and lists activation plus RELEASE commands.
         rehearsal:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -1022,10 +994,11 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Annotated
-            VERIFIED labels are reconstruction-author assertions, not independent authentication. Catalogue
-            purpose/command/use limits and proposed mockup operations are separate evidence axes. Missing
-            historical operations remain unknown.
+          summary: Investigated the full available source; this operation is not established.
+            Annotated VERIFIED labels are reconstruction-author assertions, not independent
+            authentication. Catalogue purpose/command/use limits and proposed mockup
+            operations are separate evidence axes. Missing historical operations remain
+            unknown.
         safety_claims:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -1050,8 +1023,9 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 1
           status: inferred
-          summary: Historical target recording's exact state sequence remains unknown. Mockup imports
-            ten/eleven/ten/sleep/waking grammar from surviving Hearing/Seeing, not recovered target audio.
+          summary: Historical target recording's exact state sequence remains unknown.
+            Mockup imports ten/eleven/ten/sleep/waking grammar from surviving Hearing/Seeing,
+            not recovered target audio.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
@@ -1060,8 +1034,8 @@ content:
             source_sha256: 74c0e454c93b9633f2d6ee65d42db44bac0ccf99198f8733c49e9d31be4807ed
             start_line: 90
           status: inferred
-          summary: Brochure lists RELEASE; exact selection/return procedure is inferred using Release
-            research, not recovered Short Fix narration.
+          summary: Brochure lists RELEASE; exact selection/return procedure is inferred
+            using Release research, not recovered Short Fix narration.
       source_extent:
         content_group_sha256: 6d4063d3171051f524453a2a88536acaae6520025063e0c05c459c41d5574d0e
         end_line: 129
@@ -1143,11 +1117,12 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Annotated VERIFIED labels are reconstruction-author assertions, not independent authentication.
-      Catalogue purpose/command/use limits and proposed mockup operations are separate evidence axes.
-      Missing historical operations remain unknown.
-    - Original OCF design is still required; do not convert mockup expression by synonyms or adopt unsupported
-      mechanisms. Any safer/material reframing needs explicit human review, not historical promotion.
+    - Annotated VERIFIED labels are reconstruction-author assertions, not independent
+      authentication. Catalogue purpose/command/use limits and proposed mockup operations
+      are separate evidence axes. Missing historical operations remain unknown.
+    - Original OCF design is still required; do not convert mockup expression by synonyms
+      or adopt unsupported mechanisms. Any safer/material reframing needs explicit
+      human review, not historical promotion.
     states:
       preferred: []
       required: []

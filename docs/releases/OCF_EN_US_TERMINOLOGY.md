@@ -7,7 +7,7 @@ This is a reviewed source-English terminology sheet, not a completed translation
 Title: Automatic Action. Title status: canonical.
 Display: `PLUS-AUTOMATE`. Complete speech: **Plus Automate**.
 
-Automates a desired way of being so it runs without active effort.
+Turn learned skills and actions into smooth, natural habits that require less conscious effort while remaining under your control.
 
 Translator context: Canonical locale function resource.
 
@@ -18,7 +18,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Brain Flow. Title status: canonical.
 Display: `PLUS-BRAIN FLOW`. Complete speech: **Plus Brain Flow**.
 
-Supports balanced brain and neck circulation and maintenance, with conscious reinforcement when desired.
+Strengthens healthy circulation and natural maintenance throughout the brain and blood vessels in the neck, supporting mental clarity, sharper thinking, and concentration, with conscious reinforcement when desired.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -29,7 +29,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Comfort. Title status: canonical.
 Display: `PLUS-COMFORT`. Complete speech: **Plus Comfort**.
 
-Felt-discomfort support for self-directed comfort; activation cue PLUS-COMFORT.
+Eases physical discomfort in a selected area of the body.
 
 Translator context: User approved Comfort / PLUS-COMFORT / Plus Comfort in OCF-EDITORIAL-TITLE-CUES-002. Numeric wording remains historical lookup only; no bridge lesson is added.
 
@@ -40,7 +40,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Detox. Title status: canonical.
 Display: `PLUS-DETOX`. Complete speech: **Plus Detox**.
 
-Supports the body's self-regulating cleansing, renewal, and maintenance, with conscious reinforcement when desired.
+Supports the body's natural cleansing, renewal, and maintenance processes, with conscious reinforcement when desired.
 
 Translator context: Former primary vocabulary is discovery-only under OCF-EDITORIAL-TITLE-CUES-001; secondary operational commands remain unchanged.
 
@@ -62,7 +62,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Heart Flow. Title status: canonical.
 Display: `PLUS-HEART-FLOW`. Complete speech: **Plus Heart Flow**.
 
-Self-directed wellness practice supporting a felt sense of calm, steady heart function.
+Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with conscious reinforcement when desired.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -73,7 +73,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Blood Pressure Balance. Title status: canonical.
 Display: `PLUS-BALANCE BLOOD PRESSURE`. Complete speech: **Plus Balance Blood Pressure**.
 
-Legacy practice associated with blood-pressure balance. Not a treatment and not a substitute for medical care.
+Supports healthy blood pressure regulation, coordinated heart and blood vessel function, and natural cardiovascular balance that adapts to the body's changing needs, with conscious reinforcement when desired.
 
 Translator context: Canonical locale function resource.
 
@@ -84,7 +84,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Immune Readiness. Title status: canonical.
 Display: `PLUS-IMMUNE READY`. Complete speech: **Plus Immune Ready**.
 
-Supports a self-directed practice of immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
+Supports immune surveillance, coordinated protective responses, immune memory, protection of healthy tissue, and return to balance after a threat is controlled.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -106,7 +106,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Hormonal Transitions. Title status: canonical.
 Display: `PLUS-HORMONE BALANCE`. Complete speech: **Plus Hormone Balance**.
 
-Supports graceful passage through internal transitions.
+Supports natural hormonal regulation and adaptation throughout life's hormonal transitions, promoting physical comfort, emotional stability, mental clarity, and overall balance, with conscious reinforcement when desired.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -117,7 +117,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Body Tune-Up. Title status: canonical.
 Display: `PLUS-TUNE-UP`. Complete speech: **Plus Tune Up**.
 
-A general self-directed balance-and-heal tune-up practice.
+Strengthens the body's natural processes of healing, repair, regeneration, renewal, and maintenance throughout the entire body, with optional reinforcement of specific areas.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -128,7 +128,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Regenerate. Title status: canonical.
 Display: `PLUS-REGENERATE`. Complete speech: **Plus Regenerate**.
 
-Supports a felt sense of body-wide regeneration and renewal; activation cue PLUS-REGENERATE.
+Supports targeted repair, regeneration, and reconstruction of a specifically selected body part, aiming to restore damaged, weakened, or missing structures toward their healthy form and function.
 
 Translator context: User approved Regenerate / PLUS-REGENERATE / Plus Regenerate in OCF-EDITORIAL-TITLE-CUES-003. Build Live wording remains historical lookup only; no bridge lesson is added.
 
@@ -139,7 +139,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Temporary Numbing. Title status: canonical.
 Display: `PLUS-NUMB`. Complete speech: **Plus Numb**.
 
-Legacy rapid numbing practice (GO NUMB) with a release; activation cue PLUS-NUMB.
+Temporarily reduces discomfort and sensitivity in a selected body area using Plus Numb, with Plus Release restoring ordinary sensitivity when desired. The learned ability remains available for future use.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -150,7 +150,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Information Access. Title status: canonical.
 Display: `PLUS-ACCESS INFO`. Complete speech: **Plus Access Info**.
 
-Accesses intuition, memory, and inner knowledge on demand.
+Brings information, memories, knowledge, and understanding gathered through learning and experience into conscious awareness, while supporting automatic organization and connection of information.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -161,7 +161,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Mental Calculation. Title status: canonical.
 Display: `PLUS-CALCULATE`. Complete speech: **Plus Calculate**.
 
-Speeds mental arithmetic and number processing.
+Strengthens numerical understanding, mathematical memory, calculation speed and accuracy, pattern recognition, and problem-solving across basic and advanced mathematics, with conscious reinforcement when desired.
 
 Translator context: Canonical locale function resource.
 
@@ -348,7 +348,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Coordination. Title status: canonical.
 Display: `PLUS-COORDINATE`. Complete speech: **Plus Coordinate**.
 
-Aligns and smooths internal rhythms toward feeling faster and steadier.
+Smoother, faster, more precise movement through improved coordination of the mind, nervous system, and muscles.
 
 Translator context: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording remains historical lookup.
 
@@ -425,7 +425,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Restorative Sleep. Title status: canonical.
 Display: `PLUS-RESTORATIVE SLEEP`. Complete speech: **Plus Restorative Sleep**.
 
-Supports deep, restorative rest and recovery; activation cue PLUS-RESTORATIVE SLEEP.
+Supports deep, restorative sleep and the body's natural processes of healing, repair, renewal, and regeneration, with optional attention to specific areas.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 
@@ -436,7 +436,7 @@ Review: English primary cue approved and implemented. Preserve controls/procedur
 Title: Sleep. Title status: canonical.
 Display: `PLUS-SLEEP`. Complete speech: **Plus Sleep**.
 
-Induces a felt, deliberate movement into sleep onset; activation cue PLUS-SLEEP.
+Supports entering natural, restful sleep through relaxation and a simple mental command, with the intention of awakening at the desired time.
 
 Translator context: Primary wording approved in OCF-EDITORIAL-TITLE-CUES-004; superseded primary wording is historical lookup. Existing controls remain unchanged.
 

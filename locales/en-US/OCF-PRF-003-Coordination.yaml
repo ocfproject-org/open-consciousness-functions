@@ -7,7 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Aligns and smooths internal rhythms toward feeling faster and steadier.
+  text: Smoother, faster, more precise movement through improved coordination of the
+    mind, nervous system, and muscles.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -47,41 +48,32 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-prf-003.function-body
-      before_steps:
-      - id: select-movement-pattern
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-movement-pattern
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
-      text: Inhale.
-      status: canonical
+      text: Take a deep breath in.
+      status: reviewed
       version: 1.0.0
   - id: hold
     operation: hold-breath
     instruction:
-      text: Hold your breath.
-      status: canonical
+      text: Gently hold your breath.
+      status: reviewed
       version: 1.0.0
   - id: command
     operation: think-or-say-command
     instruction:
-      text: Think or say the command.
-      status: canonical
+      text: While holding your breath, silently say the command to yourself.
+      status: reviewed
       version: 1.0.0
   - id: exhale
     operation: exhale
     instruction:
-      text: Exhale.
-      status: canonical
+      text: Then slowly exhale through your mouth.
+      status: reviewed
       version: 1.0.0
 secondary_commands: []
 tags:
@@ -97,7 +89,8 @@ tags:
 common_uses:
 - text: Exploring a felt sense of smooth, coordinated movement.
   status: draft
-- text: Preparing attentive movement practice while respecting physical limits and safe conditions.
+- text: Preparing attentive movement practice while respecting physical limits and
+    safe conditions.
   status: draft
 relationships:
   related_functions: []
@@ -105,8 +98,8 @@ relationships:
   - function_id: OCF-PRF-004
     description_key: relationships.rel-prf003-prf004.description
     description:
-      text: Whole-body coordination and attention to lighter, quieter steps offer separate movement
-        intentions; both remain subject to physical limits.
+      text: Whole-body coordination and attention to lighter, quieter steps offer
+        separate movement intentions; both remain subject to physical limits.
       status: reviewed
       version: 1.0.0
 changelog:
@@ -116,13 +109,9 @@ entries:
   hplus.function.ocf-prf-003.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will strengthen the synchronization
-
-      of your mind, nervous system, and muscles,
-
-      allowing your body to move smoothly, rapidly,
-
-      precisely, and with natural ease.'
+    text: 'This OCF exercise will strengthen the coordination of your mind, nervous
+      system, and muscles, allowing your body to move smoothly, rapidly, precisely,
+      and with natural ease.'
   hplus.function.ocf-prf-003.function-body:
     status: reviewed
     version: 1.3.0
@@ -130,95 +119,62 @@ entries:
       function_id: OCF-PRF-003
       allowed:
       - cue.primary
-    text: 'Beginning now, and from this moment forward,
-
-      your mind, nervous system, and muscles
-
-      will work together in ever greater harmony.
+    text: 'From this moment forward, let your mind, nervous system, and muscles work
+      together in increasingly smooth and precise coordination.
 
 
-      Signals throughout your nervous system
-
-      will travel smoothly, evenly, and rapidly.
-
-      Your muscles will respond in precise coordination,
-
-      producing the movement you intend
-
-      at exactly the time it is needed.
+      Signals throughout your nervous system travel quickly and efficiently, allowing
+      your muscles to respond accurately and at the right moment.
 
 
-      Your entire body will move with greater balance,
-
-      grace, accuracy, and natural ease.
-
-      Each motion will flow into the next,
-
-      without unnecessary hesitation, tension, or effort.
+      Your entire body moves with greater balance, control, accuracy, and natural
+      ease.
 
 
-      Your awareness of your body''s position,
-
-      movement, and timing will become clearer.
-
-      Your hands, feet, eyes, and entire physical system
-
-      will coordinate naturally as one.
+      Each movement flows smoothly into the next, without unnecessary hesitation,
+      tension, or effort.
 
 
-      When quick movement is needed,
-
-      your responses will be swift and accurate.
-
-      When careful control is needed,
-
-      your movements will be steady and precise.
-
-      Speed and smoothness will work together,
-
-      each in harmony with your intention.
+      Your hands, feet, eyes, and muscles coordinate naturally, supporting accurate
+      timing and effortless movement.
 
 
-      This improved coordination will become
-
-      an increasingly natural part of your daily life,
-
-      growing stronger through movement and experience.
-
-      You will not need to consciously manage
-
-      each separate muscle or action.
-
-      Your total self will coordinate them together.
+      When quick action is needed, your responses become faster and more precise.
 
 
-      Whenever you wish to strengthen
-
-      this synchronization even further,
-
-      inhale deeply and gently hold your breath.
+      When careful control is needed, your movements remain steady, balanced, and
+      accurate.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Your mind and body work together automatically, allowing you to move without
+      consciously directing every muscle or action.
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      This pattern of improved coordination is permanently established within you.
 
 
-      Your entire physical system will immediately
-
-      come into clearer, smoother coordination,
-
-      responding with effortless speed and control.
+      Your natural balance, timing, and movement precision continue strengthening
+      through everyday activity and experience.
 
 
-      Each time you use {{ cue.primary }},
+      Whenever you wish to reinforce this coordination, take a deep breath in and
+      gently hold it.
 
-      this natural harmony of mind and body
 
-      will become easier, stronger, and more effective.'
+      While holding your breath, silently say to yourself,
+
+      "{{ cue.primary }}."
+
+
+      Then slowly exhale through your mouth.
+
+
+      As you exhale, let your entire physical system work together in smoother, faster,
+      and more accurate coordination.
+
+
+      The more you use this command, the easier and more effective this reinforcement
+      becomes.'
   hplus.function.ocf-prf-003.closer:
     status: reviewed
     version: 1.3.0
@@ -226,21 +182,16 @@ entries:
       function_id: OCF-PRF-003
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to increase
-
-      the speed, smoothness, and coordination
-
-      of your movement, inhale deeply
-
-      and hold your breath.
+    text: 'Remember, whenever you wish to reinforce the speed, smoothness, balance,
+      and precision of your movements, inhale deeply and gently hold your breath.
 
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Silently say to yourself,
+
+      "{{ cue.primary }}."
 
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
+      Then slowly exhale through your mouth.
 
 
       This concludes your OCF Coordination exercise.'
@@ -260,13 +211,13 @@ lifecycle:
   activation: manual
   persistence: permanent
   release:
-    command: null
+    command:
     required: false
   trigger_conditions: []
 audio:
   background_audio:
     engine: farfield
-    preset: null
+    preset:
     strategy: optional
   implementation_status: not-started
   script_status: approved
@@ -299,32 +250,35 @@ editorial:
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Coordination
     recommended_primary_cue: PLUS-SMOOTH, FAST
-    prior_review_note: Approve paired title/cue, scope clarification and explicit body/reinforcement/closer
-      association plan; approve controls together. No narration replacement text selected.
-    contextual_review: Increasing mind/nervous-system/muscle coordination, balance, precision and
-      timing; optional inhale/hold/cue/candle-like reinforcement. Smooth and Fast are one cue; steady
-      precision, not indiscriminate speed.
-    pair_reason: The paired positive outcomes fit motor coordination. Prefer a clearer title/purpose
-      over changing a strong meaningful cue merely for uniformity.
-    title_cue_relationship_or_exception: Title and cue name the same selected operation; a concise
-      verb, outcome or contextual mode can reinforce an umbrella title without copying it. The paired
-      positive outcomes fit motor coordination. Prefer a clearer title/purpose over changing a strong
-      meaningful cue merely for uniformity.
+    prior_review_note: Approve paired title/cue, scope clarification and explicit
+      body/reinforcement/closer association plan; approve controls together. No narration
+      replacement text selected.
+    contextual_review: Increasing mind/nervous-system/muscle coordination, balance,
+      precision and timing; optional inhale/hold/cue/candle-like reinforcement. Smooth
+      and Fast are one cue; steady precision, not indiscriminate speed.
+    pair_reason: The paired positive outcomes fit motor coordination. Prefer a clearer
+      title/purpose over changing a strong meaningful cue merely for uniformity.
+    title_cue_relationship_or_exception: Title and cue name the same selected operation;
+      a concise verb, outcome or contextual mode can reinforce an umbrella title without
+      copying it. The paired positive outcomes fit motor coordination. Prefer a clearer
+      title/purpose over changing a strong meaningful cue merely for uniformity.
     teaching_disposition: Preserve complete taught cue; metadata/title alignment only
     documentary_intent: Claimed faster/smoother body-mind and nerve-muscle coordination.
     alternatives: []
     technical_impact:
-      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS and measured
-        timing; do not rewrite old receipts/immutable locks.
-      generated: Regenerate indexes, command guides and plans only after approved active changes;
-        generated references are current metadata, not proof of taught speech.
-      recordings: Private manifests/stems not inspected. Review event/resource/unit mappings and every
-        composed nonspoken marker; preserve originals. No recording relabeling.
-      rendered_transcripts: No new render. Source composition resolved without engines; recorded speech
-        and final rendered transcripts unverified.
+      cache: Any changed text/locale/voice needs matching fresh fingerprints, recordings/TTS
+        and measured timing; do not rewrite old receipts/immutable locks.
+      generated: Regenerate indexes, command guides and plans only after approved
+        active changes; generated references are current metadata, not proof of taught
+        speech.
+      recordings: Private manifests/stems not inspected. Review event/resource/unit
+        mappings and every composed nonspoken marker; preserve originals. No recording
+        relabeling.
+      rendered_transcripts: No new render. Source composition resolved without engines;
+        recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 6a70020ba7777aee94fd69f61028477d3ff645de8ac581ed6176bfbd26ae4271
+  contract_sha256: a6ed8be0fa85331958f0da48bdbfde04843fca18634d8f66d706c490b38b10ac
 record_metadata:
   legacy:
     command_ids:
@@ -342,8 +296,8 @@ record_metadata:
     - Synchronizing
   compatibility:
     state: historical-lookup
-    rationale: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded wording
-      remains historical lookup.
+    rationale: Approved presentation successor OCF-COMMAND-SIMPLIFICATION-001; superseded
+      wording remains historical lookup.
   historical_lookup:
   - text: Synchronizing
     kind: former-title
@@ -361,14 +315,15 @@ record_metadata:
     implementation: specification-only
     maturity: legacy-mapped
   sources:
-  - locator: null
+  - locator:
     title: OCF Bootstrap Specification — Legacy Function Index
     type: legacy-reference
-    url: null
+    url:
   claims:
     intended_effects: []
     prohibited_claims:
-    - No guaranteed psychological, physiological, medical, paranormal, or behavioral result is claimed.
+    - No guaranteed psychological, physiological, medical, paranormal, or behavioral
+      result is claimed.
   attribution:
     ocf_contributors: []
     original_authors: []
@@ -397,12 +352,13 @@ record_metadata:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
     source_commit: 85ba92896c2d6a2cea7b5668e49196838dd3ec2b
-    scope: Only approved titles, primary cues, their teaching associations and historical lookup.
-      Preserve procedures, controls, semantics, provenance and separately flagged metadata questions.
-      Later user instruction releases the draft-pilot freeze; pilot bindings follow current approved
-      titles and cues.
-    decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
-      request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
+    scope: Only approved titles, primary cues, their teaching associations and historical
+      lookup. Preserve procedures, controls, semantics, provenance and separately
+      flagged metadata questions. Later user instruction releases the draft-pilot
+      freeze; pilot bindings follow current approved titles and cues.
+    decision_source: Explicit one-function reviews 3–32, collected before implementation
+      at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
+      already published.
     source_row_sha256: 84bc6c3217800482a75d78f51ed40d67173a378fc0e801f9c34c4586cc25216e
     status: accepted
     previous_values_sha256: e867eeb684536265da7bf776c9ef4b63055b291c62577fe5407c6f9e402e6b96
@@ -413,19 +369,20 @@ record_metadata:
       hplus.function.ocf-prf-003.closer: 9af3232852fba1dd3116d16ba69c2e18832736d98770d474a95746430b9d4e68
     current_resolved_text_sha256:
       hplus.function.ocf-prf-003.closer: 9089cdaf69de706439c62972e923cbe1912d2d5b4721a36056d545adfecbc254
-    review_note: Change title from Synchronizing to Coordination and update exercise sign-off. Keep
-      display and spoken cue unchanged. Preserve automatic everyday improvement, optional conscious
-      reinforcement, mind/nervous-system/muscle coordination, balance, precision, timing and inhale/hold/cue/candle-like
-      exhale. Retain Synchronizing as historical lookup. Smooth Fast remains one complete cue, not
-      separate modes. Preserve quick responses when needed and steady precision when careful control
+    review_note: Change title from Synchronizing to Coordination and update exercise
+      sign-off. Keep display and spoken cue unchanged. Preserve automatic everyday
+      improvement, optional conscious reinforcement, mind/nervous-system/muscle coordination,
+      balance, precision, timing and inhale/hold/cue/candle-like exhale. Retain Synchronizing
+      as historical lookup. Smooth Fast remains one complete cue, not separate modes.
+      Preserve quick responses when needed and steady precision when careful control
       is needed, with speed coordinated with intention and accuracy.
     approval_response: '1'
     review_position: 27
   - id: OCF-COMMAND-SIMPLIFICATION-001
     kind: approved-command-simplification
     source_commit: 8ec5b0395c7a5c05fa629d64297d3bf048b097f9
-    scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle,
-      procedure and audio settings are unchanged.
+    scope: Explicitly approved command title/display/spoken substitutions only; commands,
+      lifecycle, procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
     source_row_sha256: 64afb85258b9e7f9341d166e0ed971fd31e91840a02c568a51793ae971b8966e
     status: accepted
@@ -434,22 +391,23 @@ record_metadata:
     changed_narration_keys: []
     previous_resolved_text_sha256: {}
     current_resolved_text_sha256: {}
-    review_note: Narration fingerprints and synthesis cache identity follow the approved canonical
-      wording; listening and release approval remain false.
+    review_note: Narration fingerprints and synthesis cache identity follow the approved
+      canonical wording; listening and release approval remain false.
   - id: REL-PRF003-PRF004
     kind: approved-relationship
     source_commit: 0e7ca1199969f41f282b8cff5a5fb0ee459fdb46
-    scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
-    decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
-      2026-11-10.
+    scope: Optional listener-guide relationship only; no narration, cue, lifecycle
+      or DSP change.
+    decision_source: Explicit owner approval to implement the existing relationship-map
+      suggestions, 2026-11-10.
     source_row_sha256: fd562e2d3ef2b34b26cdb8b3de01f63a2325eca531dcd8a563a36058329a34aa
     current_values_sha256: ec309ce256420581837f40c5fa1da319bb5dc2e4eac5b52eda31d96c1eade937
     status: accepted
-    approval_response: Draft optional suggestions should all be implemented vs being suggestions in
-      the guides/relationship-map.html
-    review_note: 'Original proposal description retained verbatim. Directional optional relationship;
-      no reciprocal approval inferred. Original evidence: [{"field": "description", "function_id":
-      "OCF-PRF-003", "sha256": "56f2f35f08b831873fbaf58aeba4425962dfd125f63abdfbe54cc09eb93a729b"},
+    approval_response: Draft optional suggestions should all be implemented vs being
+      suggestions in the guides/relationship-map.html
+    review_note: 'Original proposal description retained verbatim. Directional optional
+      relationship; no reciprocal approval inferred. Original evidence: [{"field":
+      "description", "function_id": "OCF-PRF-003", "sha256": "56f2f35f08b831873fbaf58aeba4425962dfd125f63abdfbe54cc09eb93a729b"},
       {"field": "description", "function_id": "OCF-PRF-004", "sha256": "a5f87338ce54fdd206623aae7f43f3949599780e756e96400e8911c8e5bc3765"}]'
     relationship_id: REL-PRF003-PRF004
     related_function_id: OCF-PRF-004
@@ -459,7 +417,7 @@ record_metadata:
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
-    duration: null
+    duration:
     narration_resources: []
     session_templates:
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
@@ -647,8 +605,8 @@ content:
       source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
     questions:
     - Source derivatives are not independently authenticated recordings
-    - Keyword candidate locators require full semantic review; absence of a match does not establish
-      absence of an operation
+    - Keyword candidate locators require full semantic review; absence of a match
+      does not establish absence of an operation
     sources:
     - authentication: operator-designated
       completeness: pending-source-review; apparent boundaries do not prove completeness
@@ -697,8 +655,8 @@ content:
       - automatic-whole-system-learning
       family: motor-coordination-intensification
       method: complete-available-source-content-review
-      scope: documentary extraction; not narration approval, historical authentication or runtime
-        state binding
+      scope: documentary extraction; not narration approval, historical authentication
+        or runtime state binding
       sections:
         association:
           locators:
@@ -708,8 +666,9 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 49
           status: supported
-          summary: Deliberate legacy cue paired with selected goal and breathing; canonical variants/aliases
-            are separate identity metadata, not silently changed source speech.
+          summary: Deliberate legacy cue paired with selected goal and breathing;
+            canonical variants/aliases are separate identity metadata, not silently
+            changed source speech.
         closer:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -727,8 +686,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 77
           status: supported
-          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish reinforcement
-            or measured timing.
+          summary: Sleep-to-twenty shell present; repeated ASR numbers do not establish
+            reinforcement or measured timing.
         conversion:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -737,9 +696,10 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 44
           status: inferred
-          summary: Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath
-            holding and automatic whole-system learning need review. Reframing a physical/metaphysical
-            goal is a material choice, not assumed equivalence.
+          summary: Preserve deliberate agency/selection where useful, but guaranteed
+            outcomes, breath holding and automatic whole-system learning need review.
+            Reframing a physical/metaphysical goal is a material choice, not assumed
+            equivalence.
         future_use:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -748,8 +708,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 49
           status: supported
-          summary: Optional cue intensifies asserted ongoing motor coordination; repeated breathing
-            material does not establish a body-movement practice trial.
+          summary: Optional cue intensifies asserted ongoing motor coordination; repeated
+            breathing material does not establish a body-movement practice trial.
         handoff:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -767,8 +727,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 49
           status: supported
-          summary: Canonical/legacy identity, command variants and compatibility metadata retained;
-            source cue association inspected without inventing a new command.
+          summary: Canonical/legacy identity, command variants and compatibility metadata
+            retained; source cue association inspected without inventing a new command.
         main:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -777,8 +737,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 44
           status: supported
-          summary: associate-nerve-and-muscle-signals-with-smooth-movement; inhale-and-hold; issue-smooth-fast-cue;
-            exhale
+          summary: associate-nerve-and-muscle-signals-with-smooth-movement; inhale-and-hold;
+            issue-smooth-fast-cue; exhale
         opener:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -787,8 +747,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 38
           status: supported
-          summary: Orient to the function and establish receptive learning context before the target
-            instruction.
+          summary: Orient to the function and establish receptive learning context
+            before the target instruction.
         preparation:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -797,8 +757,8 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 2
           status: supported
-          summary: Supported uninterrupted relaxation, temporary repository setting-aside and counted
-            ten-state entry where described.
+          summary: Supported uninterrupted relaxation, temporary repository setting-aside
+            and counted ten-state entry where described.
         provenance:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -807,10 +767,10 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 1
           status: supported
-          summary: Complete available source_transcript text inspected; shared representations are
-            not independent corroboration. Source accuracy/authentication remains unresolved. Repeated
-            exhalation material54-66 may be instruction or ASR duplication; no observed performance
-            or verified neurological mechanism.
+          summary: Complete available source_transcript text inspected; shared representations
+            are not independent corroboration. Source accuracy/authentication remains
+            unresolved. Repeated exhalation material54-66 may be instruction or ASR
+            duplication; no observed performance or verified neurological mechanism.
         purpose:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -828,9 +788,9 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 54
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Repeated
-            exhalation material54-66 may be instruction or ASR duplication; no observed performance
-            or verified neurological mechanism.
+          summary: Investigated the full available source; this operation is not established.
+            Repeated exhalation material54-66 may be instruction or ASR duplication;
+            no observed performance or verified neurological mechanism.
         safety_claims:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -839,8 +799,9 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 44
           status: supported
-          summary: persistent-nerve-muscle-improvement; guaranteed-motor-coordination; automatic-whole-system-learning.
-            Claims are classified as source assertions, not accepted OCF mechanisms/outcomes.
+          summary: persistent-nerve-muscle-improvement; guaranteed-motor-coordination;
+            automatic-whole-system-learning. Claims are classified as source assertions,
+            not accepted OCF mechanisms/outcomes.
         state:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -849,8 +810,9 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 38
           status: supported
-          summary: Reference learning shell uses ten preparation, eleven opening, ten close and sleep-to-twenty/waking
-            return where preserved; not runtime OCF state requirements.
+          summary: Reference learning shell uses ten preparation, eleven opening,
+            ten close and sleep-to-twenty/waking return where preserved; not runtime
+            OCF state requirements.
         suspend_cancel_reset:
           locators:
           - content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
@@ -859,9 +821,9 @@ content:
             source_sha256: 9c80709afee191a06538894c6b7b3315e11a6142c2e95e400ccdb48cace1b248
             start_line: 1
           status: unknown
-          summary: Investigated the full available source; this operation is not established. Repeated
-            exhalation material54-66 may be instruction or ASR duplication; no observed performance
-            or verified neurological mechanism.
+          summary: Investigated the full available source; this operation is not established.
+            Repeated exhalation material54-66 may be instruction or ASR duplication;
+            no observed performance or verified neurological mechanism.
       source_extent:
         content_group_sha256: 5a2ed8d9d673dbcc1ac6967d4c026e51f31c1d9d9d7e563be4ad4b4cc01bb236
         end_line: 155
@@ -943,11 +905,11 @@ content:
     metadata_ref: canonical-function-record
     preparation: []
     questions:
-    - Repeated exhalation material54-66 may be instruction or ASR duplication; no observed performance
-      or verified neurological mechanism.
-    - Preserve deliberate agency/selection where useful, but guaranteed outcomes, breath holding and
-      automatic whole-system learning need review. Reframing a physical/metaphysical goal is a material
-      choice, not assumed equivalence.
+    - Repeated exhalation material54-66 may be instruction or ASR duplication; no
+      observed performance or verified neurological mechanism.
+    - Preserve deliberate agency/selection where useful, but guaranteed outcomes,
+      breath holding and automatic whole-system learning need review. Reframing a
+      physical/metaphysical goal is a material choice, not assumed equivalence.
     states:
       preferred: []
       required: []

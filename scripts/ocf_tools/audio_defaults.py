@@ -10,8 +10,8 @@ from pathlib import Path
 from .paths import REPO_ROOT
 from .utils import OCFError, sha256_of_file, write_text_atomic
 
-PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-019"
-BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-020"
+PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-021"
+BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-022"
 BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-001": "1.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-002": "2.0.0",
@@ -31,8 +31,10 @@ BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-016": "16.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-017": "17.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-018": "18.0.0",
-    PREVIOUS_BASELINE_ID: "19.0.0",
-    BASELINE_ID: "20.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-019": "19.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-020": "20.0.0",
+    PREVIOUS_BASELINE_ID: "21.0.0",
+    BASELINE_ID: "22.0.0",
 }
 TEMPLATE_ID = "OCF-TPL-SESSION-HPLUS-LOCKED-007"
 PACING_ID = "OCF-PACING-HPLUS-LOCKED-007"
@@ -95,6 +97,12 @@ def configuration_lock(
             paths.add(path)
     else:
         paths.update(path for path, _data in resources(REPO_ROOT))
+    predecessor_files = {}
+    if baseline_id == BASELINE_ID:
+        predecessor_path = REPO_ROOT / "audio/defaults" / f"{PREVIOUS_BASELINE_ID}.json"
+        predecessor_files = json.loads(predecessor_path.read_text(encoding="utf-8"))["files"]
+        if dependency_names is None:
+            paths.update(REPO_ROOT / name for name in predecessor_files)
     predecessor_hashes = {
         data["function_id"]: digest
         for _path, data in resources(REPO_ROOT)
@@ -103,6 +111,9 @@ def configuration_lock(
 
     def file_hash(path):
         if not path.is_file():
+            previous = predecessor_files.get(path.relative_to(REPO_ROOT).as_posix())
+            if previous:
+                return previous
             identity = re.search(r"OCF-[A-Z]{3}-[0-9]{3}", path.name)
             if identity and identity.group(0) in predecessor_hashes:
                 return predecessor_hashes[identity.group(0)]
