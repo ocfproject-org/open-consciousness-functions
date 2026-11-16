@@ -7,10 +7,12 @@ title:
   status: reviewed
   version: 1.1.0
 description:
-  text: Directs and sustains focused attention.
+  text: 'Strengthen concentration, sustain attention, and reduce distractions.'
   status: canonical
   version: 1.0.0
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-fnd-002.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-002-PRIMARY
   display_cue:
@@ -47,18 +49,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-fnd-002.function-body
-      before_steps:
-      - id: select-attention-target
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-attention-target
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -124,11 +117,8 @@ entries:
   hplus.function.ocf-fnd-002.opener:
     status: reviewed
     version: 1.3.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to focus your attention completely,
-
-      whenever and wherever you choose.'
+    text: |-
+      This OCF exercise will strengthen your ability to focus your attention on whatever you choose, maintaining clear and steady concentration.
   hplus.function.ocf-fnd-002.function-body:
     status: reviewed
     version: 1.3.0
@@ -136,102 +126,31 @@ entries:
       function_id: OCF-FND-002
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to direct
+    text: |-
+      From this moment forward, you have the ability to direct and sustain your attention with greater clarity and concentration.
 
-      and sustain your attention is becoming stronger,
+      Your conscious mind, subconscious mind, physical body, and total self work together to focus your awareness.
 
-      clearer, and more effective.
+      Whenever you wish to concentrate, take a deep breath in and gently hold it.
 
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Whenever you wish to focus completely,
+      Then slowly exhale through your mouth.
 
-      choose the activity, thought, or experience
+      Your attention naturally centers on whatever you are doing or choose to do.
 
-      to which you desire to give your attention.
+      Unnecessary distractions fade, allowing you to concentrate more clearly and steadily.
 
+      Your mind and senses work together to recognize important details and understand what you are experiencing.
 
-      Inhale deeply and gently hold your breath.
+      Information relevant to your current activity becomes easier to recognize, understand, and remember.
 
+      Your concentration remains steady without unnecessary mental strain, naturally following your attention as you move between activities.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      This ability to focus remains permanently available.
 
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      Your mind, body, and senses will immediately
-
-      bring their attention together, directing
-
-      your awareness toward the purpose you have chosen.
-
-
-      Your concentration will become clear,
-
-      steady, and unwavering.
-
-
-      Unnecessary distractions will fade away,
-
-      and your attention will remain naturally
-
-      centered on what matters to you.
-
-
-      You will perceive important details clearly,
-
-      understanding what you see, hear, feel,
-
-      and experience with greater awareness.
-
-
-      The information you attend to will become
-
-      vivid and distinct in your memory,
-
-      ready for clear and accurate recall.
-
-
-      You will remain bright, alert, calm,
-
-      confident, and completely at ease.
-
-
-      From this moment forward, this ability
-
-      to focus your attention is permanently
-
-      available to you whenever you desire.
-
-
-      Once you select your focus, your mind
-
-      will maintain it smoothly and naturally,
-
-      without unnecessary strain or effort.
-
-
-      You remain in complete control,
-
-      able to direct or shift your attention
-
-      whenever you choose.
-
-
-      Each time you use {{ cue.primary }},
-
-      concentration becomes easier, stronger,
-
-      and more effective.
-
-
-      Your natural ability to focus will continue
-
-      improving through every experience,
-
-      becoming an effortless part of your daily life.'
+      Each time you use "{{ cue.primary }}," directing and sustaining your attention becomes easier and more natural.
   hplus.function.ocf-fnd-002.closer:
     status: reviewed
     version: 1.4.0
@@ -239,23 +158,17 @@ entries:
       function_id: OCF-FND-002
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to focus your attention
+    text: |-
+      Remember, whenever you wish to strengthen your concentration, take a deep breath in and gently hold it.
 
-      completely, choose what you desire to concentrate on.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and hold your breath.
+      Your attention naturally focuses on whatever you are doing.
 
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      This concludes your OCF Focus exercise.'
+      This concludes your OCF Focus exercise.
 slug: attention
 classification:
   primary_domain: foundation
@@ -275,6 +188,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-002.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: reference-master
@@ -307,7 +224,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-002
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 7004edcb8ddf6559e33247138b84310605cc714c145783714ba1b819761c6153
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Attention
     recommended_primary_cue: PLUS-FOCUS
@@ -337,7 +253,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: e2b861a6a31850730be4dcb8143033e09db713de217252c191895433183f7dab
 record_metadata:
   legacy:
     command_ids:
@@ -470,7 +385,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-fnd-002-primary.explanation
       display_cue_key: commands.ocf-cmd-fnd-002-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-fnd-002-primary.spoken-cue
-  predecessor_resource_sha256: 14dce1373af20dcf74240f67c98bccaf03311a6861a512fe852659127aaa36ec
   editorial_decisions:
   - id: OCF-COMMAND-SIMPLIFICATION-001
     kind: approved-command-simplification
@@ -478,13 +392,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle,
       procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 64c965b91dfcc60a5586b1a7485f1d870d7970c99f1d80bed69842b0ac923a61
     status: accepted
-    previous_values_sha256: ac7f37cf9cbd541088b755ff0056898641726452a1e80d0628a09b42515375c0
-    current_values_sha256: 5c2e2eab0675a470091eff2eaa9a876798d2845ba64f2c46b477de133a8bdace
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical
       wording; listening and release approval remain false.
   - id: REL-FND002-COG007
@@ -492,9 +401,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: 7ff296ad15201981682266fada6d19460926ed22ab079216ade3367aac9ec520
     status: accepted
-    current_values_sha256: ec9f972b35418bc3adc6dabec61b318906cfe29d4b234e3719df4e9932709411
     review_note: Approved optional relationship remains embedded in the canonical locale resource.
       Evidence provenance and reciprocal approval are retained as metadata.
     approval_response: '1'
@@ -509,8 +416,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 533098efa33295c69fdec583c1adb7934867b8f89d909ab88629b1ea715c1adb
-    current_values_sha256: 093153b190b063065bd9d780750b75e91105634a83a443c20ba2b22bd6b8637e
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

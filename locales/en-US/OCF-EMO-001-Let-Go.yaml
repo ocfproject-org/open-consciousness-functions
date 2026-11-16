@@ -7,10 +7,14 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Releases clinging, tension, or unwanted mental objects.
+  text: 'Release unwanted emotions and emotional tension, restoring calm and clarity.'
   status: canonical
-  version: 1.0.0
-metadata_entries: {}
+  version: 1.0.1
+metadata_entries:
+  functions.ocf-emo-001.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
+  functions.ocf-emo-001.procedure.select-emotion:
+    text: Select the unwanted emotion you wish to release.
 activation:
   command_id: OCF-CMD-EMO-001-PRIMARY
   display_cue:
@@ -47,13 +51,13 @@ activation:
       before_steps:
       - id: select-emotion
         operation: select-intention
-        localization_key: command.procedure.select-intention
+        localization_key: functions.ocf-emo-001.procedure.select-emotion
     relationships: {}
   procedure_steps:
   - id: select-emotion
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Select the unwanted emotion you wish to release.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -106,13 +110,8 @@ entries:
   hplus.function.ocf-emo-001.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to release
-
-      unwanted or interfering emotions whenever
-
-      you choose, restoring calmness, clarity,
-
-      and control over how you feel and respond.'
+    text: |-
+      This OCF exercise will teach you to release unwanted emotions and emotional tension whenever you choose, restoring calm and clarity.
   hplus.function.ocf-emo-001.function-body:
     status: reviewed
     version: 1.2.0
@@ -120,116 +119,33 @@ entries:
       function_id: OCF-EMO-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to release unwanted or interfering emotions whenever you choose.
 
-      to release any unwanted or interfering emotion
+      Your mind and body work together to maintain emotional balance, allowing you to experience emotions without being controlled by them.
 
-      whenever you choose.
+      Whenever an emotion interferes with your peace, clarity, or actions, identify the feeling you wish to release.
 
+      Take a deep breath in and gently hold it.
 
-      Your mind and body are becoming more balanced,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      allowing you to experience your emotions
+      Then slowly exhale through your mouth.
 
-      without being controlled by them.
+      As you exhale, let the unwanted emotion release its hold on you.
 
+      Its intensity fades, allowing you to regain calm, clarity, and freedom in how you respond.
 
-      Whenever an emotion begins to interfere
+      Unnecessary emotional tension releases, while your natural ability to feel, understand, and express emotions remains intact.
 
-      with your peace, clarity, or actions,
+      You retain useful memories and understanding from the experience without continuing to carry the unwanted emotional disturbance.
 
-      simply recognize the feeling
+      Your mind and body naturally return to emotional balance.
 
-      you wish to release.
+      This ability to consciously release unwanted emotions is permanently established within you and remains available whenever you choose.
 
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      As you exhale, the unwanted emotion
-
-      will flow out of you with your breath,
-
-      moving farther and farther away.
-
-
-      Its intensity will immediately diminish,
-
-      fading until it no longer troubles you
-
-      or interferes with your thoughts and actions.
-
-
-      Your body will relax,
-
-      releasing unnecessary tension,
-
-      while your mind remains bright,
-
-      clear, calm, and fully alert.
-
-
-      You will retain any understanding
-
-      or useful lessons from the experience,
-
-      while releasing the emotional disturbance
-
-      that no longer serves you.
-
-
-      Your natural ability to feel,
-
-      understand, and express emotions
-
-      remains clear and complete.
-
-
-      From this moment forward, this ability
-
-      to consciously release interfering emotions
-
-      is permanently established within you.
-
-
-      Your mind and body will naturally
-
-      return to emotional balance
-
-      more quickly and easily.
-
-
-      Whenever you use {{ cue.primary }},
-
-      the chosen emotion will release
-
-      smoothly and completely,
-
-      leaving you calm, confident,
-
-      and in control of your response.
-
-
-      Each time you use this function,
-
-      letting go becomes easier,
-
-      faster, and more effective.
-
-
-      You are free to experience your emotions
-
-      while choosing which feelings
-
-      you wish to release and which to retain.'
+      Each time you use "{{ cue.primary }}," releasing unwanted emotions becomes easier and more natural.
   hplus.function.ocf-emo-001.closer:
     status: reviewed
     version: 1.2.0
@@ -237,22 +153,17 @@ entries:
       function_id: OCF-EMO-001
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to release
+    text: |-
+      Remember, whenever you wish to release an unwanted emotion, first identify the feeling you want to let go.
 
-      an unwanted or interfering emotion,
+      Take a deep breath in and gently hold it.
 
-      inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      This concludes your OCF Let Go exercise.'
+      This concludes your OCF Let Go exercise.
 slug: let-go
 classification:
   primary_domain: emotion
@@ -272,6 +183,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-emo-001.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -304,7 +219,6 @@ editorial:
   - id: OCF-TITLE-CUE-EMO-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: b3fb06e3e0a0c2cc8ed129964a54b217e1ac1029cc7c255cd83f98e45e3a1e3a
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Let Go
     recommended_primary_cue: PLUS-LET GO
@@ -333,7 +247,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 72a39300a86ed2cb22f84bda63e18f44c77fcad339c4f2645890cf1ed4be9993
 record_metadata:
   legacy:
     command_ids:
@@ -385,7 +298,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-emo-001-primary.usage
       purpose_key: functions.ocf-emo-001.purpose
       explanation_key: commands.ocf-cmd-emo-001-primary.explanation
-  predecessor_resource_sha256: 46ac1604fd56a7bb7089e0e8def1eac0a89d80e46e0c421df6004f5995a17cb3
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

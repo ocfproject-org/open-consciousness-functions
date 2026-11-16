@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports steady, coordinated heart function, healthy circulation, and ongoing natural maintenance, with
-    conscious reinforcement when desired.
+  text: |-
+    Improve heart function, circulation, and natural cardiovascular maintenance.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -247,7 +247,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-006
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: b6143aa1892ee6df2565b6ed35cf98915534fba0d134f7f0cdeb5eadf1e8c2a4
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Heart Renewal
     recommended_primary_cue: PLUS-HEART, BETTER, BETTER
@@ -274,7 +273,6 @@ editorial:
         rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 1ec1cc4f61973bb87741ee569474f47f30941188f09463bd649b7ae846d9880f
 record_metadata:
   legacy:
     command_ids:
@@ -357,26 +355,16 @@ record_metadata:
       narration_key: hplus.function.ocf-bod-006.function-body
       relationship: canonical-match
       text: Plus Heart Flow
-  predecessor_resource_sha256: a3a66f0dc363405f51f59d80b75bd26b2250eafaf452192e79f8d345ca268bae
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
     source_commit: 21e63ac6f8bf5a7bce9506f033330df967aa4f97
     scope: Heart primary cue only; committed title and purposes retained. Heart Flow remains tentative.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: fc3d0f5ea8876c3e415b10828e543580febdfa8d718b25aa2c9fdae96f5b0b06
     status: accepted
-    previous_values_sha256: 23f2f07fa47cddc41df9478d00641187f10953825702114cd2b1df935b404a87
-    current_values_sha256: 8667bd793c681eb37ca45984bd588e196599a9e1e463854677184cdb1d0ebf7b
     changed_narration_keys:
     - hplus.function.ocf-bod-006.closer
     - hplus.function.ocf-bod-006.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-006.function-body: 0e3493510b988d50fdace364cbbfeee84997362d85c9aabd566692d8130c4459
-      hplus.function.ocf-bod-006.closer: cdc495b698feff389872bf54ad2150c6d94cf0c19f7e8dab88cd4e1495b7f6cf
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-006.function-body: d17eec8958f44d5e0bf36e53c4ff9f210e617fc564232059f60bf7634e18deb4
-      hplus.function.ocf-bod-006.closer: a582c7c02d135ee31618bc7ff38f995bdcd76b52d4c6de93aa1821e6852af9ad
     review_note: Cue contains Better once. Retain the committed heart title, purpose and scope; Heart Flow is tentative
       and Heart Renewal is rejected.
   - id: OCF-EDITORIAL-TITLE-CUES-004
@@ -387,16 +375,9 @@ record_metadata:
       the draft-pilot freeze; pilot bindings follow current approved titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's request.
       Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: f120696caccb7612ce4371732951898e3faebcab0b7a1cb1d7689075afc0da4b
     status: accepted
-    previous_values_sha256: 2562a2a9f671a116daa44058b2f6857f55b1a29ff976a1397a92ff78a267af8d
-    current_values_sha256: 2ca9d589fecd131c22ad3f603d01c73cbcc204478ce113b2508ed6fbd85a7baf
     changed_narration_keys:
     - hplus.function.ocf-bod-006.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-006.closer: a582c7c02d135ee31618bc7ff38f995bdcd76b52d4c6de93aa1821e6852af9ad
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-006.closer: bf2eecc80f1b0d210b823f072e6b776c975c2eaf8d97c3a3ae9b7e66e8398a41
     review_note: 'Finalize previously tentative title Heart Flow, replacing Heart: Repairs & Maintenance and updating
       exercise sign-off. Keep already-approved display PLUS-HEART-BETTER and spoken Plus Heart Better unchanged;
       do not restore the historical second Better. Preserve full heart muscle, vessel, circulation, rhythm, coordination,
@@ -410,13 +391,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle, procedure and
       audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 70bd6d5faa122f195b914b4567a445cc22358bc16a7d402a1e3e0ed171cd6099
     status: accepted
-    previous_values_sha256: d37a8f86f0f8efe5e1dd57364fe28d82b1dfa90fe1e603cd921832493a5aed28
-    current_values_sha256: 3d16dfd5cd008a9e428c7cf8aa455e48269128f89fbaba48c1f35d889d02e800
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical wording; listening
       and release approval remain false.
   - id: REL-BOD006-BOD002
@@ -424,9 +400,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: 63bea062a3fcaf79ecb3d714362fadf6d03c8fd373de980ca9dc47c33a413960
     status: accepted
-    current_values_sha256: ed123b0eaa76f1490c9730407a16c432814878288fda64880914fdf79398aeb4
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence provenance
       and reciprocal approval are retained as metadata.
     approval_response: '1'

@@ -7,9 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Strengthens healthy circulation and natural maintenance throughout the brain
-    and blood vessels in the neck, supporting mental clarity, sharper thinking, and
-    concentration, with conscious reinforcement when desired.
+  text: |-
+    Improve circulation and natural maintenance throughout the brain and neck blood vessels for clearer thinking and concentration.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -257,7 +256,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: c664886773d2aa5594ea9c32e2704513131842ee7fd100a9d7a311822ab298b3
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Brain Flow
     recommended_primary_cue: PLUS-BRAIN FLOW
@@ -292,7 +290,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 296ef60534a0527b011e51dd452f3e6bddaf135bd1b151b75286701cb1f297c5
 record_metadata:
   legacy:
     command_ids:
@@ -365,7 +362,6 @@ record_metadata:
       narration_key: hplus.function.ocf-bod-001.function-body
       relationship: canonical-match
       text: Plus Brain Flow
-  predecessor_resource_sha256: 5c7a9c6426fd2f4732862adb1246e8d61fe55a908ef9db2e94703e11e6264abd
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
@@ -375,19 +371,10 @@ record_metadata:
       unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration
       task
-    source_row_sha256: 1dc5a5b4dbbb6c22b026f94df6e1c4819369cbc73b940c18b8105c6454cb90cd
     status: accepted
-    previous_values_sha256: 2d477b85ba9559b54e593df3e6cf949219bb16027610fde1cdebbf3dbdcf16bd
-    current_values_sha256: 181908e85f2c2190ca9b0fe2c0658cca124af7f02319930d736ba8e54c754802
     changed_narration_keys:
     - hplus.function.ocf-bod-001.closer
     - hplus.function.ocf-bod-001.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-001.function-body: fc8a62492ef98b2eb1ac02dd5c08aa22926752b81a9e2aecae01815416c933b4
-      hplus.function.ocf-bod-001.closer: a39f6e1adff3d2fa4829cdb03e64fae9034f4e73a82ec6f2b26c94f91a6a6259
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-001.function-body: 525ef208d4409c6c730057f25a44c15fc3a246e4c1626fced60d53801937902b
-      hplus.function.ocf-bod-001.closer: 041a2d1c21a8124692f9b5d16870215b5518d6914b97397778f7ee3812888952
     review_note: Brain/neck circulation support and maintenance; not generic creativity
       or cognitive flow. Preserve targeting and breathing.
   - id: REL-BOD001-BOD002
@@ -397,8 +384,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: c91d2abaac6c60baed772c2f5d58e9ae8f0710b22faac36de254263ac8e6ca9d
-    current_values_sha256: 740fc59be04c3a58af562c1c8c643725b57c0b0031a5c90fc8d042680f1cb471
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

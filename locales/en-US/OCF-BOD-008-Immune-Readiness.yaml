@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports immune surveillance, coordinated protective responses, immune memory,
-    protection of healthy tissue, and return to balance after a threat is controlled.
+  text: |-
+    Improve immune readiness, threat recognition, protective responses, and recovery while preserving healthy tissue.
   status: canonical
   version: 1.0.1
 metadata_entries: {}
@@ -229,7 +229,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-008
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: dfead05c560a9a1545ef5c75aaf1e0cb5ad152d4ffd21798b4f9175d9e987529
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Immune Readiness
     recommended_primary_cue: PLUS-IMMUNE READY
@@ -266,7 +265,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 2d86f21865a8948a28e6d613d9004a2a1a7a4f7371558f1509dff0b1fe81e9da
 record_metadata:
   legacy:
     command_ids:
@@ -339,7 +337,6 @@ record_metadata:
       text: Plus Immune Ready
       narration_key: hplus.function.ocf-bod-008.function-body
       relationship: canonical-match
-  predecessor_resource_sha256: 39083f8f3c8e41ce37965fb9dfbdfcd70494940e5c7e490ff23a46e8990184e3
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -351,19 +348,10 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 94ca45d9e8385aca261b6d9d5e0de05b7b49103c8e84dfd7bd9ed3dfd5f44897
     status: accepted
-    previous_values_sha256: 57d9fd0e9caa7b1469b6b3308117c4c3e59d63f1198391bdc2830e1bd42412fe
-    current_values_sha256: ce050b5af40c97568a83891dd9959a401df1abf6777a1dacf07fc681540164a2
     changed_narration_keys:
     - hplus.function.ocf-bod-008.closer
     - hplus.function.ocf-bod-008.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-008.function-body: 3f49a2f23835d7ad8177c18fa49f37da6436b7222844a67755ff5d7e90bfb81f
-      hplus.function.ocf-bod-008.closer: 5854ee6594d730f541e2fb64e1d415c94aad7b811ce1511dcaba5b92e7340a18
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-008.function-body: 6f857fb22bea3d0e54e0217471828090813db25fe5b5fdbfddb8c4de77ae4fe2
-      hplus.function.ocf-bod-008.closer: c4cddd6226f99f9b74ea2f78e852cc1cd6786b4ac5738a68b61e09c19a7109fd
     review_note: Change title from Immunizing to Immune Readiness and update exercise
       sign-off. Replace two body mentions and one closer mention from Plus Alert Destroy
       to Plus Immune Ready. Preserve immune-specific surveillance, coordinated response,
@@ -378,9 +366,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-008:purpose
     decision_source: Please do
-    source_row_sha256: 2c486fff6a1d2b193a2197464f150c89fd67bfccc154225188c06ca443caf8d9
     status: accepted
-    current_values_sha256: 962e3b69fdf91bd419c0d2091635880185fb7d4629d7a2a88e84ce0b764d25cd
     review_note: 'Immune Readiness: 1'
     approval_response: approve
 content:

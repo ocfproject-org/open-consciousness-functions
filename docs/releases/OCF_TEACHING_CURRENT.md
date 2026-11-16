@@ -1,6 +1,6 @@
 # Current exact-teaching status
 
-Exact current wording and any approval hashes are stored with canonical locale resources. The path-free semantic and narration fixtures verify current approved invariants. Literal teaching is separate from source quotation and historical lookup.
+Canonical locale YAML owns current wording, commands, procedures, and lifecycle. Derived indexes and guides are regenerated from that source; listening and release approval remain separate.
 
 - OCF-AUT-001: `PLUS-AUTOMATE` / Plus Automate; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-BOD-001: `PLUS-BRAIN FLOW` / Plus Brain Flow; metadata match True; Canonical locale resource; missing speech is not inherited..

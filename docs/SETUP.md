@@ -34,6 +34,23 @@ External audio tools remain selected-workflow dependencies reported by doctor.
 After activating the environment, use`python scripts/ocf.py capabilities --json`
 and`doctor --workflow ...`; package installation is documented separately.
 
+## Markdown lint development dependency
+
+Markdown validation uses the repository-pinned `markdownlint-cli2` development
+dependency. Node.js `22.20.0` is selected by `.nvmrc`; install/select that version
+with your Node version manager or the official Node.js installer. From the
+repository root, install the exact locked dependency tree and run the lint target:
+
+```bash
+npm ci --ignore-scripts --no-audit --no-fund
+make lint-markdown
+```
+
+`make lint` runs the same Markdown target. CI also uses `.nvmrc`, `npm ci`, and
+`make lint-markdown`; it does not download an unpinned Markdownlint action.
+If Node/npm or the locked package is missing, the target fails with installation
+instructions rather than silently skipping Markdown validation.
+
 ## Existing local audio environment
 
 OCF does not install Piper, voices, or audio tools during discovery. From the

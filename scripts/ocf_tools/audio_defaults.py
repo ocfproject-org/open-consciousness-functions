@@ -3,15 +3,14 @@
 from __future__ import annotations
 
 import json
-import re
 from copy import deepcopy
 from pathlib import Path
 
 from .paths import REPO_ROOT
 from .utils import OCFError, sha256_of_file, write_text_atomic
 
-PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-021"
-BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-022"
+PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-025"
+BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-026"
 BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-001": "1.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-002": "2.0.0",
@@ -33,8 +32,12 @@ BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-018": "18.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-019": "19.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-020": "20.0.0",
-    PREVIOUS_BASELINE_ID: "21.0.0",
-    BASELINE_ID: "22.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-021": "21.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-022": "22.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-023": "23.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-024": "24.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-025": "25.0.0",
+    BASELINE_ID: "26.0.0",
 }
 TEMPLATE_ID = "OCF-TPL-SESSION-HPLUS-LOCKED-007"
 PACING_ID = "OCF-PACING-HPLUS-LOCKED-007"
@@ -54,10 +57,14 @@ def overlay(parent: dict, child: dict) -> dict:
     return result
 
 
+def _is_engine_dependency(name: str) -> bool:
+    """Audio configuration is locked; editable locale/content YAML is not."""
+    return name.startswith(("audio/templates/", "audio/background/"))
+
+
 def configuration_lock(
     dependency_names: list[str] | None = None, *, baseline_id: str = BASELINE_ID
 ) -> dict:
-    from .function_catalog import resources
     from .semantic_dsp import load_profile
     from .session import load_pacing_profile, load_template
 
@@ -95,32 +102,28 @@ def configuration_lock(
             if Path(name).is_absolute() or not path.is_relative_to(REPO_ROOT):
                 raise OCFError("audio defaults dependency escapes repository")
             paths.add(path)
-    else:
-        paths.update(path for path, _data in resources(REPO_ROOT))
     predecessor_files = {}
+    excluded_predecessor_files: list[str] = []
     if baseline_id == BASELINE_ID:
         predecessor_path = REPO_ROOT / "audio/defaults" / f"{PREVIOUS_BASELINE_ID}.json"
         predecessor_files = json.loads(predecessor_path.read_text(encoding="utf-8"))["files"]
+        excluded_predecessor_files = sorted(
+            name for name in predecessor_files if not _is_engine_dependency(name)
+        )
         if dependency_names is None:
-            paths.update(REPO_ROOT / name for name in predecessor_files)
-    predecessor_hashes = {
-        data["function_id"]: digest
-        for _path, data in resources(REPO_ROOT)
-        if (digest := data.get("record_metadata", {}).get("predecessor_resource_sha256"))
-    }
+            paths.update(
+                REPO_ROOT / name for name in predecessor_files if _is_engine_dependency(name)
+            )
 
     def file_hash(path):
         if not path.is_file():
             previous = predecessor_files.get(path.relative_to(REPO_ROOT).as_posix())
             if previous:
                 return previous
-            identity = re.search(r"OCF-[A-Z]{3}-[0-9]{3}", path.name)
-            if identity and identity.group(0) in predecessor_hashes:
-                return predecessor_hashes[identity.group(0)]
             raise OCFError("locked dependency is missing from the canonical checkout")
         return sha256_of_file(path)
 
-    return {
+    result = {
         "schema_version": "1.0",
         "id": baseline_id,
         "version": BASELINE_VERSIONS[baseline_id],
@@ -140,6 +143,9 @@ def configuration_lock(
             path.relative_to(REPO_ROOT).as_posix(): file_hash(path) for path in sorted(paths)
         },
     }
+    if baseline_id == BASELINE_ID:
+        result["excluded_predecessor_files"] = excluded_predecessor_files
+    return result
 
 
 def check_lock(path: Path = LOCK_PATH) -> dict:
@@ -153,7 +159,14 @@ def check_lock(path: Path = LOCK_PATH) -> dict:
                 encoding="utf-8"
             )
         )
-        if not set(predecessor["files"]).issubset(recorded.get("files", {})):
+        expected_excluded = {
+            name for name in predecessor["files"] if not _is_engine_dependency(name)
+        }
+        excluded = set(recorded.get("excluded_predecessor_files", []))
+        if excluded != expected_excluded:
+            raise OCFError("successor audio defaults exclusions differ from predecessor scope")
+        required = set(predecessor["files"]) - excluded
+        if not required.issubset(recorded.get("files", {})):
             raise OCFError("successor audio defaults must retain all predecessor dependencies")
     # New unrelated functions/locales do not mutate an existing baseline.
     # A change to a locked input still fails exact content verification.

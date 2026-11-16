@@ -42,6 +42,7 @@ def iter_markdown() -> list[Path]:
             if not name.startswith(".")
             and not (root / name).is_symlink()
             and (root / name).relative_to(REPO_ROOT).as_posix() not in excluded
+            and name != "node_modules"
         ]
         files.extend(
             root / name

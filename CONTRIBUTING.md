@@ -16,6 +16,9 @@ Enter complete English speech once in function YAML, retain exact display spelli
 and use declared symbolic references in narration. The wizard does not approve
 new wording. Translate only after per-locale terminology review; no universal
 Plus prefix, English word order or word count is assumed.
+For existing functions, directly edit the canonical locale YAML; no source
+checksum, approval hash, or secondary wording manifest needs manual changes. See
+[canonical editing](docs/CANONICAL_EDITING.md).
 
 ## Easy contributor path
 
@@ -72,7 +75,7 @@ Rules that always apply:
 
 ## Advanced contributor path
 
-Manual YAML editing, schema conformance, and generated-index discipline.
+Manual editing of canonical YAML, schema conformance, and generated-index discipline.
 
 1. **Inspect the schemas first**: `schemas/*.schema.json`.
 2. **Create or edit** the complete localized function record under
@@ -85,14 +88,18 @@ Manual YAML editing, schema conformance, and generated-index discipline.
    English speech.
 3. **Validate**: `python3 scripts/ocf.py validate --all`.
 4. **Regenerate indexes**: `python3 scripts/ocf.py build-index`.
-5. Add or update **tests** in `tests/` and run `python3 -m pytest`.
-6. Open a PR. CI runs validation, tests, lint, and index-freshness checks.
+5. **Regenerate audio session-plan declarations** when function text changes:
+   `python3 scripts/ocf.py audio plan --all --locale en-US`. This does not render audio.
+6. Add or update **behavior/schema tests** in `tests/` and run `python3 -m pytest`.
+7. Open a PR. CI runs validation, tests, lint, and generated-file freshness checks.
 
 ### Hard rules
 
 - **Never hand-edit generated files** (`FUNCTION_INDEX.md`,
   `function-index.*`, `legacy/hplus-command-map.*`, `docs/COMMAND_REVIEW.md`,
   and the matrices in `docs/`). Run `build-index`.
+- **Do not maintain source-text checksums by hand.** Canonical YAML is current
+  authority; generated fingerprints and plan freshness derive from it.
 - **Never fabricate source details.** Unknown fields stay
   `pending-source-review` / `null` / `[]`.
 - **Never delete or rewrite legacy mappings.** They are research metadata.
@@ -187,13 +194,21 @@ See `docs/FUNCTION_LIFECYCLE.md` and `docs/SUBMISSION_GUIDELINES.md`.
 
 ## Development
 
+Install the Python and Node development tools once on a fresh checkout:
+
 ```bash
 python3 -m pip install -r requirements-dev.txt
+npm ci --ignore-scripts --no-audit --no-fund
+```
+
+The Node version is pinned in `.nvmrc` (22.20.0). Then run:
+
+```bash
 python3 scripts/ocf.py doctor
 python3 -m pytest                 # tests
 python3 scripts/ocf.py validate --all
 python3 scripts/ocf.py build-index --check
-ruff check scripts tests          # lint
+make lint                         # Ruff, Markdownlint, and repository lint checks
 ```
 
 Filter code through `docs/ARCHITECTURE.md` and `GOVERNANCE.md` before

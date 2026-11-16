@@ -14,19 +14,21 @@ pytestmark = pytest.mark.integration
 
 
 def test_canonical_approval_records_and_protected_narration_integrity():
-    from ocf_tools.options_successor import verify as verify_options
     from tools.check_hplus_narration_integrity import check
 
-    assert approval.verify() == verify_approvals() == verify_options() == check() == []
+    assert approval.verify() == verify_approvals() == check() == []
     data = approval.record()
     assert len(data["approvals"]) == 4
     assert all(row["user_response"] == "1" for row in data["approvals"].values())
     assert data["release_ready"] is data["listening_approval"] is False
-    assert all("before" not in row and "text" not in row for row in data["approvals"].values())
+    assert all(
+        "snapshot_sha256" not in row and "resolved_sha256" not in row
+        for row in data["approvals"].values()
+    )
 
 
 @pytest.mark.parametrize("name", CANDIDATES)
-def test_current_narration_matches_embedded_resolved_hashes_and_four_pass_plan(name):
+def test_current_narration_resolves_from_canonical_yaml_and_keeps_four_pass_plan(name):
     from ocf_tools.complete_session import build_complete_session_plan
 
     preview = review(name)

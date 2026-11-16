@@ -7,8 +7,7 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports deliberate eating choices and release of unnecessary cravings while preserving awareness
-    of genuine nutritional needs.
+  text: 'Control unnecessary food cravings, recognize genuine hunger, and make deliberate eating choices.'
   status: canonical
   version: 1.0.1
 metadata_entries:
@@ -65,7 +64,7 @@ activation:
   - id: select-food-response
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Select an unnecessary craving to release; this does not suppress genuine hunger.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -125,11 +124,8 @@ entries:
   hplus.function.ocf-bod-005.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to consciously direct
-
-      your appetite and desire for food, giving you greater
-
-      control over when and why you choose to eat.'
+    text: |-
+      This OCF exercise will teach you to recognize genuine hunger, release unnecessary food cravings, and consciously direct your appetite and eating choices.
   hplus.function.ocf-bod-005.function-body:
     status: reviewed
     version: 1.3.0
@@ -137,172 +133,39 @@ entries:
       function_id: OCF-BOD-005
       allowed:
       - cue.primary
-    text: 'From this moment forward, you will have greater
+    text: |-
+      From this moment forward, you have greater control over your appetite and your desire for food.
 
-      control over your appetite and your desire for food.
+      Your conscious mind, subconscious mind, physical body, and total self work together to establish a natural pattern of appetite awareness and conscious choice.
 
+      You recognize the difference between genuine hunger and the desire to eat from habit, boredom, or impulse.
 
-      You will recognize the difference between your body''s
+      When your body needs nourishment, you recognize that need and respond appropriately.
 
-      genuine need for nourishment and the passing desire
+      You become more aware of when you have eaten enough, enjoying your food and recognizing comfortable satisfaction.
 
-      to eat out of habit, boredom, or impulse.
+      This awareness becomes a natural and automatic part of your everyday life.
 
+      Whenever an unnecessary craving arises, you can consciously choose to release it.
 
-      Your mind and body will work together in harmony,
+      Recognize the craving you wish to release.
 
-      helping you make clear, confident decisions
+      Take a deep breath in and gently hold it.
 
-      about when and what you choose to eat.
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      When your body needs nourishment, you will recognize
+      The unnecessary craving loses its influence over your attention and desire to eat.
 
-      that need clearly and respond appropriately.
+      Your mind and body return to a comfortable state of satisfaction, allowing you to continue your activities without the unwanted impulse.
 
+      You remain free to enjoy food whenever you choose and continue recognizing your body's genuine nutritional needs.
 
-      When a temporary craving arises and you consciously
+      Your ability to recognize unnecessary cravings and make deliberate eating choices remains permanently established.
 
-      choose not to eat, you will remain calm,
-
-      comfortable, and in complete control of your decision.
-
-
-      From this moment forward, this awareness
-
-      will become a natural and automatic part
-
-      of your everyday life.
-
-
-      You will find it easier to recognize when you
-
-      have eaten enough, to enjoy the food you choose,
-
-      and to stop eating when you are comfortably satisfied.
-
-
-      Your choices will become clearer,
-
-      your habits more intentional,
-
-      and your confidence stronger.
-
-
-      Whenever you wish to release a passing craving
-
-      or an unnecessary desire for food,
-
-      you can do so quickly and easily.
-
-
-      Simply pause and bring your awareness
-
-      to the desire you wish to release.
-
-
-      Take a comfortable breath in
-
-      and gently hold it.
-
-
-      While holding your breath, silently
-
-      say to yourself, "{{ cue.primary }}."
-
-
-      Then slowly exhale through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      As you exhale, the unnecessary desire to eat
-
-      will become less and less important to you.
-
-
-      Your thoughts will become calm and clear.
-
-
-      You will feel satisfied with your decision
-
-      and free to direct your attention
-
-      toward whatever you choose.
-
-
-      Food will no longer demand your attention
-
-      simply because it is present,
-
-      because you see it, or because you smell it.
-
-
-      You will remain free to enjoy food
-
-      when you consciously choose to eat.
-
-
-      Your body will continue to communicate
-
-      its genuine needs clearly and naturally.
-
-
-      You will respond to those needs with confidence,
-
-      maintaining the nourishment and balance
-
-      your body requires.
-
-
-      Now know that this pattern of conscious choice
-
-      is becoming firmly established within you.
-
-
-      From this moment forward, your ability
-
-      to recognize unnecessary cravings
-
-      and release them will operate automatically.
-
-
-      Your mind will naturally pause before
-
-      habitual or impulsive eating,
-
-      allowing you to make a clear decision.
-
-
-      You will feel comfortable and confident
-
-      choosing when to eat and when to wait.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to release unnecessary cravings
-
-      becomes easier, smoother, and more effective.
-
-
-      Remember, your appetite is something
-
-      you can understand and consciously direct.
-
-
-      You will recognize your body''s needs,
-
-      make your decisions clearly,
-
-      and remain in control of your choices.
-
-
-      This lasting pattern of awareness,
-
-      satisfaction, and self-control
-
-      will continue strengthening every day.'
+      Each time you use "{{ cue.primary }}," releasing unwanted cravings becomes easier and more natural.
   hplus.function.ocf-bod-005.closer:
     status: reviewed
     version: 1.3.0
@@ -310,34 +173,17 @@ entries:
       function_id: OCF-BOD-005
       allowed:
       - cue.primary
-    text: 'Remember, from this moment forward,
+    text: |-
+      Remember, whenever you wish to release an unnecessary food craving, recognize the desire you want to release.
 
-      you will recognize your body''s genuine
-
-      need for nourishment and remain in control
-
-      of your eating decisions.
-
-
-      Whenever you wish to release an unnecessary
-
-      craving or desire for food, simply pause.
-
-
-      Inhale and gently hold your breath.
-
+      Take a deep breath in and gently hold it.
 
       Silently say to yourself,
-
       "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Then slowly exhale through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      This concludes your OCF Appetite Choice exercise.'
+      This concludes your OCF Appetite Choice exercise.
 slug: eat-no-eat
 classification:
   primary_domain: body
@@ -403,7 +249,6 @@ editorial:
   - id: OCF-TITLE-CUE-BOD-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 53079937fa1123577da6decd7ecb9a542ecb66dd259de7a1ec9d367bbf5ce81b
     classification: RESOLVE PURPOSE OR MODES BEFORE NAMING
     recommended_title: Appetite Choice
     recommended_primary_cue: PLUS-SATISFIED, SUPPLIED
@@ -435,7 +280,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b1af13863eca6860320bea443227b31ea98cb245ab67a1d769ce856cc43afcaf
 record_metadata:
   legacy:
     command_ids:
@@ -503,7 +347,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-bod-005-primary.explanation
       display_cue_key: commands.ocf-cmd-bod-005-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-bod-005-primary.spoken-cue
-  predecessor_resource_sha256: ba7e61adbd9892bfd19a59ddcdd0f8abc309e8bd10e61df308e4d4bbb5834046
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -514,16 +357,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0a2e497a96d7ff508c40dcec4db84708afd5688fae57c0b2bb53ceb54e795c2d
     status: accepted
-    previous_values_sha256: 79baeb1c8ed7fee601ff4d7ce012178c12e1f9648590c92e6b137e90d63d3e28
-    current_values_sha256: c3cfed37e9709df2ac38ce03dbed0f93f9dee15d77e74d17e485d98e3184604e
     changed_narration_keys:
     - hplus.function.ocf-bod-005.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-bod-005.closer: c652817fbd3d05fa0f420e64cd77f15cb89ff1a6f202a8f4aa149fc85fb21128
-    current_resolved_text_sha256:
-      hplus.function.ocf-bod-005.closer: e2aa5229b7f58a55b80ceba459795b36603db6b45e59e71f31c885b72bdf5501
     review_note: Change title from Eat/No Eat to Appetite Choice and update exercise sign-off. Keep
       complete display and spoken cue unchanged. Preserve breathing sequence, automatic reinforcement,
       genuine nutritional need recognition and freedom to eat when chosen. Retain Eat/No Eat as historical
@@ -537,9 +373,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-005:purpose
     decision_source: Please do
-    source_row_sha256: a2a3df31e137aabb405ac446718a949db00845dc8125bd827258d419a8e603f5
     status: accepted
-    current_values_sha256: 823cb37b452e4ca8e49517a7da92117086241c8209a0c0766de5f6358a96ca12
     review_note: 'Appetite Choice: 1'
     approval_response: approve
   - id: OCF-FUNCTIONAL-METADATA-PERSISTENCE
@@ -547,9 +381,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-BOD-005:persistence
     decision_source: Please do
-    source_row_sha256: 300be13be22971d0b681800f7f43f88b6b8d475b858c50732ab41b1912500cdd
     status: accepted
-    current_values_sha256: 0264984651521a7a648e83ab44891aa00ab8aaf97f16002ebf7d25b7dc7036ea
     review_note: 'Appetite Choice: 1'
     approval_response: approve
   - id: OCF-COMMAND-SIMPLIFICATION-001
@@ -558,13 +390,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands, lifecycle,
       procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 6899c7b27f20d7b2e5d8463a77b0bd01a8a373c424d8ff3c91f529d7d9e2a353
     status: accepted
-    previous_values_sha256: 795863c8f79b89082727c8efddefe733b26a1bd8c31e99e39f26eb801f57f430
-    current_values_sha256: 591542bb23c9bbaf67588b6f82dc2880e232dedcc94e72bc5cbf63c621ed09f8
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved canonical
       wording; listening and release approval remain false.
   - id: REL-BOD005-LIF001
@@ -573,8 +400,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: b93cfa7f712421adb552e0fc3fb5027f97d484054d0a934c7f9a0329aeb40777
-    current_values_sha256: ebdf93f3476aba607b1e51642a3e4a4ce46a8fb7301b6ef8aeed292acfdccaa0
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

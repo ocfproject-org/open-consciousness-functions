@@ -30,7 +30,7 @@ def fixture():
         },
         "entries": {"fixture.body": {"text": "Exact local speech", "status": "reviewed"}},
     }
-    data["localization"] = {"status": "complete", "contract_sha256": contract_hash(data)}
+    data["localization"] = {"status": "complete"}
     return data
 
 
@@ -48,7 +48,7 @@ def test_contract_ignores_local_words_but_protects_operations_and_repetition():
 
 
 @pytest.mark.unit
-def test_partial_missing_and_stale_locales_never_inherit_speech():
+def test_partial_missing_locales_never_inherit_speech_and_edits_need_no_hash():
     canonical = fixture()
     local = deepcopy(canonical)
     del local["entries"]["fixture.body"]
@@ -57,8 +57,9 @@ def test_partial_missing_and_stale_locales_never_inherit_speech():
     assert result["status"] == "partial"
     assert result["missing"] == ["OCF-CMD-COG-001-PRIMARY/spoken_cue", "fixture.body"]
     assert completeness(None, canonical)["status"] == "missing"
-    local["localization"]["contract_sha256"] = "0" * 64
-    assert completeness(local, canonical)["status"] == "needs-review"
+    local["localization"]["status"] = "complete"
+    local["description"]["text"] = "Directly edited local description."
+    assert completeness(local, canonical)["status"] == "partial"
     assert "fixture.body" not in local["entries"]
 
 

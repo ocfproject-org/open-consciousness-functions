@@ -7,10 +7,12 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Replenishes a felt sense of energy and freshness.
+  text: 'Enter a short, restorative sleep and awaken refreshed, alert, and energized.'
   status: canonical
-  version: 1.0.0
-metadata_entries: {}
+  version: 1.0.1
+metadata_entries:
+  functions.ocf-fnd-003.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-FND-003-PRIMARY
   display_cue:
@@ -45,18 +47,9 @@ activation:
       status: documented
       evidence_keys:
       - hplus.function.ocf-fnd-003.function-body
-      before_steps:
-      - id: select-rest-period
-        operation: select-purpose
-        localization_key: command.procedure.select-purpose
+      before_steps: []
     relationships: {}
   procedure_steps:
-  - id: select-rest-period
-    operation: select-purpose
-    instruction:
-      text: Choose the purpose for using this function.
-      status: canonical
-      version: 1.0.0
   - id: inhale
     operation: inhale
     instruction:
@@ -115,11 +108,8 @@ entries:
   hplus.function.ocf-fnd-003.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to enter a short,
-
-      natural sleep and rapidly recharge your body,
-
-      mind, and total self, awakening refreshed and alert.'
+    text: |-
+      This OCF exercise will teach you to enter a brief, restorative sleep, allowing your body, mind, and total self to recharge before awakening refreshed and alert.
   hplus.function.ocf-fnd-003.function-body:
     status: reviewed
     version: 1.1.0
@@ -127,92 +117,33 @@ entries:
       function_id: OCF-FND-003
       allowed:
       - cue.primary
-    text: 'From this moment forward, you have the ability
+    text: |-
+      From this moment forward, you have the ability to recharge your body and mind through a short period of natural, restorative sleep.
 
-      to recharge and restore yourself through
+      Whenever you wish to take a brief rest, settle into a comfortable position where you can safely sleep.
 
-      a short period of natural, restful sleep.
+      Allow your body and mind to relax.
 
+      Take a deep breath in and gently hold it.
 
-      Whenever you choose to take a brief rest,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      settle comfortably and allow your body
+      Then slowly exhale through your mouth.
 
-      and mind to become quiet and relaxed.
+      Your body and mind naturally enter a peaceful, restorative sleep.
 
+      As you rest, your conscious mind, subconscious mind, physical body, and total self work together to restore balance and replenish your energy.
 
-      Inhale deeply and gently hold your breath.
+      Unnecessary tension releases, your mind settles, and your natural restorative processes support renewed strength and vitality.
 
+      Throughout this brief period of sleep, your total self works toward restoring your physical and mental energy.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      As your short rest completes, you awaken naturally, refreshed, alert, and ready to resume your activities.
 
+      This ability to enter a short restorative sleep remains permanently available whenever you choose.
 
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      You will move easily and quickly
-
-      into peaceful, natural sleep.
-
-
-      As you sleep, your total self will begin
-
-      a rapid process of balance, equalization,
-
-      and restoration throughout your system.
-
-
-      Your body will release unnecessary tension.
-
-      Your mind will settle and become clear.
-
-      Your natural energies will replenish,
-
-      bringing renewed strength and vitality.
-
-
-      Every part of your being will work together,
-
-      restoring harmony and refreshing you
-
-      in the short time you have chosen to rest.
-
-
-      Within minutes, as your brief sleep completes,
-
-      you will awaken naturally, calm and confident,
-
-      with a clear mind and renewed energy.
-
-
-      You will feel refreshed, alert, and ready
-
-      to continue what you wish to do.
-
-
-      From this moment forward, the ability
-
-      to enter restorative short sleep
-
-      is permanently available whenever you choose.
-
-
-      Your normal wakefulness remains bright and clear,
-
-      and this response begins when you deliberately
-
-      choose to use {{ cue.primary }}.
-
-
-      Each time you use this function,
-
-      falling asleep briefly, restoring your energy,
-
-      and awakening refreshed will become
-
-      easier, smoother, and more effective.'
+      Each time you use "{{ cue.primary }}," entering restful sleep and awakening refreshed becomes easier and more natural.
   hplus.function.ocf-fnd-003.closer:
     status: reviewed
     version: 1.2.1
@@ -220,22 +151,17 @@ entries:
       function_id: OCF-FND-003
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to restore yourself
+    text: |-
+      Remember, whenever you wish to recharge through a short period of restorative sleep, settle comfortably.
 
-      through a short period of natural sleep,
+      Take a deep breath in and gently hold it.
 
-      inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth and allow yourself to sleep.
 
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      This concludes your OCF Quick Recharge exercise.'
+      This concludes your OCF Quick Recharge exercise.
 slug: recharge
 classification:
   primary_domain: foundation
@@ -255,6 +181,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-fnd-003.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -287,7 +217,6 @@ editorial:
   - id: OCF-TITLE-CUE-FND-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 775ab67bf8c426b4c25521fff049fb272b8e2b6c61aadaa5da04d94a20b531c7
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Quick Recharge
     recommended_primary_cue: PLUS-RECHARGE
@@ -316,7 +245,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 1d544e6a9e4af6eab724a5b27859e7e5e7e8b05badb60628f70ea1cc77c35244
 record_metadata:
   legacy:
     command_ids:
@@ -374,7 +302,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-fnd-003-primary.explanation
       display_cue_key: commands.ocf-cmd-fnd-003-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-fnd-003-primary.spoken-cue
-  predecessor_resource_sha256: 856a02db3ca015bfe37ef9989e5af50865e88a62d3ceddc0e37528676c228b71
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -385,16 +312,9 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 22386ace19503614491524c3b11e918b8441eb39026ceab3f0ec899f6d8625bf
     status: accepted
-    previous_values_sha256: d75756fa97568be3848fdf2997e2b8403f45f8464f72a55666778cd2944bd295
-    current_values_sha256: 881a09d1e2ac2f8521799111d1c0d8a87d67ee01e5123e07cbb1aad5ac09ab53
     changed_narration_keys:
     - hplus.function.ocf-fnd-003.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-fnd-003.closer: 4249c526990b9bddf49cbc2cbb4e8cf8b05f56d1293263f33aa2a7174b661af1
-    current_resolved_text_sha256:
-      hplus.function.ocf-fnd-003.closer: 60a480ee63089a5f1b323040657bf3eb137c1d95a3fd96a5d3153908fcc7be19
     review_note: Change title from Recharge to Quick Recharge and update exercise sign-off. Keep display
       and spoken cue unchanged. Preserve deliberately chosen brief natural sleep, restoration, natural
       awakening within minutes and inhale/hold/cue/candle-like exhale sequence. Retain Recharge as
@@ -408,8 +328,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: f2ef2c5702b7eb9463b430d224bb4d333c5afa22b3ea70264c1a28acf520af65
-    current_values_sha256: a7901574f21dc9e6e98631c24d5c825ed223d792be9b68ee086e08534eb091d3
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

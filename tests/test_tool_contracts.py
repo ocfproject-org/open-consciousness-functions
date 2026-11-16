@@ -31,10 +31,13 @@ def test_markdown_link_scanner_respects_source_ignores_and_internal_targets(monk
     for ignored in (
         ".private/hidden.md",
         "build/generated.md",
+        "node_modules/markdownlint-cli2/README.md",
         "references/HumanPlusTranscripts/private.md",
         "ReusablePrompts/user.md",
     ):
-        (root / ignored).write_text("ignored", encoding="utf-8")
+        path = root / ignored
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("ignored", encoding="utf-8")
     monkeypatch.setattr(check_markdown_links, "REPO_ROOT", root)
     names = {path.relative_to(root).as_posix() for path in check_markdown_links.iter_markdown()}
     assert names == {"docs/guide.md", "docs/target.md"}
