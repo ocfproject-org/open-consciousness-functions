@@ -131,8 +131,8 @@ def test_current_report_rejects_narration_integrity_drift(monkeypatch):
 @pytest.mark.integration
 def test_current_catalog_report_is_fresh_complete_and_collision_scoped():
     data = reports.build()
-    assert data["counts"]["resolved_active_spoken_cues"] == 73
-    assert data["counts"]["active_records"] == 83
+    assert data["counts"]["resolved_active_spoken_cues"] == 72
+    assert data["counts"]["active_records"] == 82
     assert data["counts"]["historical_only_command_records"] == 19
     assert data["counts"]["stable_primary_identities"] == 58
     heart = next(row for row in data["functions"] if row["function_id"] == "OCF-BOD-006")

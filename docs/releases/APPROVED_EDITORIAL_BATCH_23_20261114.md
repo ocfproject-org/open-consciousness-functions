@@ -1,8 +1,13 @@
 # Source-only editorial batch: 23-function follow-up — 14 November 2026
 
+> Architecture note (2026-11-15): this is a historical checkpoint, not a current
+> text authority. Its test-only copy and source-only checksum receipt have been
+> retired. Canonical locale YAML is the current source; prior wording remains in
+> ordinary Git history. Published audio/release artifacts are unchanged.
+
 **State:** draft implementation for independent review; not merged, rendered, released, published, or approved for listening.
 
-**Authority:** the complete owner-supplied local text attachment `OCF_OpenCode_Approved_23_Functions_Prompt.txt`, copied byte-for-byte to `tests/fixtures/approved-editorial-batch-20261114.txt` for offline conformance tests. The copied attachment is 70,115 bytes with SHA-256 `d21984367701da8475e0dd741f3e047e380466339fc869113632afb2d071700b`. No JSON companion was supplied or treated as authority, and no approval-content JSON was invented. The separate `source-only-editorial-successor-23-20261114.json` is a generated hash-only integrity record (predecessor/current digests and the attachment hash); it contains no approved prose and grants no approval. The owner clarification `msg_1db80fb59001fLY2eWTrTs7SMN` resolves the three description conflicts: “Latest directions override previous ones so yes new for all”.
+**Historical authority at implementation time:** the complete owner-supplied 23-function exact-text attachment and the clarification “Latest directions override previous ones so yes new for all” governed that batch. This report records its verification outcome only; current editable wording is in canonical YAML.
 
 **Source state:** branch `editorial/approved-batch-20261114`, based on merged source main `6b4a9861ab89bea849ef6a97575af9cac6065d9b`, after the pypdf update was merged normally. The earlier source-only nine-function work was reconciled rather than replayed independently. Its source checkpoint evidence and HPLUS-021 lock remain unchanged.
 

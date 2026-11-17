@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Requests an answer or constructive solution through sleep, with useful insight recognized
-    on awakening.
+  text: 'Find answers, explore solutions, and gain deeper understanding through sleep.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SLP-004-PRIMARY
@@ -303,7 +302,6 @@ editorial:
   - id: OCF-TITLE-CUE-SLP-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: cfc3bc439984be8138a688ad438aafab133b3232f30255cad223a121ed7abce5
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Sleep Insight
     recommended_primary_cue: PLUS-SLEEP INSIGHT
@@ -335,7 +333,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 692707fe95bb33834f7b3a3dabe4e5220f902cf8c4dae353afa7e86e4eae2f8f
 record_metadata:
   legacy:
     command_ids:
@@ -413,7 +410,6 @@ record_metadata:
       label_key: commands.ocf-cmd-slp-004-legacy-01.label
       purpose_key: functions.ocf-slp-004.purpose
       usage_key: commands.ocf-cmd-slp-004-legacy-01.usage
-  predecessor_resource_sha256: 7909eda9f9f5d32933faa74446bb9ced62c11db8163c518939f359be6ee343be
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
@@ -421,19 +417,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: bff29b31b628336f2afdcffb9f2b8ec71e50776301c7a0b3591255df55f1d9e2
     status: accepted
-    previous_values_sha256: fee3a38fbd9188a17a884557eaa91ee3f536a0442b22b557dbbd126dd873cb87
-    current_values_sha256: 63f2b4161d3e7f5bfc641c12b71ceb8b9fe0a60cfc893470a88f5d871432f4b3
     changed_narration_keys:
     - hplus.function.ocf-slp-004.closer
     - hplus.function.ocf-slp-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-slp-004.function-body: 10e84cad058655fa531592b74ad068d290e1977e24e10b48c20a06a47ee2ccc4
-      hplus.function.ocf-slp-004.closer: d8c3960785c9064a6fcaa433087581ed1db19cb3a2142453e50154624ce45b46
-    current_resolved_text_sha256:
-      hplus.function.ocf-slp-004.function-body: 8f94db81413f5444838360db6515e134c4b9b5f3ead57d6c08dfd5ee20757fee
-      hplus.function.ocf-slp-004.closer: 891d6ed2cabfa955ba89a8907d9d9df0f8f900663ef522c083959c2d9985dfe8
     review_note: Request an answer/insight through sleep and recognize it on waking; not choosing
       a wake-up time.
   - id: REL-SLP004-COG005
@@ -442,8 +429,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 0aade422b50c7f00e844ddfa524de3da9ec6f9a9e84c861d4378ace50f83c6ac
-    current_values_sha256: 7dee10104049a37f8b46ba068fa1615eae141a63b1a538c95e93779ece18b2fb
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

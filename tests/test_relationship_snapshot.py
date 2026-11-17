@@ -23,7 +23,6 @@ def relationship_source(monkeypatch):
                     "dependency": "optional",
                     "reciprocal_approved": False,
                     "decision_source": "human review",
-                    "source_row_sha256": "a" * 64,
                     "source_commit": "b" * 40,
                 }
             ]

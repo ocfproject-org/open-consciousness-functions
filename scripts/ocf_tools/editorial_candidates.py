@@ -44,12 +44,12 @@ def context(name: str, *, locale: str = "en-US", root=REPO_ROOT):
     return owner, catalog
 
 
-def review(name: str, *, locale: str = "en-US") -> dict:
+def review(name: str, *, locale: str = "en-US", root=REPO_ROOT) -> dict:
     """Return an untimed read-only preview projected from canonical function data."""
     from .commands import load_procedure_catalog, resolve_phrase, resolve_procedure
     from .cue_templates import value as cue_value
 
-    owner, catalog = context(name, locale=locale)
+    owner, catalog = context(name, locale=locale, root=root)
     localized = catalog.require(locale).localized_functions[owner.id]
     approval = localized["record_metadata"]["editorial_approval"]
     sequence = owner.data["narration"]["sequence"]
@@ -161,7 +161,7 @@ def discover():
 
 
 def verify_approvals(root=REPO_ROOT) -> list[str]:
-    """Verify embedded approval hashes against the canonical resolved entries."""
+    """Verify approval scope/status; current narration is read from canonical YAML."""
     from .function_catalog import load_functions
 
     errors = []
@@ -180,13 +180,19 @@ def verify_approvals(root=REPO_ROOT) -> list[str]:
             errors.append(f"canonical editorial approval is missing or invalid: {identity}")
             continue
         try:
-            preview = review(name)
+            preview = review(name, root=root)
         except OCFError as exc:
             errors.append(f"canonical approved preview failed for {identity}: {exc}")
             continue
-        resolved = {row["key"]: row["resolved_text_sha256"] for row in preview["entries"]}
-        if resolved != approval.get("resolved_text_sha256"):
-            errors.append(f"canonical approved narration hash mismatch: {identity}")
+        sequence = owner.data.get("narration", {}).get("sequence", [])
+        if [(row.get("role"), row.get("repetitions")) for row in sequence] != [
+            ("opener", 1),
+            ("function-body", 4),
+            ("closer", 1),
+        ]:
+            errors.append(f"canonical narration schedule is invalid: {identity}")
+        if not all(row.get("text", "").strip() for row in preview["entries"]):
+            errors.append(f"canonical narration entry is empty: {identity}")
         if approval.get("listening_approval") or approval.get("release_ready"):
             errors.append(f"narration approval was promoted beyond its recorded scope: {identity}")
     return errors

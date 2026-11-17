@@ -7,10 +7,10 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Consciously capture and retain selected information or experiences, with Plus Recall for deliberate
-    retrieval.
+  text: |-
+    Capture and retain information and experiences for clear, reliable recall.
   status: reviewed
-  version: 1.0.1
+  version: 1.0.2
 metadata_entries:
   functions.ocf-cog-004.lifecycle.scopes.capability.description:
     text: Learned imprinting ability remains available.
@@ -201,13 +201,8 @@ entries:
   hplus.function.ocf-cog-004.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to capture and
-
-      permanently store information, knowledge, and
-
-      experiences deep within your memory, preserving
-
-      them clearly and accurately for future recall.'
+    text: |-
+      This OCF exercise will teach you to capture and retain information, knowledge, and experiences in memory for future recall.
   hplus.function.ocf-cog-004.function-body:
     status: reviewed
     version: 1.2.1
@@ -216,120 +211,38 @@ entries:
       allowed:
       - cue.id.OCF-CMD-COG-004-RECALL
       - cue.primary
-    text: 'From this moment forward, your ability to capture,
+    text: |-
+      From this moment forward, you have the ability to consciously capture, store, and recall information and experiences whenever you choose.
 
-      store, and remember information and experiences
+      Your conscious mind, subconscious mind, and total self work together to strengthen your ability to remember.
 
-      is becoming stronger, clearer, and more accurate.
+      Whenever you wish to preserve information or an experience, direct your attention to what you want to remember.
 
+      Take a deep breath in and gently hold it.
 
-      Whenever you wish to preserve something in memory,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      bring your complete attention to the information
+      Keep your attention on the selected information or experience.
 
-      or experience you desire to remember.
+      Then slowly exhale through your mouth.
 
+      Your mind receives and organizes the selected information, connecting it with your existing knowledge and establishing it within long-term memory.
 
-      Inhale deeply and gently hold your breath.
+      The important details of what you have chosen to imprint are preserved and maintained.
 
+      Your natural memory processes continue strengthening and organizing this information, whether you are awake, resting, or sleeping.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Whenever you wish to retrieve information you have imprinted, think of what you want to remember.
 
-
-      Focus clearly on what you wish to remember,
-
-      then exhale slowly and easily.
-
-
-      Your senses will become more attentive
-
-      to every important detail of your experience.
-
-
-      Images, sounds, words, feelings, and sensations
-
-      will be perceived clearly and precisely.
-
-
-      Your mind will organize this information,
-
-      connecting it with your existing knowledge
-
-      and placing it securely into long-term memory.
-
-
-      Every important detail will be preserved,
-
-      clear, complete, and accurate.
-
-
-      The information you have chosen to imprint
-
-      will remain firmly established within you,
-
-      available whenever you desire to remember it.
-
-
-      From this moment forward, your mind will
-
-      automatically strengthen and maintain
-
-      the memories you have consciously imprinted.
-
-
-      Whether awake, resting, or sleeping,
-
-      your natural processes of memory consolidation
-
-      will continue organizing and reinforcing
-
-      the information you have chosen to preserve.
-
-
-      Whenever you wish to remember an imprinted
-
-      experience or any part of its details,
-
-      simply think or say in your mind,
-
+      Silently say to yourself,
       "{{ cue.id.OCF-CMD-COG-004-RECALL }}."
 
+      The selected information becomes available to your conscious awareness, allowing you to remember its details and meaning.
 
-      The information will return immediately
+      Your ability to consciously imprint and retrieve information remains permanently available.
 
-      into your conscious awareness,
-
-      clear, vivid, and complete.
-
-
-      You will remember the knowledge,
-
-      sensations, and details you have stored
-
-      with confidence and accuracy.
-
-
-      From this moment forward, this ability
-
-      to consciously imprint information
-
-      is permanently available to you.
-
-
-      Each time you use {{ cue.primary }},
-
-      your ability to capture and retain
-
-      information becomes easier, faster,
-
-      and more effective.
-
-
-      Your selected memories will remain
-
-      clear and accessible, ready to return
-
-      to your awareness whenever you desire.'
+      Each time you use "{{ cue.primary }}," capturing and retaining information becomes easier and more natural.
   hplus.function.ocf-cog-004.closer:
     status: reviewed
     version: 1.2.1
@@ -337,22 +250,20 @@ entries:
       function_id: OCF-COG-004
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to preserve
+    text: |-
+      Remember, whenever you wish to preserve information or an experience, direct your attention to what you want to remember.
 
-      information or an experience in your memory,
+      Inhale deeply and gently hold your breath.
 
-      inhale deeply and hold your breath.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Keep your attention on the selected information, then slowly exhale through your mouth.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      To retrieve imprinted information, think of what you wish to remember and silently say,
+      "Plus Recall."
 
-
-      Focus on what you wish to remember,
-
-      then exhale slowly and easily.
-
-
-      This concludes your OCF Imprint exercise.'
+      This concludes your OCF Imprint exercise.
 slug: imprint
 classification:
   primary_domain: cognition
@@ -412,7 +323,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-004
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 9f4fa11b9369d703dcfd294cc0de5add041cddc427cd5035412ea9e40b9ce387
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Imprint
     recommended_primary_cue: PLUS-IMPRINT
@@ -442,7 +352,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 73558164bec64ab8fff581970c16d65ad0c4fd4cda8c9601971e295d03636f12
 record_metadata:
   legacy:
     command_ids:
@@ -521,7 +430,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-cog-004-legacy-01.usage
       purpose_key: functions.ocf-cog-004.purpose
       explanation_key: commands.ocf-cmd-cog-004-legacy-01.explanation
-  predecessor_resource_sha256: 27aeaeb3c8ec19ded1b75a4fe4fbf6db10bdac388504cff4a9962aba7fa0c2cc
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -532,19 +440,10 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0a1f0fbe0549a0a609f78c9cc26bc84c0c240e174c36483bb715d9b2eb6fd713
     status: accepted
-    previous_values_sha256: 7325bab7efb48ce33d54a3ac7ac6193d59b39478279a66deb30829ff927012ae
-    current_values_sha256: 98c44c6bda0ea30aa1d2b576f82a96b3b0a96eb26f7ab30ffb4c2504620542b1
     changed_narration_keys:
     - hplus.function.ocf-cog-004.closer
     - hplus.function.ocf-cog-004.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-cog-004.function-body: 7cbaa66d2d445f7b0251534958fa5642409697f29ce4c3c19f6cdd3440683419
-      hplus.function.ocf-cog-004.closer: 500eac99a1a761fed33272b8170fd8f0c043c9081a46a67bd5a421226d8694e0
-    current_resolved_text_sha256:
-      hplus.function.ocf-cog-004.function-body: 35d356c7b19b77ed8c0360920fe0d7af4b7bdceaed97ce17160d9486a326b212
-      hplus.function.ocf-cog-004.closer: 7f07c48613b98a737cf77fa1186778f8727319267a7b09396a248fbcf793bf5a
     review_note: Shorten two body mentions and one closer mention from Plus Imprint Imprint to Plus
       Imprint. Preserve title, breathing/attention sequence and memory suggestions. Keep Plus Recall
       active and unchanged; retain repeated legacy phrase as historical lookup.
@@ -556,9 +455,7 @@ record_metadata:
     source_commit: 4da47a5740ead0be6bc3127437ee7b36a9c86ddf
     scope: OCF-COG-004:persistence
     decision_source: Please do
-    source_row_sha256: c7e0b476dd560678ede68e3bb8826fa41fa2f61368e2f1cbec729b890591df8a
     status: accepted
-    current_values_sha256: bc56f9cec40be3793fd652de8620c5c1bfe5e8fe972a24aee4773e848accdcfd
     review_note: 'Imprint: 1'
     approval_response: approve
   - id: REL-COG004-COG006
@@ -567,8 +464,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 5342f6ee388c29a203190f5ffd240ee06c1f0a4b7cc9e01cc8b694f1c36c5002
-    current_values_sha256: e5f24ca6ef4ffa030390fb8f7c0132f119e526b9dde5432cf9909a2e474b2c1e
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

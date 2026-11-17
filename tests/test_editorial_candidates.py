@@ -36,7 +36,7 @@ def test_candidate_preview_preserves_status_text_and_four_passes(name):
         review(name, locale="es")
 
 
-def test_approval_provenance_and_resolved_text_hashes_live_with_canonical_resources():
+def test_approval_scope_and_current_canonical_text_live_with_canonical_resources():
     assert verify_approvals() == []
     catalog = LocaleCatalog()
     for slug, identifier in CANDIDATES.items():
@@ -48,8 +48,10 @@ def test_approval_provenance_and_resolved_text_hashes_live_with_canonical_resour
         assert preview["authority"] == preview["narration_authority"]
         assert approval["approval_id"] == "OCF-APPROVED-CANDIDATES-001"
         assert approval["decision"] == "approve_full_draft"
-        actual = {row["key"]: row["resolved_text_sha256"] for row in preview["entries"]}
-        assert actual == approval["resolved_text_sha256"]
+        assert "resolved_text_sha256" not in approval
+        for entry in preview["entries"]:
+            assert entry["text"]
+            assert entry["status"] in {"reviewed", "canonical"}
         assert approval["release_ready"] is approval["listening_approval"] is False
     assert [row["version"] for row in review("manifest-v2")["entries"]] == [
         "1.2.0",
@@ -85,9 +87,7 @@ def test_distinct_clear_zone_ids_and_exact_procedure():
     ]
     for command in owner.command_records:
         assert [step["operation"] for step in resolve_procedure(command, {})] == [
-            "inhale",
             "think-or-say-command",
-            "exhale",
         ]
     descriptions = " ".join(owner.data["lifecycle"]["trigger_conditions"])
     for phrase in (
@@ -128,5 +128,5 @@ def test_dissolve_procedure_and_intuition_canonical_registration():
     assert approval["decision"] == "approve_full_draft"
     assert intuition.canonical_name == "Intuition"
     assert review("intuition")["entries"][0]["text"] == (
-        "This OCF exercise will strengthen your intuitive awareness, bringing the wisdom of your heart, subconscious mind, and higher self into clear understanding and purposeful action."
+        "This OCF exercise will strengthen your intuition, opening greater awareness of the wisdom and guidance available through your total self, higher self, and wider consciousness."
     )

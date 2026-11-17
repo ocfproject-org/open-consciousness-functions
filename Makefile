@@ -34,8 +34,9 @@ lint: ## Lint Python (ruff), Markdown, and internal links
 	$(PY) -m ocf_tools.examples --check
 	$(MAKE) lint-markdown
 
-lint-markdown: ## Run optional Markdown lint without hiding installed-tool failures
-	@if command -v markdownlint >/dev/null; then markdownlint .; else echo "markdownlint not installed; skipping"; fi
+lint-markdown: ## Run the pinned Markdown lint tool
+	$(PY) scripts/tools/check_markdownlint_dependencies.py
+	npm run lint:markdown
 
 check: ## Validate functions and verify generated/pinned data freshness
 	$(OCF) validate --all

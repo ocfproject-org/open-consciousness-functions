@@ -2,10 +2,10 @@
 
 The [current review](releases/OCF_FUNCTIONAL_METADATA_CURRENT.md) is a derived
 reader view of 18 explicitly approved decisions across 16 canonical locale
-function resources. Decision notes, review-source hashes, current-value hashes,
-and function-specific purpose/lifecycle changes are embedded in the matching
-resource under `record_metadata.editorial_decisions`. There is no metadata
-sidecar registry.
+function resources. Decision notes and function-specific purpose/lifecycle changes
+are embedded in the matching resource under `record_metadata.editorial_decisions`.
+Current wording is not coupled to review-source or current-value checksum fields.
+There is no metadata sidecar registry.
 
 Each `locales/<tag>/OCF-*.yaml` resource remains the sole function authority for
 that identity and locale. The shared schema and validators preserve the
@@ -41,11 +41,11 @@ canonical locale resources. Missing translations remain explicit; English speech
 is never inherited silently. Locale validation checks cue and scope descriptions
 against stable keys.
 
-All 177 protected resolved narration entries remain covered by the path-free
-text-hash fixture. The canonical semantic baseline separately covers the 58
-functions' structure, narration entries, commands, lifecycle, and localized
-presentation. No audio was rendered; DSP, measured anchors, pacing, gains, and
-body repetitions were not changed.
+Canonical schema and command/lifecycle validation cover all 58 functions.
+Narration schedules are checked structurally and current spoken text resolves
+from the locale YAML; no frozen wording-hash fixture is required. No audio was
+rendered; existing DSP, measured anchors, pacing, gains, and published recordings
+remain unchanged.
 
 ```bash
 python scripts/tools/current_functional_metadata.py --check

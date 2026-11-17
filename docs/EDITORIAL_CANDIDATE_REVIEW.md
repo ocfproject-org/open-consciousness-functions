@@ -8,30 +8,30 @@ Recorded narration approval is not listening approval, rights clearance, or rele
 
 - Canonical authority: [`locales/en-US/OCF-EXP-001-Manifest.yaml`](../locales/en-US/OCF-EXP-001-Manifest.yaml)
 - Approval: `OCF-APPROVED-CANDIDATES-001` / `approve_full_draft`; response `1`.
-- Presented snapshot SHA-256: `6dc76e9827512efc1c2f4f532366def13480b68bf4d6793e8f7ca13f4903e608` (verification metadata only; no snapshot copy is retained).
-- Canonical narration entries: 3; exact resolved-text hashes are stored with the approval metadata.
+- Current wording and narration schedule are read directly from this canonical YAML resource.
+- Source revision: `911dbd0f24618091e34e8a816275ab7eabbf97bb`.
 - Listening approval: no. Release ready: no.
 
 ## Dissolve (`OCF-EXP-003`)
 
 - Canonical authority: [`locales/en-US/OCF-EXP-003-Dissolve.yaml`](../locales/en-US/OCF-EXP-003-Dissolve.yaml)
 - Approval: `OCF-APPROVED-CANDIDATES-001` / `approve_full_draft`; response `1`.
-- Presented snapshot SHA-256: `929f81f7d6fc3f6d44f5d3c00e1890c86765c1b7e0ce06bab75a6dbde953c471` (verification metadata only; no snapshot copy is retained).
-- Canonical narration entries: 3; exact resolved-text hashes are stored with the approval metadata.
+- Current wording and narration schedule are read directly from this canonical YAML resource.
+- Source revision: `911dbd0f24618091e34e8a816275ab7eabbf97bb`.
 - Listening approval: no. Release ready: no.
 
 ## Clear Zone (`OCF-EXP-005`)
 
 - Canonical authority: [`locales/en-US/OCF-EXP-005-Clear-Zone.yaml`](../locales/en-US/OCF-EXP-005-Clear-Zone.yaml)
 - Approval: `OCF-APPROVED-CANDIDATES-001` / `approve_full_draft`; response `1`.
-- Presented snapshot SHA-256: `f2bd428f97719b926f1c8bab5d9c8c11546ad65f0c025f6cbb7f2f74f5a79e80` (verification metadata only; no snapshot copy is retained).
-- Canonical narration entries: 3; exact resolved-text hashes are stored with the approval metadata.
+- Current wording and narration schedule are read directly from this canonical YAML resource.
+- Source revision: `911dbd0f24618091e34e8a816275ab7eabbf97bb`.
 - Listening approval: no. Release ready: no.
 
 ## Intuition (`OCF-EXP-006`)
 
 - Canonical authority: [`locales/en-US/OCF-EXP-006-Intuition.yaml`](../locales/en-US/OCF-EXP-006-Intuition.yaml)
 - Approval: `OCF-APPROVED-CANDIDATES-001` / `approve_full_draft`; response `1`.
-- Presented snapshot SHA-256: `7f5d38d589943fbac4ca6fe7212ee25ab27d4416ec5141455bab386f0a3cc147` (verification metadata only; no snapshot copy is retained).
-- Canonical narration entries: 3; exact resolved-text hashes are stored with the approval metadata.
+- Current wording and narration schedule are read directly from this canonical YAML resource.
+- Source revision: `911dbd0f24618091e34e8a816275ab7eabbf97bb`.
 - Listening approval: no. Release ready: no.

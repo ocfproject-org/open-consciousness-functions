@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Smoother, faster, more precise movement through improved coordination of the
-    mind, nervous system, and muscles.
+  text: |-
+    Move with greater coordination, speed, and precision.
   status: canonical
   version: 1.0.0
 metadata_entries: {}
@@ -246,7 +246,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 1abb1e737a147763b7cb2fe6e79caf6077f23382c393c3f3736fdf3f28c52999
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Coordination
     recommended_primary_cue: PLUS-SMOOTH, FAST
@@ -278,7 +277,6 @@ editorial:
         recorded speech and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: a6ed8be0fa85331958f0da48bdbfde04843fca18634d8f66d706c490b38b10ac
 record_metadata:
   legacy:
     command_ids:
@@ -347,7 +345,6 @@ record_metadata:
       explanation_key: commands.ocf-cmd-prf-003-primary.explanation
       display_cue_key: commands.ocf-cmd-prf-003-primary.display-cue
       spoken_cue_key: commands.ocf-cmd-prf-003-primary.spoken-cue
-  predecessor_resource_sha256: f0bdcc325194683046110bebc3bb98b4f4ca6114977b1de19512caca78d08aee
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -359,16 +356,9 @@ record_metadata:
     decision_source: Explicit one-function reviews 3–32, collected before implementation
       at the user's request. Options and Nutricia kept unchanged; Comfort and Regenerate
       already published.
-    source_row_sha256: 84bc6c3217800482a75d78f51ed40d67173a378fc0e801f9c34c4586cc25216e
     status: accepted
-    previous_values_sha256: e867eeb684536265da7bf776c9ef4b63055b291c62577fe5407c6f9e402e6b96
-    current_values_sha256: 71a1dbc91514dd6311f35fd2a512e8138a3556ea316e46e44f2b0415eecc6f76
     changed_narration_keys:
     - hplus.function.ocf-prf-003.closer
-    previous_resolved_text_sha256:
-      hplus.function.ocf-prf-003.closer: 9af3232852fba1dd3116d16ba69c2e18832736d98770d474a95746430b9d4e68
-    current_resolved_text_sha256:
-      hplus.function.ocf-prf-003.closer: 9089cdaf69de706439c62972e923cbe1912d2d5b4721a36056d545adfecbc254
     review_note: Change title from Synchronizing to Coordination and update exercise
       sign-off. Keep display and spoken cue unchanged. Preserve automatic everyday
       improvement, optional conscious reinforcement, mind/nervous-system/muscle coordination,
@@ -384,13 +374,8 @@ record_metadata:
     scope: Explicitly approved command title/display/spoken substitutions only; commands,
       lifecycle, procedure and audio settings are unchanged.
     decision_source: 'Explicit user confirmation: Confirm implementation'
-    source_row_sha256: 64afb85258b9e7f9341d166e0ed971fd31e91840a02c568a51793ae971b8966e
     status: accepted
-    previous_values_sha256: b06732d735f45a3c7e99a70b83c242f8d54cebe481652714edc9bb81d41aa9dd
-    current_values_sha256: 04813ab6c2d3768d990ef752cb8ec00eb1e320da2c15669c32b1a729e13bb099
     changed_narration_keys: []
-    previous_resolved_text_sha256: {}
-    current_resolved_text_sha256: {}
     review_note: Narration fingerprints and synthesis cache identity follow the approved
       canonical wording; listening and release approval remain false.
   - id: REL-PRF003-PRF004
@@ -400,8 +385,6 @@ record_metadata:
       or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map
       suggestions, 2026-11-10.
-    source_row_sha256: fd562e2d3ef2b34b26cdb8b3de01f63a2325eca531dcd8a563a36058329a34aa
-    current_values_sha256: ec309ce256420581837f40c5fa1da319bb5dc2e4eac5b52eda31d96c1eade937
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being
       suggestions in the guides/relationship-map.html

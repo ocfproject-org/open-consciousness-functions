@@ -7,10 +7,12 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Combines strength and quickness in a single felt state; activation cue PLUS-STRONG QUICK.
+  text: 'Call upon exceptional strength, speed, and coordination when immediate action is needed.'
   status: reviewed
-  version: 1.0.1
-metadata_entries: {}
+  version: 1.0.2
+metadata_entries:
+  functions.ocf-prf-006.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-PRF-006-PRIMARY
   display_cue:
@@ -53,7 +55,7 @@ activation:
   - id: select-immediate-action
     operation: select-activity
     instruction:
-      text: Choose an activity.
+      text: Select the immediate action that is needed.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -108,77 +110,6 @@ secondary_commands:
     effect_scope_ref: lifecycle.persistence
     relationships: {}
   procedure_steps: []
-- command_id: OCF-CMD-PRF-006-RELEASE
-  display_cue:
-    text: Plus Release
-  spoken_cue:
-    text: Plus Release
-    status: reviewed
-  label:
-    text: Release command
-    status: canonical
-    version: 1.0.0
-  explanation:
-    text: This command releases or suspends the current application as documented.
-    status: canonical
-    version: 1.0.0
-  usage:
-    text: Ends the temporary Strong-Quick application; the learned ability remains available.
-    status: canonical
-    version: 1.0.0
-  role: release
-  control:
-    designation: special
-    phrase_ref:
-      source: special-phrase
-      phrase_id: OCF-CMD-PRF-006-RELEASE
-    documentation:
-      visible: true
-      order: 200
-    effect_scope_ref: lifecycle.persistence
-    procedure:
-      ref: OCF-PROC-INHALE-HOLD
-      status: documented
-      evidence_keys:
-      - hplus.function.ocf-prf-006.function-body
-      before_steps:
-      - id: focus-strong-quick
-        operation: focus-target
-        localization_key: command.procedure.focus-target
-    relationships:
-      releases:
-      - OCF-CMD-PRF-006-PRIMARY
-  procedure_steps:
-  - id: focus-strong-quick
-    operation: focus-target
-    instruction:
-      text: Focus attention on the selected target.
-      status: canonical
-      version: 1.0.0
-  - id: inhale
-    operation: inhale
-    instruction:
-      text: Inhale.
-      status: canonical
-      version: 1.0.0
-  - id: hold
-    operation: hold-breath
-    instruction:
-      text: Hold your breath.
-      status: canonical
-      version: 1.0.0
-  - id: command
-    operation: think-or-say-command
-    instruction:
-      text: Think or say the command.
-      status: canonical
-      version: 1.0.0
-  - id: exhale
-    operation: exhale
-    instruction:
-      text: Exhale.
-      status: canonical
-      version: 1.0.0
 tags:
 - text: movement
   status: draft
@@ -192,8 +123,8 @@ tags:
 common_uses:
 - text: Reviewing the exercise's intention of prompt, coordinated action.
   status: draft
-- text: Reflecting on the documented release after an immediate need passes, without assuming exceptional
-    strength or taking physical risks.
+- text: Reflecting on the temporary response ending when the immediate need passes, without assuming
+    exceptional strength or taking physical risks.
   status: draft
 relationships:
   related_functions: []
@@ -205,133 +136,64 @@ entries:
   hplus.function.ocf-prf-006.opener:
     status: reviewed
     version: 1.1.0
-    text: 'This OCF exercise will teach you to call upon
-
-      extraordinary strength and quickness within your total self,
-
-      bringing them into action immediately when they are needed most.'
+    text: |-
+      This OCF exercise will teach you to call upon exceptional strength and quickness, directing your total self toward immediate, decisive action whenever needed.
   hplus.function.ocf-prf-006.function-body:
     status: reviewed
     version: 1.2.0
     cue_template:
       function_id: OCF-PRF-006
       allowed:
-      - cue.id.OCF-CMD-PRF-006-RELEASE
       - cue.primary
-    text: 'From this moment forward, within your total self
+    text: |-
+      From this moment forward, you have the ability to call upon exceptional reserves of strength and quickness within your total self.
 
-      there is an exceptional reserve of strength and quickness,
+      When an immediate need arises, your mind and body can work together with increased speed, strength, precision, and coordination.
 
-      ready to be called upon when an immediate need arises.
+      To activate this ability, identify the action you need to perform.
 
+      Take a deep breath in and gently hold it.
 
-      You will recognize the moment that calls for action.
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      Your awareness will become clear and direct.
+      Then slowly exhale through your mouth.
 
-      Your mind and body will unite around what must be done.
+      Your total self responds to your intention, bringing your available strength, speed, and coordination into the chosen action.
 
+      Your conscious mind, subconscious mind, nervous system, and muscles work together, reducing unnecessary hesitation and wasted movement.
 
-      When you need this extraordinary response,
+      Your awareness remains clear as your movements become direct, rapid, and precise.
 
-      bring the necessary action clearly into your awareness.
+      Your body directs its available resources toward the immediate task, maintaining the awareness and control needed for effective action.
 
-      Inhale deeply and gently hold your breath.
+      This enhanced response continues for as long as the immediate need exists.
 
+      When the need has passed, the enhanced response ends naturally, and your mind and body return to their normal operating state.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Your learned ability remains permanently available for future use.
 
-
-      Then exhale slowly through your mouth.
-
-
-      Immediately, your total self will respond as one.
-
-      Your conscious mind, subconscious mind, nervous system,
-
-      and muscles will work together in complete coordination.
-
-
-      Hesitation and unnecessary thought will fall away.
-
-      Your movements will become direct, rapid, and precise.
-
-      Every part of your body needed for the action
-
-      will contribute its strength in perfect timing.
-
-
-      You will draw upon reserves of power and speed
-
-      beyond what you ordinarily recognize within yourself,
-
-      concentrating your entire capacity into the moment.
-
-
-      Your awareness will remain clear.
-
-      Your action will be decisive.
-
-      The strength and quickness you call upon
-
-      will be directed toward the immediate purpose.
-
-
-      This exceptional response is temporary,
-
-      arising when you deliberately call upon it.
-
-      When its purpose is complete, bring Strong-Quick
-
-      clearly into your awareness.
-
-
-      Inhale deeply, hold your breath,
-
-      think or say in your mind, "{{ cue.id.OCF-CMD-PRF-006-RELEASE }},"
-
-      and exhale slowly through your mouth.
-
-
-      The present application will end,
-
-      and your physical system will return smoothly to balance.
-
-      Your learned ability will remain available
-
-      whenever another need arises.
-
-
-      Each time you use this function,
-
-      your total self will recognize and respond
-
-      to your intention more readily and effectively.'
+      Each time you use "{{ cue.primary }}," accessing and directing this ability becomes easier and more natural.
   hplus.function.ocf-prf-006.closer:
     status: reviewed
     version: 1.2.0
     cue_template:
       function_id: OCF-PRF-006
       allowed:
-      - cue.id.OCF-CMD-PRF-006-RELEASE
       - cue.primary
-    text: 'Remember, when an immediate need calls for extraordinary
+    text: |-
+      Remember, when you need exceptional strength and quickness, identify the action you wish to perform.
 
-      strength and quickness, inhale deeply, hold your breath,
+      Inhale deeply and gently hold your breath.
 
-      and think or say in your mind, "{{ cue.primary }}."
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      Then exhale slowly through your mouth.
+      Then slowly exhale through your mouth.
 
+      The enhanced response ends automatically when the need has passed.
 
-      When the need has passed, bring Strong-Quick to mind,
-
-      inhale, hold your breath, think or say "{{ cue.id.OCF-CMD-PRF-006-RELEASE }},"
-
-      and exhale slowly through your mouth.
-
-
-      This concludes your OCF Strong-Quick exercise.'
+      This concludes your OCF Strong-Quick exercise.
 slug: strong-quick
 classification:
   primary_domain: performance
@@ -349,9 +211,13 @@ lifecycle:
   persistence: temporary
   release:
     command: null
-    command_id: OCF-CMD-PRF-006-RELEASE
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - The temporary enhanced response ends automatically when the immediate need passes.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-prf-006.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -384,7 +250,6 @@ editorial:
   - id: OCF-TITLE-CUE-PRF-006
     status: pending
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: 96c68ac7b1c28a478a89b4303ac38a404cc50c48cfe8efff402009c20dd140ff
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Strong-Quick
     recommended_primary_cue: PLUS-STRONG QUICK
@@ -415,7 +280,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 2b5ca4505c2bed851459f0d3d72d96c06af28f9f780492785eca35032719d1d4
 record_metadata:
   legacy:
     command_ids:
@@ -479,18 +343,11 @@ record_metadata:
       usage_key: commands.ocf-cmd-prf-006-legacy-01.usage
       purpose_key: functions.ocf-prf-006.purpose
       explanation_key: commands.ocf-cmd-prf-006-legacy-01.explanation
-  - id: OCF-CMD-PRF-006-RELEASE
-    localization:
-      label_key: commands.ocf-cmd-prf-006-release.label
-      usage_key: commands.ocf-cmd-prf-006-release.usage
-      purpose_key: functions.ocf-prf-006.purpose
-      explanation_key: commands.ocf-cmd-prf-006-release.explanation
-  command_phrases:
-  - id: OCF-CMD-PRF-006-RELEASE
-    phrase: Plus Release
-    source_narration_key: hplus.function.ocf-prf-006.function-body
-    status: observed
-  predecessor_resource_sha256: a62055246485a3d24c6aa1834ec73afb4ec9f6d57c6281f24b7f77daeb55116b
+  historical_lookup:
+  - text: Plus Release
+    kind: former-teaching
+    command_id: OCF-CMD-PRF-006-RELEASE
+    decision: Removed from active Strong-Quick use; retained for historical lookup.
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

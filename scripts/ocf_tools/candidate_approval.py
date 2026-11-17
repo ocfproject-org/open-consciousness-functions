@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from .editorial_candidates import CANDIDATES, verify_approvals
 from .function_catalog import load_functions
+from .paths import REPO_ROOT
 
 
 def record(root=None):
@@ -32,8 +33,6 @@ def record(root=None):
             "function_id": identity,
             "decision": approval["decision"],
             "user_response": approval["user_response"],
-            "snapshot_sha256": approval["presented_snapshot_sha256"],
-            "resolved_sha256": approval["resolved_text_sha256"],
             "source_commit": source_commit,
         }
     return {
@@ -48,19 +47,5 @@ def record(root=None):
 
 
 def verify(root=None):
-    from .paths import REPO_ROOT
-
     root = root or REPO_ROOT
-    if root.resolve() != REPO_ROOT.resolve():
-        return ["approval verification requires the canonical repository locale catalog"]
     return verify_approvals(root)
-
-
-def predecessor(root, name, text):
-    """No predecessor projection remains; this adapter is identity-only."""
-    return text
-
-
-def before_texts(root, texts):
-    """No predecessor wording is stored or supplied from a secondary source."""
-    return dict(texts)

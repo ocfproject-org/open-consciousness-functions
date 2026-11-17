@@ -7,8 +7,8 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Sets a consciously selected future condition and completion time through intention and total-self
-    alignment.
+  text: |-
+    Manifest a chosen outcome within a desired timeframe through intention and total-self alignment.
   status: canonical
   version: 1.0.0
 metadata_entries:
@@ -16,6 +16,14 @@ metadata_entries:
     text: Align your intention with the reality you choose
     status: reviewed
     version: 1.1.0
+  functions.ocf-exp-001.lifecycle.scopes.capability.description:
+    text: The learned ability to direct intention through the total self remains permanently available.
+    status: reviewed
+    version: 1.0.0
+  functions.ocf-exp-001.lifecycle.scopes.application.description:
+    text: Each deliberate application is defined by its selected outcome and desired completion timeframe.
+    status: reviewed
+    version: 1.0.0
 activation:
   command_id: OCF-CMD-EXP-001-PRIMARY
   display_cue:
@@ -44,7 +52,7 @@ activation:
     documentation:
       order: 1
       visible: true
-    effect_scope_ref: lifecycle.persistence
+    effect_scope_ref: lifecycle.scopes.application.persistence
     procedure:
       before_steps:
       - id: select-outcome
@@ -59,7 +67,7 @@ activation:
   - id: select-outcome
     operation: select-intention
     instruction:
-      text: Choose an intention.
+      text: Choose the outcome you wish to manifest and its desired completion time.
       status: canonical
       version: 1.0.0
   - id: inhale
@@ -155,11 +163,8 @@ entries:
   hplus.function.ocf-exp-001.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to manifest with clear,
-
-      positive intention, aligning your total self with the reality
-
-      you choose to create.'
+    text: |-
+      This OCF exercise will teach you to manifest a chosen outcome through clear intention, aligning your total self and greater consciousness with the reality you wish to create.
     notes: 'OCF-adapted opener based on the unverified Möbius West transcript. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78;
       line 1. Original reference remains unchanged. Rewords the existing future-patterning purpose around
@@ -174,95 +179,45 @@ entries:
       function_id: OCF-EXP-001
       allowed:
       - cue.primary
-    text: 'From this moment forward, you will direct your total self
+    text: |-
+      From this moment forward, you have the ability to direct your total self toward the reality you choose to create.
 
-      toward the reality you choose to create,
+      Your conscious mind, subconscious mind, higher self, and greater consciousness work together to bring your intentions into manifestation.
 
-      with clear, positive intention.
+      Whenever you wish to manifest a particular outcome, clearly establish what you desire and when you wish it to become reality.
 
+      Know the outcome you are choosing, whether its fulfillment is immediate or sometime in the future.
 
-      Whenever you desire a change, choose the outcome
+      You may imagine the completed result, experience its emotional significance, or simply hold the intention clearly within your awareness.
 
-      and when you wish it to take form.
+      Take a deep breath in and gently hold it.
 
-      Whether the need is immediate or further ahead,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      picture, feel, or simply know the result as fulfilled.
+      Then slowly exhale through your mouth.
 
+      Your total self aligns with your chosen intention, bringing your thoughts, awareness, decisions, and actions into harmony with the reality you desire.
 
-      Inhale deeply and gently hold your breath.
+      Your higher self and greater consciousness cooperate with this intention, guiding the development of circumstances, connections, and opportunities that contribute to its fulfillment.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      Release unnecessary struggle, doubt, impatience, and the need to control every step of the process.
 
-      Then exhale slowly through your mouth.
+      You may strengthen this alignment through feelings of love, gratitude, inner harmony, or awareness of your heart and energy centers.
 
+      Remain receptive to the wisdom and guidance of your higher self, universal consciousness, and the greater awareness available beyond your physical senses.
 
-      Your total self will immediately align with your intention.
+      Your intuition becomes more responsive, helping you recognize meaningful opportunities and directions as they arise.
 
-      Your conscious mind, subconscious mind, higher self,
+      The intention you have established continues working within your total self without requiring constant conscious attention or repeated commands.
 
-      and physical being will work together in harmony.
+      Your chosen outcome unfolds in harmony with your highest good and the well-being of others, without destructive effects.
 
+      Remain open to its fulfillment or an outcome that serves your intention in an even greater way.
 
-      Struggle, fear, harsh judgment, and impatience will fall away.
+      This ability to manifest through conscious intention and total-self cooperation remains permanently available.
 
-      Your intention remains clear as you release the need
-
-      to force each step or continually check the result.
-
-
-      Center yourself in your heart.
-
-      Let love fill your being and bring your energy centers
-
-      into open, balanced harmony.
-
-      Remain grounded and present, receptive to energy and light.
-
-      You are worthy to create and receive good.
-
-
-      Welcome the loving guidance of your higher self
-
-      and the helpers you recognize.
-
-      Your intuition will become clearer,
-
-      guiding you to recognize opportunities and act.
-
-
-      Your greater awareness will reach beyond your physical body,
-
-      connecting with universal consciousness.
-
-      Your intention will draw together and sustain
-
-      the conditions and connections that support your chosen reality.
-
-
-      Hold the essence of your desire while welcoming
-
-      its fulfillment or something better,
-
-      in harmony with your highest good and the good of others,
-
-      without destructive effects upon anyone.
-
-
-      This pattern will continue without constant conscious effort,
-
-      unfolding immediately or through its natural sequence.
-
-      Once learned, this ability remains permanently available,
-
-      ready for everyday use with your intention, breath, and command.
-
-
-      The more you use this function,
-
-      the clearer your intention, the stronger your alignment,
-
-      and the easier and more effective manifestation becomes.'
+      Each time you use "{{ cue.primary }}," establishing and maintaining alignment with your chosen reality becomes easier and more natural.
     notes: 'OCF-adapted narration based on the unverified Möbius West transcript. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78;
       lines 55–84. Original reference remains unchanged; duplicate second pass remains excluded. Preserves
@@ -290,21 +245,17 @@ entries:
       function_id: OCF-EXP-001
       allowed:
       - cue.primary
-    text: 'Remember, to manifest a chosen outcome,
+    text: |-
+      Remember, whenever you wish to manifest a chosen outcome, establish clearly what you desire and when you wish it to become reality.
 
-      bring it clearly into your awareness
+      Take a deep breath in and gently hold it.
 
-      and choose when you wish it to take form.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and gently hold your breath.
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF exercise.'
+      This concludes your OCF Manifest exercise.
     notes: 'OCF-authored closer adapted from the previously approved reminder. Original SOURCE +Transcripts
       From available tapes/Möbius West/Möbius West.txt; SHA-256 9013a12a0b32bb22db8433b49c2e834029456e01007534ebc42acfcd21adec78.
       The unverified source ends in numeric runs and has no recoverable function-specific closer. Retains
@@ -331,7 +282,16 @@ lifecycle:
   release:
     command: null
     required: false
-  trigger_conditions: []
+  trigger_conditions:
+  - Select an outcome and its desired completion time before invoking Plus Manifest.
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-exp-001.lifecycle.scopes.capability.description
+    application:
+      persistence: conditional
+      activation: manual
+      description_key: functions.ocf-exp-001.lifecycle.scopes.application.description
 audio:
   background_audio:
     engine: farfield
@@ -364,7 +324,6 @@ editorial:
   - id: OCF-TITLE-CUE-EXP-001
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: f7fcae99700c26ee36742ff07f25f8a74f05151c7331f21ccb5d2bb6219f0246
     classification: RENAME TITLE/CUE — UPDATE TEACHING
     recommended_title: Future Pattern
     recommended_primary_cue: PLUS-MANIFEST
@@ -399,7 +358,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: b95460e51105d95f0808fbe4b80737a5726c72d292717659c7ed8ec77ba02a37
 record_metadata:
   legacy:
     command_ids:
@@ -477,7 +435,6 @@ record_metadata:
       label_key: commands.ocf-cmd-exp-001-legacy-01.label
       purpose_key: functions.ocf-exp-001.purpose
       usage_key: commands.ocf-cmd-exp-001-legacy-01.usage
-  predecessor_resource_sha256: d10b1950b856f5dd12893b240cefab2b8f60e476a5922c67d0d17862b47332d6
   editorial_approval:
     approval_id: OCF-APPROVED-CANDIDATES-001
     decision: approve_full_draft
@@ -485,11 +442,6 @@ record_metadata:
     implementation_confirmation: Confirm implementation
     scope: Exact presented narration, cues and procedures for all four candidates; Intuition registration;
       no DSP, pacing, listening or release approval.
-    presented_snapshot_sha256: 6dc76e9827512efc1c2f4f532366def13480b68bf4d6793e8f7ca13f4903e608
-    resolved_text_sha256:
-      hplus.function.ocf-exp-001.closer: 88659b8cff9bb39e90eebe8ccff6b984668380e1fda11a774d2aa2bc42af7c7c
-      hplus.function.ocf-exp-001.function-body: ff908129faceac6740b5dc80057c95c6c9cb0635e265349ae12420180c06cd86
-      hplus.function.ocf-exp-001.opener: 5dd1bd0cc258c0d0f39d028667effe8a634e525abc9db11363748ea7345b1722
     listening_approval: false
     release_ready: false
     source_commit: 911dbd0f24618091e34e8a816275ab7eabbf97bb
@@ -503,19 +455,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: 9cb4bacaf93168ae2add9e5458495b5503406ae56860dd8fcf3b88fee129f034
     status: accepted
-    previous_values_sha256: 65c73d7ae2147756412c53ddc9624b3f8334fb711ce7ff2f684fead16f93e915
-    current_values_sha256: f8d7f827607ef73a5d290a540b139d758e0e00a025e13d2ea6fbabae5589b0d8
     changed_narration_keys:
     - hplus.function.ocf-exp-001.closer
     - hplus.function.ocf-exp-001.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-exp-001.function-body: 8250a18acc38c42206c22db0c6f879ccd161353944bbb86e567f8168676faf6c
-      hplus.function.ocf-exp-001.closer: 32a2fba7dc6754b73eff9b1194f672f6761ca62aeb32dbb462c54ac2ae1c5933
-    current_resolved_text_sha256:
-      hplus.function.ocf-exp-001.function-body: 025a052d05f536dcd341c349513d625a7676f1552890b171dd3da3fb8d78243c
-      hplus.function.ocf-exp-001.closer: 0a06b27050830d6fa36f437579fee509b9518ba6a5d50e357d80786db6a112ca
     review_note: Retain desired future-condition selection, completion time and total-self manifestation;
       not generic productivity or loop-breaking.
   - id: REL-EXP001-EXP003
@@ -523,9 +466,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: a2cd3d6e5fcde830e336fa17e5e9a303dcec48d6d2c6587d3101d587a2b66b43
     status: accepted
-    current_values_sha256: ad92c02a0f2d9e2f8c3a5ab68aafface1df3348e6bfa9f728d1c7d596ac5a27e
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'
@@ -539,9 +480,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: 1c3f5add604a24f292d82d493e7cff2dc69d59ab0c84ab6da448ea7f5e793ef5
     status: accepted
-    current_values_sha256: 42a885ee57407150fc5039d9db6cb935ae4819b753dc25592349af6835339728
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'

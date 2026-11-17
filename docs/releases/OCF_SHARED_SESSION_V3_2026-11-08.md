@@ -1,5 +1,11 @@
 # Shared-session v3 and separate Preparation Learning successor
 
+> Current authority note (2026-11-15): this file is a historical review
+> checkpoint. Current function/shared locale wording and bindings are edited in
+> canonical YAML; source-text fingerprint ledgers referenced below have been
+> retired. Git history retains earlier snapshots. Published audio and release
+> manifests remain immutable.
+
 ## Baseline/discovery checkpoint
 
 Maintainer-approved exact Appendix A/B words and flow, following consistency
@@ -67,13 +73,12 @@ strict. FND-001's independent reviewed “plus, release, eleven, access” sourc
 wording/command remains hash-pinned as a separate compatibility variant; neither
 record overwrites the other. PLUS ONE AWAKE is absent from these paths.
 
-The new exact spoken Appendix A blocks are indexed in
-`function-content/editorial/shared-session-v3-001.json` with raw and resolved
-per-entry hashes and block-assembly fingerprints. Block 06's resolved hash still
-equals the approved predecessor's `2c5ece916a8dc35f0c99b8843244093040cd8670df5fbbdeccf552ac0dd75421`.
-All 1,112 pre-existing parsed locale-entry raw/resolved hashes, 58 complete
-function/command records, binding payloads, explicit historical selections,
-RC1 events and prior locks are verified in regression tests.
+The shared-session YAML contains current spoken blocks and ordered resources. The
+historical implementation used hash manifests during migration; those current-
+wording receipts are no longer maintained or checked. Regression tests validate
+current resource resolution, function bindings, explicit historical selections,
+and the frozen RC1 edition. Audio-default/profile and release gates remain
+separate from editable source wording.
 
 ## Routine and separate learning selection
 

@@ -7,10 +7,12 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Sets dream themes and a restful dream-sleep mindset; activation cue PLUS-DREAM.
+  text: Choose the dreams you wish to experience and strengthen your ability to remember them upon awakening.
   status: reviewed
   version: 1.0.1
-metadata_entries: {}
+metadata_entries:
+  functions.ocf-slp-003.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-SLP-003-PRIMARY
   display_cue:
@@ -148,13 +150,8 @@ entries:
   hplus.function.ocf-slp-003.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will teach you to choose the dreams
-
-      you wish to experience, allowing your total self
-
-      to create them during sleep and helping you remember
-
-      them clearly and joyfully when you awaken.'
+    text: |-
+      This OCF exercise will teach you to choose the dreams you wish to experience, allowing your total self to create them during sleep and helping you remember them clearly when you awaken.
   hplus.function.ocf-slp-003.function-body:
     status: reviewed
     version: 1.2.1
@@ -162,85 +159,39 @@ entries:
       function_id: OCF-SLP-003
       allowed:
       - cue.primary
-    text: 'From this moment forward, you can choose
+    text: |-
+      From this moment forward, you have the ability to choose the dreams you wish to experience during sleep.
 
-      the dreams you desire to experience during sleep.
+      Whenever you wish to dream about something specific, choose the theme or experience you desire.
 
+      It may be a place, person, experience, question, possibility, or world of your own creation.
 
-      Whenever you wish to dream a particular dream,
+      Establish your intention for the dream, including any details, experiences, or emotions you wish to explore.
 
-      bring its theme clearly into your awareness.
+      Take a deep breath in and gently hold it.
 
-      It may be a place, a person, an experience,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      a question, a possibility, or a world of your creation.
+      Then slowly exhale and continue breathing slowly and deeply.
 
+      Your body and mind enter peaceful, natural sleep.
 
-      Picture what you wish to experience.
+      As you sleep, your conscious intention, subconscious awareness, higher self, and total self work together to develop a dream around your chosen theme.
 
-      Know how you wish the dream to feel.
+      Your dream unfolds naturally, creating scenes, events, sensations, and experiences connected to your intention.
 
-      Include the sights, sounds, sensations,
+      The dream may develop in unexpected directions while remaining connected to the theme you have chosen.
 
-      and emotions that give your dream its character.
+      You experience the dream naturally, allowing the events and experiences to unfold.
 
+      When you awaken, the dream returns clearly to your awareness.
 
-      Inhale deeply and gently hold your breath.
+      You remember its events, details, and meaningful experiences, allowing you to reflect upon what you dreamed.
 
-      Think or say in your mind, "{{ cue.primary }}."
+      This ability to choose, experience, and remember your dreams remains permanently available.
 
-      Then exhale and breathe slowly and deeply.
-
-
-      You will move calmly and easily
-
-      into peaceful, normal, natural sleep.
-
-      As you sleep, your total self will receive
-
-      the pattern you have chosen and begin
-
-      composing a dream experience around it.
-
-
-      Your conscious intention, subconscious awareness,
-
-      and higher self will work together,
-
-      shaping a living dream of images, feelings,
-
-      movement, and meaningful experience.
-
-
-      The dream may unfold in ways beyond
-
-      what you first imagined, while remaining
-
-      connected to the theme you have selected.
-
-      You will experience it naturally and vividly,
-
-      allowing each scene to lead into the next.
-
-
-      When you awaken, the dream will return
-
-      clearly to your awareness. You will remember
-
-      its scenes, sensations, emotions, and details
-
-      with joy, and recognize the experience as your own.
-
-
-      This ability to choose, experience, and remember
-
-      your dreams will remain permanently available.
-
-      Each time you use {{ cue.primary }},
-
-      your dream experiences and their recall
-
-      will become clearer, richer, and easier.'
+      Each time you use "{{ cue.primary }}," creating and recalling your chosen dream experiences becomes easier and more natural.
   hplus.function.ocf-slp-003.closer:
     status: reviewed
     version: 1.2.1
@@ -248,20 +199,17 @@ entries:
       function_id: OCF-SLP-003
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to experience
+    text: |-
+      Remember, whenever you wish to experience a dream of your choosing, establish the theme you desire.
 
-      a dream of your choosing and recall it clearly,
+      Take a deep breath in and gently hold it.
 
-      bring your desired dream theme into your mind.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
-      Inhale deeply and hold your breath.
+      Then exhale and continue breathing slowly and deeply.
 
-      Think or say in your mind, "{{ cue.primary }}."
-
-      Then exhale and breathe slowly and deeply.
-
-
-      This concludes your OCF Dream Theme exercise.'
+      This concludes your OCF Dream Theme exercise.
 slug: sweet-dreams
 classification:
   primary_domain: sleep
@@ -277,6 +225,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-slp-003.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -309,7 +261,6 @@ editorial:
   - id: OCF-TITLE-CUE-SLP-003
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: d7f6717e01217dc85f72a937217b85e58606613e93add049eb018d2024d65d39
     classification: KEEP CUE — ALIGN TITLE OR NARRATION
     recommended_title: Dream Theme
     recommended_primary_cue: PLUS-DREAM
@@ -338,7 +289,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 5b5644999cdd01c90c0a153fbfea1250ef7f8cf64bbc4ab4669e50ea66c92791
 record_metadata:
   legacy:
     command_ids:
@@ -414,7 +364,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-slp-003-legacy-01.usage
       purpose_key: functions.ocf-slp-003.purpose
       explanation_key: commands.ocf-cmd-slp-003-legacy-01.explanation
-  predecessor_resource_sha256: 1af6f57b483984d7140039032379e11148992d2435c42a9d429100e09f0b1582
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-004
     kind: approved-title-cue
@@ -425,19 +374,10 @@ record_metadata:
       titles and cues.
     decision_source: Explicit one-function reviews 3–32, collected before implementation at the user's
       request. Options and Nutricia kept unchanged; Comfort and Regenerate already published.
-    source_row_sha256: 0fcb351333089c0147766c1da4acede473a91919383e1b85d05d9cca3dce678d
     status: accepted
-    previous_values_sha256: 0cfa8dbcdd61c195412478c676ecd27bbbf0dcdc210e6d37a664fab8ddde1998
-    current_values_sha256: dd862507354a9601806731b44b65c2761ed477302473a24881dd0f3323f7b356
     changed_narration_keys:
     - hplus.function.ocf-slp-003.closer
     - hplus.function.ocf-slp-003.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-slp-003.function-body: 884f7cf1d979bab46e68afef3009f9faf46ead43fc19a62e8d463b7ff2ad3d5d
-      hplus.function.ocf-slp-003.closer: 172ab8e86fe2242862ca9c5e94704a868c8d2fd43d5984a772c20e82d2fc04ec
-    current_resolved_text_sha256:
-      hplus.function.ocf-slp-003.function-body: 513d3bad0aebf1bbcb400b279198a3e266ddbdbc7bdb6140bee0fed9400b54bb
-      hplus.function.ocf-slp-003.closer: 1e8d827d3a242bcb02260c64e7fb41bf6540aacbb36377cab6e24f946a628ebb
     review_note: Change title from Sweet Dreams to Dream Theme and update exercise sign-off. Replace
       two body mentions and one closer mention from Plus Theme Dream Sleep to Plus Dream. Preserve
       theme selection, inhale/hold/cue/exhale followed by slow deep breathing, dream suggestions and
@@ -452,8 +392,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: 2cba1b5c940495882833741e04d59ed673910b14e0db6423e0c62a0b980ae256
-    current_values_sha256: e30795174e701081b2262e5a32d92b784ea22827d68490a5b21c494481b6aa23
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

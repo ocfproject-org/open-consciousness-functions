@@ -7,10 +7,12 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Brings specific memories or learned material to mind on request.
+  text: 'Recall past experiences, memories, and learned information with greater clarity and detail.'
   status: canonical
-  version: 1.0.0
-metadata_entries: {}
+  version: 1.0.1
+metadata_entries:
+  functions.ocf-cog-006.lifecycle.scopes.capability.description:
+    text: The learned ability remains permanently available for deliberate future use.
 activation:
   command_id: OCF-CMD-COG-006-PRIMARY
   display_cue:
@@ -113,13 +115,8 @@ entries:
   hplus.function.ocf-cog-006.opener:
     status: reviewed
     version: 1.2.0
-    text: 'This OCF exercise will strengthen your ability
-
-      to recall information and past experiences
-
-      clearly, accurately, and in great detail,
-
-      whenever you desire.'
+    text: |-
+      This OCF exercise will strengthen your ability to recall memories, learned information, and past experiences clearly and in detail whenever you choose.
   hplus.function.ocf-cog-006.function-body:
     status: reviewed
     version: 1.2.0
@@ -127,83 +124,31 @@ entries:
       function_id: OCF-COG-006
       allowed:
       - cue.primary
-    text: 'From this moment forward, your ability to remember
+    text: |-
+      From this moment forward, your ability to remember and recall information and experiences becomes stronger, clearer, and more effective.
 
-      and recall information and experiences is becoming
+      Your conscious mind, subconscious mind, and total self work together to organize and retrieve the knowledge and experiences stored within your memory.
 
-      stronger, clearer, and more effective.
+      Whenever you wish to remember something, think of the information or experience you want to recall.
 
+      Take a deep breath in and gently hold it.
 
-      Your mind naturally organizes and preserves your memories,
+      While holding your breath, silently say to yourself,
+      "{{ cue.primary }}."
 
-      keeping the knowledge and experiences of your life
+      Then slowly exhale through your mouth.
 
-      available whenever you wish to remember them.
+      Your mind brings the selected memory or information into your conscious awareness.
 
+      Relevant details become clearer, allowing you to recognize and understand what you remember.
 
-      Whenever you desire to recall something,
+      Your memory may return through words, thoughts, sounds, feelings, or direct understanding.
 
-      begin by focusing on the information
+      Your total self helps you access the knowledge and experiences already available within your memory.
 
-      or experience you wish to remember.
+      This ability to recall information and past experiences remains permanently available whenever you choose.
 
-
-      Inhale deeply and gently hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth,
-
-      as though gently blowing out a candle.
-
-
-      The memory you seek will immediately come into
-
-      your conscious awareness, clear, vivid, and complete.
-
-
-      You will remember the details of the experience,
-
-      including the images, words, sounds, feelings,
-
-      and sensations associated with it.
-
-
-      The information will return naturally and effortlessly,
-
-      allowing you to recognize and understand
-
-      what you remember.
-
-
-      From this moment forward, this ability to recall
-
-      information and experiences is permanently
-
-      established within you.
-
-
-      Whenever you use {{ cue.primary }}, your mind will bring
-
-      the desired information into your awareness
-
-      quickly, clearly, and in great detail.
-
-
-      Each time you use this function, recalling
-
-      information becomes easier, faster,
-
-      and more effective.
-
-
-      Your memories remain available to you,
-
-      ready to return to your conscious awareness
-
-      whenever you desire.'
+      Each time you use "{{ cue.primary }}," retrieving memories and learned information becomes easier and more natural.
   hplus.function.ocf-cog-006.closer:
     status: reviewed
     version: 1.2.0
@@ -211,23 +156,17 @@ entries:
       function_id: OCF-COG-006
       allowed:
       - cue.primary
-    text: 'Remember, whenever you wish to recall
+    text: |-
+      Remember, whenever you wish to recall information or a past experience, think of what you want to remember.
 
-      information or a past experience,
+      Take a deep breath in and gently hold it.
 
-      focus on what you desire to remember.
+      Silently say to yourself,
+      "{{ cue.primary }}."
 
+      Then slowly exhale through your mouth.
 
-      Inhale deeply and hold your breath.
-
-
-      Think or say in your mind, "{{ cue.primary }}."
-
-
-      Then exhale slowly through your mouth.
-
-
-      This concludes your OCF Recall exercise.'
+      This concludes your OCF Recall exercise.
 slug: recall
 classification:
   primary_domain: cognition
@@ -243,6 +182,10 @@ lifecycle:
     command: null
     required: false
   trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-cog-006.lifecycle.scopes.capability.description
 audio:
   background_audio:
     engine: farfield
@@ -275,7 +218,6 @@ editorial:
   - id: OCF-TITLE-CUE-COG-006
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: bd2cba172fa0161f855eedbb0e822e4a7127eb6ca9a543a6f4d278777efa023d
     classification: KEEP — TITLE, CUE, AND TEACHING ALREADY CONSISTENT
     recommended_title: Recall
     recommended_primary_cue: PLUS-RECALL
@@ -306,7 +248,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 8bab3d73bd9f0d49925df6a34e50bac12abf49966806c90b7f54c6eab17a6a7d
 record_metadata:
   legacy:
     command_ids:
@@ -358,7 +299,6 @@ record_metadata:
       usage_key: commands.ocf-cmd-cog-006-primary.usage
       purpose_key: functions.ocf-cog-006.purpose
       explanation_key: commands.ocf-cmd-cog-006-primary.explanation
-  predecessor_resource_sha256: 4af80f09eacd62aa71cc3891f726ce2cac01c56100d2e6b83e7768ae7b6c30f6
   editorial_decisions:
   - id: REL-COG006-COG001
     kind: approved-relationship
@@ -366,8 +306,6 @@ record_metadata:
     scope: Optional listener-guide relationship only; no narration, cue, lifecycle or DSP change.
     decision_source: Explicit owner approval to implement the existing relationship-map suggestions,
       2026-11-10.
-    source_row_sha256: fdf9b5b42698001d8236712e46c536e279f8bafc3ce09c503b76f0e72c74760f
-    current_values_sha256: f0d2c0f7a79fe7e5b09e128dbda4acf6d891e2a3a8b89faa18767034f36cff04
     status: accepted
     approval_response: Draft optional suggestions should all be implemented vs being suggestions in
       the guides/relationship-map.html

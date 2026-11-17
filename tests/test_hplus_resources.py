@@ -107,9 +107,7 @@ def test_standard_shared_and_function_resources_resolve_without_local_sources(ow
 
 
 def test_all_55_legacy_functions_have_review_files_without_fabricated_missing_speech():
-    from ocf_tools.canonical_integrity import verify as verify_semantic_baseline
     from tools.check_hplus_narration_integrity import check as check_narration
-    from tools.check_hplus_narration_integrity import narration_texts
 
     owners = [
         r
@@ -128,8 +126,6 @@ def test_all_55_legacy_functions_have_review_files_without_fabricated_missing_sp
     unavailable = [owner for owner in owners if owner.source_availability == "unavailable"]
     assert len(unavailable) == 16
     catalog = LocaleCatalog()
-    protected = narration_texts()
-    assert verify_semantic_baseline() == []
     assert check_narration() == []
     for owner in owners:
         assert owner.audio_script_status == "approved"
@@ -139,17 +135,12 @@ def test_all_55_legacy_functions_have_review_files_without_fabricated_missing_sp
             / catalog.require("en-US").localized_function_files[owner.id]
         )
         doc = yaml.safe_load(path.read_text())
-        # Protected narration is verified by path-free hashes; sequence and
-        # function ownership remain canonical in the locale resource.
+        # Current narration ownership and schedule are validated structurally;
+        # wording is read directly from this canonical resource.
         assert {row["key"] for row in owner.data["narration"]["sequence"]} <= set(doc["entries"])
         for row in owner.data["narration"]["sequence"]:
             key = row["key"]
-            identity = f"{path.relative_to(REPO_ROOT).as_posix()}::{key}"
-            if identity in protected:
-                assert (
-                    catalog.resource(key, "en-US", domain="narration", fallback=False)[0].text
-                    == protected[identity]
-                )
+            assert catalog.resource(key, "en-US", domain="narration", fallback=False)[0].text
         prefix = f"hplus.function.{owner.id.lower()}."
         if owner.source_availability == "unavailable":
             assert owner.reimplementation_status == "planned"

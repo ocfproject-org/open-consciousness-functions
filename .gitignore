@@ -7,6 +7,8 @@ build/
 dist/
 .pytest_cache/
 .ruff_cache/
+/node_modules/
+npm-debug.log*
 .coverage
 htmlcov/
 

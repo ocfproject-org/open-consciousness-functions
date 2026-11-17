@@ -7,10 +7,9 @@ title:
   status: canonical
   version: 1.0.0
 description:
-  text: Supports entering, remaining in, and returning to natural sleep amid unfamiliar or distracting
-    surroundings.
+  text: 'Fall asleep, stay asleep, and return to restful sleep despite unfamiliar surroundings, noise, or distractions.'
   status: canonical
-  version: 1.0.0
+  version: 1.0.1
 metadata_entries: {}
 activation:
   command_id: OCF-CMD-SLP-005-PRIMARY
@@ -311,7 +310,6 @@ editorial:
   - id: OCF-TITLE-CUE-SLP-005
     status: historical-review
     source_revision: fb66fbce11dd3d71e57fac4d5784365128d41c82
-    source_row_sha256: c9b233476f7d00695dd2d604853138d942fb5b77b16153a0f2839b8386312c50
     classification: NEEDS HUMAN DECISION
     recommended_title: Sleep Easy
     recommended_primary_cue: PLUS-SLEEP EASY
@@ -348,7 +346,6 @@ editorial:
         and final rendered transcripts unverified.
 localization:
   status: complete
-  contract_sha256: 5c2582cc9d77c9aa47ee299cd82bda9c3d83d0ec916ac4d07dc1457b55111631
 record_metadata:
   legacy:
     command_ids:
@@ -426,7 +423,6 @@ record_metadata:
       label_key: commands.ocf-cmd-slp-005-legacy-01.label
       purpose_key: functions.ocf-slp-005.purpose
       usage_key: commands.ocf-cmd-slp-005-legacy-01.usage
-  predecessor_resource_sha256: ff16268396b3076f9f1a4bc6fedd7bdea8b270ae14be9477ceaeb001a7a9b297
   editorial_decisions:
   - id: OCF-EDITORIAL-TITLE-CUES-001
     kind: approved-title-cue
@@ -434,19 +430,10 @@ record_metadata:
     scope: English primary cue, finalized title where supplied, exact teaching substitutions and necessary
       presentation summaries; procedures/mechanisms/secondary controls unchanged.
     decision_source: Explicit user approval in the approved English title-cue migration task
-    source_row_sha256: d2497ab30dda299cc04c9025fbd80be96b0ea901d3b8be64034aa91921898ebe
     status: accepted
-    previous_values_sha256: 6f22764932dfebc8958aed5f45b0118bee8d5d75251fe5bec3e85c00176511e5
-    current_values_sha256: 1f5bb73a6d2cb4a6ce13d8978f488f4dbe7c4367f1aaeca20d54f221dfe734c2
     changed_narration_keys:
     - hplus.function.ocf-slp-005.closer
     - hplus.function.ocf-slp-005.function-body
-    previous_resolved_text_sha256:
-      hplus.function.ocf-slp-005.function-body: 53ea2a36f9b6fa078bc3d554a274d0c427980f7eef694c99617debb61e59a8d2
-      hplus.function.ocf-slp-005.closer: ac02d7d15f93b55629fc83ddd74a607e27b40c56842bb192f46aecd3da12a00b
-    current_resolved_text_sha256:
-      hplus.function.ocf-slp-005.function-body: 652e736c22d4f918610dcf69275fa18fa1490ef0b9bdaa9b8daaba58b2877cee
-      hplus.function.ocf-slp-005.closer: a26cb92bed343de81c1e34f37d08a8cc01359077d81e7c70e1a7441f14aa4833
     review_note: Retain unfamiliar/distracting surroundings, sleep continuity and resettling; preserve
       close-eyes, inhale/hold, cue and slow mouth exhale, then natural breathing.
   - id: REL-SLP005-SLP001
@@ -454,9 +441,7 @@ record_metadata:
     source_commit: 2b26883148ee1c218a917cd7ff4119943d2eb03f
     scope: Optional approved function relationship; discovery guidance only, never a runtime prerequisite.
     decision_source: Explicit user-approved guide relationship review.
-    source_row_sha256: f8781c7a35a539e1d601ea8f0e1601d07e527f59794f2557d17581107077750e
     status: accepted
-    current_values_sha256: 434e093103c0051dd7aa22bc51dcce765ba7106fe7f5a3802ab7e1a3fded6db2
     review_note: Approved optional relationship remains embedded in the canonical locale resource. Evidence
       provenance and reciprocal approval are retained as metadata.
     approval_response: '1'
