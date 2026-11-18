@@ -139,6 +139,26 @@ common_uses:
 - text: Exploring the distinction between sufficient nourishment and unnecessary retention
     as imagery, not a way to control metabolism or replace adequate eating.
   status: draft
+- semantic_id: food-more-mode
+  text: When choosing the Food More mode, reflect on adequate nourishment and a sense of receiving what
+    you need from regular meals.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
+- semantic_id: food-less-mode
+  text: When choosing the Food Less mode, reflect on satisfaction and avoiding unnecessary retention without
+    restricting required nutrition.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
+- semantic_id: appetite-choice-pairing
+  text: Explore Nutricia and Eat/No Eat together for a weight-management intention, as Barbara Bullard
+    explicitly described in the 1993 Odyssey Part II account.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-ODYS2'
+- semantic_id: approved-ocf-sequence
+  text: In the existing OCF weight-management chain, use Nutricia before Appetite Choice, with Habit Freedom
+    when needed and Detox as an optional separate final practice.
+  status: reviewed
+  notes: 'Use-case review; ocf-approved-sequence; refs: A-ODYS2,A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

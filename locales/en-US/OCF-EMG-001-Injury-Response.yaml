@@ -100,6 +100,16 @@ common_uses:
   status: draft
 - text: Reflecting on supportive awareness without postponing emergency services or professional care.
   status: draft
+- semantic_id: contact-help
+  text: After contacting emergency services or beginning appropriate first aid for an injury, use Injury
+    Response only as an optional composure cue if it does not interrupt care.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: emergency-plan-review
+  text: During a nonemergency rehearsal, review which real-world first-aid actions come before any optional
+    self-regulation practice.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
 relationships:
   related_functions: []
   complementary_functions: []

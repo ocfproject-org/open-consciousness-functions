@@ -117,6 +117,30 @@ common_uses:
   status: draft
 - text: Practicing a calm sense of inner strength in daily life without assuming extraordinary abilities.
   status: draft
+- semantic_id: public-confidence
+  text: Before a presentation, reflect on personal strengths and then prepare to communicate clearly.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: after-setback
+  text: After a disappointing result, use Inner Power to reconnect with your existing resources and choose
+    a constructive next action.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: social-courage
+  text: Before a social interaction, use Inner Power as a subjective confidence practice without expecting
+    to control others.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP83F'
+- semantic_id: test-confidence
+  text: Before a practice examination, explore confidence and Recall as distinct goals, keeping answer
+    accuracy separate from self-belief.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP10'
+- semantic_id: morning-motivation
+  text: Before an important day, name a capability you already have and use Inner Power to focus on exercising
+    it.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-FND-005

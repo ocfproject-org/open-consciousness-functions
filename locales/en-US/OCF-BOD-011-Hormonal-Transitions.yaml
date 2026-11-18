@@ -97,6 +97,11 @@ common_uses:
   status: draft
 - text: Reflecting on physical and emotional comfort without claiming to regulate hormone levels or replace care.
   status: draft
+- semantic_id: menopause-transition
+  text: For menopause-related changes, use this as an optional emotional and body-awareness reflection,
+    separate from medical symptom management.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -137,6 +137,26 @@ common_uses:
 - text: Exploring release of an unwanted emotional pattern while retaining useful memories and personal
     choice.
   status: draft
+- semantic_id: recurring-thought-pattern
+  text: Identify a recurring thought that interferes with your goals and explore reducing its grip while
+    retaining relevant learning.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-BELIEFS'
+- semantic_id: lingering-conflict
+  text: After a conflict continues to occupy attention, use Offload as a distinct longer-pattern practice
+    rather than an immediate Let Go substitute.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
+- semantic_id: loss-and-grief
+  text: During a period of loss, explore Offload for specific overwhelming mental patterns while preserving
+    memory and allowing feelings to be present.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-GRIEF'
+- semantic_id: habit-related-interference
+  text: When working on a chosen habit, explore Offload for recurring thoughts that make the behavior
+    harder to change.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
 relationships:
   related_functions:
   - function_id: OCF-EXP-003

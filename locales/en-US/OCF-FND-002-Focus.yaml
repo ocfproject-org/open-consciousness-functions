@@ -92,6 +92,29 @@ common_uses:
   status: draft
 - text: Preparing for focused study or deliberate engagement with an experience.
   status: draft
+- semantic_id: studying
+  text: Before reading a course chapter, use Focus to direct attention to the selected material.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
+- semantic_id: programming
+  text: After an interruption while coding, choose the next concrete problem and use Focus to return attention
+    to it.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: skilled-movement
+  text: During safe skills practice such as walking a familiar path, keep attention on the immediate task
+    and surroundings.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-TRAIL'
+- semantic_id: reading
+  text: While reading something challenging, use Focus to keep attention on the current passage, taking
+    breaks as needed.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: before-imprint
+  text: Before using Imprint during study, use Focus as a separate attention-setting practice.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
 relationships:
   related_functions:
   - function_id: OCF-COG-007

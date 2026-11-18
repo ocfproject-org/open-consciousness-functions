@@ -133,6 +133,19 @@ common_uses:
 - text: Reflecting on a desired waking time without relying on the exercise instead
     of an alarm when timing matters.
   status: draft
+- semantic_id: sleep-onset
+  text: When ready for bed, use Sleep as a deliberate transition away from waking activity.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: after-evening-relax
+  text: After a separate evening Relax practice, use Sleep to focus on natural sleep onset.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP10'
+- semantic_id: dream-theme-sequence
+  text: If you plan a dream-themed evening routine, use Dream Theme to choose the theme before a separate
+    Sleep practice.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-SLP-005

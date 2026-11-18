@@ -88,6 +88,25 @@ common_uses:
 - text: Practicing organized attention to relevant details without equating speed
     with accuracy.
   status: draft
+- semantic_id: conversation-thinking
+  text: Before a conversation, use Think Fast as a mental-fluency intention and take time to listen carefully
+    as well.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-HP10'
+- semantic_id: study-processing
+  text: During a study session, compare Think Fast with Imprint to distinguish processing ideas from retaining
+    them.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
+- semantic_id: brainstorming-speed
+  text: During a short, low-stakes brainstorm, generate several options before evaluating their quality.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: language-practice
+  text: While rehearsing foreign-language responses, explore Think Fast alongside ordinary speaking and
+    retrieval practice.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions:

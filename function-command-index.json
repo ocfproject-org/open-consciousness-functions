@@ -204,6 +204,36 @@
         {
           "status": "draft",
           "text": "Reflecting on how a desired behavior could become more familiar and less effortful."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "planned-response",
+          "status": "reviewed",
+          "text": "Before a recurring situation, choose the response you want to practice making more automatic, such as pausing before answering."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-SEEBE",
+          "semantic_id": "social-response",
+          "status": "reviewed",
+          "text": "In a familiar social situation that repeatedly brings up an unwanted response, rehearse a preferred way of responding and later observe what happens."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "daily-routine",
+          "status": "reviewed",
+          "text": "Practice a consistent starting routine for a daily activity so that the first step needs less deliberation."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "substitute-habit",
+          "status": "reviewed",
+          "text": "After identifying an unwanted habit, choose a specific replacement behavior to practice rather than focusing only on what to stop."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "sport-preparation",
+          "status": "reviewed",
+          "text": "Before a familiar sport or skill drill, rehearse the response you want to become more consistent under ordinary practice conditions."
         }
       ],
       "effects": null,
@@ -521,6 +551,36 @@
         {
           "status": "draft",
           "text": "Reinforcing an intention toward clear, steady thinking without treating a medical condition."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "brain-neck-awareness",
+          "status": "reviewed",
+          "text": "During a quiet wellness practice, direct attention toward a comfortable sense of steadiness in the head and neck without targeting a medical symptom."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-BRAIN",
+          "semantic_id": "mental-clarity-break",
+          "status": "reviewed",
+          "text": "After mentally demanding work, use Brain Flow as a short reflective body-awareness exercise before returning to the task."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-BRAIN",
+          "semantic_id": "body-connection",
+          "status": "reviewed",
+          "text": "Compare the experience of Brain Flow with Circulation as distinct practices; historical users described using these themes together."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-TRAIL",
+          "semantic_id": "after-strenuous-day",
+          "status": "reviewed",
+          "text": "At rest after a physically demanding day, explore a sense of head-and-neck comfort as part of ordinary recovery."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "relaxation-companion",
+          "status": "reviewed",
+          "text": "After Relax, bring attention to the Brain Flow intention during a calm, nonmedical self-care session."
         }
       ],
       "effects": null,
@@ -794,6 +854,30 @@
         {
           "status": "draft",
           "text": "Exploring a felt sense of nourishment and vitality as a wellness practice, not a circulation treatment."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-CIRC",
+          "semantic_id": "circulation-imagery",
+          "status": "reviewed",
+          "text": "While resting comfortably, explore the feeling or imagery of smooth circulation through your arms and legs."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "after-sitting",
+          "status": "reviewed",
+          "text": "Following a long period of sitting, use Circulation as an optional awareness practice alongside ordinary movement breaks."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-BRAIN",
+          "semantic_id": "comparative-practice",
+          "status": "reviewed",
+          "text": "Compare Circulation with Brain Flow to learn which purpose and imagery each function actually teaches."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "general-tuneup",
+          "status": "reviewed",
+          "text": "Include Circulation as a distinct optional practice when exploring the historical Tune-Up-centered self-care suggestions."
         }
       ],
       "effects": null,
@@ -1053,6 +1137,30 @@
         {
           "status": "draft",
           "text": "Exploring a calmer response to discomfort without ignoring symptoms or delaying appropriate care."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-PAIN",
+          "semantic_id": "ordinary-discomfort",
+          "status": "reviewed",
+          "text": "In a safe, nonurgent situation involving familiar mild discomfort, practice shifting attention toward a sense of ease while remaining aware of symptoms."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "tension-with-relax",
+          "status": "reviewed",
+          "text": "After Relax, use Comfort to explore a calmer relationship with everyday muscular tension."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "itch-distraction",
+          "status": "reviewed",
+          "text": "For an ordinary minor itch, explore the temporary comfort intention without ignoring a continuing or worsening cause."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "bedtime-comfort",
+          "status": "reviewed",
+          "text": "When minor familiar discomfort interferes with winding down, use Comfort as an optional settling practice before bedtime."
         }
       ],
       "effects": null,
@@ -1331,6 +1439,12 @@
         {
           "status": "draft",
           "text": "Reflecting on a sense of freshness and balance without claiming removal of toxins or replacing medical care."
+        },
+        {
+          "notes": "Use-case review; ocf-approved-sequence; refs: OCF proposal",
+          "semantic_id": "post-indulgence-reflection",
+          "status": "reviewed",
+          "text": "After an occasion of overeating or overindulgence, choose a gentle reset-oriented self-care intention without interpreting the practice as toxin removal."
         }
       ],
       "effects": null,
@@ -1598,6 +1712,36 @@
         {
           "status": "draft",
           "text": "Practicing deliberate food choices while remaining responsive to hunger and nutritional needs."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "hunger-versus-craving",
+          "status": "reviewed",
+          "text": "Before deciding to eat, pause and distinguish physical hunger from an automatic urge to snack."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "mindful-mealtime",
+          "status": "reviewed",
+          "text": "At a regular meal, practice noticing satisfaction and choosing an amount that meets your needs."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-ODYS2",
+          "semantic_id": "nutricia-weight-routine",
+          "status": "reviewed",
+          "text": "Explore Appetite Choice alongside Nutricia in the historically documented weight-management pairing described by Barbara Bullard, while keeping adequate nourishment central."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "long-term-habit",
+          "status": "reviewed",
+          "text": "If a repeated eating pattern is the main concern, compare Appetite Choice with the distinct Habit Freedom practice."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "sweets-choice",
+          "status": "reviewed",
+          "text": "When deciding whether to have a treat, use the function as a moment for conscious choice rather than a rigid food rule."
         }
       ],
       "effects": null,
@@ -1934,6 +2078,30 @@
         {
           "status": "draft",
           "text": "Visualizing comfortable heart rhythm as a wellness exercise, not cardiovascular treatment."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "tuneup-companion",
+          "status": "reviewed",
+          "text": "Explore Heart Flow and Body Tune-Up as separate practices; the 1990 wishlist specifically proposed that pairing for overnight listening."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS4",
+          "semantic_id": "circulation-comparison",
+          "status": "reviewed",
+          "text": "Compare Heart Flow with Circulation to distinguish their intended attention targets rather than treating them as medical interventions."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "winding-down",
+          "status": "reviewed",
+          "text": "At the end of a stressful day, use Heart Flow as a calm body-awareness reflection."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "comfortable-breathing",
+          "status": "reviewed",
+          "text": "During an easy, unforced breathing period, pair a calm heart-centered intention with ordinary breathing awareness."
         }
       ],
       "effects": null,
@@ -2232,6 +2400,18 @@
         {
           "status": "draft",
           "text": "Reflecting on relaxation and balance without using felt sensations as a blood-pressure measurement or treatment."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "stress-pattern-notes",
+          "status": "reviewed",
+          "text": "Note how stressful situations feel in your body and compare the experience with a separate Relax session."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "bedtime-settling",
+          "status": "reviewed",
+          "text": "Use a gentle bedtime relaxation intention while maintaining any prescribed monitoring and care."
         }
       ],
       "effects": null,
@@ -2523,6 +2703,24 @@
         {
           "status": "draft",
           "text": "Reflecting on immune readiness as an intention, not proof of protection from illness or a substitute for care."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "immune-themed-visualization",
+          "status": "reviewed",
+          "text": "During a wellness meditation, imagine coordinated protective processes and a return to ordinary balance."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-IMMUNE",
+          "semantic_id": "historical-multi-practice",
+          "status": "reviewed",
+          "text": "Review the 1991 report describing Immunizing, Circulation and De-Discomfort as a historical combination, not a proven therapeutic protocol."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-tuneup",
+          "status": "reviewed",
+          "text": "Compare Immune Readiness with Body Tune-Up when choosing the intended theme for a nonmedical self-care session."
         }
       ],
       "effects": null,
@@ -2756,6 +2954,24 @@
         {
           "status": "draft",
           "text": "Visualizing respiratory maintenance without treating breathing difficulty or delaying medical help."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "comfortable-breath",
+          "status": "reviewed",
+          "text": "While relaxed, notice easy, natural breathing without forcing a longer inhale, exhale or breath hold."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "relax-pair",
+          "status": "reviewed",
+          "text": "After Relax, explore Breathe Better as a separate practice focused on respiratory comfort."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS3",
+          "semantic_id": "body-tuneup-contrast",
+          "status": "reviewed",
+          "text": "Compare the focused breathing intention with the broader Body Tune-Up intention to choose which practice suits a quiet session."
         }
       ],
       "effects": null,
@@ -3207,6 +3423,30 @@
         {
           "status": "draft",
           "text": "Exploring the distinction between sufficient nourishment and unnecessary retention as imagery, not a way to control metabolism or replace adequate eating."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "food-more-mode",
+          "status": "reviewed",
+          "text": "When choosing the Food More mode, reflect on adequate nourishment and a sense of receiving what you need from regular meals."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "food-less-mode",
+          "status": "reviewed",
+          "text": "When choosing the Food Less mode, reflect on satisfaction and avoiding unnecessary retention without restricting required nutrition."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-ODYS2",
+          "semantic_id": "appetite-choice-pairing",
+          "status": "reviewed",
+          "text": "Explore Nutricia and Eat/No Eat together for a weight-management intention, as Barbara Bullard explicitly described in the 1993 Odyssey Part II account."
+        },
+        {
+          "notes": "Use-case review; ocf-approved-sequence; refs: A-ODYS2,A-WISH90",
+          "semantic_id": "approved-ocf-sequence",
+          "status": "reviewed",
+          "text": "In the existing OCF weight-management chain, use Nutricia before Appetite Choice, with Habit Freedom when needed and Detox as an optional separate final practice."
         }
       ],
       "effects": null,
@@ -3518,6 +3758,12 @@
         {
           "status": "draft",
           "text": "Reflecting on physical and emotional comfort without claiming to regulate hormone levels or replace care."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "menopause-transition",
+          "status": "reviewed",
+          "text": "For menopause-related changes, use this as an optional emotional and body-awareness reflection, separate from medical symptom management."
         }
       ],
       "effects": null,
@@ -4212,6 +4458,12 @@
         {
           "status": "draft",
           "text": "Practicing a shift of attention from unwanted arousal toward another chosen interest."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "desire-awareness",
+          "status": "reviewed",
+          "text": "Reflect on your own level of sexual interest and whether you want a subjective shift toward MORE or LESS."
         }
       ],
       "effects": null,
@@ -4499,6 +4751,30 @@
         {
           "status": "draft",
           "text": "Visualizing whole-body maintenance and renewal without claiming healing or replacing treatment."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "general-wellness-checkin",
+          "status": "reviewed",
+          "text": "Use Body Tune-Up as a broad, nonmedical self-care exercise when no single body area is the intended focus."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS3",
+          "semantic_id": "after-demanding-day",
+          "status": "reviewed",
+          "text": "At the end of an active day, explore Body Tune-Up as a reflective practice before a separate Restorative Sleep session."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "compare-specific-functions",
+          "status": "reviewed",
+          "text": "When choosing between body-oriented functions, use Body Tune-Up for broad awareness rather than a specific Circulation or Seeing intention."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "heart-flow-pairing",
+          "status": "reviewed",
+          "text": "Explore the 1990 requested Heart Flow and Tune-Up pairing as separate, optional practices for evening relaxation."
         }
       ],
       "effects": null,
@@ -4861,6 +5137,18 @@
         {
           "status": "draft",
           "text": "Exploring regeneration imagery without expecting tissue regrowth or substituting imagery for medical care."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "tuneup-comparison",
+          "status": "reviewed",
+          "text": "Compare Regenerate with Body Tune-Up to choose between a renewal theme and a maintenance theme."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "inner-power-companion",
+          "status": "reviewed",
+          "text": "Explore Inner Power separately when the intended goal is confidence or vitality rather than physical regeneration imagery."
         }
       ],
       "effects": null,
@@ -5306,6 +5594,24 @@
         {
           "status": "draft",
           "text": "Reviewing the documented distinction between temporary numbing and its release, without suppressing warning signs or delaying care."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "minor-itch",
+          "status": "reviewed",
+          "text": "For a nonurgent, minor itch, explore temporary changes in perceived sensation while staying aware of any underlying cause."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "explicit-release",
+          "status": "reviewed",
+          "text": "If you practice temporary numbing, explicitly return to normal awareness afterward using the documented release procedure."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-comfort",
+          "status": "reviewed",
+          "text": "Compare Temporary Numbing and Comfort so you can choose the appropriate nonmedical, reversible practice instead of treating them as interchangeable."
         }
       ],
       "effects": null,
@@ -5572,6 +5878,36 @@
         {
           "status": "draft",
           "text": "Inviting relevant information to mind while checking impressions against reliable sources when accuracy matters."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "retrieve-known-context",
+          "status": "reviewed",
+          "text": "When trying to remember a detail you have encountered before, use Information Access as a prompt to search your own memory and verify the result."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "brainstorming",
+          "status": "reviewed",
+          "text": "During brainstorming, let relevant associations arise before checking them against your notes or other reliable sources."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "reflection-on-question",
+          "status": "reviewed",
+          "text": "With a clearly stated question, explore what memories or intuitions feel relevant without assuming the answer is externally sourced knowledge."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "distinguish-recall",
+          "status": "reviewed",
+          "text": "Compare Information Access with Recall: one invites broader associations, while the other targets remembered material."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "insight-journal",
+          "status": "reviewed",
+          "text": "Record an apparent insight along with what you already knew and what would be needed to confirm it."
         }
       ],
       "effects": null,
@@ -5858,6 +6194,36 @@
         {
           "status": "draft",
           "text": "Practicing attention to numerical patterns while independently checking calculations."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-ODYS1",
+          "semantic_id": "mental-arithmetic",
+          "status": "reviewed",
+          "text": "During routine mental arithmetic practice, work with simple numbers and check the answers afterward."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "budgeting-calculations",
+          "status": "reviewed",
+          "text": "While estimating a household budget, use the practice to keep attention on the numbers and verify totals with a calculator."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "symbol-reasoning",
+          "status": "reviewed",
+          "text": "Experiment with logical or symbolic reasoning exercises, an extension explicitly requested in the 1990 wishlist."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "math-confidence",
+          "status": "reviewed",
+          "text": "Before a low-stakes math practice session, use the function as an intention for calmer engagement rather than as a substitute for learning the method."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "mental-estimates",
+          "status": "reviewed",
+          "text": "When making a quick numerical estimate, calculate mentally and then compare it with an exact result."
         }
       ],
       "effects": null,
@@ -6263,6 +6629,30 @@
         {
           "status": "draft",
           "text": "Exploring internal dialogue while distinguishing impressions from verified facts."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "grounding-with-reflection",
+          "status": "reviewed",
+          "text": "Explore Contemplation as part of a grounding or centering practice, a use suggested in the 1990 wishlist."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-TRAIL",
+          "semantic_id": "outdoor-reflection",
+          "status": "reviewed",
+          "text": "In a safe resting place outdoors, use Contemplation to observe concerns and settle before continuing an activity."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "creative-visualization",
+          "status": "reviewed",
+          "text": "Use a Contemplation session to examine a mental image or creative question without requiring unusual sensory experiences."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "open-close",
+          "status": "reviewed",
+          "text": "Start with a clear question, use the documented opening command, and finish by using the appropriate closing command."
         }
       ],
       "effects": null,
@@ -6735,6 +7125,36 @@
         {
           "status": "draft",
           "text": "Comparing information capture with the separately documented recall application, without assuming memory is infallible."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "encode-study-material",
+          "status": "reviewed",
+          "text": "After studying a key concept, deliberately select it for Imprint and return to the material later to test retrieval."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "remember-command",
+          "status": "reviewed",
+          "text": "Use Imprint to remember when to use another learned function; a 1989 participant described doing this with Nutricia."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "meaningful-experience",
+          "status": "reviewed",
+          "text": "After an important experience, select a few concrete details you want to remember and later compare your recollection with written notes."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "new-vocabulary",
+          "status": "reviewed",
+          "text": "During foreign-language study, use Imprint with a small set of vocabulary and check retention during later recall practice."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "pairs-with-recall",
+          "status": "reviewed",
+          "text": "After deliberately imprinting selected information, use Recall at a later time to practice retrieving it."
         }
       ],
       "effects": null,
@@ -7104,6 +7524,36 @@
         {
           "status": "draft",
           "text": "Considering possible directions without treating imagined outcomes as predictions."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-choices",
+          "status": "reviewed",
+          "text": "When facing several plausible choices, use Options to list alternatives before deciding."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "career-possibilities",
+          "status": "reviewed",
+          "text": "While exploring a possible vocation change, use Options to brainstorm realistic alternatives and research them afterward."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "creative-future-scenarios",
+          "status": "reviewed",
+          "text": "Before future-oriented visualization or planning, use Options to make room for more than one possible direction."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "problem-solving",
+          "status": "reviewed",
+          "text": "When a project seems blocked, identify three alternative approaches before selecting a next step."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "before-manifest",
+          "status": "reviewed",
+          "text": "Explore Options before Manifest when you want to compare possible goals before selecting one intention."
         }
       ],
       "effects": null,
@@ -7439,6 +7889,36 @@
         {
           "status": "draft",
           "text": "Reflecting on a past experience while recognizing that recollection can be incomplete or mistaken."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP10",
+          "semantic_id": "recall-studied-material",
+          "status": "reviewed",
+          "text": "Before a practice quiz, use Recall to bring to mind material you have already learned, then verify your answer."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "foreign-language-recall",
+          "status": "reviewed",
+          "text": "While practicing a new language, try to retrieve previously learned words before looking at the answer."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "names-and-details",
+          "status": "reviewed",
+          "text": "Try to remember a name or detail from a recent conversation and check your recollection if accuracy matters."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "positive-memory",
+          "status": "reviewed",
+          "text": "Recall a constructive group experience or pleasant memory as part of a personal appreciation practice."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "imprint-followup",
+          "status": "reviewed",
+          "text": "After an Imprint session, return at a later interval and practice recall without treating a vivid memory as infallible."
         }
       ],
       "effects": null,
@@ -7717,6 +8197,30 @@
         {
           "status": "draft",
           "text": "Practicing organized attention to relevant details without equating speed with accuracy."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-HP10",
+          "semantic_id": "conversation-thinking",
+          "status": "reviewed",
+          "text": "Before a conversation, use Think Fast as a mental-fluency intention and take time to listen carefully as well."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "study-processing",
+          "status": "reviewed",
+          "text": "During a study session, compare Think Fast with Imprint to distinguish processing ideas from retaining them."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "brainstorming-speed",
+          "status": "reviewed",
+          "text": "During a short, low-stakes brainstorm, generate several options before evaluating their quality."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "language-practice",
+          "status": "reviewed",
+          "text": "While rehearsing foreign-language responses, explore Think Fast alongside ordinary speaking and retrieval practice."
         }
       ],
       "effects": null,
@@ -7975,6 +8479,24 @@
         {
           "status": "draft",
           "text": "Reflecting on clear expression before a conversation or presentation."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "classroom-contribution",
+          "status": "reviewed",
+          "text": "Before answering a question in class or a meeting, use Speak Up as a confidence and expression intention."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "difficult-conversation",
+          "status": "reviewed",
+          "text": "When you need to explain a concern respectfully, use Speak Up to prepare clear words rather than to control the other person's reaction."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "language-speaking",
+          "status": "reviewed",
+          "text": "During foreign-language conversation practice, focus on expressing familiar material even if mistakes happen."
         }
       ],
       "effects": null,
@@ -8224,6 +8746,18 @@
         {
           "status": "draft",
           "text": "Reflecting on supportive awareness without postponing emergency services or professional care."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "contact-help",
+          "status": "reviewed",
+          "text": "After contacting emergency services or beginning appropriate first aid for an injury, use Injury Response only as an optional composure cue if it does not interrupt care."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "emergency-plan-review",
+          "status": "reviewed",
+          "text": "During a nonemergency rehearsal, review which real-world first-aid actions come before any optional self-regulation practice."
         }
       ],
       "effects": null,
@@ -8531,6 +9065,24 @@
         {
           "status": "draft",
           "text": "Distinguishing a wellness intention from the need for prompt poison-control or emergency advice."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "poison-help-first",
+          "status": "reviewed",
+          "text": "For a possible toxic exposure, contact Poison Control or emergency services first; use Toxic Exposure Response only as an optional composure practice that does not delay assistance."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "follow-instructions",
+          "status": "reviewed",
+          "text": "While receiving professional exposure instructions, prioritize following them; any self-directed practice must remain secondary."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "distinguish-detox",
+          "status": "reviewed",
+          "text": "During an emergency-readiness review, distinguish Toxic Exposure Response from the unrelated nonmedical Detox imagery function."
         }
       ],
       "effects": null,
@@ -8834,6 +9386,36 @@
         {
           "status": "draft",
           "text": "Practicing a calmer relationship to a feeling without denying useful emotional information."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "immediate-frustration",
+          "status": "reviewed",
+          "text": "After a frustrating interaction, explore Let Go to loosen initial anger before choosing what to do next."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "rumination-break",
+          "status": "reviewed",
+          "text": "When a minor thought keeps pulling attention away from a task, use Let Go to shift attention without pretending the concern never existed."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "decision-after-emotion",
+          "status": "reviewed",
+          "text": "Before a consequential decision, make room for immediate emotions to settle and then revisit the actual evidence."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "with-reset",
+          "status": "reviewed",
+          "text": "Explore Let Go followed by Reset as separate practices; survey participants described using that pairing."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-GRIEF",
+          "semantic_id": "grief-awareness",
+          "status": "reviewed",
+          "text": "During grief, use Let Go only for a selected moment of tension if wanted, without trying to erase meaningful feelings or memories."
         }
       ],
       "effects": null,
@@ -9119,6 +9701,30 @@
         {
           "status": "draft",
           "text": "Exploring release of an unwanted emotional pattern while retaining useful memories and personal choice."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-BELIEFS",
+          "semantic_id": "recurring-thought-pattern",
+          "status": "reviewed",
+          "text": "Identify a recurring thought that interferes with your goals and explore reducing its grip while retaining relevant learning."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "lingering-conflict",
+          "status": "reviewed",
+          "text": "After a conflict continues to occupy attention, use Offload as a distinct longer-pattern practice rather than an immediate Let Go substitute."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-GRIEF",
+          "semantic_id": "loss-and-grief",
+          "status": "reviewed",
+          "text": "During a period of loss, explore Offload for specific overwhelming mental patterns while preserving memory and allowing feelings to be present."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS2",
+          "semantic_id": "habit-related-interference",
+          "status": "reviewed",
+          "text": "When working on a chosen habit, explore Offload for recurring thoughts that make the behavior harder to change."
         }
       ],
       "effects": null,
@@ -9389,6 +9995,36 @@
         {
           "status": "draft",
           "text": "Preparing for attentive communication without assuming access to private thoughts or certainty about another's experience."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-EMPATH",
+          "semantic_id": "perspective-taking",
+          "status": "reviewed",
+          "text": "Before a conversation, reflect on what another person might be experiencing without assuming you know their thoughts."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "listening-first",
+          "status": "reviewed",
+          "text": "During disagreement, use Empathize as a reminder to listen and ask questions before offering conclusions."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "compassionate-response",
+          "status": "reviewed",
+          "text": "Explore Empathize when trying to respond thoughtfully to someone who is disappointed or stressed."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "communication-pair",
+          "status": "reviewed",
+          "text": "After a perspective-taking reflection, use Speak Up to communicate your own needs clearly and respectfully."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "animal-awareness",
+          "status": "reviewed",
+          "text": "When spending time with an animal, observe its actual behavior and practice respectful attention rather than assuming telepathic understanding."
         }
       ],
       "effects": null,
@@ -9718,6 +10354,30 @@
         {
           "status": "draft",
           "text": "Exploring a felt or imagined fulfilled intention without treating it as a guarantee of external events."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-ODYS2",
+          "semantic_id": "goal-with-deadline",
+          "status": "reviewed",
+          "text": "Choose a concrete goal and a realistic completion time, then identify the actions needed to work toward it."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-ODYS2",
+          "semantic_id": "grading-planning",
+          "status": "reviewed",
+          "text": "For a pile of paperwork or assignments, set an intention to finish a defined portion by a selected time, as Barbara Bullard described for grading."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "review-after-options",
+          "status": "reviewed",
+          "text": "After considering several alternatives with Options, use Manifest for the one future condition you actually choose."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "financial-plan-intention",
+          "status": "reviewed",
+          "text": "While reviewing personal finances, set an intention for a responsible planning action rather than expecting a financial outcome without action."
         }
       ],
       "effects": null,
@@ -10409,6 +11069,18 @@
         {
           "status": "draft",
           "text": "Reviewing adjustable comfort imagery without substituting it for suitable clothing, shelter, or protection from heat and cold."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "outdoor-discomfort",
+          "status": "reviewed",
+          "text": "On an ordinary outdoor break, use temperature-comfort imagery only as a supplement to appropriate clothing and weather precautions."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "sleep-room-comfort",
+          "status": "reviewed",
+          "text": "Before resting in an unfamiliar room, explore a comfortable temperature intention while also adjusting the actual bedding or thermostat."
         }
       ],
       "effects": null,
@@ -10701,6 +11373,24 @@
         {
           "status": "draft",
           "text": "Exploring release of a recurring pattern while preserving useful learning."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-BELIEFS",
+          "semantic_id": "chosen-belief",
+          "status": "reviewed",
+          "text": "Identify one specific limiting belief and reflect on a more realistic alternative that preserves what you have learned."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-TRADERS",
+          "semantic_id": "recurring-reaction",
+          "status": "reviewed",
+          "text": "After noticing a repeating reaction to uncertainty, explore loosening the reaction without claiming it will eliminate risk."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "choose-specific-target",
+          "status": "reviewed",
+          "text": "Use Dissolve for a clearly chosen belief or response, and select Offload instead when the target is recurring mental interference."
         }
       ],
       "effects": null,
@@ -11440,6 +12130,18 @@
         {
           "status": "draft",
           "text": "Reflecting on possible guidance while checking facts and retaining responsibility for decisions."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "intuition-journal",
+          "status": "reviewed",
+          "text": "When you notice a strong hunch, record it and later check whether it corresponded to verifiable information."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WAKE",
+          "semantic_id": "sleep-insight-comparison",
+          "status": "reviewed",
+          "text": "Compare a waking intuitive impression with a separate Sleep Insight question, recording what actually happened afterward."
         }
       ],
       "effects": null,
@@ -11751,6 +12453,12 @@
         {
           "status": "draft",
           "text": "Exploring how to direct a felt sense of energy toward a chosen purpose."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "energy-for-task",
+          "status": "reviewed",
+          "text": "Before a routine task that calls for enthusiasm, use Access to Energy as an intention for readiness."
         }
       ],
       "effects": null,
@@ -11999,6 +12707,36 @@
         {
           "status": "draft",
           "text": "Preparing for focused study or deliberate engagement with an experience."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "studying",
+          "status": "reviewed",
+          "text": "Before reading a course chapter, use Focus to direct attention to the selected material."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "programming",
+          "status": "reviewed",
+          "text": "After an interruption while coding, choose the next concrete problem and use Focus to return attention to it."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-TRAIL",
+          "semantic_id": "skilled-movement",
+          "status": "reviewed",
+          "text": "During safe skills practice such as walking a familiar path, keep attention on the immediate task and surroundings."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "reading",
+          "status": "reviewed",
+          "text": "While reading something challenging, use Focus to keep attention on the current passage, taking breaks as needed."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "before-imprint",
+          "status": "reviewed",
+          "text": "Before using Imprint during study, use Focus as a separate attention-setting practice."
         }
       ],
       "effects": null,
@@ -12310,6 +13048,18 @@
         {
           "status": "draft",
           "text": "Reflecting on the intention to wake from a short rest feeling refreshed, without replacing adequate sleep."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "afternoon-refresh",
+          "status": "reviewed",
+          "text": "After a short rest, use Quick Recharge to return to a routine activity feeling more ready to engage."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "morning-start",
+          "status": "reviewed",
+          "text": "During a sluggish morning, compare Quick Recharge with Reset before choosing which intention fits the moment."
         }
       ],
       "effects": null,
@@ -12595,6 +13345,36 @@
         {
           "status": "draft",
           "text": "Practicing a quiet transition from mental busyness toward rest."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "pre-presentation",
+          "status": "reviewed",
+          "text": "Before a presentation or language-practice session, use Relax to settle ordinary nervousness."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "bedtime-winddown",
+          "status": "reviewed",
+          "text": "During an evening wind-down, use Relax to shift out of the day's activity before sleep."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "after-conflict",
+          "status": "reviewed",
+          "text": "Following a frustrating conversation, use Relax to notice and release physical tension before deciding what to say next."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "before-study",
+          "status": "reviewed",
+          "text": "Before focused study, use Relax as an optional preparatory stage rather than duplicating a full induction inside a chain."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-TRAIL",
+          "semantic_id": "hiking-rest",
+          "status": "reviewed",
+          "text": "During a safe rest stop, use Relax and Contemplation separately to settle anticipatory worry, as a historical hiker described."
         }
       ],
       "effects": null,
@@ -12906,6 +13686,36 @@
         {
           "status": "draft",
           "text": "Practicing an intention of clarity and confidence without ignoring persistent fatigue or emotional distress."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "low-mood-shift",
+          "status": "reviewed",
+          "text": "When feeling temporarily flat or worn down, use Reset to orient toward a clearer, more active state."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "after-waking",
+          "status": "reviewed",
+          "text": "After waking from ordinary sleep, use Reset as a deliberate transition into daytime activity."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-LAB89",
+          "semantic_id": "after-let-go",
+          "status": "reviewed",
+          "text": "After using Let Go for immediate frustration, explore Reset as a separate reorientation practice."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "getting-started",
+          "status": "reviewed",
+          "text": "Before the first planned activity of the day, use Reset as an intention to become more alert and ready."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-recharge",
+          "status": "reviewed",
+          "text": "Choose Reset when the goal is to shift out of an unwanted state, and Quick Recharge when the goal is a brief refresh."
         }
       ],
       "effects": null,
@@ -13171,6 +13981,24 @@
         {
           "status": "draft",
           "text": "Reflecting on placing a selected application on hold when its purpose is complete, using only its documented scope."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP10",
+          "semantic_id": "end-temporary-state",
+          "status": "reviewed",
+          "text": "When a temporary function application is complete, use the appropriate documented release or closing action rather than leaving it ambiguous."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP83",
+          "semantic_id": "after-intense-session",
+          "status": "reviewed",
+          "text": "If a practice feels overstimulating, stop and return to ordinary surroundings; historical users described Release as part of ending activation."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-specific-cancel",
+          "status": "reviewed",
+          "text": "Check whether a particular function has its own Cancel or close command; do not assume a general Release is interchangeable."
         }
       ],
       "effects": null,
@@ -13463,6 +14291,30 @@
         {
           "status": "draft",
           "text": "Reflecting on a chosen change in a habit without treating the exercise as a substitute for needed professional support."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "repetitive-snacking",
+          "status": "reviewed",
+          "text": "When addressing an unwanted automatic snack routine, identify the specific behavior and choose an alternative response that respects genuine hunger."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "procrastination-pattern",
+          "status": "reviewed",
+          "text": "If you routinely delay starting a chosen task, use Habit Freedom as a reflection on the recurring pattern and practice a small replacement step."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "smoking-reduction-support",
+          "status": "reviewed",
+          "text": "For a chosen smoking-cessation goal, use Habit Freedom only as optional motivation alongside evidence-based cessation support."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-TRADERS",
+          "semantic_id": "trading-impulse",
+          "status": "reviewed",
+          "text": "When reflecting on recurring impulsive financial decisions, use Habit Freedom to recognize the pattern and create a concrete independent decision rule."
         }
       ],
       "effects": null,
@@ -13792,6 +14644,36 @@
         {
           "status": "draft",
           "text": "Renewing an intention to continue or complete an activity."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "begin-task",
+          "status": "reviewed",
+          "text": "After choosing one manageable next step, use Do This Now to begin rather than continuing to plan."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "stop-procrastinating",
+          "status": "reviewed",
+          "text": "When you notice yourself repeatedly postponing a low-stakes task, pick a two-minute starting action and begin it."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-WISH90",
+          "semantic_id": "after-options",
+          "status": "reviewed",
+          "text": "After exploring alternatives, select one practical action and use Do This Now as a transition into execution."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "homework-start",
+          "status": "reviewed",
+          "text": "Before a study block, put the materials in front of you and begin the first exercise instead of rehearsing the whole workload."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "daily-priority",
+          "status": "reviewed",
+          "text": "At the beginning of a work period, choose a single priority and act on its first step."
         }
       ],
       "effects": null,
@@ -14077,6 +14959,36 @@
         {
           "status": "draft",
           "text": "Practicing a calm sense of inner strength in daily life without assuming extraordinary abilities."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "public-confidence",
+          "status": "reviewed",
+          "text": "Before a presentation, reflect on personal strengths and then prepare to communicate clearly."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "after-setback",
+          "status": "reviewed",
+          "text": "After a disappointing result, use Inner Power to reconnect with your existing resources and choose a constructive next action."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP83F",
+          "semantic_id": "social-courage",
+          "status": "reviewed",
+          "text": "Before a social interaction, use Inner Power as a subjective confidence practice without expecting to control others."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP10",
+          "semantic_id": "test-confidence",
+          "status": "reviewed",
+          "text": "Before a practice examination, explore confidence and Recall as distinct goals, keeping answer accuracy separate from self-belief."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "morning-motivation",
+          "status": "reviewed",
+          "text": "Before an important day, name a capability you already have and use Inner Power to focus on exercising it."
         }
       ],
       "effects": null,
@@ -14337,6 +15249,24 @@
         {
           "status": "draft",
           "text": "Preparing attentive movement practice while respecting physical limits and safe conditions."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-TRAIL",
+          "semantic_id": "movement-rhythm",
+          "status": "reviewed",
+          "text": "During safe movement practice, explore a sense of smooth rhythm while remaining attentive to the environment."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "sport-drill",
+          "status": "reviewed",
+          "text": "Before a familiar sport drill, use Coordination as an intention for steadier, more fluid movement."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "compare-light-step",
+          "status": "reviewed",
+          "text": "Compare Coordination with Light Foot when deciding whether the goal is rhythm or ease of movement."
         }
       ],
       "effects": null,
@@ -14622,6 +15552,30 @@
         {
           "status": "draft",
           "text": "Reflecting on ease and precision in walking without assuming protection from falls or injury."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-CREATIVE",
+          "semantic_id": "walking-ease",
+          "status": "reviewed",
+          "text": "During comfortable walking practice, use Light Foot as an intention for ease and smoothness, not as physical protection."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "sport-footwork",
+          "status": "reviewed",
+          "text": "Before a familiar sport's footwork drill, rehearse a feeling of light, controlled movement."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "coordination-comparison",
+          "status": "reviewed",
+          "text": "Compare Light Foot with Coordination to choose between lightness and rhythm as your immediate focus."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "hiking-reflection",
+          "status": "reviewed",
+          "text": "At a rest stop during a hike, reflect on relaxed foot placement while prioritizing terrain awareness and ordinary safety."
         }
       ],
       "effects": null,
@@ -14931,6 +15885,24 @@
         {
           "status": "draft",
           "text": "Clarifying daily intentions without expecting control over other people or external events."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "daily-tone",
+          "status": "reviewed",
+          "text": "At the beginning of the day, choose a practical tone or intention for how you want to respond to events."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "kindness-intention",
+          "status": "reviewed",
+          "text": "Choose kindness or appreciation as a theme for how you want to engage with other people today."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS1",
+          "semantic_id": "workday-priorities",
+          "status": "reviewed",
+          "text": "When beginning a busy workday, choose a workable priority rather than treating the function as a substitute for planning."
         }
       ],
       "effects": null,
@@ -15320,6 +16292,18 @@
         {
           "status": "draft",
           "text": "Reflecting on the temporary response ending when the immediate need passes, without assuming exceptional strength or taking physical risks."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "sport-power-drill",
+          "status": "reviewed",
+          "text": "During appropriately supervised sport practice, use Strong-Quick as a confidence intention for a familiar strength-and-speed drill."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "lifting-preparation",
+          "status": "reviewed",
+          "text": "Before a routine, correctly loaded lifting task, focus on sound technique rather than attempting extraordinary strength."
         }
       ],
       "effects": null,
@@ -15820,6 +16804,36 @@
         {
           "status": "draft",
           "text": "Comparing inward listening with imaginative sound experience without claiming hearing restoration or ignoring environmental warnings."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "active-listening",
+          "status": "reviewed",
+          "text": "During a quiet conversation or lecture, use Hearing MORE as an intention for attentive listening, not as a change in actual hearing acuity."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "focus-on-sound",
+          "status": "reviewed",
+          "text": "When identifying an everyday sound in a safe setting, deliberately attend to its characteristics and then check the source."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "noisy-environment",
+          "status": "reviewed",
+          "text": "In a distracting environment, explore Hearing LESS only as a subjective attention practice while retaining awareness of important sounds."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "sleep-easy-companion",
+          "status": "reviewed",
+          "text": "Compare Hearing LESS with Sleep Easy for noisy sleep surroundings while still using practical noise-control measures."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "music-details",
+          "status": "reviewed",
+          "text": "While listening at a safe volume, focus on one instrument or pattern and notice details you had not attended to before."
         }
       ],
       "effects": null,
@@ -16126,6 +17140,36 @@
         {
           "status": "draft",
           "text": "Practicing attention to seeing without treating imagery as vision correction or requiring vivid mental pictures."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "visual-attention",
+          "status": "reviewed",
+          "text": "During a safe visual-observation exercise, notice shapes, contrast and details without assuming a change in eyesight."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "mental-imagery",
+          "status": "reviewed",
+          "text": "During creative planning, imagine an object and deliberately change one feature of the image."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "memory-of-diagram",
+          "status": "reviewed",
+          "text": "After viewing a diagram, picture its main parts and compare your visualization with the original."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "artistic-visualization",
+          "status": "reviewed",
+          "text": "Before drawing or making artwork, mentally rehearse colors, layout and composition."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "seeing-hearing-combo",
+          "status": "reviewed",
+          "text": "Explore Seeing and Hearing as separate complementary perception practices; the 1990 wishlist proposed pairing them on a recording."
         }
       ],
       "effects": null,
@@ -16784,6 +17828,24 @@
         {
           "status": "draft",
           "text": "Reflecting on attention to scent without using the exercise to judge whether air or a substance is safe."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "pleasant-aroma",
+          "status": "reviewed",
+          "text": "While smelling a familiar, safe aroma, use Smell MORE to notice subtle differences in the experience."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "reduce-distraction",
+          "status": "reviewed",
+          "text": "In an ordinary setting with an unpleasant but nonhazardous smell, explore Smell LESS as an attention-shifting intention."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "taste-comparison",
+          "status": "reviewed",
+          "text": "Compare Smell and Taste as separate sensory-awareness exercises without promising improved sensory function."
         }
       ],
       "effects": null,
@@ -17442,6 +18504,30 @@
         {
           "status": "draft",
           "text": "Bringing deliberate attention to taste without using it as a food-safety test."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "mindful-tasting",
+          "status": "reviewed",
+          "text": "When sampling a safe food, use Taste MORE to attend to flavor and texture details."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "cooking-comparison",
+          "status": "reviewed",
+          "text": "While evaluating a familiar recipe, compare small differences in flavor without judging food safety by taste."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "lessen-overwhelm",
+          "status": "reviewed",
+          "text": "When a safe food tastes unusually intense, explore Taste LESS as a subjective attention practice."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "smell-and-taste",
+          "status": "reviewed",
+          "text": "Explore Taste and Smell in separate sessions to notice how flavor attention and aroma attention differ."
         }
       ],
       "effects": null,
@@ -18068,6 +19154,24 @@
         {
           "status": "draft",
           "text": "Practicing attention to skin sensations without suppressing warning signs or assuming protection from harm."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "texture-awareness",
+          "status": "reviewed",
+          "text": "While handling a safe object, use Touch MORE to attend to its texture, temperature and pressure."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "tactile-creativity",
+          "status": "reviewed",
+          "text": "During a craft or art activity, use Touch MORE to notice the feel of tools and materials."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "nonurgent-overstimulation",
+          "status": "reviewed",
+          "text": "In a safe environment with nonhazardous tactile distraction, use Touch LESS as a brief subjective attention shift while preserving awareness of injury risks."
         }
       ],
       "effects": null,
@@ -18372,6 +19476,30 @@
         {
           "status": "draft",
           "text": "Reflecting on a sense of renewal without assuming sleep imagery treats illness or replaces care."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "bedtime-rest",
+          "status": "reviewed",
+          "text": "Before an ordinary night's sleep, use Restorative Sleep as a rest-and-recovery intention."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-ODYS3",
+          "semantic_id": "after-demanding-day",
+          "status": "reviewed",
+          "text": "After a demanding day, explore Body Tune-Up and then Restorative Sleep as separate self-care exercises."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "recovery-mindset",
+          "status": "reviewed",
+          "text": "At bedtime, set aside the day's tasks and focus on the experience of restorative rest without requiring a particular sleep outcome."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-PAIN",
+          "semantic_id": "comfort-oriented-evening",
+          "status": "reviewed",
+          "text": "For familiar minor discomfort at night, compare Comfort with Restorative Sleep as separate practices, without ignoring symptoms."
         }
       ],
       "effects": null,
@@ -18670,6 +19798,24 @@
         {
           "status": "draft",
           "text": "Reflecting on a desired waking time without relying on the exercise instead of an alarm when timing matters."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "sleep-onset",
+          "status": "reviewed",
+          "text": "When ready for bed, use Sleep as a deliberate transition away from waking activity."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-HP10",
+          "semantic_id": "after-evening-relax",
+          "status": "reviewed",
+          "text": "After a separate evening Relax practice, use Sleep to focus on natural sleep onset."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "dream-theme-sequence",
+          "status": "reviewed",
+          "text": "If you plan a dream-themed evening routine, use Dream Theme to choose the theme before a separate Sleep practice."
         }
       ],
       "effects": null,
@@ -18987,6 +20133,30 @@
         {
           "status": "draft",
           "text": "Reflecting on dream recall after waking without assuming dreams report external facts."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "chosen-dream-topic",
+          "status": "reviewed",
+          "text": "Before bedtime, choose a comfortable subject you would like to explore in a dream."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "creative-dream-theme",
+          "status": "reviewed",
+          "text": "Use Dream Theme to suggest a gentle setting or story idea for imaginative dreaming."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "dream-journaling",
+          "status": "reviewed",
+          "text": "On waking, record anything you remember about your dreams without assuming that their content was controlled."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "dream-versus-insight",
+          "status": "reviewed",
+          "text": "Compare Dream Theme with Sleep Insight: one concerns dream content, while the other concerns reflecting on a question."
         }
       ],
       "effects": null,
@@ -19304,6 +20474,30 @@
         {
           "status": "draft",
           "text": "Reviewing morning impressions as possible ideas rather than verified answers or instructions."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-LAB89",
+          "semantic_id": "sleep-question",
+          "status": "reviewed",
+          "text": "Before sleep, select one manageable question and note whether any useful idea emerges on waking."
+        },
+        {
+          "notes": "Use-case review; historical-reported; refs: A-WAKE",
+          "semantic_id": "creative-problem",
+          "status": "reviewed",
+          "text": "When stuck on a creative or technical problem, record the question before bed and check any morning ideas against reality."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "morning-review",
+          "status": "reviewed",
+          "text": "Keep a notebook nearby to record a possible insight, including nights when no answer appears."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "choice-reflection",
+          "status": "reviewed",
+          "text": "Compare Sleep Insight with Contemplation when you want additional reflection on a choice."
         }
       ],
       "effects": null,
@@ -19614,6 +20808,36 @@
         {
           "status": "draft",
           "text": "Reflecting on returning to sleep after ordinary distractions while remaining responsive to genuine safety needs."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "unfamiliar-bed",
+          "status": "reviewed",
+          "text": "In a safe unfamiliar sleeping environment, use Sleep Easy to support settling into ordinary sleep."
+        },
+        {
+          "notes": "Use-case review; historical-suggested; refs: A-WISH90",
+          "semantic_id": "background-noise",
+          "status": "reviewed",
+          "text": "When harmless background noise makes settling difficult, use Sleep Easy alongside practical noise management."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "returning-to-sleep",
+          "status": "reviewed",
+          "text": "After waking unexpectedly, use Sleep Easy to return attention to natural sleep without forcing it."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "travel-sleep",
+          "status": "reviewed",
+          "text": "During travel, use Sleep Easy as part of a familiar bedtime ritual while respecting actual rest needs."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "hearing-less-companion",
+          "status": "reviewed",
+          "text": "Explore Hearing LESS separately for distracting sounds if appropriate, while preserving awareness of alarms and hazards."
         }
       ],
       "effects": null,
@@ -19879,6 +21103,18 @@
         {
           "status": "draft",
           "text": "Distinguishing a felt alertness practice from adequate sleep; never relying on it to make drowsy driving or hazardous work safe."
+        },
+        {
+          "notes": "Use-case review; ocf-proposed; refs: OCF proposal",
+          "semantic_id": "safe-alertness",
+          "status": "reviewed",
+          "text": "Before an ordinary activity requiring attentiveness, use Stay Awake as an intention for alert engagement when you are already adequately rested."
+        },
+        {
+          "notes": "Use-case review; historical-informed; refs: A-AWAKE86",
+          "semantic_id": "do-not-drive-drowsy",
+          "status": "reviewed",
+          "text": "Review historical alertness stories critically: if you are sleepy while driving or operating machinery, stop and rest rather than using Stay Awake to push through."
         }
       ],
       "effects": null,

@@ -98,6 +98,30 @@ common_uses:
   status: draft
 - text: Reflecting on a past experience while recognizing that recollection can be incomplete or mistaken.
   status: draft
+- semantic_id: recall-studied-material
+  text: Before a practice quiz, use Recall to bring to mind material you have already learned, then verify
+    your answer.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP10'
+- semantic_id: foreign-language-recall
+  text: While practicing a new language, try to retrieve previously learned words before looking at the
+    answer.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: names-and-details
+  text: Try to remember a name or detail from a recent conversation and check your recollection if accuracy
+    matters.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: positive-memory
+  text: Recall a constructive group experience or pleasant memory as part of a personal appreciation practice.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: imprint-followup
+  text: After an Imprint session, return at a later interval and practice recall without treating a vivid
+    memory as infallible.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-COG-001

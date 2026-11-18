@@ -107,6 +107,29 @@ common_uses:
   status: draft
 - text: Practicing deliberate food choices while remaining responsive to hunger and nutritional needs.
   status: draft
+- semantic_id: hunger-versus-craving
+  text: Before deciding to eat, pause and distinguish physical hunger from an automatic urge to snack.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: mindful-mealtime
+  text: At a regular meal, practice noticing satisfaction and choosing an amount that meets your needs.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: nutricia-weight-routine
+  text: Explore Appetite Choice alongside Nutricia in the historically documented weight-management pairing
+    described by Barbara Bullard, while keeping adequate nourishment central.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-ODYS2'
+- semantic_id: long-term-habit
+  text: If a repeated eating pattern is the main concern, compare Appetite Choice with the distinct Habit
+    Freedom practice.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: sweets-choice
+  text: When deciding whether to have a treat, use the function as a moment for conscious choice rather
+    than a rigid food rule.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-LIF-001

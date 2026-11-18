@@ -110,6 +110,21 @@ common_uses:
   status: draft
 - text: Exploring release of a recurring pattern while preserving useful learning.
   status: draft
+- semantic_id: chosen-belief
+  text: Identify one specific limiting belief and reflect on a more realistic alternative that preserves
+    what you have learned.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-BELIEFS'
+- semantic_id: recurring-reaction
+  text: After noticing a repeating reaction to uncertainty, explore loosening the reaction without claiming
+    it will eliminate risk.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-TRADERS'
+- semantic_id: choose-specific-target
+  text: Use Dissolve for a clearly chosen belief or response, and select Offload instead when the target
+    is recurring mental interference.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-EXP-006

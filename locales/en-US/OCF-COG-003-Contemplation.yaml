@@ -145,6 +145,26 @@ common_uses:
   status: draft
 - text: Exploring internal dialogue while distinguishing impressions from verified facts.
   status: draft
+- semantic_id: grounding-with-reflection
+  text: Explore Contemplation as part of a grounding or centering practice, a use suggested in the 1990
+    wishlist.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: outdoor-reflection
+  text: In a safe resting place outdoors, use Contemplation to observe concerns and settle before continuing
+    an activity.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-TRAIL'
+- semantic_id: creative-visualization
+  text: Use a Contemplation session to examine a mental image or creative question without requiring unusual
+    sensory experiences.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: open-close
+  text: Start with a clear question, use the documented opening command, and finish by using the appropriate
+    closing command.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-EXP-006

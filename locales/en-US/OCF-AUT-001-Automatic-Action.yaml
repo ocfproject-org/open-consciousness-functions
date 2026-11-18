@@ -107,6 +107,31 @@ common_uses:
   status: draft
 - text: Reflecting on how a desired behavior could become more familiar and less effortful.
   status: draft
+- semantic_id: planned-response
+  text: Before a recurring situation, choose the response you want to practice making more automatic,
+    such as pausing before answering.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: social-response
+  text: In a familiar social situation that repeatedly brings up an unwanted response, rehearse a preferred
+    way of responding and later observe what happens.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-SEEBE'
+- semantic_id: daily-routine
+  text: Practice a consistent starting routine for a daily activity so that the first step needs less
+    deliberation.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: substitute-habit
+  text: After identifying an unwanted habit, choose a specific replacement behavior to practice rather
+    than focusing only on what to stop.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: sport-preparation
+  text: Before a familiar sport or skill drill, rehearse the response you want to become more consistent
+    under ordinary practice conditions.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -233,6 +233,20 @@ common_uses:
 - text: Reflecting on attention to scent without using the exercise to judge whether air or a substance
     is safe.
   status: draft
+- semantic_id: pleasant-aroma
+  text: While smelling a familiar, safe aroma, use Smell MORE to notice subtle differences in the experience.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: reduce-distraction
+  text: In an ordinary setting with an unpleasant but nonhazardous smell, explore Smell LESS as an attention-shifting
+    intention.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: taste-comparison
+  text: Compare Smell and Taste as separate sensory-awareness exercises without promising improved sensory
+    function.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
 relationships:
   related_functions:
   - function_id: OCF-SEN-004

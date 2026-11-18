@@ -105,6 +105,20 @@ common_uses:
   status: draft
 - text: Clarifying daily intentions without expecting control over other people or external events.
   status: draft
+- semantic_id: daily-tone
+  text: At the beginning of the day, choose a practical tone or intention for how you want to respond
+    to events.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: kindness-intention
+  text: Choose kindness or appreciation as a theme for how you want to engage with other people today.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: workday-priorities
+  text: When beginning a busy workday, choose a workable priority rather than treating the function as
+    a substitute for planning.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
 relationships:
   related_functions:
   - function_id: OCF-EXP-001

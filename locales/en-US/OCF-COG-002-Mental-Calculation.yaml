@@ -89,6 +89,29 @@ common_uses:
   status: draft
 - text: Practicing attention to numerical patterns while independently checking calculations.
   status: draft
+- semantic_id: mental-arithmetic
+  text: During routine mental arithmetic practice, work with simple numbers and check the answers afterward.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-ODYS1'
+- semantic_id: budgeting-calculations
+  text: While estimating a household budget, use the practice to keep attention on the numbers and verify
+    totals with a calculator.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: symbol-reasoning
+  text: Experiment with logical or symbolic reasoning exercises, an extension explicitly requested in
+    the 1990 wishlist.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: math-confidence
+  text: Before a low-stakes math practice session, use the function as an intention for calmer engagement
+    rather than as a substitute for learning the method.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
+- semantic_id: mental-estimates
+  text: When making a quick numerical estimate, calculate mentally and then compare it with an exact result.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions:

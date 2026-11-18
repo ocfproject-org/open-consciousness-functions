@@ -123,6 +123,25 @@ common_uses:
   status: draft
 - text: Reflecting on ease and precision in walking without assuming protection from falls or injury.
   status: draft
+- semantic_id: walking-ease
+  text: During comfortable walking practice, use Light Foot as an intention for ease and smoothness, not
+    as physical protection.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-CREATIVE'
+- semantic_id: sport-footwork
+  text: Before a familiar sport's footwork drill, rehearse a feeling of light, controlled movement.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: coordination-comparison
+  text: Compare Light Foot with Coordination to choose between lightness and rhythm as your immediate
+    focus.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: hiking-reflection
+  text: At a rest stop during a hike, reflect on relaxed foot placement while prioritizing terrain awareness
+    and ordinary safety.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -238,6 +238,11 @@ common_uses:
   status: draft
 - text: Practicing a shift of attention from unwanted arousal toward another chosen interest.
   status: draft
+- semantic_id: desire-awareness
+  text: Reflect on your own level of sexual interest and whether you want a subjective shift toward MORE
+    or LESS.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

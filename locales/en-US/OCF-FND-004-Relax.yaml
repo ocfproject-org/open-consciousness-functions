@@ -85,6 +85,29 @@ common_uses:
   text: Taking time to explore physical ease and reduced unnecessary tension.
 - status: draft
   text: Practicing a quiet transition from mental busyness toward rest.
+- semantic_id: pre-presentation
+  text: Before a presentation or language-practice session, use Relax to settle ordinary nervousness.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: bedtime-winddown
+  text: During an evening wind-down, use Relax to shift out of the day's activity before sleep.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: after-conflict
+  text: Following a frustrating conversation, use Relax to notice and release physical tension before
+    deciding what to say next.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: before-study
+  text: Before focused study, use Relax as an optional preparatory stage rather than duplicating a full
+    induction inside a chain.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: hiking-rest
+  text: During a safe rest stop, use Relax and Contemplation separately to settle anticipatory worry,
+    as a historical hiker described.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-TRAIL'
 content:
   bindings:
     default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007

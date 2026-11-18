@@ -138,6 +138,28 @@ common_uses:
   status: draft
 - text: Considering possible directions without treating imagined outcomes as predictions.
   status: draft
+- semantic_id: compare-choices
+  text: When facing several plausible choices, use Options to list alternatives before deciding.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: career-possibilities
+  text: While exploring a possible vocation change, use Options to brainstorm realistic alternatives and
+    research them afterward.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: creative-future-scenarios
+  text: Before future-oriented visualization or planning, use Options to make room for more than one possible
+    direction.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: problem-solving
+  text: When a project seems blocked, identify three alternative approaches before selecting a next step.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: before-manifest
+  text: Explore Options before Manifest when you want to compare possible goals before selecting one intention.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions:

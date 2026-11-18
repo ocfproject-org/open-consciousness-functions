@@ -131,6 +131,29 @@ common_uses:
 - text: Practicing an intention of clarity and confidence without ignoring persistent fatigue or emotional
     distress.
   status: draft
+- semantic_id: low-mood-shift
+  text: When feeling temporarily flat or worn down, use Reset to orient toward a clearer, more active
+    state.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: after-waking
+  text: After waking from ordinary sleep, use Reset as a deliberate transition into daytime activity.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: after-let-go
+  text: After using Let Go for immediate frustration, explore Reset as a separate reorientation practice.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: getting-started
+  text: Before the first planned activity of the day, use Reset as an intention to become more alert and
+    ready.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: compare-recharge
+  text: Choose Reset when the goal is to shift out of an unwanted state, and Quick Recharge when the goal
+    is a brief refresh.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

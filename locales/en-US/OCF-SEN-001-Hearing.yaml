@@ -179,6 +179,31 @@ common_uses:
 - text: Comparing inward listening with imaginative sound experience without claiming hearing restoration
     or ignoring environmental warnings.
   status: draft
+- semantic_id: active-listening
+  text: During a quiet conversation or lecture, use Hearing MORE as an intention for attentive listening,
+    not as a change in actual hearing acuity.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: focus-on-sound
+  text: When identifying an everyday sound in a safe setting, deliberately attend to its characteristics
+    and then check the source.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: noisy-environment
+  text: In a distracting environment, explore Hearing LESS only as a subjective attention practice while
+    retaining awareness of important sounds.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: sleep-easy-companion
+  text: Compare Hearing LESS with Sleep Easy for noisy sleep surroundings while still using practical
+    noise-control measures.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: music-details
+  text: While listening at a safe volume, focus on one instrument or pattern and notice details you had
+    not attended to before.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

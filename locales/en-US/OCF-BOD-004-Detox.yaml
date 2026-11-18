@@ -125,6 +125,11 @@ common_uses:
 - text: Reflecting on a sense of freshness and balance without claiming removal of
     toxins or replacing medical care.
   status: draft
+- semantic_id: post-indulgence-reflection
+  text: After an occasion of overeating or overindulgence, choose a gentle reset-oriented self-care intention
+    without interpreting the practice as toxin removal.
+  status: reviewed
+  notes: 'Use-case review; ocf-approved-sequence; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

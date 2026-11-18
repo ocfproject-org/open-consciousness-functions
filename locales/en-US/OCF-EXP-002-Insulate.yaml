@@ -263,6 +263,16 @@ common_uses:
 - text: Reviewing adjustable comfort imagery without substituting it for suitable clothing, shelter, or
     protection from heat and cold.
   status: draft
+- semantic_id: outdoor-discomfort
+  text: On an ordinary outdoor break, use temperature-comfort imagery only as a supplement to appropriate
+    clothing and weather precautions.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: sleep-room-comfort
+  text: Before resting in an unfamiliar room, explore a comfortable temperature intention while also adjusting
+    the actual bedding or thermostat.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

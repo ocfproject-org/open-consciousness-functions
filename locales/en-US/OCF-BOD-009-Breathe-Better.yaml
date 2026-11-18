@@ -89,6 +89,20 @@ common_uses:
   status: draft
 - text: Visualizing respiratory maintenance without treating breathing difficulty or delaying medical help.
   status: draft
+- semantic_id: comfortable-breath
+  text: While relaxed, notice easy, natural breathing without forcing a longer inhale, exhale or breath
+    hold.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: relax-pair
+  text: After Relax, explore Breathe Better as a separate practice focused on respiratory comfort.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: body-tuneup-contrast
+  text: Compare the focused breathing intention with the broader Body Tune-Up intention to choose which
+    practice suits a quiet session.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS3'
 relationships:
   related_functions: []
   complementary_functions:

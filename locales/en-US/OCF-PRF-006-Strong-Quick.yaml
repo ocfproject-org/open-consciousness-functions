@@ -126,6 +126,16 @@ common_uses:
 - text: Reflecting on the temporary response ending when the immediate need passes, without assuming
     exceptional strength or taking physical risks.
   status: draft
+- semantic_id: sport-power-drill
+  text: During appropriately supervised sport practice, use Strong-Quick as a confidence intention for
+    a familiar strength-and-speed drill.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: lifting-preparation
+  text: Before a routine, correctly loaded lifting task, focus on sound technique rather than attempting
+    extraordinary strength.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

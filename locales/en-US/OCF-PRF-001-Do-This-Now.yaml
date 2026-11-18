@@ -96,6 +96,29 @@ common_uses:
   status: draft
 - text: Renewing an intention to continue or complete an activity.
   status: draft
+- semantic_id: begin-task
+  text: After choosing one manageable next step, use Do This Now to begin rather than continuing to plan.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: stop-procrastinating
+  text: When you notice yourself repeatedly postponing a low-stakes task, pick a two-minute starting action
+    and begin it.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: after-options
+  text: After exploring alternatives, select one practical action and use Do This Now as a transition
+    into execution.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: homework-start
+  text: Before a study block, put the materials in front of you and begin the first exercise instead of
+    rehearsing the whole workload.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: daily-priority
+  text: At the beginning of a work period, choose a single priority and act on its first step.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions:

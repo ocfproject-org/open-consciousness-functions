@@ -131,6 +131,25 @@ common_uses:
 - text: Exploring a calmer response to discomfort without ignoring symptoms or delaying
     appropriate care.
   status: draft
+- semantic_id: ordinary-discomfort
+  text: In a safe, nonurgent situation involving familiar mild discomfort, practice shifting attention
+    toward a sense of ease while remaining aware of symptoms.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-PAIN'
+- semantic_id: tension-with-relax
+  text: After Relax, use Comfort to explore a calmer relationship with everyday muscular tension.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: itch-distraction
+  text: For an ordinary minor itch, explore the temporary comfort intention without ignoring a continuing
+    or worsening cause.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: bedtime-comfort
+  text: When minor familiar discomfort interferes with winding down, use Comfort as an optional settling
+    practice before bedtime.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions:

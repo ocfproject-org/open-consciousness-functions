@@ -144,6 +144,24 @@ common_uses:
 - text: Reflecting on a sense of renewal without assuming sleep imagery treats illness
     or replaces care.
   status: draft
+- semantic_id: bedtime-rest
+  text: Before an ordinary night's sleep, use Restorative Sleep as a rest-and-recovery intention.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: after-demanding-day
+  text: After a demanding day, explore Body Tune-Up and then Restorative Sleep as separate self-care exercises.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS3'
+- semantic_id: recovery-mindset
+  text: At bedtime, set aside the day's tasks and focus on the experience of restorative rest without
+    requiring a particular sleep outcome.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: comfort-oriented-evening
+  text: For familiar minor discomfort at night, compare Comfort with Restorative Sleep as separate practices,
+    without ignoring symptoms.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-PAIN'
 relationships:
   related_functions: []
   complementary_functions: []

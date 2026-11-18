@@ -88,6 +88,21 @@ common_uses:
   status: draft
 - text: Reflecting on clear expression before a conversation or presentation.
   status: draft
+- semantic_id: classroom-contribution
+  text: Before answering a question in class or a meeting, use Speak Up as a confidence and expression
+    intention.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
+- semantic_id: difficult-conversation
+  text: When you need to explain a concern respectfully, use Speak Up to prepare clear words rather than
+    to control the other person's reaction.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: language-speaking
+  text: During foreign-language conversation practice, focus on expressing familiar material even if mistakes
+    happen.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

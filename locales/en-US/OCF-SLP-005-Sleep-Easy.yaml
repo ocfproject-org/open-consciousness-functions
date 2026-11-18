@@ -138,6 +138,30 @@ common_uses:
 - text: Reflecting on returning to sleep after ordinary distractions while remaining responsive to genuine
     safety needs.
   status: draft
+- semantic_id: unfamiliar-bed
+  text: In a safe unfamiliar sleeping environment, use Sleep Easy to support settling into ordinary sleep.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: background-noise
+  text: When harmless background noise makes settling difficult, use Sleep Easy alongside practical noise
+    management.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: returning-to-sleep
+  text: After waking unexpectedly, use Sleep Easy to return attention to natural sleep without forcing
+    it.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: travel-sleep
+  text: During travel, use Sleep Easy as part of a familiar bedtime ritual while respecting actual rest
+    needs.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: hearing-less-companion
+  text: Explore Hearing LESS separately for distracting sounds if appropriate, while preserving awareness
+    of alarms and hazards.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-SLP-001
