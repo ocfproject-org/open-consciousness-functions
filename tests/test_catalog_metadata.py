@@ -7,18 +7,26 @@ from ocf_tools.paths import REPO_ROOT
 pytestmark = pytest.mark.integration
 
 
-def test_all_function_metadata_is_useful_draft_and_canonical_fields_are_single_source():
+def test_function_metadata_preserves_drafts_and_canonical_fields_are_single_source():
     catalog = LocaleCatalog()
     assert not catalog.problems
     pack = catalog.require("en-US")
     assert len(pack.localized_functions) == 58
     for identity, data in pack.localized_functions.items():
         assert 3 <= len(data["tags"]) <= 6
-        assert 2 <= len(data["common_uses"]) <= 5
+        # The original suggestions stay draft; owner-reviewed additions are
+        # independently checked in test_reviewed_common_uses.
+        drafts = [value for value in data["common_uses"] if value["status"] == "draft"]
+        assert 2 <= len(drafts) <= 5
+        assert all(value["status"] == "draft" and value["text"].strip() for value in data["tags"])
         assert all(
-            value["status"] == "draft" and value["text"].strip()
-            for field in ("tags", "common_uses")
-            for value in data[field]
+            value["status"] in {"draft", "reviewed"} and value["text"].strip()
+            for value in data["common_uses"]
+        )
+        assert all(
+            value.get("semantic_id") and (value.get("notes") or "").startswith("Use-case review;")
+            for value in data["common_uses"]
+            if value["status"] == "reviewed"
         )
         assert data["localization"]["status"] in {"complete", "partial"}
         assert "contract_sha256" not in data["localization"]
