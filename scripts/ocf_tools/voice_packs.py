@@ -116,13 +116,14 @@ def _persistent_inference(request: dict, interpreter: Path, timeout: int) -> dic
             log_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
             log_dir.chmod(0o700)
             _worker_log_path = log_dir / (unique_run_id("chatterbox-worker") + ".log")
-            env = workspace_environment(
-                {
-                    "PYTHONPATH": str(REPO_ROOT / "scripts")
-                    + os.pathsep
-                    + os.environ.get("PYTHONPATH", "")
-                }
-            )
+            extra = {
+                "PYTHONPATH": str(REPO_ROOT / "scripts")
+                + os.pathsep
+                + os.environ.get("PYTHONPATH", "")
+            }
+            if not os.environ.get("HF_HUB_CACHE") and not os.environ.get("HF_HOME"):
+                extra["HF_HUB_CACHE"] = str(model_cache_root())
+            env = workspace_environment(extra)
             with _worker_log_path.open("ab") as stderr:
                 _worker_log_path.chmod(0o600)
                 _worker_process = subprocess.Popen(
@@ -283,7 +284,10 @@ def create_pack(
 def inspect_pack(query: str) -> dict:
     matches = [p for p in load_voice_profiles() if p["id"] == query or p.get("slug") == query]
     if len(matches) != 1:
-        raise OCFError("select one unambiguous private OCF voice ID or slug")
+        raise OCFError(
+            f"private voice {query!r} is not uniquely registered; checked profile root "
+            f"{custom_voices.profile_root()}"
+        )
     profile = matches[0]
     return {
         "profile": profile,
@@ -291,6 +295,71 @@ def inspect_pack(query: str) -> dict:
         "pack_type": (profile.get("creation_provenance") or {}).get("pack_type", "legacy-profile"),
         "inference_verified": inference_verified(profile),
         "inference_receipts": inference_receipts(profile["id"]),
+    }
+
+
+def production_preflight(query: str) -> dict:
+    """Read-only selected-voice and asset preflight for production launchers."""
+    profile_root = custom_voices.profile_root()
+    asset_root = custom_voices.asset_root()
+    try:
+        matches = [p for p in load_voice_profiles() if p["id"] == query]
+    except OCFError as exc:
+        raise OCFError(
+            f"voice preflight could not load profiles from {profile_root}: {exc}"
+        ) from exc
+    if len(matches) != 1:
+        raise OCFError(
+            f"voice preflight could not find exactly one {query!r} profile in {profile_root}"
+        )
+    profile = matches[0]
+    try:
+        validation = custom_voices.validate_profile(profile)
+    except OCFError as exc:
+        raise OCFError(
+            f"voice preflight rejected {query!r}; profiles: {profile_root}; "
+            f"assets: {asset_root}; reason: {exc}"
+        ) from exc
+    if profile.get("backend") != "chatterbox-nano":
+        raise OCFError(
+            f"voice preflight expected Chatterbox Nano for {query!r}, got "
+            f"{profile.get('backend')!r} from {profile_root}"
+        )
+    reference = profile.get("reference_audio", {})
+    interpreter = runtime_interpreter()
+    if not interpreter.is_file():
+        raise OCFError(
+            f"voice preflight cannot access the configured Chatterbox runtime for {query!r}"
+        )
+    revision = reference.get("model_revision")
+    actual_model_files = _cached_model_file_hashes(revision) if revision else {}
+    expected_model_files = reference.get("model_files", {})
+    missing_or_changed = [
+        name
+        for name, digest in expected_model_files.items()
+        if actual_model_files.get(name) != digest
+    ]
+    if (
+        not revision
+        or cached_model_revision() != revision
+        or not expected_model_files
+        or missing_or_changed
+    ):
+        raise OCFError(
+            f"voice preflight cannot verify the declared Chatterbox model under "
+            f"{model_cache_root()}; revision/files missing or changed"
+        )
+    return {
+        "voice_id": query,
+        "backend": profile["backend"],
+        "profile_root": str(profile_root),
+        "asset_root": str(asset_root),
+        "profile_valid": validation["valid"],
+        "assets_valid": validation["assets_checked"],
+        "inference_verified": validation["inference_verified"],
+        "model_cache_verified": True,
+        "model_revision": revision,
+        "reference_sha256": reference.get("sha256"),
     }
 
 
@@ -353,10 +422,17 @@ def inference_verified(profile: dict) -> bool:
 
 def model_cache_root() -> Path:
     """Match Hugging Face's explicit durable cache overrides."""
-    if os.environ.get("HF_HUB_CACHE"):
-        return Path(os.environ["HF_HUB_CACHE"]).expanduser()
-    if os.environ.get("HF_HOME"):
-        return Path(os.environ["HF_HOME"]).expanduser() / "hub"
+    if "HF_HUB_CACHE" in os.environ:
+        if os.environ["HF_HUB_CACHE"]:
+            return Path(os.environ["HF_HUB_CACHE"]).expanduser()
+        return work_path("cache", "huggingface", "hub")
+    if "HF_HOME" in os.environ:
+        if os.environ["HF_HOME"]:
+            return Path(os.environ["HF_HOME"]).expanduser() / "hub"
+        return work_path("cache", "huggingface", "hub")
+    configured = custom_voices._private_voice_location("hf_hub_cache")
+    if configured is not None:
+        return configured
     return work_path("cache", "huggingface", "hub")
 
 
@@ -398,9 +474,16 @@ def runtime_interpreter() -> Path:
     Preserve a venv entrypoint's path: resolving its symlink would instead
     select the base interpreter's unrelated package directory.
     """
-    configured = os.environ.get("OCF_CHATTERBOX_PYTHON")
-    if configured:
-        return Path(configured).expanduser().absolute()
+    if "OCF_CHATTERBOX_PYTHON" in os.environ:
+        configured = os.environ["OCF_CHATTERBOX_PYTHON"]
+        if configured:
+            return Path(configured).expanduser().absolute()
+        if sys.platform == "win32":
+            return work_path("cache").parent / "voice-envs/chatterbox/Scripts/python.exe"
+        return work_path("cache").parent / "voice-envs/chatterbox/bin/python"
+    configured = custom_voices._private_voice_location("chatterbox_python")
+    if configured is not None:
+        return configured
     if sys.platform == "win32":
         return work_path("cache").parent / "voice-envs/chatterbox/Scripts/python.exe"
     return work_path("cache").parent / "voice-envs/chatterbox/bin/python"
@@ -449,6 +532,8 @@ def synthesize(query: str, text: str, *, device: str = "auto", timeout: int = 90
             result = None
         else:
             env = os.environ.copy()
+            if not env.get("HF_HUB_CACHE") and not env.get("HF_HOME"):
+                env["HF_HUB_CACHE"] = str(model_cache_root())
             env["PYTHONPATH"] = str(REPO_ROOT / "scripts") + os.pathsep + env.get("PYTHONPATH", "")
             result = workspace_run(
                 [str(interpreter), "-m", "ocf_tools.chatterbox_backend"],

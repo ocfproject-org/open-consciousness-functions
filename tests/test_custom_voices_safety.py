@@ -203,7 +203,12 @@ def test_profile_validation_keeps_reference_and_consent_boundaries(private_store
         custom_voices.validate_profile(profile)
 
 
-def test_reference_profile_without_model_is_valid_but_reports_runtime_blocker(private_store):
+def test_reference_profile_without_model_is_valid_but_reports_runtime_blocker(
+    private_store, monkeypatch
+):
+    monkeypatch.setattr(
+        voice_packs, "runtime_interpreter", lambda: private_store / "missing-chatterbox-python"
+    )
     profile = make_pack(private_store)["profile"]
     assert custom_voices.model_path(profile) is None
     result = custom_voices.profile_availability(profile)

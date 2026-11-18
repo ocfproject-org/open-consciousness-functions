@@ -77,10 +77,11 @@
         "dev ocf",
         "validate",
         "voice doctor",
+        "voice preflight",
         "workspace status"
       ],
       "related_schemas": [],
-      "sha256": "bccba4e068f9efe388cbec787c65c71f93d2ca776870360ce0ae2cb89ef58629",
+      "sha256": "19f0590589a28cc5670006d958525cdfb406ff94270eb94fc3665ae3c83a7e3b",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2449,6 +2450,7 @@
         "new voice",
         "new voice-dataset",
         "voice audition",
+        "voice audition-pack",
         "voice capabilities",
         "voice dataset-guide",
         "voice dataset-init",
@@ -2457,13 +2459,15 @@
         "voice import-model",
         "voice import-profile",
         "voice inspect",
+        "voice inspect-pack",
         "voice list",
+        "voice preflight",
         "voice training-plan",
         "voice validate-dataset",
         "voice validate-profile"
       ],
       "related_schemas": [],
-      "sha256": "3ddf8bf8533de48b691f3d290358fea0e7fcf811dd3c6ab79bd7b69e2d26d48c",
+      "sha256": "d1e664bffe4d7537c9e873e13954870389b36cc98d621ae3bedd469600bc858a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4693,7 +4697,7 @@
         "workspace clean"
       ],
       "related_schemas": [],
-      "sha256": "2105485299ea7e083e6c62dc0dd69162dcd297b79691d93e275565415a6f05dc",
+      "sha256": "0f8f35cbaeadd9a2d20fbf9ad915f598b1272dd9501a2230c54c24cf617834c1",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

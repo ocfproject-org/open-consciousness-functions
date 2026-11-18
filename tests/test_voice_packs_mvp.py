@@ -209,6 +209,9 @@ def test_optional_backend_missing_is_reported_without_tts_fallback(private_store
         consent_declaration="Test fixture only.",
     )
     monkeypatch.delenv("OCF_CHATTERBOX_PYTHON", raising=False)
+    monkeypatch.setattr(
+        voice_packs, "runtime_interpreter", lambda: private_store / "missing-chatterbox-python"
+    )
     with pytest.raises(OCFError, match="optional environment is missing"):
         voice_packs.synthesize("OCF-VOICE-9894", "A new sentence.")
     assert not voice_packs.inspect_pack("OCF-VOICE-9894")["inference_verified"]

@@ -119,3 +119,9 @@ def unit_process_boundary(request, monkeypatch):
             )
 
         monkeypatch.setattr(subprocess, "Popen", forbidden)
+
+
+@pytest.fixture(autouse=True)
+def isolate_private_voice_configuration(monkeypatch, tmp_path):
+    """Tests must not discover or mutate an operator's per-user voice store."""
+    monkeypatch.setenv("OCF_VOICE_CONFIG", str(tmp_path / "unconfigured-voice-storage.json"))

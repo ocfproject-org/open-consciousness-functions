@@ -83,21 +83,76 @@ def _copy_verified(source: Path, destination: Path, checksum: str) -> bool:
 
 def asset_root() -> Path:
     value = os.environ.get("OCF_VOICE_ASSETS")
-    if value:
+    if "OCF_VOICE_ASSETS" in os.environ:
+        if not value:
+            return work_path("cache", "voices", "models")
         path = Path(value).expanduser()
         return (path if path.is_absolute() else REPO_ROOT / path).resolve()
+    configured = _private_voice_location("asset_dir")
+    if configured is not None:
+        return configured
     return work_path("cache", "voices", "models")
+
+
+def _account_home() -> Path:
+    """Use the OS account home, not a launcher-specific HOME override."""
+    if os.name != "nt":
+        import pwd
+
+        return Path(pwd.getpwuid(os.getuid()).pw_dir)
+    return Path(os.environ.get("USERPROFILE") or Path.home())
+
+
+def private_voice_config_path() -> Path:
+    """Stable per-user configuration shared by shells, services and worktrees."""
+    override = os.environ.get("OCF_VOICE_CONFIG")
+    if override:
+        path = Path(override).expanduser()
+        if not path.is_absolute():
+            raise OCFError("OCF_VOICE_CONFIG must be an absolute file path")
+        return path.resolve()
+    if os.name == "nt":
+        config_root = Path(os.environ.get("APPDATA") or _account_home() / "AppData/Roaming")
+    else:
+        config_root = _account_home() / ".config"
+    return config_root / "ocf" / "voice-storage.json"
+
+
+def _private_voice_location(key: str) -> Path | None:
+    config_path = private_voice_config_path()
+    if not config_path.exists():
+        return None
+    try:
+        if os.name != "nt" and config_path.stat().st_mode & 0o077:
+            raise ValueError("permissions must be private to the account")
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+        if not isinstance(config, dict) or config.get("schema_version") != 1:
+            raise ValueError("unsupported configuration schema")
+        value = config.get(key)
+        if value is None:
+            return None
+        if not isinstance(value, str) or not Path(value).expanduser().is_absolute():
+            raise ValueError(f"{key} must be an absolute path")
+        path = Path(value).expanduser()
+        return path.absolute() if key == "chatterbox_python" else path.resolve()
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise OCFError(f"private voice configuration at {config_path} is invalid: {exc}") from exc
 
 
 def profile_root() -> Path:
     """Durable optional profile store; default remains disposable OCF cache."""
-    value = os.environ.get("OCF_VOICE_PROFILE_DIR")
-    if not value:
-        return work_path("cache", "voices", "profiles")
-    path = Path(value).expanduser()
-    if not path.is_absolute():
-        path = REPO_ROOT / path
-    result = path.resolve()
+    if "OCF_VOICE_PROFILE_DIR" in os.environ:
+        value = os.environ["OCF_VOICE_PROFILE_DIR"]
+        if not value:
+            return work_path("cache", "voices", "profiles")
+        path = Path(value).expanduser()
+        if not path.is_absolute():
+            path = REPO_ROOT / path
+        result = path.resolve()
+    else:
+        result = _private_voice_location("profile_dir")
+        if result is None:
+            result = work_path("cache", "voices", "profiles")
     if result in {Path(result.anchor), REPO_ROOT.resolve()}:
         raise OCFError("OCF_VOICE_PROFILE_DIR must be a dedicated private profile directory")
     if result.exists() and not result.is_dir():

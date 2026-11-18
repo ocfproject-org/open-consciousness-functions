@@ -61,6 +61,11 @@ def add_commands(voice_subparsers) -> None:
     )
     pack_inspect.add_argument("voice_id")
 
+    preflight = voice_subparsers.add_parser(
+        "preflight", help="read-only validate one explicitly selected production voice"
+    )
+    preflight.add_argument("voice_id")
+
     pack_audition = voice_subparsers.add_parser(
         "audition-pack", help="synthesize new text with a private reference voice pack"
     )
@@ -192,6 +197,10 @@ def dispatch(args: Namespace) -> dict:
         from .voice_packs import inspect_pack
 
         return inspect_pack(args.voice_id)
+    if kind == "preflight":
+        from .voice_packs import production_preflight
+
+        return production_preflight(args.voice_id)
     if kind == "audition-pack":
         from .voice_packs import synthesize
 

@@ -10,6 +10,10 @@
   "ignores": [
     // Local dependencies and private/user-supplied source material are not maintained OCF docs.
     "node_modules/**",
+    ".opencode/**",
+    ".venv/**",
+    "build/**",
+    ".ocf-authoring/**",
     ".ocf-work/**",
     "ReusablePrompts/**",
     "references/HumanPlusTranscripts/**",

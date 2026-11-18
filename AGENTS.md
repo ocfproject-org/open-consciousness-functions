@@ -118,6 +118,15 @@ Review remaining vocabulary ONE function at a time; wait for explicit user input
   PATH and user-local Piper launcher/model hashes without installing/downloading.
   Use `voice smoke OCF-VOICE-9003 --locale en-US` for a one-sentence synthesis;
   see [setup](docs/SETUP.md) for supported overrides and troubleshooting.
+- The authorized private Mike reference voice is `OCF-VOICE-9100` (Chatterbox
+  Nano). Before reporting it missing or starting a production render, run
+  `python scripts/ocf.py voice preflight OCF-VOICE-9100`, then `voice
+  inspect-pack OCF-VOICE-9100`; private roots resolve from the OS account's
+  persistent OCF voice-storage config independently of worktree and launcher
+  `HOME`; it also records the verified Chatterbox runtime and persistent model
+  cache locations. Environment overrides remain explicit and take precedence.
+  Run this preflight before batch rendering; never substitute another narrator
+  when the selected profile/assets/runtime/model are unavailable.
 - All routine scratch/cache/logs and default auditions use the canonical shared
   `.ocf-work/` for linked worktrees. Run `python scripts/ocf.py workspace status`
   before searching for old artifacts; it reports the shared project workspace

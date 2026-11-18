@@ -6,8 +6,19 @@ default voice are preserved. Built-in profiles remain under
 `audio/voices/profiles/`; imported private profiles/models use
 the disposable `.ocf-work/cache/voices/{profiles,models}/` cache by default.
 Set both `OCF_VOICE_PROFILE_DIR` and `OCF_VOICE_ASSETS` to durable private
-directories before importing reusable assets; relative values resolve from the
-repository root. For reference-based voice creation, start with the
+directories before importing reusable assets; relative environment values resolve
+from the repository root. A private per-user `voice-storage.json` under the OS
+account's `.config/ocf` directory can persist absolute profile and asset roots
+across shells, systemd services, OpenCode and linked worktrees. OCF resolves the
+account home from the OS user identity rather than a launcher-overridden `HOME`.
+`OCF_VOICE_CONFIG` may explicitly select a different absolute config-file path.
+Explicit `OCF_VOICE_PROFILE_DIR` and `OCF_VOICE_ASSETS` values still take
+precedence; an explicitly empty value selects the repository cache. Optional
+`chatterbox_python` and `hf_hub_cache` entries pin an already-installed runtime
+and model-cache location; `OCF_CHATTERBOX_PYTHON`, `HF_HUB_CACHE`, and `HF_HOME`
+environment overrides take precedence. Keep the configuration file private
+(mode `0600` on POSIX); it stores locations only, not recordings, model weights
+or consent records. For reference-based voice creation, start with the
 [private pack walkthrough](VOICE_PACKS.md).
 
 ## Supported operations
@@ -20,6 +31,9 @@ dataset commands. Use [capabilities/profile portability](VOICE_CLONING.md) and
 python scripts/ocf.py voice capabilities --json
 python scripts/ocf.py voice capabilities --gpu --json
 python scripts/ocf.py voice list
+python scripts/ocf.py voice preflight OCF-VOICE-9100
+python scripts/ocf.py voice inspect-pack OCF-VOICE-9100
+python scripts/ocf.py voice audition-pack OCF-VOICE-9100 --text "A short explicit voice check." --device auto
 python scripts/ocf.py voice inspect OCF-VOICE-0002
 python scripts/ocf.py new voice
 python scripts/ocf.py voice import-model /path/to/model.onnx --id OCF-VOICE-9001 --name "My private voice"
@@ -27,6 +41,12 @@ python scripts/ocf.py voice validate-profile .ocf-work/cache/voices/profiles/OCF
 python scripts/ocf.py voice audition OCF-VOICE-0002 OCF-VOICE-9001
 python scripts/ocf.py audio render OCF-FND-002 --voice OCF-VOICE-9001 --dry-run
 ```
+
+Production must select `OCF-VOICE-9100` explicitly and run `voice preflight`
+before expensive rendering. The preflight reports the profile and asset roots it
+checked, validates the profile/reference/consent assets and never substitutes a
+different backend when the selected private voice is unavailable. A successful
+preflight is not a listening or redistribution approval.
 
 The import example requires your actual local ONNX file plus its adjacent
 `.onnx.json`; it is not an automatic model download. Import checks metadata

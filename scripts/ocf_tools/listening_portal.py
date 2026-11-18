@@ -6,6 +6,7 @@ import argparse
 import base64
 import hashlib
 import hmac
+import html
 import json
 import mimetypes
 import os
@@ -19,21 +20,32 @@ from pathlib import Path
 from urllib.parse import quote, urlsplit
 from uuid import uuid4
 
-ROLES = {"audio", "master", "transcript", "subtitles"}
+ROLES = {"audio", "master", "transcript", "subtitles", "lyrics", "artwork"}
 EXTENSIONS = {
     "audio": {".mp3", ".m4a"},
     "master": {".wav", ".flac"},
     "transcript": {".txt"},
     "subtitles": {".vtt", ".srt"},
+    "lyrics": {".lrc"},
+    "artwork": {".png", ".jpg", ".jpeg"},
 }
-PAGE = """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Private listening</title>
-<style>body{color:#e8eaf2;background:#10131c;font:17px system-ui;max-width:840px;margin:auto;padding:24px}article{background:#1c2231;padding:20px;border-radius:16px;margin:20px 0}audio,textarea{width:100%;margin:12px 0}textarea{box-sizing:border-box;background:#10131c;color:inherit;border:1px solid #56617b;padding:10px}a{color:#aecaff}button{background:#aac4ff;border:0;border-radius:8px;padding:12px}small{color:#bbc3d7}h1{font-size:30px}</style>
-<h1>Private listening</h1><p>Verified completed editions. Technical verification and your listening approval are separate.</p><main id="library">Loading…</main>
+PAGE = """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>__PAGE_TITLE__</title>
+<style>body{color:#e8eaf2;background:#10131c;font:17px system-ui;max-width:960px;margin:auto;padding:clamp(14px,3vw,28px)}article{background:#1c2231;padding:20px;border-radius:16px;margin:18px 0}audio,textarea,input,select{box-sizing:border-box;width:100%;margin:10px 0}textarea,input,select{background:#10131c;color:inherit;border:1px solid #56617b;padding:10px}a{color:#aecaff;margin-right:12px}button{background:#aac4ff;border:0;border-radius:8px;padding:12px}small,.muted{color:#bbc3d7}h1{font-size:clamp(24px,4vw,34px)}.filters{display:grid;grid-template-columns:2fr 1fr;gap:12px}.cover{display:block;max-width:min(100%,360px);height:auto;border-radius:12px;margin:12px auto}@media(max-width:560px){.filters{grid-template-columns:1fr}article{padding:15px}}</style>
+<h1>__PAGE_TITLE__</h1><p>__PAGE_DESCRIPTION__</p><p class="muted">Verified edition assets only. Technical verification and listening/publication approval are separate.</p>
+<div class="filters"><label>Search function names and descriptions<input id="search" type="search" autocomplete="off"></label><label>Category<select id="category"><option value="">All categories</option></select></label></div>
+<p id="previous"></p><p id="count" class="muted"></p><main id="library">Loading…</main>
 <script>
-const el=(tag,text)=>{let x=document.createElement(tag);if(text!==undefined)x.textContent=text;return x};
-async function load(){let r=await fetch('/catalog');if(!r.ok)throw Error('Library unavailable');let rows=await r.json();let main=document.querySelector('main');main.replaceChildren();for(let t of rows){let a=el('article');a.append(el('h2',t.title),el('small',`${t.edition} · ${t.profile} · ${(t.duration_seconds/60).toFixed(1)} min`));let media=t.media.find(x=>x.role==='audio');if(media){let p=el('audio');p.controls=true;p.preload='metadata';p.src=media.url;a.append(p)}for(let m of t.media.filter(x=>x.role!=='audio')){let link=el('a',m.role+' ');link.href=m.url;a.append(link,el('br'))}let notes=el('textarea');notes.placeholder='Listening notes and edition comparisons';notes.value=t.notes||'';notes.maxLength=16000;let save=el('button','Save notes');save.onclick=async()=>{let res=await fetch('/notes/'+t.id,{method:'POST',headers:{'Content-Type':'application/json','X-OCF-Request':'notes'},body:JSON.stringify({notes:notes.value})});save.textContent=res.ok?'Saved':'Save failed'};a.append(notes,save);main.append(a)}if(!rows.length)main.textContent='No verified completed editions yet.'}
+const el=(tag,text)=>{let x=document.createElement(tag);if(text!==undefined)x.textContent=text;return x};let rows=[];
+function show(){let q=document.querySelector('#search').value.trim().toLocaleLowerCase();let c=document.querySelector('#category').value;let selected=rows.filter(t=>(!c||t.category===c)&&(!q||[t.title,t.description,t.function_id,t.primary_display_cue,t.primary_spoken_cue,...(t.secondary_cues||[]).flatMap(x=>[x.display_cue,x.spoken_cue])].some(v=>(v||'').toLocaleLowerCase().includes(q))));let main=document.querySelector('main');main.replaceChildren();document.querySelector('#count').textContent=`${selected.length} verified edition(s)`;for(let t of selected){let a=el('article');a.append(el('h2',t.title),el('small',`${t.edition} · ${t.profile} · ${(t.duration_seconds/60).toFixed(1)} min · ${t.validation_status||'verified'}`));if(t.function_id)a.append(el('p',`${t.function_id}${t.category?' · '+t.category:''}`));if(t.description)a.append(el('p',t.description));if(t.common_uses&&t.common_uses.length)a.append(el('p','Purpose: '+t.common_uses.join('; ')));if(t.primary_display_cue||t.primary_spoken_cue)a.append(el('p',`Primary cue: ${t.primary_display_cue||''}${t.primary_spoken_cue?' (“'+t.primary_spoken_cue+'”)':''}`));if(t.secondary_cues&&t.secondary_cues.length)a.append(el('p','Secondary cues: '+t.secondary_cues.map(x=>x.display_cue||x.spoken_cue).filter(Boolean).join('; ')));if(t.changed_wording)a.append(el('p','Wording changed from the previous edition; review is recommended.'));let art=t.media.find(x=>x.role==='artwork');if(art){let img=el('img');img.className='cover';img.src=art.url;img.alt=t.title+' artwork';a.append(img)}let media=t.media.find(x=>x.role==='audio');if(media){let p=el('audio');p.controls=true;p.preload='metadata';p.src=media.url;p.setAttribute('aria-label','Play '+t.title);a.append(p)}for(let m of t.media.filter(x=>x.role!=='audio'&&x.role!=='artwork')){let link=el('a',m.role+' ');link.href=m.url;link.download=m.role==='master';a.append(link)}let notes=el('textarea');notes.placeholder='Listening notes and edition comparisons';notes.value=t.notes||'';notes.maxLength=16000;let save=el('button','Save notes');save.onclick=async()=>{let res=await fetch('/notes/'+t.id,{method:'POST',headers:{'Content-Type':'application/json','X-OCF-Request':'notes'},body:JSON.stringify({notes:notes.value})});save.textContent=res.ok?'Saved':'Save failed'};a.append(notes,save);main.append(a)}if(!selected.length)main.textContent='No verified editions match these filters.'}
+async function load(){let r=await fetch('/catalog');if(!r.ok)throw Error('Library unavailable');rows=await r.json();let select=document.querySelector('#category');for(let c of [...new Set(rows.map(x=>x.category).filter(Boolean))].sort()){let o=el('option',c);o.value=c;select.append(o)}document.querySelector('#search').addEventListener('input',show);select.addEventListener('change',show);show()}
 load().catch(()=>document.querySelector('main').textContent='Library unavailable.');
 </script></html>"""
+
+
+def render_page(title: str, description: str) -> str:
+    return PAGE.replace("__PAGE_TITLE__", html.escape(title)).replace(
+        "__PAGE_DESCRIPTION__", html.escape(description)
+    )
 
 
 def regular_file(directory: Path, name: str):
@@ -210,6 +222,16 @@ class Library:
                             "edition": str(data["edition"]),
                             "profile": str(data["profile"]),
                             "duration_seconds": data["duration_seconds"],
+                            "function_id": data.get("function_id"),
+                            "category": str(data.get("category", "")),
+                            "description": str(data.get("description", "")),
+                            "common_uses": [str(x) for x in data.get("common_uses", [])],
+                            "primary_display_cue": str(data.get("primary_display_cue", "")),
+                            "primary_spoken_cue": str(data.get("primary_spoken_cue", "")),
+                            "secondary_cues": data.get("secondary_cues", []),
+                            "changed_wording": data.get("changed_wording") is True,
+                            "validation_status": str(data.get("validation_status", "verified")),
+                            "source_revision": str(data.get("source_revision", "")),
                             "media": media,
                             "notes": notes,
                             "sort_order": 0
@@ -248,7 +270,14 @@ class Library:
             os.replace(temporary, path)
 
 
-def handler(library, authorization):
+def handler(
+    library,
+    authorization,
+    *,
+    page_title="Private listening",
+    page_description="Verified completed editions.",
+    previous_edition_url=None,
+):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *_args):
             pass  # Request paths and credentials do not belong in service logs.
@@ -287,7 +316,17 @@ def handler(library, authorization):
                 return
             path = urlsplit(self.path).path
             if path == "/":
-                return self.reply(PAGE.encode(), "text/html; charset=utf-8")
+                page = render_page(page_title, page_description)
+                if previous_edition_url:
+                    link = (
+                        '<a href="'
+                        + html.escape(previous_edition_url, quote=True)
+                        + '">Previous A6 comparison</a>'
+                    )
+                    page = page.replace(
+                        '<p id="previous"></p>', '<p id="previous">' + link + "</p>"
+                    )
+                return self.reply(page.encode(), "text/html; charset=utf-8")
             catalog, files = library.discover()
             if path == "/health":
                 return self.reply(b'{"status":"ready"}')
@@ -377,7 +416,14 @@ def main():
         context.minimum_version = ssl.TLSVersion.TLSv1_2
         context.load_cert_chain(config["certificate"], config["private_key"])
     server = PrivateServer(
-        (host, config.get("port", 8766)), handler(Library(config["library"]), authorization)
+        (host, config.get("port", 8766)),
+        handler(
+            Library(config["library"]),
+            authorization,
+            page_title=config.get("page_title", "Private listening"),
+            page_description=config.get("page_description", "Verified completed editions."),
+            previous_edition_url=config.get("previous_edition_url"),
+        ),
     )
     try:
         if context is not None:

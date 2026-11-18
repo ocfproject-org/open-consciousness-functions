@@ -1035,6 +1035,19 @@
     {
       "argv": [
         "voice",
+        "preflight",
+        "espeak-en"
+      ],
+      "path": [
+        "voice",
+        "preflight"
+      ],
+      "usage": "usage: ocf voice preflight [-h] voice_id",
+      "verification": "parser-only; placeholders are not dispatched"
+    },
+    {
+      "argv": [
+        "voice",
         "audition-pack",
         "espeak-en",
         "--text",
@@ -2276,12 +2289,12 @@
     "schemas/voice-dataset.schema.json": "0307327f3f52eeaaaed71abaa6d1950c0b665fc677b43547e2452e9c31000ed8",
     "schemas/voice-profile.schema.json": "bff61d964e36686802129b9631fed45c3baa5262d5359d330a0b3f59763ee40e",
     "scripts/ocf_tools/agent_api.py": "9d6d5453ff75639b6ca8c0ea8977593f393fa5f3674eb070fb94665e0631d706",
-    "scripts/ocf_tools/cli.py": "2105485299ea7e083e6c62dc0dd69162dcd297b79691d93e275565415a6f05dc",
+    "scripts/ocf_tools/cli.py": "0f8f35cbaeadd9a2d20fbf9ad915f598b1272dd9501a2230c54c24cf617834c1",
     "scripts/ocf_tools/lsp_server.py": "a753b91b1b73609ecd6886470a037a9bbf1259e2a77f08203546e55ef4cbae09",
     "scripts/ocf_tools/mcp_server.py": "d8641d4160888abbe7152fca2117623de4dfb061793b95b161dbfb4534a2be54",
     "scripts/ocf_tools/narration_cli.py": "5f13a05251816e5d3b80419d9ed67184b5c6c48722175700bbc88ec2b429bd41",
     "scripts/ocf_tools/prompts.py": "576bcefd8dde296159b2047693a63df5c85a1879a11f9b9ebcb0002a41288599",
-    "scripts/ocf_tools/voice_engine_cli.py": "8072498f87f5509f7a18016d8d12f221dc36f3a393699c63ea18e6f6d39c77eb"
+    "scripts/ocf_tools/voice_engine_cli.py": "bd6c052419388e24c45ff0bbd6e1489da0f194422e125deda3d7914c72e79f5c"
   },
   "workflows": {
     "schema_version": "1.0",

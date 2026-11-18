@@ -2094,6 +2094,7 @@ def main(argv: list[str] | None = None) -> int:
                 "dataset-guide",
                 "create-pack",
                 "inspect-pack",
+                "preflight",
                 "prepare-reference",
                 "audition-pack",
             }:

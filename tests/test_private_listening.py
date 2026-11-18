@@ -37,6 +37,13 @@ def completed(root):
         "edition": "1",
         "profile": "synthetic",
         "duration_seconds": 12,
+        "function_id": "OCF-FND-002",
+        "category": "Focus",
+        "description": "Clear, steady attention.",
+        "primary_display_cue": "PLUS-FOCUS",
+        "primary_spoken_cue": "Plus Focus",
+        "changed_wording": True,
+        "validation_status": "verified",
         "media": media,
     }
     (folder / "listening.json").write_text(json.dumps(doc))
@@ -48,10 +55,23 @@ def test_discovery_integrity_and_notes(tmp_path):
     library = Library(tmp_path)
     rows, files = library.discover()
     assert len(rows) == 1 and len(files) == 3
+    assert rows[0]["category"] == "Focus"
+    assert rows[0]["changed_wording"] is True
     library.save_notes(rows[0]["id"], "Compare closure with previous edition.")
     assert library.discover()[0][0]["notes"].startswith("Compare")
     (folder / "audio.mp3").write_bytes(b"corrupt")
     assert library.discover() == ([], {})
+
+
+def test_candidate_page_has_safe_title_search_and_category_filter():
+    from ocf_tools.listening_portal import render_page
+
+    page = render_page("OCF 0.2.0 <candidate>", "Source revision 123")
+    assert "OCF 0.2.0 &lt;candidate&gt;" in page
+    assert "Source revision 123" in page
+    assert 'type="search"' in page
+    assert "All categories" in page
+    assert "changed_wording" in page
 
 
 @pytest.mark.parametrize("name", ["../secret", "/secret", "a/b", "a\\b", ".", "..", ""])
