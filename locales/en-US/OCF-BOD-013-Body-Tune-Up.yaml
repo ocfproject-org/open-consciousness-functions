@@ -121,6 +121,26 @@ common_uses:
 - text: Visualizing whole-body maintenance and renewal without claiming healing or
     replacing treatment.
   status: draft
+- semantic_id: general-wellness-checkin
+  text: Use Body Tune-Up as a broad, nonmedical self-care exercise when no single body area is the intended
+    focus.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: after-demanding-day
+  text: At the end of an active day, explore Body Tune-Up as a reflective practice before a separate Restorative
+    Sleep session.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS3'
+- semantic_id: compare-specific-functions
+  text: When choosing between body-oriented functions, use Body Tune-Up for broad awareness rather than
+    a specific Circulation or Seeing intention.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: heart-flow-pairing
+  text: Explore the 1990 requested Heart Flow and Tune-Up pairing as separate, optional practices for
+    evening relaxation.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions:
   - function_id: OCF-BOD-014

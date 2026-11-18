@@ -133,6 +133,24 @@ common_uses:
   status: draft
 - text: Reflecting on dream recall after waking without assuming dreams report external facts.
   status: draft
+- semantic_id: chosen-dream-topic
+  text: Before bedtime, choose a comfortable subject you would like to explore in a dream.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: creative-dream-theme
+  text: Use Dream Theme to suggest a gentle setting or story idea for imaginative dreaming.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: dream-journaling
+  text: On waking, record anything you remember about your dreams without assuming that their content
+    was controlled.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: dream-versus-insight
+  text: 'Compare Dream Theme with Sleep Insight: one concerns dream content, while the other concerns
+    reflecting on a question.'
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-SLP-004

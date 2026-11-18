@@ -102,6 +102,30 @@ common_uses:
 - text: Reinforcing an intention toward clear, steady thinking without treating a
     medical condition.
   status: draft
+- semantic_id: brain-neck-awareness
+  text: During a quiet wellness practice, direct attention toward a comfortable sense of steadiness in
+    the head and neck without targeting a medical symptom.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: mental-clarity-break
+  text: After mentally demanding work, use Brain Flow as a short reflective body-awareness exercise before
+    returning to the task.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-BRAIN'
+- semantic_id: body-connection
+  text: Compare the experience of Brain Flow with Circulation as distinct practices; historical users
+    described using these themes together.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-BRAIN'
+- semantic_id: after-strenuous-day
+  text: At rest after a physically demanding day, explore a sense of head-and-neck comfort as part of
+    ordinary recovery.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-TRAIL'
+- semantic_id: relaxation-companion
+  text: After Relax, bring attention to the Brain Flow intention during a calm, nonmedical self-care session.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-BOD-002

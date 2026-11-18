@@ -119,6 +119,16 @@ common_uses:
 - text: Distinguishing a felt alertness practice from adequate sleep; never relying on it to make drowsy
     driving or hazardous work safe.
   status: draft
+- semantic_id: safe-alertness
+  text: Before an ordinary activity requiring attentiveness, use Stay Awake as an intention for alert
+    engagement when you are already adequately rested.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: do-not-drive-drowsy
+  text: 'Review historical alertness stories critically: if you are sleepy while driving or operating
+    machinery, stop and rest rather than using Stay Awake to push through.'
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-AWAKE86'
 relationships:
   related_functions: []
   complementary_functions: []

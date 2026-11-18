@@ -135,6 +135,15 @@ common_uses:
   status: draft
 - text: Exploring regeneration imagery without expecting tissue regrowth or substituting imagery for medical care.
   status: draft
+- semantic_id: tuneup-comparison
+  text: Compare Regenerate with Body Tune-Up to choose between a renewal theme and a maintenance theme.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: inner-power-companion
+  text: Explore Inner Power separately when the intended goal is confidence or vitality rather than physical
+    regeneration imagery.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -100,6 +100,21 @@ common_uses:
 - text: Reflecting on placing a selected application on hold when its purpose is complete, using only
     its documented scope.
   status: draft
+- semantic_id: end-temporary-state
+  text: When a temporary function application is complete, use the appropriate documented release or closing
+    action rather than leaving it ambiguous.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP10'
+- semantic_id: after-intense-session
+  text: If a practice feels overstimulating, stop and return to ordinary surroundings; historical users
+    described Release as part of ending activation.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-HP83'
+- semantic_id: compare-specific-cancel
+  text: Check whether a particular function has its own Cancel or close command; do not assume a general
+    Release is interchangeable.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

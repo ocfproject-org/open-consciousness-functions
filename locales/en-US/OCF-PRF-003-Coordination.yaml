@@ -92,6 +92,19 @@ common_uses:
 - text: Preparing attentive movement practice while respecting physical limits and
     safe conditions.
   status: draft
+- semantic_id: movement-rhythm
+  text: During safe movement practice, explore a sense of smooth rhythm while remaining attentive to the
+    environment.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-TRAIL'
+- semantic_id: sport-drill
+  text: Before a familiar sport drill, use Coordination as an intention for steadier, more fluid movement.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: compare-light-step
+  text: Compare Coordination with Light Foot when deciding whether the goal is rhythm or ease of movement.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions:

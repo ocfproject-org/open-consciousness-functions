@@ -109,6 +109,16 @@ common_uses:
   status: draft
 - text: Reflecting on possible guidance while checking facts and retaining responsibility for decisions.
   status: draft
+- semantic_id: intuition-journal
+  text: When you notice a strong hunch, record it and later check whether it corresponded to verifiable
+    information.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: sleep-insight-comparison
+  text: Compare a waking intuitive impression with a separate Sleep Insight question, recording what actually
+    happened afterward.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WAKE'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -139,6 +139,26 @@ common_uses:
 - text: Exploring a felt or imagined fulfilled intention without treating it as a guarantee of external
     events.
   status: draft
+- semantic_id: goal-with-deadline
+  text: Choose a concrete goal and a realistic completion time, then identify the actions needed to work
+    toward it.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-ODYS2'
+- semantic_id: grading-planning
+  text: For a pile of paperwork or assignments, set an intention to finish a defined portion by a selected
+    time, as Barbara Bullard described for grading.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-ODYS2'
+- semantic_id: review-after-options
+  text: After considering several alternatives with Options, use Manifest for the one future condition
+    you actually choose.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: financial-plan-intention
+  text: While reviewing personal finances, set an intention for a responsible planning action rather than
+    expecting a financial outcome without action.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions:
   - function_id: OCF-EXP-003

@@ -127,6 +127,10 @@ common_uses:
   status: draft
 - text: Exploring how to direct a felt sense of energy toward a chosen purpose.
   status: draft
+- semantic_id: energy-for-task
+  text: Before a routine task that calls for enthusiasm, use Access to Energy as an intention for readiness.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

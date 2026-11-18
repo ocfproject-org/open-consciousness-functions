@@ -91,6 +91,15 @@ common_uses:
 - text: Reflecting on the intention to wake from a short rest feeling refreshed, without replacing
     adequate sleep.
   status: draft
+- semantic_id: afternoon-refresh
+  text: After a short rest, use Quick Recharge to return to a routine activity feeling more ready to engage.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: morning-start
+  text: During a sluggish morning, compare Quick Recharge with Reset before choosing which intention fits
+    the moment.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions:
   - function_id: OCF-SLP-002

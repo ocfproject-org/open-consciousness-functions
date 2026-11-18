@@ -108,6 +108,26 @@ common_uses:
 - text: Reflecting on a chosen change in a habit without treating the exercise as a substitute for
     needed professional support.
   status: draft
+- semantic_id: repetitive-snacking
+  text: When addressing an unwanted automatic snack routine, identify the specific behavior and choose
+    an alternative response that respects genuine hunger.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: procrastination-pattern
+  text: If you routinely delay starting a chosen task, use Habit Freedom as a reflection on the recurring
+    pattern and practice a small replacement step.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: smoking-reduction-support
+  text: For a chosen smoking-cessation goal, use Habit Freedom only as optional motivation alongside evidence-based
+    cessation support.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: trading-impulse
+  text: When reflecting on recurring impulsive financial decisions, use Habit Freedom to recognize the
+    pattern and create a concrete independent decision rule.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-TRADERS'
 relationships:
   related_functions:
   - function_id: OCF-AUT-001

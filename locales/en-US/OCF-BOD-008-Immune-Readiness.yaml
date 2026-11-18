@@ -90,6 +90,21 @@ common_uses:
 - text: Reflecting on immune readiness as an intention, not proof of protection from
     illness or a substitute for care.
   status: draft
+- semantic_id: immune-themed-visualization
+  text: During a wellness meditation, imagine coordinated protective processes and a return to ordinary
+    balance.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: historical-multi-practice
+  text: Review the 1991 report describing Immunizing, Circulation and De-Discomfort as a historical combination,
+    not a proven therapeutic protocol.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-IMMUNE'
+- semantic_id: compare-tuneup
+  text: Compare Immune Readiness with Body Tune-Up when choosing the intended theme for a nonmedical self-care
+    session.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

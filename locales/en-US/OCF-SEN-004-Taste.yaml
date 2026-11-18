@@ -232,6 +232,24 @@ common_uses:
   status: draft
 - text: Bringing deliberate attention to taste without using it as a food-safety test.
   status: draft
+- semantic_id: mindful-tasting
+  text: When sampling a safe food, use Taste MORE to attend to flavor and texture details.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: cooking-comparison
+  text: While evaluating a familiar recipe, compare small differences in flavor without judging food safety
+    by taste.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: lessen-overwhelm
+  text: When a safe food tastes unusually intense, explore Taste LESS as a subjective attention practice.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: smell-and-taste
+  text: Explore Taste and Smell in separate sessions to notice how flavor attention and aroma attention
+    differ.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
 relationships:
   related_functions: []
   complementary_functions: []

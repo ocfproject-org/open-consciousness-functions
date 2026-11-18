@@ -116,6 +116,28 @@ common_uses:
 - text: Practicing attention to seeing without treating imagery as vision correction or requiring
     vivid mental pictures.
   status: draft
+- semantic_id: visual-attention
+  text: During a safe visual-observation exercise, notice shapes, contrast and details without assuming
+    a change in eyesight.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: mental-imagery
+  text: During creative planning, imagine an object and deliberately change one feature of the image.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: memory-of-diagram
+  text: After viewing a diagram, picture its main parts and compare your visualization with the original.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: artistic-visualization
+  text: Before drawing or making artwork, mentally rehearse colors, layout and composition.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: seeing-hearing-combo
+  text: Explore Seeing and Hearing as separate complementary perception practices; the 1990 wishlist proposed
+    pairing them on a recording.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions:

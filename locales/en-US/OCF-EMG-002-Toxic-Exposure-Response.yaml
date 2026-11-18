@@ -100,6 +100,21 @@ common_uses:
   status: draft
 - text: Distinguishing a wellness intention from the need for prompt poison-control or emergency advice.
   status: draft
+- semantic_id: poison-help-first
+  text: For a possible toxic exposure, contact Poison Control or emergency services first; use Toxic Exposure
+    Response only as an optional composure practice that does not delay assistance.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: follow-instructions
+  text: While receiving professional exposure instructions, prioritize following them; any self-directed
+    practice must remain secondary.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: distinguish-detox
+  text: During an emergency-readiness review, distinguish Toxic Exposure Response from the unrelated nonmedical
+    Detox imagery function.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
 relationships:
   related_functions: []
   complementary_functions: []

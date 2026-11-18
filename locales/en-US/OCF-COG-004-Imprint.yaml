@@ -184,6 +184,31 @@ common_uses:
 - text: Comparing information capture with the separately documented recall application, without assuming
     memory is infallible.
   status: draft
+- semantic_id: encode-study-material
+  text: After studying a key concept, deliberately select it for Imprint and return to the material later
+    to test retrieval.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS1'
+- semantic_id: remember-command
+  text: Use Imprint to remember when to use another learned function; a 1989 participant described doing
+    this with Nutricia.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: meaningful-experience
+  text: After an important experience, select a few concrete details you want to remember and later compare
+    your recollection with written notes.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: new-vocabulary
+  text: During foreign-language study, use Imprint with a small set of vocabulary and check retention
+    during later recall practice.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: pairs-with-recall
+  text: After deliberately imprinting selected information, use Recall at a later time to practice retrieving
+    it.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
 relationships:
   related_functions:
   - function_id: OCF-COG-006

@@ -131,6 +131,23 @@ common_uses:
   status: draft
 - text: Reviewing morning impressions as possible ideas rather than verified answers or instructions.
   status: draft
+- semantic_id: sleep-question
+  text: Before sleep, select one manageable question and note whether any useful idea emerges on waking.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: creative-problem
+  text: When stuck on a creative or technical problem, record the question before bed and check any morning
+    ideas against reality.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-WAKE'
+- semantic_id: morning-review
+  text: Keep a notebook nearby to record a possible insight, including nights when no answer appears.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: choice-reflection
+  text: Compare Sleep Insight with Contemplation when you want additional reflection on a choice.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions:

@@ -100,6 +100,31 @@ common_uses:
   status: draft
 - text: Practicing a calmer relationship to a feeling without denying useful emotional information.
   status: draft
+- semantic_id: immediate-frustration
+  text: After a frustrating interaction, explore Let Go to loosen initial anger before choosing what to
+    do next.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
+- semantic_id: rumination-break
+  text: When a minor thought keeps pulling attention away from a task, use Let Go to shift attention without
+    pretending the concern never existed.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: decision-after-emotion
+  text: Before a consequential decision, make room for immediate emotions to settle and then revisit the
+    actual evidence.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS2'
+- semantic_id: with-reset
+  text: Explore Let Go followed by Reset as separate practices; survey participants described using that
+    pairing.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: grief-awareness
+  text: During grief, use Let Go only for a selected moment of tension if wanted, without trying to erase
+    meaningful feelings or memories.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-GRIEF'
 relationships:
   related_functions: []
   complementary_functions: []

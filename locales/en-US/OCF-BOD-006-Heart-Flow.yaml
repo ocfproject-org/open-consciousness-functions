@@ -97,6 +97,25 @@ common_uses:
   status: draft
 - text: Visualizing comfortable heart rhythm as a wellness exercise, not cardiovascular treatment.
   status: draft
+- semantic_id: tuneup-companion
+  text: Explore Heart Flow and Body Tune-Up as separate practices; the 1990 wishlist specifically proposed
+    that pairing for overnight listening.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
+- semantic_id: circulation-comparison
+  text: Compare Heart Flow with Circulation to distinguish their intended attention targets rather than
+    treating them as medical interventions.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-ODYS4'
+- semantic_id: winding-down
+  text: At the end of a stressful day, use Heart Flow as a calm body-awareness reflection.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: comfortable-breathing
+  text: During an easy, unforced breathing period, pair a calm heart-centered intention with ordinary
+    breathing awareness.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions:
   - function_id: OCF-BOD-002

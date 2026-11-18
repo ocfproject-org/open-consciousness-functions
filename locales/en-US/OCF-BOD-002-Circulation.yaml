@@ -97,6 +97,26 @@ common_uses:
   status: draft
 - text: Exploring a felt sense of nourishment and vitality as a wellness practice, not a circulation treatment.
   status: draft
+- semantic_id: circulation-imagery
+  text: While resting comfortably, explore the feeling or imagery of smooth circulation through your arms
+    and legs.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-CIRC'
+- semantic_id: after-sitting
+  text: Following a long period of sitting, use Circulation as an optional awareness practice alongside
+    ordinary movement breaks.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: comparative-practice
+  text: Compare Circulation with Brain Flow to learn which purpose and imagery each function actually
+    teaches.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-BRAIN'
+- semantic_id: general-tuneup
+  text: Include Circulation as a distinct optional practice when exploring the historical Tune-Up-centered
+    self-care suggestions.
+  status: reviewed
+  notes: 'Use-case review; historical-suggested; refs: A-WISH90'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -213,6 +213,21 @@ common_uses:
 - text: Reviewing the documented distinction between temporary numbing and its release,
     without suppressing warning signs or delaying care.
   status: draft
+- semantic_id: minor-itch
+  text: For a nonurgent, minor itch, explore temporary changes in perceived sensation while staying aware
+    of any underlying cause.
+  status: reviewed
+  notes: 'Use-case review; historical-reported; refs: A-LAB89'
+- semantic_id: explicit-release
+  text: If you practice temporary numbing, explicitly return to normal awareness afterward using the documented
+    release procedure.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-LAB89'
+- semantic_id: compare-comfort
+  text: Compare Temporary Numbing and Comfort so you can choose the appropriate nonmedical, reversible
+    practice instead of treating them as interchangeable.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

@@ -103,6 +103,15 @@ common_uses:
   status: draft
 - text: Reflecting on relaxation and balance without using felt sensations as a blood-pressure measurement or treatment.
   status: draft
+- semantic_id: stress-pattern-notes
+  text: Note how stressful situations feel in your body and compare the experience with a separate Relax
+    session.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: bedtime-settling
+  text: Use a gentle bedtime relaxation intention while maintaining any prescribed monitoring and care.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []

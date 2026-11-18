@@ -233,6 +233,19 @@ common_uses:
 - text: Practicing attention to skin sensations without suppressing warning signs or assuming protection
     from harm.
   status: draft
+- semantic_id: texture-awareness
+  text: While handling a safe object, use Touch MORE to attend to its texture, temperature and pressure.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: tactile-creativity
+  text: During a craft or art activity, use Touch MORE to notice the feel of tools and materials.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: nonurgent-overstimulation
+  text: In a safe environment with nonhazardous tactile distraction, use Touch LESS as a brief subjective
+    attention shift while preserving awareness of injury risks.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions:

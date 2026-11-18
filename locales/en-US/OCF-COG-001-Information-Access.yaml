@@ -85,6 +85,31 @@ common_uses:
 - text: Inviting relevant information to mind while checking impressions against reliable sources when accuracy
     matters.
   status: draft
+- semantic_id: retrieve-known-context
+  text: When trying to remember a detail you have encountered before, use Information Access as a prompt
+    to search your own memory and verify the result.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: brainstorming
+  text: During brainstorming, let relevant associations arise before checking them against your notes
+    or other reliable sources.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: reflection-on-question
+  text: With a clearly stated question, explore what memories or intuitions feel relevant without assuming
+    the answer is externally sourced knowledge.
+  status: reviewed
+  notes: 'Use-case review; historical-informed; refs: A-WISH90'
+- semantic_id: distinguish-recall
+  text: 'Compare Information Access with Recall: one invites broader associations, while the other targets
+    remembered material.'
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
+- semantic_id: insight-journal
+  text: Record an apparent insight along with what you already knew and what would be needed to confirm
+    it.
+  status: reviewed
+  notes: 'Use-case review; ocf-proposed; refs: OCF proposal'
 relationships:
   related_functions: []
   complementary_functions: []
