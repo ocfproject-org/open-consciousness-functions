@@ -94,7 +94,7 @@ def test_all_literal_sources_trace_and_preserve_current_entries(literal_catalog)
                 "version",
             ):
                 assert old.get(field) == new.get(field), (record.id, command.id, field)
-    assert count == 178
+    assert count == 180
 
 
 def test_fixture_title_reaches_command_index_without_global_registry_edit(literal_catalog):

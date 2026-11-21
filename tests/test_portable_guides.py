@@ -69,6 +69,10 @@ def test_portable_collection_can_be_relocated_without_external_links(tmp_path, c
     assert (result["files"], result["markdown"], result["html"], result["pdf"]) == (205, 67, 67, 68)
     assert result["individual_function_pdfs"] == 59
     assert result["extracted_canonical_resources"] == 179
+    record = load_function_by_id("OCF-EXP-007")
+    pdf = relocated / "functions" / (listening_guides.function_guide_stem(record) + ".pdf")
+    narration = " ".join(page.extract_text() for page in PdfReader(pdf).pages)
+    assert narration.index("First guided practice") < narration.index("Second guided practice")
     assert result["broken_links"] == 0
     assert result["toc_entries"] > 58
     assert result["toc_links"] == 2 * result["toc_entries"]
