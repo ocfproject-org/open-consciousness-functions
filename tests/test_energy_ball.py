@@ -115,6 +115,11 @@ def test_tuning_optional_and_no_routine_before_energy_ball_teaching():
         build_complete_session_plan(ID, overrides={"enabled_stages": ["energy-ball"]})
 
 
+def test_old_profile_does_not_silently_drop_energy_ball_practice():
+    with pytest.raises(OCFError, match="has no pause for unit kind"):
+        build_complete_session_plan(ID, overrides={"pacing_profile": "OCF-PACING-HPLUS-LOCKED-007"})
+
+
 def test_existing_defaults_and_independent_optional_stage_editions():
     owner = "OCF-FND-002"
     default = build_complete_session_plan(owner)

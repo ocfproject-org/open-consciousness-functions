@@ -74,7 +74,17 @@ COMPLETE_OWNERS = sorted(
 )
 
 
-@pytest.mark.parametrize("owner", COMPLETE_OWNERS)
+# This predecessor compatibility contract is limited to functions with the
+# corresponding historical locked binding. Modern-only teaching can declare
+# pacing roles that the predecessor does not know how to render.
+HISTORICAL_STANDARD_OWNERS = sorted(
+    record.id
+    for record in load_all_functions()
+    if "OCF-TPL-SESSION-HPLUS-LOCKED-004" in record.data["content"]["bindings"]["session_templates"]
+)
+
+
+@pytest.mark.parametrize("owner", HISTORICAL_STANDARD_OWNERS)
 def test_standard_shared_and_function_resources_resolve_without_local_sources(owner):
     template = load_template("OCF-TPL-SESSION-HPLUS-STANDARD-003")
     keys = {
@@ -118,6 +128,7 @@ def test_all_55_legacy_functions_have_review_files_without_fabricated_missing_sp
     assert len(owners) == 55
     assert len(all_functions) == 59
     assert len(COMPLETE_OWNERS) == 59
+    assert len(HISTORICAL_STANDARD_OWNERS) == 58
     assert {r.id for r in all_functions} - {r.id for r in owners} == {
         "OCF-EXP-003",
         "OCF-EXP-005",
