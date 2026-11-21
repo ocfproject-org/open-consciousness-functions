@@ -1,7 +1,7 @@
 GENERATED FILE — DO NOT EDIT DIRECTLY
 
 {
-  "count": 58,
+  "count": 59,
   "functions": [
     {
       "fallback": false,
@@ -101157,6 +101157,1579 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         }
       },
       "function_id": "OCF-EXP-006",
+      "requested_locale": "en-US",
+      "resolved_locale": "en-US"
+    },
+    {
+      "fallback": false,
+      "fields": {
+        "/activation/command_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-PRIMARY",
+          "yaml_pointer": "/activation/command_id"
+        },
+        "/activation/control/designation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "primary",
+          "yaml_pointer": "/activation/control/designation"
+        },
+        "/activation/control/effect_scope_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "lifecycle.scopes.application.persistence",
+          "yaml_pointer": "/activation/control/effect_scope_ref"
+        },
+        "/activation/control/invocation_scope_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "lifecycle.scopes.application",
+          "yaml_pointer": "/activation/control/invocation_scope_ref"
+        },
+        "/activation/control/phrase_ref/source": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "canonical-primary",
+          "yaml_pointer": "/activation/control/phrase_ref/source"
+        },
+        "/activation/control/procedure/override_steps/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mentally-inflate",
+          "yaml_pointer": "/activation/control/procedure/override_steps/0/id"
+        },
+        "/activation/control/procedure/override_steps/0/localization_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.procedure.mentally-inflate",
+          "yaml_pointer": "/activation/control/procedure/override_steps/0/localization_key"
+        },
+        "/activation/control/procedure/override_steps/0/operation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "think-or-say-command",
+          "yaml_pointer": "/activation/control/procedure/override_steps/0/operation"
+        },
+        "/activation/control/procedure/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "documented",
+          "yaml_pointer": "/activation/control/procedure/status"
+        },
+        "/activation/display_cue/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "PLUS-INFLATE",
+          "yaml_pointer": "/activation/display_cue/text"
+        },
+        "/activation/explanation/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/activation/explanation/status"
+        },
+        "/activation/explanation/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "A fresh invocation establishes the familiar personal ball. Reaffirming keeps one active ball and its chosen extent; an imagined invisible field remains expanded.",
+          "yaml_pointer": "/activation/explanation/text"
+        },
+        "/activation/label/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/activation/label/status"
+        },
+        "/activation/label/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Establish or reaffirm the Energy Ball",
+          "yaml_pointer": "/activation/label/text"
+        },
+        "/activation/procedure_steps/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mentally-inflate",
+          "yaml_pointer": "/activation/procedure_steps/0/id"
+        },
+        "/activation/procedure_steps/0/instruction/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/activation/procedure_steps/0/instruction/status"
+        },
+        "/activation/procedure_steps/0/instruction/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Mentally say Plus Inflate.",
+          "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
+        },
+        "/activation/procedure_steps/0/instruction/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/activation/procedure_steps/0/instruction/version"
+        },
+        "/activation/procedure_steps/0/operation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "think-or-say-command",
+          "yaml_pointer": "/activation/procedure_steps/0/operation"
+        },
+        "/activation/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "activation",
+          "yaml_pointer": "/activation/role"
+        },
+        "/activation/spoken_cue/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/activation/spoken_cue/status"
+        },
+        "/activation/spoken_cue/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Plus Inflate",
+          "yaml_pointer": "/activation/spoken_cue/text"
+        },
+        "/activation/usage/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/activation/usage/status"
+        },
+        "/activation/usage/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Deliberately think Plus Inflate. No breathing pattern, posture, target, imagery, movement or sensation is required. Comfortable breathing and the imagined push are optional aids. Enlarge only by choice.",
+          "yaml_pointer": "/activation/usage/text"
+        },
+        "/audio/background_audio/engine": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "farfield",
+          "yaml_pointer": "/audio/background_audio/engine"
+        },
+        "/audio/background_audio/preset": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": null,
+          "yaml_pointer": "/audio/background_audio/preset"
+        },
+        "/audio/background_audio/strategy": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "optional",
+          "yaml_pointer": "/audio/background_audio/strategy"
+        },
+        "/audio/implementation_status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "not-started",
+          "yaml_pointer": "/audio/implementation_status"
+        },
+        "/audio/script_status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "approved",
+          "yaml_pointer": "/audio/script_status"
+        },
+        "/category_labels/experimental/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "canonical",
+          "yaml_pointer": "/category_labels/experimental/status"
+        },
+        "/category_labels/experimental/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "experimental",
+          "yaml_pointer": "/category_labels/experimental/text"
+        },
+        "/changelog/0/change": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Register the owner-reviewed OCF-original Energy Ball teaching and commands.",
+          "yaml_pointer": "/changelog/0/change"
+        },
+        "/changelog/0/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "0.1.0",
+          "yaml_pointer": "/changelog/0/version"
+        },
+        "/changelog/1/change": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Place the two guided cycles at Focus Ten and reserve later passes for cue association.",
+          "yaml_pointer": "/changelog/1/change"
+        },
+        "/changelog/1/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "0.2.0",
+          "yaml_pointer": "/changelog/1/version"
+        },
+        "/classification/primary_domain": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "experimental",
+          "yaml_pointer": "/classification/primary_domain"
+        },
+        "/classification/secondary_domains": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/classification/secondary_domains"
+        },
+        "/common_uses/0/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draft",
+          "yaml_pointer": "/common_uses/0/status"
+        },
+        "/common_uses/0/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Rehearsing a deliberate change from an imagined personal field to drawing it back within.",
+          "yaml_pointer": "/common_uses/0/text"
+        },
+        "/common_uses/1/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draft",
+          "yaml_pointer": "/common_uses/1/status"
+        },
+        "/common_uses/1/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Practising with the familiar personal ball before trying an optional larger extent.",
+          "yaml_pointer": "/common_uses/1/text"
+        },
+        "/content/bindings/default_session_template": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+          "yaml_pointer": "/content/bindings/default_session_template"
+        },
+        "/content/bindings/duration": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": null,
+          "yaml_pointer": "/content/bindings/duration"
+        },
+        "/content/bindings/excluded_optional_stages/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "energy-ball",
+          "yaml_pointer": "/content/bindings/excluded_optional_stages/0"
+        },
+        "/content/bindings/focus_ten_practice_stage": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-001",
+          "yaml_pointer": "/content/bindings/focus_ten_practice_stage"
+        },
+        "/content/bindings/narration_resources": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/bindings/narration_resources"
+        },
+        "/content/bindings/session_overrides/enabled_stages/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "resonant-tuning",
+          "yaml_pointer": "/content/bindings/session_overrides/enabled_stages/0"
+        },
+        "/content/bindings/session_overrides/pacing_profile": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-PACING-ENERGY-BALL-LEARNING-002",
+          "yaml_pointer": "/content/bindings/session_overrides/pacing_profile"
+        },
+        "/content/bindings/session_templates/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+          "yaml_pointer": "/content/bindings/session_templates/0"
+        },
+        "/content/bindings/voice_sources/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "tts",
+          "yaml_pointer": "/content/bindings/voice_sources/0"
+        },
+        "/content/specifications/blocks/association/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/association/evidence_refs"
+        },
+        "/content/specifications/blocks/association/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "associate-deliberate-mental-inflate",
+          "yaml_pointer": "/content/specifications/blocks/association/operations/0"
+        },
+        "/content/specifications/blocks/association/operations/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "associate-deliberate-mental-deflate",
+          "yaml_pointer": "/content/specifications/blocks/association/operations/1"
+        },
+        "/content/specifications/blocks/association/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/association/status"
+        },
+        "/content/specifications/blocks/closer/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/closer/evidence_refs"
+        },
+        "/content/specifications/blocks/closer/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "finish-deflated",
+          "yaml_pointer": "/content/specifications/blocks/closer/operations/0"
+        },
+        "/content/specifications/blocks/closer/operations/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "retain-learned-availability",
+          "yaml_pointer": "/content/specifications/blocks/closer/operations/1"
+        },
+        "/content/specifications/blocks/closer/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/closer/status"
+        },
+        "/content/specifications/blocks/consolidation/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/consolidation/evidence_refs"
+        },
+        "/content/specifications/blocks/consolidation/operations": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/consolidation/operations"
+        },
+        "/content/specifications/blocks/consolidation/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "not-applicable",
+          "yaml_pointer": "/content/specifications/blocks/consolidation/status"
+        },
+        "/content/specifications/blocks/future_use/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/future_use/evidence_refs"
+        },
+        "/content/specifications/blocks/future_use/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "keep-one-current-ball",
+          "yaml_pointer": "/content/specifications/blocks/future_use/operations/0"
+        },
+        "/content/specifications/blocks/future_use/operations/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "retain-chosen-extent-on-reaffirmation",
+          "yaml_pointer": "/content/specifications/blocks/future_use/operations/1"
+        },
+        "/content/specifications/blocks/future_use/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/future_use/status"
+        },
+        "/content/specifications/blocks/handoff/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/handoff/evidence_refs"
+        },
+        "/content/specifications/blocks/handoff/operations": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/handoff/operations"
+        },
+        "/content/specifications/blocks/handoff/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "not-applicable",
+          "yaml_pointer": "/content/specifications/blocks/handoff/status"
+        },
+        "/content/specifications/blocks/main/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/main/evidence_refs"
+        },
+        "/content/specifications/blocks/main/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "imagine-expansion",
+          "yaml_pointer": "/content/specifications/blocks/main/operations/0"
+        },
+        "/content/specifications/blocks/main/operations/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "imagine-rotation",
+          "yaml_pointer": "/content/specifications/blocks/main/operations/1"
+        },
+        "/content/specifications/blocks/main/operations/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "optionally-enlarge",
+          "yaml_pointer": "/content/specifications/blocks/main/operations/2"
+        },
+        "/content/specifications/blocks/main/operations/3": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draw-entire-ball-back-within",
+          "yaml_pointer": "/content/specifications/blocks/main/operations/3"
+        },
+        "/content/specifications/blocks/main/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/main/status"
+        },
+        "/content/specifications/blocks/opener/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/opener/evidence_refs"
+        },
+        "/content/specifications/blocks/opener/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "introduce-familiar-personal-ball-and-return",
+          "yaml_pointer": "/content/specifications/blocks/opener/operations/0"
+        },
+        "/content/specifications/blocks/opener/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/opener/status"
+        },
+        "/content/specifications/blocks/purpose/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/purpose/evidence_refs"
+        },
+        "/content/specifications/blocks/purpose/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "practise-deliberate-establishment-enlargement-and-return",
+          "yaml_pointer": "/content/specifications/blocks/purpose/operations/0"
+        },
+        "/content/specifications/blocks/purpose/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/purpose/status"
+        },
+        "/content/specifications/blocks/rehearsal/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/rehearsal/evidence_refs"
+        },
+        "/content/specifications/blocks/rehearsal/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-enlargement",
+          "yaml_pointer": "/content/specifications/blocks/rehearsal/operations/0"
+        },
+        "/content/specifications/blocks/rehearsal/operations/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "shorter-rehearsal",
+          "yaml_pointer": "/content/specifications/blocks/rehearsal/operations/1"
+        },
+        "/content/specifications/blocks/rehearsal/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/rehearsal/status"
+        },
+        "/content/specifications/blocks/safety_claims/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/safety_claims/evidence_refs"
+        },
+        "/content/specifications/blocks/safety_claims/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "imagination-not-a-physical-field-or-protection",
+          "yaml_pointer": "/content/specifications/blocks/safety_claims/operations/0"
+        },
+        "/content/specifications/blocks/safety_claims/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/safety_claims/status"
+        },
+        "/content/specifications/blocks/suspend_cancel_reset/evidence_refs": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/blocks/suspend_cancel_reset/evidence_refs"
+        },
+        "/content/specifications/blocks/suspend_cancel_reset/operations/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "deflate-current-application-only",
+          "yaml_pointer": "/content/specifications/blocks/suspend_cancel_reset/operations/0"
+        },
+        "/content/specifications/blocks/suspend_cancel_reset/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/blocks/suspend_cancel_reset/status"
+        },
+        "/content/specifications/command_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "canonical.command",
+          "yaml_pointer": "/content/specifications/command_ref"
+        },
+        "/content/specifications/extraction_status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "unknown",
+          "yaml_pointer": "/content/specifications/extraction_status"
+        },
+        "/content/specifications/human_review": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "approved",
+          "yaml_pointer": "/content/specifications/human_review"
+        },
+        "/content/specifications/maturity": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/content/specifications/maturity"
+        },
+        "/content/specifications/metadata_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "canonical-function-record",
+          "yaml_pointer": "/content/specifications/metadata_ref"
+        },
+        "/content/specifications/preparation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/preparation"
+        },
+        "/content/specifications/questions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/questions"
+        },
+        "/content/specifications/states/preferred": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/states/preferred"
+        },
+        "/content/specifications/states/required": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/content/specifications/states/required"
+        },
+        "/content/specifications/states/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "specified",
+          "yaml_pointer": "/content/specifications/states/status"
+        },
+        "/description/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/description/status"
+        },
+        "/description/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.",
+          "yaml_pointer": "/description/text"
+        },
+        "/editorial/command_review": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "approved",
+          "yaml_pointer": "/editorial/command_review"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.primary",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Let the ball remain deflated as this practice finishes.\n\nNotice your body resting against the surface beneath you.\n\nLet your attention include the room and the sounds around you.\n\nTo establish your Energy Ball, mentally say {{ cue.primary }}.\n\nTo draw the whole ball back within, mentally say {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\n\nYou can use either cue deliberately, with ordinary breathing and your eyes open or closed.\n\nThe extra breath and the imagined push remain available whenever you find them helpful.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.primary",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Original cue-association wording for private review, not an instruction to practise or an audio release approval.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/notes"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "{{ cue.primary }} is the cue for establishing your Energy Ball.\n{{ cue.id.OCF-CMD-EXP-007-DEFLATE }} is the cue for drawing the whole ball back within.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.function-body/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.primary",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Bring your attention to your heart center, in the middle of your chest.\n\nImagine a small sun there, warm and bright, representing your own gathered energy.\n\nYou can picture its light, sense its warmth or presence, or simply understand that this is where the movement begins. Follow the exercise in whichever way comes naturally.\n\nNow choose to expand your Energy Ball.\n\nMentally say:\n\n{{ cue.primary }}.\n\nLet the sun open outward from your heart center, growing through and around you.\n\nLet it extend in front of your body.\n\nBehind your back.\n\nTo your left and to your right.\n\nBeyond your head and beyond your feet.\n\nAllow it to become one complete ball of energy surrounding you.\n\nLet it settle at a comfortable size, with room around your whole body.\n\nYou are resting at its center.\n\nIf you would like to expand it farther, you can take another comfortable deep breath.\n\nAs you breathe out, imagine gently blowing your Energy Ball larger, as though your breath were filling a bubble.\n\nLet it widen smoothly in every direction.\n\nYou can use this breath whenever it helps, or simply choose for the ball to expand.\n\nNow set your Energy Ball turning.\n\nYou can imagine giving the inside of the ball a gentle sideways push, setting it in motion.\n\nOr simply choose for it to begin turning.\n\nYou remain comfortably still at its center.\n\nLet the rotation become smooth and continuous.\n\nFaster.\n\nAnd faster again.\n\nLet it keep accelerating until, in your imagination, its movement becomes too fast to follow and the spinning ball becomes an invisible field around you.\n\nIt remains fully expanded.\n\nYou can sense its presence or simply know that it is there.\n\nYou may imagine the warmth of sunlight, a flowing current, or the fine tingling of static electricity as its energy moves around you.\n\nYou can also imagine its increasing speed building a magnetic field, attracting what you desire and repelling what you do not want.\n\nLet these qualities remain with the spinning field.\n\nYou can extend your Energy Ball to include a larger space.\n\nFor this practice, bring to mind what you would like it to surround.\n\nIt might be you and your bicycle, your vehicle and its passengers, your home, or another person beside you.\n\nChoose one example.\n\nLet the ball expand beyond its present size.\n\nIf it helps, use another comfortable breath, imagining the bubble growing larger as you breathe out.\n\nAllow it to reach beyond everything you have chosen to include: in front, behind, to either side, above, and below.\n\nGive everything room within it.\n\nLet the field continue spinning around this larger space.\n\nIf you include another person, hold an intention of goodwill, with their feelings and choices remaining their own.\n\nNow bring the ball back to its usual size around your body.\n\nLet it draw inward until it rests at a comfortable distance from you again.\n\nIt remains inflated and spinning.\n\nNow practise drawing the ball fully back within.\n\nMentally say:\n\n{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\n\nLet the spinning settle as your Energy Ball draws inward.\n\nHowever far you have extended it, allow the whole ball to return.\n\nGather its light and energy back through your heart center.\n\nLet that energy settle gently throughout you.\n\nThe surrounding ball has returned within.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/10": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/10"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/11": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/11"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/12": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/12"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/13": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/13"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/14": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/14"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/15": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/15"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/16": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/16"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/17": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/17"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/18": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/18"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/19": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/19"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/2"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/20": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/20"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/21": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/21"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/22": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/22"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/23": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/23"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/24": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/24"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/25": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/25"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/26": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/26"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/27": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/27"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/28": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/28"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/29": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/29"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/3": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/3"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/30": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/30"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/31": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/31"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/32": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/32"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/33": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/33"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/34": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/34"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/35": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/35"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/36": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/36"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/37": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/37"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/38": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/38"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/39": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/39"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/4": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/4"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/40": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/40"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/41": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/41"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/42": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/42"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/43": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/43"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/44": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/44"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/45": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/45"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/46": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/46"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/47": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/47"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/48": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/48"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/49": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/49"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/5": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/5"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/50": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/50"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/51": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/51"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/52": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/52"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/6": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/6"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/7": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/7"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/8": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/8"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/9": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/9"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-first/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.primary",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Now practise again with less guidance.\n\nMentally say:\n\n{{ cue.primary }}.\n\nLet the familiar sun expand around you.\n\nAllow your Energy Ball to take its usual shape and begin turning.\n\nLet it accelerate into the familiar invisible field.\n\nUse the breath or the imagined push if either helps you, or let the whole movement follow your intention.\n\nNow mentally say:\n\n{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\n\nLet the whole ball return through your heart center and settle within you.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/2"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/3": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/3"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/4": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/4"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/5": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/5"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/6": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/6"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/7": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/7"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/8": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/8"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/9": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "landing",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/9"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-second/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.opener/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Owner approved this exact teaching, activation and closer on 2026-11-21. Listening and release approval remain separate.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/notes"
+        },
+        "/entries/hplus.function.ocf-exp-007.opener/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.opener/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "You will now learn to form an Energy Ball around yourself, change its size, and draw it back within whenever you choose.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.opener/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/version"
+        },
+        "/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/function_id"
+        },
+        "/function_version/created": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2026-11-21",
+          "yaml_pointer": "/function_version/created"
+        },
+        "/function_version/current": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "0.2.0",
+          "yaml_pointer": "/function_version/current"
+        },
+        "/function_version/updated": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2026-11-21",
+          "yaml_pointer": "/function_version/updated"
+        },
+        "/lifecycle/activation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/activation"
+        },
+        "/lifecycle/persistence": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "temporary",
+          "yaml_pointer": "/lifecycle/persistence"
+        },
+        "/lifecycle/release/command": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": null,
+          "yaml_pointer": "/lifecycle/release/command"
+        },
+        "/lifecycle/release/required": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": false,
+          "yaml_pointer": "/lifecycle/release/required"
+        },
+        "/lifecycle/scopes/application/activation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "manual",
+          "yaml_pointer": "/lifecycle/scopes/application/activation"
+        },
+        "/lifecycle/scopes/application/description_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+          "yaml_pointer": "/lifecycle/scopes/application/description_key"
+        },
+        "/lifecycle/scopes/application/persistence": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "temporary",
+          "yaml_pointer": "/lifecycle/scopes/application/persistence"
+        },
+        "/lifecycle/scopes/capability/description_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.lifecycle.scopes.capability.description",
+          "yaml_pointer": "/lifecycle/scopes/capability/description_key"
+        },
+        "/lifecycle/scopes/capability/persistence": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "permanent",
+          "yaml_pointer": "/lifecycle/scopes/capability/persistence"
+        },
+        "/lifecycle/trigger_conditions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/lifecycle/trigger_conditions"
+        },
+        "/locale": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "en-US",
+          "yaml_pointer": "/locale"
+        },
+        "/localization/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "complete",
+          "yaml_pointer": "/localization/status"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "One temporary imagined field remains active until deliberately drawn back within.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/status"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Learned availability remains after the current ball is drawn back within.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/text"
+        },
+        "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/version"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/status"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Mentally say Plus Deflate.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/text"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/version"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/status"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Mentally say Plus Inflate.",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/text"
+        },
+        "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/version"
+        },
+        "/narration/sequence/0/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.opener",
+          "yaml_pointer": "/narration/sequence/0/key"
+        },
+        "/narration/sequence/0/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/0/repetitions"
+        },
+        "/narration/sequence/0/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "opener",
+          "yaml_pointer": "/narration/sequence/0/role"
+        },
+        "/narration/sequence/1/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-first",
+          "yaml_pointer": "/narration/sequence/1/key"
+        },
+        "/narration/sequence/1/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/1/repetitions"
+        },
+        "/narration/sequence/1/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/1/role"
+        },
+        "/narration/sequence/2/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-second",
+          "yaml_pointer": "/narration/sequence/2/key"
+        },
+        "/narration/sequence/2/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/2/repetitions"
+        },
+        "/narration/sequence/2/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/2/role"
+        },
+        "/narration/sequence/3/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.function-body",
+          "yaml_pointer": "/narration/sequence/3/key"
+        },
+        "/narration/sequence/3/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 4,
+          "yaml_pointer": "/narration/sequence/3/repetitions"
+        },
+        "/narration/sequence/3/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "function-body",
+          "yaml_pointer": "/narration/sequence/3/role"
+        },
+        "/narration/sequence/4/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.closer",
+          "yaml_pointer": "/narration/sequence/4/key"
+        },
+        "/narration/sequence/4/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/4/repetitions"
+        },
+        "/narration/sequence/4/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "closer",
+          "yaml_pointer": "/narration/sequence/4/role"
+        },
+        "/record_metadata/aliases/commands": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/aliases/commands"
+        },
+        "/record_metadata/aliases/names": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/aliases/names"
+        },
+        "/record_metadata/attribution/ocf_contributors": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/attribution/ocf_contributors"
+        },
+        "/record_metadata/attribution/original_authors": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/attribution/original_authors"
+        },
+        "/record_metadata/claims/intended_effects/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Practise imagining and deliberately changing one Energy Ball.",
+          "yaml_pointer": "/record_metadata/claims/intended_effects/0"
+        },
+        "/record_metadata/claims/prohibited_claims/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "A measurable physical field, physical protection or guaranteed changes to other people.",
+          "yaml_pointer": "/record_metadata/claims/prohibited_claims/0"
+        },
+        "/record_metadata/commands/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-PRIMARY",
+          "yaml_pointer": "/record_metadata/commands/0/id"
+        },
+        "/record_metadata/commands/0/localization/explanation_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-primary.explanation",
+          "yaml_pointer": "/record_metadata/commands/0/localization/explanation_key"
+        },
+        "/record_metadata/commands/0/localization/label_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-primary.label",
+          "yaml_pointer": "/record_metadata/commands/0/localization/label_key"
+        },
+        "/record_metadata/commands/0/localization/spoken_cue_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+          "yaml_pointer": "/record_metadata/commands/0/localization/spoken_cue_key"
+        },
+        "/record_metadata/commands/0/localization/usage_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-primary.usage",
+          "yaml_pointer": "/record_metadata/commands/0/localization/usage_key"
+        },
+        "/record_metadata/commands/1/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/record_metadata/commands/1/id"
+        },
+        "/record_metadata/commands/1/localization/explanation_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-deflate.explanation",
+          "yaml_pointer": "/record_metadata/commands/1/localization/explanation_key"
+        },
+        "/record_metadata/commands/1/localization/label_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-deflate.label",
+          "yaml_pointer": "/record_metadata/commands/1/localization/label_key"
+        },
+        "/record_metadata/commands/1/localization/spoken_cue_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+          "yaml_pointer": "/record_metadata/commands/1/localization/spoken_cue_key"
+        },
+        "/record_metadata/commands/1/localization/usage_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "commands.ocf-cmd-exp-007-deflate.usage",
+          "yaml_pointer": "/record_metadata/commands/1/localization/usage_key"
+        },
+        "/record_metadata/compatibility/rationale": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-original cues; no predecessor or compatibility alias.",
+          "yaml_pointer": "/record_metadata/compatibility/rationale"
+        },
+        "/record_metadata/compatibility/state": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "none",
+          "yaml_pointer": "/record_metadata/compatibility/state"
+        },
+        "/record_metadata/documentation/purpose_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.purpose",
+          "yaml_pointer": "/record_metadata/documentation/purpose_key"
+        },
+        "/record_metadata/documentation/short_description_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.purpose",
+          "yaml_pointer": "/record_metadata/documentation/short_description_key"
+        },
+        "/record_metadata/documentation/title_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.title",
+          "yaml_pointer": "/record_metadata/documentation/title_key"
+        },
+        "/record_metadata/legacy/command_status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "proposed",
+          "yaml_pointer": "/record_metadata/legacy/command_status"
+        },
+        "/record_metadata/legacy/commands": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/legacy/commands"
+        },
+        "/record_metadata/legacy/name": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "",
+          "yaml_pointer": "/record_metadata/legacy/name"
+        },
+        "/record_metadata/legacy/source_availability": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "pending-source-review",
+          "yaml_pointer": "/record_metadata/legacy/source_availability"
+        },
+        "/record_metadata/legacy/source_system": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": null,
+          "yaml_pointer": "/record_metadata/legacy/source_system"
+        },
+        "/record_metadata/ocf/command_review": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "approved",
+          "yaml_pointer": "/record_metadata/ocf/command_review"
+        },
+        "/record_metadata/ocf/reimplementation_status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "in-progress",
+          "yaml_pointer": "/record_metadata/ocf/reimplementation_status"
+        },
+        "/record_metadata/sources": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/record_metadata/sources"
+        },
+        "/record_metadata/status/evidence": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "unverified",
+          "yaml_pointer": "/record_metadata/status/evidence"
+        },
+        "/record_metadata/status/implementation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "script-approved",
+          "yaml_pointer": "/record_metadata/status/implementation"
+        },
+        "/record_metadata/status/maturity": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "experimental",
+          "yaml_pointer": "/record_metadata/status/maturity"
+        },
+        "/relationships/complementary_functions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/relationships/complementary_functions"
+        },
+        "/relationships/related_functions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": [],
+          "yaml_pointer": "/relationships/related_functions"
+        },
+        "/safety/level": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "experimental",
+          "yaml_pointer": "/safety/level"
+        },
+        "/safety/notes/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Imaginative practice; no physical field, protection or guaranteed effect is claimed.",
+          "yaml_pointer": "/safety/notes/0"
+        },
+        "/schema_version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "2.0",
+          "yaml_pointer": "/schema_version"
+        },
+        "/secondary_commands/0/command_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/secondary_commands/0/command_id"
+        },
+        "/secondary_commands/0/control/designation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "secondary",
+          "yaml_pointer": "/secondary_commands/0/control/designation"
+        },
+        "/secondary_commands/0/control/effect_scope_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "lifecycle.scopes.application.persistence",
+          "yaml_pointer": "/secondary_commands/0/control/effect_scope_ref"
+        },
+        "/secondary_commands/0/control/invocation_scope_ref": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "lifecycle.scopes.application",
+          "yaml_pointer": "/secondary_commands/0/control/invocation_scope_ref"
+        },
+        "/secondary_commands/0/control/phrase_ref/command_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-DEFLATE",
+          "yaml_pointer": "/secondary_commands/0/control/phrase_ref/command_id"
+        },
+        "/secondary_commands/0/control/phrase_ref/source": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "canonical-mode",
+          "yaml_pointer": "/secondary_commands/0/control/phrase_ref/source"
+        },
+        "/secondary_commands/0/control/procedure/override_steps/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mentally-deflate",
+          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/id"
+        },
+        "/secondary_commands/0/control/procedure/override_steps/0/localization_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "functions.ocf-exp-007.procedure.mentally-deflate",
+          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/localization_key"
+        },
+        "/secondary_commands/0/control/procedure/override_steps/0/operation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "think-or-say-command",
+          "yaml_pointer": "/secondary_commands/0/control/procedure/override_steps/0/operation"
+        },
+        "/secondary_commands/0/control/procedure/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "documented",
+          "yaml_pointer": "/secondary_commands/0/control/procedure/status"
+        },
+        "/secondary_commands/0/control/relationships/closes/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-CMD-EXP-007-PRIMARY",
+          "yaml_pointer": "/secondary_commands/0/control/relationships/closes/0"
+        },
+        "/secondary_commands/0/display_cue/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "PLUS-DEFLATE",
+          "yaml_pointer": "/secondary_commands/0/display_cue/text"
+        },
+        "/secondary_commands/0/explanation/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/secondary_commands/0/explanation/status"
+        },
+        "/secondary_commands/0/explanation/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Draw the entire current ball back within, even if enlarged. Only this application ends; learned availability and other functions are unchanged.",
+          "yaml_pointer": "/secondary_commands/0/explanation/text"
+        },
+        "/secondary_commands/0/label/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/secondary_commands/0/label/status"
+        },
+        "/secondary_commands/0/label/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Draw the Energy Ball back within",
+          "yaml_pointer": "/secondary_commands/0/label/text"
+        },
+        "/secondary_commands/0/procedure_steps/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mentally-deflate",
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/id"
+        },
+        "/secondary_commands/0/procedure_steps/0/instruction/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/status"
+        },
+        "/secondary_commands/0/procedure_steps/0/instruction/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Mentally say Plus Deflate.",
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/text"
+        },
+        "/secondary_commands/0/procedure_steps/0/instruction/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/version"
+        },
+        "/secondary_commands/0/procedure_steps/0/operation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "think-or-say-command",
+          "yaml_pointer": "/secondary_commands/0/procedure_steps/0/operation"
+        },
+        "/secondary_commands/0/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "close",
+          "yaml_pointer": "/secondary_commands/0/role"
+        },
+        "/secondary_commands/0/spoken_cue/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/secondary_commands/0/spoken_cue/status"
+        },
+        "/secondary_commands/0/spoken_cue/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Plus Deflate",
+          "yaml_pointer": "/secondary_commands/0/spoken_cue/text"
+        },
+        "/secondary_commands/0/usage/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/secondary_commands/0/usage/status"
+        },
+        "/secondary_commands/0/usage/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Deliberately think Plus Deflate. Hearing or reading the cue does not invoke it.",
+          "yaml_pointer": "/secondary_commands/0/usage/text"
+        },
+        "/slug": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "energy-ball",
+          "yaml_pointer": "/slug"
+        },
+        "/tags/0/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mental-practice",
+          "yaml_pointer": "/tags/0/semantic_id"
+        },
+        "/tags/0/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draft",
+          "yaml_pointer": "/tags/0/status"
+        },
+        "/tags/0/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "mental-practice",
+          "yaml_pointer": "/tags/0/text"
+        },
+        "/tags/1/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "personal-boundaries",
+          "yaml_pointer": "/tags/1/semantic_id"
+        },
+        "/tags/1/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draft",
+          "yaml_pointer": "/tags/1/status"
+        },
+        "/tags/1/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "personal-boundaries",
+          "yaml_pointer": "/tags/1/text"
+        },
+        "/tags/2/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "deliberate-cues",
+          "yaml_pointer": "/tags/2/semantic_id"
+        },
+        "/tags/2/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "draft",
+          "yaml_pointer": "/tags/2/status"
+        },
+        "/tags/2/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "deliberate-cues",
+          "yaml_pointer": "/tags/2/text"
+        },
+        "/title/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/title/status"
+        },
+        "/title/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Energy Ball",
+          "yaml_pointer": "/title/text"
+        }
+      },
+      "function_id": "OCF-EXP-007",
       "requested_locale": "en-US",
       "resolved_locale": "en-US"
     },

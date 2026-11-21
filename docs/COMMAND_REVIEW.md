@@ -4,7 +4,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
 
 Command-design review generated from the canonical function records.
 
-58 functions total.
+59 functions total.
 
 ## Commands retained unchanged
 
@@ -64,7 +64,7 @@ Adjustable-magnitude commands are normalized to the MORE/LESS grammar `N`.
 
 These commands have a proposed canonical form that has not been approved. Legacy commands are always retained as aliases/metadata.
 
-20 commands requiring review:
+21 commands requiring review:
 
 | OCF ID | Legacy name | Legacy command | Canonical | Modes | Review | Compat |
 |---|---|---|---|---|---|---|
@@ -78,6 +78,7 @@ These commands have a proposed canonical form that has not been approved. Legacy
 | `OCF-EXP-003` |  |  | `PLUS-DISSOLVE` |  | approved | none |
 | `OCF-EXP-005` |  |  | `PLUS-CLEAR ZONE` | `PLUS-CLEAR ZONE, OBSERVE` / `PLUS-CLEAR ZONE, SUSPEND` | approved | none |
 | `OCF-EXP-006` |  |  | `PLUS-INTUITION` |  | approved | none |
+| `OCF-EXP-007` |  |  | `PLUS-INFLATE` | `PLUS-DEFLATE` | approved | none |
 | `OCF-LIF-001` | DE-HAB | `PLUS-NO MORE, NO MORE` | `PLUS-FREE THIS HABIT` |  | approved | historical-lookup |
 | `OCF-PRF-002` | EIGHT-GREAT | `PLUS-EIGHT, GREAT` | `PLUS-INNER POWER` |  | approved | historical-lookup |
 | `OCF-PRF-004` | LIGHT FOOT | `PLUS-LIGHTER, LIGHTER` | `PLUS-LIGHT STEP` |  | approved | historical-lookup |

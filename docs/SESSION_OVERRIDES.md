@@ -58,6 +58,12 @@ public defaults remain unchanged. Timing reports measure the combined utterance;
 individual sentence timestamps are not inferred. Grouping is incompatible with
 existing hybrid unit bindings. Listening approval remains separate.
 
+## Resonant Tuning and Energy Ball
+
+See [Energy Ball and optional preparation](ENERGY_BALL.md) for the reviewed
+versions and explicit profile selection. Other functions keep existing
+defaults.
+
 ## Automatic Nano and Farfield defaults
 
 New complete sessions using Chatterbox Nano with Farfield state backgrounds now

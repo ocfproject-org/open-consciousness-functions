@@ -118,7 +118,7 @@ def test_yaml_title_and_description_propagate_across_reader_outputs(
     assert "Distinctive fixture title" in generators.function_index_csv()
     assert "Distinctive fixture title" in generators.function_index_json()
     command_index = build_command_index("en-US", catalog=changed)
-    assert len(command_index["functions"]) == 58
+    assert len(command_index["functions"]) == 59
     row = next(r for r in command_index["functions"] if r["function_id"] == record.id)
     assert row["title"]["text"] == "Distinctive fixture title"
     assert row["short_description"]["text"] == data["description"]["text"]

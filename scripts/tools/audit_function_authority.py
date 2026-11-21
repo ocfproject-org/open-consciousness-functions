@@ -64,8 +64,8 @@ def audit(root: Path = REPO_ROOT) -> dict:
         if name in authorities and data.get("domain") != "function":
             problems.append(f"invalid canonical function domain: {name}")
     canonical = resources(root)
-    if len(canonical) != 58 or len({data["function_id"] for _, data in canonical}) != 58:
-        problems.append("en-US must contain exactly 58 unique function definitions")
+    if len(canonical) < 58 or len({data["function_id"] for _, data in canonical}) != len(canonical):
+        problems.append("en-US must preserve at least 58 unique function definitions")
     return {"structured_files": inspected, "canonical_en_US": len(canonical), "problems": problems}
 
 

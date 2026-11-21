@@ -1,0 +1,29 @@
+description: Owner-reviewed successor with existing session background only.
+events:
+- at: 0
+  id: begin
+  narration_key: hplus.optional.resonant-tuning.v3.begin
+  narration_required: true
+  semantic: preparation.tuning.begin
+- after: begin
+  id: practice
+  narration_required: false
+  offset: 0
+  semantic: preparation.tuning.practice
+  timing:
+    anchor: speech-end
+    pause_after: 30
+- after: practice
+  id: complete
+  narration_key: hplus.optional.resonant-tuning.v3.complete
+  narration_required: true
+  offset: 0
+  semantic: preparation.tuning.complete
+  timing:
+    anchor: speech-end
+  pacing_key: pauses.optional_stage_complete_s
+id: OCF-TPL-STAGE-HPLUS-TUNING-003
+origin: original-ocf
+schema_version: '1.0'
+type: preparation
+version: 3.0.0

@@ -77,7 +77,7 @@ def test_shared_session_successor_preserves_approved_counts_and_body_passes():
         event for event in iter_events(resolved) if event["id"] == "focus20-enter.enter"
     )
     assert sleep_entry["text"].count("Twenty.") == 2
-    assert len(load_all_functions()) == 58
+    assert len(load_all_functions()) == 59
 
 
 def test_successor_hold_and_transition_are_speech_anchored_and_version_locked():

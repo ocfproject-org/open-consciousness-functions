@@ -36,6 +36,7 @@ Canonical locale YAML owns current wording, commands, procedures, and lifecycle.
 - OCF-EXP-003: `PLUS-DISSOLVE` / Plus Dissolve; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-EXP-005: `PLUS-CLEAR ZONE` / Plus Clear Zone; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-EXP-006: `PLUS-INTUITION` / Plus Intuition; metadata match True; Canonical locale resource; missing speech is not inherited..
+- OCF-EXP-007: `PLUS-INFLATE` / Plus Inflate; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-FND-001: `PLUS-ENERGIZE` / Plus Energize; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-FND-002: `PLUS-FOCUS` / Plus Focus; metadata match True; Canonical locale resource; missing speech is not inherited..
 - OCF-FND-003: `PLUS-RECHARGE` / Plus Recharge; metadata match True; Canonical locale resource; missing speech is not inherited..

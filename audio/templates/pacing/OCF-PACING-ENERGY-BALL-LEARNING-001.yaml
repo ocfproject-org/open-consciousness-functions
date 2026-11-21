@@ -1,0 +1,19 @@
+schema_version: '1.0'
+id: OCF-PACING-ENERGY-BALL-LEARNING-001
+version: 1.0.0
+extends: OCF-PACING-OPTIONAL-PREPARATION-001
+status: approved_for_internal_composition
+narration_pacing:
+  profiles:
+    energy-ball-body:
+      rate_scale: 1.0
+      default_unit: sentence
+      require_unit_kinds: true
+      group_prose: false
+      pauses:
+        sentence: 0.4
+        paragraph: 0.4
+        landing: 5
+        independent-practice: 15
+  entries:
+    hplus.function.ocf-exp-007.function-body: energy-ball-body

@@ -74,6 +74,13 @@
     "pacing_auditions": {
       "type": "object", "additionalProperties": {"$ref": "#/definitions/pacingAuditionWindow"}
     },
+    "optional_stage_variants": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "resonant-tuning": {"type": "string", "pattern": "^OCF-TPL-STAGE-HPLUS-TUNING-[0-9]{3}$"},
+        "energy-ball": {"type": "string", "pattern": "^OCF-TPL-STAGE-HPLUS-ENERGY-BALL-[0-9]{3}$"}
+      }
+    },
     "optional_stages": {
       "type": "object", "additionalProperties": {"type": "boolean"}
     },

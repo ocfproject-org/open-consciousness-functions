@@ -1,0 +1,89 @@
+{
+  "approval": {
+    "human_review": "approved",
+    "release_ready": false
+  },
+  "defaults": {
+    "file": "_shared.json",
+    "sha256": "4d0c0346c1dca59eb211652364941d51bd476cb914b01d8f2b77c0fe4cad3be9"
+  },
+  "function_id": "OCF-EXP-007",
+  "generation": {
+    "binding_sha256": "14196c33f477f6dc76a75d7b5dd2696227c90897c2771734391eaa1410830f13",
+    "semantic_plan_sha256": "b01d9ed3378cabd870c625c41834a0d0965a9cc49a202c4eadb90dc0ab0db946"
+  },
+  "generator": "ocf.audio.plan/1",
+  "locale": "en-US",
+  "overrides": {
+    "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
+    "pacing_sha256": "d97a4c5827cb0d8d42f2e7b71b70d2f842d656fdc293eb52d258b0fd96cfe993",
+    "provenance": {
+      "enabled_stages": "function-binding",
+      "pacing_profile": "function-binding"
+    },
+    "settings": {
+      "enabled_stages": [
+        "resonant-tuning"
+      ],
+      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-002"
+    }
+  },
+  "resources": [
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.closer",
+      "locale": "en-US",
+      "raw_template_sha256": "2e82824be6e09d344240626fc1d4aecad9732f283bd985e317598c65e411a03b",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "b4d1ea4c324be0c24769737e4c101f273ea37e5205b9ca9209e971ee90278f78",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.function-body",
+      "locale": "en-US",
+      "raw_template_sha256": "b42a3759e175b591628c12bb377d030747eb65b75347812c697f31575af42990",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "5d58a2115121c5d4ba9976553bd9d10e5a5f91790db164492074823b2d072fd0",
+      "version": "2.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-first",
+      "locale": "en-US",
+      "raw_template_sha256": "c34d5ff917f88d3b4d34df888ee30957768bfdb8cde0fc7ee6cbf6ebd7a13657",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "a847036a59fca06f93de0d2f3fae1e46f7df5691433a42842c56f71df2eaa979",
+      "version": "2.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-second",
+      "locale": "en-US",
+      "raw_template_sha256": "5d96ed736fdefe2980169d46f5ed713e11480e3abd87550f3af43fb59e29b87b",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "6d195923f8ceddd04f8a2e4b009988a159bef770bd889f153645b3a28004568d",
+      "version": "2.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.opener",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "b7d2c78c2e6697e42027b683f7acedc40d95f01a59d4d506ae91d35a17a4b740",
+      "version": "1.0.0"
+    }
+  ],
+  "schema_version": "1.0",
+  "slots": {
+    "closer": "hplus.function.ocf-exp-007.closer",
+    "function_body": "hplus.function.ocf-exp-007.function-body",
+    "opener": "hplus.function.ocf-exp-007.opener"
+  },
+  "timing": "measured-speech-relative; expand template at render time"
+}

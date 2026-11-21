@@ -5,6 +5,11 @@
   "type": "object", "additionalProperties": false,
   "required": ["schema_version", "function_id", "session_templates", "narration_resources", "voice_sources", "duration"],
   "properties": {
+    "focus_ten_practice_stage": {"type": "string", "pattern": "^OCF-TPL-STAGE-[A-Z0-9-]+-[0-9]{3}$"},
+    "excluded_optional_stages": {
+      "description": "Optional features excluded from the canonical teaching composition.",
+      "$ref": "https://open-consciousness-functions.dev/schemas/session-overrides.schema.json#/properties/enabled_stages"
+     },
     "session_overrides": {"$ref":"https://open-consciousness-functions.dev/schemas/session-overrides.schema.json"},
     "schema_version": {"const": "1.0"}, "function_id": {"type": "string"},
     "session_templates": {"type": "array", "items": {"type": "string"}},

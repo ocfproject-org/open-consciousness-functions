@@ -20,7 +20,7 @@ def collection(tmp_path_factory):
 def test_portable_collection_is_self_contained_and_has_all_functions(tmp_path):
     package = tmp_path / "guides"
     result = listening_guides.build_portable_collection(package)
-    assert result["functions"] == 58
+    assert result["functions"] == 59
     assert (package / "index.html").is_file()
     assert (package / "complete-guide.pdf").is_file()
     assert (package / "listening-guide.pdf").is_file()
@@ -66,9 +66,13 @@ def test_portable_collection_can_be_relocated_without_external_links(tmp_path, c
         assert "localhost" not in text
     assert (relocated / "complete-guide.pdf").is_file()
     result = listening_guides.validate_portable_collection(relocated)
-    assert (result["files"], result["markdown"], result["html"], result["pdf"]) == (202, 66, 66, 67)
-    assert result["individual_function_pdfs"] == 58
-    assert result["extracted_canonical_resources"] == 174
+    assert (result["files"], result["markdown"], result["html"], result["pdf"]) == (205, 67, 67, 68)
+    assert result["individual_function_pdfs"] == 59
+    assert result["extracted_canonical_resources"] == 179
+    record = load_function_by_id("OCF-EXP-007")
+    pdf = relocated / "functions" / (listening_guides.function_guide_stem(record) + ".pdf")
+    narration = " ".join(page.extract_text() for page in PdfReader(pdf).pages)
+    assert narration.index("First guided practice") < narration.index("Second guided practice")
     assert result["broken_links"] == 0
     assert result["toc_entries"] > 58
     assert result["toc_links"] == 2 * result["toc_entries"]
@@ -143,7 +147,7 @@ def test_legacy_navigation_contract_is_not_falsely_certified_as_new_transcript_c
     (package / "build-manifest.json").unlink()
     (package / "checksums.sha256").unlink()
     result = listening_guides.validate_portable_collection(package)
-    assert result["individual_function_pdfs"] == 58
+    assert result["individual_function_pdfs"] == 59
     assert result["extracted_canonical_resources"] == 0
     assert result["broken_links"] == 0
 

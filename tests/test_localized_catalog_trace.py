@@ -53,10 +53,10 @@ def literal_catalog(tmp_path):
     return records, original, catalog
 
 
-def test_all_58_literal_sources_trace_and_preserve_175_entries(literal_catalog):
+def test_all_literal_sources_trace_and_preserve_current_entries(literal_catalog):
     records, original, catalog = literal_catalog
     pack = catalog.require("en-US")
-    assert len(pack.localized_functions) == len(records) == 58
+    assert len(pack.localized_functions) == len(records) == 59
     count = 0
     for record in records:
         data = pack.localized_functions[record.id]
@@ -94,7 +94,7 @@ def test_all_58_literal_sources_trace_and_preserve_175_entries(literal_catalog):
                 "version",
             ):
                 assert old.get(field) == new.get(field), (record.id, command.id, field)
-    assert count == 175
+    assert count == 180
 
 
 def test_fixture_title_reaches_command_index_without_global_registry_edit(literal_catalog):
@@ -121,7 +121,7 @@ def test_fixture_title_reaches_command_index_without_global_registry_edit(litera
     pack.localized_functions = other
     assert catalog.problems == []
     index = build_command_index("en-US", catalog=catalog)
-    assert len(index["functions"]) == 58
+    assert len(index["functions"]) == 59
     row = next(row for row in index["functions"] if row["function_id"] == selected.id)
     assert row["title"]["text"] == "Synthetic fixture title"
     assert selected.canonical_name != "Synthetic fixture title"

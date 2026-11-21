@@ -1,0 +1,48 @@
+schema_version: '1.0'
+locale: en-US
+domain: narration
+entries:
+  hplus.shared.relaxation.short.begin:
+    status: reviewed
+    version: 1.0.0
+    text: Let your body settle into its support. Breathe comfortably. As I count slowly from One to Ten, allow yourself to relax a little more with each count.
+  hplus.shared.relaxation.short.one:
+    status: reviewed
+    version: 1.0.0
+    text: One.
+  hplus.shared.relaxation.short.two:
+    status: reviewed
+    version: 1.0.0
+    text: Two.
+  hplus.shared.relaxation.short.three:
+    status: reviewed
+    version: 1.0.0
+    text: Three.
+  hplus.shared.relaxation.short.four:
+    status: reviewed
+    version: 1.0.0
+    text: Four.
+  hplus.shared.relaxation.short.five:
+    status: reviewed
+    version: 1.0.0
+    text: Five.
+  hplus.shared.relaxation.short.six:
+    status: reviewed
+    version: 1.0.0
+    text: Six.
+  hplus.shared.relaxation.short.seven:
+    status: reviewed
+    version: 1.0.0
+    text: Seven.
+  hplus.shared.relaxation.short.eight:
+    status: reviewed
+    version: 1.0.0
+    text: Eight.
+  hplus.shared.relaxation.short.nine:
+    status: reviewed
+    version: 1.0.0
+    text: Nine.
+  hplus.shared.relaxation.short.ten:
+    status: reviewed
+    version: 1.0.0
+    text: Ten.

@@ -81,7 +81,7 @@ def test_functions_list_uses_canonical_registry_and_json_projection(capsys):
     result = json.loads(capsys.readouterr().out)
 
     assert result["schema_version"] == "1.0"
-    assert len(result["functions"]) == 58
+    assert len(result["functions"]) == 59
     assert all("canonical" in row and "function_id" not in row for row in result["functions"])
 
 

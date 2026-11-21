@@ -5,6 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "relaxation": {"enum": ["long", "short"]},
     "enabled_stages": {
       "type": "array",
       "uniqueItems": true,

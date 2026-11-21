@@ -40,6 +40,7 @@ Analytical completeness includes investigated unknowns; it is not historical aut
 | OCF-EXP-003 | unknown | unknown | approved | unknown | unknown | unknown | unknown | unknown | unknown | unknown | ; HUMAN CONTENT REVIEW REQUIRED |
 | OCF-EXP-005 | unknown | unknown | approved | unknown | unknown | unknown | unknown | unknown | unknown | unknown | ; HUMAN CONTENT REVIEW REQUIRED |
 | OCF-EXP-006 | unknown | unknown | approved | unknown | unknown | unknown | unknown | unknown | unknown | unknown | ; HUMAN CONTENT REVIEW REQUIRED |
+| OCF-EXP-007 | unknown | unknown | approved | specified | unknown | unknown | unknown | unknown | unknown | unknown | ; HUMAN CONTENT REVIEW REQUIRED |
 | OCF-FND-001 | source_transcript | complete | approved | unknown | supported | supported | supported | supported | supported | supported | inner-energy-reserve, energy-as-identity-or-metaphysical-mechanism, enhanced-ability, experiential-vigor-recall; HUMAN CONTENT REVIEW REQUIRED |
 | OCF-FND-002 | source_transcript | complete | approved | unknown | supported | supported | not-present | supported | unknown | supported | guaranteed-total-focus, detailed-memory, automatic-whole-system-learning; HUMAN CONTENT REVIEW REQUIRED |
 | OCF-FND-003 | source_transcript | complete | approved | unknown | supported | supported | not-present | supported | unknown | supported | guaranteed-rapid-sleep, physiological-balance-restoration, automatic-minutes-later-awakening, automatic-whole-system-learning; HUMAN CONTENT REVIEW REQUIRED |

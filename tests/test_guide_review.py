@@ -46,7 +46,7 @@ def test_all_canonical_guides_render_the_existing_commands_and_scopes():
                 assert f"{i}. {step['instruction']['text']}" in text
         for scope in document["lifecycle_scopes"]:
             assert scope["description"]["text"] in text
-    assert count == 71
+    assert count == 73
 
 
 @pytest.mark.unit

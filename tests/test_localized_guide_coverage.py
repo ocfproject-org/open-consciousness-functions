@@ -24,7 +24,7 @@ def test_all_function_resources_appear_with_preparation_closure_explicitly_exclu
         if record.id == "OCF-FND-001":
             assert "Access channel closure" not in text
             assert "plus, release, eleven, access" not in text
-    assert count == 174
+    assert count == 179
 
 
 def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline_html():
@@ -33,4 +33,4 @@ def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline
     html = portable_index_html(records).decode("utf-8")
     assert markdown.index("## foundation") < markdown.index("## automation")
     assert html.index("<h2>foundation</h2>") < html.index("<h2>automation</h2>")
-    assert len([line for line in markdown.splitlines() if line.startswith("- [")]) == 58
+    assert len([line for line in markdown.splitlines() if line.startswith("- [")]) == 59

@@ -58,6 +58,18 @@ def source_plan(function_id: str, locale: str = "en-US") -> tuple[dict, dict, di
         reference_resources = resolve_document(baseline, locale, strict=True)["narration"][
             "resolved"
         ]
+    owned_keys = set(slots.values())
+    supplemental = {
+        block["key"]
+        for block in binding["narration_plan"]["sequence"]
+        if block["role"] == "guided-practice"
+    }
+    if supplemental:
+        owned_keys.update(supplemental)
+        reference_resources = [
+            *reference_resources,
+            *(item for item in expanded["narration_resources"] if item["key"] in supplemental),
+        ]
     for item in reference_resources:
         entry, resolution = catalog.resource(
             item["key"], locale, domain="narration", fallback=False
@@ -91,7 +103,7 @@ def source_plan(function_id: str, locale: str = "en-US") -> tuple[dict, dict, di
             "fixed_speech_timestamps": False,
             "body_repetitions": {"programming": 2, "sleep": 2},
         },
-        "resources": [resources[k] for k in sorted(resources) if k not in slots.values()],
+        "resources": [resources[k] for k in sorted(resources) if k not in owned_keys],
     }
     plan = {
         "schema_version": "1.0",
@@ -100,7 +112,7 @@ def source_plan(function_id: str, locale: str = "en-US") -> tuple[dict, dict, di
         "locale": expanded["locale"],
         "defaults": {"file": "_shared.json", "sha256": digest(shared)},
         "slots": slots,
-        "resources": [resources[k] for k in sorted(resources) if k in slots.values()],
+        "resources": [resources[k] for k in sorted(resources) if k in owned_keys],
         "timing": "measured-speech-relative; expand template at render time",
         "generation": {
             # The compatibility-shaped binding is projected from the single

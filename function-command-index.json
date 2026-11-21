@@ -1,9 +1,9 @@
 {
   "canonical_locale": "en-US",
-  "command_count": 82,
+  "command_count": 84,
   "fallback_count": 0,
   "fallbacks": [],
-  "function_count": 58,
+  "function_count": 59,
   "functions": [
     {
       "canonical_command_review": "approved",
@@ -12208,6 +12208,374 @@
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
         "text": "Intuition"
+      }
+    },
+    {
+      "canonical_command_review": "approved",
+      "canonical_resource": "../locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+      "command_review_label": {
+        "fallback": false,
+        "key": "command.review.approved",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Approved"
+      },
+      "commands": [
+        {
+          "cue_presentation": {
+            "binding_status": "resolved",
+            "command_id": "OCF-CMD-EXP-007-DEFLATE",
+            "display_cue": "PLUS-DEFLATE",
+            "display_fallback": false,
+            "display_locale": "en-US",
+            "requested_locale": "en-US",
+            "resource_status": "reviewed",
+            "spoken_cue": "Plus Deflate",
+            "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+            "spoken_fallback": false,
+            "spoken_locale": "en-US",
+            "version": null
+          },
+          "designation": "secondary",
+          "effect_scope": "temporary",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
+          "explanation": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-deflate.explanation",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Draw the entire current ball back within, even if enlarged. Only this application ends; learned availability and other functions are unchanged."
+          },
+          "function_id": "OCF-EXP-007",
+          "id": "OCF-CMD-EXP-007-DEFLATE",
+          "invocation_description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "One temporary imagined field remains active until deliberately drawn back within."
+          },
+          "invocation_scope": {
+            "activation": "manual",
+            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "invocation_scope_ref": "lifecycle.scopes.application",
+          "label": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-deflate.label",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Draw the Energy Ball back within"
+          },
+          "localization": {
+            "explanation_key": "commands.ocf-cmd-exp-007-deflate.explanation",
+            "label_key": "commands.ocf-cmd-exp-007-deflate.label",
+            "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+            "usage_key": "commands.ocf-cmd-exp-007-deflate.usage"
+          },
+          "phrase": "PLUS-DEFLATE",
+          "phrase_ref": {
+            "command_id": "OCF-CMD-EXP-007-DEFLATE",
+            "source": "canonical-mode"
+          },
+          "procedure": {
+            "override_steps": [
+              {
+                "id": "mentally-deflate",
+                "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate",
+                "operation": "think-or-say-command"
+              }
+            ],
+            "status": "documented"
+          },
+          "procedure_status": "documented",
+          "procedure_steps": [
+            {
+              "id": "mentally-deflate",
+              "instruction": {
+                "fallback": false,
+                "key": "OCF-EXP-007/OCF-CMD-EXP-007-DEFLATE/procedure_steps/0",
+                "requested_locale": "en-US",
+                "resolved_locale": "en-US",
+                "status": "reviewed",
+                "text": "Mentally say Plus Deflate.",
+                "version": "1.0.0"
+              },
+              "operation": "think-or-say-command"
+            }
+          ],
+          "related_commands": [
+            {
+              "commands": [
+                {
+                  "id": "OCF-CMD-EXP-007-PRIMARY",
+                  "phrase": "PLUS-INFLATE"
+                }
+              ],
+              "kind": "closes",
+              "label": {
+                "fallback": false,
+                "key": "command.relationship.closes",
+                "requested_locale": "en-US",
+                "resolved_locale": "en-US",
+                "text": "closes"
+              }
+            }
+          ],
+          "relationships": {
+            "closes": [
+              "OCF-CMD-EXP-007-PRIMARY"
+            ]
+          },
+          "role": "close",
+          "scope_label": {
+            "fallback": false,
+            "key": "command.scope.temporary",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Temporary"
+          },
+          "spoken": "Plus Deflate",
+          "spoken_review": "reviewed",
+          "usage": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-deflate.usage",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Deliberately think Plus Deflate. Hearing or reading the cue does not invoke it."
+          }
+        },
+        {
+          "cue_presentation": {
+            "binding_status": "resolved",
+            "command_id": "OCF-CMD-EXP-007-PRIMARY",
+            "display_cue": "PLUS-INFLATE",
+            "display_fallback": false,
+            "display_locale": "en-US",
+            "requested_locale": "en-US",
+            "resource_status": "reviewed",
+            "spoken_cue": "Plus Inflate",
+            "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+            "spoken_fallback": false,
+            "spoken_locale": "en-US",
+            "version": null
+          },
+          "designation": "primary",
+          "effect_scope": "temporary",
+          "effect_scope_details": {
+            "activation": "manual",
+            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "effect_scope_ref": "lifecycle.scopes.application.persistence",
+          "explanation": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-primary.explanation",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "A fresh invocation establishes the familiar personal ball. Reaffirming keeps one active ball and its chosen extent; an imagined invisible field remains expanded."
+          },
+          "function_id": "OCF-EXP-007",
+          "id": "OCF-CMD-EXP-007-PRIMARY",
+          "invocation_description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "One temporary imagined field remains active until deliberately drawn back within."
+          },
+          "invocation_scope": {
+            "activation": "manual",
+            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "persistence": "temporary"
+          },
+          "invocation_scope_ref": "lifecycle.scopes.application",
+          "label": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-primary.label",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Establish or reaffirm the Energy Ball"
+          },
+          "localization": {
+            "explanation_key": "commands.ocf-cmd-exp-007-primary.explanation",
+            "label_key": "commands.ocf-cmd-exp-007-primary.label",
+            "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+            "usage_key": "commands.ocf-cmd-exp-007-primary.usage"
+          },
+          "phrase": "PLUS-INFLATE",
+          "phrase_ref": {
+            "source": "canonical-primary"
+          },
+          "procedure": {
+            "override_steps": [
+              {
+                "id": "mentally-inflate",
+                "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate",
+                "operation": "think-or-say-command"
+              }
+            ],
+            "status": "documented"
+          },
+          "procedure_status": "documented",
+          "procedure_steps": [
+            {
+              "id": "mentally-inflate",
+              "instruction": {
+                "fallback": false,
+                "key": "OCF-EXP-007/OCF-CMD-EXP-007-PRIMARY/procedure_steps/0",
+                "requested_locale": "en-US",
+                "resolved_locale": "en-US",
+                "status": "reviewed",
+                "text": "Mentally say Plus Inflate.",
+                "version": "1.0.0"
+              },
+              "operation": "think-or-say-command"
+            }
+          ],
+          "related_commands": [],
+          "role": "activation",
+          "scope_label": {
+            "fallback": false,
+            "key": "command.scope.temporary",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Temporary"
+          },
+          "spoken": "Plus Inflate",
+          "spoken_review": "reviewed",
+          "usage": {
+            "fallback": false,
+            "key": "commands.ocf-cmd-exp-007-primary.usage",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Deliberately think Plus Inflate. No breathing pattern, posture, target, imagery, movement or sensation is required. Comfortable breathing and the imagined push are optional aids. Enlarge only by choice."
+          }
+        }
+      ],
+      "common_uses": [
+        {
+          "status": "draft",
+          "text": "Rehearsing a deliberate change from an imagined personal field to drawing it back within."
+        },
+        {
+          "status": "draft",
+          "text": "Practising with the familiar personal ball before trying an optional larger extent."
+        }
+      ],
+      "effects": null,
+      "function_id": "OCF-EXP-007",
+      "lifecycle_scopes": [
+        {
+          "activation": null,
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-007.lifecycle.scopes.capability.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned availability remains after the current ball is drawn back within."
+          },
+          "kind": "capability",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.capability",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Learned capability / readiness"
+          },
+          "persistence": "permanent"
+        },
+        {
+          "activation": "manual",
+          "description": {
+            "fallback": false,
+            "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "One temporary imagined field remains active until deliberately drawn back within."
+          },
+          "kind": "application",
+          "label": {
+            "fallback": false,
+            "key": "command.scope-kind.application",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Individual invocation / application"
+          },
+          "persistence": "temporary"
+        }
+      ],
+      "localized_relationships": {
+        "complementary_functions": [],
+        "related_functions": []
+      },
+      "persistence": "temporary",
+      "persistence_label": {
+        "fallback": false,
+        "key": "command.scope.temporary",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Temporary"
+      },
+      "purpose": {
+        "fallback": false,
+        "key": "functions.ocf-exp-007.purpose",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within."
+      },
+      "reimplementation_status": "in-progress",
+      "related_functions": [],
+      "relationship_proposals": [],
+      "short_description": {
+        "fallback": false,
+        "key": "functions.ocf-exp-007.purpose",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within."
+      },
+      "slug": "energy-ball",
+      "source_availability": "pending-source-review",
+      "source_availability_label": {
+        "fallback": false,
+        "key": "command.source.pending-source-review",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Source availability is pending review."
+      },
+      "tags": [
+        {
+          "semantic_id": "mental-practice",
+          "status": "draft",
+          "text": "mental-practice"
+        },
+        {
+          "semantic_id": "personal-boundaries",
+          "status": "draft",
+          "text": "personal-boundaries"
+        },
+        {
+          "semantic_id": "deliberate-cues",
+          "status": "draft",
+          "text": "deliberate-cues"
+        }
+      ],
+      "title": {
+        "fallback": false,
+        "key": "functions.ocf-exp-007.title",
+        "requested_locale": "en-US",
+        "resolved_locale": "en-US",
+        "text": "Energy Ball"
       }
     },
     {

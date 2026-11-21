@@ -15,8 +15,8 @@ def test_export_is_deterministic_and_contains_only_allowlisted_public_fields():
     second = export.export_data(source_commit=SOURCE_COMMIT)
 
     assert first == second
-    assert len(first["functions"]) == first["build_receipt"]["function_count"] == 58
-    assert len({row["function_id"] for row in first["functions"]}) == 58
+    assert len(first["functions"]) == first["build_receipt"]["function_count"] == 59
+    assert len({row["function_id"] for row in first["functions"]}) == 59
     assert first["build_receipt"]["approved_relationship_count"] == 33
     assert first["source_commit"] == SOURCE_COMMIT
     assert first["build_receipt"]["narration_text_included"] is False
@@ -152,7 +152,7 @@ def test_draft_procedure_is_excluded_as_a_whole(monkeypatch):
 def test_export_file_uses_exclusive_atomic_publication(tmp_path):
     output = tmp_path / "website-guides.json"
     receipt = export.write_export(output, source_commit=SOURCE_COMMIT)
-    assert receipt["function_count"] == 58
+    assert receipt["function_count"] == 59
     original = output.read_bytes()
     with pytest.raises(OCFFileExistsError):
         export.write_export(output, source_commit=SOURCE_COMMIT)

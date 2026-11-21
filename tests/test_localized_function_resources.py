@@ -150,7 +150,7 @@ def test_repository_catalog_uses_readable_paths_and_preserves_cues():
     assert catalog.packs["en-US"].localized_function_files[FUNCTION_ID] == (
         "OCF-EMO-003-Empathize.yaml"
     )
-    assert len(catalog.packs["en-US"].localized_functions) == 58
+    assert len(catalog.packs["en-US"].localized_functions) == 59
     # One manifest-listed function resource owns the identity, independent of
     # any historical filename that must never become a second authority.
     pack = catalog.packs["en-US"]
