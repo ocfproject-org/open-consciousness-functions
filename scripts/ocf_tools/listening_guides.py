@@ -417,6 +417,25 @@ def function_guide_markdown(record, *, catalog=None, locale="en-US"):
     )
 
 
+def _reader_narration_heading(key, role=None):
+    suffix = key.rsplit(".", 1)[-1]
+    headings = {
+        "opener": "Introduction",
+        "function-body": "Practice",
+        "closer": "Closing",
+        "access-close": "Access channel closure",
+        "guided-first": "First guided practice",
+        "guided-second": "Second guided practice",
+        "waking-descent": "Waking descent toward Ten",
+        "waking-ten": "Waking midpoint",
+        "waking-count-to-one": "Full waking countdown",
+        "waking-alert": "Full waking orientation",
+        "waking-reorient": "Short waking option",
+    }
+    label = role or suffix
+    return headings.get(suffix, headings.get(label, label.replace("-", " ").capitalize()))
+
+
 def reader_function_markdown(record, content, *, documentation, narration_sections):
     """Listener layout: exact useful wording, not an engineering inventory."""
     lines = [
@@ -481,17 +500,11 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
         lines += ["- " + note for note in record.safety_notes]
         lines += [""]
     lines += ["## Complete narration", ""]
-    headings = {
-        "opener": "Introduction",
-        "function-body": "Practice",
-        "closer": "Closing",
-        "access-close": "Access channel closure",
-    }
     for section in narration_sections:
         if section["role"] == "access-close":
             continue
         lines += [
-            "### " + headings.get(section["role"], section["role"].replace("-", " ").capitalize()),
+            "### " + _reader_narration_heading(section["key"], section["role"]),
             "",
             section["text"],
             "",
@@ -1402,22 +1415,8 @@ def validate_extracted_narration(extracted: str, expected: dict[str, str], *, ma
 
     text = normalized(extracted)
     if not markers:
-        headings = {
-            "opener": "Introduction",
-            "function-body": "Practice",
-            "closer": "Closing",
-            "access-close": "Access channel closure",
-        }
         positions = {
-            key: text.rfind(
-                normalized(
-                    headings.get(
-                        key.rsplit(".", 1)[-1],
-                        key.rsplit(".", 1)[-1].replace("-", " ").capitalize(),
-                    )
-                )
-            )
-            for key in expected
+            key: text.rfind(normalized(_reader_narration_heading(key))) for key in expected
         }
         if any(position < 0 for position in positions.values()) or len(
             set(positions.values())
