@@ -116,7 +116,7 @@ def test_dissolve_procedure_and_intuition_canonical_registration():
         "think-or-say-command",
         "exhale",
     ]
-    assert next_function_id("experimental") == "OCF-EXP-007"
+    assert next_function_id("experimental") == "OCF-EXP-008"
     assert "OCF-EXP-006" in {row.id for row in load_all_functions()}
     intuition = load_function_by_id("OCF-EXP-006")
     assert intuition is not None

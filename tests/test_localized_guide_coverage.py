@@ -24,7 +24,7 @@ def test_all_function_resources_appear_with_preparation_closure_explicitly_exclu
         if record.id == "OCF-FND-001":
             assert "Access channel closure" not in text
             assert "plus, release, eleven, access" not in text
-    assert count == 174
+    assert count == 177
 
 
 def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline_html():
