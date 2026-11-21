@@ -2092,7 +2092,7 @@
       "verification": "structural schema only; not semantic, asset, rights or release approval"
     },
     {
-      "example_sha256": "c1d11ba36b791b1baed2780dbd0785bf28a3dab171e46258f20b7a10ec81761a",
+      "example_sha256": "b6e972c4742b2b2e8cbbbf50a7c2491ec123ad1ea24c879438001404d9071a94",
       "schema": "locale-manifest.schema.json",
       "source": "locales/en-US/manifest.yaml",
       "verification": "structural schema only; not semantic, asset, rights or release approval"
@@ -2245,7 +2245,7 @@
     "schemas/doctor.schema.json": "9b861ac28abab75f1aab4c78419d7faf731db099a6031704abbb07bf75f1ff74",
     "schemas/editorial-block.schema.json": "ef17e6b8bce5b318036b5c1618ee2dfa83473f45e93a9fd486bbef1fa72d26d0",
     "schemas/editorial-function.schema.json": "f43a058da0c9e1815d975b255f8f96c420c2385da88627c9e78e6878cd42c6cf",
-    "schemas/function-binding.schema.json": "77d865eb54aeb4b6ff699a9eb2cd6c80d179604e71c4ee06c291db8bf2a07525",
+    "schemas/function-binding.schema.json": "2d0c925242804bec749343b6b021dc1ecd3dc645a608a2a8d1e676e32ea8a5fb",
     "schemas/function-decisions.schema.json": "5882d26b99b7bb3005a334926ec879cf77df8dfdfc8041219eba0e59df871a52",
     "schemas/function-discovery.schema.json": "ab9e08f729d6b4b6ff51a6fcdd9d8066e7a65db32fb1144720e53b352160ce23",
     "schemas/function-evidence.schema.json": "e541f1af76323fb9b059c4e39ceb5ab5f2eceaa0cbf4d6e37d0230d303b919a8",
@@ -2254,7 +2254,7 @@
     "schemas/hplus-review-selection.schema.json": "2e65fa5465bd6a70185dbcbb5ae3d933b81e2e7034ba17b4699b7998a392ac19",
     "schemas/locale-manifest.schema.json": "5ed80569f045f3c58ed69a62bfff30be470764abe59c01537022ad3278e8c987",
     "schemas/locale-resource.schema.json": "fe7629b65fad84f074aca3b8bc683bbf1e142c567f0f0c751664e0e759fff8b7",
-    "schemas/localized-function.schema.json": "b6c97d9db2501452d1657c5a8d096298e7a6c85cb45b14bce54418cf96c71e4d",
+    "schemas/localized-function.schema.json": "609ab01812a0aba4b7c3a002ed508beff7d8d7f041350af11371f0f918861832",
     "schemas/mix-profile.schema.json": "05ac30c768cb95eb76f6cb300fcc29e20499c2c36a0a4b5692d169174050b40b",
     "schemas/narration-package.schema.json": "8a9e55379eec1481cdde5fbfa55b91af471dc45fe0ae30c64da36ab5d9b1a15d",
     "schemas/narration-sources.schema.json": "5c084f128351d6a2a879b5a971007cbc9efe3fb269deb3eeb12832895e729c3e",
@@ -2265,7 +2265,7 @@
     "schemas/public-site-guide-export.schema.json": "91167e2a7ffe53f9994b4a089f27443a9a25903fd02511e6e9c8a4c69bdd0749",
     "schemas/recording-processing.schema.json": "7062e488510f3703db3392200d8a9f5ace7500dd41eb01496f3d5dad8a17ceec",
     "schemas/semantic-dsp-profile.schema.json": "2b02bb6c1e577bd6ccd2cfe4f429fe43408efd0c7717ea3d1e896f4cb4cdfe79",
-    "schemas/session-overrides.schema.json": "cf4291d252d07931ec9822e8315c0ac84bbc05bbe2c3f68006626aebe9479413",
+    "schemas/session-overrides.schema.json": "4d798ded445619b44d358ac7d2afe0846a880ffa86366a79792b2877cca98fcb",
     "schemas/session-pacing.schema.json": "4d169adf02b57a3d944f4c121b988650671dd7e70007c934d141f8485c7e47bb",
     "schemas/session-plan.schema.json": "824a833d7751536b8a1ded3784d6268847bc3bc101b06d8b649b25c163487805",
     "schemas/session-stage.schema.json": "fcdccd53577a0df9f444439199332bcc097cd9083a30c2b583f23811e48f2981",
