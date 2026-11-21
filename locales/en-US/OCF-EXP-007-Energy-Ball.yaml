@@ -355,10 +355,9 @@ entries:
       Take a moment to feel refreshed, clear and alert, ready to continue with renewed energy.
   hplus.function.ocf-exp-007.waking-reorient:
     status: reviewed
-    version: 1.0.0
-    text: |-
-      Think of the number One. Wake up and open your eyes, clear and alert.
-      Notice the room around you and the surface supporting you.
+    version: 1.1.0
+    notes: C one is the spoken form of C1; One is a thought, not a count or OCF command.
+    text: To return to C one, your normal waking consciousness, think of the number One.
   hplus.function.ocf-exp-007.closer:
     status: reviewed
     version: 1.2.0

@@ -102213,6 +102213,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "1.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/version"
         },
+        "/entries/hplus.function.ocf-exp-007.waking-reorient/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "C one is the spoken form of C1; One is a thought, not a count or OCF command.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/notes"
+        },
         "/entries/hplus.function.ocf-exp-007.waking-reorient/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": "reviewed",
@@ -102220,12 +102225,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.waking-reorient/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Think of the number One. Wake up and open your eyes, clear and alert.\nNotice the room around you and the surface supporting you.",
+          "value": "To return to C one, your normal waking consciousness, think of the number One.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/text"
         },
         "/entries/hplus.function.ocf-exp-007.waking-reorient/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/version"
         },
         "/entries/hplus.function.ocf-exp-007.waking-ten/status": {

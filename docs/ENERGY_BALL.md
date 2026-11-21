@@ -20,7 +20,8 @@ behavior, not a listening edition or release.
   Access closes before the sleep reinforcement. Both waking options count all
   the way from Twenty down to Ten, becoming more awake and alert. Full guidance
   continues from Nine to One. The short option asks the listener to think of
-  the number One, wake and orient, without invoking a separate OCF command.
+  the number One to return to C1, normal waking consciousness, without invoking
+  a separate OCF command. A 30-second quiet interval precedes the closer.
   Both use the same cue-free closer and stereo C1 finish. The ball ends deflated.
 - The routine reminder (`OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003`) is for people
   who already learned it. It prompts Plus Inflate without repeating the guided

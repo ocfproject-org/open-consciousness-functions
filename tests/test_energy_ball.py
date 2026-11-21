@@ -270,8 +270,20 @@ def test_optional_short_wake_keeps_twenty_to_ten_and_shared_closing(energy):
     assert set(full_events) - set(short_events) == {"return.count-to-one", "return.alert"}
     assert set(short_events) - set(full_events) == {"return.reorient"}
     short_text = short_events["return.reorient"]["text"]
-    assert "Think of the number One." in short_text
-    assert "open your eyes" in short_text and "Plus One Awake" not in short_text
+    assert short_text == (
+        "To return to C one, your normal waking consciousness, think of the number One."
+    )
+    assert "Plus One Awake" not in short_text
+    duration = 2.0
+    scheduled = {
+        row["id"]: row
+        for row in schedule_timeline(
+            short, {event["id"]: duration for event in short_events.values() if event.get("text")}
+        )
+    }
+    assert (
+        scheduled["function-closer.block"]["at"] - scheduled["return.reorient"]["at"] - duration
+    ) == pytest.approx(30.0)
     assert "renewed energy" in full_events["return.alert"]["text"]
     assert "refreshed awareness" in full_events["function-closer.block"]["text"]
     assert policy(full) == policy(short)
