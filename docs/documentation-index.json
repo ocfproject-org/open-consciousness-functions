@@ -1179,7 +1179,7 @@
         "audio render"
       ],
       "related_schemas": [],
-      "sha256": "27c4eb05ec716af527dce01868a5cca5dc40a62eb713de2192987cb6483f8a84",
+      "sha256": "0810c9e3b1d3dea70ee939504f37962d8345b06c0c2ee856b3482666dedcd5a6",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4061,7 +4061,7 @@
         "schemas/function-binding.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "77d865eb54aeb4b6ff699a9eb2cd6c80d179604e71c4ee06c291db8bf2a07525",
+      "sha256": "2d0c925242804bec749343b6b021dc1ecd3dc645a608a2a8d1e676e32ea8a5fb",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4244,7 +4244,7 @@
         "schemas/localized-function.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "b6c97d9db2501452d1657c5a8d096298e7a6c85cb45b14bce54418cf96c71e4d",
+      "sha256": "609ab01812a0aba4b7c3a002ed508beff7d8d7f041350af11371f0f918861832",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4464,7 +4464,7 @@
       "related_schemas": [
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "cf4291d252d07931ec9822e8315c0ac84bbc05bbe2c3f68006626aebe9479413",
+      "sha256": "4d798ded445619b44d358ac7d2afe0846a880ffa86366a79792b2877cca98fcb",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

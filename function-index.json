@@ -17252,6 +17252,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "role": "opener"
             },
             {
+              "key": "hplus.function.ocf-exp-007.guided-first",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
               "key": "hplus.function.ocf-exp-007.function-body",
               "repetitions": 4,
               "role": "function-body"

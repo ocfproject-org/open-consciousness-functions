@@ -127,6 +127,8 @@ relationships:
 changelog:
 - version: 0.1.0
   change: Register the owner-reviewed OCF-original Energy Ball teaching and commands.
+- version: 0.2.0
+  change: Place the two guided cycles at Focus Ten and reserve later passes for cue association.
 entries:
   hplus.function.ocf-exp-007.opener:
     status: reviewed
@@ -135,9 +137,9 @@ entries:
       within whenever you choose.
     notes: Owner approved this exact teaching, activation and closer on 2026-11-21. Listening and release
       approval remain separate.
-  hplus.function.ocf-exp-007.function-body:
+  hplus.function.ocf-exp-007.guided-first:
     status: reviewed
-    version: 1.0.0
+    version: 2.0.0
     text: |-
       Bring your attention to your heart center, in the middle of your chest.
 
@@ -242,38 +244,6 @@ entries:
       Let that energy settle gently throughout you.
 
       The surrounding ball has returned within.
-
-      Now practise again with less guidance.
-
-      Mentally say:
-
-      {{ cue.primary }}.
-
-      Let the familiar sun expand around you.
-
-      Allow your Energy Ball to take its usual shape and begin turning.
-
-      Let it accelerate into the familiar invisible field.
-
-      Use the breath or the imagined push if either helps you, or let the whole movement follow your intention.
-
-      Now mentally say:
-
-      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
-
-      Let the whole ball return through your heart center and settle within you.
-
-      For the next practice, use the cues on their own.
-
-      Continue breathing normally.
-
-      Choose to establish your Energy Ball.
-
-      {{ cue.primary }}.
-
-      Choose to draw it back within.
-
-      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
     timing:
       pacing_units:
       - sentence
@@ -329,6 +299,36 @@ entries:
       - sentence
       - sentence
       - landing
+    cue_template:
+      function_id: OCF-EXP-007
+      allowed:
+      - cue.primary
+      - cue.id.OCF-CMD-EXP-007-DEFLATE
+  hplus.function.ocf-exp-007.guided-second:
+    status: reviewed
+    version: 2.0.0
+    text: |-
+      Now practise again with less guidance.
+
+      Mentally say:
+
+      {{ cue.primary }}.
+
+      Let the familiar sun expand around you.
+
+      Allow your Energy Ball to take its usual shape and begin turning.
+
+      Let it accelerate into the familiar invisible field.
+
+      Use the breath or the imagined push if either helps you, or let the whole movement follow your intention.
+
+      Now mentally say:
+
+      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
+
+      Let the whole ball return through your heart center and settle within you.
+    timing:
+      pacing_units:
       - sentence
       - sentence
       - sentence
@@ -339,12 +339,18 @@ entries:
       - sentence
       - sentence
       - landing
-      - sentence
-      - sentence
-      - sentence
-      - independent-practice
-      - sentence
-      - independent-practice
+    cue_template:
+      function_id: OCF-EXP-007
+      allowed:
+      - cue.primary
+      - cue.id.OCF-CMD-EXP-007-DEFLATE
+  hplus.function.ocf-exp-007.function-body:
+    status: reviewed
+    version: 2.0.0
+    notes: Original cue-association wording for private review, not an instruction to practise or an audio release approval.
+    text: |-
+      {{ cue.primary }} is the cue for establishing your Energy Ball.
+      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }} is the cue for drawing the whole ball back within.
     cue_template:
       function_id: OCF-EXP-007
       allowed:
@@ -407,7 +413,7 @@ safety:
   notes:
   - Imaginative practice; no physical field, protection or guaranteed effect is claimed.
 function_version:
-  current: 0.1.0
+  current: 0.2.0
   created: '2026-11-21'
   updated: '2026-11-21'
 narration:
@@ -415,6 +421,12 @@ narration:
   - key: hplus.function.ocf-exp-007.opener
     repetitions: 1
     role: opener
+  - key: hplus.function.ocf-exp-007.guided-first
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-second
+    repetitions: 1
+    role: guided-practice
   - key: hplus.function.ocf-exp-007.function-body
     repetitions: 4
     role: function-body
@@ -513,7 +525,6 @@ content:
         operations:
         - guided-enlargement
         - shorter-rehearsal
-        - independent-rehearsal
         evidence_refs: []
       future_use:
         status: specified
@@ -557,6 +568,7 @@ content:
     session_overrides:
       enabled_stages:
       - resonant-tuning
-      pacing_profile: OCF-PACING-ENERGY-BALL-LEARNING-001
+      pacing_profile: OCF-PACING-ENERGY-BALL-LEARNING-002
+    focus_ten_practice_stage: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-001
     excluded_optional_stages:
     - energy-ball

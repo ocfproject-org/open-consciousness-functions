@@ -344,6 +344,8 @@ def build_complete_session_plan(
 
     options, option_provenance = resolve_overrides(binding, overrides)
     template_record["excluded_optional_stages"] = binding.get("excluded_optional_stages", ())
+    if binding.get("focus_ten_practice_stage"):
+        template_record["focus_ten_practice_stage"] = binding["focus_ten_practice_stage"]
     selected_template = template_record["id"]
     selected_dsp = dsp_profile or options.get("dsp_profile") or template_record.get("dsp_profile")
     if not selected_dsp:
@@ -372,6 +374,19 @@ def build_complete_session_plan(
             f"complete session template {selected_template} has no explicit pacing profile"
         )
     selected_pacing = load_pacing_profile(str(pacing_id))
+    if template_record.get("focus_ten_practice_stage"):
+        practice_resources = {
+            block["key"]
+            for block in binding["narration_plan"]["sequence"]
+            if block["role"] == "guided-practice"
+        }
+        if not practice_resources or not practice_resources <= set(
+            selected_pacing.get("narration_pacing", {}).get("entries", {})
+        ):
+            raise OCFError(
+                "Focus Ten teaching requires explicit pacing for its guided practice entries"
+            )
+
     template_record, selected_pacing, dsp, removed, passes = apply_overrides(
         template_record, selected_pacing, dsp, options
     )

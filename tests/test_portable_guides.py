@@ -68,7 +68,7 @@ def test_portable_collection_can_be_relocated_without_external_links(tmp_path, c
     result = listening_guides.validate_portable_collection(relocated)
     assert (result["files"], result["markdown"], result["html"], result["pdf"]) == (205, 67, 67, 68)
     assert result["individual_function_pdfs"] == 59
-    assert result["extracted_canonical_resources"] == 177
+    assert result["extracted_canonical_resources"] == 179
     assert result["broken_links"] == 0
     assert result["toc_entries"] > 58
     assert result["toc_links"] == 2 * result["toc_entries"]

@@ -9,14 +9,14 @@
   },
   "function_id": "OCF-EXP-007",
   "generation": {
-    "binding_sha256": "b3dcafffe456f5b99b46831e04f9bfbd0085178b55016e26a266165388c700ab",
-    "semantic_plan_sha256": "ea04b8fd2d28b8af54b8d50126e2735e3f622461a99bbc175071522201f5f447"
+    "binding_sha256": "14196c33f477f6dc76a75d7b5dd2696227c90897c2771734391eaa1410830f13",
+    "semantic_plan_sha256": "b01d9ed3378cabd870c625c41834a0d0965a9cc49a202c4eadb90dc0ab0db946"
   },
   "generator": "ocf.audio.plan/1",
   "locale": "en-US",
   "overrides": {
     "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
-    "pacing_sha256": "fdd293d7785b13eda161fdedd000765e8d41fd385b75407eb36fc2c9de37068e",
+    "pacing_sha256": "d97a4c5827cb0d8d42f2e7b71b70d2f842d656fdc293eb52d258b0fd96cfe993",
     "provenance": {
       "enabled_stages": "function-binding",
       "pacing_profile": "function-binding"
@@ -25,7 +25,7 @@
       "enabled_stages": [
         "resonant-tuning"
       ],
-      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-001"
+      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-002"
     }
   },
   "resources": [
@@ -43,11 +43,31 @@
       "fallback": false,
       "key": "hplus.function.ocf-exp-007.function-body",
       "locale": "en-US",
-      "raw_template_sha256": "04d1f65367407334f1b0dccf93afe6575e68427334ecc54b6220f75c022c49d8",
+      "raw_template_sha256": "b42a3759e175b591628c12bb377d030747eb65b75347812c697f31575af42990",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "5c5f7a85cc7e6b6b8da21bf070d419bd3fda7c705c4f7725f18b77715f33d76f",
-      "version": "1.0.0"
+      "text_sha256": "5d58a2115121c5d4ba9976553bd9d10e5a5f91790db164492074823b2d072fd0",
+      "version": "2.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-first",
+      "locale": "en-US",
+      "raw_template_sha256": "c34d5ff917f88d3b4d34df888ee30957768bfdb8cde0fc7ee6cbf6ebd7a13657",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "a847036a59fca06f93de0d2f3fae1e46f7df5691433a42842c56f71df2eaa979",
+      "version": "2.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-second",
+      "locale": "en-US",
+      "raw_template_sha256": "5d96ed736fdefe2980169d46f5ed713e11480e3abd87550f3af43fb59e29b87b",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "6d195923f8ceddd04f8a2e4b009988a159bef770bd889f153645b3a28004568d",
+      "version": "2.0.0"
     },
     {
       "fallback": false,

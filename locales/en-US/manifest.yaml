@@ -5,6 +5,9 @@ direction: ltr
 status: canonical
 semantic_version: 3.0.0
 resources:
+- file: relaxation-short-001.yaml
+  domain: narration
+  description: Original concise slow One-to-Ten induction, explicitly selected.
 - file: optional-preparation-003.yaml
   domain: narration
   description: Independently selected reviewed Resonant Tuning and routine Energy Ball instructions.

@@ -57,11 +57,39 @@ def energy():
     return plan, doc
 
 
-def test_energy_ball_four_passes_and_teaching_holds(energy):
+def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     plan, doc = energy
+    stages = [section["id"] for section in doc["sections"]]
+    expected = [
+        "function-opener",
+        "body-comfort",
+        "transmutation-box",
+        "relaxation",
+        "focus-ten",
+        "resonant-tuning",
+        "guided-practice",
+        "open",
+        "focus11-body",
+        "close",
+        "focus10-hold",
+        "focus20-enter",
+        "sleep20-body",
+        "focus20-close",
+        "return",
+        "function-closer",
+    ]
+    assert [stage for stage in stages if stage in expected] == expected
     events = list(iter_events(doc))
-    assert sum(event.get("slot_ref") == "opener" for event in events) == 1
-    assert sum(event.get("slot_ref") == "closer" for event in events) == 1
+    by_id = {event["id"]: event for event in events}
+    practice = [event for event in events if event["id"].startswith("guided-practice.")]
+    assert [e["id"] for e in practice] == ["guided-practice.detailed", "guided-practice.rehearsal"]
+    for event in practice:
+        assert event["text"].count("Plus Inflate.") == event["text"].count("Plus Deflate.") == 1
+        assert event["text"].index("Plus Inflate.") < event["text"].index("Plus Deflate.")
+        assert "For the next practice" not in event["text"]
+    assert len(practice[0]["text"]) > 3 * len(practice[1]["text"])
+    assert by_id["guided-practice.detailed"]["after"] == "resonant-tuning.complete"
+    assert by_id["open.prepare"]["after"] == "guided-practice.rehearsal"
     bodies = [event for event in events if event.get("slot_ref") == "function_body"]
     assert [event["id"] for event in bodies] == [
         "focus11-body.pass-1",
@@ -70,53 +98,89 @@ def test_energy_ball_four_passes_and_teaching_holds(energy):
         "sleep20-body.pass-2",
     ]
     assert len({event["text"] for event in bodies}) == 1
-    assert all("[" not in event.get("text", "") for event in bodies)
-    assert bodies[0]["text"].endswith("Plus Deflate.")
+    assert all(
+        " is the cue for " in event["text"] and "Mentally say" not in event["text"]
+        for event in bodies
+    )
+    assert next(s for s in doc["sections"] if s["id"] == "sleep20-body")["gain_db"] == -24
+    assert sum(event.get("slot_ref") == "opener" for event in events) == 1
+    assert sum(event.get("slot_ref") == "closer" for event in events) == 1
     assert "Let the ball remain deflated" in next(
         event["text"] for event in events if event.get("slot_ref") == "closer"
     )
     assert not any(event["id"].startswith("energy-ball.") for event in events)
-    pacing = {event["id"]: plan_event_pacing(doc, event) for event in bodies}
-    for value in pacing.values():
-        units = value["units"]
-        assert value["rate_scale"] == 1
-        assert [u["pause_after_s"] for u in units if u["kind"] == "landing"] == [5] * 15
-        practice = [u for u in units if u["kind"] == "independent-practice"]
-        assert [u["text"] for u in practice] == ["Plus Inflate.", "Plus Deflate."]
-        assert all(u["pause_after_s"] == 15 and u["pause_inside_event"] for u in practice)
-        assert units[-1] == practice[-1]
     assert not plan["approval_state"]["release_ready"]
 
 
 def test_energy_ball_realized_cadence_and_editability(energy):
     _, doc = energy
     durations = {e["id"]: 1.0 for e in iter_events(doc) if e.get("text")}
-    bodies = [e for e in iter_events(doc) if e.get("slot_ref") == "function_body"]
-    for event in bodies:
-        units = plan_event_pacing(doc, event)["units"]
-        durations[event["id"]] = sum(1.0 + u["pause_after_s"] for u in units)
+    practice = [e for e in iter_events(doc) if e["id"].startswith("guided-practice.")]
+    all_landings = []
+    for event in practice:
+        pacing = plan_event_pacing(doc, event)
+        assert pacing["rate_scale"] == 1
+        units = pacing["units"]
+        all_landings.extend(u["pause_after_s"] for u in units if u["kind"] == "landing")
+        assert all(u["kind"] != "independent-practice" for u in units)
+        durations[event["id"]] = (
+            sum(1.0 + u["pause_after_s"] for u in units if u["pause_inside_event"]) + 1.0
+        )
+    assert all_landings == [5] * 15
     rows = {row["id"]: row for row in schedule_timeline(doc, durations)}
     for before, after, gap in (
         ("focus11-body.pass-1", "focus11-body.pass-2", 15),
         ("sleep20-body.pass-1", "sleep20-body.pass-2", 60),
     ):
         assert rows[after]["at"] - rows[before]["end"] == pytest.approx(gap)
-    assert rows["resonant-tuning.complete"]["at"] - rows["resonant-tuning.begin"]["end"] == 30
-    assert rows["resonant-tuning.practice"]["end"] - rows["resonant-tuning.practice"]["at"] == 30
-    edited = deepcopy(bodies[0])
+    for before, after in (
+        ("guided-practice.detailed", "guided-practice.rehearsal"),
+        ("guided-practice.rehearsal", "open.prepare"),
+    ):
+        assert rows[after]["at"] - rows[before]["at"] - durations[before] == pytest.approx(5)
+    assert rows["resonant-tuning.complete"]["at"] - rows["resonant-tuning.begin"]["end"] == 120
+    assert rows["resonant-tuning.practice"]["end"] - rows["resonant-tuning.practice"]["at"] == 120
+    edited = deepcopy(practice[0])
     edited["text"] = edited["text"].replace("warm and bright", "steady and bright")
     assert any("steady and bright" in u["text"] for u in plan_event_pacing(doc, edited)["units"])
 
 
-def test_tuning_optional_and_no_routine_before_energy_ball_teaching():
-    without = build_complete_session_plan(ID, overrides={"enabled_stages": []})
-    assert not any("resonant-tuning" == row["id"] for row in without["stages"])
+@pytest.mark.parametrize("tuning", [True, False])
+def test_short_relaxation_is_independent_of_tuning(tuning, energy):
+    plan, _ = energy
+    assert any(
+        item["key"] == "hplus.shared.relaxation.whole-body-awareness"
+        for item in plan["narration_resources"]
+    )
+    short = build_complete_session_plan(
+        ID,
+        overrides={
+            "relaxation": "short",
+            "enabled_stages": ["resonant-tuning"] if tuning else [],
+        },
+    )
+    doc = resolve_document(short["template_plan"], "en-US", strict=True)
+    events = {e["id"]: e for e in iter_events(doc)}
+    counts = [e for e in events.values() if e["id"].startswith("relaxation.")][1:]
+    assert [e["text"] for e in counts] == [
+        word + "." for word in "One Two Three Four Five Six Seven Eight Nine Ten".split()
+    ]
+    assert all(e["timing"]["pause_after"] == 4 for e in counts)
+    assert ("resonant-tuning.practice" in events) == tuning
+    assert events["guided-practice.detailed"]["after"] == (
+        "resonant-tuning.complete" if tuning else "focus-ten.ready"
+    )
+
+
+def test_no_routine_stage_or_changed_reinforcement_in_energy_ball_lesson():
     with pytest.raises(OCFError, match="optional stages unavailable.*energy-ball"):
         build_complete_session_plan(ID, overrides={"enabled_stages": ["energy-ball"]})
+    with pytest.raises(OCFError, match=r"two\-plus\-two"):
+        build_complete_session_plan(ID, overrides={"repetitions": {"sleep": 1}})
 
 
 def test_old_profile_does_not_silently_drop_energy_ball_practice():
-    with pytest.raises(OCFError, match="has no pause for unit kind"):
+    with pytest.raises(OCFError, match="requires explicit pacing"):
         build_complete_session_plan(ID, overrides={"pacing_profile": "OCF-PACING-HPLUS-LOCKED-007"})
 
 

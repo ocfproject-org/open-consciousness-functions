@@ -4077,6 +4077,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "role": "opener"
             },
             {
+              "key": "hplus.function.ocf-exp-007.guided-first",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
               "key": "hplus.function.ocf-exp-007.function-body",
               "repetitions": 4,
               "role": "function-body"
@@ -4090,7 +4100,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "7fc03f13e2e6ce2a277336e48c4a3a9e2bc074f28d5bb468d7f63fde1c6a171c"
+      "sha256": "f69f938b4d6dacc47f77ad4f68b545c41ee3687100e47f172d068ea91765194c"
     },
     "OCF-FND-001": {
       "contract": {

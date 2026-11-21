@@ -65,6 +65,40 @@ def apply(
             removed.update(("open", "focus11-body", "close"))
             dsp["allow_static"] = True
     template["sections"] = [s for s in template["sections"] if s["id"] not in removed]
+    sections = template["sections"]
+    if options.get("relaxation") == "short":
+        induction = next((s for s in sections if s["id"] == "relaxation"), None)
+        if not induction or induction.get("stage") != "OCF-TPL-STAGE-HPLUS-RELAXATION-003":
+            raise OCFError("short relaxation requires the shared v3 One-to-Ten induction")
+        induction["stage"] = "OCF-TPL-STAGE-HPLUS-RELAXATION-004"
+        induction["role"] = "concise slow One-to-Ten relaxation"
+    if practice := template.get("focus_ten_practice_stage"):
+        ids = [section["id"] for section in sections]
+        if not {
+            "focus-ten",
+            "resonant-tuning",
+            "open",
+            "focus11-body",
+            "close",
+            "focus20-enter",
+            "sleep20-body",
+            "return",
+        } <= set(ids) or any(pacing["repetitions"].get(key) != 2 for key in ("focus11", "focus20")):
+            raise OCFError(
+                "Focus Ten teaching requires its complete waking lesson and two-plus-two reinforcement passes"
+            )
+        tuning = sections.pop(ids.index("resonant-tuning"))
+        focus_ten = next(i for i, section in enumerate(sections) if section["id"] == "focus-ten")
+        sections[focus_ten + 1 : focus_ten + 1] = [
+            tuning,
+            {
+                "id": "guided-practice",
+                "stage": practice,
+                "after": "$previous",
+                "role": "guided practice at Focus Ten before Open Access",
+            },
+        ]
+
     unknown = set(options.get("stage_maximum_seconds", {})) - {
         s["id"] for s in template["sections"]
     }
