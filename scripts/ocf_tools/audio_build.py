@@ -813,6 +813,7 @@ def build(
     artwork: str | Path | None = None,
     retain_background_stem: bool = False,
     mix_profile: dict[str, Any] | str | Path | None = None,
+    waking_c1: dict | None = None,
 ) -> dict[str, Any]:
     """`ocf audio build <AUDIO_ID|MANIFEST>` — render narration, mix, master.
 
@@ -1003,6 +1004,7 @@ def build(
     ensure_dir(out_root)
     mix_processing = None
     report_progress("stereo-mixing")
+    base_master = stage_dir / "base-master.wav" if waking_c1 else master_path
     if bg_path is not None or mix_profile is not None:
         # Any engine-rendered bed (Farfield, SBaGenX, reference-master) goes
         # through ffmpeg: those stems are long, stereo, and often 24-bit, which
@@ -1010,7 +1012,7 @@ def build(
         mix_processing = _mix_master_ffmpeg(
             narration_wav,
             bg_path,
-            master_path,
+            base_master,
             background_gain=background_gain,
             speech_gain=float(voice_gain),
             speech_gain_windows=gain_windows,
@@ -1020,11 +1022,17 @@ def build(
         mix(
             narration_wav,
             None,
-            master_path,
+            base_master,
             speech_gain=float(voice_gain),
             speech_gain_windows=gain_windows,
             overwrite=overwrite,
         )
+
+    if waking_c1:
+        from .waking_c1 import add_to_master
+
+        report_progress("waking-c1-finishing")
+        waking_c1 = add_to_master(base_master, master_path, waking_c1, narration_meta)
 
     tags = _resolve_tags(
         manifest, doc, narration_meta, tag_overrides, voice_profile_id=selected_voice_id
@@ -1154,6 +1162,7 @@ def build(
         "event_timing": narration_meta.get("event_timing", []),
         "semantic_dsp": state_program,
         "auditory_cues": narration_meta.get("auditory_cues", []),
+        **({"waking_c1": waking_c1} if waking_c1 else {}),
         "narration_resolution": narration_meta.get("narration_resolution"),
         "narration_pacing": narration_meta.get("narration_pacing", {}),
         "narration_source": narration_meta.get("narration_source"),

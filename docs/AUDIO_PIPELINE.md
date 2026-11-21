@@ -572,3 +572,28 @@ Renaming an existing completed collection must preserve media bytes and its
 original render identity, update relative manifest/playlist/portal links and
 recompute delivery checksums. A new named collection may hard-link verified
 media to avoid another audio copy while preserving its predecessor.
+
+### Default waking C1 finishing layer
+
+New complete waking function renders apply `OCF-C1-WAKING-CLOSER-001` after
+mastering, independently of the narration or Focus background profile. The
+three left/right pairs are 483/467, 608/592 and 632/568 Hz. Combined steady level
+is −34 dBFS RMS per channel; the layer fades in over four seconds under the
+measured function closer and fades to silence over the last eight seconds of
+its 30-second tail after measured speech. Preparation Learning has no distinct
+spoken closer, so its layer starts at measured waking-return completion. Its
+Ten-to-One narration is unchanged.
+
+Eligibility requires a composed waking-return completion, not a function name
+or the presence of an earlier sleep reinforcement stage. Explicit sleep endings
+have no waking-return completion and receive no C1 overlay. The master keeps
+any longer existing tail and any extension is separately recorded from the
+unchanged Focus background stem. The measured `waking_c1` receipt records the
+profile, render-specific anchors, original and final lengths, and extension.
+The finisher rejects clipping and ambiguous or out-of-order timing. It does not
+relevel the earlier session, edit narration, or change a versioned Focus
+configuration lock. It is not an automatic wake command.
+
+The default applies to newly composed sessions, not archived registered
+builds, existing masters, or published releases. Existing release approval and
+packaging controls still apply.
