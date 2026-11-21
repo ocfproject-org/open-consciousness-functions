@@ -281,7 +281,7 @@ def test_learning_rejects_changed_holds_and_words():
         verify_timing(document, changed)
 
 
-@pytest.mark.parametrize("cover_state", ["valid", "missing", "corrupt"])
+@pytest.mark.parametrize("cover_state", ["valid", "missing", "corrupt", "missing-c1"])
 def test_learning_publication_and_no_overwrite(tmp_path, monkeypatch, cover_state):
     from contextlib import nullcontext
 
@@ -310,10 +310,23 @@ def test_learning_publication_and_no_overwrite(tmp_path, monkeypatch, cover_stat
         assert kw["manifest_override"]["version"] == "0.1.0"
         assert kw["manifest_override"]["narrator"] == "synthetic"
         built = synthetic_learning(kw["document_override"])
+        assert kw["waking_c1"] is not None
         built["master"] = {
             "file": "master.wav",
             "duration": max(row["end"] for row in built["event_timing"]) + 1,
         }
+        if cover_state != "missing-c1":
+            base = built["master"]["duration"]
+            built["waking_c1"] = {
+                **kw["waking_c1"],
+                "start_seconds": base,
+                "last_speech_end_seconds": base,
+                "end_seconds": base + 30,
+                "base_master_seconds": base,
+                "final_master_seconds": base + 30,
+                "extension_seconds": 30,
+            }
+            built["master"]["duration"] = base + 30
         (kw["out_root"] / "master.wav").write_bytes(b"public synthetic fixture")
         (kw["out_root"] / "audio.mp3").write_bytes(b"synthetic encoded fixture")
         built["outputs"] = [
@@ -338,12 +351,14 @@ def test_learning_publication_and_no_overwrite(tmp_path, monkeypatch, cover_stat
     monkeypatch.setattr(learning.audio_build, "build", build)
     target = tmp_path / "published"
     if cover_state != "valid":
-        with pytest.raises(OCFError, match="cover"):
+        error = "no measured C1 finishing receipt" if cover_state == "missing-c1" else "cover"
+        with pytest.raises(OCFError, match=error):
             learning.render(output=target, voice="synthetic", mix_profile={})
         assert not target.exists()
         return
     result = learning.render(output=target, voice="synthetic", mix_profile={})
     assert result["status"] == "completed" and calls
+    assert result["waking_c1"]["extension_seconds"] == 30
     assert (
         result["delivery_names"]["mp3"]
         == "00 - Preparation-Learning - en-US - synthetic - v0.1.0.mp3"

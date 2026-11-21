@@ -960,6 +960,7 @@ def _complete_session_identity(
     files = (
         Path(__file__),
         REPO_ROOT / "scripts/ocf_tools/audio_build.py",
+        REPO_ROOT / "scripts/ocf_tools/waking_c1.py",
         REPO_ROOT / "scripts/ocf_tools/semantic_dsp.py",
         REPO_ROOT / "scripts/ocf_tools/voice.py",
         REPO_ROOT / "scripts/ocf_tools/narration_first.py",
@@ -1145,6 +1146,11 @@ def _render_complete_session_unlocked(
         raise OCFError("recording/hybrid mode requires --narration-sources")
     if mix_profile is None and narration_sources is None:
         mix_profile = session_plan.get("default_mix_profile")
+    from .waking_c1 import policy as waking_c1_policy
+
+    waking_c1 = waking_c1_policy(session_plan["template_plan"])
+    if waking_c1:
+        session_plan["waking_c1"] = waking_c1
     render_identity_sha256 = _complete_session_identity(
         function_id,
         session_plan,
@@ -1277,6 +1283,7 @@ def _render_complete_session_unlocked(
                 overwrite=False,
                 dsp_profile=selected_dsp,
                 retain_background_stem=True,
+                **({"waking_c1": waking_c1} if waking_c1 else {}),
                 **({"mix_profile": mix_profile} if mix_profile is not None else {}),
                 **(
                     {
@@ -1332,8 +1339,19 @@ def _render_complete_session_unlocked(
         background_probe = _probe_audio(background_path)
         if master_probe["channels"] != 2 or master_probe["sample_rate"] != sample_rate:
             raise OCFError(f"complete session master is not {sample_rate} Hz stereo")
-        if abs(master_probe["duration_seconds"] - background_probe["duration_seconds"]) > 0.01:
-            raise OCFError("background layer does not span the complete master duration")
+        c1_receipt = built.get("waking_c1")
+        if waking_c1 and not c1_receipt:
+            raise OCFError("waking session master has no measured C1 finishing receipt")
+        base_duration = (
+            c1_receipt["base_master_seconds"] if c1_receipt else master_probe["duration_seconds"]
+        )
+        if abs(base_duration - background_probe["duration_seconds"]) > 0.01:
+            raise OCFError("background layer does not span the base master duration")
+        if (
+            c1_receipt
+            and abs(c1_receipt["final_master_seconds"] - master_probe["duration_seconds"]) > 0.01
+        ):
+            raise OCFError("waking C1 receipt differs from the final master duration")
         master_metrics = _stereo_metrics(master_path, sample_rate=sample_rate)
         if master_metrics["clipped_sample_count"]:
             raise OCFError(
@@ -1419,6 +1437,7 @@ def _render_complete_session_unlocked(
             },
             "approval_state": session_plan["approval_state"],
             "release_ready": False,
+            **({"waking_c1": c1_receipt} if c1_receipt else {}),
             "mix": {
                 "voice_gain": float(voice_gain),
                 "background_gain": bg_gain,
