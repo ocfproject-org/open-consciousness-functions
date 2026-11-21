@@ -11,14 +11,18 @@ behavior, not a listening edition or release.
 - The lesson starts with its purpose, body comfort, transmutation box and one
   One-to-Ten relaxation. After Focus Ten recognition and optional tuning, the
   detailed practice and the shorter rehearsal each establish and draw the ball
-  back within once. The independent third practice is no longer in the lesson.
-- Open Access after those two guided cycles. At Focus Eleven and in the quieter
-  sleep reinforcement, hear the same brief cue association twice each, without
-  another exercise. Access closes before the sleep reinforcement. The usual
-  waking return and single closer remain, and the ball ends deflated.
+  back within once, without asking the listener to think or say a cue. The
+  independent third practice is no longer in the lesson.
+- Open Access after those two guided cycles. The Focus Eleven function body
+  teaches which mental cue establishes the ball and which draws it back within.
+  Hear the same brief cue association twice at Focus Eleven and twice in the
+  quieter sleep reinforcement, without another physical or imagined exercise.
+  Access closes before the sleep reinforcement. The usual waking return and
+  cue-free closer remain, and the ball ends deflated.
 - The routine reminder (`OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003`) is for people
-  who already learned it. It leaves the ball established for the next
-  exercise, with a reminder of how to draw it back within.
+  who already learned it. It prompts Plus Inflate without repeating the guided
+  sequence and leaves the ball established for the next exercise, with a brief
+  Plus Deflate reminder for when the listener chooses to draw it back within.
 - Resonant Tuning (`OCF-TPL-STAGE-HPLUS-TUNING-003`) is reusable on its own.
   After “Begin now,” the existing bed continues for two minutes in this lesson
   before completion narration, with no added chant or required pitch. The
@@ -72,8 +76,8 @@ local Mike voice profile.
 
 ## Timing and audition review
 
-The detailed first exercise and shorter rehearsal preserve the previously
-approved wording and 15 five-second landings. Five seconds are reserved after
+The detailed first exercise and shorter rehearsal remove the cue prompts
+while retaining 15 five-second landings. Five seconds are reserved after
 each exercise. The restructured lesson omits the third practice and its holds;
 Git history and the prior private audition preserve that version.
 
@@ -82,10 +86,12 @@ count, with a four-second pause after each number. The stand-alone two-minute
 tuning interval is separate from its narration and only applies to this lesson.
 Normal access closure, sleep levels and waking return are unchanged.
 
-New passive wording for private audition review:
+In Focus Eleven Access, the cue-association wording now starts:
 
-> Plus Inflate is the cue for establishing your Energy Ball.
-> Plus Deflate is the cue for drawing the whole ball back within.
+> From now on, whenever you choose to establish your Energy Ball, the cue to
+> think is Plus Inflate.
+> Whenever you choose to draw the whole ball back within, the cue to think is
+> Plus Deflate.
 
 Technical composition checks, proposed narration and a private audition do not
 approve public audio or make any claim about physical effects.

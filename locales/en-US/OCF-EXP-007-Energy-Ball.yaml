@@ -139,7 +139,7 @@ entries:
       approval remain separate.
   hplus.function.ocf-exp-007.guided-first:
     status: reviewed
-    version: 2.0.0
+    version: 2.1.0
     text: |-
       Bring your attention to your heart center, in the middle of your chest.
 
@@ -148,10 +148,6 @@ entries:
       You can picture its light, sense its warmth or presence, or simply understand that this is where the movement begins. Follow the exercise in whichever way comes naturally.
 
       Now choose to expand your Energy Ball.
-
-      Mentally say:
-
-      {{ cue.primary }}.
 
       Let the sun open outward from your heart center, growing through and around you.
 
@@ -231,10 +227,6 @@ entries:
 
       Now practise drawing the ball fully back within.
 
-      Mentally say:
-
-      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
-
       Let the spinning settle as your Energy Ball draws inward.
 
       However far you have extended it, allow the whole ball to return.
@@ -252,8 +244,6 @@ entries:
       - landing
       - sentence
       - sentence
-      - sentence
-      - sentence
       - landing
       - landing
       - landing
@@ -296,23 +286,12 @@ entries:
       - sentence
       - sentence
       - sentence
-      - sentence
-      - sentence
       - landing
-    cue_template:
-      function_id: OCF-EXP-007
-      allowed:
-      - cue.primary
-      - cue.id.OCF-CMD-EXP-007-DEFLATE
   hplus.function.ocf-exp-007.guided-second:
     status: reviewed
-    version: 2.0.0
+    version: 2.1.0
     text: |-
       Now practise again with less guidance.
-
-      Mentally say:
-
-      {{ cue.primary }}.
 
       Let the familiar sun expand around you.
 
@@ -322,35 +301,23 @@ entries:
 
       Use the breath or the imagined push if either helps you, or let the whole movement follow your intention.
 
-      Now mentally say:
-
-      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
-
-      Let the whole ball return through your heart center and settle within you.
+      Draw the whole ball back through your heart center and let it settle within you.
     timing:
       pacing_units:
       - sentence
       - sentence
       - sentence
       - sentence
-      - sentence
-      - sentence
       - landing
-      - sentence
-      - sentence
       - landing
-    cue_template:
-      function_id: OCF-EXP-007
-      allowed:
-      - cue.primary
-      - cue.id.OCF-CMD-EXP-007-DEFLATE
   hplus.function.ocf-exp-007.function-body:
     status: reviewed
-    version: 2.0.0
-    notes: Original cue-association wording for private review, not an instruction to practise or an audio release approval.
+    version: 2.1.0
+    notes: Introduces both cues in Focus Eleven Access; repeated as passive reinforcement in the sleep passes.
     text: |-
-      {{ cue.primary }} is the cue for establishing your Energy Ball.
-      {{ cue.id.OCF-CMD-EXP-007-DEFLATE }} is the cue for drawing the whole ball back within.
+      From now on, whenever you choose to establish your Energy Ball, the cue to think is {{ cue.primary }}.
+      Whenever you choose to draw the whole ball back within, the cue to think is {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
+      You can use either cue deliberately, with ordinary breathing and your eyes open or closed.
     cue_template:
       function_id: OCF-EXP-007
       allowed:
@@ -358,7 +325,7 @@ entries:
       - cue.id.OCF-CMD-EXP-007-DEFLATE
   hplus.function.ocf-exp-007.closer:
     status: reviewed
-    version: 1.0.0
+    version: 1.1.0
     text: |-
       Let the ball remain deflated as this practice finishes.
 
@@ -366,18 +333,9 @@ entries:
 
       Let your attention include the room and the sounds around you.
 
-      To establish your Energy Ball, mentally say {{ cue.primary }}.
-
-      To draw the whole ball back within, mentally say {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.
-
-      You can use either cue deliberately, with ordinary breathing and your eyes open or closed.
+      When you choose to use your Energy Ball again, the cues you learned are available to you.
 
       The extra breath and the imagined push remain available whenever you find them helpful.
-    cue_template:
-      function_id: OCF-EXP-007
-      allowed:
-      - cue.primary
-      - cue.id.OCF-CMD-EXP-007-DEFLATE
 slug: energy-ball
 classification:
   primary_domain: experimental

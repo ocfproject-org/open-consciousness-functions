@@ -1,9 +1,9 @@
 schema_version: '1.0'
 id: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-001
-version: 1.0.0
+version: 1.1.0
 origin: original-ocf
 type: installation
-description: Two guided Energy Ball cycles once at Focus Ten, before Open Access.
+description: Two cue-free guided Energy Ball cycles at Focus Ten, before Open Access teaches the cues.
 events:
 - id: detailed
   at: 0

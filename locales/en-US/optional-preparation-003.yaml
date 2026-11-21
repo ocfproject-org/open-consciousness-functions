@@ -36,23 +36,13 @@ entries:
       Rest here for a moment before we continue.
   hplus.optional.energy-ball.v3.begin:
     status: reviewed
-    version: 1.0.0
+    version: 1.1.0
     text: |-
-      Now establish your Energy Ball.
-
-      Mentally say:
-
-      Plus Inflate.
-
-      Let the familiar sun expand from your heart center and surround you.
-
-      Allow the ball to begin turning and accelerate into an invisible field, with you resting comfortably at its center.
-
-      If you choose, imagine its increasing speed building its magnetic field, attracting what you desire and repelling what you do not want.
+      To establish your Energy Ball, mentally say Plus Inflate.
   hplus.optional.energy-ball.v3.complete:
     status: reviewed
-    version: 1.0.0
+    version: 1.1.0
     text: |-
-      Enlarge it if you wish, and let it remain around you as we continue.
+      Let it remain around you as we continue.
 
       Whenever you choose to draw the whole ball back within, mentally say Plus Deflate.

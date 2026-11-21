@@ -83,10 +83,21 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     by_id = {event["id"]: event for event in events}
     practice = [event for event in events if event["id"].startswith("guided-practice.")]
     assert [e["id"] for e in practice] == ["guided-practice.detailed", "guided-practice.rehearsal"]
+    cue_mentions = [
+        event["id"]
+        for event in events
+        if any(cue in (event.get("text") or "") for cue in ("Plus Inflate", "Plus Deflate"))
+    ]
+    assert cue_mentions == [
+        "focus11-body.pass-1",
+        "focus11-body.pass-2",
+        "sleep20-body.pass-1",
+        "sleep20-body.pass-2",
+    ]
     for event in practice:
-        assert event["text"].count("Plus Inflate.") == event["text"].count("Plus Deflate.") == 1
-        assert event["text"].index("Plus Inflate.") < event["text"].index("Plus Deflate.")
-        assert "For the next practice" not in event["text"]
+        assert "mentally say" not in event["text"].lower()
+        assert "heart center" in event["text"]
+        assert "invisible field" in event["text"]
     assert len(practice[0]["text"]) > 3 * len(practice[1]["text"])
     assert by_id["guided-practice.detailed"]["after"] == "resonant-tuning.complete"
     assert by_id["open.prepare"]["after"] == "guided-practice.rehearsal"
@@ -99,7 +110,8 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     ]
     assert len({event["text"] for event in bodies}) == 1
     assert all(
-        " is the cue for " in event["text"] and "Mentally say" not in event["text"]
+        "establish your Energy Ball, the cue to think is Plus Inflate" in event["text"]
+        and "draw the whole ball back within, the cue to think is Plus Deflate" in event["text"]
         for event in bodies
     )
     assert next(s for s in doc["sections"] if s["id"] == "sleep20-body")["gain_db"] == -24
@@ -197,7 +209,13 @@ def test_existing_defaults_and_independent_optional_stage_editions():
     doc = resolve_document(routine["template_plan"], "en-US", strict=True)
     events = {event["id"]: event for event in iter_events(doc)}
     assert events["energy-ball.begin"]["after"] == "resonant-tuning.complete"
-    assert "let it remain around you" in events["energy-ball.complete"]["text"]
+    assert events["energy-ball.begin"]["text"] == (
+        "To establish your Energy Ball, mentally say Plus Inflate."
+    )
+    assert events["energy-ball.complete"]["text"] == (
+        "Let it remain around you as we continue.\n\n"
+        "Whenever you choose to draw the whole ball back within, mentally say Plus Deflate."
+    )
     assert events["energy-ball.practice"]["timing"]["pause_after"] == 15
     assert events["resonant-tuning.practice"]["timing"]["pause_after"] == 30
     learning = learning_plan(
