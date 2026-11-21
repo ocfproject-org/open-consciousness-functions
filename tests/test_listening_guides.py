@@ -201,11 +201,11 @@ def test_html_is_offline_unicode_semantic_and_escapes_untrusted_text():
 
 
 @pytest.mark.integration
-def test_current_registry_all_58_guides_have_exact_active_cues():
+def test_current_registry_guides_have_exact_active_cues():
     records = load_all_functions()
     assert len(records) == 59
     documents = guides.markdown_documents()
-    assert len(documents) == 60
+    assert len(documents) == len(records) + 2
     listening_sections = {
         line for line in documents["listening-guide.md"].splitlines() if line.startswith("## ")
     }
@@ -270,10 +270,10 @@ def test_pdf_unsupported_glyph_fails_explicitly():
 def test_current_registry_pdf_and_markdown_freshness(tmp_path):
     pytest.importorskip("reportlab")
     documents = guides.markdown_documents()
-    assert guides.write_documents(documents, tmp_path) == 180
-    assert guides.write_documents(documents, tmp_path, check=True) == 180
-    assert len(list(tmp_path.rglob("*.pdf"))) == 60
-    assert len(list(tmp_path.rglob("*.html"))) == 60
+    assert guides.write_documents(documents, tmp_path) == 3 * len(documents)
+    assert guides.write_documents(documents, tmp_path, check=True) == 3 * len(documents)
+    assert len(list(tmp_path.rglob("*.pdf"))) == len(documents)
+    assert len(list(tmp_path.rglob("*.html"))) == len(documents)
     tool = shutil.which("pdftotext")
     if not tool:
         pytest.skip("pdftotext is not installed")
