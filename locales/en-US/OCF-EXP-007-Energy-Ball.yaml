@@ -323,9 +323,45 @@ entries:
       allowed:
       - cue.primary
       - cue.id.OCF-CMD-EXP-007-DEFLATE
+  hplus.function.ocf-exp-007.waking-descent:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      I will now count down from twenty.
+      With each lower number, become a little more awake and alert, and more aware of your body and surroundings.
+
+      Twenty. Nineteen. Eighteen. Seventeen. Sixteen.
+      Fifteen. Fourteen. Thirteen. Twelve. Eleven.
+    timing:
+      pacing_units: [instruction, instruction, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown]
+  hplus.function.ocf-exp-007.waking-ten:
+    status: reviewed
+    version: 1.0.0
+    text: Ten.
+    timing:
+      pacing_units: [countdown]
+  hplus.function.ocf-exp-007.waking-count-to-one:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Nine. Eight. Seven. Six. Five. Four. Three. Two. One.
+    timing:
+      pacing_units: [countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, final_countdown]
+  hplus.function.ocf-exp-007.waking-alert:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Wake up and open your eyes. Notice the room around you.
+      Take a moment to feel refreshed, clear and alert, ready to continue with renewed energy.
+  hplus.function.ocf-exp-007.waking-reorient:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Think of the number One. Wake up and open your eyes, clear and alert.
+      Notice the room around you and the surface supporting you.
   hplus.function.ocf-exp-007.closer:
     status: reviewed
-    version: 1.1.0
+    version: 1.2.0
     text: |-
       Let the ball remain deflated as this practice finishes.
 
@@ -336,6 +372,8 @@ entries:
       When you choose to use your Energy Ball again, the cues you learned are available to you.
 
       The extra breath and the imagined push remain available whenever you find them helpful.
+
+      Take this clear, refreshed awareness and energy with you as you continue.
 slug: energy-ball
 classification:
   primary_domain: experimental
@@ -528,5 +566,8 @@ content:
       - resonant-tuning
       pacing_profile: OCF-PACING-ENERGY-BALL-LEARNING-002
     focus_ten_practice_stage: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-001
+    waking_return_stages:
+      full: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-001
+      short: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-002
     excluded_optional_stages:
     - energy-ball

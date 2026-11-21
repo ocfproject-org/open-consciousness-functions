@@ -9,14 +9,14 @@
   },
   "function_id": "OCF-EXP-007",
   "generation": {
-    "binding_sha256": "14196c33f477f6dc76a75d7b5dd2696227c90897c2771734391eaa1410830f13",
-    "semantic_plan_sha256": "494bd0be1dd91fde2b40531f1cfe1622b6f9b172cb155d418abb62a8a25c02ab"
+    "binding_sha256": "82cabfd59d76fb1991f55039c6c5a38ab8c2aaf76bec3e65d92c2836c23bbebc",
+    "semantic_plan_sha256": "dea94b207123d4e831eb61e9d908b1a89c2c3bd6f8fb8a63d5e613b7fe90ba5a"
   },
   "generator": "ocf.audio.plan/1",
   "locale": "en-US",
   "overrides": {
     "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
-    "pacing_sha256": "d97a4c5827cb0d8d42f2e7b71b70d2f842d656fdc293eb52d258b0fd96cfe993",
+    "pacing_sha256": "277c9b19d5af1c04186f094b89dbfb7c8cdb64b0a9b3a955f876470e490cb8b3",
     "provenance": {
       "enabled_stages": "function-binding",
       "pacing_profile": "function-binding"
@@ -35,8 +35,8 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "724ceb9e930af7674a5ed6bff2e0a5ba394293362654dbae34068e7ebed52957",
-      "version": "1.1.0"
+      "text_sha256": "1675ffaadff4d7d2ce31b81a481b31afbd960a71129ba89007dba4af19edd140",
+      "version": "1.2.0"
     },
     {
       "fallback": false,

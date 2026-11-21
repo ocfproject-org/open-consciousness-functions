@@ -237,3 +237,50 @@ def test_stage_pacing_schema_rejects_nonmatching_stage_family(energy):
     assert not validate_against_schema(pacing, schema)
     pacing["optional_stage_variants"]["resonant-tuning"] = "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003"
     assert validate_against_schema(pacing, schema)
+
+
+def test_optional_short_wake_keeps_twenty_to_ten_and_shared_closing(energy):
+    from ocf_tools.waking_c1 import policy
+
+    _, full = energy
+    short = resolve_document(
+        build_complete_session_plan(ID, overrides={"waking_style": "short"})["template_plan"],
+        "en-US",
+        strict=True,
+    )
+    full_events = {event["id"]: event for event in iter_events(full)}
+    short_events = {event["id"]: event for event in iter_events(short)}
+    common = ["return.descent", "return.ten", "function-closer.block"]
+    assert all(full_events[key] == short_events[key] for key in common)
+    assert full_events["return.ten"]["text"] == "Ten."
+    assert full_events["return.ten"]["semantic"] == "session.return.focus-ten-landed"
+    descent = plan_event_pacing(full, full_events["return.descent"])["units"]
+    assert "more awake and alert" in " ".join(unit["text"] for unit in descent[:2])
+    assert [unit["text"] for unit in descent[2:]] == [
+        word + "."
+        for word in "Twenty Nineteen Eighteen Seventeen Sixteen Fifteen Fourteen Thirteen Twelve Eleven".split()
+    ]
+    ten = [unit["text"] for unit in plan_event_pacing(full, full_events["return.ten"])["units"]]
+    nine_to_one = plan_event_pacing(full, full_events["return.count-to-one"])["units"]
+    assert ten + [unit["text"] for unit in nine_to_one] == [
+        word + "." for word in "Ten Nine Eight Seven Six Five Four Three Two One".split()
+    ]
+    assert full_events["return.count-to-one"]["after"] == "return.ten"
+    assert short_events["return.reorient"]["after"] == "return.ten"
+    assert set(full_events) - set(short_events) == {"return.count-to-one", "return.alert"}
+    assert set(short_events) - set(full_events) == {"return.reorient"}
+    short_text = short_events["return.reorient"]["text"]
+    assert "Think of the number One." in short_text
+    assert "open your eyes" in short_text and "Plus One Awake" not in short_text
+    assert "renewed energy" in full_events["return.alert"]["text"]
+    assert "refreshed awareness" in full_events["function-closer.block"]["text"]
+    assert policy(full) == policy(short)
+    assert policy(short)["tail_after_speech_seconds"] == 30
+    assert policy(short)["closer_event_ids"] == ["function-closer.block"]
+
+
+def test_short_wake_requires_an_eligible_sleep_descent():
+    with pytest.raises(OCFError, match="waking style is unavailable"):
+        build_complete_session_plan("OCF-FND-002", overrides={"waking_style": "short"})
+    with pytest.raises(OCFError, match="requires sleep descent and waking"):
+        build_complete_session_plan(ID, overrides={"waking_style": "short", "ending": "sleep"})

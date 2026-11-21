@@ -1,0 +1,42 @@
+schema_version: '1.0'
+id: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-001
+version: 1.0.0
+origin: original-ocf
+type: return
+description: Required shared Twenty-to-Ten wake descent with full counted return after Ten.
+events:
+- id: descent
+  at: 0
+  semantic: session.return.begin
+  narration_key: hplus.function.ocf-exp-007.waking-descent
+  narration_required: true
+  timing: {anchor: speech-end, pause_after: 3}
+- id: ten
+  after: descent
+  offset: 0
+  semantic: session.return.focus-ten-landed
+  narration_key: hplus.function.ocf-exp-007.waking-ten
+  narration_required: true
+  timing: {anchor: speech-end, pause_after: 3}
+- id: count-to-one
+  after: ten
+  offset: 0
+  semantic: session.return.count-to-one
+  narration_key: hplus.function.ocf-exp-007.waking-count-to-one
+  narration_required: true
+  timing: {anchor: speech-end, pause_after: 1.5}
+- id: alert
+  after: count-to-one
+  offset: 0
+  semantic: session.return.alert
+  narration_key: hplus.function.ocf-exp-007.waking-alert
+  narration_required: true
+  timing: {anchor: speech-end, pause_after: 2}
+- id: complete
+  after: alert
+  offset: 0
+  timing: {anchor: speech-end}
+  semantic: session.return.complete
+  pacing_key: pauses.waking_complete_s
+  dsp: {state: ordinary-waking}
+  narration_required: false

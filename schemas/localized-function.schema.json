@@ -1403,6 +1403,13 @@
       ],
       "properties": {
         "focus_ten_practice_stage": {"type": "string", "pattern": "^OCF-TPL-STAGE-[A-Z0-9-]+-[0-9]{3}$"},
+        "waking_return_stages": {
+          "type": "object", "additionalProperties": false, "required": ["full", "short"],
+          "properties": {
+            "full": {"type": "string", "pattern": "^OCF-TPL-STAGE-[A-Z0-9-]+-[0-9]{3}$"},
+            "short": {"type": "string", "pattern": "^OCF-TPL-STAGE-[A-Z0-9-]+-[0-9]{3}$"}
+          }
+        },
         "excluded_optional_stages": {
           "description": "Optional features excluded from the canonical teaching composition.",
           "$ref": "https://open-consciousness-functions.dev/schemas/session-overrides.schema.json#/properties/enabled_stages"

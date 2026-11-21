@@ -20,3 +20,8 @@ narration_pacing:
     hplus.function.ocf-exp-007.guided-first: energy-ball-guided
     hplus.function.ocf-exp-007.guided-second: energy-ball-guided
     hplus.function.ocf-exp-007.function-body: guided-transition
+    hplus.function.ocf-exp-007.waking-descent: waking-countdown
+    hplus.function.ocf-exp-007.waking-ten: waking-countdown
+    hplus.function.ocf-exp-007.waking-count-to-one: waking-countdown
+    hplus.function.ocf-exp-007.waking-alert: guided-transition
+    hplus.function.ocf-exp-007.waking-reorient: guided-transition

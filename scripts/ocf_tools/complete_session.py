@@ -346,6 +346,8 @@ def build_complete_session_plan(
     template_record["excluded_optional_stages"] = binding.get("excluded_optional_stages", ())
     if binding.get("focus_ten_practice_stage"):
         template_record["focus_ten_practice_stage"] = binding["focus_ten_practice_stage"]
+    if binding.get("waking_return_stages"):
+        template_record["waking_return_stages"] = binding["waking_return_stages"]
     selected_template = template_record["id"]
     selected_dsp = dsp_profile or options.get("dsp_profile") or template_record.get("dsp_profile")
     if not selected_dsp:

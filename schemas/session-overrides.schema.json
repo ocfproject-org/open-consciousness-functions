@@ -5,6 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "waking_style": {"enum": ["full", "short"]},
     "relaxation": {"enum": ["long", "short"]},
     "enabled_stages": {
       "type": "array",

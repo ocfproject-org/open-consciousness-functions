@@ -66,6 +66,15 @@ def apply(
             dsp["allow_static"] = True
     template["sections"] = [s for s in template["sections"] if s["id"] not in removed]
     sections = template["sections"]
+    waking_style = options.get("waking_style")
+    if variants := template.get("waking_return_stages"):
+        waking = next((s for s in sections if s["id"] == "return"), None)
+        if not waking or "focus20-close" in removed:
+            raise OCFError("split waking return requires sleep descent and waking stages")
+        waking["stage"] = variants[waking_style or "full"]
+        waking["role"] = f"split Focus 20 waking return ({waking_style or 'full'})"
+    elif waking_style is not None:
+        raise OCFError("waking style is unavailable for this function")
     if options.get("relaxation") == "short":
         induction = next((s for s in sections if s["id"] == "relaxation"), None)
         if not induction or induction.get("stage") != "OCF-TPL-STAGE-HPLUS-RELAXATION-003":

@@ -101413,6 +101413,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "tts",
           "yaml_pointer": "/content/bindings/voice_sources/0"
         },
+        "/content/bindings/waking_return_stages/full": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-001",
+          "yaml_pointer": "/content/bindings/waking_return_stages/full"
+        },
+        "/content/bindings/waking_return_stages/short": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-002",
+          "yaml_pointer": "/content/bindings/waking_return_stages/short"
+        },
         "/content/specifications/blocks/association/evidence_refs": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": [],
@@ -101685,12 +101695,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.closer/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Let the ball remain deflated as this practice finishes.\n\nNotice your body resting against the surface beneath you.\n\nLet your attention include the room and the sounds around you.\n\nWhen you choose to use your Energy Ball again, the cues you learned are available to you.\n\nThe extra breath and the imagined push remain available whenever you find them helpful.",
+          "value": "Let the ball remain deflated as this practice finishes.\n\nNotice your body resting against the surface beneath you.\n\nLet your attention include the room and the sounds around you.\n\nWhen you choose to use your Energy Ball again, the cues you learned are available to you.\n\nThe extra breath and the imagined push remain available whenever you find them helpful.\n\nTake this clear, refreshed awareness and energy with you as you continue.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/text"
         },
         "/entries/hplus.function.ocf-exp-007.closer/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.1.0",
+          "value": "1.2.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/version"
         },
         "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/0": {
@@ -102052,6 +102062,191 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": "1.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-alert/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-alert/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-alert/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Wake up and open your eyes. Notice the room around you.\nTake a moment to feel refreshed, clear and alert, ready to continue with renewed energy.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-alert/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-alert/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-alert/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Nine. Eight. Seven. Six. Five. Four. Three. Two. One.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/2"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/3": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/3"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/4": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/4"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/5": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/5"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/6": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/6"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/7": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/7"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/8": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "final_countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/timing/pacing_units/8"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-count-to-one/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-count-to-one/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "I will now count down from twenty.\nWith each lower number, become a little more awake and alert, and more aware of your body and surroundings.\n\nTwenty. Nineteen. Eighteen. Seventeen. Sixteen.\nFifteen. Fourteen. Thirteen. Twelve. Eleven.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "instruction",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "instruction",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/10": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/10"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/11": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/11"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/2"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/3": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/3"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/4": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/4"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/5": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/5"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/6": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/6"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/7": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/7"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/8": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/8"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/9": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/timing/pacing_units/9"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-descent/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-descent/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-reorient/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-reorient/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Think of the number One. Wake up and open your eyes, clear and alert.\nNotice the room around you and the surface supporting you.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-reorient/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-reorient/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-ten/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-ten/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-ten/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Ten.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-ten/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-ten/timing/pacing_units/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "countdown",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-ten/timing/pacing_units/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.waking-ten/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.waking-ten/version"
         },
         "/function_id": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",

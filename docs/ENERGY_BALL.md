@@ -17,8 +17,11 @@ behavior, not a listening edition or release.
   teaches which mental cue establishes the ball and which draws it back within.
   Hear the same brief cue association twice at Focus Eleven and twice in the
   quieter sleep reinforcement, without another physical or imagined exercise.
-  Access closes before the sleep reinforcement. The usual waking return and
-  cue-free closer remain, and the ball ends deflated.
+  Access closes before the sleep reinforcement. Both waking options count all
+  the way from Twenty down to Ten, becoming more awake and alert. Full guidance
+  continues from Nine to One. The short option asks the listener to think of
+  the number One, wake and orient, without invoking a separate OCF command.
+  Both use the same cue-free closer and stereo C1 finish. The ball ends deflated.
 - The routine reminder (`OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003`) is for people
   who already learned it. It prompts Plus Inflate without repeating the guided
   sequence and leaves the ball established for the next exercise, with a brief
@@ -60,7 +63,8 @@ Run `python scripts/ocf.py audio plan OCF-FND-002 --locale en-US --expand
 that stage without changing the other. Standalone Preparation Learning accepts
 `OCF-PACING-OPTIONAL-PREPARATION-LEARNING-001` in its existing pacing-profile
 option, together with an explicit stage selection; no Preparation Learning
-wording or default changes.
+wording or default changes. On the Energy Ball lesson only, add
+`"waking_style":"short"` to use the number-One waking instruction after Ten.
 
 With the configured Piper backend and model, this command prepares the private
 audition plan without synthesizing anything:
@@ -84,7 +88,9 @@ Git history and the prior private audition preserve that version.
 The short option retains the same Focus Ten recognition after the single
 count, with a four-second pause after each number. The stand-alone two-minute
 tuning interval is separate from its narration and only applies to this lesson.
-Normal access closure, sleep levels and waking return are unchanged.
+Normal Access closure and sleep levels are unchanged. Both waking styles
+retain the descent through Ten; the shared closer anchors the same C1
+fade and 30-second tail after the last measured words.
 
 In Focus Eleven Access, the cue-association wording now starts:
 
