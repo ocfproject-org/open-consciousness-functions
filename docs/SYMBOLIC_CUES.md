@@ -46,7 +46,7 @@ rendering, recording selection, and transcripts reject unresolved tokens.
 Cue pronunciation hints follow the selected canonical command; conflicting hints
 require an explicit reviewed variant.
 
-All 58 canonical functions are validated from their current locale YAML for
+All 59 canonical functions are validated from their current locale YAML for
 schema, command/cue consistency, lifecycle structure, entry ownership, and
 narration schedule. Git history provides previous wording when a review needs it;
 there is no frozen-current-text baseline. Audio defaults lock engineering

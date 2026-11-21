@@ -33,4 +33,4 @@ def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline
     html = portable_index_html(records).decode("utf-8")
     assert markdown.index("## foundation") < markdown.index("## automation")
     assert html.index("<h2>foundation</h2>") < html.index("<h2>automation</h2>")
-    assert len([line for line in markdown.splitlines() if line.startswith("- [")]) == 58
+    assert len([line for line in markdown.splitlines() if line.startswith("- [")]) == 59

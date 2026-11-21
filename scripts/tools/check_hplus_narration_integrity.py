@@ -37,8 +37,13 @@ def check(root: Path = REPO_ROOT) -> list[str]:
     except Exception as exc:
         return problems + [str(exc)]
     function_files = resources(root)
-    if len(function_files) != 58 or len(pack.localized_functions) != 58:
-        problems.append("canonical narration catalog must contain all 58 en-US functions")
+    identities = {data["function_id"] for _, data in function_files}
+    if len(identities) < 58 or len(identities) != len(function_files):
+        problems.append(
+            "canonical narration catalog must preserve at least 58 unique en-US functions"
+        )
+    if identities != set(pack.localized_functions):
+        problems.append("canonical narration files and discovered en-US functions differ")
     for _path, data in function_files:
         function_id = data["function_id"]
         sequence = data.get("narration", {}).get("sequence", [])
@@ -72,7 +77,8 @@ def main(argv: list[str] | None = None) -> int:
             print(f"- {problem}")
         return 1
     print(
-        "Current canonical narration validates: 58 functions, 1/4/1 schedule, cue resolution PASS."
+        f"Current canonical narration validates: {len(resources(REPO_ROOT))} functions, "
+        "1/4/1 schedule, cue resolution PASS."
     )
     return 0
 

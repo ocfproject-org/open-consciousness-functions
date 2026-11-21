@@ -6,7 +6,7 @@ Current titles, commands, and narration resolve only from canonical locale resou
 
 Approved decisions are embedded in canonical locale resources. This report is a derived view, not another source authority. Approval does not imply listening or release approval.
 
-Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 58, "historical_only_command_records": 19, "narration_entries": 375, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 72, "stable_primary_identities": 58, "structured_command_identities": 101}.
+Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 59, "historical_only_command_records": 19, "narration_entries": 384, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 74, "stable_primary_identities": 59, "structured_command_identities": 103}.
 
 ## Approved implementation and remaining catalog decisions
 
@@ -279,6 +279,14 @@ Counts: {"active_records": 82, "approved_candidate_narrations": 4, "functions": 
 - Current display cue: `PLUS-INTUITION`; complete teaching: **Plus Intuition**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
 - Purpose: Access intuitive guidance through your total self, higher self, and wider consciousness.
+- Pending title: None.
+- Other unselected proposal: null
+
+### OCF-EXP-007 — Energy Ball
+
+- Current display cue: `PLUS-INFLATE`; complete teaching: **Plus Inflate**.
+- Status: CANONICAL YAML; review flags retained separately; title: reviewed.
+- Purpose: Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.
 - Pending title: None.
 - Other unselected proposal: null
 

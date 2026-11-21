@@ -1402,6 +1402,10 @@
         "duration"
       ],
       "properties": {
+        "excluded_optional_stages": {
+          "description": "Optional features excluded from the canonical teaching composition.",
+          "$ref": "https://open-consciousness-functions.dev/schemas/session-overrides.schema.json#/properties/enabled_stages"
+         },
         "session_overrides": {
           "$ref": "https://open-consciousness-functions.dev/schemas/session-overrides.schema.json"
         },

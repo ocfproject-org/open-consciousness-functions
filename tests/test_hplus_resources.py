@@ -116,12 +116,13 @@ def test_all_55_legacy_functions_have_review_files_without_fabricated_missing_sp
     ]
     all_functions = load_all_functions()
     assert len(owners) == 55
-    assert len(all_functions) == 58
-    assert len(COMPLETE_OWNERS) == 58
+    assert len(all_functions) == 59
+    assert len(COMPLETE_OWNERS) == 59
     assert {r.id for r in all_functions} - {r.id for r in owners} == {
         "OCF-EXP-003",
         "OCF-EXP-005",
         "OCF-EXP-006",
+        "OCF-EXP-007",
     }
     unavailable = [owner for owner in owners if owner.source_availability == "unavailable"]
     assert len(unavailable) == 16

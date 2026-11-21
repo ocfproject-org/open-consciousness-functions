@@ -1,0 +1,14 @@
+schema_version: '1.0'
+id: OCF-PACING-OPTIONAL-PREPARATION-001
+version: 1.0.0
+extends: OCF-PACING-NANO-FARFIELD-SESSION-001
+status: approved_for_internal_composition
+optional_stage_variants:
+  resonant-tuning: OCF-TPL-STAGE-HPLUS-TUNING-003
+  energy-ball: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003
+narration_pacing:
+  entries:
+    hplus.optional.resonant-tuning.v3.begin: preparation
+    hplus.optional.resonant-tuning.v3.complete: preparation
+    hplus.optional.energy-ball.v3.begin: preparation
+    hplus.optional.energy-ball.v3.complete: preparation

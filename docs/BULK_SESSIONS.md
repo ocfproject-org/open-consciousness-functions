@@ -1,7 +1,7 @@
 # Complete-session plans and bulk auditions
 
-All 58 current OCF function records resolve complete English narration: 55
-legacy-mapped records plus 3 OCF-original records. The historical 39/16
+All 59 current OCF function records resolve complete English narration: 55
+legacy-mapped records plus 4 OCF-original records. The historical 39/16
 source-availability split applies only to legacy mappings. Script/resource review, technical
 renderability, measured audio and release approval are different states.
 `audio eligibility` derives them rather than persisting conflicting booleans.

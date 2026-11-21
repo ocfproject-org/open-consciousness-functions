@@ -203,7 +203,7 @@ def test_html_is_offline_unicode_semantic_and_escapes_untrusted_text():
 @pytest.mark.integration
 def test_current_registry_all_58_guides_have_exact_active_cues():
     records = load_all_functions()
-    assert len(records) == 58
+    assert len(records) == 59
     documents = guides.markdown_documents()
     assert len(documents) == 60
     listening_sections = {

@@ -93,10 +93,13 @@ def test_normal_function_default_consumes_long_successor(owner):
 
 def test_every_active_shared_consumer_has_explicit_successor_binding():
     records = load_all_functions()
-    assert len(records) == 58
+    assert len(records) == 59
     for record in records:
         binding = record.data["content"]["bindings"]
         assert binding["default_session_template"] == audio_defaults.TEMPLATE_ID
+        if record.id == "OCF-EXP-007":
+            assert binding["session_templates"] == [audio_defaults.TEMPLATE_ID]
+            continue
         assert {"OCF-TPL-SESSION-HPLUS-LOCKED-005", audio_defaults.TEMPLATE_ID} <= set(
             binding["session_templates"]
         )

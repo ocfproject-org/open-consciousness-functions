@@ -1189,7 +1189,7 @@ def portable_index_html(records, *, edition="0.3.0", include_references=False) -
             else ""
         )
         + "</p>"
-        "<label for='search'>Search by title, ID, cue, or description; also tags and common uses</label><input id='search' type='search' placeholder='Search the 58 function guides'></header>"
+        "<label for='search'>Search by title, ID, cue, or description; also tags and common uses</label><input id='search' type='search' placeholder='Search the function guides'></header>"
         "<p class='no-results' hidden>No matching guides.</p>"
         + sections
         + f"<script>{js}</script></main></body></html>\n"

@@ -40,6 +40,7 @@ Complete index of every OCF function record. Sorted by OCF ID.
 | `OCF-EXP-003` | Dissolve |  | `PLUS-DISSOLVE` |  | experimental | permanent | pending-source-review | in-progress | approved | none | 0 | 0 | locales/en-US/OCF-EXP-003-Dissolve.yaml | letting-go (draft); emotional-balance (draft); self-direction (draft) |
 | `OCF-EXP-005` | Clear Zone |  | `PLUS-CLEAR ZONE` |  | experimental | permanent | pending-source-review | in-progress | approved | none | 0 | 0 | locales/en-US/OCF-EXP-005-Clear-Zone.yaml | intention (draft); calm (draft); surroundings (draft) |
 | `OCF-EXP-006` | Intuition |  | `PLUS-INTUITION` |  | experimental | permanent | pending-source-review | in-progress | approved | none | 0 | 0 | locales/en-US/OCF-EXP-006-Intuition.yaml | inner-awareness (draft); reflection (draft); discernment (draft) |
+| `OCF-EXP-007` | Energy Ball |  | `PLUS-INFLATE` |  | experimental | temporary | pending-source-review | in-progress | approved | none | 0 | 0 | locales/en-US/OCF-EXP-007-Energy-Ball.yaml | mental-practice (draft); personal-boundaries (draft); deliberate-cues (draft) |
 | `OCF-FND-001` | Access to Energy | ACCESS TO ENERGY | `PLUS-ENERGIZE` | `PLUS-ENERGIZE` | foundation | temporary | available | planned | approved | unchanged | 0 | 0 | locales/en-US/OCF-FND-001-Access-to-Energy.yaml | energy (draft); intention (draft); inner-awareness (draft) |
 | `OCF-FND-002` | Focus | ATTENTION | `PLUS-FOCUS` | `PLUS-FOCUS` | foundation | temporary | available | complete | approved | historical-lookup | 0 | 11 | locales/en-US/OCF-FND-002-Focus.yaml | attention (draft); concentration (draft); self-direction (draft) |
 | `OCF-FND-003` | Quick Recharge | RECHARGE | `PLUS-RECHARGE` | `PLUS-RECHARGE` | foundation | temporary | available | planned | approved | unchanged | 0 | 0 | locales/en-US/OCF-FND-003-Quick-Recharge.yaml | rest (draft); sleep (draft); energy (draft) |
@@ -65,4 +66,4 @@ Complete index of every OCF function record. Sorted by OCF ID.
 | `OCF-SLP-005` | Sleep Easy | SLEEP EASY | `PLUS-SLEEP EASY` | `PLUS-QUIET, SLEEP` | sleep | temporary | unavailable | planned | approved | historical-lookup | 0 | 0 | locales/en-US/OCF-SLP-005-Sleep-Easy.yaml | sleep (draft); surroundings (draft); relaxation (draft) |
 | `OCF-SLP-006` | Stay Awake | STAY AWAKE | `PLUS-AWAKE` | `PLUS-ONE, AWAKE, ALERT, ONE, ONE` | sleep | temporary | unavailable | planned | approved | historical-lookup | 0 | 0 | locales/en-US/OCF-SLP-006-Stay-Awake.yaml | attention (draft); wakefulness (draft); self-direction (draft) |
 
-58 functions listed.
+59 functions listed.

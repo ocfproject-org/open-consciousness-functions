@@ -280,8 +280,15 @@ def export_data(*, source_commit: str, root: Path = REPO_ROOT, locale: str = "en
         for identity, data in canonical.localized_functions.items()
     }
     resource_paths = {data["function_id"]: path for path, data in resources(root, locale)}
-    if len(records) != 58 or set(by_id) != {row.id for row in records}:
-        raise OCFError("public website export requires exactly 58 canonical function records")
+    identities = {row.id for row in records}
+    if (
+        len(identities) < 58
+        or len(identities) != len(records)
+        or set(by_id) != identities
+        or set(resource_paths) != identities
+        or set(canonical.localized_functions) != identities
+    ):
+        raise OCFError("public website export requires all distinct canonical function records")
 
     functions = []
     for record in records:

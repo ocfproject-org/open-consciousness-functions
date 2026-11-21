@@ -1,0 +1,69 @@
+{
+  "approval": {
+    "human_review": "approved",
+    "release_ready": false
+  },
+  "defaults": {
+    "file": "_shared.json",
+    "sha256": "4d0c0346c1dca59eb211652364941d51bd476cb914b01d8f2b77c0fe4cad3be9"
+  },
+  "function_id": "OCF-EXP-007",
+  "generation": {
+    "binding_sha256": "b3dcafffe456f5b99b46831e04f9bfbd0085178b55016e26a266165388c700ab",
+    "semantic_plan_sha256": "ea04b8fd2d28b8af54b8d50126e2735e3f622461a99bbc175071522201f5f447"
+  },
+  "generator": "ocf.audio.plan/1",
+  "locale": "en-US",
+  "overrides": {
+    "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
+    "pacing_sha256": "fdd293d7785b13eda161fdedd000765e8d41fd385b75407eb36fc2c9de37068e",
+    "provenance": {
+      "enabled_stages": "function-binding",
+      "pacing_profile": "function-binding"
+    },
+    "settings": {
+      "enabled_stages": [
+        "resonant-tuning"
+      ],
+      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-001"
+    }
+  },
+  "resources": [
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.closer",
+      "locale": "en-US",
+      "raw_template_sha256": "2e82824be6e09d344240626fc1d4aecad9732f283bd985e317598c65e411a03b",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "b4d1ea4c324be0c24769737e4c101f273ea37e5205b9ca9209e971ee90278f78",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.function-body",
+      "locale": "en-US",
+      "raw_template_sha256": "04d1f65367407334f1b0dccf93afe6575e68427334ecc54b6220f75c022c49d8",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "5c5f7a85cc7e6b6b8da21bf070d419bd3fda7c705c4f7725f18b77715f33d76f",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.opener",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "b7d2c78c2e6697e42027b683f7acedc40d95f01a59d4d506ae91d35a17a4b740",
+      "version": "1.0.0"
+    }
+  ],
+  "schema_version": "1.0",
+  "slots": {
+    "closer": "hplus.function.ocf-exp-007.closer",
+    "function_body": "hplus.function.ocf-exp-007.function-body",
+    "opener": "hplus.function.ocf-exp-007.opener"
+  },
+  "timing": "measured-speech-relative; expand template at render time"
+}

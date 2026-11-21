@@ -13,10 +13,10 @@ def test_exactly_one_canonical_resource_per_function_in_tracked_tree():
     assert not catalog.problems
     pack = catalog.require("en-US")
     rows = resources(REPO_ROOT)
-    assert len(rows) == 58
-    assert len({data["function_id"] for _, data in rows}) == 58
-    assert len(pack.localized_functions) == 58
-    assert len(set(pack.localized_function_files.values())) == 58
+    assert len(rows) == 59
+    assert len({data["function_id"] for _, data in rows}) == 59
+    assert len(pack.localized_functions) == 59
+    assert len(set(pack.localized_function_files.values())) == 59
     assert all(
         (REPO_ROOT / "locales/en-US" / name).is_file()
         for name in pack.localized_function_files.values()

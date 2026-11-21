@@ -1,0 +1,29 @@
+description: Owner-reviewed successor with existing session background only.
+events:
+- at: 0
+  id: begin
+  narration_key: hplus.optional.energy-ball.v3.begin
+  narration_required: true
+  semantic: preparation.energy-ball.begin
+- after: begin
+  id: practice
+  narration_required: false
+  offset: 0
+  pacing_key: pauses.optional_stage_practice_s
+  semantic: preparation.energy-ball.practice
+  timing:
+    anchor: speech-end
+- after: practice
+  id: complete
+  narration_key: hplus.optional.energy-ball.v3.complete
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.optional_stage_complete_s
+  semantic: preparation.energy-ball.complete
+  timing:
+    anchor: speech-end
+id: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003
+origin: original-ocf
+schema_version: '1.0'
+type: preparation
+version: 3.0.0

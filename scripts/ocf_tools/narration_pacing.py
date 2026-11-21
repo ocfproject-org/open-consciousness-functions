@@ -170,7 +170,9 @@ def plan_event_pacing(doc: dict[str, Any], event: dict[str, Any]) -> dict[str, A
         pause_kind = (
             "paragraph" if unit["paragraph_after"] and kind in {"sentence", "instruction"} else kind
         )
-        inside_event = index < len(units) - 1
+        # Explicit practice is retained in the measured cue even when it follows
+        # the final sentence, before the separate event/inter-pass gap.
+        inside_event = index < len(units) - 1 or kind == "independent-practice"
         if inside_event:
             if pause_kind not in pauses:
                 raise OCFError(

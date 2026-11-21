@@ -24,7 +24,6 @@
     "functions": {
       "type": "array",
       "minItems": 58,
-      "maxItems": 58,
       "items": {"$ref": "#/definitions/function"}
     },
     "listening_guide": {
@@ -50,7 +49,7 @@
         "relationship_proposals_included"
       ],
       "properties": {
-        "function_count": {"const": 58},
+        "function_count": {"type": "integer", "minimum": 58},
         "approved_relationship_count": {"type": "integer", "minimum": 0},
         "functions_sha256": {"$ref": "#/definitions/hash"},
         "export_content_sha256": {"$ref": "#/definitions/hash"},

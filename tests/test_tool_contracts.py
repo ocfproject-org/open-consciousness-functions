@@ -115,7 +115,7 @@ def test_all_legacy_mappings_are_owned_by_canonical_locale_records():
         record for record in records if record.data["legacy"]["source_system"] == "Monroe H-PLUS"
     ]
     unavailable = [row for row in legacy if row.source_availability == "unavailable"]
-    assert len(records) == 58 and len(legacy) == 55 and len(unavailable) == 16
+    assert len(records) == 59 and len(legacy) == 55 and len(unavailable) == 16
     assert not Path("functions").exists()
 
 

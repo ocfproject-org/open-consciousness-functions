@@ -343,6 +343,7 @@ def build_complete_session_plan(
     from .session_overrides import resolve as resolve_overrides
 
     options, option_provenance = resolve_overrides(binding, overrides)
+    template_record["excluded_optional_stages"] = binding.get("excluded_optional_stages", ())
     selected_template = template_record["id"]
     selected_dsp = dsp_profile or options.get("dsp_profile") or template_record.get("dsp_profile")
     if not selected_dsp:

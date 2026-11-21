@@ -613,6 +613,12 @@ def compose(
         features.discard("affirmation")
     elif affirmation is not None:
         features.add("affirmation")
+    excluded = set(template.get("excluded_optional_stages", ()))
+    if features & excluded:
+        raise OCFError(
+            "optional stages unavailable in this composition: "
+            + ", ".join(sorted(features & excluded))
+        )
     available = {
         section["enabled_by"] for section in template["sections"] if section.get("enabled_by")
     }
@@ -635,7 +641,9 @@ def compose(
         if section.get("stage"):
             from .semantics import load_stage, stage_events
 
-            stage = load_stage(section["stage"])
+            optional_variants = (pacing_profile or {}).get("optional_stage_variants", {})
+            stage_id = optional_variants.get(section.get("enabled_by"), section["stage"])
+            stage = load_stage(stage_id)
             stage = deepcopy(stage)
             overrides = section.get("narration") or {}
             unknown_events = set(overrides) - {event["id"] for event in stage["events"]}
