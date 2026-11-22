@@ -53,6 +53,14 @@ _active: ContextVar = ContextVar("tts_whisper_verification", default=None)
 _SMALL = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
 _TENS = "zero ten twenty thirty forty fifty sixty seventy eighty ninety".split()
 
+_ORDINAL_SMALL = (
+    "zeroth first second third fourth fifth sixth seventh eighth ninth tenth "
+    "eleventh twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth"
+).split()
+_ORDINAL_TENS = (
+    "zeroth tenth twentieth thirtieth fortieth fiftieth sixtieth seventieth eightieth ninetieth"
+).split()
+
 
 class SpeechMismatch(OCFError):
     """A completed local ASR check that did not match the expected words."""
@@ -92,6 +100,22 @@ def _json_sha256(value) -> str:
     return hashlib.sha256(encoded).hexdigest()
 
 
+def _english_ordinal(word: str) -> tuple[str, ...] | None:
+    match = re.fullmatch(r"([1-9][0-9]?)(st|nd|rd|th)", word)
+    if not match:
+        return None
+    value = int(match[1])
+    last = value % 10
+    suffix = "th" if 11 <= value <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(last, "th")
+    if match[2] != suffix:
+        return None
+    if value < 20:
+        return (_ORDINAL_SMALL[value],)
+    if not last:
+        return (_ORDINAL_TENS[value // 10],)
+    return (_TENS[value // 10], _ORDINAL_SMALL[last])
+
+
 def normalized_words(text: str, language: str) -> tuple[str, ...]:
     text = unicodedata.normalize("NFKC", text).casefold()
     text = re.sub(r"(?<=\w)[’'](?=\w)", "", text)
@@ -100,7 +124,10 @@ def normalized_words(text: str, language: str) -> tuple[str, ...]:
         text = re.sub(r"(?<=\d)\.(?=\d)", " point ", text)
     result = []
     for word in re.findall(r"[^\W_]+", text):
-        if language == "en" and re.fullmatch(r"0|[1-9][0-9]?", word):
+        ordinal = _english_ordinal(word) if language == "en" else None
+        if ordinal is not None:
+            result.extend(ordinal)
+        elif language == "en" and re.fullmatch(r"0|[1-9][0-9]?", word):
             value = int(word)
             if value < 20:
                 result.append(_SMALL[value])
