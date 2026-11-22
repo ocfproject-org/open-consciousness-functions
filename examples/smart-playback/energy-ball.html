@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Private modular Energy Ball audition</title><link rel="stylesheet" href="./style.css"><style>
+#settings{width:min(35rem,calc(100% - 2rem));max-height:85vh;max-height:85dvh;overflow:auto;border:1px solid #657b7c;border-radius:.75rem;padding:1rem;color:inherit;background:#f6f4ef}
+#settings::backdrop{background:#173132a8}
+#settings h2{margin-top:0}
+#settings [hidden]{display:none!important}
+#settings-form>*{margin-block:.75rem}
+#settings-open svg{width:1.15rem;height:1.15rem;vertical-align:-.15rem}
+#settings button,#settings-open{min-height:44px}
+#guidance-summary{margin-block:.6rem}
+.guidance-modes{display:grid;gap:.5rem}
+.guidance-modes button{text-align:left;border:1px solid #657b7c;border-radius:.45rem;background:#f6f4ef;color:#173132}
+.guidance-modes button[aria-pressed="true"]{background:#e4ece5;border-color:#173132;box-shadow:inset 0 0 0 1px #173132}
+.guidance-modes button span{display:block;font-weight:400;font-size:.9rem}
+.guidance-modes button[aria-pressed="true"] strong::after{content:" ✓"}
+#fallback-notice{padding:.8rem;border:1px solid #92703e;border-radius:.45rem;background:#f4eadc;margin-block:.75rem}
+#fallback-notice p{margin:0 0 .5rem}
+#fallback-notice[hidden]{display:none}
+#settings-actions{position:sticky;bottom:-1rem;background:#f6f4ef;padding:.5rem 0;border-top:1px solid #657b7c}
+#advanced-options{scroll-margin-bottom:6rem}
+#bookmark-list{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.35rem}
+#bookmark-list button{min-height:44px;margin:0;padding:.45rem .65rem}
+#smart-bookmarks[hidden]{display:none}
+</style><body><main>
+<h1 id="title">Private modular Energy Ball audition</h1><label>Session <select id="which"><option value="lesson">Energy Ball lesson</option><option value="awake">Quiet Focus awake companion</option></select></label><p>Mike · Original Voice. Press Play to start with Full Guidance or your saved defaults. Use the gear to change this session.</p><p id="notice"></p>
+<p id="timing"></p><label>Session position <input id="seek" type="range" min="0" max="1" step="0.1" value="0"></label>
+<div class="buttons"><button id="play" disabled>Play</button><button id="pause" type="button">Pause</button><button id="settings-open" type="button" aria-label="Smart Playback settings" aria-haspopup="dialog" aria-controls="settings" disabled><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m10 2-.45 2.7-1.8.75-2.22-1.58-2.66 2.66 1.58 2.22-.75 1.8L1 11v3l2.7.45.75 1.8-1.58 2.22 2.66 2.66 2.22-1.58 1.8.75.45 2.7h4l.45-2.7 1.8-.75 2.22 1.58 2.66-2.66-1.58-2.22.75-1.8L23 14v-3l-2.7-.45-.75-1.8 1.58-2.22-2.66-2.66-2.22 1.58-1.8-.75L14 2z"/><circle cx="12" cy="12.5" r="3"/></svg> Settings</button></div><p><button id="resume" type="button">Resume saved position</button></p>
+<p id="guidance-summary" aria-live="polite"></p>
+<div id="fallback-notice" hidden>
+  <p id="fallback-message" role="status"></p>
+  <div class="buttons"><button id="retry-guidance" type="button">Retry selected guidance</button><button id="use-full" type="button">Use Full Guidance instead</button></div>
+</div>
+<details id="smart-bookmarks" hidden open>
+<summary>Review sections</summary>
+<p>Jump about five seconds before a section to hear it with your current settings.</p>
+<ul id="bookmark-list"></ul>
+</details>
+<dialog id="settings" aria-labelledby="settings-title" aria-describedby="settings-description">
+<form id="settings-form" method="dialog">
+<h2 id="settings-title">Smart Playback settings</h2>
+<p id="settings-description">Change this session without changing your defaults, or save its available choices for future sessions on this browser.</p>
+<fieldset>
+  <legend>Guidance mode</legend>
+  <div class="guidance-modes">
+    <button id="full" type="button" aria-pressed="true"><strong>Full Guidance</strong><span>Play the complete original session.</span></button>
+    <button id="experienced" type="button" aria-pressed="false"><strong>Experienced</strong><span>Use this session’s recommended shortcuts.</span></button>
+    <button id="advanced" type="button" aria-pressed="false" aria-controls="advanced-options"><strong>Advanced</strong><span>Choose each available section.</span></button>
+  </div>
+</fieldset>
+<p id="settings-selection"></p>
+<p id="policy">The Energy Ball lesson keeps both teaching cycles, closure, sleep reinforcement and the full waking return.</p>
+<fieldset id="advanced-options" hidden><legend>Advanced choices for this session</legend>
+<label>Transmutation Box <select id="preparation"></select></label>
+<label>Relaxation <select id="relaxation"></select></label>
+<label>Resonant Tuning <select id="resonant-tuning"></select></label>
+<label>Energy Ball <select id="energy-ball"></select></label>
+<label>Main affirmation <select id="affirmation"></select></label>
+<label>Waking return <select id="return"><option value="full">Full</option><option value="short">Short sensory reorientation</option></select></label>
+</fieldset>
+
+<p id="saving-status" role="status"></p>
+<div class="buttons" id="settings-actions"><button id="apply" type="submit">Apply to this session</button><button id="save-defaults" type="button">Save as my defaults</button><button id="cancel-settings" type="button">Cancel</button></div>
+<button id="clear-defaults" type="button">Reset all saved defaults</button>
+</form>
+</dialog>
+<p id="status" role="status">Loading verified local assets…</p><p id="output"></p><p><a id="download" download>Download original full baseline</a></p>
+<details><summary>How Smart Playback works</summary><p><strong>Full Guidance</strong> plays the original recording, including required steps. <strong>Experienced</strong> selects recommended shortcuts for this session. <strong>Advanced</strong> lets you choose the available sections individually. Open Settings next to Play to switch modes.</p><p><strong>Apply to this session</strong> keeps your defaults unchanged. <strong>Save as my defaults</strong> remembers the available choices on this browser and applies them where supported. Changing guidance pauses playback; press Play when ready. Reset clears saved Smart Playback defaults for all sessions and restores Full here.</p><p>Options vary by recording. The Energy Ball lesson keeps both teaching cycles, Access, sleep reinforcement and the entire descent to Focus 10. Use Advanced to choose available options independently. Quiet Focus offers its own Energy Ball practice and short waking return. Both sessions use one count into Focus 10 after preparation; Short relaxation uses Plus Relax instead of another count. Downloading still gives you the original recording, not a customized mix.</p><p>Locking the screen should not pause the page by itself. If an edited session cannot continue, your selected guidance stays in place. Retry that selection, or switch to Full Guidance yourself. Full Guidance uses the browser’s regular audio player.</p></details>
+<details id="lesson-proof"><summary>What’s in this audition</summary><p>After the Transmutation Box, you’ll hear relaxation, Resonant Tuning, Energy Ball practice, and the main affirmation, then one count into Focus 10. Short relaxation uses Plus Relax instead of a count. Optional steps follow the guidance you select.</p><p>The player keeps both guided cycles in the Energy Ball lesson and keeps the single Focus 10 count with all preparation edits. This is a private listening review, not a new public release.</p></details>
+<audio id="source" preload="metadata" aria-label="Original source"></audio><audio id="insert" preload="metadata" aria-label="Selected short insert"></audio>
+</main><script type="module" src="./eb-app.mjs"></script></body></html>
