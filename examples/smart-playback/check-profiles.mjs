@@ -1,11 +1,30 @@
 import {readFileSync} from 'node:fs';
 import {strict as assert} from 'node:assert';
-import {validate,plan,availableChoices} from './eb-model.mjs';
+import {validate,plan,availableChoices,isPlainCommandPreview} from './eb-model.mjs';
 import {nativeStream} from './eb-player.mjs';
 const all=JSON.parse(readFileSync(process.argv[2]));
 let count=0;
 for(const m of Object.values(all)){
  validate(m);
+ if(isPlainCommandPreview(m)){
+   const standard=plan(m,'B',{'resonant-tuning':'off',affirmation:'off'},false,true);
+   assert.deepEqual(standard.segments.filter(s=>s.window).map(s=>s.asset),['tuning-off']);
+   assert.equal(m.events.filter(e=>e.id==='focus-ten.begin'&&e.required).length,1);
+   for(const role of ['installation','reinforcement','closure','waking-return'])
+      assert(m.events.some(e=>e.required&&e.role===role),role);
+   const impostor=structuredClone(m);
+   impostor.identity.function='OCF-OTHER';
+   impostor.identity.session='ocf-other';
+   assert.throws(()=>validate(impostor),/Optional practice/);
+   const protectedSource=structuredClone(m);
+   const window=protectedSource.windows.find(w=>w.control==='affirmation');
+   protectedSource.events.push({id:'protected',role:'installation',start:window.start,
+     end:window.end,required:true,state:window.inState,measured:true,speech:true});
+   protectedSource.events.sort((a,b)=>a.start-b.start);
+   protectedSource.windows.find(w=>w.control==='resonant-tuning').boundaries.firstResumed='protected';
+   assert.throws(()=>validate(protectedSource),/Optional practice/);
+ }
+
  const controls=[...new Set(m.windows.filter(w=>w.approved).map(w=>w.control))];
  const allCombos=(i=0,toggles={},expected='')=>{
    if(i<controls.length){

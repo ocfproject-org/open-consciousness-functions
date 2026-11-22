@@ -3,10 +3,15 @@
 This is the source for the Energy Ball and Quiet Focus review interface.
 Verified private manifests can also enable Focus, Quick Recharge and Sleep Easy.
 It is a private preview, not a public playback endpoint or a recording release.
-The normal listen/download link continues to use the original Full master.
+For the two companion previews the download uses their original master.
+For basic commands the download follows Standard, not a customized mix.
 
 - The gear opens per-session controls and shows the active guidance preset.
   Defaults are saved only when the listener chooses to save them.
+- Standard for the three basic commands starts with Resonant Tuning and the
+  pre-Focus 10 affirmation off, without Energy Ball prep. Advanced can add
+  either optional stage. Saved choices for a basic command do not carry over
+  to another recording or replace the Energy Ball lesson’s defaults.
 - An audition bookmark seeks to the retained material before a stage and does
   not switch guidance modes.
 - Full, Reminder, and Off are shown only where there is measured support.
@@ -17,7 +22,7 @@ The normal listen/download link continues to use the original Full master.
   Screen-off playback still needs checking on a physical device.
 
 The operator supplies the independently verified `eb-official.json` and its
-same-origin media for the two previews. The Full master, inserts, measured
+same-origin media for the available previews. The Full master, inserts, measured
 timelines, route index and account settings are not included here. Serve only
 a verified, authenticated bundle. Never publish your local review media.
 

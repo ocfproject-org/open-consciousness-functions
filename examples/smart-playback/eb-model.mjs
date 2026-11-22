@@ -3,6 +3,13 @@ const fail=m=>{throw Error(m);};
 const finite=x=>typeof x==='number'&&Number.isFinite(x);
 const exact=(v,keys)=>{if(!v||Array.isArray(v)||Object.keys(v).sort().join('|')!==keys.sort().join('|'))fail('Unexpected manifest fields');};
 const variantControls={'affirmation':['off','reminder','full'],'resonant-tuning':['off','reminder','full'],'energy-ball':['off','reminder','full']};
+const plainCommandIds=new Set(['OCF-FND-002','OCF-FND-003','OCF-SLP-005']);
+export function isPlainCommandPreview(m){
+ const i=m?.identity;
+ return i?.kind==='private-review'&&plainCommandIds.has(i.function)&&i.session===i.function.toLowerCase()
+   &&i.returnPolicy==='sleep'&&!m.events.some(e=>e.role==='energy-ball')
+   &&m.windows.some(w=>w.approved&&w.control==='affirmation'&&w.originalChoice==='off');
+}
 const baseChoice=w=>w.originalChoice||'full';
 export function availableChoices(m,control){
  const rows=m.windows.filter(w=>w.control===control&&w.approved);
@@ -58,7 +65,7 @@ export function validate(m){
   if(['energy-ball','affirmation'].includes(w.control)){
    const namedPreview=awake||(m.identity.kind==='private-review'&&m.identity.function==='OCF-EXP-007'&&m.identity.session==='private-energy-ball'&&m.identity.returnPolicy==='sleep');
    const contents=m.events.filter(e=>e.start<w.end+w.fade&&e.end>w.start-w.fade);
-   if((w.control==='energy-ball'?!awake:!namedPreview)
+   if((w.control==='energy-ball'?!awake:!(namedPreview||(w.originalChoice==='off'&&isPlainCommandPreview(m))))
       ||(w.originalChoice==='off'&&contents.length)
       ||(w.originalChoice==='full'&&(!contents.some(e=>e.speech)||contents.some(e=>e.required||e.role!==w.control||e.start<w.start||e.end>w.end))))
      fail('Optional practice must stay inside its measured private window');

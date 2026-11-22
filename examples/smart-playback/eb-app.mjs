@@ -1,5 +1,5 @@
-import {SmartPlayer} from './eb-player.mjs';
-import {virtualTime,availableChoices,defaultChoice} from './eb-model.mjs';
+import {SmartPlayer,nativeStream} from './eb-player.mjs';
+import {plan,virtualTime,availableChoices,defaultChoice,isPlainCommandPreview} from './eb-model.mjs';
 const $=id=>document.getElementById(id), ids=['preparation','relaxation','resonant-tuning','energy-ball','affirmation','return'];
 const titles={lesson:'Private modular Energy Ball audition',awake:'Quiet Focus awake companion'};
 const recommendations={lesson:{preparation:'short',relaxation:'short','resonant-tuning':'reminder',affirmation:'reminder'},awake:{preparation:'short',relaxation:'short','resonant-tuning':'reminder','energy-ball':'reminder',affirmation:'reminder',return:'short'}};
@@ -20,9 +20,13 @@ function registerCommandPreviews(manifests){
  }
 }
 const STORAGE='ocf.private.smart-playback.defaults.v1';
-const modes=['full','experienced','advanced'];
-const modeLabels={full:'Full Guidance',experienced:'Experienced',advanced:'Advanced'};
+const modes=['standard','full','experienced','advanced'];
+const modeLabels={standard:'Standard',full:'Full Guidance',experienced:'Experienced',advanced:'Advanced'};
 const full=()=>Object.fromEntries(ids.map(id=>[id,player.m?defaultChoice(player.m,id):'full']));
+const plain=()=>isPlainCommandPreview(player.m);
+const initialPreset=()=>plain()?'standard':'full';
+const standard=()=>normalized({'resonant-tuning':'off',affirmation:'off'});
+const initialToggles=()=>plain()?standard():full();
 const dialog=$('settings'), gear=$('settings-open'), seek=$('seek');
 let scrubbing=false, bookmarkPlan=null, bookmarkJump=0;
 const bookmarkNames={
@@ -90,9 +94,9 @@ function readDefaults(){
  try{
    const record=JSON.parse(localStorage.getItem(STORAGE));
    const toggles=Object.fromEntries(ids.filter(id=>['string','boolean'].includes(typeof record?.[id])).map(id=>[id,record[id]]));
-   const presets=Object.fromEntries(Object.keys(titles).filter(k=>modes.includes(record?.presets?.[k])).map(k=>[k,record.presets[k]]));
-   return {toggles,presets};
- }catch{return {toggles:{},presets:{}};}
+   const presets=Object.fromEntries(Object.keys(titles).filter(k=>modes.includes(record?.presets?.[k])&&record.presets[k]!=='standard').map(k=>[k,record.presets[k]]));
+   return {toggles,presets,commandDefaults:record?.commandDefaults??{}};
+ }catch{return {toggles:{},presets:{},commandDefaults:{}};}
 }
 function announce(message){$('status').textContent=message;}
 function isCancellation(error){return error?.name==='AbortError'||/cancelled|canceled/i.test(error?.message||'');}
@@ -112,6 +116,7 @@ function same(a,b){return ids.every(id=>a[id]===b[id]);}
 function defaultMode(toggles,preferred){
  if(preferred==='advanced')return preferred;
  if(preferred==='experienced'&&same(toggles,recommended()))return preferred;
+ if(plain()&&same(toggles,standard()))return 'standard';
  if(same(toggles,full()))return 'full';
  return same(toggles,recommended())?'experienced':'advanced';
 }
@@ -127,7 +132,8 @@ function writeDraft(toggles,preset){
  setButtons(preset);
 }
 function summarize(){
- $('guidance-summary').textContent='Guidance: '+modeLabels[appliedPreset]+(usingDefaults?' · Saved defaults':'');
+ const details=plain()?' · Resonant Tuning: '+appliedToggles['resonant-tuning']+' · Main affirmation: '+appliedToggles.affirmation:'';
+ $('guidance-summary').textContent='Guidance: '+modeLabels[appliedPreset]+(usingDefaults?' · Saved defaults':'')+details;
 }
 function renderInterruption(){
  const interruption=player.interruption;
@@ -160,7 +166,10 @@ $('settings-form').onsubmit=e=>{e.preventDefault();if(ready){apply(readDraft(),d
 $('save-defaults').onclick=()=>{
  if(!ready)return;
  const draft=readDraft(), current=readDefaults();
- const merged={...current.toggles,...Object.fromEntries(supported.map(id=>[id,draft[id]])),presets:{...current.presets,[which]:draftPreset}};
+ const choices=Object.fromEntries(supported.map(id=>[id,draft[id]]));
+ const merged=plain()
+   ?{...current.toggles,presets:current.presets,commandDefaults:{...current.commandDefaults,[which]:{choices,preset:draftPreset}}}
+   :{...current.toggles,...choices,presets:{...current.presets,[which]:draftPreset},commandDefaults:current.commandDefaults};
  try{localStorage.setItem(STORAGE,JSON.stringify(merged));}
  catch{$('saving-status').textContent='This browser could not save your defaults. You can still apply choices to this session.';return;}
  apply(draft,draftPreset,true);dialog.close();announce('Smart Playback defaults saved on this browser.');
@@ -169,11 +178,11 @@ $('clear-defaults').onclick=()=>{
  if(!ready)return;
  try{localStorage.removeItem(STORAGE);}
  catch{$('saving-status').textContent='This browser could not remove your saved defaults.';return;}
- apply(full(),'full');dialog.close();announce('Smart Playback defaults cleared. Full Guidance selected.');
+ const preset=initialPreset();apply(initialToggles(),preset);dialog.close();announce('Smart Playback defaults cleared. '+modeLabels[preset]+' selected.');
 };
 for(const preset of modes)$(preset).onclick=()=>{
  if(preset==='advanced'){setButtons(preset);return;}
- writeDraft(preset==='full'?full():recommended(),preset);
+ writeDraft(preset==='standard'?standard():preset==='full'?full():recommended(),preset);
 };
 $('retry-guidance').onclick=async()=>{
  if(!ready||!player.interruption)return;
@@ -232,11 +241,18 @@ async function show(key){
      $(id).disabled=!supported.includes(id);
      $(id).closest('label').hidden=$(id).disabled;
    }
-   $('notice').textContent=m.notice;$('download').href=new URL(m.assets[0].path,import.meta.url).href;
+   $('notice').textContent=m.notice;
+   const path=plain()?nativeStream(m,plan(m,'B',standard(),false,true),standard()).path:m.assets[0].path;
+   $('download').textContent=plain()?'Download Standard audition':'Download original full baseline';
+   $('download').href=new URL(path,import.meta.url).href;
    ready=true;for(const id of ['seek','play','resume'])$(id).disabled=false;gear.disabled=!supported.length;
-   const saved=readDefaults(), hasSaved=supported.some(id=>id in saved.toggles);
-   const defaults=normalized(saved.toggles);
-   apply(defaults,hasSaved?defaultMode(defaults,saved.presets[key]):'full',hasSaved);
+   $('standard').hidden=!plain();
+   $('full-description').textContent=plain()?'Play Full Resonant Tuning. The affirmation stays off unless you choose it.':'Play the complete original session.';
+   const saved=readDefaults(), entry=plain()?saved.commandDefaults[key]:null;
+   const choices=plain()?(entry?.choices??{}):saved.toggles;
+   const hasSaved=supported.some(id=>Object.hasOwn(choices,id));
+   const defaults=normalized({...initialToggles(),...choices});
+   apply(defaults,hasSaved?defaultMode(defaults,plain()?entry?.preset:saved.presets[key]):initialPreset(),hasSaved);
    player.hasInteracted=false;
  }catch(e){announce('Unavailable: '+e.message);}
  finally{$('which').disabled=false;}
