@@ -32,6 +32,26 @@ _SMALL = "zero one two three four five six seven eight nine ten eleven twelve th
 _TENS = "zero ten twenty thirty forty fifty sixty seventy eighty ninety".split()
 
 
+class SpeechMismatch(OCFError):
+    """A completed local ASR check that did not match the expected words."""
+
+    def __init__(self, *, locale, wav_sha256, text_sha256, first_difference, expected, heard):
+        self.diagnostic = {
+            "locale": locale,
+            "wav_sha256": wav_sha256,
+            "text_sha256": text_sha256,
+            "first_differing_word": first_difference,
+            "expected_words": expected,
+            "heard_words": heard,
+        }
+        super().__init__(
+            f"Whisper review required ({locale}, PCM {wav_sha256[:12]}, "
+            f"text {text_sha256[:12]}): first differing word {first_difference}, "
+            f"expected {expected} words, heard {heard}. "
+            "Review this clip locally before releasing it."
+        )
+
+
 def normalized_words(text: str, language: str) -> tuple[str, ...]:
     text = unicodedata.normalize("NFKC", text).casefold()
     text = re.sub(r"(?<=\w)[’'](?=\w)", "", text)
@@ -225,10 +245,13 @@ class WhisperVerifier:
             offset = next(
                 (i for i, (a, b) in enumerate(zip(want, got)) if a != b), min(len(want), len(got))
             )
-            raise OCFError(
-                f"Whisper review required ({locale}, PCM {audio_hash[:12]}, text {text_hash[:12]}): "
-                f"first differing word {offset + 1}, expected {len(want)} words, heard {len(got)}. "
-                "Review this clip locally before releasing it."
+            raise SpeechMismatch(
+                locale=locale,
+                wav_sha256=audio_hash,
+                text_sha256=text_hash,
+                first_difference=offset + 1,
+                expected=len(want),
+                heard=len(got),
             )
         return {
             "wav_sha256": audio_hash,
@@ -248,16 +271,28 @@ def verification_scope(verifier):
         _active.reset(token)
 
 
-def verify_tts(wav: bytes, text: str, locale: str) -> None:
+def verify_tts(
+    wav: bytes, text: str, locale: str, *, source: str = "unknown", take: int | None = None
+) -> None:
     active = _active.get()
     if active is not None:
         verifier, rows = active
-        rows.append(verifier.verify(wav, text, locale))
+        try:
+            rows.append(verifier.verify(wav, text, locale))
+        except SpeechMismatch as exc:
+            rows.append({**exc.diagnostic, "result": "mismatch", "source": source, "take": take})
+            raise
 
 
 def evidence(verifier, rows: list[dict]) -> dict:
-    if not rows:
+    verified = [row for row in rows if row.get("result") != "mismatch"]
+    rejected = [row for row in rows if row.get("result") == "mismatch"]
+    if not verified:
         raise OCFError(
             "Offline Whisper verified no TTS segments; review recording-source inputs separately"
         )
-    return {"verifier": verifier.identity, "segments": rows}
+    return {
+        "verifier": verifier.identity,
+        "segments": verified,
+        "rejected_attempts": rejected,
+    }

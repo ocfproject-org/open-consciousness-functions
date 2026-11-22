@@ -734,21 +734,39 @@ def render_cue_wav(spec: dict[str, Any], text: str, timeout: int = 60) -> bytes:
 
     reject_unexpanded(text)
 
-    from .speech_verify import verify_tts
+    from .speech_verify import SpeechMismatch, verify_tts
 
     generated = False
     locale = spec.get("locale") or ""
 
     def render() -> bytes:
         nonlocal generated
-        wav = _render_cue_wav(spec, text, timeout)
-        verify_tts(wav, text, locale)
-        generated = True
-        return wav
+        # Retry only native stochastic synthesis and only on a completed
+        # Whisper mismatch. Nothing rejected from this callback enters cache.
+        maximum_takes = 3 if spec.get("name") == "chatterbox-nano" else 1
+        rejected = []
+        for attempt in range(1, maximum_takes + 1):
+            wav = _render_cue_wav(spec, text, timeout)
+            try:
+                verify_tts(wav, text, locale, source="fresh", take=attempt)
+            except SpeechMismatch as exc:
+                rejected.append(exc.diagnostic["wav_sha256"][:12])
+                if attempt == maximum_takes:
+                    previous = ", ".join(rejected)
+                    exc.args = (f"{exc} Fresh takes rejected: {attempt} ({previous}).",)
+                    raise
+            else:
+                generated = True
+                return wav
+        raise AssertionError("fresh speech verification did not finish")
 
     wav = cached_cue(spec, text, render)
     if not generated:
-        verify_tts(wav, text, locale)
+        try:
+            verify_tts(wav, text, locale, source="cache")
+        except SpeechMismatch as exc:
+            exc.args = (f"{exc} Cache hit withheld; no cached audio was replaced.",)
+            raise
     return wav
 
 
