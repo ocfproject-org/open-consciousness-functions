@@ -734,7 +734,22 @@ def render_cue_wav(spec: dict[str, Any], text: str, timeout: int = 60) -> bytes:
 
     reject_unexpanded(text)
 
-    return cached_cue(spec, text, lambda: _render_cue_wav(spec, text, timeout))
+    from .speech_verify import verify_tts
+
+    generated = False
+    locale = spec.get("locale") or ""
+
+    def render() -> bytes:
+        nonlocal generated
+        wav = _render_cue_wav(spec, text, timeout)
+        verify_tts(wav, text, locale)
+        generated = True
+        return wav
+
+    wav = cached_cue(spec, text, render)
+    if not generated:
+        verify_tts(wav, text, locale)
+    return wav
 
 
 def _render_cue_wav(spec: dict[str, Any], text: str, timeout: int = 60) -> bytes:

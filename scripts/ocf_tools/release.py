@@ -262,10 +262,12 @@ def package_release(
     created_at: datetime | None = None,
     lyrics: bool = False,
     guides: str | Path | None = None,
+    verify_speech: bool = True,
 ) -> dict[str, Any]:
     """Render, verify, and publish one complete function release directory."""
     from . import audio_build
     from .indexes import load_yaml_file
+    from .speech_verify import WhisperVerifier, evidence, verification_scope
 
     overrides = metadata_overrides or {}
     permitted_overrides = {
@@ -435,6 +437,7 @@ def package_release(
             transcript_name,
             *listener_names,
             cover_name,
+            *(["speech-verification.json"] if verify_speech else []),
             "manifest.json",
         ],
         "embedded_lyrics": lyrics,
@@ -513,17 +516,33 @@ def package_release(
         from .artwork_content import content_tags, function_artwork_content
 
         tag_values.update(content_tags(function_artwork_content(function_id, requested_locale)))
-        built = audio_build.build(
-            str(audio_manifest["id"]),
-            out_root=render_dir,
-            formats=formats,
-            tag_overrides=tag_values,
-            voice=voice,
-            locale=requested_locale,
-            strict=True,
-            overwrite=True,
-            artwork=artwork_path,
-        )
+        from contextlib import nullcontext
+
+        verifier_context = WhisperVerifier.from_environment() if verify_speech else nullcontext()
+        with verifier_context as verifier, verification_scope(verifier) as speech_rows:
+            built = audio_build.build(
+                str(audio_manifest["id"]),
+                out_root=render_dir,
+                formats=formats,
+                tag_overrides=tag_values,
+                voice=voice,
+                locale=requested_locale,
+                strict=True,
+                overwrite=True,
+                artwork=artwork_path,
+            )
+        speech_artifact = None
+        if verifier is not None:
+            proof_path = stage / "speech-verification.json"
+            proof_path.write_text(
+                json.dumps(evidence(verifier, speech_rows), sort_keys=True) + "\n", encoding="utf-8"
+            )
+            speech_artifact = {
+                "path": proof_path.name,
+                "format": "application/json",
+                "size_bytes": proof_path.stat().st_size,
+                "sha256": sha256_of_file(proof_path),
+            }
         stage_artifacts: dict[str, dict[str, Any]] = {}
         audio_info: dict[str, dict[str, Any]] = {}
         for fmt in formats:
@@ -651,6 +670,8 @@ def package_release(
                 },
             ],
         }
+        if speech_artifact is not None:
+            manifest["artifacts"].append(speech_artifact)
         manifest["artifacts"].extend(guide_artifacts)
         _validate_manifest(manifest)
         _verify_manifest(stage, manifest)

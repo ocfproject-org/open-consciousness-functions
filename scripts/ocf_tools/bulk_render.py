@@ -24,6 +24,7 @@ from .process_status import process_is_alive
 from .progress import observing, report
 from .session_plans import digest, source_plan
 from .speech_cache import STATS, enabled, voice_identity
+from .speech_verify import WhisperVerifier, evidence, verification_scope
 from .utils import OCFError, sha256_of_file, verified_file_hashes, write_text_atomic
 
 _MEMORY_RESERVE = 6 * 1024**3
@@ -171,11 +172,13 @@ def _render_job(
     progress_sink,
     speech_cache_mode="auto",
     speech_cache_scope=None,
+    speech_verifier=None,
 ):
     for attempt in (1, 2):
         try:
             with (
                 observing(progress_sink),
+                verification_scope(speech_verifier) as speech_rows,
                 enabled(speech_cache_mode != "off" and not fresh_synthesis),
             ):
                 result = render_complete_session(
@@ -196,7 +199,14 @@ def _render_job(
                 "output_directory": str(root.resolve()),
                 "manifest_sha256": sha256_of_file(root / "session-report.json"),
             }
-            if not verified_output(receipt, job["key"]):
+            if speech_verifier is not None:
+                proof_path = root / "speech-verification.json"
+                write_text_atomic(
+                    proof_path,
+                    json.dumps(evidence(speech_verifier, speech_rows), sort_keys=True) + "\n",
+                )
+                receipt["speech_verification_sha256"] = sha256_of_file(proof_path)
+            if not verified_output(receipt, job["key"], speech_verifier=speech_verifier):
                 raise OCFError(f"render artifact verification failed for {owner}")
             if job["resume_verified"]:
                 write_text_atomic(job["receipt_path"], json.dumps(receipt, sort_keys=True) + "\n")
@@ -280,12 +290,23 @@ def _persistent_inference_worker(function):
     return guarded
 
 
-def verified_output(receipt: dict, key: str) -> bool:
+def verified_output(receipt: dict, key: str, *, speech_verifier=None) -> bool:
     """Trust only the completed manifest plus every contained artifact checksum."""
     try:
         if receipt["key"] != key:
             return False
         root = Path(receipt["output_directory"]).resolve()
+        if speech_verifier is not None:
+            path = root / "speech-verification.json"
+            if not path.resolve().is_relative_to(root):
+                return False
+            if sha256_of_file(path) != receipt.get("speech_verification_sha256"):
+                return False
+            proof = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(proof, dict):
+                return False
+            if proof.get("verifier") != speech_verifier.identity or not proof.get("segments"):
+                return False
         manifest_path = root / "session-report.json"
         if sha256_of_file(manifest_path) != receipt["manifest_sha256"]:
             return False
@@ -511,8 +532,20 @@ def _candidate_speech_plan(
     }
 
 
+def _default_speech_verification(function):
+    @wraps(function)
+    def guarded(*args, **kwargs):
+        if kwargs.get("dry_run") or not kwargs.get("verify_speech", True):
+            return function(*args, **kwargs)
+        with WhisperVerifier.from_environment() as verifier:
+            return function(*args, **kwargs, _speech_verifier=verifier)
+
+    return guarded
+
+
 @_single_batch_owner
 @verified_file_hashes()
+@_default_speech_verification
 @_persistent_inference_worker
 def render_many(
     function_ids: list[str] | None,
@@ -531,6 +564,8 @@ def render_many(
     progress_callback=None,
     overrides: dict | None = None,
     mix_profile: dict | str | Path | None = None,
+    verify_speech: bool = True,
+    _speech_verifier=None,
 ) -> dict:
     started_at = time.perf_counter()
     from .semantic_dsp import dependency_identity
@@ -646,6 +681,8 @@ def render_many(
             if overrides is not None:
                 identity["overrides"] = overrides
             identity["git_worktree"] = git_identity
+            if _speech_verifier is not None:
+                identity["speech_verification"] = _speech_verifier.identity
             key = digest(identity)
             receipt_path = work_path("cache", "bulk-renders", key + ".json")
             job = {
@@ -659,7 +696,7 @@ def render_many(
                     previous = json.loads(receipt_path.read_text(encoding="utf-8"))
                 except (OSError, ValueError):
                     pass
-                if verified_output(previous, key):
+                if verified_output(previous, key, speech_verifier=_speech_verifier):
                     statuses[owner] = {
                         "function_id": owner,
                         "status": "skipped-verified",
@@ -781,6 +818,7 @@ def render_many(
                     speech_cache_mode=effective_speech_cache_mode,
                     speech_cache_scope=speech_cache_scope,
                     progress_sink=progress_sink,
+                    speech_verifier=_speech_verifier,
                 )
                 active[future] = owner
                 max_active = max(max_active, len(active))

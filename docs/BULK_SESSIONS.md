@@ -196,3 +196,28 @@ For Chatterbox Nano with Farfield, bulk planning resolves the same approved
 as individual rendering. Candidate speech counts and cache identity use the
 selected connected pacing. Supply `--overrides FILE.json` or `--mix-profile FILE`
 to customize the batch; explicit choices participate in verified-resume identity.
+
+## Offline speech verification
+
+Real `audio render-many` and `audio release` runs require offline Whisper
+verification by default; dry runs do not require Whisper. Set
+`OCF_WHISPER_MODEL` to the absolute path of an installed multilingual
+faster-whisper CTranslate2 snapshot. The snapshot must include `model.bin`,
+`config.json`, and `tokenizer.json`. If the OCF interpreter does not have
+faster-whisper, set `OCF_WHISPER_PYTHON` to a local interpreter with it
+installed. The verifier loads only local files, uses CPU INT8, and reuses
+one model process per batch. No audio or transcript is sent to a service.
+
+Whisper hears the actual TTS clip, even on a cache hit, without the expected
+script as a prompt. The check allows equivalent punctuation, case, and
+English number typography. A missing model, omitted or substituted words,
+or an empty transcription blocks approval. Review flagged clips locally;
+a difference can be a recognition error, not necessarily a TTS error.
+An exact match checks words, not delivery, timing, or background quality;
+listening review still matters.
+
+Each verified session writes `speech-verification.json` with the SHA-256 of
+the checked WAV bytes, intended and recognized text, locale, model snapshot,
+verifier implementation, and decoding settings. The report omits the
+transcripts themselves. Resume verifies this report as well as the final
+assets; an old run without verification cannot be resumed as verified.

@@ -161,7 +161,10 @@ included. Passing these engineering checks is not listening approval.
 `python3 scripts/ocf.py audio release <AUDIO_ID|FUNCTION_ID> --artwork
 <approved-cover.png> --locale en-US --format flac --format mp3 --output
 <release-root> --dry-run` previews package paths. Remove `--dry-run` to render
-and publish after verification. A function ID is accepted only when exactly
+and publish after verification. Real packaging requires
+[offline Whisper verification](BULK_SESSIONS.md#offline-speech-verification)
+of generated speech; the checksum-bound verification report accompanies the
+release artifacts. A function ID is accepted only when exactly
 one audio implementation is registered; otherwise select an audio ID. The
 command accepts a PNG/JPEG supplied explicitly by the operator, or an explicitly
 selected `--artwork-theme` for an original OCF candidate cover. Custom artwork
