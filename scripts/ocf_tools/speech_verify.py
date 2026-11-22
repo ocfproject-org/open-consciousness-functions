@@ -27,6 +27,28 @@ SETTINGS = {
     "condition_on_previous_text": False,
     "vad_filter": False,
 }
+# Tested and separately reviewed Focus Eleven closing cue only. This is not
+# an alias: "axis" remains a mismatch, including for both witness decoders.
+_ACCESS_CUE_SHA256 = "2623366803337ddc35f3a67e7718d6081d1b8b1daf492d8769bd388c9864a7e0"
+_ACCESS_EXACT_WORDS = "851a7b8d5d3d7e54479fc2b02e4fa96c81483a2baf8eb093b868b0e35486a1e5"
+_ACCESS_PRIMARY_WRONG_WORDS = "a36fa5f51363516e1bcb897b61dfa9019bb82e7bc352c8a78c32a4cc6a52d0b2"
+_ACCESS_POLICY = "ocf-en-us-focus11-close-dual-witness/1"
+_ACCESS_SNAPSHOTS = {
+    "primary": "ae1b67ef9f88f5cec7f51cdf198a163419c5a7529ae85c7ecac18d5cebd98511",
+    "medium": "42b4fc8318ad06a380dbfbcca75135c6b2f9db219f417cefc72a2d51f6c5ca89",
+    "small": "40f0d23210624a91a050b5f38dc16e7957211c5f44439babd9cdcef5b1eff3bb",
+}
+_ACCESS_RUNTIME = {"faster-whisper": "1.2.1", "ctranslate2": "4.8.2"}
+_ACCESS_SETTINGS = {
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "condition_on_previous_text": False,
+    "vad_filter": False,
+}
+_ACCESS_ENV = ("OCF_WHISPER_ACCESS_MEDIUM_MODEL", "OCF_WHISPER_ACCESS_SMALL_MODEL")
+
 _active: ContextVar = ContextVar("tts_whisper_verification", default=None)
 _SMALL = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
 _TENS = "zero ten twenty thirty forty fifty sixty seventy eighty ninety".split()
@@ -35,7 +57,18 @@ _TENS = "zero ten twenty thirty forty fifty sixty seventy eighty ninety".split()
 class SpeechMismatch(OCFError):
     """A completed local ASR check that did not match the expected words."""
 
-    def __init__(self, *, locale, wav_sha256, text_sha256, first_difference, expected, heard):
+    def __init__(
+        self,
+        *,
+        locale,
+        wav_sha256,
+        text_sha256,
+        first_difference,
+        expected,
+        heard,
+        recognized_sha256=None,
+        normalized_recognized_sha256=None,
+    ):
         self.diagnostic = {
             "locale": locale,
             "wav_sha256": wav_sha256,
@@ -43,6 +76,8 @@ class SpeechMismatch(OCFError):
             "first_differing_word": first_difference,
             "expected_words": expected,
             "heard_words": heard,
+            "recognized_sha256": recognized_sha256,
+            "normalized_recognized_sha256": normalized_recognized_sha256,
         }
         super().__init__(
             f"Whisper review required ({locale}, PCM {wav_sha256[:12]}, "
@@ -50,6 +85,11 @@ class SpeechMismatch(OCFError):
             f"expected {expected} words, heard {heard}. "
             "Review this clip locally before releasing it."
         )
+
+
+def _json_sha256(value) -> str:
+    encoded = json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
 
 
 def normalized_words(text: str, language: str) -> tuple[str, ...]:
@@ -90,11 +130,7 @@ class WhisperVerifier:
             )
         self.python = python or sys.executable
         self._worker = Path(__file__).with_name("speech_verify_worker.py")
-        self._files = tuple(
-            (p.name, p, p.stat().st_size, p.stat().st_mtime_ns)
-            for p in sorted(self.model.iterdir())
-            if p.is_file()
-        )
+        self._files = self._snapshot_files()
         try:
             runtime = json.loads(
                 subprocess.check_output(
@@ -125,6 +161,30 @@ class WhisperVerifier:
         self._memo: dict = {}
         self._unavailable = False
 
+    def _snapshot_files(self):
+        entries = []
+        for path in sorted(self.model.iterdir()):
+            if path.is_file():
+                stat = path.stat()
+                entries.append(
+                    (
+                        path.name,
+                        path,
+                        stat.st_dev,
+                        stat.st_ino,
+                        stat.st_size,
+                        stat.st_mtime_ns,
+                        stat.st_ctime_ns,
+                    )
+                )
+        return tuple(entries)
+
+    def snapshot_current(self) -> bool:
+        try:
+            return self._snapshot_files() == self._files
+        except OSError:
+            return False
+
     @classmethod
     def from_environment(cls):
         raw = os.environ.get("OCF_WHISPER_MODEL")
@@ -134,7 +194,16 @@ class WhisperVerifier:
                 "installed local faster-whisper snapshot and optionally OCF_WHISPER_PYTHON "
                 "to the interpreter with faster-whisper installed"
             )
-        return cls(Path(raw), os.environ.get("OCF_WHISPER_PYTHON"))
+        python = os.environ.get("OCF_WHISPER_PYTHON")
+        medium, small = (os.environ.get(var) for var in _ACCESS_ENV)
+        if bool(medium) != bool(small):
+            raise OCFError("Focus Eleven close witness mode requires both local snapshots")
+        primary = cls(Path(raw), python)
+        if medium and small:
+            return CloseCueWitnessVerifier(
+                primary, cls(Path(medium), python), cls(Path(small), python)
+            )
+        return primary
 
     def __enter__(self):
         return self
@@ -252,6 +321,8 @@ class WhisperVerifier:
                 first_difference=offset + 1,
                 expected=len(want),
                 heard=len(got),
+                recognized_sha256=hashlib.sha256(observed.encode("utf-8")).hexdigest(),
+                normalized_recognized_sha256=_json_sha256(got),
             )
         return {
             "wav_sha256": audio_hash,
@@ -259,6 +330,99 @@ class WhisperVerifier:
             "locale": locale,
             "recognized_sha256": hashlib.sha256(observed.encode("utf-8")).hexdigest(),
         }
+
+
+class CloseCueWitnessVerifier:
+    """Two pinned exact offline witnesses, only for the observed en-US decode."""
+
+    def __init__(self, primary, medium, small):
+        self.decoders = {"primary": primary, "medium": medium, "small": small}
+        self._check_decoders()
+        # Binding the entire actual decoder identities protects batch resume
+        # and keeps the configuration paths themselves out of receipts.
+        self.identity = {
+            "policy": _ACCESS_POLICY,
+            "expected_text_sha256": _ACCESS_CUE_SHA256,
+            "locale": "en-US",
+            "expected_normalized_words_sha256": _ACCESS_EXACT_WORDS,
+            "primary_mismatch_normalized_words_sha256": _ACCESS_PRIMARY_WRONG_WORDS,
+            "decoders": {name: decoder.identity for name, decoder in self.decoders.items()},
+        }
+
+    def _check_decoders(self) -> None:
+        for name, decoder in self.decoders.items():
+            identity = decoder.identity
+            if (
+                not decoder.snapshot_current()
+                or _json_sha256(identity.get("model_sha256")) != _ACCESS_SNAPSHOTS[name]
+                or identity.get("runtime") != _ACCESS_RUNTIME
+                or identity.get("settings") != _ACCESS_SETTINGS
+            ):
+                raise OCFError(
+                    f"Focus Eleven close {name} decoder identity/decode settings do not match the pinned proof"
+                )
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_args):
+        for decoder in self.decoders.values():
+            decoder.close()
+
+    def verify(self, wav: bytes, expected: str, locale: str) -> dict:
+        try:
+            return self.decoders["primary"].verify(wav, expected, locale)
+        except SpeechMismatch as primary:
+            waveform = hashlib.sha256(wav).hexdigest()
+            text = hashlib.sha256(expected.encode("utf-8")).hexdigest()
+            prior = primary.diagnostic
+            if (
+                locale != "en-US"
+                or text != _ACCESS_CUE_SHA256
+                or _json_sha256(normalized_words(expected, "en")) != _ACCESS_EXACT_WORDS
+                or prior["locale"] != locale
+                or prior["wav_sha256"] != waveform
+                or prior["text_sha256"] != text
+                or (prior["first_differing_word"], prior["expected_words"], prior["heard_words"])
+                != (10, 10, 10)
+                or prior["normalized_recognized_sha256"] != _ACCESS_PRIMARY_WRONG_WORDS
+                or not isinstance(prior["recognized_sha256"], str)
+                or not re.fullmatch("[0-9a-f]{64}", prior["recognized_sha256"])
+            ):
+                raise
+            self._check_decoders()
+            witnesses = {}
+            for name in ("medium", "small"):
+                decoder = self.decoders[name]
+                # A witness failure propagates; nothing is accepted on either
+                # a partial quorum or a near-match. No text supplied to ASR.
+                proof = decoder.verify(wav, expected, locale)
+                if (
+                    proof.get("wav_sha256") != waveform
+                    or proof.get("text_sha256") != text
+                    or proof.get("locale") != locale
+                    or not isinstance(proof.get("recognized_sha256"), str)
+                    or not re.fullmatch("[0-9a-f]{64}", proof["recognized_sha256"])
+                ):
+                    raise OCFError("Focus Eleven close witness returned invalid same-byte evidence")
+                witnesses[name] = {
+                    **proof,
+                    "decoder_identity_sha256": _json_sha256(decoder.identity),
+                }
+            self._check_decoders()
+            return {
+                "wav_sha256": waveform,
+                "text_sha256": text,
+                "locale": locale,
+                "recognized_sha256": witnesses["medium"]["recognized_sha256"],
+                "exact_normalized_words_sha256": _ACCESS_EXACT_WORDS,
+                "decoder_policy": _ACCESS_POLICY,
+                "primary_disagreement": {
+                    **prior,
+                    "decoder_identity_sha256": _json_sha256(self.decoders["primary"].identity),
+                },
+                "witnesses": witnesses,
+            }
 
 
 @contextmanager
