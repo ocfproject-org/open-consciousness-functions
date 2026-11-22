@@ -6,7 +6,7 @@ Current titles, commands, and narration resolve only from canonical locale resou
 
 Approved decisions are embedded in canonical locale resources. This report is a derived view, not another source authority. Approval does not imply listening or release approval.
 
-Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 59, "historical_only_command_records": 19, "narration_entries": 384, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 74, "stable_primary_identities": 59, "structured_command_identities": 103}.
+Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 59, "historical_only_command_records": 19, "narration_entries": 397, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 74, "stable_primary_identities": 59, "structured_command_identities": 103}.
 
 ## Approved implementation and remaining catalog decisions
 
