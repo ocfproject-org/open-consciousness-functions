@@ -34,10 +34,11 @@ behavior, not a listening edition or release.
   separate routine and Preparation Learning variants still use 30 seconds.
 
 The sole Energy Ball source is `locales/en-US/OCF-EXP-007-Energy-Ball.yaml`.
-The two optional stages resolve `locales/en-US/optional-preparation-003.yaml`.
-The previous locked templates and rendered audio are unchanged. New shared
-plans use this preparation order. In routine sessions, tuning, Energy Ball
-and the main affirmation remain opt-in.
+The optional tuning and Energy Ball stages resolve
+`locales/en-US/optional-preparation-003.yaml`. New shared plans use this
+preparation order. In routine sessions, tuning, Energy Ball and the main
+affirmation remain opt-in. Older locked templates and rendered audio are
+unchanged.
 
 ## Preview without audio
 
@@ -66,8 +67,8 @@ Run `python scripts/ocf.py audio plan OCF-FND-002 --locale en-US --expand
 --overrides FILE.json`. Remove either item from `enabled_stages` to omit
 that stage without changing the other. Standalone Preparation Learning accepts
 `OCF-PACING-OPTIONAL-PREPARATION-LEARNING-001` in its existing pacing-profile
-option, together with an explicit stage selection; no Preparation Learning
-wording or default changes. On the Energy Ball lesson only, add
+option, together with an explicit stage selection. Its current template
+also uses the corrected preparation order and a single count to Ten. On the Energy Ball lesson only, add
 `"waking_style":"short"` to use the number-One waking instruction after Ten.
 
 With the configured Piper backend and model, this command prepares the private
@@ -103,5 +104,6 @@ In Focus Eleven Access, the cue-association wording now starts:
 > Whenever you choose to draw the whole ball back within, the cue to think is
 > Plus Deflate.
 
-Technical composition checks, proposed narration and a private audition do not
-approve public audio or make any claim about physical effects.
+See the [private Smart Play audition client](../examples/smart-playback/README.md)
+for the supported playback controls. Technical checks and private auditions
+do not approve public audio.
