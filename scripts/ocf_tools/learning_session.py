@@ -127,6 +127,7 @@ def render(
     from .paths import REPO_ROOT, workspace_temp_directory
     from .voice import resolve_backend
     from .voice_packs import persistent_worker
+    from .waking_c1 import policy as waking_c1_policy
 
     resolved_voice = resolve_backend(voice, locale=locale)
     voice_record = next(
@@ -160,6 +161,10 @@ def render(
         native_speed=native_speed,
         pacing_profile=pacing_profile,
     )
+    waking_c1 = waking_c1_policy(planned["document"], learning=True)
+    if not waking_c1:
+        raise OCFError("Preparation Learning has no semantic waking return")
+    planned["waking_c1"] = waking_c1
     profile = load_mix_profile({} if mix_profile is None else mix_profile)
     target = Path(output).expanduser().resolve()
     from .speech_cache import voice_identity
@@ -218,8 +223,11 @@ def render(
                 dsp_profile=planned["dsp"],
                 mix_profile=profile,
                 retain_background_stem=True,
+                waking_c1=waking_c1,
             )
         timing = verify_timing(document, built)
+        if not built.get("waking_c1"):
+            raise OCFError("Learning master has no measured C1 finishing receipt")
         if not built.get("artwork"):
             raise OCFError("Learning build did not retain its standalone cover")
         cover = built["artwork"]
@@ -272,6 +280,7 @@ def render(
             "delivery_names": delivery_names,
             "render_identity_sha256": identity_hash,
             "timing": timing,
+            "waking_c1": built["waking_c1"],
             "measurements": {**probe, **metrics},
             "artifacts": artifacts,
             "human_listening_approved": False,

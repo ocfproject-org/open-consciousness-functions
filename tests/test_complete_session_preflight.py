@@ -68,7 +68,9 @@ def test_missing_tts_voice_is_allowed_for_planning_but_fails_before_output(
     monkeypatch.setattr(complete_session, "_resolve_template", lambda *a: ({"id": "test"}, {}))
     monkeypatch.setattr(session_overrides, "resolve", lambda *a: ({}, {}))
     monkeypatch.setattr(
-        complete_session, "build_complete_session_plan", lambda *a, **k: {"voice_selection": {}}
+        complete_session,
+        "build_complete_session_plan",
+        lambda *a, **k: {"voice_selection": {}, "template_plan": {"segments": []}},
     )
     monkeypatch.setattr(
         complete_session,
