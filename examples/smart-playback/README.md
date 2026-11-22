@@ -1,6 +1,7 @@
 # Private Smart Play audition client
 
 This is the source for the Energy Ball and Quiet Focus review interface.
+Verified private manifests can also enable Focus, Quick Recharge and Sleep Easy.
 It is a private preview, not a public playback endpoint or a recording release.
 The normal listen/download link continues to use the original Full master.
 

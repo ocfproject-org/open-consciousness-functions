@@ -3,6 +3,22 @@ import {virtualTime,availableChoices,defaultChoice} from './eb-model.mjs';
 const $=id=>document.getElementById(id), ids=['preparation','relaxation','resonant-tuning','energy-ball','affirmation','return'];
 const titles={lesson:'Private modular Energy Ball audition',awake:'Quiet Focus awake companion'};
 const recommendations={lesson:{preparation:'short',relaxation:'short','resonant-tuning':'reminder',affirmation:'reminder'},awake:{preparation:'short',relaxation:'short','resonant-tuning':'reminder','energy-ball':'reminder',affirmation:'reminder',return:'short'}};
+// Additional command auditions are published only with an exact private manifest.
+const commandPreviews={
+ focus:['OCF-FND-002','Focus'],
+ 'quick-recharge':['OCF-FND-003','Quick Recharge'],
+ 'sleep-easy':['OCF-SLP-005','Sleep Easy'],
+};
+function registerCommandPreviews(manifests){
+ for(const [key,[functionId,title]] of Object.entries(commandPreviews)){
+   const m=manifests[key];
+   if(m?.identity?.kind!=='private-review'||m.identity.function!==functionId
+      ||m.identity.session!==functionId.toLowerCase())continue;
+   titles[key]=title;
+   recommendations[key]={'resonant-tuning':'reminder'};
+   $('which').append(new Option(title,key));
+ }
+}
 const STORAGE='ocf.private.smart-playback.defaults.v1';
 const modes=['full','experienced','advanced'];
 const modeLabels={full:'Full Guidance',experienced:'Experienced',advanced:'Advanced'};
@@ -193,13 +209,13 @@ async function show(key){
  ready=false;scrubbing=false;bookmarkPlan=null;bookmarkJump++;$('smart-bookmarks').hidden=true;$('which').disabled=true;$('play').disabled=true;gear.disabled=true;player.pause();renderInterruption();
  for(const id of ['seek','resume'])$(id).disabled=true;
  $('download').removeAttribute('href');
- which=key;$('title').textContent=titles[key];$('policy').hidden=true;$('lesson-proof').hidden=key==='awake';
+ which=key;$('title').textContent=titles[key];$('policy').hidden=true;$('lesson-proof').hidden=key!=='lesson';
  try{
    const m=all[key];if(!m||m.identity.kind!=='private-review')throw Error('Not a private audition');
    await player.load(m,{privateReview:true});
    player.toggles=full();
    supported=ids.filter(id=>m.windows.some(w=>w.approved&&w.control===id));
-   $('policy').hidden=key==='awake';
+   $('policy').hidden=key!=='lesson';
    $('policy').textContent=supported.includes('return')
      ?'Both returns keep the full Focus 20 to Focus 10 countdown. Short names C1, cues the thought of One, and allows 30 seconds before the same closer.'
      :'This recording keeps its full waking return.';
@@ -230,7 +246,10 @@ try{
  const r=await fetch('./eb-official.json',{cache:'no-store'});
  if(!r.ok)throw Error('Private manifests unavailable');
  all=await r.json();
- const first=location.hash==='#quiet-focus'?'awake':'lesson';
+ registerCommandPreviews(all);
+ const requested=location.hash.slice(1);
+ const first=requested==='quiet-focus'?'awake'
+   :Object.hasOwn(commandPreviews,requested)&&Object.hasOwn(titles,requested)?requested:'lesson';
  $('which').value=first;
  await show(first);
 }catch(e){announce('Unavailable: '+e.message);$('which').disabled=true;}
