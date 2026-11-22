@@ -20,6 +20,7 @@ from queue import Empty, Queue
 from .utils import OCFError, sha256_of_file
 
 POLICY = "ocf-whisper-exact-words/1"
+DECODE_TIMEOUT_S = 300
 SETTINGS = {
     "beam_size": 5,
     "temperature": 0.0,
@@ -101,7 +102,6 @@ class WhisperVerifier:
         }
         self._process = None
         self._lock = threading.Lock()
-        self._responses: Queue = Queue()
         self._memo: dict = {}
         self._unavailable = False
 
@@ -137,10 +137,15 @@ class WhisperVerifier:
                 self._process.stdout.close()
             self._process = None
 
-    def _reader(self, stream):
-        for line in stream:
-            self._responses.put(line)
-        self._responses.put(None)
+    @staticmethod
+    def _exchange(request, stdin, stdout, responses):
+        try:
+            stdin.write(request + "\n")
+            stdin.flush()
+            line = stdout.readline()
+            responses.put(line or OSError("Whisper worker exited"))
+        except (OSError, ValueError) as exc:
+            responses.put(exc)
 
     def _transcribe(self, wav: bytes, language: str) -> str:
         if self._unavailable:
@@ -162,21 +167,28 @@ class WhisperVerifier:
                     encoding="utf-8",
                     env={**os.environ, "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1"},
                 )
-                assert self._process.stdout is not None
-                threading.Thread(
-                    target=self._reader, args=(self._process.stdout,), daemon=True
-                ).start()
-            assert self._process.stdin is not None
+            assert self._process.stdin is not None and self._process.stdout is not None
             request = {
                 "wav": base64.b64encode(wav).decode("ascii"),
                 "language": language,
                 "settings": SETTINGS,
             }
-            self._process.stdin.write(json.dumps(request) + "\n")
-            self._process.stdin.flush()
-            line = self._responses.get(timeout=300)
-            if line is None:
-                raise OSError("Whisper worker exited")
+            responses: Queue = Queue(maxsize=1)
+            # A stalled worker can fill stdin's pipe before it reads the large
+            # PCM request. Bound the write and response together.
+            threading.Thread(
+                target=self._exchange,
+                args=(json.dumps(request), self._process.stdin, self._process.stdout, responses),
+                daemon=True,
+            ).start()
+            try:
+                line = responses.get(timeout=DECODE_TIMEOUT_S)
+            except Empty as exc:
+                raise OSError(
+                    "Whisper worker timed out transmitting or transcribing a clip"
+                ) from exc
+            if isinstance(line, Exception):
+                raise line
             response = json.loads(line)
             if response.get("error"):
                 raise OSError(str(response["error"]))
@@ -186,7 +198,7 @@ class WhisperVerifier:
             if self.identity["runtime"] != runtime:
                 raise ValueError("Whisper runtime changed during verification")
             return response["text"]
-        except (Empty, OSError, ValueError) as exc:
+        except (OSError, ValueError) as exc:
             self._unavailable = True
             self.close()
             raise OCFError(f"Offline Whisper failed; no audio approved: {exc}") from exc

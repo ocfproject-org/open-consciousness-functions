@@ -103,3 +103,18 @@ def test_external_worker_protocol_stays_running_and_fails_closed(monkeypatch, tm
         with pytest.raises(OCFError, match="unavailable for this render"):
             v.verify(b"third", "Go now", "en-US")
     assert process.poll() is not None
+
+
+@pytest.mark.integration
+def test_external_worker_timeout_covers_large_blocked_pipe_write(monkeypatch, tmp_path):
+    for file in ("config.json", "model.bin", "tokenizer.json"):
+        (tmp_path / file).write_bytes(b"fixture")
+    monkeypatch.setattr(speech_verify.subprocess, "check_output", lambda *_, **__: "{}")
+    monkeypatch.setattr(speech_verify, "DECODE_TIMEOUT_S", 0.15)
+    sleeper = tmp_path / "sleeper.py"
+    sleeper.write_text("import time\ntime.sleep(60)\n")
+    verifier = speech_verify.WhisperVerifier(tmp_path)
+    verifier._worker = sleeper
+    with verifier, pytest.raises(OCFError, match="timed out transmitting or transcribing"):
+        verifier.verify(b"x" * 2_000_000, "Go now", "en-US")
+    assert verifier._process is None
