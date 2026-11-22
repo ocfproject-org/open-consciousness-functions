@@ -495,6 +495,27 @@ supervision, cleanup, UI/mobile work or the proposed function concepts below.
       promotion. Do not apply a Focus 11 preference to Focus 10, sleep,
       transitions, or closure by inheritance.
 
+## Session guidance and feedback on the website
+
+- [ ] Add a plain-language FAQ and glossary for the Transmutation Box,
+      Resonant Tuning, Energy Ball, affirmations, and Focus levels. Explain
+      what each part of a typical session is for, what is optional, and when
+      guidance varies by edition. Put the deeper explanations on the
+      website rather than adding length to the guided audio.
+- [ ] Show a clear, prominent **Waking return** or **Sleep ending** label
+      on each function or session page, by playable edition where endings
+      vary. Derive the label from the session's actual ending configuration:
+      waking returns guide the listener back to ordinary alertness; sleep
+      endings have no wake-up prompt. Show it before the listener hits Play.
+
+- [ ] Add a **Report an audio issue** link beside each published recording.
+      Open a GitHub issue prefilled with the function ID, release and audio
+      version, voice, locale, format, and public recording URL. Let the listener
+      add a timestamp and describe what they heard before sending. Offer a
+      private contact option if a maintained address is available; make clear
+      that GitHub issues are public. Do not attach listening history or send
+      anything automatically.
+
 ## Non-goals
 
 - Redistribute or reconstruct Monroe audio.
