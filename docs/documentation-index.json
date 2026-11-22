@@ -3560,7 +3560,7 @@
       "purpose": "Private Smart Play audition client",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "a3f8c317f642e0cb0c0d9018f4cf30ac44a1e2107750aaa15e4ba18d2eed6e7d",
+      "sha256": "89e30480d06555e3e6b158bf087c227fe2c2c9a6d199bee4760814c04e9a1481",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3578,7 +3578,7 @@
       "purpose": "Private modular Energy Ball audition",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "af25caf1ada15d66d6f25ca8c71011115bb5377cec079efc383364472b13d40d",
+      "sha256": "4ab71b76a2897659510856e2ed9de8172a82979b1e4f37c6fc8df3af9804d72a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
