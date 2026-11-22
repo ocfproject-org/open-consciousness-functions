@@ -110,8 +110,23 @@ def apply(
         waking = next((s for s in sections if s["id"] == "return"), None)
         if not waking or "focus20-close" in removed:
             raise OCFError("split waking return requires sleep descent and waking stages")
-        waking["stage"] = variants[waking_style or "full"]
-        waking["role"] = f"split Focus 20 waking return ({waking_style or 'full'})"
+        style = waking_style or "full"
+        waking["stage"] = variants[style]
+        waking["role"] = f"split Focus 20 waking return ({style})"
+        # The legacy selector covers one cue in the standard return. A split
+        # return distributes that material across the section instead.
+        auditions = pacing.get("pacing_auditions", {})
+        if "waking-countdown-20-to-1" in auditions:
+            del auditions["waking-countdown-20-to-1"]
+            auditions[f"waking-return-{style}"] = {
+                "label": (
+                    "Full waking return: Twenty to One"
+                    if style == "full"
+                    else "Short waking return: Twenty to Ten, then think of One"
+                ),
+                "file_name": f"waking-return-{style}",
+                "stage_id": "return",
+            }
     elif waking_style is not None:
         raise OCFError("waking style is unavailable for this function")
     select_relaxation(sections, options.get("relaxation", "long"))

@@ -324,6 +324,49 @@ def test_optional_short_wake_keeps_twenty_to_ten_and_shared_closing(energy):
     assert policy(short)["closer_event_ids"] == ["function-closer.block"]
 
 
+@pytest.mark.parametrize("style", ["full", "short"])
+def test_split_wake_writes_measured_pacing_auditions(tmp_path, style):
+    import wave
+
+    from ocf_tools.pacing_auditions import write_timing_reports_and_auditions
+
+    plan = build_complete_session_plan(ID, overrides={"waking_style": style})
+    document = resolve_document(plan["template_plan"], "en-US", strict=True)
+    events = list(iter_events(document))
+    timings = schedule_timeline(
+        document, {event["id"]: 2.0 for event in events if event.get("text")}
+    )
+    duration = max(row["end"] for row in timings)
+    master = tmp_path / "master.wav"
+    with wave.open(str(master), "wb") as wav:
+        wav.setparams((2, 2, 200, 0, "NONE", "not compressed"))
+        wav.writeframes(b"\x00" * (4 * (int(duration * 200) + 1)))
+    rows = {row["id"]: row for row in timings}
+    _, excerpts, _ = write_timing_reports_and_auditions(
+        stage=tmp_path,
+        master_path=master,
+        function_id=ID,
+        title="Energy Ball",
+        locale="en-US",
+        voice={},
+        session_pacing={},
+        pacing_profile=plan["resolved_pacing_profile"],
+        document=document,
+        render={"event_timing": timings, "narration_timing": {"duration_seconds": 0}},
+        session_duration=duration,
+        sample_rate=200,
+    )
+    assert set(excerpts) == {
+        "relaxation-1-to-10",
+        "focus20-countdown-10-to-20",
+        f"waking-return-{style}",
+    }
+    expected_span = rows["return.complete"]["end"] - rows["return.descent"]["at"]
+    waking = excerpts[f"waking-return-{style}"]
+    assert waking["duration_seconds"] == pytest.approx(expected_span, abs=0.011)
+    assert ("think of One" in waking["label"]) == (style == "short")
+
+
 def test_short_wake_requires_an_eligible_sleep_descent():
     with pytest.raises(OCFError, match="waking style is unavailable"):
         build_complete_session_plan("OCF-FND-002", overrides={"waking_style": "short"})

@@ -16,7 +16,7 @@
   "locale": "en-US",
   "overrides": {
     "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
-    "pacing_sha256": "47f122097c5c209ce3c78798f67e42d1173b6bca015f815eec3d2be8d2dec82c",
+    "pacing_sha256": "92dde1db53b5a0abc33fb3d2b4d7e34cee37a0b5a21be1aec53a4fcc4044abca",
     "provenance": {
       "enabled_stages": "function-binding",
       "pacing_profile": "function-binding"
