@@ -381,7 +381,7 @@ Review: Preserve the canonical cue and command semantics; localize terminology s
 Title: Energy Ball. Title status: reviewed.
 Display: `PLUS-INFLATE`. Complete speech: **Plus Inflate**.
 
-Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.
+Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.
 
 Translator context: OCF-original cues; no predecessor or compatibility alias.
 

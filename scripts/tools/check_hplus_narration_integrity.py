@@ -49,9 +49,11 @@ def check(root: Path = REPO_ROOT) -> list[str]:
         sequence = data.get("narration", {}).get("sequence", [])
         expected = [("opener", 1), ("function-body", 4), ("closer", 1)]
         if function_id == "OCF-EXP-007":
-            # The Energy Ball lesson has two guided practices before its
-            # four passive associations. Keep ordinary function checks strict.
-            expected[1:1] = [("guided-practice", 1)] * 2
+            # The two Energy Ball practices and optional withdrawal occupy
+            # fourteen speech-relative sections. Access closing preparation is
+            # scoped to this lesson. Ordinary function schedules stay strict.
+            expected[1:1] = [("guided-practice", 1)] * 14
+            expected.insert(-1, ("access-close-preparation", 1))
         actual = [(row.get("role"), row.get("repetitions")) for row in sequence]
         if actual != expected:
             problems.append(f"{function_id}: narration schedule must be {expected}")

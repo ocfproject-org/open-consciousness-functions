@@ -6,7 +6,7 @@ Current titles, commands, and narration resolve only from canonical locale resou
 
 Approved decisions are embedded in canonical locale resources. This report is a derived view, not another source authority. Approval does not imply listening or release approval.
 
-Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 59, "historical_only_command_records": 19, "narration_entries": 415, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 74, "stable_primary_identities": 59, "structured_command_identities": 103}.
+Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 59, "historical_only_command_records": 19, "narration_entries": 428, "remaining_metadata_teaching_differences": 0, "resolved_active_spoken_cues": 74, "stable_primary_identities": 59, "structured_command_identities": 103}.
 
 ## Approved implementation and remaining catalog decisions
 
@@ -286,7 +286,7 @@ Counts: {"active_records": 84, "approved_candidate_narrations": 4, "functions": 
 
 - Current display cue: `PLUS-INFLATE`; complete teaching: **Plus Inflate**.
 - Status: CANONICAL YAML; review flags retained separately; title: reviewed.
-- Purpose: Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.
+- Purpose: Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.
 - Pending title: None.
 - Other unselected proposal: null
 

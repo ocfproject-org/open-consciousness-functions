@@ -2802,7 +2802,7 @@
       "purpose": "Source-English terminology sheet",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "01873e3038ce6ab63c430653d36413940ce39424dee1dce5deb8cd151b5df724",
+      "sha256": "7e892d7cce746257b6180dc993cff92c9a4ba170f9904573ae00076b117dbe91",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3262,7 +3262,7 @@
       "purpose": "Current title–cue decisions and implementation",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "4a61ed8c12596ae3aecf14dcb08d633c4f1dc248d525c7cf9603eadb7863dd11",
+      "sha256": "1c269483d7a332077e33548650f7807e5f630c2434eee8a596d9a4a0d263f556",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

@@ -22,10 +22,17 @@ def test_all_canonical_resources_have_valid_structure_and_four_pass_schedules():
         expected = [("opener", 1), ("function-body", 4), ("closer", 1)]
         sequence = data["narration"]["sequence"]
         if data["function_id"] == "OCF-EXP-007":
-            expected[1:1] = [("guided-practice", 1), ("guided-practice", 1)]
-            assert [row["key"].rsplit(".", 1)[-1] for row in sequence[1:3]] == [
+            expected[1:1] = [("guided-practice", 1)] * 14
+            expected.insert(-1, ("access-close-preparation", 1))
+            assert [row["key"].rsplit(".", 1)[-1] for row in sequence[1:15]] == [
                 "guided-first",
+                *(f"guided-healing-{i}" for i in range(2, 7)),
+                "guided-healing-start",
+                "guided-withdrawal",
                 "guided-second",
+                *(f"guided-protection-{i}" for i in range(2, 5)),
+                "guided-protection-start",
+                "guided-continuation",
             ]
         assert [(row["role"], row["repetitions"]) for row in sequence] == expected
         assert "contract_sha256" not in data.get("localization", {})
