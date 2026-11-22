@@ -89,6 +89,16 @@ def apply(
     sections = template["sections"]
     focus = next((s for s in sections if s["id"] == "focus-ten"), None)
     reordered = template["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-008"
+    if reordered:
+        # The forward optional resources are resolved only if the stage is
+        # selected. Explicit pacing variants (such as the two-minute lesson
+        # tuning) retain precedence over these routine defaults.
+        routine_variants = {
+            "energy-ball": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003",
+            "resonant-tuning": "OCF-TPL-STAGE-HPLUS-TUNING-003",
+        }
+        for option, stage in routine_variants.items():
+            pacing.setdefault("optional_stage_variants", {}).setdefault(option, stage)
     if (
         reordered
         and focus
@@ -124,9 +134,7 @@ def apply(
             "id": "guided-practice",
             "stage": practice,
             "after": "$previous",
-            "role": "cue-free guided Energy Ball before Focus Ten"
-            if reordered
-            else "guided practice at Focus Ten before Open Access",
+            "role": "Two guided Energy Ball practices before Open Access teaches the Energy Ball cues.",
         }
         if reordered:
             sections.insert(ids.index("energy-ball"), guided)

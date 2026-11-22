@@ -36,13 +36,25 @@ entries:
       Rest here for a moment before we continue.
   hplus.optional.energy-ball.v3.begin:
     status: reviewed
-    version: 1.1.0
+    version: 2.0.0
     text: |-
-      To establish your Energy Ball, mentally say Plus Inflate.
+      To establish or renew your Energy Ball, think or say in your mind, "{{ cue.id.OCF-CMD-EXP-007-PRIMARY }}."
+    cue_template:
+      shared_resource: hplus.optional.energy-ball.v3.begin
+      allowed:
+      - cue.id.OCF-CMD-EXP-007-PRIMARY
+      external_commands:
+        OCF-CMD-EXP-007-PRIMARY: OCF-EXP-007
   hplus.optional.energy-ball.v3.complete:
     status: reviewed
-    version: 1.1.0
+    version: 2.0.0
     text: |-
-      Let it remain around you as we continue.
+      Let it remain around you at the size and with the qualities you choose as we continue.
 
-      Whenever you choose to draw the whole ball back within, mentally say Plus Deflate.
+      Whenever you choose to draw the whole ball back within, think or say in your mind, "{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}."
+    cue_template:
+      shared_resource: hplus.optional.energy-ball.v3.complete
+      allowed:
+      - cue.id.OCF-CMD-EXP-007-DEFLATE
+      external_commands:
+        OCF-CMD-EXP-007-DEFLATE: OCF-EXP-007

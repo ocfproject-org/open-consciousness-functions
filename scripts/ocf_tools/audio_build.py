@@ -380,6 +380,7 @@ def _mix_master_ffmpeg(
     background_path: Path | None,
     out_path: Path,
     *,
+    sample_rate: int = DEFAULT_SAMPLE_RATE,
     background_gain: float = 0.25,
     speech_gain: float = 1.0,
     speech_gain_windows: list[tuple[float, float, float]] | None = None,
@@ -403,7 +404,7 @@ def _mix_master_ffmpeg(
             background_path,
             out_path,
             mix_profile=mix_profile,
-            sample_rate=DEFAULT_SAMPLE_RATE,
+            sample_rate=sample_rate,
             background_gain=background_gain,
             speech_gain=speech_gain,
             speech_gain_windows=speech_gain_windows,
@@ -429,7 +430,7 @@ def _mix_master_ffmpeg(
         "-map",
         "[out]",
         "-ar",
-        str(DEFAULT_SAMPLE_RATE),
+        str(sample_rate),
         "-ac",
         "2",
         str(out_path),
@@ -977,6 +978,7 @@ def build(
             profile,
             bg_path,
             scratch_dir=stage_dir,
+            sample_rate=sample_rate,
             **(
                 {"state_gains_db": mix_profile["semantic_state_gains_db"]}
                 if mix_profile and mix_profile.get("semantic_state_gains_db")
@@ -1013,6 +1015,7 @@ def build(
             narration_wav,
             bg_path,
             base_master,
+            sample_rate=sample_rate,
             background_gain=background_gain,
             speech_gain=float(voice_gain),
             speech_gain_windows=gain_windows,
@@ -1087,8 +1090,9 @@ def build(
         "checksum_sha256": sha256_of_file(master_path),
     }
     narration_check = sha256_of_file(narration_wav)
-    master_rate = DEFAULT_SAMPLE_RATE if bg_path is not None else narration_meta["sample_rate"]
-    master_channels = 2 if bg_path is not None else 1
+    stereo_mix = bg_path is not None or mix_profile is not None
+    master_rate = sample_rate if stereo_mix else narration_meta["sample_rate"]
+    master_channels = 2 if stereo_mix else 1
     try:
         with wave.open(str(master_path), "rb") as reader:
             master_rate = reader.getframerate()
@@ -1151,6 +1155,11 @@ def build(
                     "pacing": cue.get("pacing"),
                     "spoken_units": cue.get("spoken_units", []),
                     **(
+                        {"trimmed_padding": cue["trimmed_padding"]}
+                        if "trimmed_padding" in cue
+                        else {}
+                    ),
+                    **(
                         {"narration_source": cue["narration_source"]}
                         if "narration_source" in cue
                         else {}
@@ -1210,7 +1219,7 @@ def build(
         render_doc["background_stem"] = {
             "file": background_stem_path.name,
             "format": "wav",
-            "sample_rate": DEFAULT_SAMPLE_RATE,
+            "sample_rate": sample_rate if state_program is not None else DEFAULT_SAMPLE_RATE,
             "channels": 2,
             "checksum_sha256": sha256_of_file(background_stem_path),
         }

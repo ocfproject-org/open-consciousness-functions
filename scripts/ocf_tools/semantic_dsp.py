@@ -499,7 +499,9 @@ def _required_state_end(program: dict, state: str) -> float:
     return float(program["duration_s"]) if current == state else required_end
 
 
-def _pad_state_stem(stem: Path, duration: float, scratch_dir: Path, ffmpeg: str) -> Path:
+def _pad_state_stem(
+    stem: Path, duration: float, scratch_dir: Path, ffmpeg: str, sample_rate: int = 44100
+) -> Path:
     """Pad only the non-audible tail of a finite state stem with digital silence."""
     padded = scratch_dir / f"{stem.stem}-padded-{duration:.3f}.wav"
     _command(
@@ -512,7 +514,7 @@ def _pad_state_stem(stem: Path, duration: float, scratch_dir: Path, ffmpeg: str)
             "-af",
             f"apad=whole_dur={duration:.9f},atrim=duration={duration:.9f}",
             "-ar",
-            "44100",
+            str(sample_rate),
             "-ac",
             "2",
             "-c:a",
@@ -540,6 +542,7 @@ def render_program(
     render_state: Any = None,
     scratch_dir: Path | None = None,
     state_gains_db: dict[str, float] | None = None,
+    sample_rate: int = 44100,
 ) -> dict:
     """Render state stems with fixed optional gains before their transition envelopes."""
     program = plan_program(doc, event_timing, duration, profile)
@@ -637,7 +640,7 @@ def render_program(
                     f"required audible interval ({required_end:.3f}s); refusing a silent "
                     "loop/fallback"
                 )
-            stem = _pad_state_stem(stem, duration, scratch_dir, ffmpeg)
+            stem = _pad_state_stem(stem, duration, scratch_dir, ffmpeg, sample_rate)
             selection["duration_padding"] = {
                 "source_duration_s": state_duration,
                 "required_audible_end_s": required_end,
@@ -669,15 +672,15 @@ def render_program(
         envelope = _gain_expression(program, state)
         fixed_gain = state_gains.get(state, 1.0)
         chains.append(
-            f"[{index}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=duration={duration:.9f},volume={calibration * fixed_gain:.9f},aeval='val(0)*({envelope})|val(1)*({envelope})'[s{index}]"
+            f"[{index}:a]aresample={sample_rate},aformat=channel_layouts=stereo,atrim=duration={duration:.9f},volume={calibration * fixed_gain:.9f},aeval='val(0)*({envelope})|val(1)*({envelope})'[s{index}]"
         )
     if not sources:
-        command += ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", str(duration)]
+        command += ["-f", "lavfi", "-i", f"anullsrc=r={sample_rate}:cl=stereo", "-t", str(duration)]
     else:
         mix = "".join(f"[s{i}]" for i in range(len(sources)))
         chains.append(f"{mix}amix=inputs={len(sources)}:duration=longest:normalize=0[out]")
         command += ["-filter_complex", ";".join(chains), "-map", "[out]"]
-    command += ["-ar", "44100", "-ac", "2", "-c:a", "pcm_s24le", str(output)]
+    command += ["-ar", str(sample_rate), "-ac", "2", "-c:a", "pcm_s24le", str(output)]
     _command(command)
     commands.append(command)
     program["external_commands"] = commands

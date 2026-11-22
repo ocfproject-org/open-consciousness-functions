@@ -409,6 +409,28 @@ def build_complete_session_plan(
             "required complete-session narration slot(s) are unbound: " + ", ".join(sorted(missing))
         )
 
+    access_close_preparations = [
+        item["key"]
+        for item in binding.get("narration_plan", {}).get("sequence", [])
+        if item["role"] == "access-close-preparation"
+    ]
+    if access_close_preparations:
+        if len(access_close_preparations) != 1:
+            raise OCFError("complete session has ambiguous Access closing preparation")
+        close = next((s for s in template_record["sections"] if s["id"] == "close"), None)
+        if close is None:
+            raise OCFError("function-specific closing preparation requires the Access close stage")
+        close.setdefault("narration", {})["prepare"] = {
+            "narration_key": access_close_preparations[0]
+        }
+        # Scoped measured edges: no extra TTS pad may extend the approved
+        # final training pause or the separate waking-to-closer interval.
+        for section in template_record["sections"]:
+            if section["id"] in {"focus-ten", "affirmation"}:
+                section["trim_speech_padding"] = "first"
+            elif section["id"] == "function-closer":
+                section["trim_speech_padding"] = True
+
     doc = compose(
         template_record,
         {"affirmation": options["custom_affirmation"]} if "custom_affirmation" in options else {},
@@ -450,7 +472,10 @@ def build_complete_session_plan(
                 "complete session includes inline text rather than bound canonical narration"
             )
         entry, _resolution = catalog.resource(
-            str(item["key"]), str(item["locale"]), domain=NARRATION_DOMAIN, fallback=False
+            str(item["key"]),
+            str(item.get("cue_lookup_locale") or item["locale"]),
+            domain=NARRATION_DOMAIN,
+            fallback=False,
         )
         if entry.status not in {"reviewed", "canonical"}:
             raise OCFError(

@@ -64,6 +64,29 @@ See [Energy Ball and optional preparation](ENERGY_BALL.md) for the reviewed
 versions and explicit profile selection. Other functions keep existing
 defaults.
 
+The Energy Ball short waking successor sets `completion_total_s: 30` on a
+silent return-completion marker. Composition subtracts its selected
+`pauses.waking_complete_s`, marker pauses and anchor offsets from that
+total. The remainder follows the reorientation speech. The closer must
+follow the single intervening marker at event end; a combination exceeding
+the total fails before synthesis. This does not affect the full return or
+the separate stereo C1 tail after the closer.
+
+For exact measured holds in this lesson, authored events can opt into
+`timing.trim_speech_padding: true`. This trims only quiet outer padding
+from synthesized speech before sample placement, not internal cadence or
+the speech cache. Section-level `trim_speech_padding: true` selects all
+spoken events; `first` selects only the first. Both sides of an exact hold
+must be selected. The measured timing includes the number of padding
+frames removed, and the existing unselected narration and historical
+templates retain their original timing.
+
+For complete sessions, `audio render --rate` carries the selected output
+sample rate through the composed bed, stereo master and any listener
+encodes derived from the master. The 44.1 kHz default is unchanged.
+The speech-cache rate in the render report is the actual synthesis rate,
+which can differ from the requested output rate.
+
 ## Automatic Nano and Farfield defaults
 
 New complete sessions using Chatterbox Nano with Farfield state backgrounds now

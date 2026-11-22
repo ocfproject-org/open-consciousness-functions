@@ -1194,6 +1194,15 @@ def validate_locale_packs(catalog: LocaleCatalog | None = None) -> ValidationRes
                     else:
                         catalog.resource(key, locale, domain=entry.domain, fallback=False)
                 else:
+                    from .cue_templates import has_external_references
+
+                    source = canonical.get(key) if canonical else None
+                    if (
+                        source is not None
+                        and source.locale != entry.locale
+                        and has_external_references(source.cue_template)
+                    ):
+                        catalog.resource(key, locale, domain=entry.domain, fallback=False)
                     message_variables(entry.text)
             except (LocalizationError, OCFError) as exc:
                 result.add("error", "locale-message-syntax", f"{key}: {exc}", where)

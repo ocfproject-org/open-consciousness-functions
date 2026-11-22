@@ -68,7 +68,7 @@ def test_portable_collection_can_be_relocated_without_external_links(tmp_path, c
     result = listening_guides.validate_portable_collection(relocated)
     assert (result["files"], result["markdown"], result["html"], result["pdf"]) == (205, 67, 67, 68)
     assert result["individual_function_pdfs"] == 59
-    assert result["extracted_canonical_resources"] == 184
+    assert result["extracted_canonical_resources"] == 197
     record = load_function_by_id("OCF-EXP-007")
     pdf = relocated / "functions" / (listening_guides.function_guide_stem(record) + ".pdf")
     narration = " ".join(page.extract_text() for page in PdfReader(pdf).pages)

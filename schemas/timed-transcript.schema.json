@@ -342,6 +342,10 @@
      "pause_after": {
       "type": "number", "minimum": 0
      },
+     "trim_speech_padding": {
+      "type": "boolean",
+      "description": "Trim leading and trailing quiet TTS padding before measured outer speech anchors. Does not retime internal narration units."
+     },
      "narration_pacing_units": {
       "description": "Resolved locale-specific sentence unit roles for rendering; unit count must match punctuation segmentation.",
       "type": "array", "minItems": 1,

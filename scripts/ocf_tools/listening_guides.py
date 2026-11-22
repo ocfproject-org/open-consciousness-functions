@@ -425,7 +425,20 @@ def _reader_narration_heading(key, role=None):
         "closer": "Closing",
         "access-close": "Access channel closure",
         "guided-first": "First guided practice",
+        "guided-healing-2": "Healing practice: forming the ball",
+        "guided-healing-3": "Healing practice: expanding the ball",
+        "guided-healing-4": "Healing practice: turning the ball",
+        "guided-healing-5": "Healing practice: choosing an appearance",
+        "guided-healing-6": "Healing practice: choosing a quality",
+        "guided-healing-start": "Healing practice: beginning the interval",
+        "guided-withdrawal": "Optional withdrawal practice",
         "guided-second": "Second guided practice",
+        "guided-protection-2": "Protection practice: choosing an intention",
+        "guided-protection-3": "Protection practice: choosing the extent",
+        "guided-protection-4": "Protection practice: including a larger space",
+        "guided-protection-start": "Protection practice: beginning the interval",
+        "guided-continuation": "Continuing with the ball",
+        "access-close-prepare": "Preparing to close Access",
         "waking-descent": "Waking descent toward Ten",
         "waking-ten": "Waking midpoint",
         "waking-count-to-one": "Full waking countdown",
@@ -446,6 +459,17 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
         documentation["short_description"]["text"],
         "",
     ]
+    related = []
+    for relation in documentation["related_functions"]:
+        if relation.get("presentation") == "recommended-learning":
+            target = relation["title"]["text"]
+            href = _guide_href(relation["function_id"], target)
+            lines += [
+                f"Recommended learning: [{target}]({href}), {relation['description']['text']}",
+                "",
+            ]
+        else:
+            related.append(relation)
     for command in documentation["commands"]:
         if command["role"] in {"access-close", "legacy-alias"}:
             continue
@@ -488,11 +512,11 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
             lines += ["## " + heading, ""]
             lines += ["- " + value["text"] for value in documentation[field]]
             lines += [""]
-    if documentation["related_functions"]:
+    if related:
         lines += ["## Related functions", ""]
         lines += [
             f"- [{row['title']['text']}]({_guide_href(row['function_id'], row['title']['text'])}). {row['description']['text']}"
-            for row in documentation["related_functions"]
+            for row in related
         ]
         lines += [""]
     if record.safety_notes:

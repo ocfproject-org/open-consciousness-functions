@@ -454,7 +454,10 @@ def test_renderer_requires_both_verification_tools(monkeypatch, tmp_path, availa
         )
 
 
-def test_disabled_renderer_emits_deterministic_silence_without_state_sources(monkeypatch, tmp_path):
+@pytest.mark.parametrize("rate", [44100, 48000])
+def test_disabled_renderer_emits_deterministic_silence_without_state_sources(
+    monkeypatch, tmp_path, rate
+):
     from ocf_tools import semantic_dsp
 
     profile = load_profile("OCF-DSP-DEVELOPMENT-V4-001")
@@ -469,12 +472,15 @@ def test_disabled_renderer_emits_deterministic_silence_without_state_sources(mon
     monkeypatch.setattr(semantic_dsp, "_sha", lambda path: "a" * 64)
 
     output = tmp_path / "nested" / "silence.wav"
-    program = semantic_dsp.render_program(state_doc(), TIMES, 100, profile, output)
+    program = semantic_dsp.render_program(
+        state_doc(), TIMES, 100, profile, output, sample_rate=rate
+    )
 
     assert output.parent.is_dir()
     assert program["output_sha256"] == "a" * 64
     assert len(program["external_commands"]) == 1
-    assert "anullsrc=r=44100:cl=stereo" in commands[0]
+    assert f"anullsrc=r={rate}:cl=stereo" in commands[0]
+    assert commands[0][commands[0].index("-ar") + 1] == str(rate)
     assert commands[0][-1] == str(output)
 
 

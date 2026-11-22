@@ -16,7 +16,7 @@ from ocf_tools.models import FunctionRecord
 def test_relationship_decisions_are_provenance_and_current_canonical_text():
     assert review.verify() == []
     rows = review.record()["decisions"]
-    assert len(rows) == 33
+    assert len(rows) == 34
     for row in rows:
         owner = load_function_by_id(row["source_id"])
         projection = next(
@@ -86,3 +86,27 @@ def test_reader_guides_adopt_relationships_and_separate_historical_lookup():
         text = guides.function_guide_markdown(record)
         assert "(draft)" not in text and "Draft optional suggestions" not in text
         assert "## Access Close" not in text and "### Access channel closure" not in text
+
+
+@pytest.mark.integration
+def test_energy_ball_learning_recommendation_resolves_its_optional_canonical_target():
+    owner = load_function_by_id("OCF-EXP-007")
+    catalog = LocaleCatalog()
+    document = _function_document(owner, "en-US", catalog)
+    (relation,) = document["related_functions"]
+    assert relation["function_id"] == "OCF-FND-001"
+    assert relation["title"]["text"] == "Access to Energy"
+    assert relation["dependency"] == "optional"
+    assert relation["relationship_type"] == "complementary"
+    assert relation["presentation"] == "recommended-learning"
+
+    text = guides.reader_function_markdown(
+        owner, {"locale": "en-US"}, documentation=document, narration_sections=[]
+    )
+    needle = (
+        "Recommended learning: [Access to Energy]"
+        "(OCF-FND-001%20-%20Access-to-Energy.md), for the optional energizing practice."
+    )
+    assert text.index(document["short_description"]["text"]) < text.index(needle)
+    assert text.index(needle) < text.index("## Activation")
+    assert text.count("optional energizing practice.") == 1

@@ -26,6 +26,7 @@ def _decisions(localized):
             "dependency": decision["dependency"],
             "reciprocal_approved": decision["reciprocal_approved"],
             "decision_source": decision["decision_source"],
+            **({"presentation": decision["presentation"]} if "presentation" in decision else {}),
         }
         for decision in localized.get("record_metadata", {}).get("editorial_decisions", [])
         if decision.get("kind") == "approved-relationship"
@@ -71,6 +72,10 @@ def relationships(owner, *, root=REPO_ROOT, snapshot=None):
                 + decision["relationship_id"]
             )
         relation = candidates[0]
+        if decision.get("presentation") and (
+            decision["relationship_type"] != "complementary" or decision["dependency"] != "optional"
+        ):
+            raise OCFError("a learning recommendation must be optional and complementary")
         result.append(
             {
                 **decision,

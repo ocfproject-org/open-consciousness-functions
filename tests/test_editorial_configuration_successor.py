@@ -28,15 +28,18 @@ def test_historical_026_lock_excludes_editorial_inputs_from_025():
 
 
 def test_current_defaults_lock_is_independent_of_locale_and_editorial_yaml():
-    path = REPO_ROOT / "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-026.json"
+    path = REPO_ROOT / "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-027.json"
     predecessor = json.loads(path.read_text(encoding="utf-8"))
     lock = audio_defaults.check_lock()
-
-    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-027"
+    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
     assert audio_defaults.PREVIOUS_BASELINE_ID == predecessor["id"]
-    assert lock["profiles"] == {
-        **predecessor["profiles"],
-        "template": {"id": "OCF-TPL-SESSION-HPLUS-LOCKED-008", "version": "8.0.0"},
+    assert lock["profiles"] == predecessor["profiles"]
+    extra = set(lock["files"]) - predecessor["files"].keys()
+    assert {p.rsplit("/", 1)[1] for p in extra} == {
+        "OCF-PACING-ENERGY-BALL-LEARNING-003.yaml",
+        "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-002.yaml",
+        "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-003.yaml",
+        "OCF-TPL-STAGE-HPLUS-TUNING-005.yaml",
     }
     assert lock["human_listening_approval"] is None and lock["release_ready"] is False
     assert lock["excluded_predecessor_files"] == []
@@ -45,7 +48,7 @@ def test_current_defaults_lock_is_independent_of_locale_and_editorial_yaml():
 
 
 def test_predecessor_audio_default_versions_remain_available():
-    for number in range(1, 27):
+    for number in range(1, 28):
         path = REPO_ROOT / "audio/defaults" / f"OCF-AUDIO-DEFAULTS-HPLUS-{number:03}.json"
         assert path.is_file(), path.name
         baseline = json.loads(path.read_text(encoding="utf-8"))

@@ -67,9 +67,14 @@ def test_command_map_csv_has_55():
 
 def test_command_review_report_groups():
     text = command_review_markdown()
-    assert "Commands retained unchanged" in text
+    assert "Commands cataloged as unchanged" in text
     assert "Commands still requiring review" in text
     assert "Commands normalized" in text
+    designs, review_queue = text.split("## Commands still requiring review")
+    assert "`OCF-EXP-007`" in designs.split("## Other approved command designs")[1]
+    assert "`OCF-EXP-007`" not in review_queue
+    assert "`OCF-PRF-006`" in review_queue
+    assert "| approved |" not in review_queue
 
 
 def test_matrices_render():

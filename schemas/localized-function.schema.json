@@ -772,6 +772,10 @@
               "dependency": {
                 "enum": ["optional"]
               },
+              "presentation": {
+                "description": "Highlight an approved optional complementary learning recommendation next to the outcome description.",
+                "const": "recommended-learning"
+              },
               "reciprocal_approved": {
                 "type": "boolean"
               }

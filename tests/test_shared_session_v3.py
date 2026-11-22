@@ -225,7 +225,7 @@ def test_locale_resources_bindings_and_frozen_rc1_remain_well_formed():
         compose(load_template("OCF-TPL-SESSION-PREP-LEARN-001"), {}, title="Frozen RC1"), "en-US"
     )
     assert any(event.get("text") for event in iter_events(rc1))
-    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-027"
+    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
 
 
 def test_long_form_revision_is_an_explicit_manifest_alias_without_duplicate_resource():

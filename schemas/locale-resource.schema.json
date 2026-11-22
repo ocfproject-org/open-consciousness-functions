@@ -44,7 +44,31 @@
         "requires_events": {"type": "array", "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$"}, "uniqueItems": true},
         "required_pronunciation": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
         "text": { "type": "string", "minLength": 1 },
-        "cue_template": {"type": "object", "additionalProperties": false, "required": ["allowed"], "oneOf": [{"required": ["function_id"]}, {"required": ["shared_state"]}], "properties": {"function_id": {"type": "string", "pattern": "^OCF-[A-Z]{3}-[0-9]{3}$"}, "shared_state": {"const": "OCF-SHARED-STATE-CUES-001"}, "allowed": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}},
+        "cue_template": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allowed"],
+          "oneOf": [{"required": ["function_id"]}, {"required": ["shared_state"]}, {"required": ["shared_resource"]}],
+          "allOf": [
+            {"if": {"required": ["shared_state"]}, "then": {"not": {"anyOf": [{"required": ["external_commands"]}, {"required": ["external_titles"]}]}}}
+          ],
+          "properties": {
+            "function_id": {"type": "string", "pattern": "^OCF-[A-Z]{3}-[0-9]{3}$"},
+            "shared_state": {"const": "OCF-SHARED-STATE-CUES-001"},
+            "shared_resource": {"type": "string", "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$"},
+            "allowed": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+            "external_commands": {
+              "type": "object",
+              "propertyNames": {"pattern": "^OCF-CMD-[A-Z0-9-]+$"},
+              "additionalProperties": {"type": "string", "pattern": "^OCF-[A-Z]{3}-[0-9]{3}$"}
+            },
+            "external_titles": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "pattern": "^OCF-[A-Z]{3}-[0-9]{3}$"}
+            }
+          }
+        },
         "variables": {
           "description": "Declared template variables. Must list exactly the variables the message uses. A caller that supplies a different set is a validation error, which is what catches missing, unknown, and cross-locale mismatched variables.",
           "type": "array",

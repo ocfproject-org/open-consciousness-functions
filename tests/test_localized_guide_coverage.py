@@ -34,7 +34,7 @@ def test_all_function_resources_appear_with_preparation_closure_explicitly_exclu
         "waking-alert",
         "waking-reorient",
     }
-    assert count == 184
+    assert count == 197
 
 
 def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline_html():

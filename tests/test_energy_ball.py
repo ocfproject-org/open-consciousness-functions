@@ -82,7 +82,22 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     events = list(iter_events(doc))
     by_id = {event["id"]: event for event in events}
     practice = [event for event in events if event["id"].startswith("guided-practice.")]
-    assert [e["id"] for e in practice] == ["guided-practice.detailed", "guided-practice.rehearsal"]
+    assert [e["id"].split(".", maxsplit=1)[1] for e in practice] == [
+        "detailed",
+        "healing-2",
+        "healing-3",
+        "healing-4",
+        "healing-5",
+        "healing-6",
+        "healing-start",
+        "withdrawal",
+        "rehearsal",
+        "protection-2",
+        "protection-3",
+        "protection-4",
+        "protection-start",
+        "continuation",
+    ]
     cue_mentions = [
         event["id"]
         for event in events
@@ -94,13 +109,22 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
         "sleep20-body.pass-1",
         "sleep20-body.pass-2",
     ]
-    for event in practice:
-        assert "mentally say" not in event["text"].lower()
-        assert "heart center" in event["text"]
-        assert "invisible field" in event["text"]
-    assert len(practice[0]["text"]) > 3 * len(practice[1]["text"])
+    assert [event["id"] for event in events if "Plus Energize" in event.get("text", "")] == [
+        "guided-practice.healing-start",
+        "guided-practice.protection-2",
+    ]
+    for key in ("guided-practice.healing-start", "guided-practice.protection-2"):
+        text = by_id[key]["text"]
+        assert text.index("first choose the purpose or result") < text.index("Plus Energize")
+        assert text.index("Plus Energize") < text.index("Hold your intended result")
+    assert "invisible field" not in "\n".join(e["text"] for e in practice)
+    assert (
+        "If it is still around you, continue with the same ball."
+        in by_id["guided-practice.rehearsal"]["text"]
+    )
     assert by_id["guided-practice.detailed"]["after"] == "resonant-tuning.complete"
-    assert by_id["focus-ten.begin"]["after"] == "guided-practice.rehearsal"
+    assert by_id["focus-ten.begin"]["after"] == "guided-practice.continuation"
+    assert "Your Energy Ball can remain around you as you close" in by_id["close.prepare"]["text"]
     assert by_id["open.prepare"]["after"] == "focus-ten.ready"
     bodies = [event for event in events if event.get("slot_ref") == "function_body"]
     assert [event["id"] for event in bodies] == [
@@ -111,16 +135,19 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     ]
     assert len({event["text"] for event in bodies}) == 1
     assert all(
-        "establish your Energy Ball, the cue to think is Plus Inflate" in event["text"]
-        and "draw the whole ball back within, the cue to think is Plus Deflate" in event["text"]
+        'think or say in your mind, "Plus Inflate."' in event["text"]
+        and 'think or say in your mind, "Plus Deflate."' in event["text"]
+        and "renews the same ball at the size and with the qualities you have chosen"
+        in event["text"]
         for event in bodies
     )
     assert next(s for s in doc["sections"] if s["id"] == "sleep20-body")["gain_db"] == -24
     assert sum(event.get("slot_ref") == "opener" for event in events) == 1
     assert sum(event.get("slot_ref") == "closer" for event in events) == 1
-    assert "Let the ball remain deflated" in next(
-        event["text"] for event in events if event.get("slot_ref") == "closer"
-    )
+    closer = by_id["function-closer.block"]["text"]
+    assert "Your Energy Ball can remain around you" in closer
+    assert closer.count("remain available") == 1
+    assert not any(cue in closer for cue in ("Plus Inflate", "Plus Deflate"))
     assert not any(event["id"].startswith("energy-ball.") for event in events)
     assert not plan["approval_state"]["release_ready"]
 
@@ -129,33 +156,33 @@ def test_energy_ball_realized_cadence_and_editability(energy):
     _, doc = energy
     durations = {e["id"]: 1.0 for e in iter_events(doc) if e.get("text")}
     practice = [e for e in iter_events(doc) if e["id"].startswith("guided-practice.")]
-    all_landings = []
+    waits = [5] * 6 + [60, 10] + [5] * 4 + [60, 5]
+    assert [event["timing"]["pause_after"] for event in practice] == waits
+    assert all(event["timing"]["trim_speech_padding"] for event in practice)
     for event in practice:
         pacing = plan_event_pacing(doc, event)
         assert pacing["rate_scale"] == 1
         units = pacing["units"]
-        all_landings.extend(u["pause_after_s"] for u in units if u["kind"] == "landing")
-        assert all(u["kind"] != "independent-practice" for u in units)
+        assert all("[" not in unit["text"] for unit in units)
         durations[event["id"]] = (
             sum(1.0 + u["pause_after_s"] for u in units if u["pause_inside_event"]) + 1.0
         )
-    assert all_landings == [5] * 15
     rows = {row["id"]: row for row in schedule_timeline(doc, durations)}
     for before, after, gap in (
         ("focus11-body.pass-1", "focus11-body.pass-2", 15),
         ("sleep20-body.pass-1", "sleep20-body.pass-2", 60),
     ):
         assert rows[after]["at"] - rows[before]["end"] == pytest.approx(gap)
-    for before, after in (
-        ("guided-practice.detailed", "guided-practice.rehearsal"),
-        ("guided-practice.rehearsal", "focus-ten.begin"),
+    practice_ids = [event["id"] for event in practice]
+    for before, after, wait in zip(
+        practice_ids, [*practice_ids[1:], "focus-ten.begin"], waits, strict=True
     ):
-        assert rows[after]["at"] - rows[before]["at"] - durations[before] == pytest.approx(5)
+        assert rows[after]["at"] - rows[before]["at"] - durations[before] == pytest.approx(wait)
     assert rows["resonant-tuning.complete"]["at"] - rows["resonant-tuning.begin"]["end"] == 120
     assert rows["resonant-tuning.practice"]["end"] - rows["resonant-tuning.practice"]["at"] == 120
     edited = deepcopy(practice[0])
-    edited["text"] = edited["text"].replace("warm and bright", "steady and bright")
-    assert any("steady and bright" in u["text"] for u in plan_event_pacing(doc, edited)["units"])
+    edited["text"] = edited["text"].replace("small sun", "steady light")
+    assert any("steady light" in u["text"] for u in plan_event_pacing(doc, edited)["units"])
 
 
 @pytest.mark.parametrize("tuning", [True, False])
@@ -216,11 +243,11 @@ def test_existing_defaults_and_independent_optional_stage_editions():
     events = {event["id"]: event for event in iter_events(doc)}
     assert events["energy-ball.begin"]["after"] == "resonant-tuning.complete"
     assert events["energy-ball.begin"]["text"] == (
-        "To establish your Energy Ball, mentally say Plus Inflate."
+        'To establish or renew your Energy Ball, think or say in your mind, "Plus Inflate."'
     )
     assert events["energy-ball.complete"]["text"] == (
-        "Let it remain around you as we continue.\n\n"
-        "Whenever you choose to draw the whole ball back within, mentally say Plus Deflate."
+        "Let it remain around you at the size and with the qualities you choose as we continue.\n\n"
+        'Whenever you choose to draw the whole ball back within, think or say in your mind, "Plus Deflate."'
     )
     assert events["energy-ball.practice"]["timing"]["pause_after"] == 15
     assert events["resonant-tuning.practice"]["timing"]["pause_after"] == 30
@@ -291,7 +318,7 @@ def test_optional_short_wake_keeps_twenty_to_ten_and_shared_closing(energy):
         scheduled["function-closer.block"]["at"] - scheduled["return.reorient"]["at"] - duration
     ) == pytest.approx(30.0)
     assert "renewed energy" in full_events["return.alert"]["text"]
-    assert "refreshed awareness" in full_events["function-closer.block"]["text"]
+    assert "Take a moment before you continue." in full_events["function-closer.block"]["text"]
     assert policy(full) == policy(short)
     assert policy(short)["tail_after_speech_seconds"] == 30
     assert policy(short)["closer_event_ids"] == ["function-closer.block"]
@@ -317,7 +344,7 @@ def test_affirmation_follows_guided_ball_before_focus_ten():
     ]
     doc = resolve_document(plan["template_plan"], "en-US", strict=True)
     events = {e["id"]: e for e in iter_events(doc)}
-    assert events["affirmation.begin"]["after"] == "guided-practice.rehearsal"
+    assert events["affirmation.begin"]["after"] == "guided-practice.continuation"
     assert events["focus-ten.begin"]["after"] == "affirmation.complete"
     assert events["open.prepare"]["after"] == "focus-ten.ready"
 

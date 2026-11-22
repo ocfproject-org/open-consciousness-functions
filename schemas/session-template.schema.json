@@ -195,6 +195,10 @@
         "repeat_gap_pacing_key": {"type": "string", "minLength": 1, "description": "Pacing-policy pause between repeated whole-block utterances."},
         "pause_after_pacing_key": {"type": "string", "minLength": 1, "description": "Pacing-policy pause applied after a whole-block utterance."},
         "pause_before_s": {"type": "number", "minimum": 0},
+        "trim_speech_padding": {
+          "enum": [true, "first"],
+          "description": "Trim quiet outer synthesis padding on all spoken events in this section, or on the first spoken event only."
+        },
         "repeat": {
           "type": "integer",
           "minimum": 1,
@@ -248,6 +252,10 @@
         "dsp": {"$ref": "https://open-consciousness-functions.dev/schemas/timed-transcript.schema.json#/definitions/dspSpec"},
         "timing": {"$ref": "https://open-consciousness-functions.dev/schemas/timed-transcript.schema.json#/definitions/timingSpec"},
         "pacing_key": {"type": "string", "minLength": 1},
+        "completion_total_s": {
+          "type": "number", "exclusiveMinimum": 0,
+          "description": "On a silent short waking completion event, keep this total from the preceding reorientation speech end through the next closer start, after applying the completion pacing."
+        },
         "narration_required": {"type": "boolean"},
         "intentional_repeat": {"type": "boolean"},
         "after": {"type": "string", "minLength": 1},

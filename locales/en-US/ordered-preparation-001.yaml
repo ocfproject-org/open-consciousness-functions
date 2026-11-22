@@ -309,12 +309,18 @@ entries:
       revision.
   hplus.shared.settling.brief:
     status: reviewed
-    version: 1.0.0
-    text: >-
-      If you have learned the Relax function, take a comfortable breath in, hold it
-      gently, and think or say Plus Relax. Then breathe out and let your body soften.
-      If you have not learned it yet, just breathe comfortably and give yourself
-      a moment to settle.
+    version: 2.0.0
+    text: |-
+      If you have learned the {{ function.title.OCF-FND-004 }} function, take a comfortable breath in, hold it gently, and think or say in your mind, "{{ cue.id.OCF-CMD-FND-004-PRIMARY }}." Then breathe out and let your body soften. If you have not learned it yet, just breathe comfortably and give yourself a moment to settle.
+    cue_template:
+      shared_resource: hplus.shared.settling.brief
+      allowed:
+      - cue.id.OCF-CMD-FND-004-PRIMARY
+      - function.title.OCF-FND-004
+      external_commands:
+        OCF-CMD-FND-004-PRIMARY: OCF-FND-004
+      external_titles:
+      - OCF-FND-004
   hplus.shared.focus10.approach:
     status: reviewed
     version: 1.0.0

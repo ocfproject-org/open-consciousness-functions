@@ -1,60 +1,96 @@
 # Energy Ball and optional preparation
 
-The owner's November 21, 2026 approval authorizes English wording and command
-behavior, not a listening edition or release.
+The owner's November 22, 2026 approval covers English wording and command
+behavior, not listening approval or a public audio release.
 
-- **Energy Ball (`OCF-EXP-007`)**: mentally say **Plus Inflate**
-  (`OCF-CMD-EXP-007-PRIMARY`) to establish one ball or reaffirm its current
-  extent. Mentally say **Plus Deflate** (`OCF-CMD-EXP-007-DEFLATE`) to draw the
-  entire current ball back within. Learned availability remains. Neither cue
-  requires a target, special breathing, a movement, or a particular sensation.
-- After the opener and body comfort, the order is Transmutation Box, unnumbered
-  relaxation, optional Resonant Tuning, Energy Ball, optional main affirmation,
-  and one slow count into Focus Ten. The detailed practice and the shorter
-  rehearsal each establish and draw the ball back within once, without asking
-  the listener to think or say a cue. The independent third practice is no
-  longer in the lesson.
-- Open Access after those two guided cycles. The Focus Eleven function body
-  teaches which mental cue establishes the ball and which draws it back within.
-  Hear the same brief cue association twice at Focus Eleven and twice in the
-  quieter sleep reinforcement, without another physical or imagined exercise.
-  Access closes before the sleep reinforcement. Both waking options count all
-  the way from Twenty down to Ten, becoming more awake and alert. Full guidance
-  continues from Nine to One. The short option asks the listener to think of
-  the number One to return to C1, normal waking consciousness, without invoking
-  a separate OCF command. A 30-second quiet interval precedes the closer.
-  Both use the same cue-free closer and stereo C1 finish. The ball ends deflated.
-- The routine reminder (`OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003`) is for people
-  who already learned it. It prompts Plus Inflate without repeating the guided
-  sequence and leaves the ball established for the next exercise, with a brief
-  Plus Deflate reminder for when the listener chooses to draw it back within.
-- Resonant Tuning (`OCF-TPL-STAGE-HPLUS-TUNING-003`) is reusable on its own.
-  After “Begin now,” the existing bed continues for two minutes in this lesson
-  before completion narration, with no added chant or required pitch. The
-  separate routine and Preparation Learning variants still use 30 seconds.
+Form a spinning Energy Ball around yourself or a chosen space, fill it with
+qualities you choose, and keep it around you or draw it back within.
 
-The sole Energy Ball source is `locales/en-US/OCF-EXP-007-Energy-Ball.yaml`.
-The optional tuning and Energy Ball stages resolve
-`locales/en-US/optional-preparation-003.yaml`. New shared plans use this
-preparation order. In routine sessions, tuning, Energy Ball and the main
-affirmation remain opt-in. Older locked templates and rendered audio are
-unchanged.
+Recommended learning: Access to Energy, for the optional energizing practice.
+That is an optional recommendation, not a prerequisite or a claim that an
+official recording is available.
 
-## Preview without audio
+## Use and sequence
 
-The Energy Ball binding selects `OCF-PACING-ENERGY-BALL-LEARNING-002` and opts
-into Resonant Tuning before the ball practice, outside repeated reinforcement.
-Full, unnumbered relaxation is the default:
+- Deliberately think or say in your mind **Plus Inflate**
+  (`OCF-CMD-EXP-007-PRIMARY`) to establish the familiar personal ball when
+  none is active. Repeating it renews the same active ball at its chosen
+  extent and with its chosen qualities; it does not stack a second ball,
+  reset an enlarged ball, or enlarge it automatically.
+- Deliberately think or say in your mind **Plus Deflate**
+  (`OCF-CMD-EXP-007-DEFLATE`) to draw the entire current ball back within,
+  including any enlarged extent. This ends only that application; learned
+  availability and unrelated functions remain unchanged. Merely hearing or
+  reading either cue does not invoke it.
+- Ordinary cue use does not require an image, sensation, special breath,
+  posture, movement, or eye closure. Size, color, visibility, speed, and
+  imagined qualities remain choices. Neither speed nor invisibility is a
+  requirement. The guided intentions do not promise physical protection or
+  treatment.
+- After body comfort, the order is Transmutation Box, unnumbered relaxation,
+  Resonant Tuning, both guided practices, optional main affirmation, and one
+  count into Focus Ten. The first practice focuses on healing and restoration,
+  and the second on protection and balance. Each has a full minute after its
+  “Begin now.” The ten-second exercise between them offers withdrawal or
+  continued rest. If you withdrew, the second practice restores the ball;
+  otherwise it continues with the same ball. These are practice intentions,
+  not command modes.
+- The guided practices omit the new Inflate and Deflate prompts. Both invite
+  people who have learned Access to Energy to choose their intended result,
+  mentally use **Plus Energize**, and hold the result in awareness. It is
+  entirely optional and does not close the separate Access Channel.
+- Open Access teaches the Energy Ball cues with the same short association
+  body twice at Focus Eleven and twice during quieter sleep reinforcement.
+  Closing Access allows the ball to stay around you. Sleep entry, waking,
+  the closer, and playback completion do not deflate it or apply a blanket
+  Release. The ball may remain active beyond playback, but its application is
+  temporary, not permanent.
+- The reusable Energy Ball reminder is for listeners who have already
+  learned the practice. It offers a 15-second interval after Plus Inflate
+  and a brief voluntary Plus Deflate reminder. It does not repeat the lesson
+  or require Energize. The lesson excludes the routine reminder.
+- The lesson uses 120 seconds of Resonant Tuning after “Begin now,” followed
+  by its completion narration. The standalone and reusable preparation
+  versions use 30 seconds. All preserve the existing background without
+  a recorded chant or required pitch.
+
+The sole Energy Ball function source is
+`locales/en-US/OCF-EXP-007-Energy-Ball.yaml`. The recommendation resolves the
+localized title of `OCF-FND-001`, Access to Energy, by stable reference. See
+[Symbolic cues](SYMBOLIC_CUES.md) for declaring external command references and
+identifying their canonical spoken locales. Shared relaxation and routine
+reminders explicitly reference the owners of their cues, never the host
+function. Optional stages do not require their spoken references when they are
+not selected.
+
+## Preview and render privately
+
+Preview the approved default composition with no synthesis:
 
 ```sh
 python scripts/ocf.py audio plan OCF-EXP-007 --locale en-US --expand
 ```
 
-Short preparation relaxation opens with **Plus Relax** for listeners who have
-already learned the function; it does not count. To select it, put
-`{"relaxation":"short"}` in an overrides file. To omit tuning independently, add `"enabled_stages":[]`. Use
-`--overrides FILE.json`. To preview a routine that uses both new reusable
-stages, create an overrides file such as:
+Full unnumbered relaxation is the default. Short relaxation prompts
+**Plus Relax** for listeners who have already learned it, plus a settling
+fallback for anyone else. It never replaces the later One-to-Ten count.
+Select short relaxation and short waking in an overrides file:
+
+```json
+{
+  "relaxation": "short",
+  "waking_style": "short"
+}
+```
+
+Either choice can be specified independently. The lesson selects Resonant
+Tuning unless `"enabled_stages": []` is specified. To include the original
+main affirmation after the two practices and before the count, select
+`"affirmation": "OCF"` and add `"affirmation"` to the explicitly enabled
+stages; retain `"resonant-tuning"` in that list if wanted. Standard routine
+sessions leave tuning, Energy Ball and affirmation off unless selected.
+A routine such as Focus can explicitly select the reusable 30-second tuning
+and Energy Ball reminder:
 
 ```json
 {
@@ -63,47 +99,50 @@ stages, create an overrides file such as:
 }
 ```
 
-Run `python scripts/ocf.py audio plan OCF-FND-002 --locale en-US --expand
---overrides FILE.json`. Remove either item from `enabled_stages` to omit
-that stage without changing the other. Standalone Preparation Learning accepts
-`OCF-PACING-OPTIONAL-PREPARATION-LEARNING-001` in its existing pacing-profile
-option, together with an explicit stage selection. Its current template
-also uses the corrected preparation order and a single count to Ten. On the Energy Ball lesson only, add
-`"waking_style":"short"` to use the number-One waking instruction after Ten.
+Use `--overrides FILE.json` with the expanded preview or private render,
+substituting `OCF-FND-002` for the Focus routine. Standalone Preparation
+Learning can select the same reusable 30-second tuning using
+`OCF-PACING-OPTIONAL-PREPARATION-LEARNING-001` and explicit stage selection.
 
-With the configured Piper backend and model, this command prepares the private
-audition plan without synthesizing anything:
+For complete local auditions, choose a new output directory for each edition.
+Set `OCF_REVIEW_VOICE`, `OCF_REVIEW_MIX`, and `OCF_REVIEW_RATE` to the
+confirmed local review configuration. Save the short JSON above as
+`short-guidance.json`. First run both commands with `--dry-run` and confirm
+that the resolved plans use the intended voice, mix, rate, and overrides.
+Start actual synthesis only after both plans pass that check:
 
 ```sh
 python scripts/ocf.py audio render OCF-EXP-007 --locale en-US \
-  --voice OCF-VOICE-0002 --output .ocf-work/energy-ball-audition --dry-run
+  --voice "$OCF_REVIEW_VOICE" --mix-profile "$OCF_REVIEW_MIX" \
+  --rate "$OCF_REVIEW_RATE" --output .ocf-work/energy-ball-full-audition
+python scripts/ocf.py audio render OCF-EXP-007 --locale en-US \
+  --voice "$OCF_REVIEW_VOICE" --mix-profile "$OCF_REVIEW_MIX" \
+  --rate "$OCF_REVIEW_RATE" --overrides short-guidance.json \
+  --output .ocf-work/energy-ball-short-audition
 ```
 
-Actual rendering is a separate operation. Existing enabled voice profiles
-and local prerequisites still apply; the stock source does not register the
-local Mike voice profile.
+Use the same confirmed settings for both editions. Neither tuning nor the
+two practice intervals is shortened in the short edition. Follow the
+[audio pipeline's private edition export procedure](AUDIO_PIPELINE.md)
+for lossless FLAC and 320 kbps CBR MP3. Private review credentials, voice
+assets, and audition outputs are not included in Git.
 
-## Timing and audition review
+## Timing and listening review
 
-The detailed first exercise and shorter rehearsal remove the cue prompts
-while retaining 15 five-second landings. Five seconds are reserved after
-each exercise. The restructured lesson omits the third practice and its holds;
-Git history and the prior private audition preserve that version.
+The first practice has six five-second pauses before its minute-long
+practice. The second has four such pauses before its own minute-long
+practice and a further five-second pause after the continuation. Each
+60-second interval starts after the measured end of “Begin now.” The
+optional withdrawal interval remains ten seconds whether or not the
+listener withdraws. Training is never repeated in later passes.
 
-The short option retains the same Focus Ten recognition after the single
-count, with a four-second pause after each number. The stand-alone two-minute
-tuning interval is separate from its narration and only applies to this lesson.
-Normal Access closure and sleep levels are unchanged. Both waking styles
-retain the descent through Ten; the shared closer anchors the same C1
-fade and 30-second tail after the last measured words.
-
-In Focus Eleven Access, the cue-association wording now starts:
-
-> From now on, whenever you choose to establish your Energy Ball, the cue to
-> think is Plus Inflate.
-> Whenever you choose to draw the whole ball back within, the cue to think is
-> Plus Deflate.
+Both waking options retain the descent from Twenty to Ten. Full continues
+from Nine to One. Short cues the thought of One for C1, normal waking
+consciousness, and gives exactly 30 seconds from the instruction's end to
+the closer. The independent 30-second stereo C1 tail follows the final
+measured closer words in both editions. The closer mentions availability
+without repeating the Inflate or Deflate cues.
 
 See the [private Smart Play audition client](../examples/smart-playback/README.md)
-for the supported playback controls. Technical checks and private auditions
-do not approve public audio.
+for playback controls. A browser or audio-file check is not a listening
+approval. Earlier templates and private editions are preserved.
