@@ -92,5 +92,5 @@ def test_current_locale_has_single_canonical_function_files_and_source_independe
     ):
         assert name in declared and (pack.path / name).is_file()
     lock = check_lock()
-    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-027"
     assert not any(path.startswith("locales/") for path in lock["files"])

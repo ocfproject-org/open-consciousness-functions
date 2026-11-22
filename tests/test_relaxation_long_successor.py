@@ -98,7 +98,10 @@ def test_every_active_shared_consumer_has_explicit_successor_binding():
         binding = record.data["content"]["bindings"]
         assert binding["default_session_template"] == audio_defaults.TEMPLATE_ID
         if record.id == "OCF-EXP-007":
-            assert binding["session_templates"] == [audio_defaults.TEMPLATE_ID]
+            assert binding["session_templates"] == [
+                audio_defaults.TEMPLATE_ID,
+                "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+            ]
             continue
         assert {"OCF-TPL-SESSION-HPLUS-LOCKED-005", audio_defaults.TEMPLATE_ID} <= set(
             binding["session_templates"]

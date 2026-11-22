@@ -11,6 +11,7 @@ pytestmark = pytest.mark.integration
 def test_all_function_resources_appear_with_preparation_closure_explicitly_excluded():
     catalog = LocaleCatalog()
     count = 0
+    energy_ball_waking = set()
     for record in load_all_functions():
         metadata, _ = catalog.localized_function(record.id, "en-US", fallback=False)
         text = function_guide_markdown(record, catalog=catalog)
@@ -20,11 +21,20 @@ def test_all_function_resources_appear_with_preparation_closure_explicitly_exclu
                 assert entry.text not in text
                 continue
             assert key not in text and entry.text in text, (record.id, key)
+            if key.startswith("hplus.function.ocf-exp-007.waking-"):
+                energy_ball_waking.add(key.rsplit(".", 1)[-1])
             count += 1
         if record.id == "OCF-FND-001":
             assert "Access channel closure" not in text
             assert "plus, release, eleven, access" not in text
-    assert count == 179
+    assert energy_ball_waking == {
+        "waking-descent",
+        "waking-ten",
+        "waking-count-to-one",
+        "waking-alert",
+        "waking-reorient",
+    }
+    assert count == 184
 
 
 def test_foundation_navigation_precedes_other_categories_in_markdown_and_offline_html():
