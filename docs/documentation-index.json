@@ -279,7 +279,7 @@
         "voice"
       ],
       "related_schemas": [],
-      "sha256": "2af5c581d4d1311d826ff426f26ba7b615e683d2c7bfb4c47c127290e2e53b37",
+      "sha256": "8f5a3ccce7050a76e3a76303103da90662b4a60ea2494cc4f2209562cfab8510",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -627,7 +627,7 @@
         "schemas/audio-release.schema.json",
         "schemas/mix-profile.schema.json"
       ],
-      "sha256": "30ba788f12e899bf281035ea9ff50ce2b777a1030c812a6246b69028664ce4a6",
+      "sha256": "5e83395e0e3863cd2d7594ba5ba97cf51125d5c25b20323fb9a309532cdeadff",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -803,7 +803,7 @@
         "voice doctor"
       ],
       "related_schemas": [],
-      "sha256": "a9121a711a8a756c5e8cde33f6aa9b7fb767f7dd00fb40eda246d5c629f86252",
+      "sha256": "1380013587689dd23b77aa74f3fb5e69dd1783f56afc5cc11e22e2bb67d23269",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
