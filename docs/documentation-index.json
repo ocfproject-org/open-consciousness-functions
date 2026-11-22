@@ -1179,7 +1179,7 @@
         "audio render"
       ],
       "related_schemas": [],
-      "sha256": "0810c9e3b1d3dea70ee939504f37962d8345b06c0c2ee856b3482666dedcd5a6",
+      "sha256": "96d8c3cdc8397dea2648f24d7b9378aa14fabfb2bb98e0d160a6f27644c8cc9a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -3555,6 +3555,42 @@
       "last_verified_implementation_checkpoint": null,
       "maintenance": "manual",
       "missing_information": [],
+      "path": "examples/smart-playback/README.md",
+      "proposed_correction": "use docs/README.md for authoritative navigation",
+      "purpose": "Private Smart Play audition client",
+      "related_commands": [],
+      "related_schemas": [],
+      "sha256": "ce9ce33e7d8e47919f8895cb16bbab1bb67769c9b80bcb2e97c6b1ba5fb69359",
+      "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
+    },
+    {
+      "audience": "contributors and agents",
+      "broken_references": [],
+      "canonical_source": "schemas and scripts/ocf_tools; CLI capabilities is the live command index",
+      "duplicate_or_contradictory_information": [],
+      "historical": false,
+      "implementation_baseline": "351985e8362879d8a2ddac74c36327641d9a6402",
+      "last_verified_implementation_checkpoint": null,
+      "maintenance": "manual",
+      "missing_information": [],
+      "path": "examples/smart-playback/energy-ball.html",
+      "proposed_correction": "use docs/README.md for authoritative navigation",
+      "purpose": "Private modular Energy Ball audition",
+      "related_commands": [],
+      "related_schemas": [],
+      "sha256": "af25caf1ada15d66d6f25ca8c71011115bb5377cec079efc383364472b13d40d",
+      "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
+    },
+    {
+      "audience": "contributors and agents",
+      "broken_references": [],
+      "canonical_source": "schemas and scripts/ocf_tools; CLI capabilities is the live command index",
+      "duplicate_or_contradictory_information": [],
+      "historical": false,
+      "implementation_baseline": "351985e8362879d8a2ddac74c36327641d9a6402",
+      "last_verified_implementation_checkpoint": null,
+      "maintenance": "manual",
+      "missing_information": [],
       "path": "legacy/README.md",
       "proposed_correction": "use docs/README.md for authoritative navigation",
       "purpose": "Legacy maps",
@@ -4061,7 +4097,7 @@
         "schemas/function-binding.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "2d0c925242804bec749343b6b021dc1ecd3dc645a608a2a8d1e676e32ea8a5fb",
+      "sha256": "2f356cc94d43bc3c241ac1b356105a2e5c6ead70e60294a89f4ee267da50a50d",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4244,7 +4280,7 @@
         "schemas/localized-function.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "609ab01812a0aba4b7c3a002ed508beff7d8d7f041350af11371f0f918861832",
+      "sha256": "3368539afa6d288ebf689fb68fc1d932fa1891f7d4857a98d362e1c789d8874c",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4464,7 +4500,7 @@
       "related_schemas": [
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "4d798ded445619b44d358ac7d2afe0846a880ffa86366a79792b2877cca98fcb",
+      "sha256": "eec16674b39d50ec439e95f23ff894193fc9ffd930a5e3ac9750f65ca9f05c5f",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4845,5 +4881,5 @@
   ],
   "generator": "ocf.doc_inventory/1",
   "schema_version": "1.0",
-  "total": 225
+  "total": 227
 }
