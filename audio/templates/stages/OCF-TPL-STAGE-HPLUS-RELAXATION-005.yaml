@@ -1,0 +1,103 @@
+description: Full unnumbered body relaxation, before tuning and the separate Focus Ten count.
+events:
+- at: 0
+  id: begin
+  narration_key: hplus.shared.settling.begin
+  narration_required: true
+  pacing_key: pauses.relaxation_begin_s
+  semantic: preparation.relaxation.begin
+- after: begin
+  id: support
+  narration_key: hplus.shared.settling.support
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.support
+  timing:
+    anchor: speech-end
+- after: support
+  id: face
+  narration_key: hplus.shared.settling.face
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.face
+  timing:
+    anchor: speech-end
+- after: face
+  id: jaw-neck
+  narration_key: hplus.shared.settling.jaw-neck
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.jaw-neck
+  timing:
+    anchor: speech-end
+- after: jaw-neck
+  id: shoulders
+  narration_key: hplus.shared.settling.shoulders
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.shoulders
+  timing:
+    anchor: speech-end
+- after: shoulders
+  id: hands
+  narration_key: hplus.shared.settling.hands
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.hands
+  timing:
+    anchor: speech-end
+- after: hands
+  id: chest-breathing
+  narration_key: hplus.shared.settling.chest-breathing
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.chest-breathing
+  timing:
+    anchor: speech-end
+- after: chest-breathing
+  id: abdomen-lower-back
+  narration_key: hplus.shared.settling.abdomen-lower-back
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.abdomen-lower-back
+  timing:
+    anchor: speech-end
+- after: abdomen-lower-back
+  id: hips-thighs
+  narration_key: hplus.shared.settling.hips-thighs
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.hips-thighs
+  timing:
+    anchor: speech-end
+- after: hips-thighs
+  id: lower-legs-feet
+  narration_key: hplus.shared.settling.lower-legs-feet
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.lower-legs-feet
+  timing:
+    anchor: speech-end
+- after: lower-legs-feet
+  id: whole-body-awareness
+  narration_key: hplus.shared.settling.whole-body-awareness
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.relaxation_step_s
+  semantic: preparation.relaxation.whole-body-awareness
+  timing:
+    anchor: speech-end
+id: OCF-TPL-STAGE-HPLUS-RELAXATION-005
+origin: original-ocf
+schema_version: '1.0'
+type: induction
+version: 1.0.0

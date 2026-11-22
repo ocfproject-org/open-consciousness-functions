@@ -65,9 +65,9 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
         "body-comfort",
         "transmutation-box",
         "relaxation",
-        "focus-ten",
         "resonant-tuning",
         "guided-practice",
+        "focus-ten",
         "open",
         "focus11-body",
         "close",
@@ -100,7 +100,8 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
         assert "invisible field" in event["text"]
     assert len(practice[0]["text"]) > 3 * len(practice[1]["text"])
     assert by_id["guided-practice.detailed"]["after"] == "resonant-tuning.complete"
-    assert by_id["open.prepare"]["after"] == "guided-practice.rehearsal"
+    assert by_id["focus-ten.begin"]["after"] == "guided-practice.rehearsal"
+    assert by_id["open.prepare"]["after"] == "focus-ten.ready"
     bodies = [event for event in events if event.get("slot_ref") == "function_body"]
     assert [event["id"] for event in bodies] == [
         "focus11-body.pass-1",
@@ -147,7 +148,7 @@ def test_energy_ball_realized_cadence_and_editability(energy):
         assert rows[after]["at"] - rows[before]["end"] == pytest.approx(gap)
     for before, after in (
         ("guided-practice.detailed", "guided-practice.rehearsal"),
-        ("guided-practice.rehearsal", "open.prepare"),
+        ("guided-practice.rehearsal", "focus-ten.begin"),
     ):
         assert rows[after]["at"] - rows[before]["at"] - durations[before] == pytest.approx(5)
     assert rows["resonant-tuning.complete"]["at"] - rows["resonant-tuning.begin"]["end"] == 120
@@ -161,7 +162,7 @@ def test_energy_ball_realized_cadence_and_editability(energy):
 def test_short_relaxation_is_independent_of_tuning(tuning, energy):
     plan, _ = energy
     assert any(
-        item["key"] == "hplus.shared.relaxation.whole-body-awareness"
+        item["key"] == "hplus.shared.settling.whole-body-awareness"
         for item in plan["narration_resources"]
     )
     short = build_complete_session_plan(
@@ -173,14 +174,19 @@ def test_short_relaxation_is_independent_of_tuning(tuning, energy):
     )
     doc = resolve_document(short["template_plan"], "en-US", strict=True)
     events = {e["id"]: e for e in iter_events(doc)}
-    counts = [e for e in events.values() if e["id"].startswith("relaxation.")][1:]
+    counts = [e for e in events.values() if e["semantic"] == "focus.ten.count"]
     assert [e["text"] for e in counts] == [
         word + "." for word in "One Two Three Four Five Six Seven Eight Nine Ten".split()
     ]
     assert all(e["timing"]["pause_after"] == 4 for e in counts)
     assert ("resonant-tuning.practice" in events) == tuning
+    assert events["relaxation.begin"]["narration_key"] == "hplus.shared.settling.brief"
+    relax = LocaleCatalog().require("en-US").localized_functions["OCF-FND-004"]
+    cue = relax["activation"]["spoken_cue"]["text"]
+    assert events["relaxation.begin"]["text"].count(cue) == 1
+    assert [key for key in events if key.startswith("relaxation.")] == ["relaxation.begin"]
     assert events["guided-practice.detailed"]["after"] == (
-        "resonant-tuning.complete" if tuning else "focus-ten.ready"
+        "resonant-tuning.complete" if tuning else "relaxation.begin"
     )
 
 
@@ -296,3 +302,54 @@ def test_short_wake_requires_an_eligible_sleep_descent():
         build_complete_session_plan("OCF-FND-002", overrides={"waking_style": "short"})
     with pytest.raises(OCFError, match="requires sleep descent and waking"):
         build_complete_session_plan(ID, overrides={"waking_style": "short", "ending": "sleep"})
+
+
+def test_affirmation_follows_guided_ball_before_focus_ten():
+    plan = build_complete_session_plan(ID, overrides={"affirmation": "Gateway"})
+    stages = [stage["id"] for stage in plan["stages"]]
+    assert stages[stages.index("transmutation-box") : stages.index("open")] == [
+        "transmutation-box",
+        "relaxation",
+        "resonant-tuning",
+        "guided-practice",
+        "affirmation",
+        "focus-ten",
+    ]
+    doc = resolve_document(plan["template_plan"], "en-US", strict=True)
+    events = {e["id"]: e for e in iter_events(doc)}
+    assert events["affirmation.begin"]["after"] == "guided-practice.rehearsal"
+    assert events["focus-ten.begin"]["after"] == "affirmation.complete"
+    assert events["open.prepare"]["after"] == "focus-ten.ready"
+
+
+@pytest.mark.parametrize("relaxation", ["long", "short"])
+def test_preparation_learning_orders_all_optional_stages_before_ten(relaxation):
+    doc = learning_plan(
+        enabled_stages=("energy-ball", "resonant-tuning"),
+        affirmation="Gateway",
+        relaxation=relaxation,
+    )["document"]
+    stages = [stage["id"] for stage in doc["sections"]]
+    assert stages[stages.index("transmutation-box") : stages.index("learning-intro")] == [
+        "transmutation-box",
+        "relaxation",
+        "resonant-tuning",
+        "energy-ball",
+        "affirmation",
+        "focus-ten",
+    ]
+    assert len([e for e in iter_events(doc) if e["semantic"] == "focus.ten.count"]) == 10
+    begin = next(e for e in iter_events(doc) if e["id"] == "relaxation.begin")
+    assert ("Plus Relax" in begin["text"]) == (relaxation == "short")
+
+
+def test_predecessor_template_remains_selectable_with_its_original_order():
+    plan = build_complete_session_plan(ID, template="OCF-TPL-SESSION-HPLUS-LOCKED-007")
+    stages = [stage["id"] for stage in plan["stages"]]
+    assert stages[stages.index("transmutation-box") : stages.index("open")] == [
+        "transmutation-box",
+        "relaxation",
+        "focus-ten",
+        "resonant-tuning",
+        "guided-practice",
+    ]

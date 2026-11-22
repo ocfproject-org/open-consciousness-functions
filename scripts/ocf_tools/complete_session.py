@@ -1541,7 +1541,8 @@ def _render_complete_session_unlocked(
         from .audition_exports import attach_render_artwork
 
         if (
-            session_plan["template"]["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+            session_plan["template"]["id"]
+            in {"OCF-TPL-SESSION-HPLUS-LOCKED-007", "OCF-TPL-SESSION-HPLUS-LOCKED-008"}
             and not options
             and not dsp_profile
         ):

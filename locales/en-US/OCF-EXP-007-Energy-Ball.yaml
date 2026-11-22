@@ -553,10 +553,11 @@ content:
         evidence_refs: []
     questions: []
   bindings:
-    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
+    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-008
     duration: null
     narration_resources: []
     session_templates:
+    - OCF-TPL-SESSION-HPLUS-LOCKED-008
     - OCF-TPL-SESSION-HPLUS-LOCKED-007
     voice_sources:
     - tts

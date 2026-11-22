@@ -38,6 +38,27 @@ def resolve(binding: dict, cli: dict | None = None) -> tuple[dict, dict]:
     return resolved, {key: "cli" if key in cli else "function-binding" for key in resolved}
 
 
+def select_relaxation(sections: list[dict], style: str) -> None:
+    """Select the short equivalent in either ordered or historical templates."""
+    if style == "long":
+        return
+    if style != "short":
+        raise OCFError("relaxation must be long or short")
+    induction = next((s for s in sections if s["id"] == "relaxation"), None)
+    variants = {
+        "OCF-TPL-STAGE-HPLUS-RELAXATION-003": ("004", "concise slow One-to-Ten relaxation"),
+        "OCF-TPL-STAGE-HPLUS-RELAXATION-005": (
+            "006",
+            "concise unnumbered preparation relaxation",
+        ),
+    }
+    selected = variants.get((induction or {}).get("stage"))
+    if not selected or induction is None:
+        raise OCFError("short relaxation requires a shared long-form relaxation stage")
+    suffix, induction["role"] = selected
+    induction["stage"] = f"OCF-TPL-STAGE-HPLUS-RELAXATION-{suffix}"
+
+
 def apply(
     template: dict, pacing: dict, dsp: dict, options: dict
 ) -> tuple[dict, dict, dict, set, int]:
@@ -66,6 +87,14 @@ def apply(
             dsp["allow_static"] = True
     template["sections"] = [s for s in template["sections"] if s["id"] not in removed]
     sections = template["sections"]
+    focus = next((s for s in sections if s["id"] == "focus-ten"), None)
+    reordered = template["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-008"
+    if (
+        reordered
+        and focus
+        and (audition := pacing.get("pacing_auditions", {}).get("relaxation-1-to-10"))
+    ):
+        audition.update(stage_id="focus-ten", label="Focus Ten count 1-10")
     waking_style = options.get("waking_style")
     if variants := template.get("waking_return_stages"):
         waking = next((s for s in sections if s["id"] == "return"), None)
@@ -75,12 +104,7 @@ def apply(
         waking["role"] = f"split Focus 20 waking return ({waking_style or 'full'})"
     elif waking_style is not None:
         raise OCFError("waking style is unavailable for this function")
-    if options.get("relaxation") == "short":
-        induction = next((s for s in sections if s["id"] == "relaxation"), None)
-        if not induction or induction.get("stage") != "OCF-TPL-STAGE-HPLUS-RELAXATION-003":
-            raise OCFError("short relaxation requires the shared v3 One-to-Ten induction")
-        induction["stage"] = "OCF-TPL-STAGE-HPLUS-RELAXATION-004"
-        induction["role"] = "concise slow One-to-Ten relaxation"
+    select_relaxation(sections, options.get("relaxation", "long"))
     if practice := template.get("focus_ten_practice_stage"):
         ids = [section["id"] for section in sections]
         if not {
@@ -96,17 +120,20 @@ def apply(
             raise OCFError(
                 "Focus Ten teaching requires its complete waking lesson and two-plus-two reinforcement passes"
             )
-        tuning = sections.pop(ids.index("resonant-tuning"))
-        focus_ten = next(i for i, section in enumerate(sections) if section["id"] == "focus-ten")
-        sections[focus_ten + 1 : focus_ten + 1] = [
-            tuning,
-            {
-                "id": "guided-practice",
-                "stage": practice,
-                "after": "$previous",
-                "role": "guided practice at Focus Ten before Open Access",
-            },
-        ]
+        guided = {
+            "id": "guided-practice",
+            "stage": practice,
+            "after": "$previous",
+            "role": "cue-free guided Energy Ball before Focus Ten"
+            if reordered
+            else "guided practice at Focus Ten before Open Access",
+        }
+        if reordered:
+            sections.insert(ids.index("energy-ball"), guided)
+        else:
+            tuning = sections.pop(ids.index("resonant-tuning"))
+            focus_ten = next(i for i, s in enumerate(sections) if s["id"] == "focus-ten")
+            sections[focus_ten + 1 : focus_ten + 1] = [tuning, guided]
 
     unknown = set(options.get("stage_maximum_seconds", {})) - {
         s["id"] for s in template["sections"]
@@ -127,6 +154,8 @@ def apply(
             for key, value in dsp["transition_end_anchors"].items()
             if key.split(".")[0] not in removed
         }
+    if reordered and not focus:
+        pacing.get("pacing_auditions", {}).pop("relaxation-1-to-10", None)
     pacing["pacing_auditions"] = {
         k: v
         for k, v in pacing.get("pacing_auditions", {}).items()

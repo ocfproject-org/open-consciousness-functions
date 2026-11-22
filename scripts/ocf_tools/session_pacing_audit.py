@@ -145,6 +145,7 @@ def audit_shared_v3(report, *, pacing):
     for previous, following in zip(cues, cues[1:]):
         if speech_end(previous) > float(following["at"]) + 0.002:
             raise OCFError("overlapping v3 narration")
+    wake_begin = "return.descent" if "return.descent" in by_id else "return.begin"
     transitions = report["state_transitions"]
     closing = next(t for t in transitions if t["from"] == "focus-11" and t["to"] == "focus-10")
     opening = next(t for t in transitions if t["to"] == "focus-11")
@@ -166,7 +167,7 @@ def audit_shared_v3(report, *, pacing):
         - speech_end(by_id["focus20-enter.calm"]),
         "sleep_repeat": float(by_id["sleep20-body.pass-2"]["at"])
         - speech_end(by_id["sleep20-body.pass-1"]),
-        "post_sleep_body": float(by_id["return.begin"]["at"])
+        "post_sleep_body": float(by_id[wake_begin]["at"])
         - speech_end(by_id["sleep20-body.pass-2"]),
     }
     expected = dict(zip(holds, (20, 20, 40, 15, 60, 60, 60, 3), strict=True))

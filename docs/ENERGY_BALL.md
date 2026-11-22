@@ -8,11 +8,12 @@ behavior, not a listening edition or release.
   extent. Mentally say **Plus Deflate** (`OCF-CMD-EXP-007-DEFLATE`) to draw the
   entire current ball back within. Learned availability remains. Neither cue
   requires a target, special breathing, a movement, or a particular sensation.
-- The lesson starts with its purpose, body comfort, transmutation box and one
-  One-to-Ten relaxation. After Focus Ten recognition and optional tuning, the
-  detailed practice and the shorter rehearsal each establish and draw the ball
-  back within once, without asking the listener to think or say a cue. The
-  independent third practice is no longer in the lesson.
+- After the opener and body comfort, the order is Transmutation Box, unnumbered
+  relaxation, optional Resonant Tuning, Energy Ball, optional main affirmation,
+  and one slow count into Focus Ten. The detailed practice and the shorter
+  rehearsal each establish and draw the ball back within once, without asking
+  the listener to think or say a cue. The independent third practice is no
+  longer in the lesson.
 - Open Access after those two guided cycles. The Focus Eleven function body
   teaches which mental cue establishes the ball and which draws it back within.
   Hear the same brief cue association twice at Focus Eleven and twice in the
@@ -34,21 +35,23 @@ behavior, not a listening edition or release.
 
 The sole Energy Ball source is `locales/en-US/OCF-EXP-007-Energy-Ball.yaml`.
 The two optional stages resolve `locales/en-US/optional-preparation-003.yaml`.
-Earlier locked stage resources and existing functions' default plans remain
-unchanged. On other sessions, both optional stages are off by default.
+The previous locked templates and rendered audio are unchanged. New shared
+plans use this preparation order. In routine sessions, tuning, Energy Ball
+and the main affirmation remain opt-in.
 
 ## Preview without audio
 
 The Energy Ball binding selects `OCF-PACING-ENERGY-BALL-LEARNING-002` and opts
-into Resonant Tuning once at Focus Ten, outside the repeated reinforcement.
-The long-form One-to-Ten relaxation is the default:
+into Resonant Tuning before the ball practice, outside repeated reinforcement.
+Full, unnumbered relaxation is the default:
 
 ```sh
 python scripts/ocf.py audio plan OCF-EXP-007 --locale en-US --expand
 ```
 
-To use the concise, slow One-to-Ten count, put `{"relaxation":"short"}` in an
-overrides file. To omit tuning independently, add `"enabled_stages":[]`. Use
+Short preparation relaxation opens with **Plus Relax** for listeners who have
+already learned the function; it does not count. To select it, put
+`{"relaxation":"short"}` in an overrides file. To omit tuning independently, add `"enabled_stages":[]`. Use
 `--overrides FILE.json`. To preview a routine that uses both new reusable
 stages, create an overrides file such as:
 

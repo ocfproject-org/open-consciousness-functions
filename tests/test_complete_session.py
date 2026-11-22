@@ -30,8 +30,8 @@ def test_sleep_easy_complete_template_expands_existing_focus_and_sleep_sequence(
     )
     assert plan["session_completeness"] == "complete"
     assert plan["template"] == {
-        "id": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
-        "version": "7.0.0",
+        "id": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
+        "version": "8.0.0",
         "origin": "reference-derived",
         "content_status": "reviewed",
     }
@@ -92,31 +92,17 @@ def test_sleep_easy_complete_template_expands_existing_focus_and_sleep_sequence(
         "waking-countdown-20-to-1",
     }
     paced = {item["event_id"]: item for item in plan["narration_pacing_plan"]}
-    relaxation_counts = [
-        unit["text"]
-        for item in plan["narration_pacing_plan"]
-        if item["narration_key"].startswith("hplus.shared.relaxation.")
-        for unit in item["units"]
-        if unit["kind"] == "count"
+    from ocf_tools.locale import iter_events, resolve_document
+
+    resolved = resolve_document(plan["template_plan"], "en-US", strict=True)
+    events = list(iter_events(resolved))
+    focus_counts = [e for e in events if e["semantic"] == "focus.ten.count"]
+    assert [e["text"] for e in focus_counts] == [
+        n + "." for n in "One Two Three Four Five Six Seven Eight Nine Ten".split()
     ]
-    assert relaxation_counts == [
-        "One.",
-        "Two.",
-        "Three.",
-        "Four.",
-        "Five.",
-        "Six.",
-        "Seven.",
-        "Eight.",
-        "Nine.",
-        "Ten.",
-    ]
-    assert not any(
-        unit["text"] == "Sleep."
-        for item in plan["narration_pacing_plan"]
-        if item["narration_key"].startswith("hplus.shared.relaxation.")
-        for unit in item["units"]
-    )
+    assert all(e["timing"]["pause_after"] == 4 for e in focus_counts)
+    assert plan["pacing_auditions"]["relaxation-1-to-10"]["stage_id"] == "focus-ten"
+    assert not any(e.get("text") == "Sleep." for e in events if e["id"].startswith("relaxation."))
     focus20 = paced["focus20-enter.enter"]["units"]
     assert [unit["text"] for unit in focus20[4:]] == [
         "Ten.",

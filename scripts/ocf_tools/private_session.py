@@ -40,6 +40,7 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--voice")
     parser.add_argument("--mix-profile", type=Path)
+    parser.add_argument("--relaxation", choices=("long", "short"), default="long")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     config = load_defaults(args.config)
@@ -55,6 +56,7 @@ def main():
         enabled_stages=config.get("enabled_stages", []),
         affirmation=config.get("affirmation"),
         dry_run=args.dry_run,
+        relaxation=args.relaxation,
     )
     print(
         json.dumps(
