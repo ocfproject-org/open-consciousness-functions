@@ -12240,7 +12240,7 @@
           "effect_scope": "temporary",
           "effect_scope_details": {
             "activation": "manual",
-            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
             "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "persistence": "temporary"
           },
@@ -12259,11 +12259,11 @@
             "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "One temporary imagined field remains active until deliberately drawn back within."
+            "text": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
           },
           "invocation_scope": {
             "activation": "manual",
-            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
             "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "persistence": "temporary"
           },
@@ -12306,8 +12306,8 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "reviewed",
-                "text": "Mentally say Plus Deflate.",
-                "version": "1.0.0"
+                "text": "Think or say in your mind, \"Plus Deflate.\"",
+                "version": "1.1.0"
               },
               "operation": "think-or-say-command"
             }
@@ -12350,7 +12350,7 @@
             "key": "commands.ocf-cmd-exp-007-deflate.usage",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Deliberately think Plus Deflate. Hearing or reading the cue does not invoke it."
+            "text": "Deliberately think or say in your mind, \"Plus Deflate.\" Hearing or reading the cue does not invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it back within."
           }
         },
         {
@@ -12372,7 +12372,7 @@
           "effect_scope": "temporary",
           "effect_scope_details": {
             "activation": "manual",
-            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
             "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "persistence": "temporary"
           },
@@ -12382,7 +12382,7 @@
             "key": "commands.ocf-cmd-exp-007-primary.explanation",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "A fresh invocation establishes the familiar personal ball. Reaffirming keeps one active ball and its chosen extent; an imagined invisible field remains expanded."
+            "text": "A fresh invocation establishes the familiar personal ball. Repeating the cue renews the same active ball at its chosen extent and with its chosen qualities, without stacking or enlarging it. It can have any color or appearance, or no mental image."
           },
           "function_id": "OCF-EXP-007",
           "id": "OCF-CMD-EXP-007-PRIMARY",
@@ -12391,11 +12391,11 @@
             "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "One temporary imagined field remains active until deliberately drawn back within."
+            "text": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
           },
           "invocation_scope": {
             "activation": "manual",
-            "description": "One temporary imagined field remains active until deliberately drawn back within.",
+            "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
             "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "persistence": "temporary"
           },
@@ -12437,8 +12437,8 @@
                 "requested_locale": "en-US",
                 "resolved_locale": "en-US",
                 "status": "reviewed",
-                "text": "Mentally say Plus Inflate.",
-                "version": "1.0.0"
+                "text": "Think or say in your mind, \"Plus Inflate.\"",
+                "version": "1.1.0"
               },
               "operation": "think-or-say-command"
             }
@@ -12459,14 +12459,14 @@
             "key": "commands.ocf-cmd-exp-007-primary.usage",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "Deliberately think Plus Inflate. No breathing pattern, posture, target, imagery, movement or sensation is required. Comfortable breathing and the imagined push are optional aids. Enlarge only by choice."
+            "text": "Deliberately think or say in your mind, \"Plus Inflate.\" No special breath, posture, movement, eye closure, image or sensation is required. A comfortable breath and imagined push are optional aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading the cue does not invoke it."
           }
         }
       ],
       "common_uses": [
         {
           "status": "draft",
-          "text": "Rehearsing a deliberate change from an imagined personal field to drawing it back within."
+          "text": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within."
         },
         {
           "status": "draft",
@@ -12502,7 +12502,7 @@
             "key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
             "requested_locale": "en-US",
             "resolved_locale": "en-US",
-            "text": "One temporary imagined field remains active until deliberately drawn back within."
+            "text": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
           },
           "kind": "application",
           "label": {
@@ -12516,7 +12516,17 @@
         }
       ],
       "localized_relationships": {
-        "complementary_functions": [],
+        "complementary_functions": [
+          {
+            "description": {
+              "status": "reviewed",
+              "text": "for the optional energizing practice.",
+              "version": "1.0.0"
+            },
+            "description_key": "relationships.rel-exp007-fnd001.description",
+            "function_id": "OCF-FND-001"
+          }
+        ],
         "related_functions": []
       },
       "persistence": "temporary",
@@ -12532,17 +12542,40 @@
         "key": "functions.ocf-exp-007.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within."
+        "text": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within."
       },
       "reimplementation_status": "in-progress",
-      "related_functions": [],
+      "related_functions": [
+        {
+          "approval": "Owner-approved Energy Ball implementation brief, 2026-11-22.",
+          "dependency": "optional",
+          "description": {
+            "fallback": false,
+            "key": "relationships.rel-exp007-fnd001.description",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "for the optional energizing practice."
+          },
+          "function_id": "OCF-FND-001",
+          "presentation": "recommended-learning",
+          "relationship_id": "REL-EXP007-FND001",
+          "relationship_type": "complementary",
+          "title": {
+            "fallback": false,
+            "key": "functions.ocf-fnd-001.title",
+            "requested_locale": "en-US",
+            "resolved_locale": "en-US",
+            "text": "Access to Energy"
+          }
+        }
+      ],
       "relationship_proposals": [],
       "short_description": {
         "fallback": false,
         "key": "functions.ocf-exp-007.purpose",
         "requested_locale": "en-US",
         "resolved_locale": "en-US",
-        "text": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within."
+        "text": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within."
       },
       "slug": "energy-ball",
       "source_availability": "pending-source-review",

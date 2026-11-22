@@ -101390,7 +101390,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/explanation/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "A fresh invocation establishes the familiar personal ball. Reaffirming keeps one active ball and its chosen extent; an imagined invisible field remains expanded.",
+          "value": "A fresh invocation establishes the familiar personal ball. Repeating the cue renews the same active ball at its chosen extent and with its chosen qualities, without stacking or enlarging it. It can have any color or appearance, or no mental image.",
           "yaml_pointer": "/activation/explanation/text"
         },
         "/activation/label/status": {
@@ -101415,12 +101415,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Mentally say Plus Inflate.",
+          "value": "Think or say in your mind, \"Plus Inflate.\"",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/text"
         },
         "/activation/procedure_steps/0/instruction/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/activation/procedure_steps/0/instruction/version"
         },
         "/activation/procedure_steps/0/operation": {
@@ -101450,7 +101450,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/usage/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Deliberately think Plus Inflate. No breathing pattern, posture, target, imagery, movement or sensation is required. Comfortable breathing and the imagined push are optional aids. Enlarge only by choice.",
+          "value": "Deliberately think or say in your mind, \"Plus Inflate.\" No special breath, posture, movement, eye closure, image or sensation is required. A comfortable breath and imagined push are optional aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading the cue does not invoke it.",
           "yaml_pointer": "/activation/usage/text"
         },
         "/audio/background_audio/engine": {
@@ -101508,6 +101508,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "0.2.0",
           "yaml_pointer": "/changelog/1/version"
         },
+        "/changelog/2/change": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Teach healing and protection intentions with optional withdrawal, a chosen ending, and the optional Access to Energy recommendation.",
+          "yaml_pointer": "/changelog/2/change"
+        },
+        "/changelog/2/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "0.3.0",
+          "yaml_pointer": "/changelog/2/version"
+        },
         "/classification/primary_domain": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": "experimental",
@@ -101525,7 +101535,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/common_uses/0/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Rehearsing a deliberate change from an imagined personal field to drawing it back within.",
+          "value": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.",
           "yaml_pointer": "/common_uses/0/text"
         },
         "/common_uses/1/status": {
@@ -101555,7 +101565,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/bindings/focus_ten_practice_stage": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-001",
+          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-002",
           "yaml_pointer": "/content/bindings/focus_ten_practice_stage"
         },
         "/content/bindings/narration_resources": {
@@ -101570,7 +101580,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/bindings/session_overrides/pacing_profile": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "OCF-PACING-ENERGY-BALL-LEARNING-002",
+          "value": "OCF-PACING-ENERGY-BALL-LEARNING-003",
           "yaml_pointer": "/content/bindings/session_overrides/pacing_profile"
         },
         "/content/bindings/session_templates/0": {
@@ -101595,7 +101605,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/bindings/waking_return_stages/short": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-002",
+          "value": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-003",
           "yaml_pointer": "/content/bindings/waking_return_stages/short"
         },
         "/content/specifications/blocks/association/evidence_refs": {
@@ -101625,7 +101635,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/specifications/blocks/closer/operations/0": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "finish-deflated",
+          "value": "preserve-listener-chosen-ball-state",
           "yaml_pointer": "/content/specifications/blocks/closer/operations/0"
         },
         "/content/specifications/blocks/closer/operations/1": {
@@ -101665,7 +101675,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/specifications/blocks/future_use/operations/1": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "retain-chosen-extent-on-reaffirmation",
+          "value": "retain-chosen-extent-and-qualities-on-reaffirmation",
           "yaml_pointer": "/content/specifications/blocks/future_use/operations/1"
         },
         "/content/specifications/blocks/future_use/status": {
@@ -101710,8 +101720,13 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/specifications/blocks/main/operations/3": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "draw-entire-ball-back-within",
+          "value": "optionally-use-energize-for-the-chosen-intention",
           "yaml_pointer": "/content/specifications/blocks/main/operations/3"
+        },
+        "/content/specifications/blocks/main/operations/4": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "optionally-draw-entire-ball-back-within",
+          "yaml_pointer": "/content/specifications/blocks/main/operations/4"
         },
         "/content/specifications/blocks/main/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -101755,13 +101770,18 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/content/specifications/blocks/rehearsal/operations/0": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "guided-enlargement",
+          "value": "guided-healing-and-restoration-intention",
           "yaml_pointer": "/content/specifications/blocks/rehearsal/operations/0"
         },
         "/content/specifications/blocks/rehearsal/operations/1": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "shorter-rehearsal",
+          "value": "optional-withdrawal-or-continue-with-the-same-ball",
           "yaml_pointer": "/content/specifications/blocks/rehearsal/operations/1"
+        },
+        "/content/specifications/blocks/rehearsal/operations/2": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-protection-and-balance-intention",
+          "yaml_pointer": "/content/specifications/blocks/rehearsal/operations/2"
         },
         "/content/specifications/blocks/rehearsal/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -101855,13 +101875,38 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/description/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.",
+          "value": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.",
           "yaml_pointer": "/description/text"
         },
         "/editorial/command_review": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": "approved",
           "yaml_pointer": "/editorial/command_review"
+        },
+        "/entries/hplus.function.ocf-exp-007.access-close-prepare/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Scoped preparation for closing Access without withdrawing the Energy Ball.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.access-close-prepare/notes"
+        },
+        "/entries/hplus.function.ocf-exp-007.access-close-prepare/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.access-close-prepare/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.access-close-prepare/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Let what you have learned settle into your understanding.\nThe meaning and the cues you have learned remain available to you.\nKeep that learning as you allow this working period to finish.\n\nYour Energy Ball can remain around you as you close this Access Channel.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.access-close-prepare/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.access-close-prepare/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.access-close-prepare/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.closer/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Chosen active or withdrawn state is retained.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/notes"
         },
         "/entries/hplus.function.ocf-exp-007.closer/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -101870,12 +101915,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.closer/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Let the ball remain deflated as this practice finishes.\n\nNotice your body resting against the surface beneath you.\n\nLet your attention include the room and the sounds around you.\n\nWhen you choose to use your Energy Ball again, the cues you learned are available to you.\n\nThe extra breath and the imagined push remain available whenever you find them helpful.\n\nTake this clear, refreshed awareness and energy with you as you continue.",
+          "value": "Notice your body resting against the surface beneath you.\n\nLet your attention include the room and the sounds around you.\n\nYour Energy Ball can remain around you at the size and with the qualities you choose.\n\nThe cues you have learned remain available whenever you want to form, renew, or draw it back within.\n\nTake a moment before you continue.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/text"
         },
         "/entries/hplus.function.ocf-exp-007.closer/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.2.0",
+          "value": "2.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.closer/version"
         },
         "/entries/hplus.function.ocf-exp-007.function-body/cue_template/allowed/0": {
@@ -101895,7 +101940,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.function-body/notes": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Introduces both cues in Focus Eleven Access; repeated as passive reinforcement in the sleep passes.",
+          "value": "One association body used in two Focus Eleven passes and two quieter sleep passes.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/notes"
         },
         "/entries/hplus.function.ocf-exp-007.function-body/status": {
@@ -101905,13 +101950,28 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.function-body/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "From now on, whenever you choose to establish your Energy Ball, the cue to think is {{ cue.primary }}.\nWhenever you choose to draw the whole ball back within, the cue to think is {{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\nYou can use either cue deliberately, with ordinary breathing and your eyes open or closed.",
+          "value": "From now on, whenever you choose to establish your Energy Ball, think or say in your mind, \"{{ cue.primary }}.\"\n\nIf your ball is already expanded, this renews the same ball at the size and with the qualities you have chosen.\n\nYou can change its size, color, or qualities by intention.\n\nIt remains established until you choose to draw it back within.\n\nWhenever you choose to do that, think or say in your mind, \"{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\"\n\nThis draws the entire ball back within, however far you have extended it.\n\nYou can form it again whenever you choose.\n\nYou can use either cue deliberately, with ordinary breathing and your eyes open or closed.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-007.function-body/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "2.1.0",
+          "value": "3.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-continuation/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-continuation/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-continuation/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Let your Energy Ball remain around you as we continue, if that is your choice.\n\nYou can allow it to remain without keeping your attention on it.\n\nDrawing it back within remains an option whenever you want it.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-continuation/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-continuation/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-continuation/version"
         },
         "/entries/hplus.function.ocf-exp-007.guided-first/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -101920,258 +101980,213 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.guided-first/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Bring your attention to your heart center, in the middle of your chest.\n\nImagine a small sun there, warm and bright, representing your own gathered energy.\n\nYou can picture its light, sense its warmth or presence, or simply understand that this is where the movement begins. Follow the exercise in whichever way comes naturally.\n\nNow choose to expand your Energy Ball.\n\nLet the sun open outward from your heart center, growing through and around you.\n\nLet it extend in front of your body.\n\nBehind your back.\n\nTo your left and to your right.\n\nBeyond your head and beyond your feet.\n\nAllow it to become one complete ball of energy surrounding you.\n\nLet it settle at a comfortable size, with room around your whole body.\n\nYou are resting at its center.\n\nIf you would like to expand it farther, you can take another comfortable deep breath.\n\nAs you breathe out, imagine gently blowing your Energy Ball larger, as though your breath were filling a bubble.\n\nLet it widen smoothly in every direction.\n\nYou can use this breath whenever it helps, or simply choose for the ball to expand.\n\nNow set your Energy Ball turning.\n\nYou can imagine giving the inside of the ball a gentle sideways push, setting it in motion.\n\nOr simply choose for it to begin turning.\n\nYou remain comfortably still at its center.\n\nLet the rotation become smooth and continuous.\n\nFaster.\n\nAnd faster again.\n\nLet it keep accelerating until, in your imagination, its movement becomes too fast to follow and the spinning ball becomes an invisible field around you.\n\nIt remains fully expanded.\n\nYou can sense its presence or simply know that it is there.\n\nYou may imagine the warmth of sunlight, a flowing current, or the fine tingling of static electricity as its energy moves around you.\n\nYou can also imagine its increasing speed building a magnetic field, attracting what you desire and repelling what you do not want.\n\nLet these qualities remain with the spinning field.\n\nYou can extend your Energy Ball to include a larger space.\n\nFor this practice, bring to mind what you would like it to surround.\n\nIt might be you and your bicycle, your vehicle and its passengers, your home, or another person beside you.\n\nChoose one example.\n\nLet the ball expand beyond its present size.\n\nIf it helps, use another comfortable breath, imagining the bubble growing larger as you breathe out.\n\nAllow it to reach beyond everything you have chosen to include: in front, behind, to either side, above, and below.\n\nGive everything room within it.\n\nLet the field continue spinning around this larger space.\n\nIf you include another person, hold an intention of goodwill, with their feelings and choices remaining their own.\n\nNow bring the ball back to its usual size around your body.\n\nLet it draw inward until it rests at a comfortable distance from you again.\n\nIt remains inflated and spinning.\n\nNow practise drawing the ball fully back within.\n\nLet the spinning settle as your Energy Ball draws inward.\n\nHowever far you have extended it, allow the whole ball to return.\n\nGather its light and energy back through your heart center.\n\nLet that energy settle gently throughout you.\n\nThe surrounding ball has returned within.",
+          "value": "Bring your attention to your heart center, in the middle of your chest.\n\nLet a small sun represent your own gathered energy.\n\nYou can picture its light in any color, sense warmth or movement, or simply know that this is where your Energy Ball begins.\n\nA clear image or physical sensation is not required.\n\nFollow the exercise in whichever way comes naturally.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/text"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/0": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/0"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/1": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/1"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/10": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/10"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/11": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/11"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/12": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/12"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/13": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/13"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/14": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/14"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/15": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/15"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/16": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/16"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/17": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/17"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/18": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/18"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/19": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/19"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/2": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/2"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/20": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/20"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/21": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/21"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/22": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/22"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/23": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/23"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/24": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/24"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/25": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/25"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/26": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/26"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/27": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/27"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/28": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/28"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/29": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/29"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/3": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/3"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/30": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/30"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/31": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/31"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/32": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/32"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/33": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/33"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/34": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/34"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/35": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/35"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/36": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/36"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/37": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/37"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/38": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/38"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/39": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/39"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/4": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/4"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/40": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/40"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/41": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/41"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/42": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/42"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/43": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/43"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/44": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/44"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/45": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/45"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/46": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/46"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/47": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/47"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/48": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/48"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/5": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/5"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/6": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/6"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/7": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/7"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/8": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/8"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/9": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/timing/pacing_units/9"
         },
         "/entries/hplus.function.ocf-exp-007.guided-first/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "2.1.0",
+          "value": "3.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-first/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-2/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-2/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-2/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Now let that energy open outward from your heart center, growing through and around you.\n\nLet it extend in front of your body.\n\nBehind your back.\n\nTo your left and to your right.\n\nBeyond your head and beyond your feet.\n\nLet it form one complete ball surrounding you, with room around your whole body.\n\nYou are resting at its center.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-2/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-2/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-2/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-3/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-3/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-3/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "If you would like it to expand farther, you can take another comfortable deep breath.\n\nAs you breathe out, imagine gently blowing the ball larger, as though your breath were filling a bubble.\n\nLet it widen smoothly in every direction.\n\nYou can use this breath whenever it helps, or simply choose for the ball to expand.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-3/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-3/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-3/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-4/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-4/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-4/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Now set your Energy Ball turning.\n\nYou can imagine giving the inside of the ball a gentle sideways push.\n\nOr simply choose for it to begin turning.\n\nYou remain comfortably still at its center.\n\nLet its movement become smooth and continuous.\n\nYou can let it accelerate faster and faster, or settle at a speed that feels right to you.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-4/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-4/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-4/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-5/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-5/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-5/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Your ball may remain visible in your mind, become transparent, or have no visual appearance at all.\n\nIt can have any color or combination of colors you choose.\n\nYou may imagine warmth, a flowing current, or the fine tingling of static electricity.\n\nYou can also follow a sense of movement or space, or simply know that the ball is established.\n\nIts appearance does not determine whether it remains around you.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-5/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-5/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-5/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-6/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-6/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-6/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "You may imagine the spinning field taking on magnetic qualities, attracting what you desire and repelling what you do not want.\n\nLet those qualities take whatever form is useful to you.\n\nFor a more open, receptive feeling, imagine the field spreading outward and becoming lighter and less dense.\n\nFor a more contained, steady feeling, imagine it drawing closer and becoming more concentrated.\n\nDrawing it closer changes its size. It can still remain fully around you.\n\nChoose the space and quality you want for this practice.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-6/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-6/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-6/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-FND-001-PRIMARY",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "function.title.OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/external_commands/OCF-CMD-FND-001-PRIMARY": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/external_commands/OCF-CMD-FND-001-PRIMARY"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/external_titles/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/external_titles/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "For this first practice, choose healing and restoration as your intention.\n\nImagine filling your Energy Ball with that quality.\n\nIt may take the form of a color, warmth, a gentle flow, a feeling you associate with healing, or simply the intention itself.\n\nIf you have learned {{ function.title.OCF-FND-001 }} and would like to use it here, first choose the purpose or result you want from this healing practice.\n\nThen think or say in your mind, \"{{ cue.id.OCF-CMD-FND-001-PRIMARY }}.\"\n\nHold your intended result in your awareness.\n\nYou can also continue by simply imagining or intending healing and restoration within your ball.\n\nLet the ball remain expanded and turning while you rest with that intention.\n\nSpend the next minute becoming familiar with the experience.\n\nYou may notice a feeling or a change in how you imagine the ball, or simply rest with the intention you have chosen.\n\nI will tell you when we continue.\n\nBegin now.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-healing-start/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-healing-start/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/allowed/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "cue.id.OCF-CMD-FND-001-PRIMARY",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/allowed/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/allowed/1": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "function.title.OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/allowed/1"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/external_commands/OCF-CMD-FND-001-PRIMARY": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/external_commands/OCF-CMD-FND-001-PRIMARY"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/external_titles/0": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/external_titles/0"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-EXP-007",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/cue_template/function_id"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "For this practice, imagine filling your ball with protective energy.\n\nChoose a color, a feeling, or a quality that expresses protection and balance for you.\n\nIt may be different from what you chose for healing, or it may be the same.\n\nYou can also simply hold the intention, without any image or sensation.\n\nIf you have learned {{ function.title.OCF-FND-001 }} and would like to use it here, first choose the purpose or result you want from this protection practice.\n\nThen think or say in your mind, \"{{ cue.id.OCF-CMD-FND-001-PRIMARY }}.\"\n\nHold your intended result in your awareness.\n\nYou can also continue by simply imagining or intending the protective quality you have chosen.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-2/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-2/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-3/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-3/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-3/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "You can let your ball feel closer and more concentrated, expressing steady boundaries.\n\nOr give it more space and an open, receptive quality.\n\nSize, color, and the qualities you choose can be adjusted separately.\n\nA larger ball can still represent protection, and a closer ball need not represent shutting everything out.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-3/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-3/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-3/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-4/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-4/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-4/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "If you would like your ball to surround more than your own body, choose what you want to include.\n\nIt might be you and your bicycle, your vehicle and its passengers, your home, or a loved one beside you.\n\nImagine the ball expanding beyond that space, in front, behind, to either side, above, and below.\n\nUse another comfortable breath if it helps, imagining the bubble growing larger as you breathe out.\n\nGive everything you have chosen room within it.\n\nIf you include another person, let this express your wish for their wellbeing, with their feelings and choices remaining their own.\n\nYou may also keep the ball at its present size around you.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-4/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-4/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-4/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-start/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-start/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-start/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Let it continue turning, with the protective qualities you have chosen.\n\nKeep any color or appearance that is useful to you, or simply know that it is there.\n\nSpend the next minute becoming familiar with this experience while your ball remains expanded.\n\nI will tell you when we continue.\n\nBegin now.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-start/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-protection-start/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-start/version"
         },
         "/entries/hplus.function.ocf-exp-007.guided-second/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -102180,47 +102195,32 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.guided-second/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Now practise again with less guidance.\n\nLet the familiar sun expand around you.\n\nAllow your Energy Ball to take its usual shape and begin turning.\n\nLet it accelerate into the familiar invisible field.\n\nUse the breath or the imagined push if either helps you, or let the whole movement follow your intention.\n\nDraw the whole ball back through your heart center and let it settle within you.",
+          "value": "Now turn to protection and balance.\n\nIf you drew your ball back within, let the familiar energy at your heart center expand around you again.\n\nIf it is still around you, continue with the same ball.\n\nLet it turn smoothly at the size and speed you choose.\n\nThe extra breath and the imagined push are there whenever you find them helpful.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/text"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/0": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/0"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/1": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/1"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/2": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/2"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/3": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "sentence",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/3"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/4": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/4"
-        },
-        "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/5": {
-          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "landing",
-          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/timing/pacing_units/5"
         },
         "/entries/hplus.function.ocf-exp-007.guided-second/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "2.1.0",
+          "value": "3.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-second/version"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-withdrawal/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-withdrawal/status"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-withdrawal/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "You can keep your Energy Ball around you, or practise drawing it back within.\n\nIf you would like to practise withdrawing it now, let the spinning settle as you allow the whole ball to draw inward.\n\nIf you choose to draw it within, gather all of its energy back through your heart center, however far you have extended it, and let it settle throughout you.\n\nIf you prefer to keep it around you, leave it established and simply understand how you could draw it back within whenever you choose.",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-withdrawal/text"
+        },
+        "/entries/hplus.function.ocf-exp-007.guided-withdrawal/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-withdrawal/version"
         },
         "/entries/hplus.function.ocf-exp-007.opener/notes": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Owner approved this exact teaching, activation and closer on 2026-11-21. Listening and release approval remain separate.",
+          "value": "Exact English script approved by the owner on 2026-11-22. Listening and release approval remain separate.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/notes"
         },
         "/entries/hplus.function.ocf-exp-007.opener/status": {
@@ -102230,12 +102230,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.opener/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "You will now learn to form an Energy Ball around yourself, change its size, and draw it back within whenever you choose.",
+          "value": "You will now learn to form an Energy Ball around yourself, change its size and qualities, and draw it back within whenever you choose.\n\nYou can keep it around you for as long as you wish.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/text"
         },
         "/entries/hplus.function.ocf-exp-007.opener/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "2.0.0",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.opener/version"
         },
         "/entries/hplus.function.ocf-exp-007.waking-alert/status": {
@@ -102440,12 +102440,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/function_version/current": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "0.2.0",
+          "value": "0.3.0",
           "yaml_pointer": "/function_version/current"
         },
         "/function_version/updated": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "2026-11-21",
+          "value": "2026-11-22",
           "yaml_pointer": "/function_version/updated"
         },
         "/lifecycle/activation": {
@@ -102515,12 +102515,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "One temporary imagined field remains active until deliberately drawn back within.",
+          "value": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/text"
         },
         "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.application.description/version"
         },
         "/metadata_entries/functions.ocf-exp-007.lifecycle.scopes.capability.description/status": {
@@ -102545,12 +102545,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Mentally say Plus Deflate.",
+          "value": "Think or say in your mind, \"Plus Deflate.\"",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/text"
         },
         "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-deflate/version"
         },
         "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/status": {
@@ -102560,12 +102560,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Mentally say Plus Inflate.",
+          "value": "Think or say in your mind, \"Plus Inflate.\"",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/text"
         },
         "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/metadata_entries/functions.ocf-exp-007.procedure.mentally-inflate/version"
         },
         "/narration/sequence/0/key": {
@@ -102598,9 +102598,129 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "guided-practice",
           "yaml_pointer": "/narration/sequence/1/role"
         },
+        "/narration/sequence/10/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-protection-2",
+          "yaml_pointer": "/narration/sequence/10/key"
+        },
+        "/narration/sequence/10/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/10/repetitions"
+        },
+        "/narration/sequence/10/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/10/role"
+        },
+        "/narration/sequence/11/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-protection-3",
+          "yaml_pointer": "/narration/sequence/11/key"
+        },
+        "/narration/sequence/11/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/11/repetitions"
+        },
+        "/narration/sequence/11/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/11/role"
+        },
+        "/narration/sequence/12/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-protection-4",
+          "yaml_pointer": "/narration/sequence/12/key"
+        },
+        "/narration/sequence/12/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/12/repetitions"
+        },
+        "/narration/sequence/12/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/12/role"
+        },
+        "/narration/sequence/13/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-protection-start",
+          "yaml_pointer": "/narration/sequence/13/key"
+        },
+        "/narration/sequence/13/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/13/repetitions"
+        },
+        "/narration/sequence/13/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/13/role"
+        },
+        "/narration/sequence/14/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-continuation",
+          "yaml_pointer": "/narration/sequence/14/key"
+        },
+        "/narration/sequence/14/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/14/repetitions"
+        },
+        "/narration/sequence/14/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/14/role"
+        },
+        "/narration/sequence/15/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.function-body",
+          "yaml_pointer": "/narration/sequence/15/key"
+        },
+        "/narration/sequence/15/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 4,
+          "yaml_pointer": "/narration/sequence/15/repetitions"
+        },
+        "/narration/sequence/15/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "function-body",
+          "yaml_pointer": "/narration/sequence/15/role"
+        },
+        "/narration/sequence/16/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.access-close-prepare",
+          "yaml_pointer": "/narration/sequence/16/key"
+        },
+        "/narration/sequence/16/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/16/repetitions"
+        },
+        "/narration/sequence/16/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "access-close-preparation",
+          "yaml_pointer": "/narration/sequence/16/role"
+        },
+        "/narration/sequence/17/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.closer",
+          "yaml_pointer": "/narration/sequence/17/key"
+        },
+        "/narration/sequence/17/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/17/repetitions"
+        },
+        "/narration/sequence/17/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "closer",
+          "yaml_pointer": "/narration/sequence/17/role"
+        },
         "/narration/sequence/2/key": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "hplus.function.ocf-exp-007.guided-second",
+          "value": "hplus.function.ocf-exp-007.guided-healing-2",
           "yaml_pointer": "/narration/sequence/2/key"
         },
         "/narration/sequence/2/repetitions": {
@@ -102615,22 +102735,22 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/narration/sequence/3/key": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "hplus.function.ocf-exp-007.function-body",
+          "value": "hplus.function.ocf-exp-007.guided-healing-3",
           "yaml_pointer": "/narration/sequence/3/key"
         },
         "/narration/sequence/3/repetitions": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": 4,
+          "value": 1,
           "yaml_pointer": "/narration/sequence/3/repetitions"
         },
         "/narration/sequence/3/role": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "function-body",
+          "value": "guided-practice",
           "yaml_pointer": "/narration/sequence/3/role"
         },
         "/narration/sequence/4/key": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "hplus.function.ocf-exp-007.closer",
+          "value": "hplus.function.ocf-exp-007.guided-healing-4",
           "yaml_pointer": "/narration/sequence/4/key"
         },
         "/narration/sequence/4/repetitions": {
@@ -102640,8 +102760,83 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/narration/sequence/4/role": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "closer",
+          "value": "guided-practice",
           "yaml_pointer": "/narration/sequence/4/role"
+        },
+        "/narration/sequence/5/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-healing-5",
+          "yaml_pointer": "/narration/sequence/5/key"
+        },
+        "/narration/sequence/5/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/5/repetitions"
+        },
+        "/narration/sequence/5/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/5/role"
+        },
+        "/narration/sequence/6/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-healing-6",
+          "yaml_pointer": "/narration/sequence/6/key"
+        },
+        "/narration/sequence/6/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/6/repetitions"
+        },
+        "/narration/sequence/6/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/6/role"
+        },
+        "/narration/sequence/7/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-healing-start",
+          "yaml_pointer": "/narration/sequence/7/key"
+        },
+        "/narration/sequence/7/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/7/repetitions"
+        },
+        "/narration/sequence/7/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/7/role"
+        },
+        "/narration/sequence/8/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-withdrawal",
+          "yaml_pointer": "/narration/sequence/8/key"
+        },
+        "/narration/sequence/8/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/8/repetitions"
+        },
+        "/narration/sequence/8/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/8/role"
+        },
+        "/narration/sequence/9/key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "hplus.function.ocf-exp-007.guided-second",
+          "yaml_pointer": "/narration/sequence/9/key"
+        },
+        "/narration/sequence/9/repetitions": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": 1,
+          "yaml_pointer": "/narration/sequence/9/repetitions"
+        },
+        "/narration/sequence/9/role": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "guided-practice",
+          "yaml_pointer": "/narration/sequence/9/role"
         },
         "/record_metadata/aliases/commands": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -102748,6 +102943,71 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "functions.ocf-exp-007.title",
           "yaml_pointer": "/record_metadata/documentation/title_key"
         },
+        "/record_metadata/editorial_decisions/0/decision_source": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Owner-approved Energy Ball implementation brief, 2026-11-22.",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/decision_source"
+        },
+        "/record_metadata/editorial_decisions/0/dependency": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "optional",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/dependency"
+        },
+        "/record_metadata/editorial_decisions/0/id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "REL-EXP007-FND001",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/id"
+        },
+        "/record_metadata/editorial_decisions/0/kind": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "approved-relationship",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/kind"
+        },
+        "/record_metadata/editorial_decisions/0/presentation": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "recommended-learning",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/presentation"
+        },
+        "/record_metadata/editorial_decisions/0/reciprocal_approved": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": false,
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/reciprocal_approved"
+        },
+        "/record_metadata/editorial_decisions/0/related_function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/related_function_id"
+        },
+        "/record_metadata/editorial_decisions/0/relationship_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "REL-EXP007-FND001",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/relationship_id"
+        },
+        "/record_metadata/editorial_decisions/0/relationship_type": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "complementary",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/relationship_type"
+        },
+        "/record_metadata/editorial_decisions/0/review_note": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "The reference resolves the canonical localized Access to Energy title. This decision does not approve public audio or listening.",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/review_note"
+        },
+        "/record_metadata/editorial_decisions/0/scope": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Optional recommended learning for the energizing practice, never a prerequisite.",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/scope"
+        },
+        "/record_metadata/editorial_decisions/0/source_commit": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "92365b50b16b27eac85861855edab46f8e51c855",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/source_commit"
+        },
+        "/record_metadata/editorial_decisions/0/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "accepted",
+          "yaml_pointer": "/record_metadata/editorial_decisions/0/status"
+        },
         "/record_metadata/legacy/command_status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
           "value": "proposed",
@@ -102803,10 +103063,30 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": "experimental",
           "yaml_pointer": "/record_metadata/status/maturity"
         },
-        "/relationships/complementary_functions": {
+        "/relationships/complementary_functions/0/description/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": [],
-          "yaml_pointer": "/relationships/complementary_functions"
+          "value": "reviewed",
+          "yaml_pointer": "/relationships/complementary_functions/0/description/status"
+        },
+        "/relationships/complementary_functions/0/description/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "for the optional energizing practice.",
+          "yaml_pointer": "/relationships/complementary_functions/0/description/text"
+        },
+        "/relationships/complementary_functions/0/description/version": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "1.0.0",
+          "yaml_pointer": "/relationships/complementary_functions/0/description/version"
+        },
+        "/relationships/complementary_functions/0/description_key": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "relationships.rel-exp007-fnd001.description",
+          "yaml_pointer": "/relationships/complementary_functions/0/description_key"
+        },
+        "/relationships/complementary_functions/0/function_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "OCF-FND-001",
+          "yaml_pointer": "/relationships/complementary_functions/0/function_id"
         },
         "/relationships/related_functions": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -102920,12 +103200,12 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/procedure_steps/0/instruction/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Mentally say Plus Deflate.",
+          "value": "Think or say in your mind, \"Plus Deflate.\"",
           "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/text"
         },
         "/secondary_commands/0/procedure_steps/0/instruction/version": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "1.0.0",
+          "value": "1.1.0",
           "yaml_pointer": "/secondary_commands/0/procedure_steps/0/instruction/version"
         },
         "/secondary_commands/0/procedure_steps/0/operation": {
@@ -102955,7 +103235,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/usage/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Deliberately think Plus Deflate. Hearing or reading the cue does not invoke it.",
+          "value": "Deliberately think or say in your mind, \"Plus Deflate.\" Hearing or reading the cue does not invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it back within.",
           "yaml_pointer": "/secondary_commands/0/usage/text"
         },
         "/slug": {

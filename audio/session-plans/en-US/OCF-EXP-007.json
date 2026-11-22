@@ -5,18 +5,18 @@
   },
   "defaults": {
     "file": "_shared.json",
-    "sha256": "525b516a264e017deb2287ebf348b6569a877b0950268b7f3aa3236168f6eb6a"
+    "sha256": "8bc7e07e5ab3228d737b0a5686df474e800d9e30629c0fb385f5e601f31ecdb5"
   },
   "function_id": "OCF-EXP-007",
   "generation": {
-    "binding_sha256": "abbb08135e7ff0770d39680c41e708b52b5a319d4c733c3f38ab1a2a143026c6",
-    "semantic_plan_sha256": "78f3e7079ae16c2c1456c5087b0f827dd44f50d4f658683b249fdac33d823d5e"
+    "binding_sha256": "c0a71419263cf4ad1f8df2c596ff50443d744dd2650f76b3150977fe0bf7589f",
+    "semantic_plan_sha256": "97f5cf82a3a3ea8580126f0428af3993e28db73d4df518e62db77bcb0980c75a"
   },
   "generator": "ocf.audio.plan/1",
   "locale": "en-US",
   "overrides": {
     "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
-    "pacing_sha256": "93e12c755cc2651eab551a0f694dc3dcb1c9397a21cd645efcc58d2d6009d409",
+    "pacing_sha256": "47f122097c5c209ce3c78798f67e42d1173b6bca015f815eec3d2be8d2dec82c",
     "provenance": {
       "enabled_stages": "function-binding",
       "pacing_profile": "function-binding"
@@ -25,7 +25,7 @@
       "enabled_stages": [
         "resonant-tuning"
       ],
-      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-002"
+      "pacing_profile": "OCF-PACING-ENERGY-BALL-LEARNING-003"
     }
   },
   "resources": [
@@ -35,18 +35,27 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "1675ffaadff4d7d2ce31b81a481b31afbd960a71129ba89007dba4af19edd140",
-      "version": "1.2.0"
+      "text_sha256": "09995f9f02cace532b3c6bdffb70cc59189ff7e4134ef5e7625d781f208bfc5d",
+      "version": "2.0.0"
     },
     {
       "fallback": false,
       "key": "hplus.function.ocf-exp-007.function-body",
       "locale": "en-US",
-      "raw_template_sha256": "25d1b8932b67b6f4009bb002aff45a530daf2d9b9729cca480aecaa4a3643b9e",
+      "raw_template_sha256": "0e3929e16f174b27c466f3f76f647a44f2fd52337a8aff2f52300b78a6d3cd2d",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "36bbca6240dfd3b850a1d54b5f61e224ea0502c09c7ccc0806235712311836d3",
-      "version": "2.1.0"
+      "text_sha256": "78697f1d1ff21b402931ffeb1a01c28ebf5eb196033a062a1e1e5a5dbba2bc34",
+      "version": "3.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-continuation",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "afc300f738405698e0d3cd240675f830e40999a28719f0fdb9c41ef7267eb392",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
@@ -54,8 +63,100 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "13061e45619aea83f22f96157c5dacb79f5434b0093d9e27aa0f23abf4bf6ec4",
-      "version": "2.1.0"
+      "text_sha256": "9f8164a675de85918f27dee6bc2c30e6bebbe26483e5dc7e1813fb31c413e9ae",
+      "version": "3.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-2",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "0e58207159268b3174ecc4c6c9d8cd07c49c9223d5dca2536c2a51625d133f1c",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-3",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "d0bf5822d320a7e122172e1d1f61da14cea0770eb7eb1277d931393cf81fbd71",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-4",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "bee74193f1da51bd46b19df0ad0ae7b44c56713064eb4a382e4e8ea090b14a56",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-5",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "65203e3d5e1ca60a492e1db4662565b53cac3c7a5cb620e74fc6dcbe6fb80d3a",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-6",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "d93c9048f090a8fec7a614e86e4378e09e35438be0bf18af063e67eff8012a81",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-healing-start",
+      "locale": "en-US",
+      "raw_template_sha256": "01003b531600f50db277cc25ee7299e5c856c6e44f6199e56c3a7c8c474e9537",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "03eea07a9f57b0a1c031fe67f930cb9ca8bdc8eec7dba9e4e13e753b9e878809",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-protection-2",
+      "locale": "en-US",
+      "raw_template_sha256": "8ad6f8379bf0aaab3bee04fa66f02f08314716da8d294073cdad84d85cfe9d08",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "7f72469d3d4dc5cfde29a95f06ba0a2b785a739e632db0aac89761072dc35a10",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-protection-3",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "2973a419476a67147a494d0b9e08d59a4a9aef621b9be29c531c4d9f6de5d0f1",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-protection-4",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "54025dd6c18749fe0b1ea24022e659234dd01e7c761ad78c8a924b7debc169e3",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-protection-start",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "a3ac09587b7fee08f3c45dda7d0eb1b8673207922fa557227208f6289b6c54ad",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
@@ -63,8 +164,17 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "3d8310d520bf0889e5a9348cdb0327c6cc5c202a1b9dcd0e36a7a45a43b47413",
-      "version": "2.1.0"
+      "text_sha256": "ac904ea5eafdc8d27d1d67c99975333ca5a664ce15a21fe0c50d7c78dc2cb6b6",
+      "version": "3.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.function.ocf-exp-007.guided-withdrawal",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "c61a55587dce96cc3652938926915dfbd9db79ae467a7e4a26b2c4a9b23c38e9",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
@@ -72,8 +182,8 @@
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "b7d2c78c2e6697e42027b683f7acedc40d95f01a59d4d506ae91d35a17a4b740",
-      "version": "1.0.0"
+      "text_sha256": "3eec80d17c184315326dbe293fc2ed53551dac5fe3dba4355c0ed5572ecf5c19",
+      "version": "2.0.0"
     }
   ],
   "schema_version": "1.0",

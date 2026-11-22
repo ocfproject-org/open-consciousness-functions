@@ -882,7 +882,7 @@
       "purpose": "OCF Function Command Index",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "6b46e5efe724153dea09c2ee8623a301c8ce2523121b472a1debb80c3c4b17b6",
+      "sha256": "d002af337f306fce29092db5efc49f4af60859df1cacae34d4dc0bb18cf5ed76",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -900,7 +900,7 @@
       "purpose": "OCF Function Commands — Quick Reference",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "783bcea39a5f29d2b23a078658f32610a7d34cda63161d50c0bce00a3dc6ced7",
+      "sha256": "caf0a618e7f55a5e8e9113db89057f84ccffc44375504409d07c1932c0f78d1a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -918,7 +918,7 @@
       "purpose": "Command Review Report",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "8dbfb3284f3be2469c94619a21a82a4461480dd11e53a3c030b6dc02669e1826",
+      "sha256": "58c8913bd37d37a61fb6799e12415764a0bbdbd5001f30cfd542f7f11576a06c",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -1179,7 +1179,7 @@
         "audio render"
       ],
       "related_schemas": [],
-      "sha256": "96d8c3cdc8397dea2648f24d7b9378aa14fabfb2bb98e0d160a6f27644c8cc9a",
+      "sha256": "4b6877b2e3efbc7d7f248b80aa21cffbce3d89b46ab7fdb6e464736502764130",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -1276,7 +1276,7 @@
       "purpose": "Generating listening and function guides",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "ca9d41ad195d62234d7206d2503a55957d499eeada7ce29af3a54b00ac2a18e1",
+      "sha256": "29c8d3941f1ff542ef993a5a662f7081efa4cca3d2e058f3ff0a2ec7f663a41a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2059,7 +2059,7 @@
       "related_schemas": [
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "82e963f716c6ed9daf4bc753699edd1cefc12f66f81a2d1b1a65ed2261185c45",
+      "sha256": "805cb3502ff811bb96b5e951f86367165e7121bf79372aa70792f67d55a742b2",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -2191,7 +2191,7 @@
         "narration validate"
       ],
       "related_schemas": [],
-      "sha256": "9f052ffdbb7bde5c5136ecc9a449cf82250b0edc702fd894c1a3a81d477d6430",
+      "sha256": "bdeb40433235b7dd79d6ea2fb8bcfa204b773523824dc74d696abbbee802b8c5",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4259,7 +4259,7 @@
       "related_schemas": [
         "schemas/locale-resource.schema.json"
       ],
-      "sha256": "fe7629b65fad84f074aca3b8bc683bbf1e142c567f0f0c751664e0e759fff8b7",
+      "sha256": "76ac735a8dd9b9f839cb0a401196c42a2a72c1a86e30cc85f5ee0f917c51cf49",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4280,7 +4280,7 @@
         "schemas/localized-function.schema.json",
         "schemas/session-overrides.schema.json"
       ],
-      "sha256": "3368539afa6d288ebf689fb68fc1d932fa1891f7d4857a98d362e1c789d8874c",
+      "sha256": "e793443a0acb491af57f1ec22afa9a2685dd4d6ee97633f377f599fb05a6f029",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4582,7 +4582,7 @@
         "schemas/session-template.schema.json",
         "schemas/timed-transcript.schema.json"
       ],
-      "sha256": "238dc37d49bfff0ce2cba8a6f00c73aaba1bd7e8b3c44104246fc468dddbf72c",
+      "sha256": "26ffc2a4720fcf3304e926477c32fc5119640f447d67c0e95034ee35540f6d2a",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4644,7 +4644,7 @@
       "related_schemas": [
         "schemas/timed-transcript.schema.json"
       ],
-      "sha256": "5348ccc24ae0df5fca68e4604b224e2aa93846d64c499562e003cfa9fafc44f4",
+      "sha256": "b14be6e06fc5e8a7fa86719f1fb944eec51a5a9fee1079b17d66bbd4189583b6",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

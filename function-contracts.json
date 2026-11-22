@@ -3981,7 +3981,9 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
     "OCF-EXP-007": {
       "contract": {
         "approved_targets": {
-          "complementary_functions": [],
+          "complementary_functions": [
+            "OCF-FND-001"
+          ],
           "related_functions": []
         },
         "classification": {
@@ -4082,7 +4084,67 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "role": "guided-practice"
             },
             {
+              "key": "hplus.function.ocf-exp-007.guided-healing-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-5",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-6",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-withdrawal",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
               "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-continuation",
               "repetitions": 1,
               "role": "guided-practice"
             },
@@ -4090,6 +4152,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "key": "hplus.function.ocf-exp-007.function-body",
               "repetitions": 4,
               "role": "function-body"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.access-close-prepare",
+              "repetitions": 1,
+              "role": "access-close-preparation"
             },
             {
               "key": "hplus.function.ocf-exp-007.closer",
@@ -4100,7 +4167,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "trigger_count": 0
       },
-      "sha256": "f69f938b4d6dacc47f77ad4f68b545c41ee3687100e47f172d068ea91765194c"
+      "sha256": "61532f4d024289b54b9c81ed3498f4ef05cbbbe6ed1d44d76ce342ddcb3fb21e"
     },
     "OCF-FND-001": {
       "contract": {

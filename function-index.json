@@ -17112,7 +17112,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "effect_scope": "temporary",
             "effect_scope_details": {
               "activation": "manual",
-              "description": "One temporary imagined field remains active until deliberately drawn back within.",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
               "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -17121,7 +17121,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "id": "OCF-CMD-EXP-007-PRIMARY",
             "invocation_scope": {
               "activation": "manual",
-              "description": "One temporary imagined field remains active until deliberately drawn back within.",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
               "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -17176,7 +17176,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "effect_scope": "temporary",
             "effect_scope_details": {
               "activation": "manual",
-              "description": "One temporary imagined field remains active until deliberately drawn back within.",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
               "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -17185,7 +17185,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
             "id": "OCF-CMD-EXP-007-DEFLATE",
             "invocation_scope": {
               "activation": "manual",
-              "description": "One temporary imagined field remains active until deliberately drawn back within.",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
               "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -17231,7 +17231,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         "common_uses": [
           {
             "status": "draft",
-            "text": "Rehearsing a deliberate change from an imagined personal field to drawing it back within."
+            "text": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within."
           },
           {
             "status": "draft",
@@ -17261,7 +17261,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "scopes": {
             "application": {
               "activation": "manual",
-              "description": "One temporary imagined field remains active until deliberately drawn back within.",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
               "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
               "persistence": "temporary"
             },
@@ -17275,7 +17275,17 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "locales": [],
         "localized_relationships": {
-          "complementary_functions": [],
+          "complementary_functions": [
+            {
+              "description": {
+                "status": "reviewed",
+                "text": "for the optional energizing practice.",
+                "version": "1.0.0"
+              },
+              "description_key": "relationships.rel-exp007-fnd001.description",
+              "function_id": "OCF-FND-001"
+            }
+          ],
           "related_functions": []
         },
         "narration_plan": {
@@ -17291,7 +17301,67 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "role": "guided-practice"
             },
             {
+              "key": "hplus.function.ocf-exp-007.guided-healing-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-5",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-6",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-withdrawal",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
               "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-continuation",
               "repetitions": 1,
               "role": "guided-practice"
             },
@@ -17299,6 +17369,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
               "key": "hplus.function.ocf-exp-007.function-body",
               "repetitions": 4,
               "role": "function-body"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.access-close-prepare",
+              "repetitions": 1,
+              "role": "access-close-preparation"
             },
             {
               "key": "hplus.function.ocf-exp-007.closer",
@@ -17309,7 +17384,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "narration_resources": [],
         "preparation": [],
-        "purpose": "Form a spinning sphere of personal energy around yourself or a chosen space, then draw it back within.",
+        "purpose": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.",
         "safety": {
           "level": "experimental",
           "notes": [
@@ -17354,7 +17429,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ]
       },
       "command_review": "approved",
-      "common_uses": "Rehearsing a deliberate change from an imagined personal field to drawing it back within. (draft); Practising with the familiar personal ball before trying an optional larger extent. (draft)",
+      "common_uses": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within. (draft); Practising with the familiar personal ball before trying an optional larger extent. (draft)",
       "compatibility": "none",
       "domains": "experimental",
       "legacy_command": "",
