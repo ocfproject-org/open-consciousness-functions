@@ -22,6 +22,16 @@ SHA = re.compile(r"[a-f0-9]{64}")
 EDITION = re.compile(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)")
 KINDS = {
     ".html": "text/html; charset=utf-8",
+    ".css": "text/css; charset=utf-8",
+    ".js": "text/javascript; charset=utf-8",
+    ".mjs": "text/javascript; charset=utf-8",
+    ".json": "application/json",
+    ".txt": "text/plain; charset=utf-8",
+    ".png": "image/png",
+    ".svg": "image/svg+xml",
+    ".ico": "image/x-icon",
+    ".woff2": "font/woff2",
+    ".xml": "application/xml",
     ".mp3": "audio/mpeg",
     ".flac": "audio/flac",
     ".vtt": "text/vtt",
@@ -108,7 +118,58 @@ def _native_records(batch, locale, marker_root):
     return records
 
 
-def build_review(batch, destination, *, locale, edition_version):
+def _copy_pages(pages, site, functions):
+    """Add only local playback links to a separately built production Pages artifact."""
+    pages = Path(pages).resolve(strict=True)
+    _need(pages.is_dir(), "Pages input is not a built static site")
+    index = read_json_object(pages / "documentation-index.json")
+    hrefs = {}
+    for item in index["functions"]:
+        fid = item.get("function_id")
+        if fid not in functions:
+            continue
+        _need(
+            fid not in hrefs and item["href"] == f"functions/{fid}/",
+            "Pages guide is not bound to the exact function ID",
+        )
+        hrefs[fid] = item["href"] + "index.html"
+    _need(set(hrefs) == set(functions), "Pages artifact is missing a requested guide")
+    for src in pages.rglob("*"):
+        _need(not src.is_symlink(), "Pages artifact contains a symlink")
+        if not src.is_file() or src.suffix not in KINDS:
+            continue
+        dst = site / src.relative_to(pages)
+        _need(
+            not dst.exists()
+            and dst.relative_to(site).parts[0] not in {"_local-audition", "local-review.json"},
+            "Pages artifact conflicts with the local audition path",
+        )
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if dst.suffix != ".html":
+            shutil.copyfile(src, dst)
+            continue
+        markup = src.read_text(encoding="utf-8")
+        _need(markup.count("</head>") == 1, "Pages artifact contains unrecognized markup")
+        markup = markup.replace("</head>", '<meta name="robots" content="noindex,nofollow"></head>')
+        dst.write_text(markup, encoding="utf-8")
+    for rel, slug in {"index.html": "", **{v: k for k, v in hrefs.items()}}.items():
+        page = site / rel
+        raw = page.read_text(encoding="utf-8")
+        _need(
+            raw.count("</main>") == 1 and "data-local-batch-review" not in raw,
+            "Pages artifact is missing the review insertion point",
+        )
+        target = "index.html" if not slug else slug + ".html"
+        notice = (
+            '<section class="guide-section" data-local-batch-review>'
+            "<h2>Private listening review</h2><p>"
+            f'<a href="/_local-audition/{target}">Open local candidate recordings</a>'
+            "</p><p>This does not modify the published edition.</p></section>"
+        )
+        page.write_text(raw.replace("</main>", notice + "</main>"), encoding="utf-8")
+
+
+def build_review(batch, destination, *, locale, edition_version, pages=None):
     """Only stage reviewed batch inputs. Never starts a server or pushes a release."""
     from .audition_exports import export_audition
 
@@ -128,6 +189,9 @@ def build_review(batch, destination, *, locale, edition_version):
     exports_root = work_path("renders")
     exports_root.mkdir(parents=True, exist_ok=True)
     output = {}
+    if pages is not None:
+        source_pages = Path(pages).resolve(strict=True)
+        _need(not out.is_relative_to(source_pages), "output cannot be inside the Pages artifact")
     with (
         tempfile.TemporaryDirectory(prefix=".ocf-local-audition-", dir=out.parent) as temporary,
         tempfile.TemporaryDirectory(prefix=".ocf-local-exports-", dir=exports_root) as export_temp,
@@ -135,7 +199,12 @@ def build_review(batch, destination, *, locale, edition_version):
         top = Path(temporary)
         site = top / "site"
         site.mkdir(mode=0o700)
-        (site / "audio").mkdir()
+        catalog = site
+        if pages is not None:
+            _copy_pages(source_pages, site, records)
+            catalog = site / "_local-audition"
+            catalog.mkdir()
+        (catalog / "audio").mkdir()
         rows = []
         for fid, (source, report, marker) in sorted(records.items()):
             candidate = Path(export_temp) / fid
@@ -146,7 +215,7 @@ def build_review(batch, destination, *, locale, edition_version):
             formats = {}
             for ext in ("mp3", "flac"):
                 encoded = exported["artifacts"][ext]
-                target = site / "audio" / f"{fid}.{ext}"
+                target = catalog / "audio" / f"{fid}.{ext}"
                 _need(Path(encoded["path"]).name == encoded["path"], "invalid private export path")
                 shutil.copyfile(candidate / encoded["path"], target)
                 _need(
@@ -158,9 +227,9 @@ def build_review(batch, destination, *, locale, edition_version):
             subtitles = ""
             if vtt:
                 name = "audio/" + fid + ".vtt"
-                shutil.copyfile(source / vtt["path"], site / name)
+                shutil.copyfile(source / vtt["path"], catalog / name)
                 _need(
-                    sha256_of_file(site / name) == vtt["sha256"],
+                    sha256_of_file(catalog / name) == vtt["sha256"],
                     "private subtitle checksum mismatch",
                 )
                 subtitles = f'<track kind="subtitles" srclang="{html.escape(locale)}" label="Timed transcript" src="{name}">'
@@ -170,7 +239,7 @@ def build_review(batch, destination, *, locale, edition_version):
                 f'<p><a href="audio/{fid}.mp3" download>Download MP3</a> · '
                 f'<a href="audio/{fid}.flac" download>Download FLAC</a></p>'
             )
-            (site / (fid + ".html")).write_text(_page(title, body), encoding="utf-8")
+            (catalog / (fid + ".html")).write_text(_page(title, body), encoding="utf-8")
             rows.append(f'<li><a href="{fid}.html">{html.escape(title)}</a></li>')
             output[fid] = {
                 "native_report_sha256": marker["manifest_sha256"],
@@ -178,7 +247,7 @@ def build_review(batch, destination, *, locale, edition_version):
                 "delivery_sha256": formats,
             }
             shutil.rmtree(candidate)  # temporary verified export copy, not the native source
-        (site / "index.html").write_text(
+        (catalog / "index.html").write_text(
             _page("OCF local audition", "<ul>" + "".join(rows) + "</ul>"), encoding="utf-8"
         )
         sealed = {
@@ -222,6 +291,8 @@ def serve(root, port=8765):
         )
         stat = path.stat()
         routes["/" + rel] = (path, file_signature(stat), stat.st_size, digest)
+        if rel.endswith("/index.html"):
+            routes["/" + rel[: -len("index.html")]] = routes["/" + rel]
     routes["/"] = routes["/index.html"]
 
     class ReviewHandler(BaseHTTPRequestHandler):
@@ -231,7 +302,9 @@ def serve(root, port=8765):
         def do_GET(self):
             if self.headers.get_all("Host", []) != [f"127.0.0.1:{self.server.server_port}"]:
                 return self.send_error(403)
-            row = routes.get(self.path)
+            from urllib.parse import urlsplit
+
+            row = routes.get(urlsplit(self.path).path)
             if row is None:
                 return self.send_error(404)
             path, signature, size, digest = row
@@ -261,7 +334,8 @@ def serve(root, port=8765):
                     self.send_header("X-Content-Type-Options", "nosniff")
                     self.send_header(
                         "Content-Security-Policy",
-                        "default-src 'none'; media-src 'self'; style-src 'unsafe-inline'; frame-ancestors 'none'",
+                        "default-src 'none'; script-src 'self'; connect-src 'self'; media-src 'self' https:; "
+                        "style-src 'self' 'unsafe-inline'; img-src 'self' https:; font-src 'self'; frame-ancestors 'none'",
                     )
                     if code == 206:
                         self.send_header("Content-Range", f"bytes {start}-{stop}/{size}")

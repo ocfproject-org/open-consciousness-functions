@@ -626,3 +626,9 @@ MP3/FLAC copies, and available timed text. The included server is deliberately
 loopback only. It does not publish, grant LAN access, or claim listening
 approval. A measured Smart Play catalog requires its own verified edit
 artifacts; the original-only review does not invent alternate guidance.
+
+To review from the normal site navigation, add `--pages-dir` with a built
+OCF Pages directory. The batch command copies it into the private review and
+links each rendered function’s guide to its local candidate player; it does
+not change the source site or its published catalog. Omit the flag for the
+standalone listening library.

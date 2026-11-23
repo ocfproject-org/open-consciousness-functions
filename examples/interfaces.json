@@ -733,7 +733,7 @@
         "audio",
         "render-many"
       ],
-      "usage": "usage: ocf audio render-many [-h] [--all] [--locale LOCALE] --voice VOICE\n                             [--pacing {normal,relaxed,sleep}] [--rate RATE]\n                             [--workers WORKERS] [--dsp-profile DSP_PROFILE]\n                             [--overrides OVERRIDES]\n                             [--mix-profile MIX_PROFILE] [--dry-run]\n                             [--resume] [--force] [--fresh-synthesis]\n                             [--speech-cache {auto,off,refresh,require-hit}]\n                             [--audition-site AUDITION_SITE]\n                             [--edition-version EDITION_VERSION]\n                             [function_ids ...]",
+      "usage": "usage: ocf audio render-many [-h] [--all] [--locale LOCALE] --voice VOICE\n                             [--pacing {normal,relaxed,sleep}] [--rate RATE]\n                             [--workers WORKERS] [--dsp-profile DSP_PROFILE]\n                             [--overrides OVERRIDES]\n                             [--mix-profile MIX_PROFILE] [--dry-run]\n                             [--resume] [--force] [--fresh-synthesis]\n                             [--speech-cache {auto,off,refresh,require-hit}]\n                             [--audition-site AUDITION_SITE]\n                             [--edition-version EDITION_VERSION]\n                             [--pages-dir PAGES_DIR]\n                             [function_ids ...]",
       "verification": "parser-only; placeholders are not dispatched"
     },
     {
@@ -2276,7 +2276,7 @@
     "schemas/voice-dataset.schema.json": "0307327f3f52eeaaaed71abaa6d1950c0b665fc677b43547e2452e9c31000ed8",
     "schemas/voice-profile.schema.json": "bff61d964e36686802129b9631fed45c3baa5262d5359d330a0b3f59763ee40e",
     "scripts/ocf_tools/agent_api.py": "9d6d5453ff75639b6ca8c0ea8977593f393fa5f3674eb070fb94665e0631d706",
-    "scripts/ocf_tools/cli.py": "5396ed4637c5db365f76a3a94fe457bbe2660d53d6913441e24ccc72dbf5ed9d",
+    "scripts/ocf_tools/cli.py": "e404f59c20122d6e07ffbef090ee5f9a9e759d3a80c6669c91dc0d07ac290321",
     "scripts/ocf_tools/lsp_server.py": "a753b91b1b73609ecd6886470a037a9bbf1259e2a77f08203546e55ef4cbae09",
     "scripts/ocf_tools/mcp_server.py": "d8641d4160888abbe7152fca2117623de4dfb061793b95b161dbfb4534a2be54",
     "scripts/ocf_tools/narration_cli.py": "5f13a05251816e5d3b80419d9ed67184b5c6c48722175700bbc88ec2b429bd41",

@@ -118,3 +118,26 @@ def test_do_not_stage_partial_or_tampered_batch(tmp_path, monkeypatch, bad):
     with pytest.raises(OCFError):
         review.build_review(batch, out, locale="en-US", edition_version="1.0.0")
     assert not out.exists()
+
+
+def test_prebuilt_public_site_gets_explicit_private_review_link(tmp_path, monkeypatch):
+    batch, _ = valid(tmp_path, monkeypatch)
+    pages = tmp_path / "pages"
+    write(
+        pages / "documentation-index.json",
+        {"functions": [{"function_id": "OCF-EXP-007", "href": "functions/OCF-EXP-007/"}]},
+    )
+    markup = "<head></head><main>Production anchor</main>"
+    pages.mkdir(exist_ok=True)
+    (pages / "index.html").write_text(markup)
+    page = pages / "functions/OCF-EXP-007/index.html"
+    page.parent.mkdir(parents=True)
+    page.write_text(markup)
+    write(pages / "catalog.json", {"only": "existing-public-editions"})
+    out = tmp_path / "review"
+    review.build_review(batch, out, locale="en-US", edition_version="1.0.0", pages=pages)
+    guide = out / "functions/OCF-EXP-007/index.html"
+    assert 'href="/_local-audition/OCF-EXP-007.html"' in guide.read_text()
+    assert (out / "_local-audition/OCF-EXP-007.html").exists()
+    assert (out / "catalog.json").read_bytes() == (pages / "catalog.json").read_bytes()
+    assert page.read_text() == markup

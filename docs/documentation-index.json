@@ -628,7 +628,7 @@
         "schemas/audio-release.schema.json",
         "schemas/mix-profile.schema.json"
       ],
-      "sha256": "aa9c8a054a75f5b084072fc147395a4309c47f7452e255b7b65aced0db77a628",
+      "sha256": "54df97f2dee5d2001d018e7b2ba032cab2405089ba4589af585bdcad6324dd99",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4769,7 +4769,7 @@
         "workspace clean"
       ],
       "related_schemas": [],
-      "sha256": "5396ed4637c5db365f76a3a94fe457bbe2660d53d6913441e24ccc72dbf5ed9d",
+      "sha256": "e404f59c20122d6e07ffbef090ee5f9a9e759d3a80c6669c91dc0d07ac290321",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {

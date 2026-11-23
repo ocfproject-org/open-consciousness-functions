@@ -447,6 +447,9 @@ def _build_parser() -> argparse.ArgumentParser:
     bulk_cmd.add_argument(
         "--edition-version", help="private audio edition for --audition-site, e.g. 0.2.1"
     )
+    bulk_cmd.add_argument(
+        "--pages-dir", type=Path, help="optional prebuilt Pages site for local guide navigation"
+    )
     plan_cmd = audio_sub.add_parser(
         "plan", help="generate compact voice-independent complete-session source plans"
     )
@@ -1769,6 +1772,8 @@ def main(argv: list[str] | None = None) -> int:
                         raise OCFError("--edition-version must be a numeric X.Y.Z edition")
                 if bool(args.audition_site) != bool(args.edition_version):
                     raise OCFError("--audition-site and --edition-version must be used together")
+                if args.pages_dir and not args.audition_site:
+                    raise OCFError("--pages-dir requires --audition-site")
                 if args.audition_site and args.dry_run:
                     raise OCFError("--audition-site requires a real, completed render")
                 if args.audition_site and (
@@ -1800,6 +1805,7 @@ def main(argv: list[str] | None = None) -> int:
                         args.audition_site,
                         locale=args.locale,
                         edition_version=args.edition_version,
+                        pages=args.pages_dir,
                     )
                 print(json.dumps(result, ensure_ascii=False, indent=2))
                 return 1 if result["failed"] or (args.audition_site and result["blocked"]) else 0
