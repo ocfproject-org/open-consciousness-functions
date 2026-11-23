@@ -30996,6 +30996,46 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "value": [],
           "yaml_pointer": "/content/bindings/narration_resources"
         },
+        "/content/bindings/session_overrides/pacing/narration_pacing/entries/hplus.function.ocf-bod-010.closer": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": "nutricia-closer-native-sentences",
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/entries/hplus.function.ocf-bod-010.closer"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/default_unit": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": "sentence",
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/default_unit"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/group_prose": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": true,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/group_prose"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/landing": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": 0.4,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/landing"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/paragraph": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": 0.8,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/paragraph"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/phrase": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": 0.4,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/phrase"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/sentence": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": 0.4,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/pauses/sentence"
+        },
+        "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/rate_scale": {
+          "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
+          "value": 1.0,
+          "yaml_pointer": "/content/bindings/session_overrides/pacing/narration_pacing/profiles/nutricia-closer-native-sentences/rate_scale"
+        },
         "/content/bindings/session_templates/0": {
           "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
           "value": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
@@ -32998,7 +33038,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-bod-010.closer/text": {
           "file": "locales/en-US/OCF-BOD-010-Nutricia.yaml",
-          "value": "Remember, Nutricia allows you to select between fuller nourishment and energy utilization with \"{{ cue.primary }},\" or sufficient nourishment with reduced unnecessary retention and storage with \"{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}.\"\n\nYour last selected mode remains active until you deliberately change it.\n\nTo select, change, or reinforce your mode, inhale deeply and gently hold your breath.\n\nSilently say to yourself either \"{{ cue.primary }}\" or \"{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF Nutricia exercise.",
+          "value": "Remember, Nutricia allows you to select between fuller nourishment and energy utilization with \"{{ cue.primary }},\" or sufficient nourishment with reduced unnecessary retention and storage with \"{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}.\" Your last selected mode remains active until you deliberately change it.\n\nTo select, change, or reinforce your mode, inhale deeply and gently hold your breath.\n\nSilently say to yourself either \"{{ cue.primary }}\" or \"{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS }}.\"\n\nThen slowly exhale through your mouth.\n\nThis concludes your OCF exercise.",
           "yaml_pointer": "/entries/hplus.function.ocf-bod-010.closer/text"
         },
         "/entries/hplus.function.ocf-bod-010.closer/version": {
