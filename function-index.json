@@ -17230,12 +17230,16 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "common_uses": [
           {
-            "status": "draft",
-            "text": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within."
+            "status": "reviewed",
+            "text": "Set an intention before meditation, or use the familiar image to settle distractions as you begin."
           },
           {
-            "status": "draft",
-            "text": "Practising with the familiar personal ball before trying an optional larger extent."
+            "status": "reviewed",
+            "text": "Take a brief centering pause before public speaking or a difficult conversation."
+          },
+          {
+            "status": "reviewed",
+            "text": "As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within."
           }
         ],
         "companions": [],
@@ -17429,7 +17433,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ]
       },
       "command_review": "approved",
-      "common_uses": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within. (draft); Practising with the familiar personal ball before trying an optional larger extent. (draft)",
+      "common_uses": "Set an intention before meditation, or use the familiar image to settle distractions as you begin. (reviewed); Take a brief centering pause before public speaking or a difficult conversation. (reviewed); As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within. (reviewed)",
       "compatibility": "none",
       "domains": "experimental",
       "legacy_command": "",

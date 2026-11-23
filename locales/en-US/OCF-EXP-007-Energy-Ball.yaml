@@ -122,10 +122,12 @@ tags:
   status: draft
   semantic_id: deliberate-cues
 common_uses:
-- text: Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.
-  status: draft
-- text: Practising with the familiar personal ball before trying an optional larger extent.
-  status: draft
+- text: Set an intention before meditation, or use the familiar image to settle distractions as you begin.
+  status: reviewed
+- text: Take a brief centering pause before public speaking or a difficult conversation.
+  status: reviewed
+- text: As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.
+  status: reviewed
 relationships:
   related_functions: []
   complementary_functions:

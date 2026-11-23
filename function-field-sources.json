@@ -99574,7 +99574,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-005.function-body/text": {
           "file": "locales/en-US/OCF-EXP-005-Clear-Zone.yaml",
-          "value": "From this moment forward, {{ function.title }} is permanently established within your total self, maintaining a clear and comfortable space around your entire body.\n\nYour conscious mind, subconscious mind, physical being, and higher self work together, naturally discouraging unwanted insect contact.\n\nWhenever insects approach, your total self maintains one clear intention: remain away, move away, and continue peacefully elsewhere.\n\nThis pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings.\n\n{{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.\n\nWhenever you wish to reinforce or restore this pattern, simply say to yourself,\n\"{{ cue.primary }}.\"\n\nYour total self strengthens the established intention, maintaining a clear personal space around you.\n\nYou also have two optional commands.\n\nWhen you wish to observe or interact with insects without discouraging their approach, silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\n\nThe outward insect-discouragement intention pauses, while your calm awareness remains available.\n\nWhenever you wish to pause the entire {{ function.title }} application, silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\n\nThe application rests, while your ordinary awareness and natural responses continue.\n\nEach selected mode replaces the previous one.\n\nObserve and Suspend are temporary. They end automatically when you enter normal sleep, lose consciousness, or deliberately invoke \"{{ cue.primary }}\" again.\n\nYour original protective pattern then resumes.\n\nYour learned ability remains permanently available, regardless of which mode you choose.\n\nThe more you use these commands, the easier and more natural establishing and adjusting {{ function.title }} becomes.",
+          "value": "From this moment forward, {{ function.title }} is permanently established within your total self, maintaining a clear and comfortable space around your entire body.\n\nYour conscious mind, subconscious mind, physical being, and higher self work together, naturally discouraging unwanted insect contact.\n\nWhenever insects approach, your total self maintains one clear intention: remain away, move away, and continue peacefully elsewhere.\n\nThis pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings; {{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.\n\nWhenever you wish to reinforce or restore this pattern, simply say to yourself,\n\"{{ cue.primary }}.\"\n\nYour total self strengthens the established intention, maintaining a clear personal space around you.\n\nYou also have two optional commands.\n\nWhen you wish to observe or interact with insects without discouraging their approach, silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-OBSERVE }}.\"\n\nThe outward insect-discouragement intention pauses, while your calm awareness remains available.\n\nWhenever you wish to pause the entire {{ function.title }} application; silently say,\n\"{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}.\"\n\nThe application rests, while your ordinary awareness and natural responses continue.\n\nEach selected mode replaces the previous one.\n\nObserve and Suspend are temporary. They end automatically when you enter normal sleep, lose consciousness, or deliberately invoke \"{{ cue.primary }}\" again.\n\nYour original protective pattern then resumes.\n\nYour learned ability remains permanently available, regardless of which mode you choose.\n\nThe more you use these commands, the easier and more natural establishing and adjusting {{ function.title }} becomes.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-005.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-005.function-body/version": {
@@ -101530,23 +101530,33 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/common_uses/0/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "draft",
+          "value": "reviewed",
           "yaml_pointer": "/common_uses/0/status"
         },
         "/common_uses/0/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.",
+          "value": "Set an intention before meditation, or use the familiar image to settle distractions as you begin.",
           "yaml_pointer": "/common_uses/0/text"
         },
         "/common_uses/1/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "draft",
+          "value": "reviewed",
           "yaml_pointer": "/common_uses/1/status"
         },
         "/common_uses/1/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Practising with the familiar personal ball before trying an optional larger extent.",
+          "value": "Take a brief centering pause before public speaking or a difficult conversation.",
           "yaml_pointer": "/common_uses/1/text"
+        },
+        "/common_uses/2/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/common_uses/2/status"
+        },
+        "/common_uses/2/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.",
+          "yaml_pointer": "/common_uses/2/text"
         },
         "/content/bindings/default_session_template": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -102165,7 +102175,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.guided-protection-4/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "If you would like your ball to surround more than your own body, choose what you want to include.\n\nIt might be you and your bicycle, your vehicle and its passengers, your home, or a loved one beside you.\n\nImagine the ball expanding beyond that space, in front, behind, to either side, above, and below.\n\nUse another comfortable breath if it helps, imagining the bubble growing larger as you breathe out.\n\nGive everything you have chosen room within it.\n\nIf you include another person, let this express your wish for their wellbeing, with their feelings and choices remaining their own.\n\nYou may also keep the ball at its present size around you.",
+          "value": "If you would like your ball to surround more than your own body, choose what you want to include.\n\nIt might be you and your bicycle, your vehicle and its passengers, your home, or a loved one beside you.\n\nImagine the ball expanding beyond that space, in front, behind, to either side, above, and below.\n\nUse another comfortable breath if it helps, imagining the bubble growing larger as you breathe out.\n\nGive everything you have chosen room within it.\n\nIf you include another person, let this express your wish for their well-being, with their feelings and choices remaining their own.\n\nYou may also keep the ball at its present size around you.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-protection-4/text"
         },
         "/entries/hplus.function.ocf-exp-007.guided-protection-4/version": {
@@ -102210,7 +102220,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.guided-withdrawal/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "You can keep your Energy Ball around you, or practise drawing it back within.\n\nIf you would like to practise withdrawing it now, let the spinning settle as you allow the whole ball to draw inward.\n\nIf you choose to draw it within, gather all of its energy back through your heart center, however far you have extended it, and let it settle throughout you.\n\nIf you prefer to keep it around you, leave it established and simply understand how you could draw it back within whenever you choose.",
+          "value": "You can keep your Energy Ball around you, or practice drawing it back within.\n\nIf you would like to practice withdrawing it now, let the spinning settle as you allow the whole ball to draw inward.\nIf you choose to draw it within, gather all of its energy back through your heart center, however far you have extended it, and let it settle throughout you.\n\nIf you prefer to keep it around you, leave it established and simply understand how you could draw it back within whenever you choose.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.guided-withdrawal/text"
         },
         "/entries/hplus.function.ocf-exp-007.guided-withdrawal/version": {
@@ -153178,7 +153188,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-sen-003.function-body/text": {
           "file": "locales/en-US/OCF-SEN-003-Smell.yaml",
-          "value": "From this moment forward, you have the ability\nto regulate your sense of smell and develop\nthe richness of your inner scent awareness.\n\nYour sense of smell will become more responsive\nto your conscious intention. You can notice\ndelicate aromas more clearly or allow unwanted\nodors to fade into the background.\n\nTo increase your perception of smell, close your eyes,\ninhale deeply, and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth and open your eyes.\n\nFaint scents will become clearer and more distinct.\nYou will recognize subtle differences between aromas\nand appreciate their character and richness.\n\nTo reduce the prominence of an unwanted odor,\nuse the same eye and breathing sequence,\nthinking or saying, \"{{ cue.id.OCF-CMD-SEN-003-SMELL-LESS }}.\"\nIts presence in your awareness will grow quieter,\nwhile you remain free to change your adjustment\nor return to your usual sense of smell.\n\nYour inner sense of smell will also grow stronger.\nYou will recall familiar fragrances and imagine\nnew ones, even when no physical aroma is present.\nYou can bring a remembered scent into awareness,\nhold it clearly, distinguish its subtle qualities,\nand combine or transform aromas through imagination.\n\nYour mind will connect scents with memories,\nplaces, experiences, and images more vividly.\nThis ability to imagine and remember aromas\nwill become a lasting part of your total self.\n\nWhenever you choose, your intention and these\ncommands can help make an inner aroma more vivid\nor let an imagined scent gently fade.\n\nWith each use, your physical smell regulation\nand inner scent imagery will become easier,\nclearer, and more effective.",
+          "value": "From this moment forward, you have the ability\nto regulate your sense of smell and develop\nthe richness of your inner scent awareness.\n\nYour sense of smell will become more responsive\nto your conscious intention. You can notice\ndelicate aromas more clearly or allow unwanted\nodors to fade into the background.\n\nTo increase your perception of smell, close your eyes,\ninhale deeply, and gently hold your breath.\nThink or say in your mind, \"{{ cue.primary }}.\"\nThen exhale slowly through your mouth and open your eyes.\n\nFaint scents will become clearer and more distinct; You will recognize subtle differences between aromas\nand appreciate their character and richness.\n\nTo reduce the prominence of an unwanted odor,\nuse the same eye and breathing sequence,\nthinking or saying, \"{{ cue.id.OCF-CMD-SEN-003-SMELL-LESS }}.\"\nIts presence in your awareness will grow quieter,\nwhile you remain free to change your adjustment\nor return to your usual sense of smell.\n\nYour inner sense of smell will also grow stronger.\nYou will recall familiar fragrances and imagine\nnew ones, even when no physical aroma is present.\nYou can bring a remembered scent into awareness,\nhold it clearly, distinguish its subtle qualities,\nand combine or transform aromas through imagination; Your mind will connect scents with memories,\nplaces, experiences, and images more vividly.\nThis ability to imagine and remember aromas\nwill become a lasting part of your total self.\n\nWhenever you choose, your intention and these\ncommands can help make an inner aroma more vivid\nor let an imagined scent gently fade.\n\nWith each use, your physical smell regulation\nand inner scent imagery will become easier,\nclearer, and more effective.",
           "yaml_pointer": "/entries/hplus.function.ocf-sen-003.function-body/text"
         },
         "/entries/hplus.function.ocf-sen-003.function-body/version": {

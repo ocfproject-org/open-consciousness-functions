@@ -10,6 +10,22 @@ Recommended learning: Access to Energy, for the optional energizing practice.
 That is an optional recommendation, not a prerequisite or a claim that an
 official recording is available.
 
+## Background and suggested practice
+
+OCF's Energy Ball is inspired by the Monroe Institute's **Resonant Energy
+Balloon (REBAL)**. You can picture or sense a comfortable space around
+yourself; a sharp mental image is not required. Try it to set an intention
+before meditation, settle distractions, or take a moment to center yourself
+before speaking or a difficult conversation. These are visualization
+practices, not claims of physical protection or health benefits.
+**Plus Inflate** and **Plus Deflate** are OCF's own cues, not Monroe
+Institute instructions.
+
+- [Robert A. Monroe, October 7, 1990 Gateway talk](https://archive.org/details/ram-typed-transcripts) (Monroe Institute Digital Archives; choose “1990-10-07 - Bob’s Talk”). Monroe recalls the exercise's origins in Explorer sessions.
+- [Explorer session EGP-1, June 17, 1986](https://archive.org/details/explorer-coll-86) (Monroe Institute Digital Archives). An example of early practice in the archived audio and unedited transcript.
+- [Restoring Your Energy](https://www.monroeinstitute.org/pages/resources), a free ten-minute REBAL meditation from the Monroe Institute.
+- [REBAL practice tips](https://www.monroeinstitute.org/blogs/blog/tips-for-strengthening-expanding-and-using-your-biofield-with-the-resonant-energy-balloon-rebal), guidance from Monroe Institute instructor Allyn Evans that discusses the visualization and gives examples of when people use it.
+
 ## Use and sequence
 
 - Deliberately think or say in your mind **Plus Inflate**
