@@ -14,13 +14,15 @@ from pathlib import Path
 from uuid import uuid4
 
 from . import audio_build, semantic_dsp
-from .locale import iter_events, resolve_document
+from .locale import iter_events, normalize_tag, resolve_document
 from .mix_profiles import load_mix_profile
 from .session import compose, load_template
 from .session_overrides import select_relaxation
 from .utils import OCFError, sha256_of_file
 
 TEMPLATE = "OCF-TPL-SESSION-PREP-LEARN-003"
+_SHARED_OPEN_PREPARE = "hplus.shared.focus11.open.prepare"
+_LEARNING_OPEN_PREPARE = "preparation.learning.v3.open-1"
 
 
 def plan(
@@ -33,6 +35,12 @@ def plan(
     relaxation="long",
 ):
     template = load_template(TEMPLATE)
+    learning_open = normalize_tag(locale) == "en-US"
+    if learning_open:
+        # Keep the routine shared opening and locked template intact. Only
+        # the first standalone Learning visit uses this cue boundary.
+        first_open = next(section for section in template["sections"] if section["id"] == "open-1")
+        first_open["narration"]["prepare"]["narration_key"] = _LEARNING_OPEN_PREPARE
     select_relaxation(template["sections"], relaxation)
     document = compose(
         template,
@@ -43,6 +51,10 @@ def plan(
         affirmation=affirmation,
         pacing_profile=pacing_profile,
     )
+    if learning_open:
+        entries = document.get("narration_pacing", {}).get("entries", {})
+        if _SHARED_OPEN_PREPARE in entries and _LEARNING_OPEN_PREPARE not in entries:
+            entries[_LEARNING_OPEN_PREPARE] = entries[_SHARED_OPEN_PREPARE]
     document = resolve_document(document, locale, strict=True)
     if native_speed:
         for pacing in document.get("narration_pacing", {}).get("profiles", {}).values():
