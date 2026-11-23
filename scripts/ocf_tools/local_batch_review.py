@@ -200,7 +200,12 @@ def build_pages(config, temporary):
     _need(
         {"audio_repository", "verified_catalog"}
         <= set(cfg)
-        <= {"audio_repository", "verified_catalog", "smart_playback_media"},
+        <= {
+            "audio_repository",
+            "verified_catalog",
+            "smart_playback_media",
+            "published_transcript_mirror",
+        },
         "invalid Pages build config",
     )
 
@@ -252,6 +257,8 @@ def build_pages(config, temporary):
     ]
     if "smart_playback_media" in cfg:
         args.extend(["--smart-playback-media", str(relative("smart_playback_media"))])
+    if "published_transcript_mirror" in cfg:
+        args.extend(["--published-transcript-mirror", str(relative("published_transcript_mirror"))])
     try:
         subprocess.run(args, cwd=repo, check=True, stdout=sys.stderr)
         subprocess.run(

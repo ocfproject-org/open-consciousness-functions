@@ -157,12 +157,14 @@ def test_pages_config_runs_real_cli_contract_and_rejects_wrong_pin(tmp_path, mon
     write(tmp_path / "catalog.json", {})
     media = tmp_path / "comfort.mp3"
     media.write_bytes(b"fixture only")
+    (tmp_path / "transcripts").mkdir()
     cfg = write(
         tmp_path / "config.json",
         {
             "audio_repository": "audio-repo",
             "verified_catalog": "catalog.json",
             "smart_playback_media": "comfort.mp3",
+            "published_transcript_mirror": "transcripts",
         },
     )
     calls = []
@@ -184,6 +186,9 @@ def test_pages_config_runs_real_cli_contract_and_rejects_wrong_pin(tmp_path, mon
     assert review.build_pages(cfg, tmp_path) == tmp_path / "pages-build"
     assert calls[0][1].endswith("/scripts/build_public_site.py")
     assert "--historical-reference" in calls[0] and "--smart-playback-media" in calls[0]
+    assert calls[0][calls[0].index("--published-transcript-mirror") + 1] == str(
+        tmp_path / "transcripts"
+    )
     assert calls[1][1].endswith("/scripts/validate_site.py")
     write(audio_repo / "site/source.json", {"source_commit": "2" * 40})
     with pytest.raises(OCFError, match="same source revision"):
