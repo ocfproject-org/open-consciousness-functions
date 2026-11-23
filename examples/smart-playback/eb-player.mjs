@@ -5,6 +5,16 @@ const controlsFor=m=>[...new Set(m.windows.filter(w=>w.approved).map(w=>w.contro
 const signature=m=>JSON.stringify({assets:m.assets.map(a=>a.sha256),windows:m.windows});
 const bookmarkKey=m=>'ocf-private-review-mount-resume:'+m.assets[0].sha256;
 const original=m=>m.assets.find(a=>a.id===m.identity.source);
+// Site code may pin a separate HTTPS audio origin. The manifest cannot select one.
+export function mediaLocation(path, base=import.meta.url) {
+ const root=new URL(base,import.meta.url);
+ const local=['127.0.0.1','localhost','[::1]'].includes(root.hostname);
+ if((root.protocol!=='https:'&&!(local&&root.protocol==='http:'))||root.username||root.password||root.search||root.hash)
+  throw Error('Invalid audio origin');
+ if(!/^media\/[a-z0-9][a-z0-9.-]*$/.test(path))throw Error('Invalid audio route');
+ return new URL(path,root);
+}
+
 
 // Bind the single native stream to the exact verified edit list. Legacy true
 // means the measured w.insert alternative, not necessarily the first variant.
@@ -29,8 +39,8 @@ export function nativeStream(m,p,toggles={}){
 }
 
 export class SmartPlayer{
- constructor(source,insert,notify=()=>{}){
-  this.media=[source,insert];this.notify=notify;
+ constructor(source,insert,notify=()=>{},{mediaBase=import.meta.url}={}){
+  this.media=[source,insert];this.notify=notify;this.mediaBase=mediaBase;
   this.native=document.createElement('audio');
   this.native.preload='metadata';this.native.hidden=true;
   source.after(this.native);
@@ -80,11 +90,13 @@ export class SmartPlayer{
   try{await this.seek(t);}catch{this.notify('Could not change position. Try again.');}
  }
  async verifyAsset(a){
-  const t=performance.now(),url=new URL(a.path,import.meta.url);
-  const r=await fetch(url,{method:'HEAD',cache:'no-store',signal:AbortSignal.timeout(4000)});
+  const t=performance.now(),url=mediaLocation(a.path,this.mediaBase);
+  const same=url.origin===location.origin;
+  const options={cache:'no-store',credentials:same?'same-origin':'omit',redirect:'error'};
+  const r=await fetch(url,{...options,method:'HEAD',signal:AbortSignal.timeout(4000)});
   if(!r.ok||r.headers.get('etag')!==`"${a.sha256}"`||Number(r.headers.get('content-length'))!==a.bytes||r.headers.get('accept-ranges')!=='bytes')throw Error('Original audio identity could not be verified');
-  const range=await fetch(url,{headers:{Range:'bytes=0-1'},cache:'no-store',signal:AbortSignal.timeout(4000)});
-  if(range.status!==206||range.headers.get('content-range')!==`bytes 0-1/${a.bytes}`||(await range.arrayBuffer()).byteLength!==2)throw Error('The server did not provide a valid audio range');
+  const range=await fetch(url,{...options,headers:{Range:'bytes=0-1'},signal:AbortSignal.timeout(4000)});
+  if(range.status!==206||range.headers.get('etag')!==r.headers.get('etag')||range.headers.get('content-range')!==`bytes 0-1/${a.bytes}`||(await range.arrayBuffer()).byteLength!==2)throw Error('The server did not provide a valid audio range');
   this.stats.verified.push(a.id);this.stats.requests.push({asset:a.id,ms:performance.now()-t});
  }
  async load(m,{privateReview=false}={}){
@@ -149,7 +161,7 @@ export class SmartPlayer{
   let timer;
   try{
    const selected=nativeStream(this.m,this.p,this.toggles);
-   const url=new URL(selected.path,import.meta.url).href;
+   const url=mediaLocation(selected.path,this.mediaBase).href;
    this.stream=selected;
    if(this.native.src!==url)this.native.src=url;
    else if(this.native.error)this.native.load();
