@@ -120,7 +120,7 @@ def test_do_not_stage_partial_or_tampered_batch(tmp_path, monkeypatch, bad):
     assert not out.exists()
 
 
-def test_prebuilt_public_site_gets_explicit_private_review_link(tmp_path, monkeypatch):
+def test_prebuilt_public_site_gets_inline_private_player_and_standalone_link(tmp_path, monkeypatch):
     batch, _ = valid(tmp_path, monkeypatch)
     pages = tmp_path / "pages"
     write(
@@ -137,7 +137,10 @@ def test_prebuilt_public_site_gets_explicit_private_review_link(tmp_path, monkey
     out = tmp_path / "review"
     review.build_review(batch, out, locale="en-US", edition_version="1.0.0", pages=pages)
     guide = out / "functions/OCF-EXP-007/index.html"
-    assert 'href="/_local-audition/OCF-EXP-007.html"' in guide.read_text()
+    content = guide.read_text()
+    assert 'href="/_local-audition/OCF-EXP-007.html"' in content
+    assert '<audio controls preload="none" src="/_local-audition/audio/OCF-EXP-007.mp3">' in content
+    assert 'href="/_local-audition/audio/OCF-EXP-007.flac" download' in content
     assert (out / "_local-audition/OCF-EXP-007.html").exists()
     assert (out / "catalog.json").read_bytes() == (pages / "catalog.json").read_bytes()
     assert page.read_text() == markup

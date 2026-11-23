@@ -121,7 +121,7 @@ def _native_records(batch, locale, marker_root):
 
 
 def _copy_pages(pages, site, functions):
-    """Add only local playback links to a separately built production Pages artifact."""
+    """Copy a production Pages artifact and reserve its local index entry point."""
     pages = Path(pages).resolve(strict=True)
     _need(pages.is_dir(), "Pages input is not a built static site")
     index = read_json_object(pages / "documentation-index.json")
@@ -154,21 +154,41 @@ def _copy_pages(pages, site, functions):
         _need(markup.count("</head>") == 1, "Pages artifact contains unrecognized markup")
         markup = markup.replace("</head>", '<meta name="robots" content="noindex,nofollow"></head>')
         dst.write_text(markup, encoding="utf-8")
-    for rel, slug in {"index.html": "", **{v: k for k, v in hrefs.items()}}.items():
-        page = site / rel
-        raw = page.read_text(encoding="utf-8")
-        _need(
-            raw.count("</main>") == 1 and "data-local-batch-review" not in raw,
-            "Pages artifact is missing the review insertion point",
-        )
-        target = "index.html" if not slug else slug + ".html"
-        notice = (
-            '<section class="guide-section" data-local-batch-review>'
-            "<h2>Private listening review</h2><p>"
-            f'<a href="/_local-audition/{target}">Open local candidate recordings</a>'
-            "</p><p>This does not modify the published edition.</p></section>"
-        )
-        page.write_text(raw.replace("</main>", notice + "</main>"), encoding="utf-8")
+    _add_review_panel(
+        site / "index.html",
+        '<p><a href="/_local-audition/index.html">Browse all local recordings</a></p>',
+    )
+    return hrefs
+
+
+def _add_review_panel(page, body):
+    raw = page.read_text(encoding="utf-8")
+    _need(
+        raw.count("</main>") == 1 and "data-local-batch-review" not in raw,
+        "Pages artifact is missing the review insertion point",
+    )
+    panel = (
+        '<section class="guide-section" data-local-batch-review>'
+        "<h2>Private listening review</h2>"
+        "<p>This does not modify the published edition.</p>"
+        f"{body}</section>"
+    )
+    page.write_text(raw.replace("</main>", panel + "</main>"), encoding="utf-8")
+
+
+def _recording_player(fid, locale, *, base="", timed=False):
+    audio = base + "audio/" + fid
+    subtitles = (
+        f'<track kind="subtitles" srclang="{html.escape(locale)}" '
+        f'label="Timed transcript" src="{audio}.vtt">'
+        if timed
+        else ""
+    )
+    return (
+        f'<audio controls preload="none" src="{audio}.mp3">{subtitles}</audio>'
+        f'<p><a href="{audio}.mp3" download>Download MP3</a> · '
+        f'<a href="{audio}.flac" download>Download FLAC</a></p>'
+    )
 
 
 def build_pages(config, temporary):
@@ -276,10 +296,11 @@ def build_review(batch, destination, *, locale, edition_version, pages=None, pag
         site = top / "site"
         site.mkdir(mode=0o700)
         catalog = site
+        pages_guides = {}
         if pages_config is not None:
             source_pages = build_pages(pages_config, top)
         if pages is not None or pages_config is not None:
-            _copy_pages(source_pages, site, records)
+            pages_guides = _copy_pages(source_pages, site, records)
             catalog = site / "_local-audition"
             catalog.mkdir()
         (catalog / "audio").mkdir()
@@ -302,7 +323,6 @@ def build_review(batch, destination, *, locale, edition_version, pages=None, pag
                 formats[ext] = encoded["sha256"]
             title = report.get("title") or fid
             vtt = report.get("artifacts", {}).get("listener_vtt")
-            subtitles = ""
             if vtt:
                 name = "audio/" + fid + ".vtt"
                 shutil.copyfile(source / vtt["path"], catalog / name)
@@ -310,13 +330,15 @@ def build_review(batch, destination, *, locale, edition_version, pages=None, pag
                     sha256_of_file(catalog / name) == vtt["sha256"],
                     "private subtitle checksum mismatch",
                 )
-                subtitles = f'<track kind="subtitles" srclang="{html.escape(locale)}" label="Timed transcript" src="{name}">'
-            body = (
-                '<p><a href="index.html">All recordings</a></p>'
-                f'<audio controls preload="none" src="audio/{fid}.mp3">{subtitles}</audio>'
-                f'<p><a href="audio/{fid}.mp3" download>Download MP3</a> · '
-                f'<a href="audio/{fid}.flac" download>Download FLAC</a></p>'
+            body = '<p><a href="index.html">All recordings</a></p>' + _recording_player(
+                fid, locale, timed=bool(vtt)
             )
+            if fid in pages_guides:
+                _add_review_panel(
+                    site / pages_guides[fid],
+                    _recording_player(fid, locale, base="/_local-audition/", timed=bool(vtt))
+                    + f'<p><a href="/_local-audition/{fid}.html">Open standalone player</a></p>',
+                )
             (catalog / (fid + ".html")).write_text(_page(title, body), encoding="utf-8")
             rows.append(f'<li><a href="{fid}.html">{html.escape(title)}</a></li>')
             output[fid] = {
