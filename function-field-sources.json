@@ -101570,23 +101570,33 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/common_uses/0/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "reviewed",
+          "value": "draft",
           "yaml_pointer": "/common_uses/0/status"
         },
         "/common_uses/0/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Set an intention before meditation, or use the familiar image to settle distractions as you begin.",
+          "value": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.",
           "yaml_pointer": "/common_uses/0/text"
         },
         "/common_uses/1/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "reviewed",
+          "value": "draft",
           "yaml_pointer": "/common_uses/1/status"
         },
         "/common_uses/1/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Take a brief centering pause before public speaking or a difficult conversation.",
+          "value": "Practising with the familiar personal ball before trying an optional larger extent.",
           "yaml_pointer": "/common_uses/1/text"
+        },
+        "/common_uses/2/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Use-case review; Monroe Institute REBAL practice context; OCF visualization example",
+          "yaml_pointer": "/common_uses/2/notes"
+        },
+        "/common_uses/2/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "energy-ball-settle",
+          "yaml_pointer": "/common_uses/2/semantic_id"
         },
         "/common_uses/2/status": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
@@ -101595,8 +101605,48 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/common_uses/2/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.",
+          "value": "Set an intention before meditation, or use the familiar image to settle distractions as you begin.",
           "yaml_pointer": "/common_uses/2/text"
+        },
+        "/common_uses/3/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Use-case review; Monroe Institute REBAL practice tips; OCF visualization example",
+          "yaml_pointer": "/common_uses/3/notes"
+        },
+        "/common_uses/3/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "energy-ball-centering-pause",
+          "yaml_pointer": "/common_uses/3/semantic_id"
+        },
+        "/common_uses/3/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/common_uses/3/status"
+        },
+        "/common_uses/3/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Take a brief centering pause before public speaking or a difficult conversation.",
+          "yaml_pointer": "/common_uses/3/text"
+        },
+        "/common_uses/4/notes": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "Use-case review; OCF visualization example; not a claim of physical protection",
+          "yaml_pointer": "/common_uses/4/notes"
+        },
+        "/common_uses/4/semantic_id": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "energy-ball-chosen-quality",
+          "yaml_pointer": "/common_uses/4/semantic_id"
+        },
+        "/common_uses/4/status": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "reviewed",
+          "yaml_pointer": "/common_uses/4/status"
+        },
+        "/common_uses/4/text": {
+          "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+          "value": "As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.",
+          "yaml_pointer": "/common_uses/4/text"
         },
         "/content/bindings/default_session_template": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",

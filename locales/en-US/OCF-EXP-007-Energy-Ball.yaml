@@ -122,12 +122,22 @@ tags:
   status: draft
   semantic_id: deliberate-cues
 common_uses:
-- text: Set an intention before meditation, or use the familiar image to settle distractions as you begin.
+- text: Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.
+  status: draft
+- text: Practising with the familiar personal ball before trying an optional larger extent.
+  status: draft
+- semantic_id: energy-ball-settle
+  text: Set an intention before meditation, or use the familiar image to settle distractions as you begin.
   status: reviewed
-- text: Take a brief centering pause before public speaking or a difficult conversation.
+  notes: 'Use-case review; Monroe Institute REBAL practice context; OCF visualization example'
+- semantic_id: energy-ball-centering-pause
+  text: Take a brief centering pause before public speaking or a difficult conversation.
   status: reviewed
-- text: As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.
+  notes: 'Use-case review; Monroe Institute REBAL practice tips; OCF visualization example'
+- semantic_id: energy-ball-chosen-quality
+  text: As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.
   status: reviewed
+  notes: 'Use-case review; OCF visualization example; not a claim of physical protection'
 relationships:
   related_functions: []
   complementary_functions:

@@ -19,8 +19,15 @@ def test_reviewed_use_case_batch_is_complete_in_effective_catalog():
         ]
         for identity, resource in resources.items()
     }
-    assert sum(map(len, reviewed.values())) == 206
-    assert sum(bool(rows) for rows in reviewed.values()) == 57
+    energy = reviewed["OCF-EXP-007"]
+    assert {row["semantic_id"] for row in energy} == {
+        "energy-ball-settle",
+        "energy-ball-centering-pause",
+        "energy-ball-chosen-quality",
+    }
+    original_review = {key: rows for key, rows in reviewed.items() if key != "OCF-EXP-007"}
+    assert sum(map(len, original_review.values())) == 206
+    assert sum(bool(rows) for rows in original_review.values()) == 57
     assert reviewed["OCF-EXP-005"] == []
     for identity, rows in reviewed.items():
         assert all(row["status"] == "reviewed" for row in rows), identity
