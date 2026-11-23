@@ -221,7 +221,7 @@ async function show(key){
  which=key;$('title').textContent=titles[key];$('policy').hidden=true;$('lesson-proof').hidden=key!=='lesson';
  try{
    const m=all[key];if(!m||m.identity.kind!=='private-review')throw Error('Not a private audition');
-   await player.load(m,{privateReview:true});
+   await player.load(m,{privateReview:true,title:titles[key]});
    player.toggles=full();
    supported=ids.filter(id=>m.windows.some(w=>w.approved&&w.control===id));
    $('policy').hidden=key!=='lesson';

@@ -44,7 +44,7 @@ export class SmartPlayer{
   this.native=document.createElement('audio');
   this.native.preload='metadata';this.native.hidden=true;
   source.after(this.native);
-  this.session=navigator.mediaSession;
+  this.session=navigator.mediaSession;this.sessionMetadata=null;
   this.running=false;this.nativePlaying=false;this.loadingPlay=null;this.generation=0;
   this.interruption=null;this.t=0;this.toggles={};this.stream=null;this.buffering=null;this.lastSavedAt=0;
   this.stats={verified:[],fallbacks:0,transitions:[],requests:[],initialLatencyMs:null};
@@ -86,6 +86,20 @@ export class SmartPlayer{
    else this.session.setPositionState?.();
   }catch{}
  }
+ clearMediaMetadata(){
+  if(this.sessionMetadata&&this.session){
+   try{if(this.session.metadata===this.sessionMetadata)this.session.metadata=null;}catch{}
+  }
+  this.sessionMetadata=null;
+ }
+ setMediaMetadata(title){
+  if(!this.session||typeof MediaMetadata!=='function')return;
+  const displayTitle=(typeof title==='string'&&title.trim())||document.title.trim()||'Open Consciousness Functions';
+  try{
+   const metadata=new MediaMetadata({title:displayTitle,artist:'Open Consciousness Functions'});
+   this.session.metadata=metadata;this.sessionMetadata=metadata;
+  }catch{}
+ }
  async seekFromSession(t){
   try{await this.seek(t);}catch{this.notify('Could not change position. Try again.');}
  }
@@ -99,16 +113,14 @@ export class SmartPlayer{
   if(range.status!==206||range.headers.get('etag')!==r.headers.get('etag')||range.headers.get('content-range')!==`bytes 0-1/${a.bytes}`||(await range.arrayBuffer()).byteLength!==2)throw Error('The server did not provide a valid audio range');
   this.stats.verified.push(a.id);this.stats.requests.push({asset:a.id,ms:performance.now()-t});
  }
- async load(m,{privateReview=false}={}){
-  this.pause();this.hasInteracted=false;this.interruption=null;this.stream=null;this.t=0;
+ async load(m,{privateReview=false,title}={}){
+  this.pause();this.clearMediaMetadata();this.hasInteracted=false;this.interruption=null;this.stream=null;this.t=0;
   this.native.removeAttribute('src');this.native.load();
   this.privateReview=privateReview===true;const generation=++this.generation;
   this.m=validate(m);this.p=plan(m);this.toggles={};this.stats.verified=[];
   await this.verifyAsset(original(m));
   if(generation!==this.generation)return;
-  if(this.session&&typeof MediaMetadata==='function'){
-   try{this.session.metadata=new MediaMetadata({title:m.identity.session==='quiet-focus'?'Quiet Focus':'Energy Ball',artist:'Open Consciousness Functions'});}catch{}
-  }
+  this.setMediaMetadata(title);
   this.setMediaSession('none');this.notify(m.notice);return this;
  }
  setProfile(mode,toggles){
@@ -222,7 +234,8 @@ export class SmartPlayer{
  }
  destroy(){
   this.pause();this.setMediaSession('none');
-  if(this.session){try{this.session.metadata=null;}catch{}for(const action of Object.keys(this.transportHandlers))try{this.session.setActionHandler(action,null);}catch{}}
+  this.clearMediaMetadata();
+  if(this.session){for(const action of Object.keys(this.transportHandlers))try{this.session.setActionHandler(action,null);}catch{}}
   this.native.removeAttribute('src');this.native.load();this.native.remove();
   window.removeEventListener('pagehide',this.pagehide);
   document.removeEventListener('visibilitychange',this.visibility);
