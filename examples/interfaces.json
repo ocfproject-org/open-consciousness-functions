@@ -2198,7 +2198,7 @@
       "verification": "structural schema only; not semantic, asset, rights or release approval"
     },
     {
-      "example_sha256": "60dcdb3cf548595d3249c57629921234fd1bffd9dea4594f30768329694da8d0",
+      "example_sha256": "e75f1f5d138c51013713fc447c12bb5826a26a64b73d4f766d8bdfe6c8a78d22",
       "schema": "shared-state-cues.schema.json",
       "source": "function-content/shared-state-cues.yaml",
       "verification": "structural schema only; not semantic, asset, rights or release approval"
