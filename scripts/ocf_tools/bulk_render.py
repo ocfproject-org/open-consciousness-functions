@@ -565,6 +565,7 @@ def render_many(
     overrides: dict | None = None,
     mix_profile: dict | str | Path | None = None,
     verify_speech: bool = True,
+    audition_version: str | None = None,
     _speech_verifier=None,
 ) -> dict:
     started_at = time.perf_counter()
@@ -680,6 +681,8 @@ def render_many(
                 identity["mix_profile"] = mix_profile
             if overrides is not None:
                 identity["overrides"] = overrides
+            if audition_version is not None:
+                identity["audition_version"] = audition_version
             identity["git_worktree"] = git_identity
             if _speech_verifier is not None:
                 identity["speech_verification"] = _speech_verifier.identity
@@ -708,6 +711,7 @@ def render_many(
             job["render_options"] = {
                 **({"overrides": overrides} if overrides is not None else {}),
                 **({"mix_profile": mix_profile} if mix_profile is not None else {}),
+                **({"audition_version": audition_version} if audition_version is not None else {}),
             }
             jobs[owner] = job
             statuses[owner] = {

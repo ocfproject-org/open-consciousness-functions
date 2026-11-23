@@ -600,3 +600,29 @@ configuration lock. It is not an automatic wake command.
 The default applies to newly composed sessions, not archived registered
 builds, existing masters, or published releases. Existing release approval and
 packaging controls still apply.
+
+### Stage a private batch listening site
+
+Use the same explicit voice, pacing, and mix you intend to audition. To build
+an offline, browser-ready review from a verified batch and its native speech
+receipts:
+
+```sh
+python scripts/ocf.py audio render-many OCF-FND-002 OCF-EXP-007 \
+  --voice YOUR_PROFILE --edition-version 0.2.1 --audition-site ./local-review
+PYTHONPATH=scripts python -m ocf_tools.local_batch_review ./local-review --port 8765
+```
+
+Replace `YOUR_PROFILE` with a configured local voice. Use `--all` instead of the
+IDs for a whole function batch. The target directory must not already exist.
+The edition is part of the render identity, so an existing edition is never
+silently relabeled. After any blocked or failed track, the input render receipts
+are preserved but the partial site is not staged. Rerun the same command to
+resume verified recordings. Keep the OCF render cache and the native reports
+available until the site has been staged.
+
+The review site provides the original recordings with seekable playback,
+MP3/FLAC copies, and available timed text. The included server is deliberately
+loopback only. It does not publish, grant LAN access, or claim listening
+approval. A measured Smart Play catalog requires its own verified edit
+artifacts; the original-only review does not invent alternate guidance.

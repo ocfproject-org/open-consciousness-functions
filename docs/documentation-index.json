@@ -619,6 +619,7 @@
         "audio export-audition",
         "audio release",
         "audio render",
+        "audio render-many",
         "voice doctor",
         "workspace clean",
         "workspace status"
@@ -627,7 +628,7 @@
         "schemas/audio-release.schema.json",
         "schemas/mix-profile.schema.json"
       ],
-      "sha256": "5e83395e0e3863cd2d7594ba5ba97cf51125d5c25b20323fb9a309532cdeadff",
+      "sha256": "aa9c8a054a75f5b084072fc147395a4309c47f7452e255b7b65aced0db77a628",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -4768,7 +4769,7 @@
         "workspace clean"
       ],
       "related_schemas": [],
-      "sha256": "2105485299ea7e083e6c62dc0dd69162dcd297b79691d93e275565415a6f05dc",
+      "sha256": "5396ed4637c5db365f76a3a94fe457bbe2660d53d6913441e24ccc72dbf5ed9d",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
