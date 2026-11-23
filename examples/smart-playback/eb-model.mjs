@@ -10,6 +10,26 @@ export function isPlainCommandPreview(m){
    &&i.returnPolicy==='sleep'&&!m.events.some(e=>e.role==='energy-ball')
    &&m.windows.some(w=>w.approved&&w.control==='affirmation'&&w.originalChoice==='off');
 }
+export function isRoutineCommandPreview(m){
+ const i=m?.identity;
+ return i?.kind==='private-review'&&/^OCF-[A-Z]{3}-[0-9]{3}$/.test(i.function)
+   &&i.function!=='OCF-EXP-007'&&i.session===`routine-${i.function.toLowerCase()}-${i.edition}`
+   &&/^[a-f0-9]{12}$/.test(i.edition)
+   &&Array.isArray(m.events)&&m.events.some(e=>e.role==='installation'&&e.required&&e.speech)
+   &&m.events.some(e=>e.role==='one-to-ten'&&e.required&&e.id==='focus-ten.begin')
+   &&!m.events.some(e=>Object.hasOwn(variantControls,e.role));
+}
+function routineWindow(m,w){
+ if(!isRoutineCommandPreview(m)||w.originalChoice!=='off'||w.inState!=='focus-10'
+    ||w.outState!=='focus-10'||w.required?.length!==0)return false;
+ const before=m.events.find(e=>e.id===w.boundaries?.lastRetained);
+ const after=m.events.find(e=>e.id===w.boundaries?.firstResumed);
+ return before?.role==='relaxation'&&before.speech
+   &&(before.required||m.windows.some(r=>r.control==='relaxation'&&r.approved&&r.start<=before.start&&r.end>=before.end))
+   &&after?.id==='focus-ten.begin'&&after.required&&after.speech
+   &&before.end<=w.start-w.fade&&w.end+w.fade<=after.start
+   &&!m.events.some(e=>e.start<w.end+w.fade&&e.end>w.start-w.fade);
+}
 const baseChoice=w=>w.originalChoice||'full';
 export function availableChoices(m,control){
  const rows=m.windows.filter(w=>w.control===control&&w.approved);
@@ -48,9 +68,10 @@ export function validate(m){
  let end=0;const keys=new Set();
  for(const w of m.windows){exact(w,['id','control','start','end','seek','insert','fade','correlation','required','inState','outState','transitionReviewed','measured','boundarySpeechFree','approved','boundaries',...(Object.hasOwn(w,'variants')?['variants','originalChoice']:[])]);
   if(w.variants){
-   const candidateChoices=variantControls[w.control];
+   const routine=routineWindow(m,w);
+   const candidateChoices=routine&&w.control==='energy-ball'?['off','reminder']:variantControls[w.control];
    if(m.identity.kind!=='private-review'||!candidateChoices||w.seek!==null)fail('Variants are not approved for this window');
-   if(w.control==='resonant-tuning'?w.originalChoice!=='full':!['off','full'].includes(w.originalChoice))fail('Wrong original choice');
+   if(!routine&&(w.control==='resonant-tuning'?w.originalChoice!=='full':!['off','full'].includes(w.originalChoice)))fail('Wrong original choice');
    const keys=candidateChoices.filter(x=>x!==w.originalChoice);
    exact(w.variants,keys);
    for(const v of Object.values(w.variants)){
@@ -65,10 +86,21 @@ export function validate(m){
   if(['energy-ball','affirmation'].includes(w.control)){
    const namedPreview=awake||(m.identity.kind==='private-review'&&m.identity.function==='OCF-EXP-007'&&m.identity.session==='private-energy-ball'&&m.identity.returnPolicy==='sleep');
    const contents=m.events.filter(e=>e.start<w.end+w.fade&&e.end>w.start-w.fade);
-   if((w.control==='energy-ball'?!awake:!(namedPreview||(w.originalChoice==='off'&&isPlainCommandPreview(m))))
+   if((w.control==='energy-ball'?!(awake||routineWindow(m,w)):!(namedPreview||routineWindow(m,w)||(w.originalChoice==='off'&&isPlainCommandPreview(m))))
       ||(w.originalChoice==='off'&&contents.length)
       ||(w.originalChoice==='full'&&(!contents.some(e=>e.speech)||contents.some(e=>e.required||e.role!==w.control||e.start<w.start||e.end>w.end))))
      fail('Optional practice must stay inside its measured private window');
+  }
+  if(isRoutineCommandPreview(m)&&w.control==='relaxation'){
+   const last=m.events.find(e=>e.id===w.boundaries?.lastRetained);
+   const first=m.events.find(e=>e.id===w.boundaries?.firstResumed);
+   const covered=m.events.filter(e=>e.start<w.end&&e.end>w.start);
+   if(w.seek!==null||w.variants||w.inState!=='focus-10'||w.outState!=='focus-10'
+      ||last?.role!=='transmutation-box'||!last.required
+      ||first?.id!=='focus-ten.begin'||!first.required||covered.length<2
+      ||covered.some(e=>e.role!=='relaxation'||e.required||!e.speech)
+      ||m.events.some(e=>e.role==='relaxation'&&!covered.includes(e)))
+    fail('Short Relax must replace only measured full relaxation');
   }
   if(!Array.isArray(w.required)||w.required.some(x=>!ids.has(x)))fail('Unknown required content');
   exact(w.boundaries,['lastRetained','firstResumed','sourceSha256']);if(w.boundaries.sourceSha256!==source.sha256||m.events.filter(e=>e.end<=w.start-w.fade).at(-1)?.id!==w.boundaries.lastRetained||m.events.find(e=>e.start>=w.end+w.fade)?.id!==w.boundaries.firstResumed||protectedDSP.some(([a,b])=>a<w.end+w.fade&&b>w.start-w.fade))fail('Unbound speech or protected DSP transition');
@@ -87,6 +119,17 @@ export function validate(m){
          ||!m.events.some(e=>e.role==='sleep'&&e.required&&e.end<descent.start)
          ||covered.length!==2||covered[0].id!=='return.count-to-one'||covered[1].id!=='return.alert'
          ||covered.some(e=>e.role!=='waking-return'))fail('Short return must preserve the measured Focus 20-to-10 descent, Ten, and C1');
+   }else if(isRoutineCommandPreview(m)&&m.identity.returnPolicy==='sleep'){
+     const c1=m.timelines.dspWindows.find(e=>e.id==='waking-c1');
+     const before=m.events.find(e=>e.id===w.boundaries.lastRetained);
+     const closer=m.events.find(e=>e.id===w.boundaries.firstResumed);
+     const spoken=m.events.filter(e=>e.start<w.end&&e.end>w.start);
+     if(w.variants||w.seek!==null||w.inState!=='focus-10'||w.outState!=='focus-10'
+       ||!before?.required||before.role!=='reinforcement'||closer?.id!=='function-closer.block'
+       ||!closer.required||!c1||Math.abs(c1.start-closer.start)>.003
+       ||w.end+w.fade>c1.start||!m.events.some(e=>e.role==='sleep'&&e.required&&e.end<=before.start)
+       ||spoken.length!==1||spoken[0].id!=='return.begin'||spoken[0].role!=='waking-return'
+       ||spoken[0].required||!spoken[0].speech)fail('Routine short waking must preserve the measured sleep and C1 closer');
    }else if(m.identity.returnPolicy!=='normal-waking'||m.events.some(e=>e.role==='sleep'))fail('Return not eligible');if(awake&&(!covered.length||covered.some(e=>e.role!=='waking-return')||m.events.find(e=>e.id===w.boundaries.firstResumed)?.role!=='closing'))fail('Awake return must preserve the closer');}
   if(w.seek!==null){const speechEnd=Math.max(w.start,...m.events.filter(e=>e.start>=w.start&&e.end<=w.end).map(e=>e.end));exact(w.seek,['start','end','retainedActionSeconds']);if(!finite(w.seek.start)||!finite(w.seek.end)||w.seek.start<w.start||w.seek.end>w.end||w.seek.end<=w.seek.start||!finite(w.seek.retainedActionSeconds)||w.seek.retainedActionSeconds<8||w.seek.retainedActionSeconds>w.end-speechEnd-(w.seek.end-w.seek.start)||w.inState!==w.outState||m.events.some(e=>(e.required||e.speech)&&e.start<w.seek.end&&e.end>w.seek.start))fail('Unsafe seek bypass');}
   for(const insert of new Set([w.insert,...Object.values(w.variants||{}).map(v=>v.insert)])){
