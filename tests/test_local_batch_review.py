@@ -141,3 +141,48 @@ def test_prebuilt_public_site_gets_explicit_private_review_link(tmp_path, monkey
     assert (out / "_local-audition/OCF-EXP-007.html").exists()
     assert (out / "catalog.json").read_bytes() == (pages / "catalog.json").read_bytes()
     assert page.read_text() == markup
+
+
+def test_pages_config_runs_real_cli_contract_and_rejects_wrong_pin(tmp_path, monkeypatch):
+    from ocf_tools import public_site_export
+
+    source_commit = "1" * 40
+    audio_repo = tmp_path / "audio-repo"
+    write(audio_repo / "site/source.json", {"source_commit": source_commit})
+    write(audio_repo / "scripts/build_public_site.py", {})
+    write(audio_repo / "scripts/validate_site.py", {})
+    write(tmp_path / "catalog.json", {})
+    media = tmp_path / "comfort.mp3"
+    media.write_bytes(b"fixture only")
+    cfg = write(
+        tmp_path / "config.json",
+        {
+            "audio_repository": "audio-repo",
+            "verified_catalog": "catalog.json",
+            "smart_playback_media": "comfort.mp3",
+        },
+    )
+    calls = []
+
+    def fake_git(argv, **kwargs):
+        return source_commit if "rev-parse" in argv else ""
+
+    def fake_pages(argv, **kwargs):
+        assert kwargs["cwd"] == audio_repo and kwargs["check"]
+        calls.append(argv)
+
+    monkeypatch.setattr(review.subprocess, "check_output", fake_git)
+    monkeypatch.setattr(review.subprocess, "run", fake_pages)
+    monkeypatch.setattr(
+        public_site_export,
+        "write_export",
+        lambda p, source_commit: write(p, {"source": source_commit}),
+    )
+    assert review.build_pages(cfg, tmp_path) == tmp_path / "pages-build"
+    assert calls[0][1].endswith("/scripts/build_public_site.py")
+    assert "--historical-reference" in calls[0] and "--smart-playback-media" in calls[0]
+    assert calls[1][1].endswith("/scripts/validate_site.py")
+    write(audio_repo / "site/source.json", {"source_commit": "2" * 40})
+    with pytest.raises(OCFError, match="same source revision"):
+        review.build_pages(cfg, tmp_path)
+    assert len(calls) == 2

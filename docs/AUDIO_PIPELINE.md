@@ -632,3 +632,21 @@ OCF Pages directory. The batch command copies it into the private review and
 links each rendered function’s guide to its local candidate player; it does
 not change the source site or its published catalog. Omit the flag for the
 standalone listening library.
+
+For a clean checkout, use `--pages-config pages-review.json` instead of
+`--pages-dir` to run the real Pages builder and its production validator
+inside the batch command. Use input locations relative to the config file:
+
+```json
+{
+  "audio_repository": "../open-consciousness-functions-audio",
+  "verified_catalog": "./verified-catalog.json",
+  "smart_playback_media": "./approved-comfort.mp3"
+}
+```
+
+The catalog is the verified release catalog the normal site uses, not a
+place to list unreleased candidate assets. Include the last path when
+needed for the existing published Comfort preview. The checkout's
+`site/source.json` must pin the same OCF source revision as the batch.
+Production validation runs before private recording links are added.

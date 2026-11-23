@@ -8,13 +8,15 @@ import json
 import os
 import re
 import shutil
+import subprocess
+import sys
 import tempfile
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 
 from .bulk_render import verified_output
 from .listening_portal import PrivateServer, byte_range, file_signature, open_regular
-from .paths import work_path
+from .paths import REPO_ROOT, work_path
 from .utils import OCFError, read_json_object, sha256_of_file
 
 FUNCTION = re.compile(r"OCF-[A-Z]{3}-[0-9]{3}")
@@ -169,7 +171,78 @@ def _copy_pages(pages, site, functions):
         page.write_text(raw.replace("</main>", notice + "</main>"), encoding="utf-8")
 
 
-def build_review(batch, destination, *, locale, edition_version, pages=None):
+def build_pages(config, temporary):
+    """Run the site repository's real Pages builder and production validator."""
+    from .public_site_export import write_export
+
+    file = Path(config).resolve(strict=True)
+    cfg = read_json_object(file)
+    _need(
+        {"audio_repository", "verified_catalog"}
+        <= set(cfg)
+        <= {"audio_repository", "verified_catalog", "smart_playback_media"},
+        "invalid Pages build config",
+    )
+
+    def relative(name):
+        return (file.parent / cfg[name]).resolve(strict=True)
+
+    repo = relative("audio_repository")
+    catalog = relative("verified_catalog")
+    builder = repo / "scripts/build_public_site.py"
+    validator = repo / "scripts/validate_site.py"
+    pin = repo / "site/source.json"
+    _need(
+        all(f.is_file() and f.resolve() == f for f in (builder, validator, pin)),
+        "the OCF audio Pages checkout is incomplete",
+    )
+    source = subprocess.check_output(
+        ["git", "-C", str(REPO_ROOT), "rev-parse", "HEAD"], text=True
+    ).strip()
+    tracked_changes = subprocess.check_output(
+        ["git", "-C", str(REPO_ROOT), "status", "--porcelain", "--untracked-files=no"],
+        text=True,
+    )
+    _need(not tracked_changes.strip(), "Pages guide source has uncommitted changes")
+    _need(
+        read_json_object(pin).get("source_commit") == source,
+        "Pages must pin the same source revision as the native batch",
+    )
+    guides = Path(temporary) / "guide-export.json"
+    output = Path(temporary) / "pages-build"
+    write_export(guides, source_commit=source)
+    historical = REPO_ROOT / "docs/releases/OCF_HISTORICAL_LOOKUP_CURRENT.md"
+    args = [
+        sys.executable,
+        str(builder),
+        "--site-root",
+        str(repo / "site"),
+        "--content-dir",
+        str(repo / "docs/website"),
+        "--source-pin",
+        str(pin),
+        "--guide-export",
+        str(guides),
+        "--catalog",
+        str(catalog),
+        "--historical-reference",
+        str(historical),
+        "--output",
+        str(output),
+    ]
+    if "smart_playback_media" in cfg:
+        args.extend(["--smart-playback-media", str(relative("smart_playback_media"))])
+    try:
+        subprocess.run(args, cwd=repo, check=True, stdout=sys.stderr)
+        subprocess.run(
+            [sys.executable, str(validator), str(output)], cwd=repo, check=True, stdout=sys.stderr
+        )
+    except subprocess.CalledProcessError as exc:
+        raise OCFError("the production Pages build or its validation did not pass") from exc
+    return output
+
+
+def build_review(batch, destination, *, locale, edition_version, pages=None, pages_config=None):
     """Only stage reviewed batch inputs. Never starts a server or pushes a release."""
     from .audition_exports import export_audition
 
@@ -184,6 +257,9 @@ def build_review(batch, destination, *, locale, edition_version, pages=None):
     _need(
         len(edition_version) <= 30 and EDITION.fullmatch(edition_version),
         "invalid local edition version",
+    )
+    _need(
+        pages is None or pages_config is None, "choose a built Pages site or a Pages build config"
     )
     records = _native_records(batch, locale, work_path("cache", "bulk-renders"))
     exports_root = work_path("renders")
@@ -200,7 +276,9 @@ def build_review(batch, destination, *, locale, edition_version, pages=None):
         site = top / "site"
         site.mkdir(mode=0o700)
         catalog = site
-        if pages is not None:
+        if pages_config is not None:
+            source_pages = build_pages(pages_config, top)
+        if pages is not None or pages_config is not None:
             _copy_pages(source_pages, site, records)
             catalog = site / "_local-audition"
             catalog.mkdir()
