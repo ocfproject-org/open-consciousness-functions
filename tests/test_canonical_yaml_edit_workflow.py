@@ -57,7 +57,10 @@ def _run(checkout: Path, *args: str) -> subprocess.CompletedProcess:
         check=True,
         capture_output=True,
         text=True,
-        timeout=180,
+        # Rebuilding all derived indexes is CPU-bound. Concurrent CI coverage
+        # instruments these child processes and can exceed the ordinary command
+        # budget without hanging. Keep the longer cap confined to build-index.
+        timeout=360 if args[0] == "build-index" else 180,
     )
 
 

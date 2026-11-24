@@ -1,5 +1,6 @@
 import hashlib
 import json
+from pathlib import Path
 
 import pytest
 from ocf_tools import local_batch_review as review
@@ -184,12 +185,12 @@ def test_pages_config_runs_real_cli_contract_and_rejects_wrong_pin(tmp_path, mon
         lambda p, source_commit: write(p, {"source": source_commit}),
     )
     assert review.build_pages(cfg, tmp_path) == tmp_path / "pages-build"
-    assert calls[0][1].endswith("/scripts/build_public_site.py")
+    assert Path(calls[0][1]) == audio_repo / "scripts" / "build_public_site.py"
     assert "--historical-reference" in calls[0] and "--smart-playback-media" in calls[0]
     assert calls[0][calls[0].index("--published-transcript-mirror") + 1] == str(
         tmp_path / "transcripts"
     )
-    assert calls[1][1].endswith("/scripts/validate_site.py")
+    assert Path(calls[1][1]) == audio_repo / "scripts" / "validate_site.py"
     write(audio_repo / "site/source.json", {"source_commit": "2" * 40})
     with pytest.raises(OCFError, match="same source revision"):
         review.build_pages(cfg, tmp_path)
