@@ -39,18 +39,18 @@ def test_function_index_markdown_has_rows():
     assert "PLUS-FOCUS" in text
 
 
-def test_function_index_csv_has_58_rows():
+def test_function_index_csv_has_59_rows():
     text = function_index_csv()
     assert text.startswith(GENERATED_HEADER)
     rows = _csv_rows(text)
-    assert len(rows) == 58
+    assert len(rows) == 59
     assert rows[0]["ocf_id"].startswith("OCF-")
 
 
-def test_function_index_json_has_58():
+def test_function_index_json_has_59():
     payload = json.loads(function_index_json().split("\n\n", 1)[1])
-    assert payload["count"] == 58
-    assert len(payload["functions"]) == 58
+    assert payload["count"] == 59
+    assert len(payload["functions"]) == 59
 
 
 def test_command_map_json_round_trips():
@@ -67,9 +67,14 @@ def test_command_map_csv_has_55():
 
 def test_command_review_report_groups():
     text = command_review_markdown()
-    assert "Commands retained unchanged" in text
+    assert "Commands cataloged as unchanged" in text
     assert "Commands still requiring review" in text
     assert "Commands normalized" in text
+    designs, review_queue = text.split("## Commands still requiring review")
+    assert "`OCF-EXP-007`" in designs.split("## Other approved command designs")[1]
+    assert "`OCF-EXP-007`" not in review_queue
+    assert "`OCF-PRF-006`" in review_queue
+    assert "| approved |" not in review_queue
 
 
 def test_matrices_render():

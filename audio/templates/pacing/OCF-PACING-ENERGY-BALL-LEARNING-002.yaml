@@ -1,0 +1,27 @@
+schema_version: '1.0'
+id: OCF-PACING-ENERGY-BALL-LEARNING-002
+version: 2.0.0
+extends: OCF-PACING-OPTIONAL-PREPARATION-001
+status: approved_for_internal_composition
+optional_stage_variants:
+  resonant-tuning: OCF-TPL-STAGE-HPLUS-TUNING-004
+narration_pacing:
+  profiles:
+    energy-ball-guided:
+      rate_scale: 1.0
+      default_unit: sentence
+      require_unit_kinds: true
+      group_prose: false
+      pauses:
+        sentence: 0.4
+        paragraph: 0.4
+        landing: 5
+  entries:
+    hplus.function.ocf-exp-007.guided-first: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-second: energy-ball-guided
+    hplus.function.ocf-exp-007.function-body: guided-transition
+    hplus.function.ocf-exp-007.waking-descent: waking-countdown
+    hplus.function.ocf-exp-007.waking-ten: waking-countdown
+    hplus.function.ocf-exp-007.waking-count-to-one: waking-countdown
+    hplus.function.ocf-exp-007.waking-alert: guided-transition
+    hplus.function.ocf-exp-007.waking-reorient: guided-transition

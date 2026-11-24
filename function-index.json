@@ -1,7 +1,7 @@
 GENERATED FILE — DO NOT EDIT DIRECTLY
 
 {
-  "count": 58,
+  "count": 59,
   "functions": [
     {
       "audio_impl_count": 0,
@@ -158,7 +158,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -521,6 +521,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -720,7 +721,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-BOD-002"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -1018,6 +1019,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -1199,7 +1201,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "partial_source_transcript",
@@ -1488,6 +1490,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -1679,7 +1682,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -1976,6 +1979,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -2144,7 +2148,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "partial_source_transcript",
@@ -2432,6 +2436,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -2640,7 +2645,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-LIF-001"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -2955,6 +2960,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -3143,7 +3149,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-BOD-002"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -3441,6 +3447,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -3628,7 +3635,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "source_transcript",
@@ -3933,6 +3940,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -4108,7 +4116,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -4395,6 +4403,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -4570,7 +4579,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "partial_source_transcript",
@@ -4869,6 +4878,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -5135,7 +5145,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -5441,6 +5451,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -5617,7 +5628,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "source_transcript",
@@ -5921,6 +5932,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -6262,7 +6274,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -6549,6 +6561,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -6750,7 +6763,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-BOD-014"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -7066,6 +7079,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -7250,7 +7264,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -7596,6 +7610,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -7865,7 +7880,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -8225,6 +8240,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -8415,7 +8431,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "source_transcript",
@@ -8718,6 +8734,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -8900,7 +8917,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -9195,6 +9212,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -9442,7 +9460,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-EXP-006"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -9746,6 +9764,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -10032,7 +10051,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-COG-006"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -10347,6 +10366,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -10557,7 +10577,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "partial_source_transcript",
@@ -10873,6 +10893,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -11066,7 +11087,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-COG-001"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "partial_source_transcript",
@@ -11369,6 +11390,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -11543,7 +11565,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -11838,6 +11860,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -12006,7 +12029,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -12292,6 +12315,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -12470,7 +12494,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -12839,6 +12863,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -13023,7 +13048,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -13392,6 +13417,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -13583,7 +13609,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -13876,6 +13902,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -14075,7 +14102,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-EXP-003"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -14377,6 +14404,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -14564,7 +14592,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -14934,6 +14962,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -15135,7 +15164,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-EXP-006"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -15455,6 +15484,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -15803,7 +15833,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -16162,6 +16192,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -16353,7 +16384,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-EXP-006"
         ],
         "content_maturity": null,
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [],
         "extraction_review": null,
@@ -16432,6 +16463,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -16688,7 +16720,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": null,
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [],
         "extraction_review": null,
@@ -16769,6 +16801,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -16937,7 +16970,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": null,
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [],
         "extraction_review": null,
@@ -16993,6 +17026,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -17039,6 +17073,391 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
       "source_availability": "pending-source-review",
       "source_file": "locales/en-US/OCF-EXP-006-Intuition.yaml",
       "tags": "inner-awareness (draft); reflection (draft); discernment (draft)"
+    },
+    {
+      "audio_impl_count": 0,
+      "background_preset_count": 0,
+      "canonical_command": "PLUS-INFLATE",
+      "canonical_name": "Energy Ball",
+      "capabilities": {
+        "activation": {
+          "modes": [
+            "PLUS-DEFLATE"
+          ],
+          "primary": "PLUS-INFLATE"
+        },
+        "background": {
+          "engine": "farfield",
+          "preset": null,
+          "strategy": "optional"
+        },
+        "claim_review": "pending-source-review",
+        "commands": [
+          {
+            "cue_presentation": {
+              "binding_status": "resolved",
+              "command_id": "OCF-CMD-EXP-007-PRIMARY",
+              "display_cue": "PLUS-INFLATE",
+              "display_fallback": false,
+              "display_locale": "en-US",
+              "requested_locale": "en-US",
+              "resource_status": "reviewed",
+              "spoken_cue": "Plus Inflate",
+              "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+              "spoken_fallback": false,
+              "spoken_locale": "en-US",
+              "version": null
+            },
+            "designation": "primary",
+            "effect_scope": "temporary",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
+            "function_id": "OCF-EXP-007",
+            "id": "OCF-CMD-EXP-007-PRIMARY",
+            "invocation_scope": {
+              "activation": "manual",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "invocation_scope_ref": "lifecycle.scopes.application",
+            "localization": {
+              "explanation_key": "commands.ocf-cmd-exp-007-primary.explanation",
+              "label_key": "commands.ocf-cmd-exp-007-primary.label",
+              "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+              "usage_key": "commands.ocf-cmd-exp-007-primary.usage"
+            },
+            "phrase": "PLUS-INFLATE",
+            "phrase_ref": {
+              "source": "canonical-primary"
+            },
+            "procedure": {
+              "override_steps": [
+                {
+                  "id": "mentally-inflate",
+                  "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate",
+                  "operation": "think-or-say-command"
+                }
+              ],
+              "status": "documented"
+            },
+            "resolved_procedure_steps": [
+              {
+                "id": "mentally-inflate",
+                "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate",
+                "operation": "think-or-say-command"
+              }
+            ],
+            "role": "activation",
+            "spoken": "Plus Inflate",
+            "spoken_review": "reviewed"
+          },
+          {
+            "cue_presentation": {
+              "binding_status": "resolved",
+              "command_id": "OCF-CMD-EXP-007-DEFLATE",
+              "display_cue": "PLUS-DEFLATE",
+              "display_fallback": false,
+              "display_locale": "en-US",
+              "requested_locale": "en-US",
+              "resource_status": "reviewed",
+              "spoken_cue": "Plus Deflate",
+              "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+              "spoken_fallback": false,
+              "spoken_locale": "en-US",
+              "version": null
+            },
+            "designation": "secondary",
+            "effect_scope": "temporary",
+            "effect_scope_details": {
+              "activation": "manual",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "effect_scope_ref": "lifecycle.scopes.application.persistence",
+            "function_id": "OCF-EXP-007",
+            "id": "OCF-CMD-EXP-007-DEFLATE",
+            "invocation_scope": {
+              "activation": "manual",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "invocation_scope_ref": "lifecycle.scopes.application",
+            "localization": {
+              "explanation_key": "commands.ocf-cmd-exp-007-deflate.explanation",
+              "label_key": "commands.ocf-cmd-exp-007-deflate.label",
+              "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+              "usage_key": "commands.ocf-cmd-exp-007-deflate.usage"
+            },
+            "phrase": "PLUS-DEFLATE",
+            "phrase_ref": {
+              "command_id": "OCF-CMD-EXP-007-DEFLATE",
+              "source": "canonical-mode"
+            },
+            "procedure": {
+              "override_steps": [
+                {
+                  "id": "mentally-deflate",
+                  "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate",
+                  "operation": "think-or-say-command"
+                }
+              ],
+              "status": "documented"
+            },
+            "relationships": {
+              "closes": [
+                "OCF-CMD-EXP-007-PRIMARY"
+              ]
+            },
+            "resolved_procedure_steps": [
+              {
+                "id": "mentally-deflate",
+                "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate",
+                "operation": "think-or-say-command"
+              }
+            ],
+            "role": "close",
+            "spoken": "Plus Deflate",
+            "spoken_review": "reviewed"
+          }
+        ],
+        "common_uses": [
+          {
+            "status": "draft",
+            "text": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within."
+          },
+          {
+            "status": "draft",
+            "text": "Practising with the familiar personal ball before trying an optional larger extent."
+          },
+          {
+            "notes": "Use-case review; Monroe Institute REBAL practice context; OCF visualization example",
+            "semantic_id": "energy-ball-settle",
+            "status": "reviewed",
+            "text": "Set an intention before meditation, or use the familiar image to settle distractions as you begin."
+          },
+          {
+            "notes": "Use-case review; Monroe Institute REBAL practice tips; OCF visualization example",
+            "semantic_id": "energy-ball-centering-pause",
+            "status": "reviewed",
+            "text": "Take a brief centering pause before public speaking or a difficult conversation."
+          },
+          {
+            "notes": "Use-case review; OCF visualization example; not a claim of physical protection",
+            "semantic_id": "energy-ball-chosen-quality",
+            "status": "reviewed",
+            "text": "As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within."
+          }
+        ],
+        "companions": [],
+        "content_maturity": "reviewed",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
+        "duration": null,
+        "evidence_classes": [],
+        "extraction_review": null,
+        "extraction_status": "unknown",
+        "function_id": "OCF-EXP-007",
+        "human_review": "approved",
+        "layers": [
+          "specifications",
+          "bindings"
+        ],
+        "lifecycle": {
+          "activation": "manual",
+          "persistence": "temporary",
+          "release": {
+            "command": null,
+            "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "description": "Learned availability remains after the current ball is drawn back within.",
+              "description_key": "functions.ocf-exp-007.lifecycle.scopes.capability.description",
+              "persistence": "permanent"
+            }
+          },
+          "trigger_conditions": []
+        },
+        "locales": [],
+        "localized_relationships": {
+          "complementary_functions": [
+            {
+              "description": {
+                "status": "reviewed",
+                "text": "for the optional energizing practice.",
+                "version": "1.0.0"
+              },
+              "description_key": "relationships.rel-exp007-fnd001.description",
+              "function_id": "OCF-FND-001"
+            }
+          ],
+          "related_functions": []
+        },
+        "narration_plan": {
+          "sequence": [
+            {
+              "key": "hplus.function.ocf-exp-007.opener",
+              "repetitions": 1,
+              "role": "opener"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-first",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-5",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-6",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-withdrawal",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-continuation",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.function-body",
+              "repetitions": 4,
+              "role": "function-body"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.access-close-prepare",
+              "repetitions": 1,
+              "role": "access-close-preparation"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.closer",
+              "repetitions": 1,
+              "role": "closer"
+            }
+          ]
+        },
+        "narration_resources": [],
+        "preparation": [],
+        "purpose": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.",
+        "safety": {
+          "level": "experimental",
+          "notes": [
+            "Imaginative practice; no physical field, protection or guaranteed effect is claimed."
+          ]
+        },
+        "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
+          "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+        ],
+        "source_availability": "pending-source-review",
+        "states": {
+          "preferred": [],
+          "required": [],
+          "status": "specified"
+        },
+        "status": {
+          "evidence": "unverified",
+          "implementation": "script-approved",
+          "maturity": "experimental"
+        },
+        "tags": [
+          {
+            "semantic_id": "mental-practice",
+            "status": "draft",
+            "text": "mental-practice"
+          },
+          {
+            "semantic_id": "personal-boundaries",
+            "status": "draft",
+            "text": "personal-boundaries"
+          },
+          {
+            "semantic_id": "deliberate-cues",
+            "status": "draft",
+            "text": "deliberate-cues"
+          }
+        ],
+        "title": "Energy Ball",
+        "voice_sources": [
+          "tts"
+        ]
+      },
+      "command_review": "approved",
+      "common_uses": "Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within. (draft); Practising with the familiar personal ball before trying an optional larger extent. (draft); Set an intention before meditation, or use the familiar image to settle distractions as you begin. (reviewed); Take a brief centering pause before public speaking or a difficult conversation. (reviewed); As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within. (reviewed)",
+      "compatibility": "none",
+      "domains": "experimental",
+      "legacy_command": "",
+      "legacy_name": "",
+      "ocf_id": "OCF-EXP-007",
+      "persistence": "temporary",
+      "reimplementation_status": "in-progress",
+      "source_availability": "pending-source-review",
+      "source_file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
+      "tags": "mental-practice (draft); personal-boundaries (draft); deliberate-cues (draft)"
     },
     {
       "audio_impl_count": 0,
@@ -17193,7 +17612,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "source_transcript",
@@ -17485,6 +17904,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -17669,7 +18089,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-COG-007"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -17981,6 +18401,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -18147,7 +18568,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-SLP-002"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -18450,6 +18871,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -18637,7 +19059,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "pilot",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -18966,6 +19388,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -19166,7 +19589,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -19459,6 +19882,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -19638,7 +20062,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -19989,6 +20413,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -20196,7 +20621,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-AUT-001"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -20510,6 +20935,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -20690,7 +21116,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "source_transcript",
@@ -20992,6 +21418,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -21181,7 +21608,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-FND-005"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -21476,6 +21903,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -21646,7 +22074,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -21941,6 +22369,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -22135,7 +22564,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -22498,6 +22927,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -22685,7 +23115,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-EXP-001"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -23054,6 +23484,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -23262,7 +23693,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -23615,6 +24046,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -23900,7 +24332,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "pilot",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -24213,6 +24645,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -24438,7 +24871,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -24734,6 +25167,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -25079,7 +25513,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-SEN-004"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -25433,6 +25867,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -25782,7 +26217,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -26126,6 +26561,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -26469,7 +26905,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -26823,6 +27259,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -27014,7 +27451,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -27314,6 +27751,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           ]
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -27501,7 +27939,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-SLP-005"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -27803,6 +28241,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -28002,7 +28441,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-SLP-004"
         ],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -28304,6 +28743,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -28501,7 +28941,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "secondary_description",
@@ -28796,6 +29236,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -29006,7 +29447,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "OCF-SLP-001"
         ],
         "content_maturity": "pilot",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -29387,6 +29828,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",
@@ -29560,7 +30002,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         ],
         "companions": [],
         "content_maturity": "draft",
-        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
+        "default_session_template": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
         "duration": null,
         "evidence_classes": [
           "reconstructed_mockup",
@@ -29913,6 +30355,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
           "notes": []
         },
         "session_templates": [
+          "OCF-TPL-SESSION-HPLUS-LOCKED-008",
           "OCF-TPL-SESSION-HPLUS-LOCKED-004",
           "OCF-TPL-SESSION-HPLUS-LOCKED-005",
           "OCF-TPL-SESSION-HPLUS-LOCKED-006",

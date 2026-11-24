@@ -5,12 +5,12 @@
   },
   "defaults": {
     "file": "_shared.json",
-    "sha256": "4d0c0346c1dca59eb211652364941d51bd476cb914b01d8f2b77c0fe4cad3be9"
+    "sha256": "8bc7e07e5ab3228d737b0a5686df474e800d9e30629c0fb385f5e601f31ecdb5"
   },
   "function_id": "OCF-BOD-004",
   "generation": {
-    "binding_sha256": "78946acdd42fb7a8601c7509a5bdf899c7c6eca7ed2bb4cb2dbca33b63cb61c7",
-    "semantic_plan_sha256": "49fc963ed2dc5fc582c1d0e0a479c7a1db0fbb8a59ad4a5f286200829a0fe4ed"
+    "binding_sha256": "a336adfe796296e142894b7d24b227d3a77c7bbaf144198eadaced8e7cc2dd21",
+    "semantic_plan_sha256": "894d96c9214f09dd2c0ef5fed7d26ed417f7b35db3cbfdea4160916b4a2c6035"
   },
   "generator": "ocf.audio.plan/1",
   "locale": "en-US",

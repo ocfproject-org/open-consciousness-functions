@@ -439,6 +439,22 @@ def _build_parser() -> argparse.ArgumentParser:
         default="auto",
         help="reuse compatible speech, bypass speech reuse, or regenerate while preserving history",
     )
+    bulk_cmd.add_argument(
+        "--audition-site",
+        type=Path,
+        help="stage a local listening site from the completed verified batch",
+    )
+    bulk_cmd.add_argument(
+        "--edition-version", help="private audio edition for --audition-site, e.g. 0.2.1"
+    )
+    bulk_cmd.add_argument(
+        "--pages-dir", type=Path, help="optional prebuilt Pages site for local guide navigation"
+    )
+    bulk_cmd.add_argument(
+        "--pages-config",
+        type=Path,
+        help="build the complete official Pages site for the local review",
+    )
     plan_cmd = audio_sub.add_parser(
         "plan", help="generate compact voice-independent complete-session source plans"
     )
@@ -1752,6 +1768,25 @@ def main(argv: list[str] | None = None) -> int:
 
                 if bool(args.function_ids) == args.all:
                     raise OCFError("select function IDs or --all")
+                if args.edition_version:
+                    from .local_batch_review import EDITION
+
+                    if len(args.edition_version) > 30 or not EDITION.fullmatch(
+                        args.edition_version
+                    ):
+                        raise OCFError("--edition-version must be a numeric X.Y.Z edition")
+                if bool(args.audition_site) != bool(args.edition_version):
+                    raise OCFError("--audition-site and --edition-version must be used together")
+                if (args.pages_dir or args.pages_config) and not args.audition_site:
+                    raise OCFError("--pages-dir and --pages-config require --audition-site")
+                if args.pages_dir and args.pages_config:
+                    raise OCFError("choose either --pages-dir or --pages-config")
+                if args.audition_site and args.dry_run:
+                    raise OCFError("--audition-site requires a real, completed render")
+                if args.audition_site and (
+                    args.audition_site.exists() or args.audition_site.is_symlink()
+                ):
+                    raise OCFError("--audition-site needs a new local output directory")
                 result = render_many(
                     None if args.all else args.function_ids,
                     voice=args.voice,
@@ -1765,11 +1800,23 @@ def main(argv: list[str] | None = None) -> int:
                     fresh_synthesis=args.fresh_synthesis,
                     speech_cache_mode=args.speech_cache,
                     workers=args.workers,
+                    audition_version=args.edition_version,
                     **({"overrides": read_json_object(args.overrides)} if args.overrides else {}),
                     **({"mix_profile": args.mix_profile} if args.mix_profile else {}),
                 )
+                if args.audition_site and not result["failed"] and not result["blocked"]:
+                    from .local_batch_review import build_review
+
+                    result["local_review"] = build_review(
+                        result,
+                        args.audition_site,
+                        locale=args.locale,
+                        edition_version=args.edition_version,
+                        pages=args.pages_dir,
+                        pages_config=args.pages_config,
+                    )
                 print(json.dumps(result, ensure_ascii=False, indent=2))
-                return 1 if result["failed"] else 0
+                return 1 if result["failed"] or (args.audition_site and result["blocked"]) else 0
             if args.audio_kind == "plan":
                 import json
 

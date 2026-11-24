@@ -995,16 +995,12 @@ def _entry_from_value(
             raise LocalizationError(f"{locale} {filename}: entry {key!r} {name} must be an object")
     contract = value.get("cue_template")
     if contract is not None:
-        if (
-            not isinstance(contract, dict)
-            or set(contract) not in ({"function_id", "allowed"}, {"shared_state", "allowed"})
-            or not isinstance(contract.get("function_id", contract.get("shared_state")), str)
-            or not isinstance(contract.get("allowed"), list)
-            or not all(isinstance(symbol, str) for symbol in contract["allowed"])
-        ):
-            raise LocalizationError(
-                f"{locale} {filename}:{key}: cue_template requires function_id and an allowed-symbol list"
-            )
+        from .cue_templates import CueTemplateError, validate_contract
+
+        try:
+            validate_contract(contract)
+        except CueTemplateError as exc:
+            raise LocalizationError(f"{locale} {filename}:{key}: {exc}") from exc
     variables = tuple(value.get("variables") or ())
     for name in variables:
         if not isinstance(name, str) or not VARIABLE_RE.match(name):
@@ -1732,7 +1728,17 @@ class LocaleCatalog:
         if entry.cue_template is not None:
             from .cue_templates import CueTemplateError, expand
 
-            text, provenance = expand(entry, resolution.origin_locale, self)
+            # A same-language parent narration can still request regional external
+            # vocabulary. In an explicitly labeled cross-language audition use
+            # the narration's actual language rather than mix reviewed languages.
+            external_locale = (
+                resolution.locale
+                if locale_language(resolution.locale) == locale_language(resolution.origin_locale)
+                else resolution.origin_locale
+            )
+            text, provenance = expand(
+                entry, resolution.origin_locale, self, external_locale=external_locale
+            )
             pronunciation = copy.deepcopy(dict(entry.pronunciation))
             required = list(entry.required_pronunciation)
             for reference in provenance:
@@ -1768,10 +1774,20 @@ class LocaleCatalog:
                 pronunciation=pronunciation,
                 required_pronunciation=tuple(required),
             )
-        elif entry.domain == NARRATION_DOMAIN and not entry.variables:
-            from .cue_templates import reject_unexpanded
+        elif entry.domain == NARRATION_DOMAIN:
+            from .cue_templates import CueTemplateError, has_external_references, reject_unexpanded
 
-            reject_unexpanded(entry.text)
+            source = self.canonical.get(key) if self.canonical else None
+            if (
+                source is not None
+                and source.locale != entry.locale
+                and has_external_references(source.cue_template)
+            ):
+                raise CueTemplateError(
+                    f"{entry.locale}/{entry.key}: translation omitted authorized external references"
+                )
+            if not entry.variables:
+                reject_unexpanded(entry.text)
         return entry, resolution
 
     def raw_resource(self, key, locale=None, *, domain=None, fallback=True):
@@ -2234,6 +2250,16 @@ def resolve_document(
                             entry.text.encode("utf-8")
                         ).hexdigest(),
                         "cue_references": list(entry.cue_provenance),
+                        **(
+                            {"cue_lookup_locale": resolution.locale}
+                            if resolution.locale != resolution.origin_locale
+                            and locale_language(resolution.locale)
+                            == locale_language(resolution.origin_locale)
+                            and any(
+                                row["provenance"].get("external") for row in entry.cue_provenance
+                            )
+                            else {}
+                        ),
                     }
                     if entry.raw_template is not None
                     else {}

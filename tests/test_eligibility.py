@@ -25,8 +25,7 @@ def test_migration_preserves_sources_reviews_and_all_functions():
     previous.pop("narration_review_status")
     assert current == previous
     removed = {
-        "hplus.shared.relaxation.torso",
-        "hplus.shared.relaxation.legs",
+        *(key for key in previous_reviews if key.startswith("hplus.shared.relaxation.")),
         "hplus.shared.focus10.learn",
         "hplus.shared.focus10.count",
         "hplus.shared.focus10.enter",
@@ -35,22 +34,32 @@ def test_migration_preserves_sources_reviews_and_all_functions():
     assert {key: current_reviews[key] for key in previous_reviews if key not in removed} == {
         key: value for key, value in previous_reviews.items() if key not in removed
     }
+    parts = (
+        "begin",
+        "support",
+        "face",
+        "jaw-neck",
+        "shoulders",
+        "hands",
+        "chest-breathing",
+        "abdomen-lower-back",
+        "hips-thighs",
+        "lower-legs-feet",
+        "whole-body-awareness",
+    )
+    numbers = "one two three four five six seven eight nine ten".split()
     assert {
         key: value for key, value in current_reviews.items() if key not in previous_reviews
-    } == {
-        key: "reviewed"
-        for key in (
+    } == dict.fromkeys(
+        (
             "hplus.shared.focus20.close.ready",
             "hplus.shared.focus11.closed",
-            "hplus.shared.relaxation.support",
-            "hplus.shared.relaxation.jaw-neck",
-            "hplus.shared.relaxation.chest-breathing",
-            "hplus.shared.relaxation.abdomen-lower-back",
-            "hplus.shared.relaxation.hips-thighs",
-            "hplus.shared.relaxation.lower-legs-feet",
-            "hplus.shared.relaxation.whole-body-awareness",
-        )
-    }
+            "hplus.shared.focus10.approach",
+            *(f"hplus.shared.settling.{part}" for part in parts),
+            *(f"hplus.shared.relaxation.short.{number}" for number in numbers),
+        ),
+        "reviewed",
+    )
 
 
 def test_spoken_locale_missing_dependency_is_reported_without_cross_language_fallback():
@@ -288,6 +297,6 @@ def test_binding_migration_is_idempotent_and_retains_old_sleep_template():
     from ocf_tools.content import load_layers
 
     binding = load_layers("OCF-SLP-005")["bindings"]
-    assert binding["default_session_template"] == "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+    assert binding["default_session_template"] == "OCF-TPL-SESSION-HPLUS-LOCKED-008"
     assert "OCF-TPL-SESSION-PILOT-SLEEP-EASY-001" in binding["session_templates"]
     assert binding["narration_plan"]["sequence"][1]["repetitions"] == 4

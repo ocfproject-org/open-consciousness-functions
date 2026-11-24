@@ -1,0 +1,14 @@
+schema_version: '1.0'
+id: OCF-TPL-STAGE-HPLUS-RELAXATION-006
+version: 1.0.0
+origin: original-ocf
+type: induction
+description: Brief unnumbered settling before the separate Focus Ten count.
+events:
+- id: begin
+  at: 0
+  semantic: preparation.relaxation.begin
+  narration_required: true
+  narration_key: hplus.shared.settling.brief
+  timing:
+    pause_after: 8

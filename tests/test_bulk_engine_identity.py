@@ -86,7 +86,9 @@ def bulk(monkeypatch, tmp_path):
 
 
 def run(**kwargs):
-    return bulk_render.render_many(["fixture"], voice="fixture", **kwargs)["results"][0]
+    return bulk_render.render_many(["fixture"], verify_speech=False, voice="fixture", **kwargs)[
+        "results"
+    ][0]
 
 
 def test_implicit_engine_change_invalidates_same_audio_without_invalidating_speech(bulk):
@@ -144,10 +146,12 @@ def test_unknown_engine_cannot_read_or_publish_trusted_resume_receipts(bulk, mon
 
 def test_forced_sequential_functions_bypass_synthesis_cache_then_restore(bulk):
     *_, synthesis, outputs = bulk
-    bulk_render.render_many(["first", "second"], voice="fixture")
+    bulk_render.render_many(["first", "second"], verify_speech=False, voice="fixture")
     assert len(synthesis) == 1
     before = dict(speech_cache.STATS)
-    result = bulk_render.render_many(["first", "second"], voice="fixture", force=True)
+    result = bulk_render.render_many(
+        ["first", "second"], verify_speech=False, voice="fixture", force=True
+    )
     assert all(row["status"] == "rendered" for row in result["results"])
     assert len(synthesis) == 3 and len(outputs) == 4
     assert speech_cache.STATS["bypassed"] - before["bypassed"] == 2
@@ -178,7 +182,7 @@ def test_shared_reference_is_measured_once_per_batch_not_once_per_state_or_funct
         return original_open(path, *args, **kwargs)
 
     monkeypatch.setattr(utils, "open", counted, raising=False)
-    result = bulk_render.render_many(["first", "second"], voice="fixture")
+    result = bulk_render.render_many(["first", "second"], verify_speech=False, voice="fixture")
     assert result["failed"] == 0 and len(reads) == 1
     run()
     assert len(reads) == 2

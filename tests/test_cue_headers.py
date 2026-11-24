@@ -48,7 +48,7 @@ def test_canonical_catalog_has_no_generated_cue_headers_or_snapshots():
     from ocf_tools.function_catalog import resources
 
     rows = resources(cue_headers.REPO_ROOT)
-    assert len(rows) == 58
+    assert len(rows) == 59
     assert all(
         not path.read_text(encoding="utf-8").startswith(cue_headers.START) for path, _ in rows
     )

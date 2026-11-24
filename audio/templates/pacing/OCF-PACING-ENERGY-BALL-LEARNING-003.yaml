@@ -1,0 +1,47 @@
+schema_version: '1.0'
+id: OCF-PACING-ENERGY-BALL-LEARNING-003
+version: 3.0.0
+extends: OCF-PACING-OPTIONAL-PREPARATION-001
+status: approved_for_internal_composition
+optional_stage_variants:
+  resonant-tuning: OCF-TPL-STAGE-HPLUS-TUNING-005
+narration_pacing:
+  profiles:
+    energy-ball-guided:
+      rate_scale: 1.0
+      default_unit: sentence
+      group_prose: true
+      pauses:
+        sentence: 0.4
+        paragraph: 0.4
+    affirmation-repeat:
+      rate_scale: 1.0
+      default_unit: sentence
+      group_prose: false
+      pauses:
+        sentence: 4
+        instruction: 4
+        paragraph: 6
+  entries:
+    hplus.optional.affirmation.ocf: affirmation-repeat
+    hplus.function.ocf-exp-007.guided-first: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-2: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-3: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-4: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-5: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-6: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-healing-start: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-withdrawal: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-second: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-protection-2: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-protection-3: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-protection-4: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-protection-start: energy-ball-guided
+    hplus.function.ocf-exp-007.guided-continuation: energy-ball-guided
+    hplus.function.ocf-exp-007.function-body: guided-transition
+    hplus.function.ocf-exp-007.waking-descent: waking-countdown
+    hplus.function.ocf-exp-007.waking-ten: waking-countdown
+    hplus.function.ocf-exp-007.waking-count-to-one: waking-countdown
+    hplus.function.ocf-exp-007.waking-alert: guided-transition
+    hplus.function.ocf-exp-007.waking-reorient: guided-transition
+    hplus.function.ocf-exp-007.access-close-prepare: guided-transition

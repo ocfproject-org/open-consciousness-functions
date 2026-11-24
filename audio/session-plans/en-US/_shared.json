@@ -1,6 +1,6 @@
 {
-  "defaults_lock": "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-026.json",
-  "defaults_sha256": "531f6dc3fef05594898b9b4d6f0abd24cdb2a18e3d604b6cb65c6db53fbf66bd",
+  "defaults_lock": "audio/defaults/OCF-AUDIO-DEFAULTS-HPLUS-028.json",
+  "defaults_sha256": "8867acdd2a03d85be22594773402e2d2a7edacf28b3bb3c57b27238abb285504",
   "generator": "ocf.audio.plan/1",
   "profiles": {
     "dsp": {
@@ -12,8 +12,8 @@
       "version": "7.0.0"
     },
     "template": {
-      "id": "OCF-TPL-SESSION-HPLUS-LOCKED-007",
-      "version": "7.0.0"
+      "id": "OCF-TPL-SESSION-HPLUS-LOCKED-008",
+      "version": "8.0.0"
     }
   },
   "resources": [
@@ -25,6 +25,15 @@
       "status": "reviewed",
       "text_sha256": "02bec9bfe40cf74b6cef84961be99fbd2785903e5aac4a0c583183c5f79c6623",
       "version": "3.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.focus10.approach",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "2dec0fe29c9e245538133ab7be17a665b33f97631563f8f3d581038793a664f5",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
@@ -120,102 +129,192 @@
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.abdomen-lower-back",
+      "key": "hplus.shared.relaxation.short.eight",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "0b7a41a13cbe508f4803c89529e1a0efce109eb7b615992828700cf0381d4298",
-      "version": "2.0.0"
+      "text_sha256": "ef1fc97b3963aee164a9e6e94aa2cf5413155678841d23c0427b6bd79518ef53",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.begin",
+      "key": "hplus.shared.relaxation.short.five",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "368add839e3ad60b2f982cb16a1aeb2ed17066325a2a3d4c8dea7b2cc7400ec2",
-      "version": "2.0.0"
+      "text_sha256": "a62a3699a6ab74ba0e901dc48a1d800e5f60f3fb52da7925f8b9b367cbbaa769",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.chest-breathing",
+      "key": "hplus.shared.relaxation.short.four",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "f4466dd60bdc821c1507595eca53521ca192a780b4d251ea0215f388d1e0248c",
-      "version": "2.0.0"
+      "text_sha256": "2f7820a5325de01510971fb541180d3730df116b28942068bb1e5a7040528833",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.face",
+      "key": "hplus.shared.relaxation.short.nine",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "376111076b84ac36935bfc46cb29828bbd716da3f2eff87146974415f67e5582",
-      "version": "2.0.0"
+      "text_sha256": "0e74d7ceebe650322cb3f1ddfb81cef76edcd6273e71f985154c8d69a23fbe66",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.hands",
+      "key": "hplus.shared.relaxation.short.one",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "10d9b60bd1ffa5c46d76ad53ed8a02fcb244c252c1dd818ee5c90f02c5b35bd7",
-      "version": "2.0.0"
+      "text_sha256": "70277bfc409b502132d7a48b2a3b386294264b31f7bf024a5fb0cafabb8ac122",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.hips-thighs",
+      "key": "hplus.shared.relaxation.short.seven",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "cfa49684daacc83336981053b8da7a7fcb66364fce4c16083eb5bde40eb570f5",
-      "version": "2.0.0"
+      "text_sha256": "fb45f28d4556808e322ac0fc134187b21d00178ea54c5f3d95453aced7d72b50",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.jaw-neck",
+      "key": "hplus.shared.relaxation.short.six",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "13586690512167a4822800ac55c58139504337f34801e9a4d2a87aa28cd437f1",
-      "version": "2.0.0"
+      "text_sha256": "cfd6e8dd2766d6cf27044370c0d45023b7b6ff5e3bdb73947831ff7bdada2e03",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.lower-legs-feet",
+      "key": "hplus.shared.relaxation.short.ten",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "a4c2c554d4a98777a97bedc0c045d9b37117ae89fab8ee7727930e9f3f4a3eda",
-      "version": "2.0.0"
+      "text_sha256": "e445c07686e8c95839b0db2eac9b46ac81fd5663991be42824bdd0e6aaa6a88c",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.shoulders",
+      "key": "hplus.shared.relaxation.short.three",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "54015924510642670d4a10c4c695d2ef62e06dfec9eef5db51c7141b954cb06b",
-      "version": "2.0.0"
+      "text_sha256": "43c4d94ea2cd4fbece4f396e10852401108971f22e2f37707fbbb688ddc7fe3c",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.support",
+      "key": "hplus.shared.relaxation.short.two",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "c7ed821741f02f8df479e5ca0f7d6f440caf1dc6d43eb0d43505b6afa6d390aa",
-      "version": "2.0.0"
+      "text_sha256": "1eb32d1ee4458814f94f8b92d1bd3e06e16dca6fab43d53f700840321f27fdf4",
+      "version": "1.0.0"
     },
     {
       "fallback": false,
-      "key": "hplus.shared.relaxation.whole-body-awareness",
+      "key": "hplus.shared.settling.abdomen-lower-back",
       "locale": "en-US",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "dd27b7cb4b6cc075e867f09f333876353f647eedd0c45bcaa5563d764cd1a2db",
-      "version": "2.0.0"
+      "text_sha256": "2a3175dc36c87f2025065001d49ab49e0bfdf6702d26f0dddaa9b0a1f068aacb",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.begin",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "a04404ba5ceb8338f40d37bf7650274e48fb1337742a943d0effd9eabd6f45f4",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.chest-breathing",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "fc7446d5097acf1ce43a7c908c5b18713afefcf52f391f96ca4575859b80396c",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.face",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "c7630a11748964fcefceaecc5c068be3c39022badda998227d4520e3dcb3754f",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.hands",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "0298ca87ed9e039ff15cf761a1ee58e1245c4b97402b59045f331485d576e648",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.hips-thighs",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "0153978240afc547f9d33f07fe42ef111140e6b0765fb33ab15900db70586c13",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.jaw-neck",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "243a5d0e67e15809879f7bc4eab129fe4b1c603b45d2e13f5a51f4b24169c00c",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.lower-legs-feet",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "8cbd691891c050c9d359f168a4511e50b0bf44d080937ea69887b18f1a581fae",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.shoulders",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "a3641abd7bb0481a9e3c5b38bca42e2dcb905e67ef660ba30643a22fd78ddd2b",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.support",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "8f272547136556fc3c54cc611c735789848cd13de281bdbd60074a5bb5b089a0",
+      "version": "1.0.0"
+    },
+    {
+      "fallback": false,
+      "key": "hplus.shared.settling.whole-body-awareness",
+      "locale": "en-US",
+      "requested_locale": "en-US",
+      "status": "reviewed",
+      "text_sha256": "910225edf88af39d984d77e1e263d4e2893326620aadb86c01f8b1b8c3595304",
+      "version": "1.0.0"
     },
     {
       "fallback": false,

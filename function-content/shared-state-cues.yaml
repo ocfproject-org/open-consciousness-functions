@@ -13,6 +13,7 @@ cues:
     display_key: hplus.shared.state-cue.access-open
     authorized_resources:
     - hplus.shared.focus11.open.prepare
+    - preparation.learning.v3.open-1
     - preparation.learning.v3.open-2
     - preparation.learning.v3.open-3
   state.access.close:

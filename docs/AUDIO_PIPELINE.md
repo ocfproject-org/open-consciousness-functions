@@ -161,7 +161,10 @@ included. Passing these engineering checks is not listening approval.
 `python3 scripts/ocf.py audio release <AUDIO_ID|FUNCTION_ID> --artwork
 <approved-cover.png> --locale en-US --format flac --format mp3 --output
 <release-root> --dry-run` previews package paths. Remove `--dry-run` to render
-and publish after verification. A function ID is accepted only when exactly
+and publish after verification. Real packaging requires
+[offline Whisper verification](BULK_SESSIONS.md#offline-speech-verification)
+of generated speech; the checksum-bound verification report accompanies the
+release artifacts. A function ID is accepted only when exactly
 one audio implementation is registered; otherwise select an audio ID. The
 command accepts a PNG/JPEG supplied explicitly by the operator, or an explicitly
 selected `--artwork-theme` for an original OCF candidate cover. Custom artwork
@@ -597,3 +600,53 @@ configuration lock. It is not an automatic wake command.
 The default applies to newly composed sessions, not archived registered
 builds, existing masters, or published releases. Existing release approval and
 packaging controls still apply.
+
+### Stage a private batch listening site
+
+Use the same explicit voice, pacing, and mix you intend to audition. To build
+an offline, browser-ready review from a verified batch and its native speech
+receipts:
+
+```sh
+python scripts/ocf.py audio render-many OCF-FND-002 OCF-EXP-007 \
+  --voice YOUR_PROFILE --edition-version 0.2.1 --audition-site ./local-review
+PYTHONPATH=scripts python -m ocf_tools.local_batch_review ./local-review --port 8765
+```
+
+Replace `YOUR_PROFILE` with a configured local voice. Use `--all` instead of the
+IDs for a whole function batch. The target directory must not already exist.
+The edition is part of the render identity, so an existing edition is never
+silently relabeled. After any blocked or failed track, the input render receipts
+are preserved but the partial site is not staged. Rerun the same command to
+resume verified recordings. Keep the OCF render cache and the native reports
+available until the site has been staged.
+
+The review site provides the original recordings with seekable playback,
+MP3/FLAC copies, and available timed text. The included server is deliberately
+loopback only. It does not publish, grant LAN access, or claim listening
+approval. A measured Smart Play catalog requires its own verified edit
+artifacts; the original-only review does not invent alternate guidance.
+
+To review from the normal site navigation, add `--pages-dir` with a built
+OCF Pages directory. The batch command copies it into the private review and
+links each rendered function’s guide to its local candidate player; it does
+not change the source site or its published catalog. Omit the flag for the
+standalone listening library.
+
+For a clean checkout, use `--pages-config pages-review.json` instead of
+`--pages-dir` to run the real Pages builder and its production validator
+inside the batch command. Use input locations relative to the config file:
+
+```json
+{
+  "audio_repository": "../open-consciousness-functions-audio",
+  "verified_catalog": "./verified-catalog.json",
+  "smart_playback_media": "./approved-comfort.mp3"
+}
+```
+
+The catalog is the verified release catalog the normal site uses, not a
+place to list unreleased candidate assets. Include the last path when
+needed for the existing published Comfort preview. The checkout's
+`site/source.json` must pin the same OCF source revision as the batch.
+Production validation runs before private recording links are added.

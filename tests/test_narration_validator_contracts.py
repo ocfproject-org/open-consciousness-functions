@@ -12,10 +12,12 @@ from ocf_tools.models import function_from_dict
 pytestmark = pytest.mark.unit
 
 
-def entry(text="Words", **extra):
+def entry(text="Words", *, locale="en-US", cue_template=None, **extra):
     return NS(
         text=text,
         domain="narration",
+        locale=locale,
+        cue_template=cue_template,
         file="words.yaml",
         variables=set(),
         requires_events=[],
@@ -229,7 +231,9 @@ def packs(catalog, monkeypatch):
     monkeypatch.setattr(v, "_load_schema", lambda name: {})
     monkeypatch.setattr(v, "validate_against_schema", lambda data, schema: [])
     canonical = pack("en-US", catalog.entries)
-    translated = pack("fr", {"fixture.key": entry("Use PLUS-SEE MORE; then PLUS-SEE LESS.")})
+    translated = pack(
+        "fr", {"fixture.key": entry("Use PLUS-SEE MORE; then PLUS-SEE LESS.", locale="fr")}
+    )
     catalog.canonical = canonical
     catalog.packs = {"en-US": canonical, "fr": translated}
     return catalog, translated

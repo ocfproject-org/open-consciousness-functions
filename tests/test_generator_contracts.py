@@ -150,8 +150,9 @@ def test_index_csv_json_and_legacy_maps_preserve_identity_and_unicode(records):
 def test_review_matrices_do_not_promote_unknown_evidence(records):
     rows, _ = records
     commands = g.command_review_markdown()
-    assert "1 commands are unchanged" in commands and "1 commands normalized" in commands
-    assert "1 commands requiring review" in commands
+    assert "1 records carry the legacy unchanged category" in commands
+    assert "1 commands normalized" in commands
+    assert "3 commands requiring review" in commands
     availability = g.availability_matrix_markdown()
     assert "Available: 2" in availability and "Source unavailable: 1" in availability
     roadmap = g.reimplementation_roadmap_markdown()

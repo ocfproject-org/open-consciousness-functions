@@ -9,8 +9,8 @@ from pathlib import Path
 from .paths import REPO_ROOT
 from .utils import OCFError, sha256_of_file, write_text_atomic
 
-PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-025"
-BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-026"
+PREVIOUS_BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-027"
+BASELINE_ID = "OCF-AUDIO-DEFAULTS-HPLUS-028"
 BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-001": "1.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-002": "2.0.0",
@@ -37,9 +37,11 @@ BASELINE_VERSIONS = {
     "OCF-AUDIO-DEFAULTS-HPLUS-023": "23.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-024": "24.0.0",
     "OCF-AUDIO-DEFAULTS-HPLUS-025": "25.0.0",
-    BASELINE_ID: "26.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-026": "26.0.0",
+    "OCF-AUDIO-DEFAULTS-HPLUS-027": "27.0.0",
+    BASELINE_ID: "28.0.0",
 }
-TEMPLATE_ID = "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+TEMPLATE_ID = "OCF-TPL-SESSION-HPLUS-LOCKED-008"
 PACING_ID = "OCF-PACING-HPLUS-LOCKED-007"
 DSP_ID = "OCF-DSP-HPLUS-LOCKED-004"
 LOCK_PATH = REPO_ROOT / "audio" / "defaults" / f"{BASELINE_ID}.json"
@@ -85,6 +87,7 @@ def configuration_lock(
     paths = set()
     for pattern in (
         "audio/templates/sessions/OCF-TPL-SESSION-HPLUS-*.yaml",
+        "audio/templates/sessions/OCF-TPL-SESSION-PREP-LEARN-003.yaml",
         "audio/templates/pacing/*.yaml",
         "audio/templates/stages/*.yaml",
         "audio/cues/*.yaml",

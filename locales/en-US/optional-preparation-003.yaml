@@ -1,0 +1,60 @@
+schema_version: '1.0'
+locale: en-US
+domain: narration
+entries:
+  hplus.optional.resonant-tuning.v3.begin:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Let your breathing settle into an easy rhythm.
+
+      Allow your jaw to soften and your shoulders to rest.
+
+      Take a comfortable breath in.
+
+      As you breathe out, let a gentle hum form.
+
+      Choose a pitch that comes easily, and let the sound last for a comfortable part of the breath.
+
+      Allow the next breath to come naturally.
+
+      You may notice a soft vibration around your lips, throat, or chest. Let your attention rest with your breathing and the sound.
+
+      If you prefer, breathe quietly and listen.
+
+      Continue at your own pace. I will tell you when to finish.
+
+      Begin now.
+  hplus.optional.resonant-tuning.v3.complete:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Let the hum come to a natural finish.
+
+      Return to quiet, ordinary breathing.
+
+      Rest here for a moment before we continue.
+  hplus.optional.energy-ball.v3.begin:
+    status: reviewed
+    version: 2.0.0
+    text: |-
+      To establish or renew your Energy Ball, think or say in your mind, "{{ cue.id.OCF-CMD-EXP-007-PRIMARY }}."
+    cue_template:
+      shared_resource: hplus.optional.energy-ball.v3.begin
+      allowed:
+      - cue.id.OCF-CMD-EXP-007-PRIMARY
+      external_commands:
+        OCF-CMD-EXP-007-PRIMARY: OCF-EXP-007
+  hplus.optional.energy-ball.v3.complete:
+    status: reviewed
+    version: 2.0.0
+    text: |-
+      Let it remain around you at the size and with the qualities you choose as we continue.
+
+      Whenever you choose to draw the whole ball back within, think or say in your mind, "{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}."
+    cue_template:
+      shared_resource: hplus.optional.energy-ball.v3.complete
+      allowed:
+      - cue.id.OCF-CMD-EXP-007-DEFLATE
+      external_commands:
+        OCF-CMD-EXP-007-DEFLATE: OCF-EXP-007

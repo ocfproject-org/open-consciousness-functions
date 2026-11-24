@@ -302,9 +302,7 @@ entries:
       Then exhale slowly through your mouth and open your eyes.
 
 
-      Faint scents will become clearer and more distinct.
-
-      You will recognize subtle differences between aromas
+      Faint scents will become clearer and more distinct; You will recognize subtle differences between aromas
 
       and appreciate their character and richness.
 
@@ -332,10 +330,7 @@ entries:
 
       hold it clearly, distinguish its subtle qualities,
 
-      and combine or transform aromas through imagination.
-
-
-      Your mind will connect scents with memories,
+      and combine or transform aromas through imagination; Your mind will connect scents with memories,
 
       places, experiences, and images more vividly.
 
@@ -580,10 +575,11 @@ record_metadata:
     reciprocal_approved: false
 content:
   bindings:
-    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
+    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-008
     duration: null
     narration_resources: []
     session_templates:
+    - OCF-TPL-SESSION-HPLUS-LOCKED-008
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
     - OCF-TPL-SESSION-HPLUS-LOCKED-005
     - OCF-TPL-SESSION-HPLUS-LOCKED-006

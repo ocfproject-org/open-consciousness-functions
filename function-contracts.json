@@ -3978,6 +3978,197 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
       },
       "sha256": "e387e2f28f729030a58d34a33736bd4765cc99c258b78d83673a65bdd312cda1"
     },
+    "OCF-EXP-007": {
+      "contract": {
+        "approved_targets": {
+          "complementary_functions": [
+            "OCF-FND-001"
+          ],
+          "related_functions": []
+        },
+        "classification": {
+          "primary_domain": "experimental",
+          "secondary_domains": []
+        },
+        "commands": [
+          {
+            "command_id": "OCF-CMD-EXP-007-PRIMARY",
+            "control": {
+              "designation": "primary",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
+              "invocation_scope_ref": "lifecycle.scopes.application",
+              "phrase_ref": {
+                "source": "canonical-primary"
+              },
+              "procedure": {
+                "override_steps": [
+                  {
+                    "id": "mentally-inflate",
+                    "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate",
+                    "operation": "think-or-say-command"
+                  }
+                ],
+                "status": "documented"
+              }
+            },
+            "role": "activation",
+            "steps": [
+              {
+                "id": "mentally-inflate",
+                "operation": "think-or-say-command"
+              }
+            ]
+          },
+          {
+            "command_id": "OCF-CMD-EXP-007-DEFLATE",
+            "control": {
+              "designation": "secondary",
+              "effect_scope_ref": "lifecycle.scopes.application.persistence",
+              "invocation_scope_ref": "lifecycle.scopes.application",
+              "phrase_ref": {
+                "command_id": "OCF-CMD-EXP-007-DEFLATE",
+                "source": "canonical-mode"
+              },
+              "procedure": {
+                "override_steps": [
+                  {
+                    "id": "mentally-deflate",
+                    "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate",
+                    "operation": "think-or-say-command"
+                  }
+                ],
+                "status": "documented"
+              },
+              "relationships": {
+                "closes": [
+                  "OCF-CMD-EXP-007-PRIMARY"
+                ]
+              }
+            },
+            "role": "close",
+            "steps": [
+              {
+                "id": "mentally-deflate",
+                "operation": "think-or-say-command"
+              }
+            ]
+          }
+        ],
+        "function_id": "OCF-EXP-007",
+        "lifecycle": {
+          "activation": "manual",
+          "persistence": "temporary",
+          "release": {
+            "required": false
+          },
+          "scopes": {
+            "application": {
+              "activation": "manual",
+              "persistence": "temporary"
+            },
+            "capability": {
+              "persistence": "permanent"
+            }
+          }
+        },
+        "narration": {
+          "sequence": [
+            {
+              "key": "hplus.function.ocf-exp-007.opener",
+              "repetitions": 1,
+              "role": "opener"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-first",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-5",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-6",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-healing-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-withdrawal",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-second",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-2",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-3",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-4",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-protection-start",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.guided-continuation",
+              "repetitions": 1,
+              "role": "guided-practice"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.function-body",
+              "repetitions": 4,
+              "role": "function-body"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.access-close-prepare",
+              "repetitions": 1,
+              "role": "access-close-preparation"
+            },
+            {
+              "key": "hplus.function.ocf-exp-007.closer",
+              "repetitions": 1,
+              "role": "closer"
+            }
+          ]
+        },
+        "trigger_count": 0
+      },
+      "sha256": "61532f4d024289b54b9c81ed3498f4ef05cbbbe6ed1d44d76ce342ddcb3fb21e"
+    },
     "OCF-FND-001": {
       "contract": {
         "approved_targets": {

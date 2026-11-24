@@ -72,7 +72,7 @@ def test_all_58_dry_run_resources_preserve_behavior_and_validate():
 
     resources = LocaleCatalog().require("en-US").localized_functions
     records = load_all_functions()
-    assert len(resources) == len(records) == 58
+    assert len(resources) == len(records) == 59
     for record in records:
         data = resources[record.id]
         assert not validate_against_schema(data, _load_schema("localized-function.schema.json"))
@@ -99,11 +99,11 @@ def test_all_functions_load_without_any_physical_global_registry(tmp_path):
     records = load_functions(tmp_path)
     catalog = LocaleCatalog(tmp_path / "locales")
     assert not catalog.problems
-    assert len(records) == 58
+    assert len(records) == 59
     from ocf_tools.authoring import AuthoringService, schema_name
 
     service = AuthoringService(tmp_path)
-    assert len(service.records()) == 58
+    assert len(service.records()) == 59
     first = records[0]
     data = catalog.require("en-US").localized_functions[first.id]
     assert schema_name(first.path, data, tmp_path) == "localized-function.schema.json"
@@ -121,7 +121,7 @@ def test_all_functions_load_without_any_physical_global_registry(tmp_path):
                 cue = localized_cue(record, command, catalog=catalog, strict=True)
                 assert cue["spoken_cue"] == command.data["spoken"]
     assert all("content" in record.data for record in records)
-    assert len(list((tmp_path / "locales/en-US").glob("OCF-*.yaml"))) == 58
+    assert len(list((tmp_path / "locales/en-US").glob("OCF-*.yaml"))) == 59
 
 
 @pytest.mark.unit
@@ -245,5 +245,5 @@ def test_active_checkout_retires_the_legacy_function_registry():
 
     assert not (REPO_ROOT / "functions").exists()
     records = load_functions(REPO_ROOT)
-    assert len(records) == 58
+    assert len(records) == 59
     assert all(record.path.is_relative_to(REPO_ROOT / "locales/en-US") for record in records)

@@ -81,7 +81,7 @@ def test_functions_list_uses_canonical_registry_and_json_projection(capsys):
     result = json.loads(capsys.readouterr().out)
 
     assert result["schema_version"] == "1.0"
-    assert len(result["functions"]) == 58
+    assert len(result["functions"]) == 59
     assert all("canonical" in row and "function_id" not in row for row in result["functions"])
 
 
@@ -142,7 +142,7 @@ def test_cli_dev_defaults_eligibility_and_workspace_status_routes(capsys, tmp_pa
 
     assert main(["audio", "defaults"]) == 0
     defaults = json.loads(capsys.readouterr().out)
-    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
     assert defaults["human_listening_approval"] is None
 
     eligibility_path = tmp_path / "eligibility.json"
@@ -186,7 +186,7 @@ def test_cli_audio_defaults_plan_and_eligibility_are_read_only(capsys, tmp_path)
 
     assert main(["audio", "defaults"]) == 0
     defaults = json.loads(capsys.readouterr().out)
-    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
     assert defaults["human_listening_approval"] is None
 
     assert main(["audio", "plan", "OCF-FND-004", "--expand"]) == 0
@@ -382,7 +382,7 @@ def test_audio_defaults_expanded_plan_and_eligibility_cli_routes(capsys, tmp_pat
 
     assert main(["audio", "defaults"]) == 0
     defaults = json.loads(capsys.readouterr().out)
-    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert defaults["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
     assert defaults["human_listening_approval"] is None
 
     assert main(["audio", "plan", "OCF-FND-004", "--expand"]) == 0

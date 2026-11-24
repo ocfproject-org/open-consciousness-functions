@@ -27,6 +27,22 @@ entries:
       There is nothing to force and no particular sensation to search for.
       Let your own experience become recognizable.
 
+  preparation.learning.v3.open-1:
+    status: reviewed
+    version: 3.0.0
+    cue_template:
+      shared_state: OCF-SHARED-STATE-CUES-001
+      allowed: [state.access.open]
+    timing:
+      pacing_units: [instruction, instruction, instruction, instruction]
+    text: |-
+      Keep the ease of Focus Ten as you turn toward your total self.
+      Choose to open your Access Channel,
+      a connection between your conscious mind, subconscious awareness,
+      emotions, physical being, and higher self.
+      Think or say in your mind: "{{ state.access.open }}."
+      Let the opening unfold while your body remains comfortably relaxed.
+
   preparation.learning.v3.ready-1:
     status: reviewed
     version: 3.0.0

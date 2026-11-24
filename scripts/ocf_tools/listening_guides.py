@@ -417,6 +417,38 @@ def function_guide_markdown(record, *, catalog=None, locale="en-US"):
     )
 
 
+def _reader_narration_heading(key, role=None):
+    suffix = key.rsplit(".", 1)[-1]
+    headings = {
+        "opener": "Introduction",
+        "function-body": "Practice",
+        "closer": "Closing",
+        "access-close": "Access channel closure",
+        "guided-first": "First guided practice",
+        "guided-healing-2": "Healing practice: forming the ball",
+        "guided-healing-3": "Healing practice: expanding the ball",
+        "guided-healing-4": "Healing practice: turning the ball",
+        "guided-healing-5": "Healing practice: choosing an appearance",
+        "guided-healing-6": "Healing practice: choosing a quality",
+        "guided-healing-start": "Healing practice: beginning the interval",
+        "guided-withdrawal": "Optional withdrawal practice",
+        "guided-second": "Second guided practice",
+        "guided-protection-2": "Protection practice: choosing an intention",
+        "guided-protection-3": "Protection practice: choosing the extent",
+        "guided-protection-4": "Protection practice: including a larger space",
+        "guided-protection-start": "Protection practice: beginning the interval",
+        "guided-continuation": "Continuing with the ball",
+        "access-close-prepare": "Preparing to close Access",
+        "waking-descent": "Waking descent toward Ten",
+        "waking-ten": "Waking midpoint",
+        "waking-count-to-one": "Full waking countdown",
+        "waking-alert": "Full waking orientation",
+        "waking-reorient": "Short waking option",
+    }
+    label = role or suffix
+    return headings.get(suffix, headings.get(label, label.replace("-", " ").capitalize()))
+
+
 def reader_function_markdown(record, content, *, documentation, narration_sections):
     """Listener layout: exact useful wording, not an engineering inventory."""
     lines = [
@@ -427,6 +459,17 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
         documentation["short_description"]["text"],
         "",
     ]
+    related = []
+    for relation in documentation["related_functions"]:
+        if relation.get("presentation") == "recommended-learning":
+            target = relation["title"]["text"]
+            href = _guide_href(relation["function_id"], target)
+            lines += [
+                f"Recommended learning: [{target}]({href}), {relation['description']['text']}",
+                "",
+            ]
+        else:
+            related.append(relation)
     for command in documentation["commands"]:
         if command["role"] in {"access-close", "legacy-alias"}:
             continue
@@ -469,11 +512,11 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
             lines += ["## " + heading, ""]
             lines += ["- " + value["text"] for value in documentation[field]]
             lines += [""]
-    if documentation["related_functions"]:
+    if related:
         lines += ["## Related functions", ""]
         lines += [
             f"- [{row['title']['text']}]({_guide_href(row['function_id'], row['title']['text'])}). {row['description']['text']}"
-            for row in documentation["related_functions"]
+            for row in related
         ]
         lines += [""]
     if record.safety_notes:
@@ -481,17 +524,11 @@ def reader_function_markdown(record, content, *, documentation, narration_sectio
         lines += ["- " + note for note in record.safety_notes]
         lines += [""]
     lines += ["## Complete narration", ""]
-    headings = {
-        "opener": "Introduction",
-        "function-body": "Practice",
-        "closer": "Closing",
-        "access-close": "Access channel closure",
-    }
     for section in narration_sections:
         if section["role"] == "access-close":
             continue
         lines += [
-            "### " + headings.get(section["role"], section["role"].replace("-", " ").capitalize()),
+            "### " + _reader_narration_heading(section["key"], section["role"]),
             "",
             section["text"],
             "",
@@ -1189,7 +1226,7 @@ def portable_index_html(records, *, edition="0.3.0", include_references=False) -
             else ""
         )
         + "</p>"
-        "<label for='search'>Search by title, ID, cue, or description; also tags and common uses</label><input id='search' type='search' placeholder='Search the 58 function guides'></header>"
+        "<label for='search'>Search by title, ID, cue, or description; also tags and common uses</label><input id='search' type='search' placeholder='Search the function guides'></header>"
         "<p class='no-results' hidden>No matching guides.</p>"
         + sections
         + f"<script>{js}</script></main></body></html>\n"
@@ -1402,22 +1439,8 @@ def validate_extracted_narration(extracted: str, expected: dict[str, str], *, ma
 
     text = normalized(extracted)
     if not markers:
-        headings = {
-            "opener": "Introduction",
-            "function-body": "Practice",
-            "closer": "Closing",
-            "access-close": "Access channel closure",
-        }
         positions = {
-            key: text.rfind(
-                normalized(
-                    headings.get(
-                        key.rsplit(".", 1)[-1],
-                        key.rsplit(".", 1)[-1].replace("-", " ").capitalize(),
-                    )
-                )
-            )
-            for key in expected
+            key: text.rfind(normalized(_reader_narration_heading(key))) for key in expected
         }
         if any(position < 0 for position in positions.values()) or len(
             set(positions.values())

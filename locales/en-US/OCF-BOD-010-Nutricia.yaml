@@ -262,8 +262,6 @@ entries:
       energy utilization with "{{ cue.primary }}," or sufficient nourishment with
       reduced unnecessary retention and storage with "{{ cue.id.OCF-CMD-BOD-010-FOOD-LESS
       }}."
-
-
       Your last selected mode remains active until you deliberately change it.
 
 
@@ -278,7 +276,7 @@ entries:
       Then slowly exhale through your mouth.
 
 
-      This concludes your OCF Nutricia exercise.'
+      This concludes your OCF exercise.'
 slug: nutricia
 classification:
   primary_domain: body
@@ -482,10 +480,26 @@ record_metadata:
     approval_response: approve
 content:
   bindings:
-    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
+    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-008
     duration:
     narration_resources: []
+    session_overrides:
+      pacing:
+        narration_pacing:
+          profiles:
+            nutricia-closer-native-sentences:
+              rate_scale: 1.0
+              default_unit: sentence
+              group_prose: true
+              pauses:
+                sentence: 0.4
+                paragraph: 0.8
+                phrase: 0.4
+                landing: 0.4
+          entries:
+            hplus.function.ocf-bod-010.closer: nutricia-closer-native-sentences
     session_templates:
+    - OCF-TPL-SESSION-HPLUS-LOCKED-008
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
     - OCF-TPL-SESSION-HPLUS-LOCKED-005
     - OCF-TPL-SESSION-HPLUS-LOCKED-006

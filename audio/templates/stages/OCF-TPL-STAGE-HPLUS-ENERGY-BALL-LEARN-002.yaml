@@ -1,0 +1,147 @@
+schema_version: '1.0'
+id: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-002
+version: 2.0.0
+origin: original-ocf
+type: installation
+description: Two guided Energy Ball practices before Open Access teaches the Energy
+  Ball cues.
+events:
+- id: detailed
+  at: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-first
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-2
+  after: detailed
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-2
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-3
+  after: healing-2
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-3
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-4
+  after: healing-3
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-4
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-5
+  after: healing-4
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-5
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-6
+  after: healing-5
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-6
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: healing-start
+  after: healing-6
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-healing-start
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 60
+- id: withdrawal
+  after: healing-start
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-withdrawal
+  semantic: function.practice.guided
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 10
+- id: rehearsal
+  after: withdrawal
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-second
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: protection-2
+  after: rehearsal
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-protection-2
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: protection-3
+  after: protection-2
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-protection-3
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: protection-4
+  after: protection-3
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-protection-4
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5
+- id: protection-start
+  after: protection-4
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-protection-start
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 60
+- id: continuation
+  after: protection-start
+  offset: 0
+  narration_required: true
+  narration_key: hplus.function.ocf-exp-007.guided-continuation
+  semantic: function.practice.rehearsal
+  timing:
+    anchor: speech-end
+    trim_speech_padding: true
+    pause_after: 5

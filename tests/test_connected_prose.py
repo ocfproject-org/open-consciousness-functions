@@ -17,7 +17,7 @@ def test_connected_learning_keeps_words_practice_and_counts():
     before = list(iter_events(old["document"]))
     after = list(iter_events(new["document"]))
     assert before == after
-    changed = 0
+    regrouped = set()
     for event in after:
         a = plan_event_pacing(old["document"], event)
         b = plan_event_pacing(new["document"], event)
@@ -32,12 +32,20 @@ def test_connected_learning_keeps_words_practice_and_counts():
             for u in b["units"]
             if u["kind"] in counts
         ]
-        changed += len(b["units"]) < len(a["units"])
+        if len(b["units"]) < len(a["units"]):
+            regrouped.add(event["id"])
         if event["id"] == "transmutation-box.place":
             assert any(
                 "Do this now. I will wait while you do this." in u["text"] for u in b["units"]
             )
-    assert changed > 5
+    # The current unnumbered relaxation has independently paced steps, not
+    # the bundled prose of its predecessor. Only the four shared blocks group.
+    assert regrouped == {
+        "body-comfort.begin",
+        "transmutation-box.begin",
+        "transmutation-box.place",
+        "transmutation-box.complete",
+    }
 
 
 def test_paragraph_and_count_boundaries_are_retained():

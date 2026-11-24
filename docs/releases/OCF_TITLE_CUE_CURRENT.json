@@ -86,6 +86,7 @@
     "REL-EXP001-EXP003",
     "REL-EXP001-EXP006",
     "REL-EXP003-EXP006",
+    "REL-EXP007-FND001",
     "REL-FND002-COG004",
     "REL-FND002-COG007",
     "REL-FND003-SLP002",
@@ -106,14 +107,14 @@
   "predecessor_commit": "b61ad1fcf3224d98c15ac6a589bdefe6151d6adb",
   "source_scope": "Current titles, commands, and narration resolve only from canonical locale resources; editorial approvals and historical lookup remain separate metadata.",
   "counts": {
-    "functions": 58,
-    "structured_command_identities": 101,
-    "active_records": 82,
+    "functions": 59,
+    "structured_command_identities": 103,
+    "active_records": 84,
     "historical_only_command_records": 19,
-    "stable_primary_identities": 58,
-    "resolved_active_spoken_cues": 72,
+    "stable_primary_identities": 59,
+    "resolved_active_spoken_cues": 74,
     "approved_candidate_narrations": 4,
-    "narration_entries": 375,
+    "narration_entries": 428,
     "remaining_metadata_teaching_differences": 0
   },
   "functions": [
@@ -2254,6 +2255,37 @@
       "unselected_proposal": null,
       "historical_lookup": [],
       "context": "Canonical locale function resource.",
+      "teaching_source": "Canonical locale resource; missing speech is not inherited.",
+      "editorial_proposals": []
+    },
+    {
+      "function_id": "OCF-EXP-007",
+      "current_title": "Energy Ball",
+      "display_cue": "PLUS-INFLATE",
+      "spoken_teaching": "Plus Inflate",
+      "cue_presentation": {
+        "command_id": "OCF-CMD-EXP-007-PRIMARY",
+        "display_cue": "PLUS-INFLATE",
+        "requested_locale": "en-US",
+        "spoken_cue": "Plus Inflate",
+        "binding_status": "resolved",
+        "display_locale": "en-US",
+        "display_fallback": false,
+        "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+        "spoken_locale": "en-US",
+        "spoken_fallback": false,
+        "version": null,
+        "resource_status": "reviewed"
+      },
+      "current_purpose": "Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.",
+      "decision_status": "CANONICAL YAML; review flags retained separately",
+      "metadata_teaching_consistent": true,
+      "title_status": "reviewed",
+      "pending_title": null,
+      "previous_values": null,
+      "unselected_proposal": null,
+      "historical_lookup": [],
+      "context": "OCF-original cues; no predecessor or compatibility alias.",
       "teaching_source": "Canonical locale resource; missing speech is not inherited.",
       "editorial_proposals": []
     },
@@ -7661,6 +7693,140 @@
         "display_locale": "en-US",
         "display_fallback": false,
         "spoken_cue_key": "commands.ocf-cmd-exp-006-primary.spoken-cue",
+        "spoken_locale": "en-US",
+        "spoken_fallback": false,
+        "version": null,
+        "resource_status": "reviewed"
+      }
+    },
+    {
+      "designation": "primary",
+      "phrase_ref": {
+        "source": "canonical-primary"
+      },
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
+      "invocation_scope_ref": "lifecycle.scopes.application",
+      "procedure": {
+        "status": "documented",
+        "override_steps": [
+          {
+            "id": "mentally-inflate",
+            "operation": "think-or-say-command",
+            "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate"
+          }
+        ]
+      },
+      "id": "OCF-CMD-EXP-007-PRIMARY",
+      "function_id": "OCF-EXP-007",
+      "role": "activation",
+      "localization": {
+        "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+        "label_key": "commands.ocf-cmd-exp-007-primary.label",
+        "usage_key": "commands.ocf-cmd-exp-007-primary.usage",
+        "explanation_key": "commands.ocf-cmd-exp-007-primary.explanation"
+      },
+      "spoken": "Plus Inflate",
+      "spoken_review": "reviewed",
+      "phrase": "PLUS-INFLATE",
+      "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+        "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
+      },
+      "invocation_scope": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+        "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
+      },
+      "resolved_procedure_steps": [
+        {
+          "id": "mentally-inflate",
+          "operation": "think-or-say-command",
+          "localization_key": "functions.ocf-exp-007.procedure.mentally-inflate"
+        }
+      ],
+      "cue_presentation": {
+        "command_id": "OCF-CMD-EXP-007-PRIMARY",
+        "display_cue": "PLUS-INFLATE",
+        "requested_locale": "en-US",
+        "spoken_cue": "Plus Inflate",
+        "binding_status": "resolved",
+        "display_locale": "en-US",
+        "display_fallback": false,
+        "spoken_cue_key": "commands.ocf-cmd-exp-007-primary.spoken-cue",
+        "spoken_locale": "en-US",
+        "spoken_fallback": false,
+        "version": null,
+        "resource_status": "reviewed"
+      }
+    },
+    {
+      "designation": "secondary",
+      "phrase_ref": {
+        "source": "canonical-mode",
+        "command_id": "OCF-CMD-EXP-007-DEFLATE"
+      },
+      "effect_scope_ref": "lifecycle.scopes.application.persistence",
+      "invocation_scope_ref": "lifecycle.scopes.application",
+      "procedure": {
+        "status": "documented",
+        "override_steps": [
+          {
+            "id": "mentally-deflate",
+            "operation": "think-or-say-command",
+            "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate"
+          }
+        ]
+      },
+      "relationships": {
+        "closes": [
+          "OCF-CMD-EXP-007-PRIMARY"
+        ]
+      },
+      "id": "OCF-CMD-EXP-007-DEFLATE",
+      "function_id": "OCF-EXP-007",
+      "role": "close",
+      "localization": {
+        "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
+        "label_key": "commands.ocf-cmd-exp-007-deflate.label",
+        "usage_key": "commands.ocf-cmd-exp-007-deflate.usage",
+        "explanation_key": "commands.ocf-cmd-exp-007-deflate.explanation"
+      },
+      "spoken": "Plus Deflate",
+      "spoken_review": "reviewed",
+      "phrase": "PLUS-DEFLATE",
+      "effect_scope": "temporary",
+      "effect_scope_details": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+        "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
+      },
+      "invocation_scope": {
+        "persistence": "temporary",
+        "activation": "manual",
+        "description_key": "functions.ocf-exp-007.lifecycle.scopes.application.description",
+        "description": "One temporary Energy Ball may remain around you after playback. Only deliberately drawing it back within ends that application."
+      },
+      "resolved_procedure_steps": [
+        {
+          "id": "mentally-deflate",
+          "operation": "think-or-say-command",
+          "localization_key": "functions.ocf-exp-007.procedure.mentally-deflate"
+        }
+      ],
+      "cue_presentation": {
+        "command_id": "OCF-CMD-EXP-007-DEFLATE",
+        "display_cue": "PLUS-DEFLATE",
+        "requested_locale": "en-US",
+        "spoken_cue": "Plus Deflate",
+        "binding_status": "resolved",
+        "display_locale": "en-US",
+        "display_fallback": false,
+        "spoken_cue_key": "commands.ocf-cmd-exp-007-deflate.spoken-cue",
         "spoken_locale": "en-US",
         "spoken_fallback": false,
         "version": null,

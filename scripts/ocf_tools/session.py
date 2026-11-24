@@ -489,6 +489,55 @@ def _apply_pacing_keys(events: list[dict[str, Any]], pacing_profile: dict[str, A
             event.setdefault("timing", {})["pause_after"] = value
 
 
+def _apply_completion_totals(sections: list[dict[str, Any]]) -> None:
+    """Resolve an explicitly authored short waking interval after all overrides.
+
+    The complete event must be the only intervening event. Its resolved extent
+    and both offsets count toward the interval, but the following C1 tail does not.
+    Only numeric timings are retained in the resulting timed transcript.
+    """
+    timeline = [event for section in sections for event in section["timeline"]]
+    for index, marker in enumerate(timeline):
+        if "completion_total_s" not in marker:
+            continue
+        total = float(marker.pop("completion_total_s"))
+        problem = f"event {marker['id']}: invalid short waking completion interval"
+        if index == 0 or index + 1 >= len(timeline):
+            raise OCFError(f"{problem}; requires reorientation and closer")
+        before, closer = timeline[index - 1], timeline[index + 1]
+        if not (
+            math.isfinite(total)
+            and total > 0
+            and marker.get("semantic") == "session.return.complete"
+            and marker.get("narration_required") is False
+            and not any(marker.get(key) for key in ("text", "narration_key", "auditory_cue"))
+            and before.get("semantic") == "session.return.reorient"
+            and (before.get("text") or before.get("narration_key"))
+            and marker.get("after") == before["id"]
+            and marker.get("timing", {}).get("anchor") == "speech-end"
+            and closer.get("semantic") == "function.closer"
+            and (closer.get("text") or closer.get("narration_key"))
+            and closer.get("after") == marker["id"]
+            and closer.get("timing", {}).get("anchor") == "event-end"
+            and "at" not in marker
+            and "at" not in closer
+            and "pause_after" not in before.get("timing", {})
+        ):
+            raise OCFError(f"{problem}; requires reorientation, one silent marker, and closer")
+        parts = (
+            marker.get("offset", 0),
+            marker.get("dsp", {}).get("transition_s", 0),
+            marker.get("timing", {}).get("pause_after", 0),
+            closer.get("offset", 0),
+        )
+        if any(not math.isfinite(part) or part < 0 for part in parts):
+            raise OCFError(f"{problem}; completion timing must be finite and nonnegative")
+        used = math.fsum(parts)
+        if used > total:
+            raise OCFError(f"{problem}; completion uses {used:g}s, more than the {total:g}s total")
+        before.setdefault("timing", {"anchor": "speech-end"})["pause_after"] = total - used
+
+
 def resolve_section(
     section: dict[str, Any],
     slots: dict[str, str],
@@ -613,6 +662,12 @@ def compose(
         features.discard("affirmation")
     elif affirmation is not None:
         features.add("affirmation")
+    excluded = set(template.get("excluded_optional_stages", ()))
+    if features & excluded:
+        raise OCFError(
+            "optional stages unavailable in this composition: "
+            + ", ".join(sorted(features & excluded))
+        )
     available = {
         section["enabled_by"] for section in template["sections"] if section.get("enabled_by")
     }
@@ -635,7 +690,9 @@ def compose(
         if section.get("stage"):
             from .semantics import load_stage, stage_events
 
-            stage = load_stage(section["stage"])
+            optional_variants = (pacing_profile or {}).get("optional_stage_variants", {})
+            stage_id = optional_variants.get(section.get("enabled_by"), section["stage"])
+            stage = load_stage(stage_id)
             stage = deepcopy(stage)
             overrides = section.get("narration") or {}
             unknown_events = set(overrides) - {event["id"] for event in stage["events"]}
@@ -729,6 +786,13 @@ def compose(
                 pacing_profile=pacing_profile,
             )
             _apply_pacing_keys(events, pacing_profile)
+        trim_padding = section.get("trim_speech_padding")
+        if trim_padding:
+            for event in events:
+                if event.get("text") or event.get("narration_key"):
+                    event.setdefault("timing", {})["trim_speech_padding"] = True
+                    if trim_padding == "first":
+                        break
         timeline: list[dict[str, Any]] = []
         for event in events:
             at_seconds = float(event["at"]) if "at" in event else None
@@ -760,6 +824,7 @@ def compose(
                             "state",
                             "cue_id",
                             "narration_required",
+                            "completion_total_s",
                             "intentional_repeat",
                         )
                         or key in ("function_id", "locale")
@@ -789,6 +854,8 @@ def compose(
             section_doc["gain_db"] = float(section["gain_db"])
         section_doc["timeline"] = timeline
         sections_out.append(section_doc)
+
+    _apply_completion_totals(sections_out)
 
     doc: dict[str, Any] = {
         "schema_version": "1.0",

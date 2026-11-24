@@ -187,9 +187,7 @@ entries:
 
       Whenever insects approach, your total self maintains one clear intention: remain away, move away, and continue peacefully elsewhere.
 
-      This pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings.
-
-      {{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.
+      This pattern works without harm to other life, preserving your comfort and natural awareness of your surroundings; {{ function.title }} continues operating automatically, without requiring conscious attention or repeated commands.
 
       Whenever you wish to reinforce or restore this pattern, simply say to yourself,
       "{{ cue.primary }}."
@@ -203,7 +201,7 @@ entries:
 
       The outward insect-discouragement intention pauses, while your calm awareness remains available.
 
-      Whenever you wish to pause the entire {{ function.title }} application, silently say,
+      Whenever you wish to pause the entire {{ function.title }} application; silently say,
       "{{ cue.id.OCF-CMD-EXP-005-SUSPEND }}."
 
       The application rests, while your ordinary awareness and natural responses continue.
@@ -388,10 +386,11 @@ record_metadata:
     source_commit: 911dbd0f24618091e34e8a816275ab7eabbf97bb
 content:
   bindings:
-    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-007
+    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-008
     duration: null
     narration_resources: []
     session_templates:
+    - OCF-TPL-SESSION-HPLUS-LOCKED-008
     - OCF-TPL-SESSION-HPLUS-LOCKED-004
     - OCF-TPL-SESSION-HPLUS-LOCKED-005
     - OCF-TPL-SESSION-HPLUS-LOCKED-006

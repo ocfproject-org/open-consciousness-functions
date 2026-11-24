@@ -1,0 +1,33 @@
+# Private Smart Play audition client
+
+This is the source for the Energy Ball and Quiet Focus review interface.
+Verified private manifests can also enable Focus, Quick Recharge and Sleep Easy.
+It is a private preview, not a public playback endpoint or a recording release.
+For the two companion previews the download uses their original master.
+For basic commands the download follows Standard, not a customized mix.
+
+- The gear opens per-session controls and shows the active guidance preset.
+  Defaults are saved only when the listener chooses to save them.
+- Standard for the three basic commands starts with Resonant Tuning and the
+  pre-Focus 10 affirmation off, without Energy Ball prep. Advanced can add
+  either optional stage. Saved choices for a basic command do not carry over
+  to another recording or replace the Energy Ball lesson’s defaults.
+- An audition bookmark seeks to the retained material before a stage and does
+  not switch guidance modes.
+- Full, Reminder, and Off are shown only where there is measured support.
+  Required lesson practices, cue teaching and retained return stages cannot be
+  skipped merely by adding a button. An unavailable choice is hidden.
+- A selected edit uses one native, seekable audio stream. The serving layer
+  needs HTTP byte ranges and should authenticate all manifests and audio.
+  Screen-off playback still needs checking on a physical device.
+
+The operator supplies the independently verified `eb-official.json` and its
+same-origin media for the available previews. The Full master, inserts, measured
+timelines, route index and account settings are not included here. Serve only
+a verified, authenticated bundle. Never publish your local review media.
+
+To check the selected audio routes against the private manifest:
+
+```sh
+node examples/smart-playback/check-profiles.mjs /path/to/eb-official.json
+```

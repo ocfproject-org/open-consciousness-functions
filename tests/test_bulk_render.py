@@ -74,6 +74,18 @@ def test_bulk_resume_verifies_artifacts_force_preserves_history_and_failure_cont
     monkeypatch.setattr(bulk_render, "LocaleCatalog", lambda: None)
     monkeypatch.setattr(bulk_render, "_voice_profile", lambda *_: ({}, {}))
     monkeypatch.setattr(bulk_render, "voice_identity", lambda _: {"fixture": True})
+    from contextlib import nullcontext
+
+    from ocf_tools.speech_verify import WhisperVerifier, verify_tts
+
+    class FixtureVerifier:
+        identity = {"policy": "fixture-asr-v1"}
+
+        def verify(self, data, expected, locale):
+            assert data == pcm() and expected == "Fixture words." and locale == "en-US"
+            return {"wav_sha256": hashlib.sha256(data).hexdigest()}
+
+    monkeypatch.setattr(WhisperVerifier, "from_environment", lambda: nullcontext(FixtureVerifier()))
     outputs = []
 
     def render(owner, **kwargs):
@@ -82,6 +94,7 @@ def test_bulk_resume_verifies_artifacts_force_preserves_history_and_failure_cont
         root = tmp_path / f"audition-{len(outputs)}"
         root.mkdir()
         data = pcm()
+        verify_tts(data, "Fixture words.", "en-US")
         (root / "master.wav").write_bytes(data)
         (root / "session-report.json").write_text(
             json.dumps(
@@ -106,12 +119,18 @@ def test_bulk_resume_verifies_artifacts_force_preserves_history_and_failure_cont
         bulk_render.render_many(["ok"], voice="fixture")["results"][0]["status"]
         == "skipped-verified"
     )
+    proof = outputs[0] / "speech-verification.json"
+    assert proof.is_file()
+    assert json.loads(proof.read_text())["verifier"] == FixtureVerifier.identity
+    proof.write_text("{}")
+    assert bulk_render.render_many(["ok"], voice="fixture")["results"][0]["status"] == "rendered"
+    assert len(outputs) == 2
     forced = bulk_render.render_many(["ok"], voice="fixture", force=True)
     assert forced["speech_cache"]["mode"] == "off"
-    assert len(outputs) == 2 and outputs[0].exists()
-    (outputs[1] / "master.wav").write_bytes(b"corrupt")
+    assert len(outputs) == 3 and outputs[0].exists()
+    (outputs[2] / "master.wav").write_bytes(b"corrupt")
     third = bulk_render.render_many(["ok"], voice="fixture")
-    assert len(outputs) == 3, third["results"]
+    assert len(outputs) == 4, third["results"]
 
     dependencies = {"profile": "reference-v4", "source_sha256": "first-source", "verified": True}
     monkeypatch.setattr(semantic_dsp, "dependency_identity", lambda _: dict(dependencies))
@@ -138,7 +157,7 @@ def test_bulk_resume_verifies_artifacts_force_preserves_history_and_failure_cont
         ]
         == "rendered"
     )
-    assert len(outputs) == 5
+    assert len(outputs) == 6
 
 
 @pytest.mark.unit
@@ -246,7 +265,9 @@ def test_fresh_synthesis_skips_cache_and_publishes_durable_function_progress(mon
     monkeypatch.setattr(bulk_render, "render_complete_session", render)
     events = []
     with observing(events.append):
-        result = bulk_render.render_many(["fresh"], voice="fixture", fresh_synthesis=True)
+        result = bulk_render.render_many(
+            ["fresh"], verify_speech=False, voice="fixture", fresh_synthesis=True
+        )
     assert result["failed"] == 0
     assert cache_modes == ["off"]
     assert [(row["phase"], row.get("detail")) for row in events] == [
@@ -342,7 +363,7 @@ def test_two_worker_batch_runs_distinct_functions_without_shared_output_races(
 
     monkeypatch.setattr(bulk_render, "render_complete_session", render)
     result = bulk_render.render_many(
-        ["one", "two"], voice="fixture", workers=2, fresh_synthesis=True
+        ["one", "two"], verify_speech=False, voice="fixture", workers=2, fresh_synthesis=True
     )
     assert result["workers"] == 2
     assert {row["status"] for row in result["results"]} == {"rendered"}
@@ -356,7 +377,7 @@ def test_render_job_retries_one_transient_error_but_not_deterministic_failure(
 
     monkeypatch.setenv("OCF_WORK_DIR", str(tmp_path / "work"))
     calls = []
-    monkeypatch.setattr(bulk_render, "verified_output", lambda *_: True)
+    monkeypatch.setattr(bulk_render, "verified_output", lambda *_, **__: True)
     monkeypatch.setattr(bulk_render, "sha256_of_file", lambda *_: "a" * 64)
 
     def transient_then_success(*args, **kwargs):

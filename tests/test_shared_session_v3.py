@@ -18,7 +18,7 @@ from ocf_tools.utils import OCFError
 
 pytestmark = pytest.mark.integration
 REVISION = "OCF-SHARED-SESSION-003"
-ROUTINE = "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+ROUTINE = "OCF-TPL-SESSION-HPLUS-LOCKED-008"
 LEARNING = "OCF-TPL-SESSION-PREP-LEARN-002"
 NUMBERS = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
 
@@ -129,11 +129,11 @@ def test_normal_default_selects_single_induction_and_exact_four_pass_sequence(ow
     scan = [e for e in events if e["id"].startswith("relaxation.")]
     text = "\n\n".join(e["text"] for e in scan)
     assert text.strip()
-    assert (
-        re.findall(r"^(One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)\.$", text, re.M) == NUMBERS
-    )
+    assert re.findall(r"^(One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)\.$", text, re.M) == []
     assert "relaxation.whole" not in by_id and "focus-ten.learn" not in by_id
-    assert not any(e["id"].startswith("focus-ten.count-") for e in events)
+    assert [e["text"] for e in events if e["semantic"] == "focus.ten.count"] == [
+        number + "." for number in NUMBERS
+    ]
     assert not by_id["focus-ten.enter"].get("text")
     assert by_id["focus-ten.ready"]["timing"]["pause_after"] == 40
     assert by_id["close.close"]["text"].splitlines().count("Ten.") == 4
@@ -225,7 +225,7 @@ def test_locale_resources_bindings_and_frozen_rc1_remain_well_formed():
         compose(load_template("OCF-TPL-SESSION-PREP-LEARN-001"), {}, title="Frozen RC1"), "en-US"
     )
     assert any(event.get("text") for event in iter_events(rc1))
-    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert audio_defaults.check_lock()["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
 
 
 def test_long_form_revision_is_an_explicit_manifest_alias_without_duplicate_resource():
@@ -298,12 +298,21 @@ def test_optional_modules_are_explicit_exact_and_never_remove_surrounding_holds(
             )[0]
             .text
         )
-    for name, enabled in (("resonant-tuning", tuning), ("energy-ball", energy)):
+    for name, selected in (("resonant-tuning", tuning), ("energy-ball", energy)):
         ids = [i for i in events if i.startswith(name + ".")]
-        assert ids == ([name + ".begin", name + ".practice", name + ".complete"] if enabled else [])
-        if enabled:
+        assert ids == (
+            [name + ".begin", name + ".practice", name + ".complete"] if selected else []
+        )
+        if selected:
             assert not events[name + ".practice"].get("text")
             assert events[name + ".practice"]["timing"]["pause_after"] == 15
+
+    order = [s["id"] for s in resolved["sections"]]
+    target = ["transmutation-box", "relaxation", *enabled]
+    if choice != "none":
+        target.append("affirmation")
+    target.append("focus-ten")
+    assert order[order.index("transmutation-box") : order.index("focus-ten") + 1] == target
 
 
 def test_complete_api_selects_optional_resources_and_invalid_custom_options_fail():
@@ -389,7 +398,9 @@ def test_function_optional_overrides_keep_one_compact_baseline_and_custom_data(m
 
 
 @pytest.mark.parametrize("owner", ["OCF-FND-002", "OCF-SEN-001"])
-def test_real_default_cli_route_uses_v3_without_forcing_a_template(owner, monkeypatch, capsys):
+def test_real_default_cli_route_uses_ordered_preparation_without_forcing_a_template(
+    owner, monkeypatch, capsys
+):
     from ocf_tools import cli, narration_first
 
     monkeypatch.setattr(
@@ -411,7 +422,7 @@ def test_real_default_cli_route_uses_v3_without_forcing_a_template(owner, monkey
     assert data["session_plan"]["template"]["id"] == ROUTINE
     doc = resolve_document(data["session_plan"]["template_plan"], "en-US")
     assert doc["narration_revision"] == REVISION
-    assert not any(e["id"].startswith("focus-ten.count-") for e in iter_events(doc))
+    assert sum(e["semantic"] == "focus.ten.count" for e in iter_events(doc)) == 10
 
 
 def test_learning_selector_is_a_working_cli_composition_not_an_orphan(tmp_path, capsys):
@@ -452,24 +463,26 @@ def test_packaged_learning_dependencies_include_only_explicit_shared_authorities
     assert (output / "function-content/shared-state-cues.yaml").is_file()
     assert (output / "audio/templates/pacing/OCF-PACING-HPLUS-LOCKED-007.yaml").is_file()
     assert (output / "audio/templates/sessions/OCF-TPL-SESSION-PREP-LEARN-002.yaml").is_file()
+    assert (output / "audio/templates/sessions/OCF-TPL-SESSION-PREP-LEARN-003.yaml").is_file()
     assert {p for p in result["included"] if p.startswith("function-content/")} == {
         "function-content/shared-state-cues.yaml",
         "function-content/command-procedures.yaml",
     }
 
 
-def test_routine_timeline_preserves_effective_contract_and_one_close_ramp(monkeypatch):
+@pytest.mark.parametrize("owner", ["OCF-SEN-001", "OCF-EXP-007"])
+def test_routine_timeline_preserves_effective_contract_and_one_close_ramp(monkeypatch, owner):
     monkeypatch.setattr(
         "ocf_tools.audio_build._resolve_background_manifest",
         lambda ref: {"id": ref, "engine": "reference-master"},
     )
-    plan, doc = routine()
+    plan, doc = routine(owner)
     cues, total = synthetic_timeline(doc)
     program = semantic_dsp.plan_program(doc, cues, total, plan["resolved_dsp_profile"])
     assert [t["event_id"] for t in program["transitions"]] == ["open.transition", "close.close"]
     assert not any(t["event_id"] == "focus-ten.transition" for t in program["transitions"])
     report = {
-        "function_id": "OCF-SEN-001",
+        "function_id": owner,
         "narration_timing": {"cues": cues},
         "state_transitions": program["transitions"],
         "stages": plan["stages"],

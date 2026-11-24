@@ -1,0 +1,725 @@
+schema_version: '2.0'
+locale: en-US
+domain: function
+function_id: OCF-EXP-007
+title:
+  text: Energy Ball
+  status: reviewed
+description:
+  text: Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose,
+    and keep it around you or draw it back within.
+  status: reviewed
+metadata_entries:
+  functions.ocf-exp-007.lifecycle.scopes.capability.description:
+    status: reviewed
+    version: 1.0.0
+    text: Learned availability remains after the current ball is drawn back within.
+  functions.ocf-exp-007.lifecycle.scopes.application.description:
+    status: reviewed
+    version: 1.1.0
+    text: One temporary Energy Ball may remain around you after playback. Only deliberately drawing
+      it back within ends that application.
+  functions.ocf-exp-007.procedure.mentally-inflate:
+    status: reviewed
+    version: 1.1.0
+    text: Think or say in your mind, "Plus Inflate."
+  functions.ocf-exp-007.procedure.mentally-deflate:
+    status: reviewed
+    version: 1.1.0
+    text: Think or say in your mind, "Plus Deflate."
+activation:
+  command_id: OCF-CMD-EXP-007-PRIMARY
+  display_cue:
+    text: PLUS-INFLATE
+  spoken_cue:
+    text: Plus Inflate
+    status: reviewed
+  label:
+    text: Establish or reaffirm the Energy Ball
+    status: reviewed
+  explanation:
+    text: A fresh invocation establishes the familiar personal ball. Repeating the cue renews the same
+      active ball at its chosen extent and with its chosen qualities, without stacking or enlarging it.
+      It can have any color or appearance, or no mental image.
+    status: reviewed
+  usage:
+    text: Deliberately think or say in your mind, "Plus Inflate." No special breath, posture, movement,
+      eye closure, image or sensation is required. A comfortable breath and imagined push are optional
+      aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading
+      the cue does not invoke it.
+    status: reviewed
+  role: activation
+  control:
+    designation: primary
+    phrase_ref:
+      source: canonical-primary
+    effect_scope_ref: lifecycle.scopes.application.persistence
+    invocation_scope_ref: lifecycle.scopes.application
+    procedure:
+      status: documented
+      override_steps:
+      - id: mentally-inflate
+        operation: think-or-say-command
+        localization_key: functions.ocf-exp-007.procedure.mentally-inflate
+  procedure_steps:
+  - id: mentally-inflate
+    operation: think-or-say-command
+    instruction:
+      status: reviewed
+      version: 1.1.0
+      text: Think or say in your mind, "Plus Inflate."
+secondary_commands:
+- command_id: OCF-CMD-EXP-007-DEFLATE
+  display_cue:
+    text: PLUS-DEFLATE
+  spoken_cue:
+    text: Plus Deflate
+    status: reviewed
+  label:
+    text: Draw the Energy Ball back within
+    status: reviewed
+  explanation:
+    text: Draw the entire current ball back within, even if enlarged. Only this application ends; learned
+      availability and other functions are unchanged.
+    status: reviewed
+  usage:
+    text: Deliberately think or say in your mind, "Plus Deflate." Hearing or reading the cue does not
+      invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it
+      back within.
+    status: reviewed
+  role: close
+  control:
+    designation: secondary
+    phrase_ref:
+      source: canonical-mode
+      command_id: OCF-CMD-EXP-007-DEFLATE
+    effect_scope_ref: lifecycle.scopes.application.persistence
+    invocation_scope_ref: lifecycle.scopes.application
+    procedure:
+      status: documented
+      override_steps:
+      - id: mentally-deflate
+        operation: think-or-say-command
+        localization_key: functions.ocf-exp-007.procedure.mentally-deflate
+    relationships:
+      closes:
+      - OCF-CMD-EXP-007-PRIMARY
+  procedure_steps:
+  - id: mentally-deflate
+    operation: think-or-say-command
+    instruction:
+      status: reviewed
+      version: 1.1.0
+      text: Think or say in your mind, "Plus Deflate."
+tags:
+- text: mental-practice
+  status: draft
+  semantic_id: mental-practice
+- text: personal-boundaries
+  status: draft
+  semantic_id: personal-boundaries
+- text: deliberate-cues
+  status: draft
+  semantic_id: deliberate-cues
+common_uses:
+- text: Practising with a chosen intention and deciding whether to keep the ball around you or draw it back within.
+  status: draft
+- text: Practising with the familiar personal ball before trying an optional larger extent.
+  status: draft
+- semantic_id: energy-ball-settle
+  text: Set an intention before meditation, or use the familiar image to settle distractions as you begin.
+  status: reviewed
+  notes: 'Use-case review; Monroe Institute REBAL practice context; OCF visualization example'
+- semantic_id: energy-ball-centering-pause
+  text: Take a brief centering pause before public speaking or a difficult conversation.
+  status: reviewed
+  notes: 'Use-case review; Monroe Institute REBAL practice tips; OCF visualization example'
+- semantic_id: energy-ball-chosen-quality
+  text: As a visualization exercise, choose a quality such as calm or steadiness, and decide whether to keep the image or draw it back within.
+  status: reviewed
+  notes: 'Use-case review; OCF visualization example; not a claim of physical protection'
+relationships:
+  related_functions: []
+  complementary_functions:
+  - function_id: OCF-FND-001
+    description_key: relationships.rel-exp007-fnd001.description
+    description:
+      text: for the optional energizing practice.
+      status: reviewed
+      version: 1.0.0
+changelog:
+- version: 0.1.0
+  change: Register the owner-reviewed OCF-original Energy Ball teaching and commands.
+- version: 0.2.0
+  change: Place the two guided cycles at Focus Ten and reserve later passes for cue association.
+- version: 0.3.0
+  change: Teach healing and protection intentions with optional withdrawal, a chosen ending, and
+    the optional Access to Energy recommendation.
+entries:
+  hplus.function.ocf-exp-007.opener:
+    status: reviewed
+    version: 2.0.0
+    notes: Exact English script approved by the owner on 2026-11-22. Listening and release approval remain separate.
+    text: |-
+      You will now learn to form an Energy Ball around yourself, change its size and qualities, and draw it back within whenever you choose.
+
+      You can keep it around you for as long as you wish.
+  hplus.function.ocf-exp-007.guided-first:
+    status: reviewed
+    version: 3.0.0
+    text: |-
+      Bring your attention to your heart center, in the middle of your chest.
+
+      Let a small sun represent your own gathered energy.
+
+      You can picture its light in any color, sense warmth or movement, or simply know that this is where your Energy Ball begins.
+
+      A clear image or physical sensation is not required.
+
+      Follow the exercise in whichever way comes naturally.
+  hplus.function.ocf-exp-007.guided-healing-2:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Now let that energy open outward from your heart center, growing through and around you.
+
+      Let it extend in front of your body.
+
+      Behind your back.
+
+      To your left and to your right.
+
+      Beyond your head and beyond your feet.
+
+      Let it form one complete ball surrounding you, with room around your whole body.
+
+      You are resting at its center.
+  hplus.function.ocf-exp-007.guided-healing-3:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      If you would like it to expand farther, you can take another comfortable deep breath.
+
+      As you breathe out, imagine gently blowing the ball larger, as though your breath were filling a bubble.
+
+      Let it widen smoothly in every direction.
+
+      You can use this breath whenever it helps, or simply choose for the ball to expand.
+  hplus.function.ocf-exp-007.guided-healing-4:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Now set your Energy Ball turning.
+
+      You can imagine giving the inside of the ball a gentle sideways push.
+
+      Or simply choose for it to begin turning.
+
+      You remain comfortably still at its center.
+
+      Let its movement become smooth and continuous.
+
+      You can let it accelerate faster and faster, or settle at a speed that feels right to you.
+  hplus.function.ocf-exp-007.guided-healing-5:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Your ball may remain visible in your mind, become transparent, or have no visual appearance at all.
+
+      It can have any color or combination of colors you choose.
+
+      You may imagine warmth, a flowing current, or the fine tingling of static electricity.
+
+      You can also follow a sense of movement or space, or simply know that the ball is established.
+
+      Its appearance does not determine whether it remains around you.
+  hplus.function.ocf-exp-007.guided-healing-6:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      You may imagine the spinning field taking on magnetic qualities, attracting what you desire and repelling what you do not want.
+
+      Let those qualities take whatever form is useful to you.
+
+      For a more open, receptive feeling, imagine the field spreading outward and becoming lighter and less dense.
+
+      For a more contained, steady feeling, imagine it drawing closer and becoming more concentrated.
+
+      Drawing it closer changes its size. It can still remain fully around you.
+
+      Choose the space and quality you want for this practice.
+  hplus.function.ocf-exp-007.guided-healing-start:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      For this first practice, choose healing and restoration as your intention.
+
+      Imagine filling your Energy Ball with that quality.
+
+      It may take the form of a color, warmth, a gentle flow, a feeling you associate with healing, or simply the intention itself.
+
+      If you have learned {{ function.title.OCF-FND-001 }} and would like to use it here, first choose the purpose or result you want from this healing practice.
+
+      Then think or say in your mind, "{{ cue.id.OCF-CMD-FND-001-PRIMARY }}."
+
+      Hold your intended result in your awareness.
+
+      You can also continue by simply imagining or intending healing and restoration within your ball.
+
+      Let the ball remain expanded and turning while you rest with that intention.
+
+      Spend the next minute becoming familiar with the experience.
+
+      You may notice a feeling or a change in how you imagine the ball, or simply rest with the intention you have chosen.
+
+      I will tell you when we continue.
+
+      Begin now.
+    cue_template:
+      function_id: OCF-EXP-007
+      allowed:
+      - cue.id.OCF-CMD-FND-001-PRIMARY
+      - function.title.OCF-FND-001
+      external_commands:
+        OCF-CMD-FND-001-PRIMARY: OCF-FND-001
+      external_titles:
+      - OCF-FND-001
+  hplus.function.ocf-exp-007.guided-withdrawal:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      You can keep your Energy Ball around you, or practice drawing it back within.
+
+      If you would like to practice withdrawing it now, let the spinning settle as you allow the whole ball to draw inward.
+      If you choose to draw it within, gather all of its energy back through your heart center, however far you have extended it, and let it settle throughout you.
+
+      If you prefer to keep it around you, leave it established and simply understand how you could draw it back within whenever you choose.
+  hplus.function.ocf-exp-007.guided-second:
+    status: reviewed
+    version: 3.0.0
+    text: |-
+      Now turn to protection and balance.
+
+      If you drew your ball back within, let the familiar energy at your heart center expand around you again.
+
+      If it is still around you, continue with the same ball.
+
+      Let it turn smoothly at the size and speed you choose.
+
+      The extra breath and the imagined push are there whenever you find them helpful.
+  hplus.function.ocf-exp-007.guided-protection-2:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      For this practice, imagine filling your ball with protective energy.
+
+      Choose a color, a feeling, or a quality that expresses protection and balance for you.
+
+      It may be different from what you chose for healing, or it may be the same.
+
+      You can also simply hold the intention, without any image or sensation.
+
+      If you have learned {{ function.title.OCF-FND-001 }} and would like to use it here, first choose the purpose or result you want from this protection practice.
+
+      Then think or say in your mind, "{{ cue.id.OCF-CMD-FND-001-PRIMARY }}."
+
+      Hold your intended result in your awareness.
+
+      You can also continue by simply imagining or intending the protective quality you have chosen.
+    cue_template:
+      function_id: OCF-EXP-007
+      allowed:
+      - cue.id.OCF-CMD-FND-001-PRIMARY
+      - function.title.OCF-FND-001
+      external_commands:
+        OCF-CMD-FND-001-PRIMARY: OCF-FND-001
+      external_titles:
+      - OCF-FND-001
+  hplus.function.ocf-exp-007.guided-protection-3:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      You can let your ball feel closer and more concentrated, expressing steady boundaries.
+
+      Or give it more space and an open, receptive quality.
+
+      Size, color, and the qualities you choose can be adjusted separately.
+
+      A larger ball can still represent protection, and a closer ball need not represent shutting everything out.
+  hplus.function.ocf-exp-007.guided-protection-4:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      If you would like your ball to surround more than your own body, choose what you want to include.
+
+      It might be you and your bicycle, your vehicle and its passengers, your home, or a loved one beside you.
+
+      Imagine the ball expanding beyond that space, in front, behind, to either side, above, and below.
+
+      Use another comfortable breath if it helps, imagining the bubble growing larger as you breathe out.
+
+      Give everything you have chosen room within it.
+
+      If you include another person, let this express your wish for their well-being, with their feelings and choices remaining their own.
+
+      You may also keep the ball at its present size around you.
+  hplus.function.ocf-exp-007.guided-protection-start:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Let it continue turning, with the protective qualities you have chosen.
+
+      Keep any color or appearance that is useful to you, or simply know that it is there.
+
+      Spend the next minute becoming familiar with this experience while your ball remains expanded.
+
+      I will tell you when we continue.
+
+      Begin now.
+  hplus.function.ocf-exp-007.guided-continuation:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Let your Energy Ball remain around you as we continue, if that is your choice.
+
+      You can allow it to remain without keeping your attention on it.
+
+      Drawing it back within remains an option whenever you want it.
+  hplus.function.ocf-exp-007.function-body:
+    status: reviewed
+    version: 3.0.0
+    notes: One association body used in two Focus Eleven passes and two quieter sleep passes.
+    text: |-
+      From now on, whenever you choose to establish your Energy Ball, think or say in your mind, "{{ cue.primary }}."
+
+      If your ball is already expanded, this renews the same ball at the size and with the qualities you have chosen.
+
+      You can change its size, color, or qualities by intention.
+
+      It remains established until you choose to draw it back within.
+
+      Whenever you choose to do that, think or say in your mind, "{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}."
+
+      This draws the entire ball back within, however far you have extended it.
+
+      You can form it again whenever you choose.
+
+      You can use either cue deliberately, with ordinary breathing and your eyes open or closed.
+    cue_template:
+      function_id: OCF-EXP-007
+      allowed:
+      - cue.primary
+      - cue.id.OCF-CMD-EXP-007-DEFLATE
+  hplus.function.ocf-exp-007.access-close-prepare:
+    status: reviewed
+    version: 1.0.0
+    notes: Scoped preparation for closing Access without withdrawing the Energy Ball.
+    text: |-
+      Let what you have learned settle into your understanding.
+      The meaning and the cues you have learned remain available to you.
+      Keep that learning as you allow this working period to finish.
+
+      Your Energy Ball can remain around you as you close this Access Channel.
+  hplus.function.ocf-exp-007.waking-descent:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      I will now count down from twenty.
+      With each lower number, become a little more awake and alert, and more aware of your body and surroundings.
+
+      Twenty. Nineteen. Eighteen. Seventeen. Sixteen.
+      Fifteen. Fourteen. Thirteen. Twelve. Eleven.
+    timing:
+      pacing_units: [instruction, instruction, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown]
+  hplus.function.ocf-exp-007.waking-ten:
+    status: reviewed
+    version: 1.0.0
+    text: Ten.
+    timing:
+      pacing_units: [countdown]
+  hplus.function.ocf-exp-007.waking-count-to-one:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Nine. Eight. Seven. Six. Five. Four. Three. Two. One.
+    timing:
+      pacing_units: [countdown, countdown, countdown, countdown, countdown, countdown, countdown, countdown, final_countdown]
+  hplus.function.ocf-exp-007.waking-alert:
+    status: reviewed
+    version: 1.0.0
+    text: |-
+      Wake up and open your eyes. Notice the room around you.
+      Take a moment to feel refreshed, clear and alert, ready to continue with renewed energy.
+  hplus.function.ocf-exp-007.waking-reorient:
+    status: reviewed
+    version: 1.1.0
+    notes: C one is the spoken form of C1; One is a thought, not a count or OCF command.
+    text: To return to C one, your normal waking consciousness, think of the number One.
+  hplus.function.ocf-exp-007.closer:
+    status: reviewed
+    version: 2.0.0
+    notes: Chosen active or withdrawn state is retained.
+    text: |-
+      Notice your body resting against the surface beneath you.
+
+      Let your attention include the room and the sounds around you.
+
+      Your Energy Ball can remain around you at the size and with the qualities you choose.
+
+      The cues you have learned remain available whenever you want to form, renew, or draw it back within.
+
+      Take a moment before you continue.
+slug: energy-ball
+classification:
+  primary_domain: experimental
+  secondary_domains: []
+category_labels:
+  experimental:
+    text: experimental
+    status: canonical
+lifecycle:
+  persistence: temporary
+  activation: manual
+  release:
+    required: false
+    command: null
+  trigger_conditions: []
+  scopes:
+    capability:
+      persistence: permanent
+      description_key: functions.ocf-exp-007.lifecycle.scopes.capability.description
+    application:
+      persistence: temporary
+      activation: manual
+      description_key: functions.ocf-exp-007.lifecycle.scopes.application.description
+audio:
+  script_status: approved
+  implementation_status: not-started
+  background_audio:
+    strategy: optional
+    engine: farfield
+    preset: null
+safety:
+  level: experimental
+  notes:
+  - Imaginative practice; no physical field, protection or guaranteed effect is claimed.
+function_version:
+  current: 0.3.0
+  created: '2026-11-21'
+  updated: '2026-11-22'
+narration:
+  sequence:
+  - key: hplus.function.ocf-exp-007.opener
+    repetitions: 1
+    role: opener
+  - key: hplus.function.ocf-exp-007.guided-first
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-2
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-3
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-4
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-5
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-6
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-healing-start
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-withdrawal
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-second
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-protection-2
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-protection-3
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-protection-4
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-protection-start
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.guided-continuation
+    repetitions: 1
+    role: guided-practice
+  - key: hplus.function.ocf-exp-007.function-body
+    repetitions: 4
+    role: function-body
+  - key: hplus.function.ocf-exp-007.access-close-prepare
+    repetitions: 1
+    role: access-close-preparation
+  - key: hplus.function.ocf-exp-007.closer
+    repetitions: 1
+    role: closer
+editorial:
+  command_review: approved
+localization:
+  status: complete
+record_metadata:
+  legacy:
+    source_system: null
+    name: ''
+    commands: []
+    command_status: proposed
+    source_availability: pending-source-review
+  aliases:
+    names: []
+    commands: []
+  compatibility:
+    state: none
+    rationale: OCF-original cues; no predecessor or compatibility alias.
+  status:
+    maturity: experimental
+    implementation: script-approved
+    evidence: unverified
+  sources: []
+  claims:
+    intended_effects:
+    - Practise imagining and deliberately changing one Energy Ball.
+    prohibited_claims:
+    - A measurable physical field, physical protection or guaranteed changes to other people.
+  attribution:
+    original_authors: []
+    ocf_contributors: []
+  ocf:
+    reimplementation_status: in-progress
+    command_review: approved
+  editorial_decisions:
+  - id: REL-EXP007-FND001
+    kind: approved-relationship
+    source_commit: 92365b50b16b27eac85861855edab46f8e51c855
+    scope: Optional recommended learning for the energizing practice, never a prerequisite.
+    decision_source: Owner-approved Energy Ball implementation brief, 2026-11-22.
+    status: accepted
+    review_note: The reference resolves the canonical localized Access to Energy title. This
+      decision does not approve public audio or listening.
+    relationship_id: REL-EXP007-FND001
+    related_function_id: OCF-FND-001
+    relationship_type: complementary
+    presentation: recommended-learning
+    dependency: optional
+    reciprocal_approved: false
+  documentation:
+    title_key: functions.ocf-exp-007.title
+    purpose_key: functions.ocf-exp-007.purpose
+    short_description_key: functions.ocf-exp-007.purpose
+  commands:
+  - id: OCF-CMD-EXP-007-PRIMARY
+    localization:
+      spoken_cue_key: commands.ocf-cmd-exp-007-primary.spoken-cue
+      label_key: commands.ocf-cmd-exp-007-primary.label
+      usage_key: commands.ocf-cmd-exp-007-primary.usage
+      explanation_key: commands.ocf-cmd-exp-007-primary.explanation
+  - id: OCF-CMD-EXP-007-DEFLATE
+    localization:
+      spoken_cue_key: commands.ocf-cmd-exp-007-deflate.spoken-cue
+      label_key: commands.ocf-cmd-exp-007-deflate.label
+      usage_key: commands.ocf-cmd-exp-007-deflate.usage
+      explanation_key: commands.ocf-cmd-exp-007-deflate.explanation
+content:
+  specifications:
+    metadata_ref: canonical-function-record
+    command_ref: canonical.command
+    extraction_status: unknown
+    maturity: reviewed
+    human_review: approved
+    states:
+      status: specified
+      required: []
+      preferred: []
+    preparation: []
+    blocks:
+      purpose:
+        status: specified
+        operations:
+        - practise-deliberate-establishment-enlargement-and-return
+        evidence_refs: []
+      opener:
+        status: specified
+        operations:
+        - introduce-familiar-personal-ball-and-return
+        evidence_refs: []
+      main:
+        status: specified
+        operations:
+        - imagine-expansion
+        - imagine-rotation
+        - optionally-enlarge
+        - optionally-use-energize-for-the-chosen-intention
+        - optionally-draw-entire-ball-back-within
+        evidence_refs: []
+      association:
+        status: specified
+        operations:
+        - associate-deliberate-mental-inflate
+        - associate-deliberate-mental-deflate
+        evidence_refs: []
+      rehearsal:
+        status: specified
+        operations:
+        - guided-healing-and-restoration-intention
+        - optional-withdrawal-or-continue-with-the-same-ball
+        - guided-protection-and-balance-intention
+        evidence_refs: []
+      future_use:
+        status: specified
+        operations:
+        - keep-one-current-ball
+        - retain-chosen-extent-and-qualities-on-reaffirmation
+        evidence_refs: []
+      suspend_cancel_reset:
+        status: specified
+        operations:
+        - deflate-current-application-only
+        evidence_refs: []
+      closer:
+        status: specified
+        operations:
+        - preserve-listener-chosen-ball-state
+        - retain-learned-availability
+        evidence_refs: []
+      consolidation:
+        status: not-applicable
+        operations: []
+        evidence_refs: []
+      handoff:
+        status: not-applicable
+        operations: []
+        evidence_refs: []
+      safety_claims:
+        status: specified
+        operations:
+        - imagination-not-a-physical-field-or-protection
+        evidence_refs: []
+    questions: []
+  bindings:
+    default_session_template: OCF-TPL-SESSION-HPLUS-LOCKED-008
+    duration: null
+    narration_resources: []
+    session_templates:
+    - OCF-TPL-SESSION-HPLUS-LOCKED-008
+    - OCF-TPL-SESSION-HPLUS-LOCKED-007
+    voice_sources:
+    - tts
+    session_overrides:
+      enabled_stages:
+      - resonant-tuning
+      pacing_profile: OCF-PACING-ENERGY-BALL-LEARNING-003
+    focus_ten_practice_stage: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-LEARN-002
+    waking_return_stages:
+      full: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-001
+      short: OCF-TPL-STAGE-HPLUS-ENERGY-BALL-WAKING-003
+    excluded_optional_stages:
+    - energy-ball

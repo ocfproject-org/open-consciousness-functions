@@ -4,11 +4,11 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
 
 Command-design review generated from the canonical function records.
 
-58 functions total.
+59 functions total.
 
-## Commands retained unchanged
+## Commands cataloged as unchanged
 
-31 commands are unchanged:
+31 records carry the legacy unchanged category:
 
 | OCF ID | Legacy name | Legacy command | Canonical | Modes | Review | Compat |
 |---|---|---|---|---|---|---|
@@ -44,7 +44,7 @@ Command-design review generated from the canonical function records.
 | `OCF-PRF-003` | SYNCHRONIZING | `PLUS-SMOOTH, FAST` | `PLUS-COORDINATE` |  | approved | historical-lookup |
 | `OCF-PRF-005` | MAKE YOUR DAY | `PLUS-THIS DAY` | `PLUS-THIS DAY` |  | approved | unchanged |
 
-## Commands normalized (proposed vocabulary)
+## Commands normalized
 
 Adjustable-magnitude commands are normalized to the MORE/LESS grammar `N`.
 
@@ -60,11 +60,11 @@ Adjustable-magnitude commands are normalized to the MORE/LESS grammar `N`.
 | `OCF-SEN-004` | SENSORY: TASTE | `PLUS-TASTE GREATER` / `PLUS-TASTE LESSER` | `PLUS-TASTE MORE` | `PLUS-TASTE LESS` | approved | alias-listed |
 | `OCF-SEN-005` | SENSORY: TOUCH | `PLUS-TOUCH GREATER` / `PLUS-TOUCH LESSER` | `PLUS-TOUCH MORE` | `PLUS-TOUCH LESS` | approved | alias-listed |
 
-## Commands still requiring review
+## Other approved command designs
 
-These commands have a proposed canonical form that has not been approved. Legacy commands are always retained as aliases/metadata.
+Approved vocabulary outside the unchanged and normalized legacy categories.
 
-20 commands requiring review:
+20 approved command designs:
 
 | OCF ID | Legacy name | Legacy command | Canonical | Modes | Review | Compat |
 |---|---|---|---|---|---|---|
@@ -78,15 +78,27 @@ These commands have a proposed canonical form that has not been approved. Legacy
 | `OCF-EXP-003` |  |  | `PLUS-DISSOLVE` |  | approved | none |
 | `OCF-EXP-005` |  |  | `PLUS-CLEAR ZONE` | `PLUS-CLEAR ZONE, OBSERVE` / `PLUS-CLEAR ZONE, SUSPEND` | approved | none |
 | `OCF-EXP-006` |  |  | `PLUS-INTUITION` |  | approved | none |
+| `OCF-EXP-007` |  |  | `PLUS-INFLATE` | `PLUS-DEFLATE` | approved | none |
 | `OCF-LIF-001` | DE-HAB | `PLUS-NO MORE, NO MORE` | `PLUS-FREE THIS HABIT` |  | approved | historical-lookup |
 | `OCF-PRF-002` | EIGHT-GREAT | `PLUS-EIGHT, GREAT` | `PLUS-INNER POWER` |  | approved | historical-lookup |
 | `OCF-PRF-004` | LIGHT FOOT | `PLUS-LIGHTER, LIGHTER` | `PLUS-LIGHT STEP` |  | approved | historical-lookup |
-| `OCF-PRF-006` | STRONG-QUICK | `PLUS-STRONG-QUICK` | `PLUS-STRONG QUICK` |  | review-required | bridge-trainable |
 | `OCF-SLP-001` | RESTORATIVE SLEEP | `PLUS-HEAL, HEAL` | `PLUS-RESTORATIVE SLEEP` |  | approved | historical-lookup |
 | `OCF-SLP-002` | SLEEP | `PLUS-20-20` | `PLUS-SLEEP` |  | approved | historical-lookup |
 | `OCF-SLP-003` | SWEET DREAMS | `PLUS-THEME, DREAM, SLEEP` | `PLUS-DREAM` |  | approved | historical-lookup |
 | `OCF-SLP-004` | WAKE/KNOW | `PLUS-SLEEP, HELP` | `PLUS-SLEEP INSIGHT` |  | approved | historical-lookup |
 | `OCF-SLP-005` | SLEEP EASY | `PLUS-QUIET, SLEEP` | `PLUS-SLEEP EASY` |  | approved | historical-lookup |
 | `OCF-SLP-006` | STAY AWAKE | `PLUS-ONE, AWAKE, ALERT, ONE, ONE` | `PLUS-AWAKE` |  | approved | historical-lookup |
+
+## Commands still requiring review
+
+This queue uses canonical review status, not the legacy design category. A record may also appear in a design section above.
+
+3 commands requiring review:
+
+| OCF ID | Legacy name | Legacy command | Canonical | Modes | Review | Compat |
+|---|---|---|---|---|---|---|
+| `OCF-BOD-010` | NUTRICIA | `PLUS-FOOD MORE` / `PLUS-FOOD LESS` | `PLUS-FOOD MORE` | `PLUS-FOOD LESS` | needs-review | alias-listed |
+| `OCF-BOD-012` | SEX DRIVE | `PLUS-SEX GREATER` / `PLUS-SEX LESSER` | `PLUS-SEX MORE` | `PLUS-SEX LESS` | needs-review | alias-listed |
+| `OCF-PRF-006` | STRONG-QUICK | `PLUS-STRONG-QUICK` | `PLUS-STRONG QUICK` |  | review-required | bridge-trainable |
 
 Review guidance: `docs/COMMAND_GRAMMAR.md` and `docs/NAMING_GUIDELINES.md`.

@@ -115,10 +115,10 @@ Python 3.11+ · Linux · macOS · Windows · Apache-2.0
 
 ## Explore the functions
 
-The current catalog contains **58 OCF function records**, **102 structured
-command records** and **58 generated English session plans**. It comprises 55
+The current catalog contains **59 OCF function records**, **103 structured
+command records** and **59 generated English session plans**. It comprises 55
 legacy-mapped functions (39 with historical source available and 16 without)
-plus 3 OCF-original functions. Historical source availability is not OCF
+plus 4 OCF-original functions. Historical source availability is not OCF
 implementation status. Plan validity, audio rendering/verification, human
 listening approval and publication authorization are tracked separately; a
 valid plan or rendered file does not imply listening or publication approval.
@@ -130,7 +130,7 @@ valid plan or rendered file does not imply listening or publication approval.
 | Emotion and communication | 4 | Let Go, Off-Loading, Empathizing, Speak Up |
 | Performance and automation | 7 | Do This Now, Synchronizing, See-Be |
 | Sleep | 6 | Sleep, Sleep Easy, Sweet Dreams, Stay Awake |
-| Lifestyle, experimental and emergency | 8 | Habit patterns and specialized practices |
+| Lifestyle, experimental and emergency | 9 | Habit patterns and specialized practices |
 
 [Browse the generated catalog](FUNCTION_INDEX.md) or use
 `python scripts/ocf.py commands describe OCF-SLP-005` for command roles and

@@ -1,0 +1,129 @@
+description: One slow count after preparation, then Focus Ten recognition without a DSP restart.
+events:
+- id: begin
+  narration_required: true
+  narration_key: hplus.shared.focus10.approach
+  semantic: focus.ten.approach
+  at: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: one
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.one
+  semantic: focus.ten.count
+  after: begin
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: two
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.two
+  semantic: focus.ten.count
+  after: one
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: three
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.three
+  semantic: focus.ten.count
+  after: two
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: four
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.four
+  semantic: focus.ten.count
+  after: three
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: five
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.five
+  semantic: focus.ten.count
+  after: four
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: six
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.six
+  semantic: focus.ten.count
+  after: five
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: seven
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.seven
+  semantic: focus.ten.count
+  after: six
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: eight
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.eight
+  semantic: focus.ten.count
+  after: seven
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: nine
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.nine
+  semantic: focus.ten.count
+  after: eight
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- id: ten
+  narration_required: true
+  narration_key: hplus.shared.relaxation.short.ten
+  semantic: focus.ten.count
+  after: nine
+  offset: 0
+  timing:
+    anchor: speech-end
+    pause_after: 4
+- auditory_cue: focus.ten.enter
+  id: enter
+  narration_required: false
+  semantic: focus.ten.enter
+  after: ten
+  offset: 0
+  timing:
+    anchor: speech-end
+- after: enter
+  id: transition
+  offset: 0
+  semantic: focus.ten.transition
+  timing:
+    anchor: speech-end
+- after: transition
+  auditory_cue: focus.ten.ready
+  id: ready
+  narration_key: hplus.shared.focus10.ready
+  narration_required: true
+  offset: 0
+  pacing_key: pauses.focus10_initial_hold_s
+  semantic: focus.ten.ready
+  timing:
+    anchor: event-end
+id: OCF-TPL-STAGE-FOCUS-TEN-003
+origin: original-ocf
+schema_version: '1.0'
+type: induction
+version: 1.0.0

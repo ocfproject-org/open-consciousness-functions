@@ -5,6 +5,18 @@ direction: ltr
 status: canonical
 semantic_version: 3.0.0
 resources:
+- file: ordered-preparation-001.yaml
+  domain: narration
+  description: Unnumbered preparation relaxation and separate Focus Ten approach.
+- file: relaxation-short-001.yaml
+  domain: narration
+  description: Original concise slow One-to-Ten induction, explicitly selected.
+- file: optional-preparation-003.yaml
+  domain: narration
+  description: Independently selected reviewed Resonant Tuning and routine Energy Ball instructions.
+- file: OCF-EXP-007-Energy-Ball.yaml
+  domain: function
+  description: Sole editable localized function metadata and canonical narration.
 - file: shared-session-003.yaml
   domain: narration
   revision: OCF-SHARED-SESSION-003

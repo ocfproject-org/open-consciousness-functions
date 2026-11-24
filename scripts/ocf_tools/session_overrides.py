@@ -38,6 +38,27 @@ def resolve(binding: dict, cli: dict | None = None) -> tuple[dict, dict]:
     return resolved, {key: "cli" if key in cli else "function-binding" for key in resolved}
 
 
+def select_relaxation(sections: list[dict], style: str) -> None:
+    """Select the short equivalent in either ordered or historical templates."""
+    if style == "long":
+        return
+    if style != "short":
+        raise OCFError("relaxation must be long or short")
+    induction = next((s for s in sections if s["id"] == "relaxation"), None)
+    variants = {
+        "OCF-TPL-STAGE-HPLUS-RELAXATION-003": ("004", "concise slow One-to-Ten relaxation"),
+        "OCF-TPL-STAGE-HPLUS-RELAXATION-005": (
+            "006",
+            "concise unnumbered preparation relaxation",
+        ),
+    }
+    selected = variants.get((induction or {}).get("stage"))
+    if not selected or induction is None:
+        raise OCFError("short relaxation requires a shared long-form relaxation stage")
+    suffix, induction["role"] = selected
+    induction["stage"] = f"OCF-TPL-STAGE-HPLUS-RELAXATION-{suffix}"
+
+
 def apply(
     template: dict, pacing: dict, dsp: dict, options: dict
 ) -> tuple[dict, dict, dict, set, int]:
@@ -65,6 +86,78 @@ def apply(
             removed.update(("open", "focus11-body", "close"))
             dsp["allow_static"] = True
     template["sections"] = [s for s in template["sections"] if s["id"] not in removed]
+    sections = template["sections"]
+    focus = next((s for s in sections if s["id"] == "focus-ten"), None)
+    reordered = template["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-008"
+    if reordered:
+        # The forward optional resources are resolved only if the stage is
+        # selected. Explicit pacing variants (such as the two-minute lesson
+        # tuning) retain precedence over these routine defaults.
+        routine_variants = {
+            "energy-ball": "OCF-TPL-STAGE-HPLUS-ENERGY-BALL-003",
+            "resonant-tuning": "OCF-TPL-STAGE-HPLUS-TUNING-003",
+        }
+        for option, stage in routine_variants.items():
+            pacing.setdefault("optional_stage_variants", {}).setdefault(option, stage)
+    if (
+        reordered
+        and focus
+        and (audition := pacing.get("pacing_auditions", {}).get("relaxation-1-to-10"))
+    ):
+        audition.update(stage_id="focus-ten", label="Focus Ten count 1-10")
+    waking_style = options.get("waking_style")
+    if variants := template.get("waking_return_stages"):
+        waking = next((s for s in sections if s["id"] == "return"), None)
+        if not waking or "focus20-close" in removed:
+            raise OCFError("split waking return requires sleep descent and waking stages")
+        style = waking_style or "full"
+        waking["stage"] = variants[style]
+        waking["role"] = f"split Focus 20 waking return ({style})"
+        # The legacy selector covers one cue in the standard return. A split
+        # return distributes that material across the section instead.
+        auditions = pacing.get("pacing_auditions", {})
+        if "waking-countdown-20-to-1" in auditions:
+            del auditions["waking-countdown-20-to-1"]
+            auditions[f"waking-return-{style}"] = {
+                "label": (
+                    "Full waking return: Twenty to One"
+                    if style == "full"
+                    else "Short waking return: Twenty to Ten, then think of One"
+                ),
+                "file_name": f"waking-return-{style}",
+                "stage_id": "return",
+            }
+    elif waking_style is not None:
+        raise OCFError("waking style is unavailable for this function")
+    select_relaxation(sections, options.get("relaxation", "long"))
+    if practice := template.get("focus_ten_practice_stage"):
+        ids = [section["id"] for section in sections]
+        if not {
+            "focus-ten",
+            "resonant-tuning",
+            "open",
+            "focus11-body",
+            "close",
+            "focus20-enter",
+            "sleep20-body",
+            "return",
+        } <= set(ids) or any(pacing["repetitions"].get(key) != 2 for key in ("focus11", "focus20")):
+            raise OCFError(
+                "Focus Ten teaching requires its complete waking lesson and two-plus-two reinforcement passes"
+            )
+        guided = {
+            "id": "guided-practice",
+            "stage": practice,
+            "after": "$previous",
+            "role": "Two guided Energy Ball practices before Open Access teaches the Energy Ball cues.",
+        }
+        if reordered:
+            sections.insert(ids.index("energy-ball"), guided)
+        else:
+            tuning = sections.pop(ids.index("resonant-tuning"))
+            focus_ten = next(i for i, s in enumerate(sections) if s["id"] == "focus-ten")
+            sections[focus_ten + 1 : focus_ten + 1] = [tuning, guided]
+
     unknown = set(options.get("stage_maximum_seconds", {})) - {
         s["id"] for s in template["sections"]
     }
@@ -84,6 +177,8 @@ def apply(
             for key, value in dsp["transition_end_anchors"].items()
             if key.split(".")[0] not in removed
         }
+    if reordered and not focus:
+        pacing.get("pacing_auditions", {}).pop("relaxation-1-to-10", None)
     pacing["pacing_auditions"] = {
         k: v
         for k, v in pacing.get("pacing_auditions", {}).items()

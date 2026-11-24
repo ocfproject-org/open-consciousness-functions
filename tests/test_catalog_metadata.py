@@ -11,7 +11,7 @@ def test_function_metadata_preserves_drafts_and_canonical_fields_are_single_sour
     catalog = LocaleCatalog()
     assert not catalog.problems
     pack = catalog.require("en-US")
-    assert len(pack.localized_functions) == 58
+    assert len(pack.localized_functions) == 59
     for identity, data in pack.localized_functions.items():
         assert 3 <= len(data["tags"]) <= 6
         # The original suggestions stay draft; owner-reviewed additions are
@@ -62,9 +62,9 @@ def test_owner_approved_related_and_complementary_edges_remain_exact():
             (decision["source_id"], decision["related_id"], edge["approved_explanation"])
         )
     assert sorted(actual) == sorted(expected)
-    assert len(actual) == 33
+    assert len(actual) == 34
     assert kinds.count("related_functions") == 20
-    assert kinds.count("complementary_functions") == 13
+    assert kinds.count("complementary_functions") == 14
 
 
 def test_current_locale_has_single_canonical_function_files_and_source_independent_lock():
@@ -74,9 +74,9 @@ def test_current_locale_has_single_canonical_function_files_and_source_independe
     pack = LocaleCatalog().require("en-US")
     declared = [r["file"] for r in pack.manifest["resources"]]
     assert len(declared) == len(set(declared))
-    assert len(resources(REPO_ROOT)) == 58
+    assert len(resources(REPO_ROOT)) == 59
     assert (
-        len(pack.localized_function_files) == len(set(pack.localized_function_files.values())) == 58
+        len(pack.localized_function_files) == len(set(pack.localized_function_files.values())) == 59
     )
     # Authority is structural, not a blacklist of predecessor filenames.
     for path, data in resources(REPO_ROOT):
@@ -92,5 +92,5 @@ def test_current_locale_has_single_canonical_function_files_and_source_independe
     ):
         assert name in declared and (pack.path / name).is_file()
     lock = check_lock()
-    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-026"
+    assert lock["id"] == "OCF-AUDIO-DEFAULTS-HPLUS-028"
     assert not any(path.startswith("locales/") for path in lock["files"])

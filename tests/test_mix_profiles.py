@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import io
 import json
 import math
 import shutil
@@ -432,9 +433,12 @@ class TestProfileContracts:
         receipt = {"parameters": {"profile": mp.load_mix_profile({})}, "filtergraph": "exact graph"}
         calls = []
 
-        def legacy(speech, bg, out, *, background_gain, speech_gain, speech_gain_windows):
+        def legacy(
+            speech, bg, out, *, background_gain, speech_gain, speech_gain_windows, sample_rate
+        ):
+            assert sample_rate == ab.DEFAULT_SAMPLE_RATE
             calls.append((background_gain, speech_gain, speech_gain_windows))
-            _wav(out, [100] * (2 * ab.DEFAULT_SAMPLE_RATE))
+            _wav(out, [100] * (2 * sample_rate), rate=sample_rate)
 
         def profiled(*args, mix_profile, **kwargs):
             assert mix_profile == mp.load_mix_profile({})
@@ -471,6 +475,90 @@ class TestRealFFmpegMix:
     def require_ffmpeg(self):
         if not shutil.which("ffmpeg"):
             pytest.skip("optional ffmpeg is not installed")
+
+    @pytest.mark.parametrize("profiled", [False, True])
+    def test_build_and_listener_exports_preserve_requested_master_rate(
+        self, monkeypatch, tmp_path, profiled
+    ):
+        rate = 48000
+        metadata = {
+            "backend": "recording",
+            "sample_rate": rate,
+            "channels": 1,
+            "duration": 0.1,
+            "cues": 0,
+            "overlap_mode": "error",
+            "event_timing": [],
+        }
+
+        def narration(_doc, out, **kwargs):
+            assert kwargs["sample_rate"] == rate
+            _wav(out, [0] * (rate // 10), rate=rate, channels=1)
+            return metadata
+
+        bed = tmp_path / "bed.wav"
+        # Verify the master rate even when the selected static bed is 44.1 kHz.
+        _wav(bed, [100] * (2 * 4410))
+        monkeypatch.setattr(ab, "render_narration", narration)
+        monkeypatch.setattr(ab, "_render_background", lambda *args, **kwargs: (bed, "test"))
+        out = tmp_path / "build"
+        result = ab.build(
+            "test",
+            manifest_override={"id": "TEST-001"},
+            document_override={},
+            out_root=out,
+            formats=["wav", "flac"],
+            sample_rate=rate,
+            mix_profile=(
+                {"profile_id": "synthetic-48k", "profile_version": "1.0"} if profiled else None
+            ),
+        )
+        master = out / result["master"]["file"]
+        assert result["master"]["sample_rate"] == rate
+        with wave.open(str(master), "rb") as reader:
+            assert (reader.getframerate(), reader.getnchannels(), reader.getsampwidth()) == (
+                rate,
+                2,
+                2,
+            )
+            master_pcm = reader.readframes(reader.getnframes())
+        flac = out / next(row["file"] for row in result["outputs"] if row["format"] == "flac")
+        verification = subprocess.run(
+            ["ffmpeg", "-v", "error", "-i", str(flac), "-f", "wav", "-"],
+            capture_output=True,
+            check=True,
+        ).stdout
+        with wave.open(io.BytesIO(verification), "rb") as reader:
+            assert (reader.getframerate(), reader.getnchannels(), reader.getsampwidth()) == (
+                rate,
+                2,
+                2,
+            )
+            assert reader.readframes(reader.getnframes()) == master_pcm
+
+        if shutil.which("ffprobe") is not None:
+            mp3 = out / "listener.mp3"
+            ab._encode(master, "mp3", mp3, mp3_bitrate="320k")
+            stream = subprocess.run(
+                [
+                    "ffprobe",
+                    "-v",
+                    "error",
+                    "-select_streams",
+                    "a:0",
+                    "-show_entries",
+                    "stream=bit_rate,sample_rate,channels",
+                    "-of",
+                    "json",
+                    str(mp3),
+                ],
+                capture_output=True,
+                check=True,
+                text=True,
+            ).stdout
+            assert json.loads(stream)["streams"] == [
+                {"sample_rate": str(rate), "channels": 2, "bit_rate": "320000"}
+            ]
 
     def test_independent_stereo_phase_amplitude_and_composed_fade_unchanged(self, tmp_path):
         rate = ab.DEFAULT_SAMPLE_RATE

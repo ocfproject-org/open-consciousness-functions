@@ -881,6 +881,74 @@ def test_grouped_prose_records_one_measured_utterance(monkeypatch, tmp_path, nar
     assert measured["pause_inside_event"] is False
 
 
+@pytest.mark.parametrize("paced", [False, True])
+def test_exact_pause_uses_trimmed_pcm_edges_without_retiming_internal_speech(
+    monkeypatch, tmp_path, paced, narration_boundary
+):
+    from ocf_tools import locale
+
+    doc = {
+        "timeline": [
+            {
+                "id": "before",
+                "at": "0:00",
+                "narration_key": "test.guidance",
+                "text": "Begin the practice. Begin now." if paced else "Begin now.",
+                "timing": {"pause_after": 5, "trim_speech_padding": True},
+            },
+            {
+                "id": "after",
+                "after": "before",
+                "narration_key": "test.guidance",
+                "text": "Continue.",
+                "timing": {"anchor": "speech-end", "trim_speech_padding": True},
+            },
+        ],
+    }
+    if paced:
+        doc["narration_pacing"] = {
+            "profiles": {
+                "fixture": {
+                    "rate_scale": 1,
+                    "default_unit": "sentence",
+                    "pauses": {"sentence": 0.2},
+                },
+            },
+            "entries": {"test.guidance": "fixture"},
+        }
+    # Deliberately quiet end phonemes (25 PCM) must survive the edge detector.
+    samples = [0] * 25 + [1000] * 40 + [25] * 10 + [0] * 30
+    monkeypatch.setattr(locale, "resolve_document", lambda document, *_a, **_k: document)
+    monkeypatch.setattr(v, "_pronunciation_hints", lambda *_a: {})
+    result = v.render_narration(
+        doc,
+        tmp_path / "trimmed.wav",
+        backend="espeak-ng",
+        sample_rate=100,
+        render_cue_with_profile=lambda text, profile: wav(samples),
+    )
+    before, after = result["cue_stats"]
+    assert after["at"] - before["at"] - before["samples"] / 100 == pytest.approx(5)
+    assert after["samples"] == 50
+    if paced:
+        first, last = before["spoken_units"]
+        assert first["trimmed_padding"]["leading_frames"] == 25
+        assert first["trimmed_padding"]["trailing_frames"] == 0
+        assert last["trimmed_padding"]["leading_frames"] == 0
+        assert last["trimmed_padding"]["trailing_frames"] == 30
+        assert last["start_seconds"] - first["end_seconds"] == pytest.approx(0.2)
+        assert after["spoken_units"][0]["start_seconds"] - last["end_seconds"] == pytest.approx(5)
+    else:
+        assert before["trimmed_padding"]["leading_frames"] == 25
+        assert before["trimmed_padding"]["trailing_frames"] == 30
+        assert before["samples"] == 50
+
+
+def test_explicit_timed_speech_trimming_rejects_no_measured_signal():
+    with pytest.raises(OCFError, match="no measured spoken signal"):
+        v._trim_timed_speech_padding([0] * 100, 100, 1, leading=True, trailing=True)
+
+
 @pytest.mark.parametrize("channels", [1, 2])
 @pytest.mark.parametrize("origin", [1, 42948934])
 @pytest.mark.parametrize("tail", [0, 23])

@@ -734,7 +734,40 @@ def render_cue_wav(spec: dict[str, Any], text: str, timeout: int = 60) -> bytes:
 
     reject_unexpanded(text)
 
-    return cached_cue(spec, text, lambda: _render_cue_wav(spec, text, timeout))
+    from .speech_verify import SpeechMismatch, verify_tts
+
+    generated = False
+    locale = spec.get("locale") or ""
+
+    def render() -> bytes:
+        nonlocal generated
+        # Retry only native stochastic synthesis and only on a completed
+        # Whisper mismatch. Nothing rejected from this callback enters cache.
+        maximum_takes = 3 if spec.get("name") == "chatterbox-nano" else 1
+        rejected = []
+        for attempt in range(1, maximum_takes + 1):
+            wav = _render_cue_wav(spec, text, timeout)
+            try:
+                verify_tts(wav, text, locale, source="fresh", take=attempt)
+            except SpeechMismatch as exc:
+                rejected.append(exc.diagnostic["wav_sha256"][:12])
+                if attempt == maximum_takes:
+                    previous = ", ".join(rejected)
+                    exc.args = (f"{exc} Fresh takes rejected: {attempt} ({previous}).",)
+                    raise
+            else:
+                generated = True
+                return wav
+        raise AssertionError("fresh speech verification did not finish")
+
+    wav = cached_cue(spec, text, render)
+    if not generated:
+        try:
+            verify_tts(wav, text, locale, source="cache")
+        except SpeechMismatch as exc:
+            exc.args = (f"{exc} Cache hit withheld; no cached audio was replaced.",)
+            raise
+    return wav
 
 
 def _render_cue_wav(spec: dict[str, Any], text: str, timeout: int = 60) -> bytes:
@@ -900,6 +933,28 @@ def _active_bounds(samples: list[int], sample_rate: int, threshold: int = 400) -
     return first, max(last, first + 1)
 
 
+# A conservative -68.7 dBFS silence boundary, separate from the louder
+# speech detector used for historical audible-transition placement.
+_TIMED_SPEECH_PADDING_RMS = 12
+
+
+def _trim_timed_speech_padding(
+    samples: list[int], sample_rate: int, channels: int, *, leading: bool, trailing: bool
+) -> tuple[list[int], dict]:
+    first, last = _active_bounds(samples, sample_rate * channels, _TIMED_SPEECH_PADDING_RMS)
+    if last <= first:
+        raise OCFError("cannot trim speech padding on a timed cue with no measured spoken signal")
+    # Keep stereo frames indivisible even at a nonstandard sample rate.
+    start = first // channels * channels if leading else 0
+    stop = (last + channels - 1) // channels * channels if trailing else len(samples)
+    return samples[start:stop], {
+        "leading_frames": start // channels,
+        "trailing_frames": (len(samples) - stop) // channels,
+        "detector_rms_pcm16": _TIMED_SPEECH_PADDING_RMS,
+        "detector_block_s": 0.01,
+    }
+
+
 def _fit_line(cue_samples: list[int], slot: float, sample_rate: int) -> list[int]:
     """Fit one cue to its slot: trim TTS padding, stretch short flow slots.
 
@@ -938,7 +993,7 @@ def _pronunciation_hints(
     if doc.get("narration_revision") is not None:
         catalog = catalog.with_revision(doc["narration_revision"], locale)
     origins = {
-        item.get("id"): item.get("locale")
+        item.get("id"): item.get("cue_lookup_locale") or item.get("locale")
         for item in (doc.get("narration") or {}).get("resolved", [])
     }
     hints: dict[str, dict[str, Any]] = {}
@@ -1329,6 +1384,12 @@ def render_narration(
             # A whole resource already contains its natural internal cadence.
             # Retain only the authored outer pause, handled by schedule_timeline.
             pacing = None
+        trim_padding = (source_event.get("timing") or {}).get("trim_speech_padding", False)
+        cropped_edges = None
+        if trim_padding and (
+            fit or len(group) != 1 or recorded_event or recording_audio is not None
+        ):
+            raise OCFError("timed speech padding requires a single non-fit synthesized cue")
         if pacing is not None and len(group) != 1:
             raise OCFError(
                 "semantic narration pacing requires one locale resource per timeline event"
@@ -1407,6 +1468,15 @@ def render_narration(
                         wav_bytes, unit_source, unit_spec, sample_rate, channels
                     )
                 unit_samples = _source_pcm(wav_bytes, sample_rate, channels)
+                pad_measurement = None
+                first = unit_index == 0
+                last = unit_index == len(pacing["units"]) - 1
+                if trim_padding and (first or last):
+                    if unit_source and unit_source["source"] == "recording":
+                        raise OCFError("timed speech padding cannot trim a recorded boundary unit")
+                    unit_samples, pad_measurement = _trim_timed_speech_padding(
+                        unit_samples, sample_rate, channels, leading=first, trailing=last
+                    )
                 unit_samples = _source_fade(unit_samples, sample_rate, channels)
                 # Measure before quiet reinforcement gain; do not mistake -24 dB speech for silence.
                 audible_first, audible_last = _active_bounds(unit_samples, sample_rate * channels)
@@ -1452,6 +1522,7 @@ def render_narration(
                         else None,
                         "pause_after_s": round(pause_after, 6),
                         "pause_inside_event": pause_inside_event,
+                        **({"trimmed_padding": pad_measurement} if pad_measurement else {}),
                         **(
                             {
                                 "narration_source": {
@@ -1541,6 +1612,11 @@ def render_narration(
                     },
                 }
             cue_samples = _source_pcm(wav_bytes, sample_rate, channels)
+            if trim_padding:
+                cue_samples, cropped_edges = _trim_timed_speech_padding(
+                    cue_samples, sample_rate, channels, leading=True, trailing=True
+                )
+                cue_samples = _source_fade(cue_samples, sample_rate, channels)
             if source_row:
                 cue_samples = _source_gain(
                     cue_samples, source_row["gain_db"] + spec.get("gain_db", 0)
@@ -1586,6 +1662,7 @@ def render_narration(
                 ),
                 "pacing": pacing_summary,
                 "spoken_units": unit_rows,
+                **({"trimmed_padding": cropped_edges} if cropped_edges else {}),
                 "cut_previous": False,
                 **(
                     {

@@ -49,10 +49,17 @@ editorial status remains in source metadata rather than appearing beside every
 listener-facing tag or use. The owner approved adoption of the 27 existing optional
 relationship-map suggestions on 2026-11-10. Their descriptions remain verbatim,
 with directional approval records embedded in the owning canonical resources.
-Together with the six earlier links, 33 optional relationships are now projected
+Together with the six earlier links, that batch accounted for 33 optional relationships projected
 into the relationship and complementary maps. No reciprocal links are inferred. No cue, procedure operation/order, lifecycle, narration or DSP
 change is authorized by this documentation batch. Immutable predecessors remain
 verifiable through the checked metadata-only successor.
+
+The November 22 Energy Ball approval adds a separate optional complementary
+learning recommendation. A `recommended-learning` presentation places the
+recommendation next to the outcome description. The linked title resolves
+from the target function's canonical localized title; the owner resource
+provides the rationale. This is neither a prerequisite nor recording
+availability or listening approval.
 
 ## PDF behavior and limits
 

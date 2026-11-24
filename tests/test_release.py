@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 import struct
@@ -383,12 +384,25 @@ def test_package_publishes_complete_verified_release_and_blocks_collision(
     }
     monkeypatch.setattr(rel, "_select_audio_manifest", lambda _query: audio_manifest)
     cover = _png(tmp_path / "cover.png")
+    from contextlib import nullcontext
+
+    from ocf_tools.speech_verify import WhisperVerifier, verify_tts
+
+    class FixtureVerifier:
+        identity = {"policy": "fixture-asr-v1"}
+
+        def verify(self, pcm, expected, locale):
+            assert expected == "First transformed text." and locale == "en-US"
+            return {"wav_sha256": hashlib.sha256(pcm).hexdigest()}
+
+    monkeypatch.setattr(WhisperVerifier, "from_environment", lambda: nullcontext(FixtureVerifier()))
 
     def fake_build(query, *, out_root, formats, tag_overrides, artwork, **kwargs):
         assert query == "OCF-AUDIO-9910"
         out_root = Path(out_root)
         out_root.mkdir(parents=True)
         source = _wav(tmp_path / "render.wav")
+        verify_tts(source.read_bytes(), "First transformed text.", "en-US")
         for fmt in formats:
             audio_build._encode(
                 source, fmt, out_root / f"{query}-master.{fmt}", tag_overrides, artwork
@@ -474,10 +488,15 @@ def test_package_publishes_complete_verified_release_and_blocks_collision(
     assert (release_dir / "manifest.json").is_file()
     manifest = json.loads((release_dir / "manifest.json").read_text(encoding="utf-8"))
     rel._verify_manifest(release_dir, manifest)
+    proof = release_dir / "speech-verification.json"
+    assert json.loads(proof.read_text())["verifier"] == FixtureVerifier.identity
+    attestation = next(item for item in manifest["artifacts"] if item["path"] == proof.name)
+    assert attestation["sha256"] == sha256_of_file(proof)
     assert (release_dir / "guides/listening-guide.pdf").read_bytes() == b"synthetic guide"
     with pytest.raises(OCFError, match="already exists"):
         rel.package_release(
             "OCF-BOD-010",
+            verify_speech=False,
             formats=["flac"],
             artwork=cover,
             output=tmp_path / "out",
@@ -485,6 +504,7 @@ def test_package_publishes_complete_verified_release_and_blocks_collision(
         )
     replaced = rel.package_release(
         "OCF-BOD-010",
+        verify_speech=False,
         formats=["flac"],
         artwork=cover,
         output=tmp_path / "out",
@@ -509,7 +529,9 @@ def test_package_publishes_complete_verified_release_and_blocks_collision(
 
     monkeypatch.setattr(audio_build, "build", racing_build)
     with pytest.raises(OCFError, match="appeared during rendering"):
-        rel.package_release("OCF-BOD-010", formats=["flac"], artwork=cover, output=late_root)
+        rel.package_release(
+            "OCF-BOD-010", verify_speech=False, formats=["flac"], artwork=cover, output=late_root
+        )
     assert (late_dir / "operator.txt").read_text() == "preserve me"
 
 
@@ -559,6 +581,8 @@ def test_failed_manifest_validation_never_publishes_partial_release(release_tmp_
     )
     output = tmp_path / "releases"
     with pytest.raises(OCFError, match="injected"):
-        rel.package_release("OCF-BOD-010", formats=["flac"], artwork=cover, output=output)
+        rel.package_release(
+            "OCF-BOD-010", verify_speech=False, formats=["flac"], artwork=cover, output=output
+        )
     assert not (output / "en-US" / "OCF-BOD-010-Nutricia").exists()
     assert not list((output / "en-US").glob(".ocf-release-stage-*"))

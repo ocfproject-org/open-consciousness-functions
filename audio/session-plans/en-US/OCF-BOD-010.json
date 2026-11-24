@@ -5,24 +5,53 @@
   },
   "defaults": {
     "file": "_shared.json",
-    "sha256": "4d0c0346c1dca59eb211652364941d51bd476cb914b01d8f2b77c0fe4cad3be9"
+    "sha256": "8bc7e07e5ab3228d737b0a5686df474e800d9e30629c0fb385f5e601f31ecdb5"
   },
   "function_id": "OCF-BOD-010",
   "generation": {
-    "binding_sha256": "0eeb793de21f71f2f68097908200333d9af433e651d662e604bf34d29cd89d47",
-    "semantic_plan_sha256": "fccb16deb45c8027364351ec6cdfb753834d72910b276bdc9e475751f935a6c9"
+    "binding_sha256": "33793f4572aa6226aa1840ddda893963bbfb6362cd3c54d01b70ac12aabbd855",
+    "semantic_plan_sha256": "890e2de9202fbeefb5b4f1597d17731671b54a2cc6e0008a0117d3c256f4fcfb"
   },
   "generator": "ocf.audio.plan/1",
   "locale": "en-US",
+  "overrides": {
+    "dsp_sha256": "c7d975cb6dd827c8686812689906de8dd1b4eae281747f10db7600a613452bd9",
+    "pacing_sha256": "890def95ee21c1a2cfe5e635634867e563c2d0276e8eebaa678e42886b43a7ec",
+    "provenance": {
+      "pacing": "function-binding"
+    },
+    "settings": {
+      "pacing": {
+        "narration_pacing": {
+          "entries": {
+            "hplus.function.ocf-bod-010.closer": "nutricia-closer-native-sentences"
+          },
+          "profiles": {
+            "nutricia-closer-native-sentences": {
+              "default_unit": "sentence",
+              "group_prose": true,
+              "pauses": {
+                "landing": 0.4,
+                "paragraph": 0.8,
+                "phrase": 0.4,
+                "sentence": 0.4
+              },
+              "rate_scale": 1.0
+            }
+          }
+        }
+      }
+    }
+  },
   "resources": [
     {
       "fallback": false,
       "key": "hplus.function.ocf-bod-010.closer",
       "locale": "en-US",
-      "raw_template_sha256": "7803c495cb819f5ada55d3afac194d1e06bdf57604bd3e69cc4e06d9bf37951a",
+      "raw_template_sha256": "c3c05459e775b1478ac99b360b8e741c665d7e8775d19a97192950845656296a",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "307ef8763621ff03ec1ca038019578ccb8c8a9c9ce55bd9494dc093c8db72b77",
+      "text_sha256": "86efb2299b508396cf298c031e8d3cdd55b40c37c5ce9801b91060f1618274de",
       "version": "1.3.0"
     },
     {

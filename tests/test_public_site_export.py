@@ -15,9 +15,9 @@ def test_export_is_deterministic_and_contains_only_allowlisted_public_fields():
     second = export.export_data(source_commit=SOURCE_COMMIT)
 
     assert first == second
-    assert len(first["functions"]) == first["build_receipt"]["function_count"] == 58
-    assert len({row["function_id"] for row in first["functions"]}) == 58
-    assert first["build_receipt"]["approved_relationship_count"] == 33
+    assert len(first["functions"]) == first["build_receipt"]["function_count"] == 59
+    assert len({row["function_id"] for row in first["functions"]}) == 59
+    assert first["build_receipt"]["approved_relationship_count"] == 34
     assert first["source_commit"] == SOURCE_COMMIT
     assert first["build_receipt"]["narration_text_included"] is False
     assert first["build_receipt"]["source_evidence_paths_included"] is False
@@ -109,7 +109,7 @@ def test_export_uses_only_approved_relationship_projection(monkeypatch):
 
     result = export.export_data(source_commit=SOURCE_COMMIT)
     exported = next(row for row in result["functions"] if row["function_id"] == identity)
-    assert result["build_receipt"]["approved_relationship_count"] == 33
+    assert result["build_receipt"]["approved_relationship_count"] == 34
     assert len(exported["related_functions"]) == len(source["related_functions"])
     assert "Unapproved keyless description must not be published." not in str(result)
     approved_count = 0
@@ -128,7 +128,7 @@ def test_export_uses_only_approved_relationship_projection(monkeypatch):
             assert item["relationship_type"] == relation["relationship_type"]
             assert item["direction"] == "outgoing"
             assert item["dependency"] == relation["dependency"] == "optional"
-    assert approved_count == 33
+    assert approved_count == 34
 
 
 def test_draft_procedure_is_excluded_as_a_whole(monkeypatch):
@@ -152,7 +152,7 @@ def test_draft_procedure_is_excluded_as_a_whole(monkeypatch):
 def test_export_file_uses_exclusive_atomic_publication(tmp_path):
     output = tmp_path / "website-guides.json"
     receipt = export.write_export(output, source_commit=SOURCE_COMMIT)
-    assert receipt["function_count"] == 58
+    assert receipt["function_count"] == 59
     original = output.read_bytes()
     with pytest.raises(OCFFileExistsError):
         export.write_export(output, source_commit=SOURCE_COMMIT)

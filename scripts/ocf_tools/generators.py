@@ -304,8 +304,17 @@ def command_review_markdown() -> str:
     normalized = sorted(
         [r for r in records if r.command_status == "normalized"], key=lambda r: r.id
     )
-    proposed = sorted(
-        [r for r in records if r.command_status in ("proposed", "review-required")],
+    approved_other = sorted(
+        [
+            r
+            for r in records
+            if r.command_status not in {"unchanged", "normalized"}
+            and r.command_review == "approved"
+        ],
+        key=lambda r: r.id,
+    )
+    requires_review = sorted(
+        [r for r in records if r.command_review in {"pending", "needs-review", "review-required"}],
         key=lambda r: r.id,
     )
 
@@ -336,13 +345,13 @@ def command_review_markdown() -> str:
             "",
             f"{len(records)} functions total.",
             "",
-            "## Commands retained unchanged",
+            "## Commands cataloged as unchanged",
             "",
-            f"{len(unchanged)} commands are unchanged:",
+            f"{len(unchanged)} records carry the legacy unchanged category:",
             "",
             table_for(unchanged),
             "",
-            "## Commands normalized (proposed vocabulary)",
+            "## Commands normalized",
             "",
             "Adjustable-magnitude commands are normalized to the MORE/LESS grammar `N`.",
             "",
@@ -350,14 +359,22 @@ def command_review_markdown() -> str:
             "",
             table_for(normalized),
             "",
+            "## Other approved command designs",
+            "",
+            "Approved vocabulary outside the unchanged and normalized legacy categories.",
+            "",
+            f"{len(approved_other)} approved command designs:",
+            "",
+            table_for(approved_other),
+            "",
             "## Commands still requiring review",
             "",
-            "These commands have a proposed canonical form that has not been approved. "
-            "Legacy commands are always retained as aliases/metadata.",
+            "This queue uses canonical review status, not the legacy design category. "
+            "A record may also appear in a design section above.",
             "",
-            f"{len(proposed)} commands requiring review:",
+            f"{len(requires_review)} commands requiring review:",
             "",
-            table_for(proposed),
+            table_for(requires_review),
             "",
             "Review guidance: `docs/COMMAND_GRAMMAR.md` and `docs/NAMING_GUIDELINES.md`.",
             "",

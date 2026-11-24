@@ -249,6 +249,9 @@ def _function_document(
                 "dependency": "optional",
                 "approval": relation["decision_source"],
                 "relationship_type": relation["relationship_type"],
+                **(
+                    {"presentation": relation["presentation"]} if "presentation" in relation else {}
+                ),
             }
         )
     result = {

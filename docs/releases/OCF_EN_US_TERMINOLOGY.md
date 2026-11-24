@@ -376,6 +376,17 @@ Translator context: Canonical locale function resource.
 
 Review: Preserve the canonical cue and command semantics; localize terminology separately.
 
+## OCF-EXP-007 / OCF-CMD-EXP-007-PRIMARY
+
+Title: Energy Ball. Title status: reviewed.
+Display: `PLUS-INFLATE`. Complete speech: **Plus Inflate**.
+
+Form a spinning Energy Ball around yourself or a chosen space, fill it with qualities you choose, and keep it around you or draw it back within.
+
+Translator context: OCF-original cues; no predecessor or compatibility alias.
+
+Review: Preserve the canonical cue and command semantics; localize terminology separately.
+
 ## OCF-FND-001 / OCF-CMD-FND-001-PRIMARY
 
 Title: Access to Energy. Title status: canonical.

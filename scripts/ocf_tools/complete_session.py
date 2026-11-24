@@ -343,6 +343,11 @@ def build_complete_session_plan(
     from .session_overrides import resolve as resolve_overrides
 
     options, option_provenance = resolve_overrides(binding, overrides)
+    template_record["excluded_optional_stages"] = binding.get("excluded_optional_stages", ())
+    if binding.get("focus_ten_practice_stage"):
+        template_record["focus_ten_practice_stage"] = binding["focus_ten_practice_stage"]
+    if binding.get("waking_return_stages"):
+        template_record["waking_return_stages"] = binding["waking_return_stages"]
     selected_template = template_record["id"]
     selected_dsp = dsp_profile or options.get("dsp_profile") or template_record.get("dsp_profile")
     if not selected_dsp:
@@ -371,6 +376,19 @@ def build_complete_session_plan(
             f"complete session template {selected_template} has no explicit pacing profile"
         )
     selected_pacing = load_pacing_profile(str(pacing_id))
+    if template_record.get("focus_ten_practice_stage"):
+        practice_resources = {
+            block["key"]
+            for block in binding["narration_plan"]["sequence"]
+            if block["role"] == "guided-practice"
+        }
+        if not practice_resources or not practice_resources <= set(
+            selected_pacing.get("narration_pacing", {}).get("entries", {})
+        ):
+            raise OCFError(
+                "Focus Ten teaching requires explicit pacing for its guided practice entries"
+            )
+
     template_record, selected_pacing, dsp, removed, passes = apply_overrides(
         template_record, selected_pacing, dsp, options
     )
@@ -390,6 +408,28 @@ def build_complete_session_plan(
         raise OCFError(
             "required complete-session narration slot(s) are unbound: " + ", ".join(sorted(missing))
         )
+
+    access_close_preparations = [
+        item["key"]
+        for item in binding.get("narration_plan", {}).get("sequence", [])
+        if item["role"] == "access-close-preparation"
+    ]
+    if access_close_preparations:
+        if len(access_close_preparations) != 1:
+            raise OCFError("complete session has ambiguous Access closing preparation")
+        close = next((s for s in template_record["sections"] if s["id"] == "close"), None)
+        if close is None:
+            raise OCFError("function-specific closing preparation requires the Access close stage")
+        close.setdefault("narration", {})["prepare"] = {
+            "narration_key": access_close_preparations[0]
+        }
+        # Scoped measured edges: no extra TTS pad may extend the approved
+        # final training pause or the separate waking-to-closer interval.
+        for section in template_record["sections"]:
+            if section["id"] in {"focus-ten", "affirmation"}:
+                section["trim_speech_padding"] = "first"
+            elif section["id"] == "function-closer":
+                section["trim_speech_padding"] = True
 
     doc = compose(
         template_record,
@@ -432,7 +472,10 @@ def build_complete_session_plan(
                 "complete session includes inline text rather than bound canonical narration"
             )
         entry, _resolution = catalog.resource(
-            str(item["key"]), str(item["locale"]), domain=NARRATION_DOMAIN, fallback=False
+            str(item["key"]),
+            str(item.get("cue_lookup_locale") or item["locale"]),
+            domain=NARRATION_DOMAIN,
+            fallback=False,
         )
         if entry.status not in {"reviewed", "canonical"}:
             raise OCFError(
@@ -1523,7 +1566,8 @@ def _render_complete_session_unlocked(
         from .audition_exports import attach_render_artwork
 
         if (
-            session_plan["template"]["id"] == "OCF-TPL-SESSION-HPLUS-LOCKED-007"
+            session_plan["template"]["id"]
+            in {"OCF-TPL-SESSION-HPLUS-LOCKED-007", "OCF-TPL-SESSION-HPLUS-LOCKED-008"}
             and not options
             and not dsp_profile
         ):
