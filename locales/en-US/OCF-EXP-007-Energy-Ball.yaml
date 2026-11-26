@@ -43,7 +43,7 @@ activation:
       It can have any color or appearance, or no mental image.
     status: reviewed
   usage:
-    text: Deliberately think or say in your mind, "Plus Inflate." No special breath, posture, movement,
+    text: Think or say in your mind, "Plus Inflate." No special breath, posture, movement,
       eye closure, image or sensation is required. A comfortable breath and imagined push are optional
       aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading
       the cue does not invoke it.
@@ -83,7 +83,7 @@ secondary_commands:
       availability and other functions are unchanged.
     status: reviewed
   usage:
-    text: Deliberately think or say in your mind, "Plus Deflate." Hearing or reading the cue does not
+    text: Think or say in your mind, "Plus Deflate." Hearing or reading the cue does not
       invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it
       back within.
     status: reviewed
@@ -404,7 +404,7 @@ entries:
 
       You can form it again whenever you choose.
 
-      You can use either cue deliberately, with ordinary breathing and your eyes open or closed.
+      You can use either cue with ordinary breathing and your eyes open or closed.
     cue_template:
       function_id: OCF-EXP-007
       allowed:

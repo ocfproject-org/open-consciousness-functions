@@ -101490,7 +101490,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/activation/usage/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Deliberately think or say in your mind, \"Plus Inflate.\" No special breath, posture, movement, eye closure, image or sensation is required. A comfortable breath and imagined push are optional aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading the cue does not invoke it.",
+          "value": "Think or say in your mind, \"Plus Inflate.\" No special breath, posture, movement, eye closure, image or sensation is required. A comfortable breath and imagined push are optional aids. Choose any change in size, speed, color or imagined quality yourself. Hearing or reading the cue does not invoke it.",
           "yaml_pointer": "/activation/usage/text"
         },
         "/audio/background_audio/engine": {
@@ -102050,7 +102050,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/entries/hplus.function.ocf-exp-007.function-body/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "From now on, whenever you choose to establish your Energy Ball, think or say in your mind, \"{{ cue.primary }}.\"\n\nIf your ball is already expanded, this renews the same ball at the size and with the qualities you have chosen.\n\nYou can change its size, color, or qualities by intention.\n\nIt remains established until you choose to draw it back within.\n\nWhenever you choose to do that, think or say in your mind, \"{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\"\n\nThis draws the entire ball back within, however far you have extended it.\n\nYou can form it again whenever you choose.\n\nYou can use either cue deliberately, with ordinary breathing and your eyes open or closed.",
+          "value": "From now on, whenever you choose to establish your Energy Ball, think or say in your mind, \"{{ cue.primary }}.\"\n\nIf your ball is already expanded, this renews the same ball at the size and with the qualities you have chosen.\n\nYou can change its size, color, or qualities by intention.\n\nIt remains established until you choose to draw it back within.\n\nWhenever you choose to do that, think or say in your mind, \"{{ cue.id.OCF-CMD-EXP-007-DEFLATE }}.\"\n\nThis draws the entire ball back within, however far you have extended it.\n\nYou can form it again whenever you choose.\n\nYou can use either cue with ordinary breathing and your eyes open or closed.",
           "yaml_pointer": "/entries/hplus.function.ocf-exp-007.function-body/text"
         },
         "/entries/hplus.function.ocf-exp-007.function-body/version": {
@@ -103335,7 +103335,7 @@ GENERATED FILE — DO NOT EDIT DIRECTLY
         },
         "/secondary_commands/0/usage/text": {
           "file": "locales/en-US/OCF-EXP-007-Energy-Ball.yaml",
-          "value": "Deliberately think or say in your mind, \"Plus Deflate.\" Hearing or reading the cue does not invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it back within.",
+          "value": "Think or say in your mind, \"Plus Deflate.\" Hearing or reading the cue does not invoke it. Closing Access, sleep reinforcement, waking and playback completion do not draw it back within.",
           "yaml_pointer": "/secondary_commands/0/usage/text"
         },
         "/slug": {

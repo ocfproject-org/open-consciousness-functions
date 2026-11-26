@@ -28,12 +28,12 @@ Institute instructions.
 
 ## Use and sequence
 
-- Deliberately think or say in your mind **Plus Inflate**
+- Think or say in your mind **Plus Inflate**
   (`OCF-CMD-EXP-007-PRIMARY`) to establish the familiar personal ball when
   none is active. Repeating it renews the same active ball at its chosen
   extent and with its chosen qualities; it does not stack a second ball,
   reset an enlarged ball, or enlarge it automatically.
-- Deliberately think or say in your mind **Plus Deflate**
+- Think or say in your mind **Plus Deflate**
   (`OCF-CMD-EXP-007-DEFLATE`) to draw the entire current ball back within,
   including any enlarged extent. This ends only that application; learned
   availability and unrelated functions remain unchanged. Merely hearing or

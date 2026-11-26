@@ -883,7 +883,7 @@
       "purpose": "OCF Function Command Index",
       "related_commands": [],
       "related_schemas": [],
-      "sha256": "d002af337f306fce29092db5efc49f4af60859df1cacae34d4dc0bb18cf5ed76",
+      "sha256": "ae6401ed51d1ac816c0d8e9a529419c73d35608f98bec1db0f3dbd094d5efc97",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
@@ -1180,7 +1180,7 @@
         "audio render"
       ],
       "related_schemas": [],
-      "sha256": "ecb1b001d8f505b657194c7414f0bbcccaa5a2fa330f45076059c4e8cef18428",
+      "sha256": "a02787c708a6123d611cec6fc850030220757464e3a0d9adc4e58bf248e02dc4",
       "verification": "machine inventory and internal-link check; not a semantic accuracy certification"
     },
     {
