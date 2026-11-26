@@ -42,10 +42,10 @@
       "fallback": false,
       "key": "hplus.function.ocf-exp-007.function-body",
       "locale": "en-US",
-      "raw_template_sha256": "0e3929e16f174b27c466f3f76f647a44f2fd52337a8aff2f52300b78a6d3cd2d",
+      "raw_template_sha256": "2c4ef6b254f87b2ef4120ef58b9d2087fa52a0e977eb04cd89005de76eafa8fa",
       "requested_locale": "en-US",
       "status": "reviewed",
-      "text_sha256": "78697f1d1ff21b402931ffeb1a01c28ebf5eb196033a062a1e1e5a5dbba2bc34",
+      "text_sha256": "8d37afb3b4986f8cf8b3892eeda591e0574f37d3d18f1883696ca0ba4a4527f2",
       "version": "3.0.0"
     },
     {

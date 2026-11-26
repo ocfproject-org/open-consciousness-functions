@@ -36,6 +36,8 @@ def test_energy_ball_catalog_commands_and_scopes():
         "Plus Deflate",
     ]
     for command in (inflate, deflate):
+        cue = command["spoken_cue"]["text"]
+        assert command["usage"]["text"].startswith(f'Think or say in your mind, "{cue}."')
         control = command["control"]
         assert control["effect_scope_ref"] == "lifecycle.scopes.application.persistence"
         assert [step["operation"] for step in control["procedure"]["override_steps"]] == [
@@ -137,6 +139,7 @@ def test_energy_ball_two_guided_cycles_and_passive_reinforcement(energy):
     assert all(
         'think or say in your mind, "Plus Inflate."' in event["text"]
         and 'think or say in your mind, "Plus Deflate."' in event["text"]
+        and "deliberately" not in event["text"].lower()
         and "renews the same ball at the size and with the qualities you have chosen"
         in event["text"]
         for event in bodies
